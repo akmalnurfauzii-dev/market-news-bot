@@ -268,6 +268,13 @@ class FallbackModel:
                     model_id=p["model_id"],
                     api_base=p["api_base"],
                     api_key=p["api_key"],
+                    # max_retries=0: matikan retry otomatis dari library openai.
+                    # Defaultnya retry 2x dengan backoff (bisa nunggu ratusan detik per percobaan)
+                    # SEBELUM error dilempar ke sini. Itu bikin fallback ke provider berikutnya jadi
+                    # lambat banget (kejadian: nunggu 10+ menit gara-gara retry internal Groq).
+                    # Dengan max_retries=0, begitu kena error (termasuk rate limit), langsung gagal
+                    # dan _try_all() di bawah bisa langsung lanjut ke provider berikutnya.
+                    client_kwargs={"max_retries": 0, "timeout": 60.0},
                 )
                 self.providers.append({"name": p["name"], "model": model_instance})
             except Exception as e:
@@ -302,19 +309,22 @@ class FallbackModel:
 
 
 def buat_agent():
-    log.info("Menyiapkan sistem AI dengan 3 lapis cadangan (Groq -> Google -> OpenRouter)...")
+    log.info("Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...")
     model = FallbackModel([
+        {
+            # Diletakkan PERTAMA: dari log run sebelumnya, Gemini terbukti patuh instruksi
+            # 'wajib visit_webpage per topik' dan hasilnya jauh lebih detail (ada angka spesifik).
+            # Groq (Llama 3.3 70B) terbukti SELALU skip visit_webpage & sering kena rate limit 429.
+            "name": "Google Gemini 2.5 Flash",
+            "model_id": "gemini-2.5-flash",
+            "api_base": "https://generativelanguage.googleapis.com/v1beta/openai/",
+            "api_key": GOOGLE_API_KEY,
+        },
         {
             "name": "Groq (Llama 3.3 70B)",
             "model_id": "llama-3.3-70b-versatile",
             "api_base": "https://api.groq.com/openai/v1",
             "api_key": GROQ_API_KEY,
-        },
-        {
-            "name": "Google Gemini 2.5 Flash",
-            "model_id": "gemini-2.5-flash",
-            "api_base": "https://generativelanguage.googleapis.com/v1beta/openai/",
-            "api_key": GOOGLE_API_KEY,
         },
         {
             "name": "OpenRouter (Llama 3.3 70B Free)",
@@ -332,7 +342,7 @@ def buat_agent():
         tools=[search_tool, visit_tool],
         model=model,
         additional_authorized_imports=["datetime", "os", "re"],
-        max_steps=10
+        max_steps=15
     )
 
 
@@ -364,9 +374,18 @@ def jalankan_analisa_harian():
     ATURAN AGENTIK SANGAT KETAT:
     - Alat `web_search` mengembalikan STRING panjang (bukan list), berisi daftar judul, ringkasan, dan URL yang sudah rapi per baris.
     - Untuk topik global/makro, gunakan query Bahasa Inggris agar hasil pencarian lebih relevan (mesin pencari lebih kaya hasil untuk Bahasa Inggris).
-    - Gunakan `visit_webpage(url_tersebut)` untuk masuk dan membaca isi beritanya secara penuh.
+    - `web_search` HANYA memberi judul & cuplikan singkat — itu TIDAK CUKUP buat jadi bahan laporan. Untuk SETIAP dari
+      3 topik, kamu WAJIB minimal 1x `visit_webpage(url)` ke artikel yang relevan untuk membaca isi lengkapnya SEBELUM
+      menulis bagian itu di laporan. Kalau kamu cuma modal judul dari web_search tanpa visit_webpage, laporan otomatis
+      dianggap GAGAL.
     - Pastikan URL yang kamu kunjungi TIDAK memiliki spasi (contoh salah: 'bbc. com/sport', contoh benar: 'bbc.com/sport').
     - Ekstrak DATA VALID, ANGKA SPESIFIK, dan FAKTA NYATA dari dalam artikel. Jangan berikan kesimpulan kosong tanpa data penjelas!
+    - DILARANG KERAS menulis kalimat generik/klise yang bisa ditulis tanpa baca berita sama sekali, contoh kalimat
+      TERLARANG: "banyak laga-laga terpopuler dunia yang menayangkan tim terkenal", "pasar bergerak dinamis",
+      "teknologi terus berkembang pesat". Setiap kalimat WAJIB mengandung fakta konkret: nama tim/orang/perusahaan
+      spesifik, tanggal/jam, skor/hasil, angka/persentase/nominal, atau kutipan fakta langsung dari artikel.
+    - Khusus topik olahraga: WAJIB sebutkan pertandingan/hasil KONKRET — nama kedua tim, skor atau jadwal (tanggal+jam)
+      pertandingannya, bukan cuma "banyak pertandingan seru hari ini".
     - Jika 2 pencarian berturut-turut tidak menemukan hasil relevan, JANGAN cari terus, langsung lanjut menulis laporan dengan data yang sudah ada.
     - Tulis laporan akhir secara MENDALAM dan RINCI per topik — sertakan ANGKA SPESIFIK, PERSENTASE, NILAI NOMINAL,
       dan konteks/latar belakang yang jelas untuk tiap poin (bukan cuma kesimpulan umum tanpa data pendukung).
@@ -374,6 +393,9 @@ def jalankan_analisa_harian():
       memotong analisis demi keringkasan.
     - Wajib sertakan URL sumber referensi asli yang valid di SETIAP poin/topik (bukan cuma sekali di akhir), agar user
       bisa memverifikasi tiap klaim ke sumber aslinya masing-masing.
+    - SEBELUM memanggil `final_answer`, cek ulang draftmu sendiri: apakah SETIAP topik (1) sudah dikunjungi minimal
+      1 URL via visit_webpage, (2) punya minimal 1 angka/tanggal/nama spesifik, (3) punya minimal 1 URL sumber
+      tercantum? Kalau ada topik yang belum memenuhi 3 syarat itu, cari & baca lagi sebelum menulis final_answer.
     - Gunakan bahasa Indonesia santai (campur sedikit bahasa Inggris gaul layaknya teman diskusi yang sangat pintar).
     """
 
