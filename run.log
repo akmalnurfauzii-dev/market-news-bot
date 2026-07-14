@@ -369,3 +369,65 @@ TypeError: string indices must be integers, not 'str'
 2026-07-14 18:40:24,287 [WARNING] Entri history #1 formatnya tidak sesuai (dapat: str = 'Laporan 14 July 2026 telah sukses dikirim.'), entri ini di-skip.
 2026-07-14 18:40:24,288 [INFO] History disimpan (2 entri).
 2026-07-14 18:40:24,288 [INFO] Selesai satu siklus analisa dengan sukses.
+2026-07-14 18:49:51,853 [INFO] ==================================================
+2026-07-14 18:49:51,853 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-14 18:49:51,853 [INFO] ==================================================
+2026-07-14 18:49:51,853 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Groq -> Google -> OpenRouter)...
+2026-07-14 18:49:52,533 [INFO] Merakit agen super...
+2026-07-14 18:49:52,549 [INFO] Menjalankan agent...
+2026-07-14 18:49:52,562 [INFO] Mencoba provider AI: Groq (Llama 3.3 70B)...
+2026-07-14 18:49:58,083 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 18:49:58,091 [INFO] Berhasil pakai provider: Groq (Llama 3.3 70B)
+2026-07-14 18:49:58,394 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitik+ekonomi+global+hari+ini&limit=1 200
+2026-07-14 18:49:58,439 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitik%20ekonomi%20global%20hari%20ini 200
+2026-07-14 18:49:58,846 [INFO] response: https://www.mojeek.com/search?q=geopolitik+ekonomi+global+hari+ini 403
+2026-07-14 18:49:59,453 [INFO] response: https://search.brave.com/search?q=geopolitik+ekonomi+global+hari+ini&source=web&tf=pd 200
+2026-07-14 18:49:59,465 [INFO] Mencoba provider AI: Groq (Llama 3.3 70B)...
+2026-07-14 18:50:00,712 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 18:50:00,713 [INFO] Berhasil pakai provider: Groq (Llama 3.3 70B)
+2026-07-14 18:50:00,816 [INFO] response: https://grokipedia.com/api/typeahead?query=update+olahraga+global+hari+ini&limit=1 200
+2026-07-14 18:50:00,832 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=update%20olahraga%20global%20hari%20ini 200
+2026-07-14 18:50:01,133 [INFO] response: https://www.mojeek.com/search?q=update+olahraga+global+hari+ini 403
+2026-07-14 18:50:01,234 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-14 18:50:02,007 [INFO] response: https://yandex.com/search/site/?text=update+olahraga+global+hari+ini&web=1&searchid=1671284 200
+2026-07-14 18:50:02,131 [INFO] response: https://search.yahoo.com/search;_ylt=sfADd52JzzrmrDLuwj4Ke3v_;_ylu=wIMB4wAy7Twds-d0ScDnTVJPScKYSmDI_AYZfzooVvvHO-c?p=update+olahraga+global+hari+ini&btf=d 200
+2026-07-14 18:50:03,021 [INFO] response: https://search.brave.com/search?q=update+olahraga+global+hari+ini&source=web&tf=pd 200
+2026-07-14 18:50:03,033 [INFO] Mencoba provider AI: Groq (Llama 3.3 70B)...
+2026-07-14 18:50:03,143 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-14 18:50:03,144 [INFO] Retrying request to /chat/completions in 8.000000 seconds
+2026-07-14 18:50:13,005 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 18:50:13,006 [INFO] Berhasil pakai provider: Groq (Llama 3.3 70B)
+2026-07-14 18:50:13,148 [INFO] response: https://grokipedia.com/api/typeahead?query=fakta+teknologi+terbaru+hari+ini&limit=1 200
+2026-07-14 18:50:13,179 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=fakta%20teknologi%20terbaru%20hari%20ini 200
+2026-07-14 18:50:13,405 [INFO] response: https://search.brave.com/search?q=fakta+teknologi+terbaru+hari+ini&source=web&tf=pd 200
+2026-07-14 18:50:13,459 [INFO] Mencoba provider AI: Groq (Llama 3.3 70B)...
+2026-07-14 18:50:13,599 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-14 18:50:13,599 [INFO] Retrying request to /chat/completions in 33.000000 seconds
+2026-07-14 18:50:49,373 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-14 18:50:49,374 [INFO] Berhasil pakai provider: Groq (Llama 3.3 70B)
+2026-07-14 18:50:49,380 [INFO] ==================================================
+2026-07-14 18:50:49,380 [INFO] HASIL LAPORAN LENGKAP:
+2026-07-14 18:50:49,380 [INFO] ==================================================
+2026-07-14 18:50:49,380 [INFO] Laporan akhir:
+
+Geopolitik & Ekonomi Global:
+Rupiah hari ini melemah ke Rp18.091 karena gejolak geopolitik di Timur Tengah yang memicu kekhawatiran inflasi global melalui lonjakan harga minyak mentah.
+IHSG hari ini dibuka menguat karena sentimen AI dan geopolitik.
+AS menjadi 'penjaga' Selat Hormuz yang memiliki implikasi geopolitik dan pasar keuangan.
+
+Update Olahraga Global:
+Jadwal bola hari ini, klasemen, susunan pemain, statistik dan hasil pertandingan dapat ditemukan di beberapa situs web olahraga.
+Piala Dunia 2026 sedang berlangsung dan banyak laga-laga terpopuler dunia yang menayangkan tim terkenal dan profesional.
+
+Satu fakta teknologi terbaru hari ini:
+Sampah plastik di Kenya dapat didaur ulang untuk mencetak model 3-dimensi yang membantu pendidikan mahasiswa.
+Lebih dari 40 persen unggahan panjang di LinkedIn dibuat oleh AI.
+Beberapa teknologi yang ada saat ini mungkin akan tergantikan atau berubah drastis dalam 20 tahun ke depan.
+Gerhana Matahari Total terlama abad ini akan terjadi pada 2 Agustus 2027.
+Google Gemini adalah asisten AI multimodal yang dapat memproses informasi lintas format secara simultan.
+Apple akan membuka akses pairing ala AirPods untuk Meta Ray-Ban dan Quest pada 2027.
+2026-07-14 18:50:49,380 [INFO] ==================================================
+2026-07-14 18:50:49,380 [INFO] Mengirim laporan ke Telegram...
+2026-07-14 18:50:49,998 [INFO] Berhasil dikirim (Format Markdown)!
+2026-07-14 18:50:49,998 [INFO] History disimpan (3 entri).
+2026-07-14 18:50:49,998 [INFO] Selesai satu siklus analisa dengan sukses.
