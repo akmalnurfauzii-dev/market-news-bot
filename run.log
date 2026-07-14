@@ -59,3 +59,253 @@
 2026-07-14 17:14:22,539 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-07-14 17:14:23,342 [INFO] History disimpan (1 entri).
 2026-07-14 17:14:23,343 [INFO] Selesai satu siklus analisa dengan sukses.
+Menyiapkan sistem AI...
+
+==================================================
+🕒 MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+==================================================
+╭────────────────────────────────── New run ───────────────────────────────────╮
+│                                                                              │
+│ Hari ini tanggal 14 July 2026. HANYA gunakan berita dari 24 jam terakhir.    │
+│                                                                              │
+│     ⚠️ DAFTAR TOPIK YANG SUDAH DIBAHAS SEBELUMNYA:                           │
+│     - {'tanggal': '2026-07-14', 'ringkasan': "Berita Geopolitik & Ekonomi    │
+│ Global: AS Menjadi 'Penjaga Selat Hormuz', 3 Lembaga Dunia Ramal Pertumbuhan │
+│ Ekonomi RI 5,4%. Berita Update Olahraga Global: Pesta Bola HGI 2026 Hadirkan │
+│ Luís Figo, Barcelona Juara LaLiga 2026. Berita Teknologi Terbaru: Teknologi  │
+│ pendidikan, Tren Teknologi Inovatif Terbaru"}                                │
+│                                                                              │
+│     TUGASMU:                                                                 │
+│     Cari 3 topik utama: Geopolitik/Ekonomi Global, Update Olahraga Global,   │
+│ dan Fakta Teknologi/AI terbaru.                                              │
+│     JANGAN bahas topik atau berita yang persis sama dengan DAFTAR TOPIK YANG │
+│ SUDAH DIBAHAS di atas. Cari berita atau sudut pandang yang benar-benar baru. │
+│                                                                              │
+│     ATURAN:                                                                  │
+│     - Tulis ringkas, maksimal 3000 karakter.                                 │
+│     - Sertakan URL asli valid.                                               │
+│     - Gunakan bahasa Indonesia santai.                                       │
+│                                                                              │
+╰─ FallbackModel - llama-3.3-70b-versatile ────────────────────────────────────╯
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔄 Mencoba provider AI: Groq...
+✅ Berhasil pakai provider: Groq
+ ─ Executing parsed code: ───────────────────────────────────────────────────── 
+  berita_geopolitik = web_search(query="berita geopolitik terbaru 24 jam")      
+  berita_olahraga = web_search(query="berita olahraga terbaru 24 jam")          
+  berita_teknologi = web_search(query="berita teknologi terbaru 24 jam")        
+  print("Berita Geopolitik:", berita_geopolitik)                                
+  print("Berita Olahraga:", berita_olahraga)                                    
+  print("Berita Teknologi:", berita_teknologi)                                  
+ ────────────────────────────────────────────────────────────────────────────── 
+Execution logs:
+Berita Geopolitik: - Berita Internasional Mancanegara Terkini dan Terbaru Hari 
+Ini ...
+  17 hours ago · Berita Internasional Mancanegara Dunia terkini dan terlengkap 
+hari ini, menyajikan info berita Internasional Mancanegara terupdate seputar 
+Asia Pasifik, Eropa, Amerika Serikat, Timur Tengah, dan Afrika
+  URL: https://international.sindonews.com/
+
+- Berita Politik Terkini dan Terbaru Hari Ini - SINDOnews
+  17 hours ago · Berita Politik terkini dan terlengkap hari ini, menyajikan info
+berita Politik, Partai, Lembaga Masyarakat, Pejabat, Pemerintahan, DPR, MPR 
+terupdate - Prabowo Panggil Luhut hingga Chatib Basri di Hambalang, Bahas Apa?.
+  URL: https://nasional.sindonews.com/politik
+
+- Berita Dunia, Isu Global & Hubungan Antarabangsa | Free ...
+  17 hours ago · Berita antarabangsa terkini, isu global, konflik dunia, dan 
+perkembangan geopolitik dari Free Malaysia Today dalam Bahasa Malaysia.
+  URL: https://www.freemalaysiatoday.com/category/category/bahasa/dunia
+
+- 8 Warga Palestina Tewas dalam 24 Jam, Korban Jiwa di Gaza ...
+  17 hours ago · Ntvnews.id, Gaza - Delapan warga Palestina dilaporkan meninggal
+dunia akibat serangan Israel di Jalur Gaza dalam kurun waktu 24 jam terakhir. 
+Berdasarkan data terbaru, jumlah korban jiwa akibat serangan Israel sejak 
+Oktober 2023 kini mencapai 73.231 orang.
+  URL: 
+https://www.ntvnews.id/news/01110108/8-warga-palestina-tewas-dalam-24-jam-korban
+-jiwa-di-gaza-tembus-73231-orang
+
+- TVRI News - Portal Berita Terpercaya Indonesia
+  17 hours ago · Portal berita resmi TVRI. Menyajikan berita terkini, akurat, 
+dan berimbang dari seluruh Indonesia.
+  URL: https://www.tvrinews.com/
+
+- detikNews - Berita hari ini di Indonesia dan Internasional
+  Info berita terbaru hari ini baik peristiwa, kecelakaan, kriminal, hukum, 
+berita unik, Politik, dan liputan khusus di Indonesia dan Internasional
+  URL: https://news.detik.com/
+
+- Rupiah melemah dipicu peningkatan tensi geopolitik di Timteng - ANTARA News
+  2 days ago - “Rupiah diperkirakan melemah terhadap dolar AS di tengah kembali 
+meningkatnya tensi geopolitik di Timteng yang menyebabkan lonjakan pada harga 
+minyak mentah dunia,” ungkap dia kepada ANTARA di Jakarta, Senin.
+  URL: 
+https://www.antaranews.com/berita/5646840/rupiah-melemah-dipicu-peningkatan-tens
+i-geopolitik-di-timteng
+
+- Harga Minyak Naik Tajam, Konflik Hormuz Jadi Pemicu – Economix
+  9 hours ago - Situasi juga berkembang di daratan Iran. Komando Pusat Amerika 
+Serikat (CENTCOM) menyatakan masih melanjutkan operasi serangan terhadap Iran 
+untuk malam ketiga berturut-turut. Di sisi lain, kantor berita semi-resmi Iran, 
+YJC, melaporkan adanya ...
+  URL: 
+https://www.economix.id/harga-minyak-naik-tajam-konflik-hormuz-jadi-pemicu/
+
+
+Berita Olahraga: - Atletico Madrid Ditawari Servis Defender terpinggirkan 
+Manchester United | Liga Olahraga
+  8 hours ago - Pemain yang didatangkan dengan harga £57 juta ini sekarang 
+mungkin mengincar perpanjangan kontrak dengan Setan Merah, dan itu bisa menjadi 
+alasan di balik rumor mengejutkan yang menghubungkannya dengan Atletico dalam 24
+jam terakhir.
+  URL: 
+https://www.ligaolahraga.com/bola/atletico-madrid-ditawari-servis-defender-manch
+ester-united
+
+- MU Terancam Kehilangan Bek, Lisandro Martinez Ditawarkan ke Atletico | Liga 
+Olahraga
+  8 hours ago - Pemain yang didatangkan dengan harga £57 juta itu kini mungkin 
+mengincar perpanjangan kontrak dengan Setan Merah, dan itu bisa jadi alasan di 
+balik rumor mengejutkan yang menghubungkannya dengan Atletico dalam 24 jam 
+terakhir.
+  URL: 
+https://www.ligaolahraga.com/bola/mu-terancam-kehilangan-bek-lisandro-martinez-d
+itawarkan-ke-atletico
+
+- Berita Bola Terkini, Jadwal Klasemen Liga - Kompas.com
+  Berita Bola Terkini Hari Ini, Jadwal Klasemen, Skor, Pemain Sepak Bola Liga 
+Indonesia, Inggris, Italia, Spanyol, Champions, UEFA Europa dan Liga 
+Internasional
+  URL: https://bola.kompas.com/
+
+- CNN Indonesia | Berita Terbaru, Terkini Indonesia, Dunia
+  BERITA TERBARU · Olahraga Pelatih Inggris: Rice Diserang Penyakit Misterius 
+dan Terbaring 3 Hari · Internasional Cara Pelatih Timnas Mesir Bela Palestina 
+Bikin Israel Sewot · Olahraga Sorloth Beber Alasan Tak Oper Haaland hingga 
+Ancaman ...
+  URL: https://www.cnnindonesia.com/
+
+- Buru Bintang Celtic, Tottenham Ingin mendatangkan Gelandang Ketiga | Liga 
+Olahraga
+  8 hours ago - Berita Transfer: Tottenham dikabarkan siap mendatangkan 
+gelandang ketiga di bursa musim panas ini dengan terjun dalam perburuan servis 
+pemain 22 tahun milik Celtic, Arne Engels yang juga diminati oleh sejumlah klub 
+papan atas Eropa.
+  URL: 
+https://www.ligaolahraga.com/bola/buru-bintang-celtic-tottenham-ingin-datangkan-
+gelandang-ketiga
+
+- Berita Bola Terkini, Jadwal Klasemen, Skor Liga - Bola.com
+  Pelatih Timnas Spanyol Jelaskan Penyebab Pedri Belum Bersinar di Piala Dunia 
+20261 jam yang lalu
+  URL: https://www.bola.com/
+
+- PSG Sudah Kantongi Kesepakatan dengan Lucas Digne | Liga Olahraga
+  12 hours ago - Berita Transfer: Paris Saint-Germain dikabarkan telah mencapai 
+kesepakatan lisan dengan bek kiri Aston Villa, Lucas Digne.
+  URL: 
+https://www.ligaolahraga.com/bola/psg-sudah-kantongi-kesepakatan-dengan-lucas-di
+gne
+
+- Tak Betah di Manchester City, Omar Marmoush Mulai Didekati Tottenham | Liga 
+Olahraga
+  10 hours ago - Berita Transfer: Tottenham Hotspur dikabarkan mulai menjalin 
+kontak dalam upaya mereka mendatangkan penyerang Manchester City , Omar 
+Marmoush, di musim panas tahun ini.
+  URL: 
+https://www.ligaolahraga.com/bola/tak-betah-di-manchester-city-omar-marmoush-mul
+ai-didekati-tottenham
+
+
+Berita Teknologi: - Telset.id: Berita Teknologi Hari Ini, Review Gadget & Harga 
+...
+  17 hours ago · Berita teknologi hari ini di Indonesia: review gadget jujur, 
+update harga HP, berita telko, tips digital, dan database spesifikasi smartphone
+terlengkap di Telset.id.
+  URL: https://telset.id/
+
+- Berita Teknologi IT Terbaru Hari Ini - Kompas.com
+  17 hours ago · Berita Teknologi Hari Ini, Kabar Berita Terkini Dunia IT 
+Meliputi Gadget Terbaru, Games, Apps, Smartphone, Review Produk, Internet, 
+Software dan Hardware
+  URL: https://tekno.kompas.com/
+
+- TVRI News - Portal Berita Terpercaya Indonesia
+  17 hours ago · Portal berita resmi TVRI. Menyajikan berita terkini, akurat, 
+dan berimbang dari seluruh Indonesia — nasional, internasional, politik, 
+ekonomi, olahraga, hiburan, dan teknologi.
+  URL: https://www.tvrinews.com/
+
+- Berita Internasional Mancanegara Terkini dan Terbaru Hari Ini ...
+  17 hours ago · Berita Internasional Mancanegara Dunia terkini dan terlengkap 
+hari ini, menyajikan info berita Internasional Mancanegara terupdate seputar 
+Asia Pasifik, Eropa, Amerika Serikat, Timur Tengah, dan Afrika
+  URL: https://international.sindonews.com/
+
+- FTNews | Akurat Menyajikan Informasi, Berita Terkini, Kabar ...
+  17 hours ago · FTNews - Berita terkini hari ini, nasional, hukum, politik, 
+daerah, metropolitan, lifestyle, kesehatan
+  URL: https://ftnews.co.id/
+
+- Kumpulan Kategori Berita News Teknologi - Medcom.id
+  17 hours ago · Berita News Teknologi Medcom.id, menyajikan berita terkini 
+seputar News Teknologi
+  URL: https://www.medcom.id/teknologi/news-teknologi/
+
+- Berita Teknologi, Sains, Ilmu Pengetahuan | VOA Indonesia - VOA Indonesia | 
+Berita AS, Dunia, Indonesia, Diaspora Indonesia di AS
+  4 hours ago - Sampah plastik menyumbang 10 hingga 12 persen dari seluruh 
+limbah padat di Kenya, menurut Program Lingkungan PBB. Sebuah perusahaan 
+teknologi Kenya mendaur ulang limbah plastik itu untuk mencetak model 3-dimensi 
+yang membantu pendidikan mahasiswa ...
+  URL: https://www.voaindonesia.com/z/409
+
+- CNN Indonesia | Berita Terbaru, Terkini Indonesia, Dunia
+  CNNIndonesia.com menyajikan berita Terbaru, Terkini Indonesia seputar 
+nasional, politik, ekonomi, internasional, olahraga, teknologi, hiburan, gaya 
+hidup.
+  URL: https://www.cnnindonesia.com/
+
+
+
+Out: None
+[Step 1: Duration 8.67 seconds| Input tokens: 2,443 | Output tokens: 620]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Step 2 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔄 Mencoba provider AI: Groq...
+✅ Berhasil pakai provider: Groq
+ ─ Executing parsed code: ───────────────────────────────────────────────────── 
+  final_answer("Berita Geopolitik/Ekonomi Global: 8 Warga Palestina Tewas       
+  dalam 24 Jam, Korban Jiwa di Gaza Tembus 73.231 Orang                         
+  (https://www.ntvnews.id/news/01110108/8-warga-palestina-tewas-dalam-24-jam-k  
+  orban-jiwa-di-gaza-tembus-73231-orang), Rupiah melemah dipicu peningkatan     
+  tensi geopolitik di Timteng                                                   
+  (https://www.antaranews.com/berita/5646840/rupiah-melemah-dipicu-peningkatan  
+  -tensi-geopolitik-di-timteng). Berita Olahraga Global: Atletico Madrid        
+  Ditawari Servis Defender terpinggirkan Manchester United                      
+  (https://www.ligaolahraga.com/bola/atletico-madrid-ditawari-servis-defender-  
+  manchester-united), PSG Sudah Kantongi Kesepakatan dengan Lucas Digne         
+  (https://www.ligaolahraga.com/bola/psg-sudah-kantongi-kesepakatan-dengan-luc  
+  as-digne). Berita Teknologi/AI: Telset.id: Berita Teknologi Hari Ini, Review  
+  Gadget & Harga (https://telset.id/), Berita Teknologi IT Terbaru Hari Ini -   
+  Kompas.com (https://tekno.kompas.com/)")                                      
+ ────────────────────────────────────────────────────────────────────────────── 
+Final answer: Berita Geopolitik/Ekonomi Global: 8 Warga Palestina Tewas dalam 24
+Jam, Korban Jiwa di Gaza Tembus 73.231 Orang 
+(https://www.ntvnews.id/news/01110108/8-warga-palestina-tewas-dalam-24-jam-korba
+n-jiwa-di-gaza-tembus-73231-orang), Rupiah melemah dipicu peningkatan tensi 
+geopolitik di Timteng 
+(https://www.antaranews.com/berita/5646840/rupiah-melemah-dipicu-peningkatan-ten
+si-geopolitik-di-timteng). Berita Olahraga Global: Atletico Madrid Ditawari 
+Servis Defender terpinggirkan Manchester United 
+(https://www.ligaolahraga.com/bola/atletico-madrid-ditawari-servis-defender-manc
+hester-united), PSG Sudah Kantongi Kesepakatan dengan Lucas Digne 
+(https://www.ligaolahraga.com/bola/psg-sudah-kantongi-kesepakatan-dengan-lucas-d
+igne). Berita Teknologi/AI: Telset.id: Berita Teknologi Hari Ini, Review Gadget 
+& Harga (https://telset.id/), Berita Teknologi IT Terbaru Hari Ini - Kompas.com 
+(https://tekno.kompas.com/)
+[Step 2: Duration 2.05 seconds| Input tokens: 7,683 | Output tokens: 1,361]
+Mengirim laporan ke Telegram...
+✅ Berhasil dikirim (Format Markdown)!
+
+✅ Agen selesai dieksekusi 1x. Menunggu trigger GitHub Actions berikutnya (cron/manual)...
