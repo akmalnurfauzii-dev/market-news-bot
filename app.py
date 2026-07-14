@@ -368,8 +368,12 @@ def jalankan_analisa_harian():
     - Pastikan URL yang kamu kunjungi TIDAK memiliki spasi (contoh salah: 'bbc. com/sport', contoh benar: 'bbc.com/sport').
     - Ekstrak DATA VALID, ANGKA SPESIFIK, dan FAKTA NYATA dari dalam artikel. Jangan berikan kesimpulan kosong tanpa data penjelas!
     - Jika 2 pencarian berturut-turut tidak menemukan hasil relevan, JANGAN cari terus, langsung lanjut menulis laporan dengan data yang sudah ada.
-    - Tulis laporan akhir secara RINGKAS dan PADAT, maksimal sekitar 3000 karakter total. Fokus ke poin-poin penting, bukan narasi bertele-tele.
-    - Wajib sertakan URL sumber referensi asli yang valid di setiap akhir bahasan agar user bisa memverifikasinya.
+    - Tulis laporan akhir secara MENDALAM dan RINCI per topik — sertakan ANGKA SPESIFIK, PERSENTASE, NILAI NOMINAL,
+      dan konteks/latar belakang yang jelas untuk tiap poin (bukan cuma kesimpulan umum tanpa data pendukung).
+      Panjang laporan TIDAK dibatasi; laporan panjang akan otomatis dipecah jadi beberapa pesan Telegram, jadi jangan
+      memotong analisis demi keringkasan.
+    - Wajib sertakan URL sumber referensi asli yang valid di SETIAP poin/topik (bukan cuma sekali di akhir), agar user
+      bisa memverifikasi tiap klaim ke sumber aslinya masing-masing.
     - Gunakan bahasa Indonesia santai (campur sedikit bahasa Inggris gaul layaknya teman diskusi yang sangat pintar).
     """
 
