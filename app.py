@@ -51,10 +51,36 @@ def load_history():
         return []
     try:
         with open(HISTORY_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+            data = json.load(f)
     except Exception as e:
         log.warning(f"Gagal baca {HISTORY_FILE}: {e}")
         return []
+
+    if not isinstance(data, list):
+        log.warning(
+            f"{HISTORY_FILE} isinya bukan list (tipe: {type(data).__name__}). "
+            f"Mengabaikan history lama dan mulai dari kosong."
+        )
+        return []
+
+    # Saring entri yang formatnya nggak sesuai skema {"tanggal": ..., "ringkasan": ...}
+    # supaya history.json lama/rusak/beda-format nggak bikin crash, cukup di-skip.
+    valid_entries = []
+    for i, entry in enumerate(data):
+        if (
+            isinstance(entry, dict)
+            and "tanggal" in entry
+            and "ringkasan" in entry
+            and isinstance(entry["ringkasan"], str)
+        ):
+            valid_entries.append(entry)
+        else:
+            log.warning(
+                f"Entri history #{i} formatnya tidak sesuai (dapat: {type(entry).__name__} "
+                f"= {str(entry)[:100]!r}), entri ini di-skip."
+            )
+
+    return valid_entries
 
 
 def simpan_history(laporan_baru):
@@ -73,7 +99,7 @@ def simpan_history(laporan_baru):
 
 
 def ringkasan_history_untuk_prompt():
-    history = load_history()
+    history = load_history()  # sudah dijamin cuma berisi entri dict yang valid
     if not history:
         return "(belum ada histori laporan sebelumnya)"
     bagian = []
