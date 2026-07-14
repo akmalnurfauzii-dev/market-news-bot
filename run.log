@@ -309,3 +309,17 @@ Mengirim laporan ke Telegram...
 ✅ Berhasil dikirim (Format Markdown)!
 
 ✅ Agen selesai dieksekusi 1x. Menunggu trigger GitHub Actions berikutnya (cron/manual)...
+2026-07-14 18:26:05,345 [INFO] ==================================================
+2026-07-14 18:26:05,345 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-14 18:26:05,345 [INFO] ==================================================
+2026-07-14 18:26:05,345 [ERROR] Error fatal yang tidak tertangani: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 383, in <module>
+    jalankan_analisa_harian()
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 322, in jalankan_analisa_harian
+    histori_sebelumnya = ringkasan_history_untuk_prompt()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 81, in ringkasan_history_untuk_prompt
+    bagian.append(f"- [{h['tanggal']}] {h['ringkasan'][:300]}...")
+                        ~^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
