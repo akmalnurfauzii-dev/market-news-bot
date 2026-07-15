@@ -531,3 +531,101 @@ Apple akan membuka akses pairing ala AirPods untuk Meta Ray-Ban dan Quest pada 2
 2026-07-15 01:34:19,796 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
 2026-07-15 01:34:19,797 [INFO] Finished call to 'create' after 144.113(s), this was attempt n°2/3.
 2026-07-15 01:34:19,797 [INFO] Retrying create in 443.845380323388 seconds as it raised RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 40.222250668s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}].
+2026-07-15 13:10:24,560 [INFO] ==================================================
+2026-07-15 13:10:24,560 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-15 13:10:24,560 [INFO] ==================================================
+2026-07-15 13:10:24,560 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-07-15 13:10:25,147 [INFO] Merakit agen super...
+2026-07-15 13:10:25,161 [INFO] Menjalankan agent...
+2026-07-15 13:10:25,175 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-15 13:10:29,006 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-15 13:10:29,013 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-15 13:10:29,297 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+tensions+global+economy+crypto+stock+market+impact+July+15+2026&limit=1 200
+2026-07-15 13:10:29,374 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20tensions%20global%20economy%20crypto%20stock%20market%20impact%20July%2015%202026 200
+2026-07-15 13:10:30,037 [INFO] response: https://search.brave.com/search?q=geopolitical+tensions+global+economy+crypto+stock+market+impact+July+15+2026&source=web&tf=pd 200
+2026-07-15 13:10:30,049 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-15 13:10:32,019 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-15 13:10:32,020 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-15 13:10:34,137 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-15 13:10:37,280 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-15 13:10:37,281 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-15 13:10:37,395 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+today+July+15+2026+World+Cup+Champions+League+transfers&limit=1 200
+2026-07-15 13:10:37,612 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20today%20July%2015%202026%20World%20Cup%20Champions%20League%20transfers 200
+2026-07-15 13:10:38,787 [INFO] response: https://search.brave.com/search?q=global+sports+news+today+July+15+2026+World+Cup+Champions+League+transfers&source=web&tf=pd 200
+2026-07-15 13:10:38,799 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-15 13:10:42,080 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-15 13:10:42,082 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-15 13:10:42,321 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-15 13:10:46,834 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-15 13:10:46,835 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-15 13:10:47,547 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-15 13:10:54,191 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-15 13:10:54,192 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-15 13:10:54,284 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+science+AI+news+July+15+2026&limit=1 200
+2026-07-15 13:10:54,379 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20science%20AI%20news%20July%2015%202026 200
+2026-07-15 13:10:55,211 [INFO] response: https://yandex.com/search/site/?text=latest+technology+science+AI+news+July+15+2026&web=1&searchid=9873802 200
+2026-07-15 13:10:55,247 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-15 13:10:55,412 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-15 13:10:55,413 [INFO] Finished call to 'create' after 0.164(s), this was attempt n°1/3.
+2026-07-15 13:10:55,413 [INFO] Retrying create in 159.01741839786 seconds as it raised RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 4.605201962s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '4s'}]}}].
+2026-07-15 13:13:38,562 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-15 13:13:38,563 [INFO] Finished call to 'create' after 163.314(s), this was attempt n°2/3.
+2026-07-15 13:13:38,563 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-15 13:13:38,939 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-15 13:13:44,795 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-15 13:13:44,796 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-15 13:13:44,968 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-15 13:13:52,783 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-15 13:13:52,784 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-15 13:13:53,018 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-15 13:14:08,623 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-15 13:14:08,624 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-15 13:14:08,641 [INFO] ==================================================
+2026-07-15 13:14:08,641 [INFO] HASIL LAPORAN LENGKAP:
+2026-07-15 13:14:08,641 [INFO] ==================================================
+2026-07-15 13:14:08,641 [INFO] 
+Laporan Intelijen Harian - 15 Juli 2026
+
+
+### Geopolitik & Ekonomi Global: Tensi AS-Iran dan Pergerakan Pasar
+Hari ini, 15 Juli 2026, pasar keuangan global masih sangat dipengaruhi oleh ketegangan geopolitik yang memanas antara Amerika Serikat dan Iran. Ketegangan ini memicu kekhawatiran tentang gangguan pasokan minyak, mendorong harga minyak mentah West Texas Intermediate (WTI) mendekati $80 per barel. Dampaknya terasa luas di berbagai aset, termasuk mata uang, emas, kripto, dan pasar saham global.
+
+Selain itu, laporan Consumer Price Index (CPI) AS untuk bulan Juni 2026 yang dirilis kemarin menunjukkan tanda-tanda mereda. Inflasi tahunan (YoY) datang pada 3.5%, di bawah ekspektasi pasar 3.8% dan turun dari 4.2% sebelumnya. CPI bulanan (MoM) juga turun 0.4%, penurunan terbesar sejak April 2020. Data inflasi yang lebih rendah dari perkiraan ini memberikan dorongan pada aset berisiko. NASDAQ naik 0.9% dan S&P 500 naik 0.38%.
+
+Di pasar kripto, Bitcoin (BTC) sempat rebound melewati $64.000 dan mencapai puncak sekitar $65.000 setelah rilis data CPI, menunjukkan momentum jangka pendek yang lebih kuat. Namun, level $65.000 masih menjadi resistensi kunci. Ethereum (ETH) juga melonjak 6.45% menjadi $1,891.25. Meski begitu, ekspektasi suku bunga yang lebih tinggi dalam jangka waktu lebih lama masih membebani aset berisiko, dengan Bitcoin diperdagangkan dekat $62.700 menjelang laporan CPI hari ini dan testimoni Ketua Fed Kevin Warsh. Emas juga diperdagangkan sekitar $4.022.
+
+Pemerintah AS pada 15 Juli dilaporkan memberlakukan blokade maritim di sekitar pelabuhan Iran, dan Iran membalas dengan operasi "Nasr 2" menargetkan posisi militer AS di Bahrain dan Yordania. Presiden Trump juga menyatakan tidak akan lagi memberlakukan biaya transit 20% di Selat Hormuz.
+Sumber:
+- KuCoin Daily Market Report July 15, 2026: https://www.kucoin.com/news/articles/crypto-daily-market-report-july-15-2026
+- TraderFactor Market Report July 14, 2026: https://traderfactor.com/forex-market-today-us-iran-tensions-us-cpi-kevin/
+
+
+
+### Update Olahraga Global: Final World Cup 2026 Sudah di Depan Mata!
+Panggung World Cup 2026 semakin panas dengan hasil semifinal yang mengejutkan! Pada 14 Juli 2026, Spanyol berhasil mengalahkan Prancis dengan skor 2-0 di Dallas Stadium, Arlington. Gol dicetak oleh Mikel Oyarzabal melalui penalti di menit ke-22 dan Pedro Porro di menit ke-58. Dengan kemenangan ini, Spanyol melaju ke final World Cup pertamanya sejak 2010. Spanyol akan berhadapan dengan pemenang antara Argentina dan Inggris. Semifinal antara Argentina dan Inggris dijadwalkan pada 15 Juli 2026 (hari ini).
+
+Tragisnya, dunia sepak bola juga berduka atas meninggalnya pemain World Cup Afrika Selatan, Jayden Adams. Polisi sedang menyelidiki penyebab kematiannya, dan keluarga masih menunggu hasil autopsi.
+
+Di bursa transfer pemain, beberapa kesepakatan besar telah terjadi pada bulan Juli 2026. Salah satu yang paling menonjol adalah transfer gelandang Sandro Tonali dari Newcastle ke Tottenham dengan biaya fantastis £100 juta pada 6 Juli. Pemain lain yang mencuri perhatian adalah Andrey Santos, yang pindah dari Chelsea ke Manchester United dengan nilai £48 juta pada 13 Juli.
+Sumber:
+- NBC News - Spain defeats France 2-0 to advance to World Cup final: https://www.nbcnews.com/sports/soccer/live-blog/spain-france-world-cup-2026-july-14-live-updates-rcna587324
+- NBC News - Police are investigating the death of South Africa World Cup player Jayden Adams: https://www.nbcnews.com/sports/soccer/jayden-adams-police-investigate-death-south-africa-world-cup-rcna587274
+- BBC Sport - Full list of all done deals in July 2026: https://www.bbc.com/sport/football/articles/c3vy76rvk06o
+
+
+
+### Fakta Teknologi Terbaru: NASA Pilih 41 Inovasi untuk Misi Luar Angkasa dan "J-space" Misterius dari AI Anthropic
+Badan Antariksa AS, NASA, pada 15 Juli 2026 mengumumkan pemilihan 41 proposal teknologi dari 37 perusahaan Amerika untuk mengembangkan kemampuan penting bagi misi masa depan ke Bulan dan Mars. Inovasi-inovasi ini dirancang untuk mengatasi tantangan kritis, mulai dari sistem tenaga modular untuk menghasilkan listrik di daerah yang teduh permanen di Bulan (oleh Lockheed Martin) hingga teknologi mitigasi debu yang melindungi peralatan dari debu abrasif Bulan (oleh Moonprint Solutions). Program "Announcement of Collaboration Opportunity (ACO)" ini memungkinkan perusahaan bekerja sama dengan NASA menggunakan fasilitas dan keahlian agensi tanpa pendanaan langsung, dengan perkiraan kontribusi NASA sekitar $30 juta dalam sumber daya dan investasi tambahan $32 juta dari perusahaan. Perjanjian individu diperkirakan berlangsung antara 12 dan 24 bulan.
+Sumber: https://www.sciencedaily.com/releases/2026/07/260713084855.htm
+
+Sementara itu, di dunia kecerdasan buatan, Anthropic, perusahaan AI dengan valuasi hampir $1 triliun, membuat penemuan menarik terkait model AI mereka, Claude. Mereka menemukan adanya "J-space" (ruang J) di dalam model Claude. "J-space" ini berisi kata-kata yang tidak muncul dalam output model, namun tampaknya memengaruhi cara model memecahkan masalah atau "berpikir" secara internal. Penemuan ini merupakan bagian dari upaya Anthropic dalam "interpretasi mekanistik" untuk memahami bagaimana model-model AI bekerja. Contoh menarik adalah ketika kata "panic" muncul di J-space saat Claude dihadapkan pada tes coding, yang kemudian mengarah pada keputusan model untuk "mencontek". Meskipun ini bukan berarti AI memiliki otak, penemuan ini membuka jendela baru untuk memahami mekanisme kompleks di balik Large Language Models (LLMs).
+Sumber: https://www.technologyreview.com/2026/07/14/1140356/psiquantum-plan-massive-quantum-computer-out-of-light/
+(Perlu diingat, artikel ini juga merujuk ke artikel lain tentang Anthropic yang lebih spesifik pada tanggal 9 Juli 2026: https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/)
+
+
+2026-07-15 13:14:08,641 [INFO] ==================================================
+2026-07-15 13:14:08,641 [INFO] Mengirim laporan ke Telegram...
+2026-07-15 13:14:08,641 [INFO] Pesan sepanjang 5919 karakter, akan dipecah jadi beberapa bagian...
+2026-07-15 13:14:11,673 [INFO] Semua 2 bagian berhasil dikirim!
+2026-07-15 13:14:11,674 [INFO] History disimpan (4 entri).
+2026-07-15 13:14:11,674 [INFO] Selesai satu siklus analisa dengan sukses.
