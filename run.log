@@ -1211,3 +1211,100 @@ Sumber: [AI News Today July 17 2026: 20 Biggest Stories](https://www.buildfastwi
 2026-07-18 08:38:06,563 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
 2026-07-18 08:38:06,563 [INFO] Finished call to 'create' after 236.642(s), this was attempt n°2/3.
 2026-07-18 08:38:06,563 [INFO] Retrying create in 759.9673370416633 seconds as it raised APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 22835, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}.
+2026-07-18 12:50:07,474 [INFO] ==================================================
+2026-07-18 12:50:07,474 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-18 12:50:07,474 [INFO] ==================================================
+2026-07-18 12:50:07,474 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-07-18 12:50:08,173 [INFO] Merakit agen super...
+2026-07-18 12:50:08,188 [INFO] Menjalankan agent...
+2026-07-18 12:50:08,211 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 12:50:13,249 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 12:50:13,258 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 12:50:13,553 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economy+stock+crypto+news+July+18+2026&limit=1 200
+2026-07-18 12:50:13,582 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economy%20stock%20crypto%20news%20July%2018%202026 200
+2026-07-18 12:50:13,722 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-18 12:50:14,902 [INFO] response: https://yandex.com/search/site/?text=global+economy+stock+crypto+news+July+18+2026&web=1&searchid=8792851 200
+2026-07-18 12:50:14,944 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 12:50:18,790 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 12:50:18,793 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 12:50:18,914 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 12:50:20,565 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 12:50:20,566 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 12:50:21,213 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 12:50:23,824 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 12:50:23,826 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 12:50:24,141 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 12:50:27,967 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 12:50:27,968 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 12:50:28,148 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20today%20July%2018%202026%20World%20Cup%20Champions%20League%20transfer 200
+2026-07-18 12:50:28,179 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+today+July+18+2026+World+Cup+Champions+League+transfer&limit=1 502
+2026-07-18 12:50:28,684 [INFO] response: https://www.mojeek.com/search?q=global+sports+news+today+July+18+2026+World+Cup+Champions+League+transfer 403
+2026-07-18 12:50:29,782 [INFO] response: https://search.brave.com/search?q=global+sports+news+today+July+18+2026+World+Cup+Champions+League+transfer&source=web&tf=pd 200
+2026-07-18 12:50:29,794 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 12:50:32,929 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 12:50:32,931 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 12:50:33,038 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 12:50:33,256 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-18 12:50:33,257 [INFO] Finished call to 'create' after 0.218(s), this was attempt n°1/3.
+2026-07-18 12:50:33,257 [INFO] Retrying create in 138.37357461447968 seconds as it raised RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 26.767248138s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '26s'}]}}].
+2026-07-18 12:52:54,486 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 12:52:54,487 [INFO] Finished call to 'create' after 141.449(s), this was attempt n°2/3.
+2026-07-18 12:52:54,487 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 12:52:54,617 [INFO] response: https://grokipedia.com/api/typeahead?query=Spain+vs+France+2026+World+Cup+semi-final+score&limit=1 502
+2026-07-18 12:52:54,669 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Spain%20vs%20France%202026%20World%20Cup%20semi-final%20score 200
+2026-07-18 12:52:55,174 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=0df714300cdfc363ecd5e0e6bcdc2454&bds_t=1784379174Tbe0db2acbe3e95d9eacace5641c85f66960f0af72ae9698e3ce102756028abbf&bds_s=ce16439238b54f04a23f3efa051be720&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=665xzJlchulLQHxZvQ2M4e7fnI7FOgloHpcXiKnaeGWTuGeM44z5FMWCELkTbpPGKtmP2GSyfJSIIqJm5&cmd=gen_page 200
+2026-07-18 12:52:55,331 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=0df714300cdfc363ecd5e0e6bcdc2454&bds_t=1784379175T778369cd3e3dfa58caebf97432a9ca0dd20afc12f08476540988569770f7514b&bds_s=475c39d446784630a2817ca0b0b7af97&bds_cq=&t=device&with_date=d&abe=0&qadf=moderate&abp=1&segment=organic&language=english&qsr=en_US&sc=&lui=english&abd=0&query=Spain+vs+France+2026+World+Cup+semi-final+score&cat=web&cmd=gen_page 200
+2026-07-18 12:52:55,454 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-18 12:52:55,983 [INFO] response: https://www.mojeek.com/search?q=Spain+vs+France+2026+World+Cup+semi-final+score 403
+2026-07-18 12:52:56,750 [INFO] response: https://search.brave.com/search?q=Spain+vs+France+2026+World+Cup+semi-final+score&source=web&tf=pd 200
+2026-07-18 12:52:56,762 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 12:52:56,980 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-18 12:52:56,981 [INFO] Finished call to 'create' after 0.218(s), this was attempt n°1/3.
+2026-07-18 12:52:56,981 [INFO] Retrying create in 152.3354797524345 seconds as it raised RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 3.041998515s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '3s'}]}}].
+2026-07-18 12:55:41,075 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 12:55:41,076 [INFO] Finished call to 'create' after 164.313(s), this was attempt n°2/3.
+2026-07-18 12:55:41,076 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 12:55:41,095 [INFO] ==================================================
+2026-07-18 12:55:41,095 [INFO] HASIL LAPORAN LENGKAP:
+2026-07-18 12:55:41,095 [INFO] ==================================================
+2026-07-18 12:55:41,095 [INFO] 
+Laporan Intelijen Harian - 18 Juli 2026
+
+### Geopolitik & Ekonomi Global: Bitcoin Bergerak Menguat di Tengah Sentimen AI dan Inflow ETF
+Hari ini, 18 Juli 2026, pasar kripto menunjukkan pergerakan positif dengan Bitcoin (BTC) berhasil rebound mendekati level $64,000, setelah sempat mengalami koreksi pada hari Jumat. Pada saat penulisan, BTC diperdagangkan di sekitar $63,957, dengan pergerakan harian antara $62,489 dan $64,332. Pemulihan ini didorong oleh kembalinya permintaan investor, terlihat dari lonjakan inflow di Bitcoin ETF.
+
+Dalam dua minggu terakhir, Bitcoin ETF mencatat total inflow bersih sebesar $264.4 juta. Data dari SoSoValue (https://sosovalue.com/assets/etf/us-btc-spot) menunjukkan bahwa Fidelity’s FBTC memimpin dengan sekitar $166 juta inflow, disusul oleh ARKB dengan $91.8 juta. BlackRock’s IBIT juga menunjukkan kekuatan dengan kontribusi $138.9 juta dalam satu sesi, menjadikan total inflow harian mencapai $181.1 juta. Inflow yang tersebar di berbagai fund ini menandakan minat yang luas dari investor institusional, bukan hanya pergerakan taktis dari satu pemain besar.
+
+Di sisi lain, pasar keuangan global, termasuk kripto, juga terpengaruh oleh perkembangan di sektor kecerdasan buatan (AI). Koreksi harga Bitcoin dan saham teknologi pada Jumat lalu terjadi setelah rilis model AI baru, Kimi K3, dari Moonshot AI yang berbasis di Beijing. Model open-weight ini dilaporkan mengalahkan Claude Fable 5 dari Anthropic dan GPT-5.6 dari OpenAI dalam benchmark frontend coding yang diakui. Kimi K3 mencetak 1,679 poin, mengungguli Claude Fable 5 (1,631) dan GPT-5.6 (1,618). Model ini memiliki 2.8 triliun parameter dan menggunakan setup mixture-of-experts. Rilis penuh bobot model ini dijadwalkan pada 27 Juli. Perkembangan AI ini memicu kekhawatiran tentang valuasi saham teknologi dan juga berdampak pada Bitcoin yang memiliki korelasi dengan saham semikonduktor.
+
+Sumber:
+- Bitcoin News July 18: BTC Recovers Toward $64K as ETF Inflows Return, CoinGabbar, 18 Juli 2026 (https://www.coingabbar.com/en/crypto-currency-news/bitcoin-news-btc-recovers-64000-etf-inflows-return)
+- Data dari SoSoValue (https://sosovalue.com/assets/etf/us-btc-spot)
+
+
+### Update Olahraga Global: Spanyol Melaju ke Final Piala Dunia 2026 Usai Kalahkan Prancis 2-0
+Piala Dunia FIFA 2026 semakin memanas dengan Spanyol berhasil mengamankan tempat di babak final setelah mengalahkan rival kuat mereka, Prancis, dengan skor 2-0 dalam pertandingan semi-final yang digelar pada 14 Juli 2026. Gol-gol kemenangan Spanyol dicetak oleh Mikel Oyarzabal dan Pedro Porro.
+
+Kemenangan ini melanjutkan dominasi Spanyol atas Prancis dalam pertemuan penting di turnamen besar. Spanyol telah menunjukkan performa gemilang sepanjang turnamen, dan keberhasilan ini membawa mereka selangkah lebih dekat untuk mengangkat trofi Piala Dunia. Para penggemar sepak bola kini menantikan pertandingan final yang akan mempertemukan Spanyol dengan pemenang semi-final lainnya.
+
+Sumber:
+- France 0-2 Spain (Jul 14, 2026) Final Score - ESPN, 18 Juli 2026 (https://www.espn.com/soccer/match/_/gameId/760514/spain-france)
+- France 0-2 Spain: World Cup 2026 semi-final – as it happened | World Cup 2026 | The Guardian, 14 Juli 2026 (https://www.theguardian.com/football/live/2026/jul/14/france-v-spain-world-cup-2026-semi-final-live)
+
+
+### Fakta Teknologi Terbaru: Model AI Kimi K3 dari Moonshot AI Kalahkan Claude Fable 5 dan GPT-5.6
+Dalam dunia kecerdasan buatan, sebuah perkembangan signifikan muncul dengan rilisnya model AI baru bernama Kimi K3 dari perusahaan Moonshot AI yang berbasis di Beijing. Model open-weight ini mengejutkan komunitas AI dengan mengungguli pesaing besar seperti Claude Fable 5 dari Anthropic dan GPT-5.6 dari OpenAI dalam sebuah benchmark frontend coding yang terkenal.
+
+Kimi K3 berhasil mencetak 1,679 poin di papan peringkat, melampaui Claude Fable 5 yang mencetak 1,631 poin dan GPT-5.6 dengan 1,618 poin. Ini merupakan lonjakan impresif bagi Moonshot AI, mengingat model mereka sebelumnya hanya menempati peringkat ke-18. Model Kimi K3 ini dibangun dengan 2.8 triliun parameter dan mengimplementasikan setup mixture-of-experts, yang memungkinkannya mengaktifkan sebagian sistemnya untuk setiap tugas. Pengembang dapat menantikan rilis penuh bobot model ini pada 27 Juli 2026. Keberhasilan Kimi K3 ini diperkirakan akan memengaruhi valuasi saham teknologi dan mendorong inovasi lebih lanjut dalam pengembangan AI.
+
+Sumber:
+- Bitcoin News July 18: BTC Recovers Toward $64K as ETF Inflows Return, CoinGabbar, 18 Juli 2026 (https://www.coingabbar.com/en/crypto-currency-news/bitcoin-news-btc-recovers-64000-etf-inflows-return)
+
+
+2026-07-18 12:55:41,095 [INFO] ==================================================
+2026-07-18 12:55:41,095 [INFO] Mengirim laporan ke Telegram...
+2026-07-18 12:55:41,095 [INFO] Pesan sepanjang 4629 karakter, akan dipecah jadi beberapa bagian...
+2026-07-18 12:55:41,607 [WARNING] Gagal kirim (parse_mode=Markdown, status=400): {"ok":false,"error_code":400,"description":"Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 3085"}
+2026-07-18 12:55:44,988 [INFO] Semua 2 bagian berhasil dikirim!
+2026-07-18 12:55:44,989 [INFO] History disimpan (5 entri).
+2026-07-18 12:55:44,989 [INFO] Selesai satu siklus analisa dengan sukses.
