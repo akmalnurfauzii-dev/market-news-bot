@@ -1100,3 +1100,53 @@ Sumber: [AI News Today July 17 2026: 20 Biggest Stories](https://www.buildfastwi
 2026-07-17 13:06:40,603 [INFO] Semua 3 bagian berhasil dikirim!
 2026-07-17 13:06:40,604 [INFO] History disimpan (5 entri).
 2026-07-17 13:06:40,604 [INFO] Selesai satu siklus analisa dengan sukses.
+2026-07-18 01:24:35,383 [INFO] ==================================================
+2026-07-18 01:24:35,383 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-18 01:24:35,384 [INFO] ==================================================
+2026-07-18 01:24:35,384 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-07-18 01:24:36,100 [INFO] Merakit agen super...
+2026-07-18 01:24:36,116 [INFO] Menjalankan agent...
+2026-07-18 01:24:36,133 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 01:24:42,118 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 01:24:42,128 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 01:24:42,397 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitical+tensions+market+impact+crypto+stocks+July+17+2026&limit=1 502
+2026-07-18 01:24:42,459 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitical%20tensions%20market%20impact%20crypto%20stocks%20July%2017%202026 200
+2026-07-18 01:24:43,022 [INFO] response: https://search.brave.com/search?q=global+geopolitical+tensions+market+impact+crypto+stocks+July+17+2026&source=web&tf=pd 200
+2026-07-18 01:24:43,035 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 01:24:46,114 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 01:24:46,116 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 01:24:47,596 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 01:24:49,944 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 01:24:49,945 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 01:24:50,079 [INFO] response: https://grokipedia.com/api/typeahead?query=global+football+news+World+Cup+Champions+League+transfer+news+July+17+2026&limit=1 502
+2026-07-18 01:24:50,115 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20football%20news%20World%20Cup%20Champions%20League%20transfer%20news%20July%2017%202026 200
+2026-07-18 01:24:50,258 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-18 01:24:51,627 [INFO] response: https://yandex.com/search/site/?text=global+football+news+World+Cup+Champions+League+transfer+news+July+17+2026&web=1&searchid=9572238 200
+2026-07-18 01:24:51,675 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 01:24:54,895 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 01:24:54,896 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 01:24:55,393 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 01:24:55,583 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-18 01:24:55,583 [INFO] Finished call to 'create' after 0.190(s), this was attempt n°1/3.
+2026-07-18 01:24:55,584 [INFO] Retrying create in 185.25626677255252 seconds as it raised RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 4.439624862s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '4s'}]}}].
+2026-07-18 01:28:05,000 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 01:28:05,001 [INFO] Finished call to 'create' after 189.607(s), this was attempt n°2/3.
+2026-07-18 01:28:05,001 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 01:28:05,003 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 01:28:05,217 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-18 01:28:05,218 [INFO] Finished call to 'create' after 0.215(s), this was attempt n°1/3.
+2026-07-18 01:28:05,218 [INFO] Retrying create in 238.05233883235005 seconds as it raised RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 54.804725077s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54s'}]}}].
+2026-07-18 01:32:07,141 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 01:32:07,143 [INFO] Finished call to 'create' after 242.140(s), this was attempt n°2/3.
+2026-07-18 01:32:07,143 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 01:32:07,314 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20science%20technology%20breakthroughs%20July%2017%202026 200
+2026-07-18 01:32:07,406 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+science+technology+breakthroughs+July+17+2026&limit=1 502
+2026-07-18 01:32:07,483 [INFO] response: https://www.google.com/search?q=latest+AI+science+technology+breakthroughs+July+17+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-18 01:32:08,411 [INFO] response: https://yandex.com/search/site/?text=latest+AI+science+technology+breakthroughs+July+17+2026&web=1&searchid=6510072 200
+2026-07-18 01:32:08,462 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 01:32:08,670 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-18 01:32:08,674 [INFO] Finished call to 'create' after 0.211(s), this was attempt n°1/3.
+2026-07-18 01:32:08,674 [INFO] Retrying create in 123.59428510829163 seconds as it raised RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 51.35416805s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '51s'}]}}].
+2026-07-18 01:34:12,510 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-18 01:34:12,511 [INFO] Finished call to 'create' after 124.048(s), this was attempt n°2/3.
+2026-07-18 01:34:12,511 [INFO] Retrying create in 494.3525031575234 seconds as it raised RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 47.512095311s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}].
