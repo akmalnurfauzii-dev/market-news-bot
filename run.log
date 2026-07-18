@@ -1150,3 +1150,64 @@ Sumber: [AI News Today July 17 2026: 20 Biggest Stories](https://www.buildfastwi
 2026-07-18 01:34:12,510 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
 2026-07-18 01:34:12,511 [INFO] Finished call to 'create' after 124.048(s), this was attempt n°2/3.
 2026-07-18 01:34:12,511 [INFO] Retrying create in 494.3525031575234 seconds as it raised RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 47.512095311s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}].
+2026-07-18 08:30:29,618 [INFO] ==================================================
+2026-07-18 08:30:29,618 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-18 08:30:29,618 [INFO] ==================================================
+2026-07-18 08:30:29,618 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-07-18 08:30:30,292 [INFO] Merakit agen super...
+2026-07-18 08:30:30,307 [INFO] Menjalankan agent...
+2026-07-18 08:30:30,323 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 08:30:34,914 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 08:30:34,923 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 08:30:35,218 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+tensions+global+economy+impact+crypto+stocks&limit=1 200
+2026-07-18 08:30:35,231 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20tensions%20global%20economy%20impact%20crypto%20stocks 200
+2026-07-18 08:30:35,757 [INFO] response: https://search.brave.com/search?q=geopolitical+tensions+global+economy+impact+crypto+stocks&source=web&tf=pd 200
+2026-07-18 08:30:35,769 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 08:30:38,564 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 08:30:38,565 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 08:30:38,567 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 08:30:56,237 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 08:30:56,238 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 08:30:56,240 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 08:31:00,392 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 08:31:00,393 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 08:31:00,939 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 08:31:07,257 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 08:31:07,258 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 08:31:07,393 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=tech%20stock%20selloff%20geopolitical%20tensions%20global%20markets 200
+2026-07-18 08:31:07,402 [INFO] response: https://grokipedia.com/api/typeahead?query=tech+stock+selloff+geopolitical+tensions+global+markets&limit=1 200
+2026-07-18 08:31:07,443 [INFO] response: https://www.google.com/search?q=tech+stock+selloff+geopolitical+tensions+global+markets&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-18 08:31:07,863 [INFO] response: https://www.mojeek.com/search?q=tech+stock+selloff+geopolitical+tensions+global+markets 403
+2026-07-18 08:31:08,721 [INFO] response: https://yandex.com/search/site/?text=tech+stock+selloff+geopolitical+tensions+global+markets&web=1&searchid=8969963 200
+2026-07-18 08:31:08,746 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 08:31:12,387 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 08:31:12,388 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 08:31:12,390 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 08:31:12,518 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-18 08:31:12,519 [INFO] Finished call to 'create' after 0.128(s), this was attempt n°1/3.
+2026-07-18 08:31:12,519 [INFO] Retrying create in 155.7083183104844 seconds as it raised RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 47.498013846s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}].
+2026-07-18 08:33:52,154 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 08:33:52,156 [INFO] Finished call to 'create' after 159.765(s), this was attempt n°2/3.
+2026-07-18 08:33:52,156 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 08:33:52,157 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 08:33:55,191 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 08:33:55,192 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 08:33:55,194 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 08:33:58,473 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 08:33:58,474 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 08:34:00,261 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 08:34:04,835 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 08:34:04,836 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 08:34:04,837 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 08:34:09,034 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-18 08:34:09,035 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-18 08:34:09,036 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-18 08:34:09,919 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-07-18 08:34:09,920 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-07-18 08:34:09,920 [INFO] Mencoba provider AI: Groq (Llama 3.3 70B)...
+2026-07-18 08:34:10,286 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-07-18 08:34:10,287 [INFO] Finished call to 'create' after 0.366(s), this was attempt n°1/3.
+2026-07-18 08:34:10,287 [INFO] Retrying create in 236.10186629026833 seconds as it raised APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 22835, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}.
+2026-07-18 08:38:06,563 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-07-18 08:38:06,563 [INFO] Finished call to 'create' after 236.642(s), this was attempt n°2/3.
+2026-07-18 08:38:06,563 [INFO] Retrying create in 759.9673370416633 seconds as it raised APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 22835, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}.
