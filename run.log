@@ -1334,3 +1334,106 @@ Sumber:
 2026-07-19 01:47:53,970 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
 2026-07-19 01:47:53,971 [INFO] Finished call to 'create' after 212.765(s), this was attempt n°2/3.
 2026-07-19 01:47:53,971 [INFO] Retrying create in 583.9777992581367 seconds as it raised RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 6.047969178s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}].
+2026-07-19 12:52:53,597 [INFO] ==================================================
+2026-07-19 12:52:53,597 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-19 12:52:53,597 [INFO] ==================================================
+2026-07-19 12:52:53,597 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-07-19 12:52:54,327 [INFO] Merakit agen super...
+2026-07-19 12:52:54,344 [INFO] Menjalankan agent...
+2026-07-19 12:52:54,361 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-19 12:52:57,810 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-19 12:52:57,820 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-19 12:52:58,087 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+economic+news+crypto+stock+market+impact+July+19+2026&limit=1 200
+2026-07-19 12:52:58,173 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20economic%20news%20crypto%20stock%20market%20impact%20July%2019%202026 200
+2026-07-19 12:52:59,037 [INFO] response: https://yandex.com/search/site/?text=geopolitical+economic+news+crypto+stock+market+impact+July+19+2026&web=1&searchid=1934728 200
+2026-07-19 12:52:59,066 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-19 12:53:00,689 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-19 12:53:00,691 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-19 12:53:00,778 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-19 12:53:02,106 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-19 12:53:02,108 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-19 12:53:02,719 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-19 12:53:06,848 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-19 12:53:06,850 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-19 12:53:07,263 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-19 12:53:11,217 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-19 12:53:11,219 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-19 12:53:11,348 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+today+July+19+2026+World+Cup+Champions+League+transfers&limit=1 200
+2026-07-19 12:53:11,378 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20today%20July%2019%202026%20World%20Cup%20Champions%20League%20transfers 200
+2026-07-19 12:53:11,726 [INFO] response: https://www.mojeek.com/search?q=global+sports+news+today+July+19+2026+World+Cup+Champions+League+transfers 403
+2026-07-19 12:53:12,521 [INFO] response: https://yandex.com/search/site/?text=global+sports+news+today+July+19+2026+World+Cup+Champions+League+transfers&web=1&searchid=8695494 200
+2026-07-19 12:53:12,562 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-19 12:53:15,393 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-19 12:53:15,394 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-19 12:53:15,605 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-19 12:53:15,741 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-19 12:53:15,743 [INFO] Finished call to 'create' after 0.137(s), this was attempt n°1/3.
+2026-07-19 12:53:15,743 [INFO] Retrying create in 199.38398603218866 seconds as it raised RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 44.274697476s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '44s'}]}}].
+2026-07-19 12:56:40,002 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-19 12:56:40,003 [INFO] Finished call to 'create' after 204.398(s), this was attempt n°2/3.
+2026-07-19 12:56:40,004 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-19 12:56:40,113 [INFO] response: https://grokipedia.com/api/typeahead?query=Bitcoin%E2%80%99s+quantum+problem+gets+a+recovery+tool%2C+but+not+for+Satoshi%E2%80%99s+1.1+million+coins&limit=1 200
+2026-07-19 12:56:40,302 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Bitcoin%E2%80%99s%20quantum%20problem%20gets%20a%20recovery%20tool%2C%20but%20not%20for%20Satoshi%E2%80%99s%201.1%20million%20coins 200
+2026-07-19 12:56:40,570 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=bedbea022a0ad64454bf30dcd8dbfd52&bds_t=1784465800Taf48500769069bafe4793ef4aa4f93963d2a63d7a8902a723d70b372f583766d&bds_s=75379977f02b4029b3fa18800ea4dbde&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=pb8SDxdwDJbfAcEL4GDM7eSMGNV76Ipfswyo9naHu1PuY159GnfKdUIKImeNmZH9XtrxDTpWQO2oidRGNf&cmd=gen_page 200
+2026-07-19 12:56:40,933 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=bedbea022a0ad64454bf30dcd8dbfd52&bds_t=1784465800Taf48500769069bafe4793ef4aa4f93963d2a63d7a8902a723d70b372f583766d&bds_s=d4a2fe0673c3467cbc23604141f69a61&bds_cq=&qsr=en_US&language=english&sc=&segment=organic&abd=0&abe=0&abp=1&lui=english&t=device&with_date=d&qadf=moderate&query=Bitcoin%E2%80%99s+quantum+problem+gets+a+recovery+tool%2C+but+not+for+Satoshi%E2%80%99s+1.1+million+coins&cat=web&cmd=gen_page 200
+2026-07-19 12:56:41,248 [INFO] response: https://www.mojeek.com/search?q=Bitcoin%E2%80%99s+quantum+problem+gets+a+recovery+tool%2C+but+not+for+Satoshi%E2%80%99s+1.1+million+coins 403
+2026-07-19 12:56:41,379 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-19 12:56:41,940 [INFO] response: https://search.brave.com/search?q=Bitcoin%E2%80%99s+quantum+problem+gets+a+recovery+tool%2C+but+not+for+Satoshi%E2%80%99s+1.1+million+coins&source=web&tf=pd 200
+2026-07-19 12:56:41,952 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-19 12:56:44,989 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-19 12:56:44,991 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-19 12:56:45,345 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-19 12:56:58,602 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-19 12:56:58,604 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-19 12:56:58,625 [INFO] ==================================================
+2026-07-19 12:56:58,625 [INFO] HASIL LAPORAN LENGKAP:
+2026-07-19 12:56:58,625 [INFO] ==================================================
+2026-07-19 12:56:58,625 [INFO] 
+Laporan Intelijen Harian - 19 Juli 2026
+
+Berikut adalah ringkasan perkembangan terbaru di bidang geopolitik, ekonomi global, olahraga, dan teknologi pada hari ini, 19 Juli 2026.
+
+---
+
+### Geopolitik & Ekonomi Global: Sentimen Kripto Positif di Tengah Tensi Timur Tengah dan Target Bitcoin $72.000
+
+Hari ini, 19 Juli 2026, pasar kripto menunjukkan dinamika menarik di tengah ketidakpastian geopolitik. Para trader besar Bitcoin tengah agresif mengambil posisi bullish, dengan membeli **$2.5 miliar** dalam notional call spreads di Deribit. Target mereka adalah Bitcoin (BTC) mencapai level **$72.000** pada akhir Juli. Waktu ini sangat krusial karena bertepatan dengan keputusan suku bunga Federal Reserve pada **29 Juli**, di mana pasar sebagian besar memprediksi The Fed akan menahan suku bunga.
+
+Sentimen positif ini muncul setelah data inflasi bulan Juni menunjukkan perlambatan tajam pada tekanan harga konsumen dan produsen, sebagian berkat gencatan senjata antara Amerika Serikat dan Iran yang sempat menurunkan harga minyak. Namun, ketegangan di Timur Tengah kembali memanas minggu ini dengan adanya serangan baru yang mengganggu aliran minyak melalui Selat Hormuz, menyebabkan harga minyak mentah WTI dan Brent melonjak signifikan—kenaikan terbesar sejak Maret. Meskipun ada "geopolitical noise" ini, banyak trader institusional tetap optimis terhadap kenaikan harga Bitcoin, mengindikasikan ketahanan aset digital ini terhadap gejolak tradisional.
+(Sumber: https://www.coindesk.com/markets/2026/07/18/massive-bitcoin-call-spreads-target-usd72-000-by-month-end-right-when-the-fed-meets)
+
+Di sisi lain, Presiden AS Donald Trump dilaporkan menargetkan sistem pembayaran di Brasil, sementara stablecoin berbasis dolar secara diam-diam semakin mendominasi pembayaran di negara tersebut. Washington melihat promosi kanal pembayaran non-dolar oleh Brasil, termasuk Pix dan pertumbuhan stablecoin, sebagai potensi ancaman bagi perdagangan berbasis dolar. Ironisnya, stablecoin yang terikat dolar sendiri menyumbang sekitar **90%** dari transaksi kripto Brasil, menunjukkan kompleksitas dalam lanskap keuangan global yang terus berubah. Ini adalah indikasi lain bagaimana geopolitik dan kebijakan moneter saling terkait dengan adopsi aset digital.
+(Sumber: https://www.coindesk.com/business/2026/07/18/trump-targets-brazil-s-payments-system-while-dollar-stablecoins-quietly-dominate-country-s-payments - informasi ini ditemukan di halaman depan CoinDesk dan merujuk artikel tersebut dari tanggal 18 Juli 2026)
+
+---
+
+### Update Olahraga Global: Final Piala Dunia FIFA 2026 Antara Spanyol vs Argentina di New Jersey!
+
+Sorotan utama dunia olahraga hari ini, Minggu, 19 Juli 2026, adalah **Final Piala Dunia FIFA 2026** yang mempertemukan dua raksasa sepak bola: **Spanyol** melawan **Argentina**. Pertandingan akbar ini akan digelar di **MetLife Stadium** di East Rutherford, New Jersey, Amerika Serikat (yang untuk sementara berganti nama menjadi New York-New Jersey Stadium selama Piala Dunia). Stadion megah ini memiliki kapasitas hingga **82.500** penonton.
+
+Kick-off dijadwalkan pada pukul **15:00 waktu setempat** di East Rutherford, New Jersey, atau pukul **19:00 GMT**. Laga ini akan menjadi panggung pertemuan antara bintang veteran Lionel Messi dari Argentina dan wonderkid Spanyol, Lamine Yamal, yang baru saja berusia 19 tahun. Presiden AS Donald Trump dipastikan akan hadir dan diharapkan akan menyerahkan trofi kepada tim pemenang.
+
+Yang lebih menarik, untuk pertama kalinya dalam sejarah Piala Dunia, final kali ini akan menampilkan **halftime show** berskala Super Bowl. Sederet bintang global seperti **Madonna, Justin Bieber, Shakira, BTS, Burna Boy, Gustavo Dudamel, dan PS22 Chorus featuring Coldplay** dijadwalkan tampil. Pertunjukan ini diperkirakan berlangsung selama sekitar **11 menit**, dengan jeda halftime yang mungkin diperpanjang hingga **30 menit**.
+
+Menurut superkomputer Opta, Spanyol memiliki probabilitas kemenangan sebesar **45.1%** dalam waktu normal, sedangkan Argentina memiliki peluang **29.4%**. Ada kemungkinan **25.4%** pertandingan akan berlanjut ke perpanjangan waktu atau adu penalti.
+(Sumber: https://www.aljazeera.com/sports/2026/7/16/fifa-world-cup-final-2026-date-time-and-venue-trump-prediction)
+
+---
+
+### Teknologi, Sains, & AI Terbaru: Bitcoin Hadapi 'Masalah Kuantum' dengan Solusi Lama dan Baru
+
+Di dunia teknologi, khususnya ranah kripto, perhatian kembali tertuju pada ketahanan Bitcoin terhadap ancaman komputasi kuantum. Seolah visioner, **Satoshi Nakamoto** pada **16 Juli 2010** sudah pernah membahas dan membela fungsi hashing SHA-256 yang digunakan Bitcoin. Ia menegaskan bahwa kekuatan SHA-256 sebanding dengan lompatan dari komputasi 32-bit ke 64-bit, dan bahkan menyediakan "exit plan" jika fungsi tersebut suatu saat melemah, yaitu melalui soft fork ke fungsi hash baru.
+
+Saat ini, fungsi hash SHA-256 yang mengamankan proses mining dan riwayat transaksi Bitcoin masih dianggap aman dari serangan klasik maupun kuantum yang diketahui. Namun, ancaman sebenarnya dari komputasi kuantum datang dari **Shor’s algorithm**, yang menargetkan *signature* kriptografi, bukan *hash*. Algoritma ini berpotensi mengekstraksi *private key* dari *public key* yang terekspos. Diperkirakan ada sekitar **7 juta Bitcoin** (setara **35%** dari total suplai) yang tersimpan di alamat dengan *public key* terekspos, dan ini akan rentan jika teknologi kuantum yang memadai sudah ada.
+
+Penelitian terbaru dari **Google Quantum AI** pada tahun **2026** menunjukkan bahwa jumlah *qubit* fisik yang dibutuhkan untuk memecahkan kurva eliptik Bitcoin telah berkurang menjadi sekitar **500.000 qubit**. Sebagai perbandingan, mesin kuantum saat ini beroperasi pada kisaran **1.000 hingga 1.500 qubit**. Para peneliti memprediksi ancaman kuantum yang berfungsi penuh bisa terwujud antara tahun **2029 hingga 2035**, tergantung pada kemajuan koreksi kesalahan.
+
+Menanggapi potensi ancaman ini, pengembang Bitcoin sudah mulai mengimplementasikan solusi yang mirip dengan "exit plan" Satoshi. Pada tahun **2026**, proposal **BIP-360** telah diperkenalkan dan digabungkan, menghadirkan format alamat baru (`bc1z`) yang dirancang dengan skema *signature* tahan kuantum. Ada pula proposal pelengkap, **BIP-361**, yang membahas bagaimana jaringan secara bertahap dapat menghentikan penggunaan jenis alamat lama yang terekspos, meskipun proposal ini masih lebih kontroversial. Ini menunjukkan bahwa komunitas Bitcoin serius dalam mempersiapkan diri menghadapi era komputasi kuantum.
+(Sumber: https://news.bitcoin.com/satoshi-nakamoto-predicted-bitcoins-hash-defense-16-years-before-quantum-fears/)
+
+2026-07-19 12:56:58,625 [INFO] ==================================================
+2026-07-19 12:56:58,625 [INFO] Mengirim laporan ke Telegram...
+2026-07-19 12:56:58,625 [INFO] Pesan sepanjang 6625 karakter, akan dipecah jadi beberapa bagian...
+2026-07-19 12:57:01,702 [INFO] Semua 2 bagian berhasil dikirim!
+2026-07-19 12:57:01,704 [INFO] History disimpan (5 entri).
+2026-07-19 12:57:01,704 [INFO] Selesai satu siklus analisa dengan sukses.
