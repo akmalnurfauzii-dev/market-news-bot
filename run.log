@@ -1522,3 +1522,103 @@ smolagents.utils.AgentGenerationError: Error in generating model output:
 Semua provider AI gagal dicoba! Error terakhir: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: meta-llama/llama-3.3-70b-instruct', 'code': 404}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
 2026-07-20 02:10:33,341 [INFO] Mengirim laporan ke Telegram...
 2026-07-20 02:10:33,830 [INFO] Berhasil dikirim (Format Markdown)!
+2026-07-20 13:46:54,629 [INFO] ==================================================
+2026-07-20 13:46:54,629 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-20 13:46:54,629 [INFO] ==================================================
+2026-07-20 13:46:54,630 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-07-20 13:46:55,354 [INFO] Merakit agen super...
+2026-07-20 13:46:55,371 [INFO] Menjalankan agent...
+2026-07-20 13:46:55,388 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-20 13:47:02,187 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-20 13:47:02,196 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-20 13:47:02,531 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economic%20outlook%20July%2020%202026%20crypto%20market%20impact 200
+2026-07-20 13:47:02,543 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economic+outlook+July+20+2026+crypto+market+impact&limit=1 200
+2026-07-20 13:47:03,484 [INFO] response: https://yandex.com/search/site/?text=global+economic+outlook+July+20+2026+crypto+market+impact&web=1&searchid=4967436 200
+2026-07-20 13:47:03,514 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-20 13:47:05,816 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-20 13:47:05,818 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-20 13:47:06,048 [INFO] response: https://grokipedia.com/api/typeahead?query=crypto+market+news+July+19+2026+OR+July+20+2026+OR+global+geopolitical+news+July+19+2026+OR+July+20+2026&limit=1 200
+2026-07-20 13:47:06,263 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=crypto%20market%20news%20July%2019%202026%20OR%20July%2020%202026%20OR%20global%20geopolitical%20news%20July%2019%202026%20OR%20July%2020%202026 200
+2026-07-20 13:47:06,957 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-07-20 13:47:06,963 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-20 13:47:09,270 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-20 13:47:09,272 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-20 13:47:10,483 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-20 13:47:13,730 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-20 13:47:13,731 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-20 13:47:13,943 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-20 13:47:17,651 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-20 13:47:17,652 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-20 13:47:18,511 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-20 13:47:25,238 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-20 13:47:25,239 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-20 13:47:25,381 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+July+19+2026+OR+July+20+2026+World+Cup+Liga+Champions+transfers&limit=1 200
+2026-07-20 13:47:25,459 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20July%2019%202026%20OR%20July%2020%202026%20World%20Cup%20Liga%20Champions%20transfers 200
+2026-07-20 13:47:26,117 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-07-20 13:47:26,125 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-20 13:47:30,257 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-20 13:47:30,259 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-20 13:47:30,902 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-20 13:47:31,042 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-20 13:47:31,043 [INFO] Finished call to 'create' after 0.140(s), this was attempt n°1/3.
+2026-07-20 13:47:31,043 [INFO] Retrying create in 230.03883441044363 seconds as it raised RateLimitError: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 28.966191336s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '28s'}]}}].
+2026-07-20 13:51:25,984 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-20 13:51:25,985 [INFO] Finished call to 'create' after 235.082(s), this was attempt n°2/3.
+2026-07-20 13:51:25,985 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-20 13:51:26,116 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+science+technology+news+July+19+2026+OR+July+20+2026&limit=1 200
+2026-07-20 13:51:26,254 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20science%20technology%20news%20July%2019%202026%20OR%20July%2020%202026 200
+2026-07-20 13:51:26,394 [INFO] response: https://search.yahoo.com/search;_ylt=VR5QEREgEopo4Aj4UeOXGlf5;_ylu=v1Ili0mBdvF2bOnFKS2hieXlZ_SPil8GPapNCeuBKHtK3Ng?p=latest+AI+science+technology+news+July+19+2026+OR+July+20+2026&btf=d 200
+2026-07-20 13:51:27,730 [INFO] response: https://search.brave.com/search?q=latest+AI+science+technology+news+July+19+2026+OR+July+20+2026&source=web&tf=pd 200
+2026-07-20 13:51:27,743 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-20 13:51:32,234 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-20 13:51:32,235 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-20 13:51:32,819 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-20 13:51:51,371 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-20 13:51:51,372 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-20 13:51:51,388 [INFO] ==================================================
+2026-07-20 13:51:51,388 [INFO] HASIL LAPORAN LENGKAP:
+2026-07-20 13:51:51,388 [INFO] ==================================================
+2026-07-20 13:51:51,388 [INFO] 
+### Laporan Intelijen Harian - 20 Juli 2026
+
+Berikut adalah ringkasan perkembangan terbaru di bidang geopolitik, ekonomi global, olahraga, dan teknologi pada hari ini, 20 Juli 2026.
+
+---
+
+### Geopolitik & Ekonomi Global: Tensi AS-Iran Memanas, Pasar Saham India Ambles, Harga Minyak Melonjak
+
+Ketegangan di Timur Tengah antara Amerika Serikat dan Iran kembali memanas pada 20 Juli 2026. AS melancarkan serangan udara baru, dan Iran membalas dengan menembakkan rudal ke Yordania, berpotensi menyeret Israel ke dalam konflik yang lebih luas. Ini adalah hari kesembilan berturut-turut serangan AS terhadap Iran. Islamic Revolutionary Guard Corps (IRGC) Iran melaporkan dua tanker minyak meledak dan tidak bergerak setelah mencoba melewati rute selatan yang mereka sebut "tidak aman" di Selat Hormuz, menuduh militer AS mendorong penggunaan jalur tersebut. Sebelumnya, Sekretaris Negara AS Marco Rubio (19 Juli 2026) menuduh Iran menggunakan Selat Hormuz sebagai alat tawar menawar di tengah konflik West Asia yang sedang berlangsung.
+(Sumber: https://www.thehindu.com/news/international/iran-israel-war-live-updates-july-20-2026-marco-rubio-strait-of-hormuz-us-donald-trump/article71243740.ece)
+
+Dampak ke pasar saham dan harga minyak langsung terasa. Pada 20 Juli 2026, pasar saham India bereaksi negatif: indeks Nifty turun lebih dari 100 poin dan dibuka di 24,190.05, sementara Sensex anjlok lebih dari 500 poin dan dibuka di 78,151.45. Kedua indeks benchmark ini melemah 0,6% saat pembukaan. Rupee India juga ikut melemah 12 paise, dibuka pada 96.40 terhadap dolar AS. Di pasar komoditas, harga minyak Brent Crude diperdagangkan di atas 90 dolar per barel, sementara harga bensin di AS rata-rata kembali mencapai $4 per galon.
+(Sumber: https://www.timesnownews.com/business-economy/markets/stock-market-today-july-20-2026-sensex-falls-over-500-points-nifty-slips-as-middle-east-tensions-escalate-article-155135916)
+
+Kondisi geopolitik semakin kompleks dengan klaim IRGC yang menargetkan pangkalan militer AS di Kuwait (pangkalan udara Arifjan) dan Bahrain (pangkalan udara al-Sakhir serta pelabuhan Bin Salman), bahkan menghancurkan sistem radar peringatan dini AS di Kuwait. Kabar duka juga datang dari Yordania, di mana dua tentara AS, 1st Lt. Tyler James Feehan (25) dari Hawaii dan Pvt. Isabella Gonzales (19) dari Texas, tewas minggu lalu dalam perang dengan Iran. Total kematian militer AS dalam konflik ini mencapai 17 orang. Iran juga mendesak Badan Energi Atom Internasional (IAEA) untuk mengutuk serangan AS yang menargetkan pembangkit listrik tenaga nuklir Darkhovin yang sedang dibangun.
+(Sumber: https://www.thehindu.com/news/international/iran-israel-war-live-updates-july-20-2026-marco-rubio-strait-of-hormuz-us-donald-trump/article71243740.ece)
+
+---
+
+### Update Olahraga Global: Spanyol Juara Piala Dunia FIFA 2026, Ferran Torres Jadi Pahlawan!
+
+Piala Dunia FIFA ke-23 tahun 2026 telah resmi berakhir pada 19 Juli 2026, dan Spanyol berhasil meraih gelar juara dunia kedua mereka setelah mengalahkan Argentina 1-0 di final. Pertandingan sengit ini digelar di stadion New York New Jersey. Pahlawan kemenangan Spanyol adalah Ferran Torres yang mencetak gol tunggal pada menit ke-106 di babak perpanjangan waktu, sekaligus mengakhiri dominasi Argentina yang dipimpin Lionel Messi.
+(Sumber: https://sports.yahoo.com/articles/fc-barcelona-news-20-july-090000379.html)
+
+Kemenangan ini terasa makin manis bagi Barcelona, karena delapan pemainnya menjadi bagian integral dari skuad pemenang Spanyol: Joan Garcia, Eric Garcia, Pau Cubarsí, Gavi, Pedri, Dani Olmo, Ferran Torres, dan Lamine Yamal. Selain itu, bintang muda Barcelona, Pau Cubarsí, dianugerahi penghargaan FIFA Young Player of the Tournament atas performa impresifnya. Rekor lain dipecahkan oleh Lamine Yamal yang kini menjadi pemain termuda yang pernah memenangkan Kejuaraan Eropa dan Piala Dunia. Di luar lapangan, rumor transfer juga mencuat, di mana Barcelona masih berupaya mendatangkan striker Argentina Julián Álvarez dari Atlético Madrid dengan batas waktu 31 Juli untuk tawaran hingga €100 juta.
+(Sumber: https://sports.yahoo.com/articles/fc-barcelona-news-20-july-090000379.html)
+
+---
+
+### Fakta Teknologi, Sains, atau AI Terbaru Hari Ini: Terobosan Penghancuran 'Forever Chemicals' (PFAS)
+
+Pada 19 Juli 2026, dunia sains dikejutkan dengan pengumuman dua metode baru yang sangat menjanjikan untuk menghancurkan zat per- dan polifluoroalkil (PFAS), yang sering disebut sebagai "forever chemicals" karena sifatnya yang sangat persisten dan sulit terurai. PFAS adalah kelompok bahan kimia buatan manusia yang ditemukan dalam ribuan produk mulai dari peralatan masak antilengket hingga busa pemadam kebakaran, dan dapat terakumulasi di dalam air serta lingkungan.
+(Sumber: https://www.sciencedaily.com/releases/2026/07/260718010147.htm)
+
+Metode pertama yang sedang diuji memanfaatkan gelembung uap yang runtuh untuk menghasilkan panas ekstrem dan molekul reaktif yang dapat memecah struktur kimia PFAS yang kuat. Sedangkan metode kedua melibatkan penggunaan mineral tertentu yang dikombinasikan dengan cahaya UV untuk secara efektif menguraikan ikatan kimia PFAS. Terobosan ini diharapkan dapat memberikan solusi inovatif dan lebih efektif dalam mengatasi masalah kontaminasi lingkungan yang disebabkan oleh "forever chemicals" ini.
+(Sumber: https://www.sciencedaily.com/releases/2026/07/260718010147.htm)
+
+2026-07-20 13:51:51,388 [INFO] ==================================================
+2026-07-20 13:51:51,388 [INFO] Mengirim laporan ke Telegram...
+2026-07-20 13:51:51,388 [INFO] Pesan sepanjang 5384 karakter, akan dipecah jadi beberapa bagian...
+2026-07-20 13:51:54,533 [INFO] Semua 2 bagian berhasil dikirim!
+2026-07-20 13:51:54,534 [INFO] History disimpan (5 entri).
+2026-07-20 13:51:54,534 [INFO] Selesai satu siklus analisa dengan sukses.
