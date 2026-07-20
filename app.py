@@ -257,7 +257,7 @@ class RecentNewsSearchTool(Tool):
 
 # =========================================================
 # 4. Model AI dengan Sistem Cadangan Berlapis (Fallback)
-#    Urutan coba: Groq -> Google Gemini -> OpenRouter
+#    Urutan coba: Google Gemini -> Groq -> OpenRouter
 # =========================================================
 class FallbackModel:
     def __init__(self, providers):
@@ -268,13 +268,15 @@ class FallbackModel:
                     model_id=p["model_id"],
                     api_base=p["api_base"],
                     api_key=p["api_key"],
-                    # max_retries=0: matikan retry otomatis dari library openai.
-                    # Defaultnya retry 2x dengan backoff (bisa nunggu ratusan detik per percobaan)
-                    # SEBELUM error dilempar ke sini. Itu bikin fallback ke provider berikutnya jadi
-                    # lambat banget (kejadian: nunggu 10+ menit gara-gara retry internal Groq).
-                    # Dengan max_retries=0, begitu kena error (termasuk rate limit), langsung gagal
-                    # dan _try_all() di bawah bisa langsung lanjut ke provider berikutnya.
+                    # client_kwargs max_retries=0: matikan retry level HTTP client (openai SDK).
                     client_kwargs={"max_retries": 0, "timeout": 60.0},
+                    # retry=False: MATIKAN JUGA retry internal smolagents sendiri (ApiModel.retryer).
+                    # Ini lapisan TERPISAH dari client_kwargs di atas! Defaultnya smolagents retry
+                    # 3x dengan wait 60s x 2^percobaan (60s, 120s, 240s + jitter) khusus buat error
+                    # rate limit (429) -- ini yang beneran nyebabin stall 2-10 menit per provider,
+                    # bukan client_kwargs. Dengan retry=False, begitu kena 429, LANGSUNG dilempar
+                    # ke _try_all() di bawah buat pindah provider dalam hitungan detik.
+                    retry=False,
                 )
                 self.providers.append({"name": p["name"], "model": model_instance})
             except Exception as e:
@@ -312,9 +314,9 @@ def buat_agent():
     log.info("Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...")
     model = FallbackModel([
         {
-            # Diletakkan PERTAMA: dari log run sebelumnya, Gemini terbukti patuh instruksi
-            # 'wajib visit_webpage per topik' dan hasilnya jauh lebih detail (ada angka spesifik).
-            # Groq (Llama 3.3 70B) terbukti SELALU skip visit_webpage & sering kena rate limit 429.
+            # Diletakkan PERTAMA: Gemini terbukti patuh instruksi 'wajib visit_webpage per topik'
+            # dan hasilnya jauh lebih detail (ada angka spesifik). Groq (Llama 3.3 70B) terbukti
+            # SELALU skip visit_webpage & sering kena rate limit 429.
             "name": "Google Gemini 2.5 Flash",
             "model_id": "gemini-2.5-flash",
             "api_base": "https://generativelanguage.googleapis.com/v1beta/openai/",
@@ -327,10 +329,13 @@ def buat_agent():
             "api_key": GROQ_API_KEY,
         },
         {
-            "name": "OpenRouter (Llama 3.3 70B Free)",
-            "model_id": "meta-llama/llama-3.3-70b-instruct:free",
+            "name": "OpenRouter (GPT-OSS 120B Free)",
+            "model_id": "openai/gpt-oss-120b:free",
             "api_base": "https://openrouter.ai/api/v1",
             "api_key": OPENROUTER_API_KEY,
+            # CATATAN: daftar model gratis OpenRouter ROTASI tanpa pemberitahuan (model bisa
+            # ditarik dari tier gratis kapan aja). Kalau ini suatu saat error 404 lagi,
+            # cek daftar model gratis terkini di: https://openrouter.ai/models?max_price=0
         },
     ])
 
@@ -405,8 +410,6 @@ def jalankan_analisa_harian():
         log.info("Menjalankan agent...")
         hasil = agent.run(tugas)
 
-        # Catat isi laporan lengkap ke run.log (bukan cuma status kirim),
-        # biar log-nya selengkap output yang kamu lihat di PowerShell.
         log.info("=" * 50)
         log.info("HASIL LAPORAN LENGKAP:")
         log.info("=" * 50)
@@ -427,15 +430,11 @@ def jalankan_analisa_harian():
 
 # =========================================================
 # 6. Entry point — jalan SEKALI per eksekusi.
-#    Penjadwalan tiap 12 jam sekarang dihandle oleh GitHub Actions cron,
-#    bukan while True + time.sleep(43200) lagi.
+#    Penjadwalan tiap 12 jam dihandle oleh GitHub Actions cron.
 # =========================================================
 if __name__ == "__main__":
     try:
         jalankan_analisa_harian()
     except Exception as e:
-        # Pengaman terakhir: kalau ada error di luar dugaan (misal semua provider
-        # gagal SAAT buat_agent(), sebelum masuk try/except di dalam fungsi),
-        # tetap kecatat jelas di run.log alih-alih bikin job merah tanpa penjelasan.
         log.error(f"Error fatal yang tidak tertangani: {e}", exc_info=True)
         raise
