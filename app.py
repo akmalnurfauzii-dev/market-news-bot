@@ -264,6 +264,13 @@ class FallbackModel:
         self.providers = []
         for p in providers:
             try:
+                extra_kwargs = {}
+                if "extra_body" in p:
+                    # extra_body diteruskan ke openai client's create() call apa adanya.
+                    # Dipakai OpenRouter buat fitur 'models' array (multi-model auto-fallback
+                    # dalam satu request) -- lihat konfigurasi provider OpenRouter di atas.
+                    extra_kwargs["extra_body"] = p["extra_body"]
+
                 model_instance = OpenAIServerModel(
                     model_id=p["model_id"],
                     api_base=p["api_base"],
@@ -277,6 +284,7 @@ class FallbackModel:
                     # bukan client_kwargs. Dengan retry=False, begitu kena 429, LANGSUNG dilempar
                     # ke _try_all() di bawah buat pindah provider dalam hitungan detik.
                     retry=False,
+                    **extra_kwargs,
                 )
                 self.providers.append({"name": p["name"], "model": model_instance})
             except Exception as e:
@@ -329,13 +337,25 @@ def buat_agent():
             "api_key": GROQ_API_KEY,
         },
         {
-            "name": "OpenRouter (GPT-OSS 120B Free)",
+            "name": "OpenRouter (multi-model fallback)",
+            # model_id di sini cuma dipakai buat log/nama tampilan.
+            # Model SEBENARNYA yang dicoba OpenRouter ditentukan oleh daftar di 'extra_body.models'
+            # di bawah — OpenRouter otomatis coba satu-satu sampai ketemu yang masih gratis & aktif.
+            # Ini nyelesain masalah "model ditarik dari tier gratis tiba-tiba" secara STRUKTURAL,
+            # karena daftar model gratis OpenRouter terbukti rotasi cepat (2 model yang kita pakai
+            # sebelumnya, meta-llama/llama-3.3-70b-instruct:free dan openai/gpt-oss-120b:free,
+            # keduanya ke-404 dalam hitungan hari).
             "model_id": "openai/gpt-oss-120b:free",
             "api_base": "https://openrouter.ai/api/v1",
             "api_key": OPENROUTER_API_KEY,
-            # CATATAN: daftar model gratis OpenRouter ROTASI tanpa pemberitahuan (model bisa
-            # ditarik dari tier gratis kapan aja). Kalau ini suatu saat error 404 lagi,
-            # cek daftar model gratis terkini di: https://openrouter.ai/models?max_price=0
+            "extra_body": {
+                "models": [
+                    "openai/gpt-oss-120b:free",
+                    "meta-llama/llama-3.3-70b-instruct:free",
+                    "qwen/qwen3-coder:free",
+                    "nvidia/nemotron-3-ultra-550b-a55b:free",
+                ]
+            },
         },
     ])
 
