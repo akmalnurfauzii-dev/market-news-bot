@@ -1948,3 +1948,74 @@ smolagents.utils.AgentGenerationError: Error in generating model output:
 Semua provider AI gagal dicoba! Error terakhir: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
 2026-07-22 01:30:27,755 [INFO] Mengirim laporan ke Telegram...
 2026-07-22 01:30:28,324 [INFO] Berhasil dikirim (Format Markdown)!
+2026-07-22 13:09:56,266 [INFO] ==================================================
+2026-07-22 13:09:56,266 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-22 13:09:56,266 [INFO] ==================================================
+2026-07-22 13:09:56,267 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-07-22 13:09:56,807 [INFO] Merakit agen super...
+2026-07-22 13:09:56,821 [INFO] Menjalankan agent...
+2026-07-22 13:09:56,836 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-22 13:10:02,508 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:10:02,516 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-22 13:10:02,837 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20tensions%20crypto%20stock%20market%20impact%20latest 200
+2026-07-22 13:10:02,842 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+tensions+crypto+stock+market+impact+latest&limit=1 200
+2026-07-22 13:10:03,600 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-07-22 13:10:03,605 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-22 13:10:07,663 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:10:07,664 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-22 13:10:07,852 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-22 13:10:10,114 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:10:10,115 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-22 13:10:10,346 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-22 13:10:14,788 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:10:14,789 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-22 13:10:14,896 [INFO] response: https://grokipedia.com/api/typeahead?query=world+cup+football+transfer+news+22+July+2026&limit=1 200
+2026-07-22 13:10:14,986 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=world%20cup%20football%20transfer%20news%2022%20July%202026 200
+2026-07-22 13:10:15,885 [INFO] response: https://yandex.com/search/site/?text=world+cup+football+transfer+news+22+July+2026&web=1&searchid=8328417 200
+2026-07-22 13:10:15,924 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-22 13:10:19,306 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:10:19,307 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-22 13:10:20,178 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-22 13:10:24,527 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-22 13:10:24,528 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-22 13:10:24,847 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-22 13:10:24,953 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-22 13:10:24,954 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 35.057485535s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '35s'}]}}]
+2026-07-22 13:10:24,954 [INFO] Mencoba provider AI: Groq (Llama 3.3 70B)...
+2026-07-22 13:10:25,123 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-07-22 13:10:25,124 [WARNING] Provider Groq (Llama 3.3 70B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 29839, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-22 13:10:25,124 [INFO] Mencoba provider AI: OpenRouter (multi-model fallback)...
+2026-07-22 13:10:25,247 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-22 13:10:25,248 [WARNING] Provider OpenRouter (multi-model fallback) gagal: Error code: 400 - {'error': {'message': "'models' array must have 3 items or fewer.", 'code': 400}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
+2026-07-22 13:10:25,249 [ERROR] Waduh bro, semua provider AI-nya gagal saat mikir nih: Error in generating model output:
+Semua provider AI gagal dicoba! Error terakhir: Error code: 400 - {'error': {'message': "'models' array must have 3 items or fewer.", 'code': 400}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 1677, in _step_stream
+    chat_message: ChatMessage = self.model.generate(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 315, in generate
+    return self._try_all("generate", messages, stop_sequences=stop_sequences, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 312, in _try_all
+    raise Exception(f"Semua provider AI gagal dicoba! Error terakhir: {last_error}")
+Exception: Semua provider AI gagal dicoba! Error terakhir: Error code: 400 - {'error': {'message': "'models' array must have 3 items or fewer.", 'code': 400}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 431, in jalankan_analisa_harian
+    hasil = agent.run(tugas)
+            ^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 499, in run
+    steps = list(self._run_stream(task=self.task, max_steps=max_steps, images=images))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 596, in _run_stream
+    raise e
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 578, in _run_stream
+    for output in self._step_stream(action_step):
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 1700, in _step_stream
+    raise AgentGenerationError(f"Error in generating model output:\n{e}", self.logger) from e
+smolagents.utils.AgentGenerationError: Error in generating model output:
+Semua provider AI gagal dicoba! Error terakhir: Error code: 400 - {'error': {'message': "'models' array must have 3 items or fewer.", 'code': 400}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
+2026-07-22 13:10:25,250 [INFO] Mengirim laporan ke Telegram...
+2026-07-22 13:10:26,060 [INFO] Berhasil dikirim (Format Markdown)!
