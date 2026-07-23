@@ -2090,3 +2090,82 @@ smolagents.utils.AgentGenerationError: Error in generating model output:
 Semua provider AI gagal dicoba! Error terakhir: Error code: 400 - {'error': {'message': "'models' array must have 3 items or fewer.", 'code': 400}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
 2026-07-22 13:21:00,146 [INFO] Mengirim laporan ke Telegram...
 2026-07-22 13:21:01,049 [INFO] Berhasil dikirim (Format Markdown)!
+2026-07-23 01:48:52,883 [INFO] ==================================================
+2026-07-23 01:48:52,883 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-23 01:48:52,883 [INFO] ==================================================
+2026-07-23 01:48:52,884 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-07-23 01:48:53,520 [INFO] Merakit agen super...
+2026-07-23 01:48:53,535 [INFO] Menjalankan agent...
+2026-07-23 01:48:53,551 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-23 01:48:58,286 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 01:48:58,295 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-23 01:48:58,588 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+crypto+stock+market+news+last+24+hours&limit=1 502
+2026-07-23 01:48:58,606 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20crypto%20stock%20market%20news%20last%2024%20hours 200
+2026-07-23 01:48:59,081 [INFO] response: https://www.mojeek.com/search?q=geopolitics+global+economy+crypto+stock+market+news+last+24+hours 403
+2026-07-23 01:48:59,828 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-07-23 01:48:59,834 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-23 01:49:02,327 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 01:49:02,328 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-23 01:49:03,794 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-23 01:49:07,440 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 01:49:07,441 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-23 01:49:07,784 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-23 01:49:12,180 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 01:49:12,182 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-23 01:49:12,350 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+trending+today+last+24+hours+World+Cup+Champions+League+transfer+news&limit=1 200
+2026-07-23 01:49:12,402 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20trending%20today%20last%2024%20hours%20World%20Cup%20Champions%20League%20transfer%20news 200
+2026-07-23 01:49:13,672 [INFO] response: https://yandex.com/search/site/?text=global+sports+news+trending+today+last+24+hours+World+Cup+Champions+League+transfer+news&web=1&searchid=6026771 200
+2026-07-23 01:49:13,703 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-23 01:49:18,209 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 01:49:18,211 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-23 01:49:20,232 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-23 01:49:26,999 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-23 01:49:27,000 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-23 01:49:27,145 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+science+AI+news+today+last+24+hours+breakthrough+innovation&limit=1 200
+2026-07-23 01:49:27,191 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20science%20AI%20news%20today%20last%2024%20hours%20breakthrough%20innovation 200
+2026-07-23 01:49:27,600 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=3db8456d62bc004ac6f101423e73d068&bds_t=1784771367T4888aa12637f496a247dac6a2aa8e28d80455881802b48e371faf2c631a5c67d&bds_s=be51fca433aa4865a43b023c9d9c6fc1&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=pb8SDxdwDJplqc9sFED0DY695cIkufcLNcKtIREoiGdIzOZC6q5KvveLExOMClQRmukxmNv9es2vlYoP2l&cmd=gen_page 200
+2026-07-23 01:49:27,746 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=3db8456d62bc004ac6f101423e73d068&bds_t=1784771367T4888aa12637f496a247dac6a2aa8e28d80455881802b48e371faf2c631a5c67d&bds_s=c0e6921f599840f1bfb4df3f4293d5a9&bds_cq=&qsr=en_US&segment=organic&qadf=moderate&abd=0&language=english&sc=&t=device&with_date=d&abp=1&abe=0&lui=english&query=latest+technology+science+AI+news+today+last+24+hours+breakthrough+innovation&cat=web&cmd=gen_page 200
+2026-07-23 01:49:28,273 [INFO] response: https://www.mojeek.com/search?q=latest+technology+science+AI+news+today+last+24+hours+breakthrough+innovation 403
+2026-07-23 01:49:28,612 [INFO] response: https://search.yahoo.com/search;_ylt=s_SfRWcDzXSsuhnK_kw0JU7a;_ylu=IAZxTsX6xh6QSWr2WPMeMk4qWJFT8a2kqP4eeVEc5WjZkDY?p=latest+technology+science+AI+news+today+last+24+hours+breakthrough+innovation&btf=d 200
+2026-07-23 01:49:29,538 [INFO] response: https://yandex.com/search/site/?text=latest+technology+science+AI+news+today+last+24+hours+breakthrough+innovation&web=1&searchid=5949890 200
+2026-07-23 01:49:29,574 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-23 01:49:29,720 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-23 01:49:29,721 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 30.295305896s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}]
+2026-07-23 01:49:29,721 [INFO] Mencoba provider AI: Groq (Llama 3.3 70B)...
+2026-07-23 01:49:29,983 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-07-23 01:49:29,983 [WARNING] Provider Groq (Llama 3.3 70B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 35995, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-23 01:49:29,983 [INFO] Mencoba provider AI: OpenRouter (multi-model fallback)...
+2026-07-23 01:49:30,186 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-07-23 01:49:30,187 [WARNING] Provider OpenRouter (multi-model fallback) gagal: Error code: 400 - {'error': {'message': "'models' array must have 3 items or fewer.", 'code': 400}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
+2026-07-23 01:49:30,188 [ERROR] Waduh bro, semua provider AI-nya gagal saat mikir nih: Error in generating model output:
+Semua provider AI gagal dicoba! Error terakhir: Error code: 400 - {'error': {'message': "'models' array must have 3 items or fewer.", 'code': 400}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 1677, in _step_stream
+    chat_message: ChatMessage = self.model.generate(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 315, in generate
+    return self._try_all("generate", messages, stop_sequences=stop_sequences, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 312, in _try_all
+    raise Exception(f"Semua provider AI gagal dicoba! Error terakhir: {last_error}")
+Exception: Semua provider AI gagal dicoba! Error terakhir: Error code: 400 - {'error': {'message': "'models' array must have 3 items or fewer.", 'code': 400}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 431, in jalankan_analisa_harian
+    hasil = agent.run(tugas)
+            ^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 499, in run
+    steps = list(self._run_stream(task=self.task, max_steps=max_steps, images=images))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 596, in _run_stream
+    raise e
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 578, in _run_stream
+    for output in self._step_stream(action_step):
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 1700, in _step_stream
+    raise AgentGenerationError(f"Error in generating model output:\n{e}", self.logger) from e
+smolagents.utils.AgentGenerationError: Error in generating model output:
+Semua provider AI gagal dicoba! Error terakhir: Error code: 400 - {'error': {'message': "'models' array must have 3 items or fewer.", 'code': 400}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
+2026-07-23 01:49:30,189 [INFO] Mengirim laporan ke Telegram...
+2026-07-23 01:49:30,758 [INFO] Berhasil dikirim (Format Markdown)!
