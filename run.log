@@ -2327,3 +2327,74 @@ smolagents.utils.AgentGenerationError: Error in generating model output:
 Semua provider AI gagal dicoba! Error terakhir: Error code: 400 - {'error': {'message': "'models' array must have 3 items or fewer.", 'code': 400}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
 2026-07-24 01:45:03,333 [INFO] Mengirim laporan ke Telegram...
 2026-07-24 01:45:03,825 [INFO] Berhasil dikirim (Format Markdown)!
+2026-07-24 05:53:52,863 [INFO] ==================================================
+2026-07-24 05:53:52,863 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-24 05:53:52,863 [INFO] ==================================================
+2026-07-24 05:53:52,863 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-07-24 05:53:53,558 [INFO] Merakit agen super...
+2026-07-24 05:53:53,573 [INFO] Menjalankan agent...
+2026-07-24 05:53:53,590 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-24 05:53:58,141 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-24 05:53:58,150 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-24 05:53:58,542 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20crypto%20stock%20market%20news%20July%2024%202026 200
+2026-07-24 05:53:58,569 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+crypto+stock+market+news+July+24+2026&limit=1 502
+2026-07-24 05:53:59,717 [INFO] response: https://yandex.com/search/site/?text=geopolitics+global+economy+crypto+stock+market+news+July+24+2026&web=1&searchid=1632088 200
+2026-07-24 05:53:59,769 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-24 05:54:01,770 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-24 05:54:01,771 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-24 05:54:01,893 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-24 05:54:03,671 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-24 05:54:03,673 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-24 05:54:04,070 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-24 05:54:06,230 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-24 05:54:06,231 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-24 05:54:06,741 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-24 05:54:06,742 [INFO] Mencoba provider AI: Groq (Llama 3.3 70B)...
+2026-07-24 05:54:08,263 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-24 05:54:08,264 [INFO] Berhasil pakai provider: Groq (Llama 3.3 70B)
+2026-07-24 05:54:08,485 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+July+24+2026&limit=1 502
+2026-07-24 05:54:08,523 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20July%2024%202026 200
+2026-07-24 05:54:08,588 [INFO] response: https://www.google.com/search?q=global+sports+news+July+24+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-24 05:54:08,806 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=91ad033bfc7fd4821b7f924ac0dfcf73&bds_t=1784872448T603316d9b27c578e0edaffd04e8ee2164da92c33c613759e1c5d2fb4d7c08e8a&bds_s=1c433b5b12cb4473b56d4b8ae2d1aac7&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=pb8SDxdwDJXjyxjMdcqEOZ1kx3w1yoXqOGBOZ5PWYgLdc7kqyu4fcsenMyKUMZgGVL7qtk7OG9HyK96OFD&cmd=gen_page 200
+2026-07-24 05:54:08,941 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=91ad033bfc7fd4821b7f924ac0dfcf73&bds_t=1784872448T603316d9b27c578e0edaffd04e8ee2164da92c33c613759e1c5d2fb4d7c08e8a&bds_s=615f3c8e24b044a8b8e80da302f66292&bds_cq=&abd=0&with_date=d&sc=&abe=0&qadf=moderate&qsr=en_US&abp=1&lui=english&t=device&segment=organic&language=english&query=global+sports+news+July+24+2026&cat=web&cmd=gen_page 200
+2026-07-24 05:54:09,240 [INFO] response: https://search.yahoo.com/search;_ylt=cyA_1UP7KkK_7jGIwOFkVZ6b;_ylu=fjMr1o26q-lix07-0wV97m8DVr_I6_RlPF6_hC5nl8O3hA8?p=global+sports+news+July+24+2026&btf=d 200
+2026-07-24 05:54:10,482 [INFO] response: https://search.brave.com/search?q=global+sports+news+July+24+2026&source=web&tf=pd 200
+2026-07-24 05:54:10,505 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-24 05:54:10,505 [INFO] Mencoba provider AI: Groq (Llama 3.3 70B)...
+2026-07-24 05:54:10,551 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-24 05:54:10,552 [WARNING] Provider Groq (Llama 3.3 70B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 8452, Requested 9925. Please try again in 31.884999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-24 05:54:10,552 [INFO] Mencoba provider AI: OpenRouter (multi-model fallback)...
+2026-07-24 05:54:10,676 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-24 05:54:10,677 [WARNING] Provider OpenRouter (multi-model fallback) gagal: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
+2026-07-24 05:54:10,679 [ERROR] Waduh bro, semua provider AI-nya gagal saat mikir nih: Error in generating model output:
+Semua provider AI gagal dicoba! Error terakhir: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 1677, in _step_stream
+    chat_message: ChatMessage = self.model.generate(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 358, in generate
+    return self._try_all("generate", messages, stop_sequences=stop_sequences, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 355, in _try_all
+    raise Exception(f"Semua provider AI gagal dicoba! Error terakhir: {last_error}")
+Exception: Semua provider AI gagal dicoba! Error terakhir: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 486, in jalankan_analisa_harian
+    hasil = agent.run(tugas)
+            ^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 499, in run
+    steps = list(self._run_stream(task=self.task, max_steps=max_steps, images=images))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 596, in _run_stream
+    raise e
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 578, in _run_stream
+    for output in self._step_stream(action_step):
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/smolagents/agents.py", line 1700, in _step_stream
+    raise AgentGenerationError(f"Error in generating model output:\n{e}", self.logger) from e
+smolagents.utils.AgentGenerationError: Error in generating model output:
+Semua provider AI gagal dicoba! Error terakhir: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
+2026-07-24 05:54:10,680 [INFO] Mengirim laporan ke Telegram...
+2026-07-24 05:54:11,392 [INFO] Berhasil dikirim (Format Markdown)!
