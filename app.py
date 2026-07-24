@@ -286,7 +286,15 @@ class FallbackModel:
                     retry=False,
                     **extra_kwargs,
                 )
-                self.providers.append({"name": p["name"], "model": model_instance})
+                self.providers.append({
+                    "name": p["name"],
+                    "model": model_instance,
+                    # rpm_limit: batas request/menit yang KITA tetapkan sendiri secara proaktif,
+                    # bukan nunggu API-nya balikin 429 dulu baru pindah. Kosongkan/None kalau
+                    # provider itu nggak punya limit RPM ketat yang perlu dijaga.
+                    "rpm_limit": p.get("rpm_limit"),
+                    "call_timestamps": [],  # jejak waktu call sukses, buat hitung RPM berjalan
+                })
             except Exception as e:
                 log.warning(f"Gagal menyiapkan provider {p['name']}: {e}")
 
@@ -296,19 +304,54 @@ class FallbackModel:
     def __getattr__(self, attr):
         return getattr(self.providers[0]["model"], attr)
 
+    def _dalam_batas_rpm(self, entry):
+        """Cek proaktif: apakah provider ini masih dalam jatah RPM sendiri?
+        True = aman dipanggil. False = udah mepet, mending skip ke provider lain dulu."""
+        limit = entry.get("rpm_limit")
+        if not limit:
+            return True
+        now = time.time()
+        entry["call_timestamps"] = [t for t in entry["call_timestamps"] if now - t < 60]
+        return len(entry["call_timestamps"]) < limit
+
     def _try_all(self, method_name, *args, **kwargs):
         last_error = None
+        ada_yang_dicoba = False
+
         for entry in self.providers:
+            if not self._dalam_batas_rpm(entry):
+                log.info(
+                    f"Skip {entry['name']} sementara (udah pakai {entry['rpm_limit']}x "
+                    f"dalam 1 menit terakhir, proaktif hindari kena limit)..."
+                )
+                continue
+            ada_yang_dicoba = True
             try:
                 log.info(f"Mencoba provider AI: {entry['name']}...")
                 method = getattr(entry["model"], method_name)
                 result = method(*args, **kwargs)
+                entry["call_timestamps"].append(time.time())
                 log.info(f"Berhasil pakai provider: {entry['name']}")
                 return result
             except Exception as e:
                 log.warning(f"Provider {entry['name']} gagal: {e}")
                 last_error = e
                 continue
+
+        if not ada_yang_dicoba:
+            # Semua provider lagi 'jeda proaktif' -- daripada nyerah tanpa nyoba apapun,
+            # lebih baik paksa coba provider pertama sebagai upaya terakhir.
+            log.warning("Semua provider lagi dalam jeda proaktif, coba paksa provider pertama...")
+            entry = self.providers[0]
+            try:
+                method = getattr(entry["model"], method_name)
+                result = method(*args, **kwargs)
+                entry["call_timestamps"].append(time.time())
+                log.info(f"Berhasil pakai provider: {entry['name']} (paksa)")
+                return result
+            except Exception as e:
+                last_error = e
+
         raise Exception(f"Semua provider AI gagal dicoba! Error terakhir: {last_error}")
 
     def generate(self, messages, stop_sequences=None, **kwargs):
@@ -329,6 +372,12 @@ def buat_agent():
             "model_id": "gemini-2.5-flash",
             "api_base": "https://generativelanguage.googleapis.com/v1beta/openai/",
             "api_key": GOOGLE_API_KEY,
+            # rpm_limit=4: limit ASLI dari Google cuma 5 request/menit (ditemukan dari error API
+            # 22 Juli 2026: quotaValue '5', quotaId GenerateRequestsPerMinutePerProjectPerModel).
+            # Dikasih buffer jadi 4 (bukan 5 persis) buat jaga-jaga dari selisih waktu/jitter.
+            # Kalau limit ini kesundul, sistem otomatis SKIP ke Groq/OpenRouter buat step itu,
+            # tanpa nunggu 429 dulu -- baru balik pakai Gemini lagi begitu jendela 1 menitnya lewat.
+            "rpm_limit": 4,
         },
         {
             "name": "Groq (Llama 3.3 70B)",
@@ -349,18 +398,24 @@ def buat_agent():
             "api_base": "https://openrouter.ai/api/v1",
             "api_key": OPENROUTER_API_KEY,
             "extra_body": {
+                # PENTING: OpenRouter membatasi array 'models' maksimal 3 item (dikonfirmasi
+                # dari error API: "'models' array must have 3 items or fewer"). JANGAN tambah
+                # lebih dari 3, request-nya bakal ditolak 400 Bad Request.
                 "models": [
                     "openai/gpt-oss-120b:free",
                     "meta-llama/llama-3.3-70b-instruct:free",
                     "qwen/qwen3-coder:free",
-                    "nvidia/nemotron-3-ultra-550b-a55b:free",
                 ]
             },
         },
     ])
 
     search_tool = RecentNewsSearchTool()
-    visit_tool = VisitWebpageTool()
+    # max_output_length=5000 (default aslinya 40.000 karakter!). Halaman web penuh menu
+    # navigasi, footer, iklan yang ikut ke-scrape dan numpuk ke memori percakapan tanpa guna.
+    # Ini akar masalah sebenarnya kenapa konteks bisa meledak sampai 30.000-60.000+ token
+    # dalam 4-6 kali visit halaman, jauh sebelum masalah rate limit provider jadi relevan.
+    visit_tool = VisitWebpageTool(max_output_length=5000)
 
     log.info("Merakit agen super...")
     return CodeAgent(
