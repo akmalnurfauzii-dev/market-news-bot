@@ -2541,3 +2541,76 @@ smolagents.utils.AgentGenerationError: Error in generating model output:
 Semua provider AI gagal dicoba! Error terakhir: Error code: 404 - {'error': {'message': 'This model is unavailable for free. The paid version is available now - use this slug instead: openai/gpt-oss-120b', 'code': 404}, 'user_id': 'user_3Ca7LiF1CVYslNDk6MCUimpvYHD'}
 2026-07-25 01:44:52,401 [INFO] Mengirim laporan ke Telegram...
 2026-07-25 01:44:52,907 [INFO] Berhasil dikirim (Format Markdown)!
+2026-07-25 07:33:31,862 [INFO] ==================================================
+2026-07-25 07:33:31,862 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-25 07:33:31,862 [INFO] ==================================================
+2026-07-25 07:33:31,862 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-07-25 07:33:32,339 [INFO] Merakit agen super...
+2026-07-25 07:33:32,349 [INFO] Menjalankan agent...
+2026-07-25 07:33:32,361 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-25 07:33:37,587 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 07:33:37,594 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-25 07:33:37,899 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20financial%20markets%20update%20July%2025%202026 200
+2026-07-25 07:33:37,912 [INFO] response: https://grokipedia.com/api/typeahead?query=global+financial+markets+update+July+25+2026&limit=1 200
+2026-07-25 07:33:38,003 [INFO] response: https://www.google.com/search?q=global+financial+markets+update+July+25+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-25 07:33:38,233 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-25 07:33:38,772 [INFO] response: https://www.mojeek.com/search?q=global+financial+markets+update+July+25+2026 403
+2026-07-25 07:33:39,417 [INFO] response: https://search.brave.com/search?q=global+financial+markets+update+July+25+2026&source=web&tf=pd 200
+2026-07-25 07:33:39,434 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-25 07:33:42,249 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 07:33:42,250 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-25 07:33:45,255 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-25 07:33:48,947 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 07:33:48,948 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-25 07:33:49,074 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+July+25+2026&limit=1 200
+2026-07-25 07:33:49,132 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20July%2025%202026 200
+2026-07-25 07:33:49,763 [INFO] response: https://search.brave.com/search?q=global+sports+news+July+25+2026&source=web&tf=pd 200
+2026-07-25 07:33:49,776 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-25 07:33:53,400 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 07:33:53,401 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-25 07:33:56,429 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-25 07:33:56,429 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-25 07:33:56,429 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-25 07:33:58,008 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 07:33:58,739 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-25 07:33:58,741 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-25 07:33:58,741 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-25 07:33:58,741 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-25 07:33:59,389 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 07:34:09,435 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-25 07:34:09,937 [INFO] response: https://grokipedia.com/api/typeahead?query=Ryan+Fox+Open+Championship+2026+final+score&limit=1 200
+2026-07-25 07:34:09,950 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Ryan%20Fox%20Open%20Championship%202026%20final%20score 200
+2026-07-25 07:34:10,034 [INFO] response: https://www.google.com/search?q=Ryan+Fox+Open+Championship+2026+final+score&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-25 07:34:10,333 [INFO] response: https://search.yahoo.com/search;_ylt=JNn2yUOz4UPYHk691rRNSYxa;_ylu=LUYEdqVVczUHRadOPi3Dh0MhREy44IeL_-dqODPpmLXroKc?p=Ryan+Fox+Open+Championship+2026+final+score&btf=d 200
+2026-07-25 07:34:10,491 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-25 07:34:11,016 [INFO] response: https://search.brave.com/search?q=Ryan+Fox+Open+Championship+2026+final+score&source=web&tf=pd 200
+2026-07-25 07:34:11,160 [INFO] response: https://grokipedia.com/api/typeahead?query=Commonwealth+Games+2026+Day+3+Results+July+25+2026&limit=1 200
+2026-07-25 07:34:11,199 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Commonwealth%20Games%202026%20Day%203%20Results%20July%2025%202026 200
+2026-07-25 07:34:11,715 [INFO] response: https://www.mojeek.com/search?q=Commonwealth+Games+2026+Day+3+Results+July+25+2026 403
+2026-07-25 07:34:12,165 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=3e03d874affb532bd48b0d2af9c2d3a4&bds_t=1784964852Tf385edfd386bdee49d627ee5a268487986fcf42ac714eae6dc5517c69a8d4849&bds_s=c3b77183045f4e17a8120562c138d24c&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=1FY0FBf9QMdwxxvaYqm9Aosg5CAsFcQ3MSidRv9BIxu079fkDPnQBWOCAHQo17muf0ThQ2SBAOXsQaKTKLZX&cmd=gen_page 200
+2026-07-25 07:34:12,311 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=3e03d874affb532bd48b0d2af9c2d3a4&bds_t=1784964852Tf385edfd386bdee49d627ee5a268487986fcf42ac714eae6dc5517c69a8d4849&bds_s=e75db4349f5f4815b6bc55521044ae3b&bds_cq=&qsr=en_US&abd=0&sc=&t=device&abe=0&lui=english&qadf=moderate&segment=organic&with_date=d&abp=1&language=english&query=Commonwealth+Games+2026+Day+3+Results+July+25+2026&cat=web&cmd=gen_page 200
+2026-07-25 07:34:13,202 [INFO] response: https://yandex.com/search/site/?text=Commonwealth+Games+2026+Day+3+Results+July+25+2026&web=1&searchid=5109152 200
+2026-07-25 07:34:13,241 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-25 07:34:13,242 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-25 07:34:13,242 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-25 07:34:14,471 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 07:34:31,958 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-25 07:34:32,089 [INFO] response: https://grokipedia.com/api/typeahead?query=technology+news+AI+breakthrough+July+25+2026&limit=1 200
+2026-07-25 07:34:32,128 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=technology%20news%20AI%20breakthrough%20July%2025%202026 200
+2026-07-25 07:34:32,338 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=3e03d874affb532bd48b0d2af9c2d3a4&bds_t=1784964872T43632975d9cf4bfd0ba8337e521449d1e5cd18ebd9a0e23988d3f59c8979f184&bds_s=9dad3bf6383a4816b2cb740a75ee2cd3&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=pb8SDxdwGW95jlPFiICjSX0Cu23CKNX11RpRCUmFQwKkH5fkN3zmkEnpdcnZEDguOEpYpYDYaRMEhtQWmN&cmd=gen_page 200
+2026-07-25 07:34:32,463 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=3e03d874affb532bd48b0d2af9c2d3a4&bds_t=1784964872T43632975d9cf4bfd0ba8337e521449d1e5cd18ebd9a0e23988d3f59c8979f184&bds_s=c6e9c27608ac4853bf1d895b8445bf88&bds_cq=&abe=0&qsr=en_US&with_date=d&lui=english&abp=1&qadf=moderate&sc=&language=english&segment=organic&t=device&abd=0&query=technology+news+AI+breakthrough+July+25+2026&cat=web&cmd=gen_page 200
+2026-07-25 07:34:33,070 [INFO] response: https://search.brave.com/search?q=technology+news+AI+breakthrough+July+25+2026&source=web&tf=pd 200
+2026-07-25 07:34:33,082 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-25 07:34:33,082 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-25 07:34:33,082 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-25 07:34:34,082 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 07:34:49,138 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-25 07:34:49,148 [INFO] ==================================================
+2026-07-25 07:34:49,148 [INFO] HASIL LAPORAN LENGKAP:
+2026-07-25 07:34:49,148 [INFO] ==================================================
+2026-07-25 07:34:49,148 [INFO] Geopolitik & Ekonomi Global: Harga minyak Brent turun 3.88% ke $96.78, MSCI EM Index naik 23.9% YTD, Bitcoin $63,955. Olahraga: Jhandu Kumar capai 225 kg di para powerlifting, pertandingan boxing India-Australia 2-1. Teknologi: Chip optik programable mengendalikan laju cahaya dengan akurasi 100 picometer.
+2026-07-25 07:34:49,148 [INFO] ==================================================
+2026-07-25 07:34:49,148 [INFO] Mengirim laporan ke Telegram...
+2026-07-25 07:34:49,731 [INFO] Berhasil dikirim (Format Markdown)!
+2026-07-25 07:34:49,732 [INFO] History disimpan (5 entri).
+2026-07-25 07:34:49,732 [INFO] Selesai satu siklus analisa dengan sukses.
