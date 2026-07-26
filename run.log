@@ -2810,3 +2810,207 @@ Calling tools:
 2026-07-26 01:55:58,699 [INFO] Berhasil dikirim (Format Teks Biasa)!
 2026-07-26 01:55:58,699 [INFO] History disimpan (5 entri).
 2026-07-26 01:55:58,699 [INFO] Selesai satu siklus analisa dengan sukses.
+2026-07-26 10:00:16,055 [INFO] ==================================================
+2026-07-26 10:00:16,055 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-26 10:00:16,055 [INFO] ==================================================
+2026-07-26 10:00:16,055 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-07-26 10:00:16,506 [INFO] Merakit agen super...
+2026-07-26 10:00:16,516 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-07-26 10:00:16,530 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:00:19,274 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:00:19,282 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-26 10:00:19,528 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+crypto+stocks+24+hours&limit=1 200
+2026-07-26 10:00:19,557 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20crypto%20stocks%2024%20hours 200
+2026-07-26 10:00:19,654 [INFO] response: https://www.google.com/search?q=geopolitics+global+economy+crypto+stocks+24+hours&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-26 10:00:20,134 [INFO] response: https://www.mojeek.com/search?q=geopolitics+global+economy+crypto+stocks+24+hours 403
+2026-07-26 10:00:20,473 [INFO] response: https://search.yahoo.com/search;_ylt=I1G1c3dtmOzbBGbZET4pHuvX;_ylu=jAgQFxTbKpunIzo0OsncKRWECcvh-LgbRt1kX1KE2SkNdAw?p=geopolitics+global+economy+crypto+stocks+24+hours&btf=d 200
+2026-07-26 10:00:21,205 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-07-26 10:00:21,211 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:00:21,334 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-26 10:00:21,335 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 38.678439228s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}]
+2026-07-26 10:00:21,335 [INFO] Mencoba provider AI: Groq (Llama 3.3 70B)...
+2026-07-26 10:00:22,210 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:00:22,211 [INFO] Berhasil pakai provider: Groq (Llama 3.3 70B)
+2026-07-26 10:00:23,058 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:00:23,164 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-26 10:00:23,165 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 36.846867998s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}]
+2026-07-26 10:00:23,165 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-26 10:00:23,165 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-26 10:00:24,819 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:00:30,557 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-26 10:00:30,697 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+news+July+26+2026&limit=1 200
+2026-07-26 10:00:30,789 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20news%20July%2026%202026 200
+2026-07-26 10:00:30,884 [INFO] response: https://www.google.com/search?q=geopolitics+global+economy+news+July+26+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-26 10:00:31,276 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=61c1f6a2631c9eb9a9b0d6c6129b35c3&bds_t=1785060031Tc2256390f8d67f4fa75ba95f129a0463a5871c998a8da72cc2e47fd3138f0f45&bds_s=3f3600f35ad145048a25aff86886c357&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=pb8SDxdwOnbd9Cm3lf9jkIQGjgm2VucgfBVeB6Pzw4SfHhwgWLGHJzlvcUK2Y8z1bUgLk67mFsBgRbu1fT&cmd=gen_page 200
+2026-07-26 10:00:31,400 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=61c1f6a2631c9eb9a9b0d6c6129b35c3&bds_t=1785060031Tc2256390f8d67f4fa75ba95f129a0463a5871c998a8da72cc2e47fd3138f0f45&bds_s=956a30ad6df247ad8f62a1ff7251e228&bds_cq=&abe=0&language=english&sc=&with_date=d&lui=english&abd=0&abp=1&segment=organic&t=device&qsr=en_US&qadf=moderate&query=geopolitics+global+economy+news+July+26+2026&cat=web&cmd=gen_page 200
+2026-07-26 10:00:32,086 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-07-26 10:00:32,091 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:00:32,273 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-26 10:00:32,274 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 27.741198371s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '27s'}]}}]
+2026-07-26 10:00:32,274 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-26 10:00:32,274 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-26 10:00:33,431 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:00:53,643 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-26 10:00:54,140 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:00:56,217 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:00:56,218 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-26 10:00:56,380 [INFO] response: https://grokipedia.com/api/typeahead?query=global+stock+market+crypto+impact+July+26+2026+news&limit=1 200
+2026-07-26 10:00:56,389 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20stock%20market%20crypto%20impact%20July%2026%202026%20news 200
+2026-07-26 10:00:57,476 [INFO] response: https://yandex.com/search/site/?text=global+stock+market+crypto+impact+July+26+2026+news&web=1&searchid=9585408 200
+2026-07-26 10:00:57,505 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:00:57,624 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-26 10:00:57,625 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 2.390822477s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}]
+2026-07-26 10:00:57,625 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-26 10:00:57,625 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-26 10:00:58,117 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:01:30,611 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-26 10:01:31,499 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:01:33,023 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:01:33,024 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-26 10:01:33,141 [INFO] response: https://grokipedia.com/api/typeahead?query=global+trending+sports+news+July+26+2026&limit=1 200
+2026-07-26 10:01:33,217 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20trending%20sports%20news%20July%2026%202026 200
+2026-07-26 10:01:33,681 [INFO] response: https://www.mojeek.com/search?q=global+trending+sports+news+July+26+2026 403
+2026-07-26 10:01:33,917 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=61c1f6a2631c9eb9a9b0d6c6129b35c3&bds_t=1785060093Tb419b824cca1bb6ef4c146f03fca0ef8d1d85d7c261cd7fb8bf3a51d0d94019c&bds_s=9d939b59262c44c6bdd7a3afd400b4dc&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=665xzJlchAQiikub76f9g2T1flviGziPbZtkhHTHXsIwwau2tySdvPqjF2YasoaPMAie0SV5VUg2AZK2N&cmd=gen_page 200
+2026-07-26 10:01:34,043 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=61c1f6a2631c9eb9a9b0d6c6129b35c3&bds_t=1785060093Tb419b824cca1bb6ef4c146f03fca0ef8d1d85d7c261cd7fb8bf3a51d0d94019c&bds_s=009671ed837e4c14bb91845014171f8d&bds_cq=&qadf=moderate&qsr=en_US&segment=organic&abd=0&abp=1&language=english&sc=&t=device&with_date=d&abe=0&lui=english&query=global+trending+sports+news+July+26+2026&cat=web&cmd=gen_page 200
+2026-07-26 10:01:34,204 [INFO] response: https://search.yahoo.com/search;_ylt=6ceH80WfNZXTz-6_FaqBHgR-;_ylu=mhRLiGW7sEiyKJ0uz9Dsz8DRFdaVE1CX-6bWIHeAfjBGeKA?p=global+trending+sports+news+July+26+2026&btf=d 200
+2026-07-26 10:01:34,332 [INFO] response: https://www.google.com/search?q=global+trending+sports+news+July+26+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-26 10:01:35,220 [INFO] response: https://yandex.com/search/site/?text=global+trending+sports+news+July+26+2026&web=1&searchid=2782592 200
+2026-07-26 10:01:35,254 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:01:35,359 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-26 10:01:35,360 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 24.651465858s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24s'}]}}]
+2026-07-26 10:01:35,360 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-26 10:01:35,360 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-26 10:01:40,871 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:01:41,883 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-26 10:01:42,537 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:01:42,682 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-26 10:01:42,682 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 17.328611372s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}]
+2026-07-26 10:01:42,683 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-26 10:01:42,683 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-26 10:01:43,355 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:01:47,092 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-26 10:01:47,094 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:01:47,199 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-26 10:01:47,200 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 12.810570928s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '12s'}]}}]
+2026-07-26 10:01:47,200 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-26 10:01:47,200 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-26 10:01:57,234 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:02:07,851 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-26 10:02:07,989 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+nilai+tukar+Rupiah+berita+ekonomi+Indonesia+hari+ini+CNN+Indonesia+CNBC+Indonesia&limit=1 200
+2026-07-26 10:02:08,017 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20nilai%20tukar%20Rupiah%20berita%20ekonomi%20Indonesia%20hari%20ini%20CNN%20Indonesia%20CNBC%20Indonesia 200
+2026-07-26 10:02:08,553 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+nilai+tukar+Rupiah+berita+ekonomi+Indonesia+hari+ini+CNN+Indonesia+CNBC+Indonesia 403
+2026-07-26 10:02:09,284 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-07-26 10:02:09,453 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+olahraga+Indonesia+hari+ini+Timnas+atau+liga+lokal+Detik+Kompas&limit=1 200
+2026-07-26 10:02:09,481 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20olahraga%20Indonesia%20hari%20ini%20Timnas%20atau%20liga%20lokal%20Detik%20Kompas 200
+2026-07-26 10:02:09,702 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=61c1f6a2631c9eb9a9b0d6c6129b35c3&bds_t=1785060129T5e8829647dc381f9ab25cc4ef78c95b62127e7037d7a515b64c7a161cf2243fc&bds_s=f91717a25be945689a55b510a2655f36&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=pb8SDxdwDLDEflRYubwwhmAbl0QX9LZBTv9YDeJWFfO6meetJ9VMxEH13RQKGCqjHvxhfN7rANJzGzdD4x&cmd=gen_page 200
+2026-07-26 10:02:09,832 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=61c1f6a2631c9eb9a9b0d6c6129b35c3&bds_t=1785060129T5e8829647dc381f9ab25cc4ef78c95b62127e7037d7a515b64c7a161cf2243fc&bds_s=a7fd14014dbb43308c77fba96266dc9b&bds_cq=&abe=0&language=english&sc=&with_date=d&lui=english&abd=0&abp=1&segment=organic&t=device&qsr=en_US&qadf=moderate&query=berita+olahraga+Indonesia+hari+ini+Timnas+atau+liga+lokal+Detik+Kompas&cat=web&cmd=gen_page 200
+2026-07-26 10:02:10,579 [INFO] response: https://search.brave.com/search?q=berita+olahraga+Indonesia+hari+ini+Timnas+atau+liga+lokal+Detik+Kompas&source=web&tf=pd 200
+2026-07-26 10:02:10,594 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:02:14,812 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:02:14,813 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-26 10:02:14,930 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:02:15,060 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-26 10:02:15,061 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 44.951686599s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '44s'}]}}]
+2026-07-26 10:02:15,062 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-26 10:02:15,062 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-26 10:02:15,814 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:02:19,269 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-26 10:02:19,476 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:02:19,570 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-26 10:02:19,571 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 40.442183097s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}]
+2026-07-26 10:02:19,571 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-26 10:02:19,571 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-26 10:02:20,545 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:02:23,260 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-26 10:02:23,646 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:02:23,775 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-26 10:02:23,776 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 36.238192766s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}]
+2026-07-26 10:02:23,776 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-26 10:02:23,776 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-26 10:02:24,582 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:02:28,616 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-26 10:02:28,722 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+Detik.com&limit=1 200
+2026-07-26 10:02:28,766 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20Detik.com 200
+2026-07-26 10:02:29,565 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-07-26 10:02:29,570 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:02:29,771 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-26 10:02:29,772 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 30.242114921s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}]
+2026-07-26 10:02:29,772 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-26 10:02:29,773 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-26 10:02:30,493 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:02:57,597 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-26 10:02:58,967 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:02:59,151 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-26 10:02:59,151 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 859.432681ms.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '0s'}]}}]
+2026-07-26 10:02:59,151 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-26 10:02:59,151 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-26 10:03:00,134 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:03:11,570 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-26 10:03:11,797 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:03:26,565 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:03:26,566 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-26 10:03:26,571 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-26 10:03:26,719 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-26 10:03:26,720 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 33.295976252s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33s'}]}}]
+2026-07-26 10:03:26,720 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-26 10:03:26,720 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-26 10:03:27,490 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-26 10:04:32,068 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-26 10:04:32,079 [INFO] Validasi teknis: 7x visit_webpage sukses terdeteksi (minimal 4).
+2026-07-26 10:04:32,079 [INFO] Validasi LULUS -- laporan terbukti berbasis riset asli.
+2026-07-26 10:04:32,079 [INFO] ==================================================
+2026-07-26 10:04:32,079 [INFO] HASIL LAPORAN LENGKAP:
+2026-07-26 10:04:32,079 [INFO] ==================================================
+2026-07-26 10:04:32,079 [INFO] ### Laporan Intelijen Harian - 26 Juli 2026
+
+Berikut adalah ringkasan perkembangan terbaru di bidang geopolitik, ekonomi global, olahraga, dan teknologi pada hari ini, 26 Juli 2026.
+
+---
+
+### Geopolitik & Ekonomi Global: Kripto Bergejolak di Tengah Sentimen Pasar 'Fear', Shiba Inu Melonjak, BitMart Tutup
+
+Pasar kripto global menunjukkan volatilitas dengan **Fear and Greed Index** berada pada level **39 (Fear)** per hari ini, turun 1 poin dari kemarin (40) dan naik signifikan dari 26 sebulan yang lalu. Di sisi lain, harga Shiba Inu (SHIB) melonjak drastis hingga **36%** hari ini, didorong oleh aktivitas trader Korea Selatan, meskipun tidak ada pengumuman spesifik di balik reli misterius ini. Namun, berita kurang baik datang dari bursa kripto **BitMart** yang mengumumkan penutupannya setelah sembilan tahun beroperasi, menyebabkan token BMX mereka anjlok **58%**. Di sisi regulasi, bank terbesar Rusia, Sberbank, berencana membangun infrastruktur perdagangan kripto pada Desember mendatang, sejalan dengan peraturan baru yang berlaku mulai 1 September. Selain itu, Robinhood Chain melaporkan peningkatan signifikan pada aset dunia nyatanya (Real-World Assets) hingga **lima kali lipat**, dengan saham-saham ter-tokenisasi kini mencapai lebih dari $500.000 per hari, menunjukkan pertumbuhan pesat di sektor ini.
+
+Sumber:
+*   [CoinDesk - Shiba Inu surges 36% as South Korean traders fuel mystery rally](https://www.coindesk.com/markets/2026/07/26/shiba-inu-surges-36-as-south-korean-traders-fuel-mystery-rally/)
+*   [CoinDesk - Crypto exchange BitMart to shut down after nine years, BMX token crashes 58%](https://www.coindesk.com/markets/2026/07/26/crypto-exchange-bitmart-to-shut-down-after-nine-years-bmx-token-crashes-58/)
+*   [CoinDesk - Russia's largest bank Sberbank plans crypto trading infrastructure by December](https://www.coindesk.com/business/2026/07/25/russia-s-largest-bank-sberbank-plans-crypto-trading-infrastructure-by-december/)
+*   [CoinDesk - Robinhood Chain's real-world assets jump fivefold as tokenized stocks start trading in bigger size](https://www.coindesk.com/business/2026/07/25/robinhood-chain-s-real-world-assets-jump-fivefold-as-tokenized-stocks-start-trading-in-bigger-size/)
+*   [Fear & Greed Meter](https://feargreedmeter.com/)
+
+---
+
+### Update Olahraga Global: Fans Argentina Ajukan Petisi Replay Final Piala Dunia 2026
+
+Drama pasca-Piala Dunia 2026 masih berlanjut. Para penggemar sepak bola Argentina telah meluncurkan petisi di Change.org yang menyerukan agar final Piala Dunia FIFA 2026 melawan Spanyol diulang. Petisi ini, yang dipublikasikan pada 20 Juli, sehari setelah final, telah mengumpulkan lebih dari **57.000 tanda tangan terverifikasi** dan terus bertambah. Para penggagas petisi berargumen bahwa wasit Slavko Vincic membuat beberapa keputusan penting yang menguntungkan Spanyol selama pertandingan, memicu kontroversi dan ketidakpuasan di kalangan pendukung Argentina.
+
+Sumber:
+*   [İdman.Biz - Argentina fans launch petition to replay 2026 World Cup final](https://www.idman.biz/en/news/world-cup-2026/147599)
+
+---
+
+### Teknologi & Sains: World Network Amankan Dana $52,5 Juta untuk Lawan Deepfake AI
+
+Dalam perkembangan teknologi terbaru, **World Network** yang didukung oleh Sam Altman, berhasil mengamankan pendanaan segar sebesar **$52,5 juta**. Dana ini akan digunakan untuk memerangi deepfake AI online. Proyek ini dilaporkan menggeser fokusnya dari ekspansi jaringan dasar ke integrasi perangkat pemindaian biometriknya di seluruh suite perangkat lunak perusahaan, menandakan pendekatan yang lebih terfokus pada solusi anti-deepfake tingkat korporat.
+
+Sumber:
+*   [CoinDesk - Sam Altman-backed World Network secures $52.5 million in fresh funding to fight online AI deepfakes](https://www.coindesk.com/business/2026/07/24/sam-altman-backed-world-network-secures-fresh-funding-to-fight-online-ai-deepfakes/)
+
+---
+
+### Indonesia Update: Rupiah Melemah ke Rp17.935, IHSG Turun 1,88% Akibat Tarif AS, Timnas Voli Putri Lawan Korsel
+
+Nilai tukar **Rupiah Indonesia (IDR)** terhadap **Dolar AS (USD)** terpantau melemah. Berdasarkan data dari Valasindo.com pada 26 Juli 2026 pukul 08:17 WIB, kurs USD/IDR berada di angka **17.935,47**, mengalami kenaikan 0,07% atau 11,74 poin hari ini. Dalam setahun terakhir, Rupiah telah melemah 10,15% terhadap Dolar AS. Sementara itu, kinerja pasar modal domestik juga kurang menggembirakan. **Indeks Harga Saham Gabungan (IHSG)** ditutup melemah **1,88%** ke level **6.196,43** pada penutupan perdagangan Jumat, 25 Juli 2026. Pelemahan ini dipicu oleh kebijakan tarif baru Amerika Serikat sebesar 10% hingga 12,5% yang diberlakukan kepada 60 mitra dagangnya, termasuk Indonesia, menyebabkan modal asing sebesar **Rp 1,3 triliun** keluar dari pasar modal RI.
+
+Di arena olahraga, **Tim Nasional Voli Putri Indonesia** dijadwalkan akan kembali menghadapi **Korea Selatan** dalam pertandingan persahabatan hari ini, Minggu, 26 Juli 2026, yang akan dimulai pukul 13.00 WIB. Pertandingan ini akan menjadi ajang penting bagi Timnas Voli Putri untuk menguji kemampuan mereka di kancah internasional.
+
+Sumber:
+*   [Valasindo - Kurs USD ke IDR Hari Ini](https://www.valasindo.com/kurs/usd/idr/)
+*   [detikFinance - Modal Asing Rp 1,3 T Cabut dari Pasar Modal RI](https://finance.detik.com/bursa-dan-valas/d-8590583/modal-asing-rp-1-3-t-cabut-dari-pasar-modal-ri)
+*   [Kompas.tv - Link Live Streaming Timnas Voli Putri Indonesia vs Korea Selatan Hari Ini Mulai Jam 13.00 WIB](https://www.kompas.tv/olahraga/682334/link-live-streaming-timnas-voli-putri-indonesia-vs-korea-selatan-hari-ini-mulai-jam-13-00-wib)
+2026-07-26 10:04:32,079 [INFO] ==================================================
+2026-07-26 10:04:32,079 [INFO] Mengirim laporan ke Telegram...
+2026-07-26 10:04:32,079 [INFO] Pesan sepanjang 5599 karakter, akan dipecah jadi beberapa bagian...
+2026-07-26 10:04:35,318 [INFO] Semua 2 bagian berhasil dikirim!
+2026-07-26 10:04:35,319 [INFO] History disimpan (5 entri).
+2026-07-26 10:04:35,319 [INFO] Selesai satu siklus analisa dengan sukses.
