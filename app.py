@@ -473,13 +473,34 @@ def buat_agent():
         tools=[search_tool, visit_tool],
         model=model,
         additional_authorized_imports=["datetime", "os", "re"],
-        max_steps=15
+        max_steps=18
     )
 
 
 # =========================================================
 # 5. Fungsi Utama Analisa Harian
 # =========================================================
+def hitung_visit_webpage_sukses(agent):
+    """
+    Introspeksi LANGSUNG ke riwayat step agent (agent.memory.steps), BUKAN percaya
+    klaim laporan dari si AI. Hitung berapa kali visit_webpage() BENERAN dipanggil
+    di kode yang dieksekusi (code_action) DAN beneran berhasil (observations-nya
+    nggak mengandung pesan error semacam 'Error fetching the webpage').
+
+    Ini penegakan TEKNIS, bukan cuma instruksi di prompt -- soalnya kita udah
+    kebukti prompt doang ('WAJIB visit_webpage') bisa diabaikan model kalau dia
+    'yakin' udah tau jawabannya (kejadian 25 Juli 2026: laporan Copa América
+    yang di-final_answer() di Step 1 TANPA riset apapun).
+    """
+    jumlah = 0
+    for step in agent.memory.steps:
+        code = getattr(step, "code_action", None)
+        obs = getattr(step, "observations", None) or ""
+        if code and "visit_webpage(" in code and "Error fetching the webpage" not in obs:
+            jumlah += 1
+    return jumlah
+
+
 def jalankan_analisa_harian():
     log.info("=" * 50)
     log.info("MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...")
@@ -497,26 +518,34 @@ def jalankan_analisa_harian():
     {histori_sebelumnya}
 
     Kamu adalah seorang analis intelijen, pengamat olahraga, dan jurnalis teknologi senior.
-    Tugasmu hari ini adalah mencari dan menganalisa 3 topik utama:
+    Tugasmu hari ini adalah mencari dan menganalisa 4 topik utama:
     1. Geopolitik & Ekonomi Global (fokus pada berita luar negeri internasional dan dampaknya ke Kripto/Saham).
     2. Update Olahraga Global yang sedang tren hari ini (seperti update World Cup, Liga Champions, transfer pemain bintang, dll).
     3. Satu fakta teknologi, sains, atau AI terbaru hari ini.
+    4. Indonesia Update — kondisi IHSG hari ini, nilai tukar Rupiah, berita ekonomi domestik terbaru, DAN
+       satu update olahraga Indonesia (misal Timnas, liga lokal, atlet Indonesia di ajang internasional).
+       Sumber WAJIB dari media besar Indonesia: CNN Indonesia, CNBC Indonesia, Bisnis.com, Kompas.com,
+       Detik.com, Kontan, atau media besar sejenis -- JANGAN pakai blog/situs kecil yang nggak jelas kredibilitasnya.
 
-    ATURAN AGENTIK SANGAT KETAT:
+    ATURAN AGENTIK SANGAT KETAT (INI PENEGAKAN TEKNIS, BUKAN SEKADAR SARAN -- laporan yang melanggar ini
+    akan DITOLAK OTOMATIS oleh sistem dan kamu akan diminta ulang):
     - Alat `web_search` mengembalikan STRING panjang (bukan list), berisi daftar judul, ringkasan, dan URL yang sudah rapi per baris.
     - Untuk topik global/makro, gunakan query Bahasa Inggris agar hasil pencarian lebih relevan (mesin pencari lebih kaya hasil untuk Bahasa Inggris).
+      Untuk topik Indonesia (poin 4), gunakan query Bahasa Indonesia.
     - `web_search` HANYA memberi judul & cuplikan singkat — itu TIDAK CUKUP buat jadi bahan laporan. Untuk SETIAP dari
-      3 topik, kamu WAJIB minimal 1x `visit_webpage(url)` ke artikel yang relevan untuk membaca isi lengkapnya SEBELUM
-      menulis bagian itu di laporan. Kalau kamu cuma modal judul dari web_search tanpa visit_webpage, laporan otomatis
-      dianggap GAGAL.
+      4 topik, kamu WAJIB minimal 1x `visit_webpage(url)` ke artikel yang relevan untuk membaca isi lengkapnya SEBELUM
+      menulis bagian itu di laporan. JANGAN PERNAH memanggil `final_answer` di step pertama atau tanpa visit_webpage
+      sama sekali -- sistem TAHU dan akan mendeteksi ini secara teknis dari riwayat eksekusi kodemu, bukan cuma
+      percaya kalimat di laporanmu.
     - Pastikan URL yang kamu kunjungi TIDAK memiliki spasi (contoh salah: 'bbc. com/sport', contoh benar: 'bbc.com/sport').
     - Ekstrak DATA VALID, ANGKA SPESIFIK, dan FAKTA NYATA dari dalam artikel. Jangan berikan kesimpulan kosong tanpa data penjelas!
+      JANGAN PERNAH mengarang angka/skor/kutipan yang kedengaran masuk akal tapi nggak beneran ada di artikel yang kamu baca.
     - DILARANG KERAS menulis kalimat generik/klise yang bisa ditulis tanpa baca berita sama sekali, contoh kalimat
       TERLARANG: "banyak laga-laga terpopuler dunia yang menayangkan tim terkenal", "pasar bergerak dinamis",
       "teknologi terus berkembang pesat". Setiap kalimat WAJIB mengandung fakta konkret: nama tim/orang/perusahaan
       spesifik, tanggal/jam, skor/hasil, angka/persentase/nominal, atau kutipan fakta langsung dari artikel.
-    - Khusus topik olahraga: WAJIB sebutkan pertandingan/hasil KONKRET — nama kedua tim, skor atau jadwal (tanggal+jam)
-      pertandingannya, bukan cuma "banyak pertandingan seru hari ini".
+    - Khusus topik olahraga (global maupun Indonesia): WAJIB sebutkan pertandingan/hasil KONKRET — nama kedua tim,
+      skor atau jadwal (tanggal+jam) pertandingannya, bukan cuma "banyak pertandingan seru hari ini".
     - Jika 2 pencarian berturut-turut tidak menemukan hasil relevan, JANGAN cari terus, langsung lanjut menulis laporan dengan data yang sudah ada.
     - Tulis laporan akhir secara MENDALAM dan RINCI per topik — sertakan ANGKA SPESIFIK, PERSENTASE, NILAI NOMINAL,
       dan konteks/latar belakang yang jelas untuk tiap poin (bukan cuma kesimpulan umum tanpa data pendukung).
@@ -524,17 +553,62 @@ def jalankan_analisa_harian():
       memotong analisis demi keringkasan.
     - Wajib sertakan URL sumber referensi asli yang valid di SETIAP poin/topik (bukan cuma sekali di akhir), agar user
       bisa memverifikasi tiap klaim ke sumber aslinya masing-masing.
-    - SEBELUM memanggil `final_answer`, cek ulang draftmu sendiri: apakah SETIAP topik (1) sudah dikunjungi minimal
-      1 URL via visit_webpage, (2) punya minimal 1 angka/tanggal/nama spesifik, (3) punya minimal 1 URL sumber
+    - SEBELUM memanggil `final_answer`, cek ulang draftmu sendiri: apakah SETIAP dari 4 topik (1) sudah dikunjungi
+      minimal 1 URL via visit_webpage, (2) punya minimal 1 angka/tanggal/nama spesifik, (3) punya minimal 1 URL sumber
       tercantum? Kalau ada topik yang belum memenuhi 3 syarat itu, cari & baca lagi sebelum menulis final_answer.
     - Gunakan bahasa Indonesia santai (campur sedikit bahasa Inggris gaul layaknya teman diskusi yang sangat pintar).
     """
 
+    MIN_VISIT_WEBPAGE_SUKSES = 4  # minimal 1x per topik (sekarang ada 4 topik)
+    MAX_PERCOBAAN = 2  # dibatasi biar nggak muter-muter terus kalau providernya kesulitan riset
+
     agent = buat_agent()
 
     try:
-        log.info("Menjalankan agent...")
-        hasil = agent.run(tugas)
+        hasil = None
+        jumlah_visit = 0
+
+        for percobaan in range(1, MAX_PERCOBAAN + 1):
+            log.info(f"Menjalankan agent (percobaan {percobaan}/{MAX_PERCOBAAN})...")
+            hasil = agent.run(tugas)
+            jumlah_visit = hitung_visit_webpage_sukses(agent)
+            log.info(f"Validasi teknis: {jumlah_visit}x visit_webpage sukses terdeteksi (minimal {MIN_VISIT_WEBPAGE_SUKSES}).")
+
+            if jumlah_visit >= MIN_VISIT_WEBPAGE_SUKSES:
+                log.info("Validasi LULUS -- laporan terbukti berbasis riset asli.")
+                break
+            else:
+                log.warning(
+                    f"Percobaan {percobaan}: laporan DICURIGAI tanpa riset yang cukup "
+                    f"(cuma {jumlah_visit}x visit_webpage sukses). "
+                    + ("Mencoba ulang dari awal..." if percobaan < MAX_PERCOBAAN else "Sudah percobaan terakhir.")
+                )
+
+        # Kalau setelah semua percobaan tetap nggak lolos validasi, JANGAN diam-diam
+        # kirim seolah-olah valid -- kasih peringatan jelas di depan laporan biar user
+        # tahu ini perlu diverifikasi ulang, bukan langsung dipercaya.
+        if jumlah_visit < MIN_VISIT_WEBPAGE_SUKSES:
+            # User secara eksplisit minta: JANGAN kirim info yang belum diverifikasi riset,
+            # walau dikasih label peringatan sekalipun -- mending nggak kirim laporan substantif
+            # sama sekali daripada berisiko ngirim yang separuh ngarang.
+            log.error(
+                f"Laporan GAGAL validasi riset setelah {MAX_PERCOBAAN}x percobaan "
+                f"(cuma {jumlah_visit}x visit_webpage sukses, minimal {MIN_VISIT_WEBPAGE_SUKSES}). "
+                f"Laporan TIDAK dikirim ke Telegram."
+            )
+            log.info("Isi laporan yang GAGAL validasi (buat debugging, TIDAK dikirim ke Telegram):")
+            log.info(hasil)
+
+            pesan_gagal = (
+                f"⚠️ Analisa hari ini GAGAL memenuhi standar riset minimal "
+                f"({jumlah_visit}x kunjungi halaman dari minimal {MIN_VISIT_WEBPAGE_SUKSES}x yang dibutuhkan "
+                f"untuk 4 topik), setelah {MAX_PERCOBAAN}x percobaan.\n\n"
+                f"Laporan TIDAK dikirim karena berisiko berisi informasi yang belum terverifikasi. "
+                f"Sistem akan coba lagi di jadwal berikutnya."
+            )
+            kirim_ke_telegram(pesan_gagal)
+            log.info("Selesai satu siklus analisa -- GAGAL validasi, laporan tidak dikirim.")
+            return
 
         log.info("=" * 50)
         log.info("HASIL LAPORAN LENGKAP:")
