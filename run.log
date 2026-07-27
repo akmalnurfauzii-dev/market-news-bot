@@ -3732,3 +3732,249 @@ IHSG menutup sesi perdagangan Senin (27/7) dengan naik 1,19% atau 70,43 poin ke 
 2026-07-27 02:03:04,695 [INFO] Mengirim laporan ke Telegram...
 2026-07-27 02:03:05,381 [INFO] Berhasil dikirim (Format Markdown)!
 2026-07-27 02:03:05,381 [INFO] Selesai satu siklus analisa -- GAGAL validasi, laporan tidak dikirim.
+2026-07-27 09:44:35,547 [INFO] ==================================================
+2026-07-27 09:44:35,547 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-27 09:44:35,547 [INFO] ==================================================
+2026-07-27 09:44:35,548 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-07-27 09:44:36,254 [INFO] Merakit agen super...
+2026-07-27 09:44:36,270 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-07-27 09:44:36,287 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:44:40,352 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:44:40,362 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:44:40,661 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20crypto%20stock%20market%20news%20today%20July%2027%202026 200
+2026-07-27 09:44:40,809 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+crypto+stock+market+news+today+July+27+2026&limit=1 200
+2026-07-27 09:44:41,337 [INFO] response: https://www.mojeek.com/search?q=geopolitics+global+economy+crypto+stock+market+news+today+July+27+2026 403
+2026-07-27 09:44:41,910 [INFO] response: https://search.brave.com/search?q=geopolitics+global+economy+crypto+stock+market+news+today+July+27+2026&source=web&tf=pd 200
+2026-07-27 09:44:41,923 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:44:44,557 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:44:44,558 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:44:45,525 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:44:49,551 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:44:49,552 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:44:49,732 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20today%20July%2027%202026%20football%20transfer%20Champions%20League 200
+2026-07-27 09:44:49,808 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+today+July+27+2026+football+transfer+Champions+League&limit=1 200
+2026-07-27 09:44:49,950 [INFO] response: https://search.yahoo.com/search;_ylt=5-q0t-I9yz9ncnLRQHrdqX96;_ylu=yuNzhDP5NxE7cOd9KKcvQsgF-bqLbQoLIeB4Y-ijWt4qpGk?p=global+sports+news+today+July+27+2026+football+transfer+Champions+League&btf=d 200
+2026-07-27 09:44:50,220 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145490T75b77aebf09a6f0fadb63938de92f11f269e5a9b150885b87f57465bb6b55bfd&bds_s=6d521994eb104c578925d67aef296100&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=1FY0FBf9QMdcDwfhYUGx6ryUPAkthiXrqfEAtwxtpXE93Xzitpcl7iW9VLfcB8b7e3tGGrho6w1hbXQ9HSzP&cmd=gen_page 200
+2026-07-27 09:44:50,443 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145490T75b77aebf09a6f0fadb63938de92f11f269e5a9b150885b87f57465bb6b55bfd&bds_s=35f7743153ea4f849308c34723233652&bds_cq=&language=english&sc=&segment=organic&lui=english&with_date=d&abp=1&abd=0&t=device&qsr=en_US&qadf=moderate&abe=0&query=global+sports+news+today+July+27+2026+football+transfer+Champions+League&cat=web&cmd=gen_page 200
+2026-07-27 09:44:51,002 [INFO] response: https://www.mojeek.com/search?q=global+sports+news+today+July+27+2026+football+transfer+Champions+League 403
+2026-07-27 09:44:52,113 [INFO] response: https://yandex.com/search/site/?text=global+sports+news+today+July+27+2026+football+transfer+Champions+League&web=1&searchid=6515056 200
+2026-07-27 09:44:52,282 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+science+AI+news+today+July+27+2026&limit=1 502
+2026-07-27 09:44:52,313 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20science%20AI%20news%20today%20July%2027%202026 200
+2026-07-27 09:44:52,376 [INFO] response: https://www.google.com/search?q=latest+technology+science+AI+news+today+July+27+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-27 09:44:52,560 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-27 09:44:53,170 [INFO] response: https://search.brave.com/search?q=latest+technology+science+AI+news+today+July+27+2026&source=web&tf=pd 200
+2026-07-27 09:44:53,355 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20nilai%20tukar%20Rupiah%20berita%20ekonomi%20Indonesia%20olahraga%20Indonesia%20hari%20ini%2027%20Juli%202026%20CNN%20Indonesia%20Kompas%20Detik%20Bisnis%20Kontan 200
+2026-07-27 09:44:53,517 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+nilai+tukar+Rupiah+berita+ekonomi+Indonesia+olahraga+Indonesia+hari+ini+27+Juli+2026+CNN+Indonesia+Kompas+Detik+Bisnis+Kontan&limit=1 502
+2026-07-27 09:44:54,007 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+nilai+tukar+Rupiah+berita+ekonomi+Indonesia+olahraga+Indonesia+hari+ini+27+Juli+2026+CNN+Indonesia+Kompas+Detik+Bisnis+Kontan 403
+2026-07-27 09:44:54,103 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-27 09:44:54,270 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145494T1ed514f6c1111b866837f445b22e4fc2d97e5cb69097514144b75cb12452ce90&bds_s=c09b46c0cb0e465ea584fea32e581248&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=665xzJlchkctcM0sgDraWPy1iOcpTleV0yurZtgsKoxw5fsOpw4wpz13YVBHw9KwEtxHl48Ygnc1xEU1L&cmd=gen_page 200
+2026-07-27 09:44:54,368 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145494T1ed514f6c1111b866837f445b22e4fc2d97e5cb69097514144b75cb12452ce90&bds_s=ad8894a693584d6e83f69ed00a5f46eb&bds_cq=&with_date=d&language=english&abe=0&qsr=en_US&t=device&sc=&abp=1&abd=0&qadf=moderate&lui=english&segment=organic&query=IHSG+hari+ini+nilai+tukar+Rupiah+berita+ekonomi+Indonesia+olahraga+Indonesia+hari+ini+27+Juli+2026+CNN+Indonesia+Kompas+Detik+Bisnis+Kontan&cat=web&cmd=gen_page 200
+2026-07-27 09:44:54,505 [INFO] response: https://search.yahoo.com/search;_ylt=yQvkYaDTY35CQqqVexneXvLf;_ylu=zZCdcVmcIRZPvJ_OqZAd8jTWvv5MsYnYPlZ2zIDTyu06cxk?p=IHSG+hari+ini+nilai+tukar+Rupiah+berita+ekonomi+Indonesia+olahraga+Indonesia+hari+ini+27+Juli+2026+CNN+Indonesia+Kompas+Detik+Bisnis+Kontan&btf=d 200
+2026-07-27 09:44:55,463 [INFO] response: https://yandex.com/search/site/?text=IHSG+hari+ini+nilai+tukar+Rupiah+berita+ekonomi+Indonesia+olahraga+Indonesia+hari+ini+27+Juli+2026+CNN+Indonesia+Kompas+Detik+Bisnis+Kontan&web=1&searchid=3462115 200
+2026-07-27 09:44:55,664 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=bitcoin%20news%20today%20July%2027%202026 200
+2026-07-27 09:44:55,765 [INFO] response: https://grokipedia.com/api/typeahead?query=bitcoin+news+today+July+27+2026&limit=1 502
+2026-07-27 09:44:56,276 [INFO] response: https://www.mojeek.com/search?q=bitcoin+news+today+July+27+2026 403
+2026-07-27 09:44:56,341 [INFO] response: https://www.google.com/search?q=bitcoin+news+today+July+27+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-27 09:44:57,331 [INFO] response: https://yandex.com/search/site/?text=bitcoin+news+today+July+27+2026&web=1&searchid=7646189 200
+2026-07-27 09:44:57,386 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:45:03,192 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:45:03,193 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:45:04,759 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-27 09:45:04,759 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-27 09:45:04,759 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-27 09:45:05,541 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:45:09,126 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-27 09:45:09,129 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-27 09:45:09,129 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-27 09:45:09,129 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-27 09:45:09,610 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:45:46,869 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-27 09:45:46,885 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:45:57,178 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:45:57,179 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:45:57,613 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20CNBC%20Indonesia%20hari%20ini%2027%20Juli%202026 200
+2026-07-27 09:45:57,710 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+CNBC+Indonesia+hari+ini+27+Juli+2026&limit=1 502
+2026-07-27 09:45:57,936 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145557T9552a590491b3c9650a61ffb2b78877bf7fa9883ed35bc4ff5361c9cdb6ddd13&bds_s=0981dbc6e6b44b8584f257c47c627376&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=pb8SDxdwDJNnuWVFmmaB9LBoDfo9cnXSZ2rYIrYxSF7d8reH08qLjAEYZUXHicSv1UiCdWJCAk4BdS4jKJ&cmd=gen_page 200
+2026-07-27 09:45:58,059 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145557T9552a590491b3c9650a61ffb2b78877bf7fa9883ed35bc4ff5361c9cdb6ddd13&bds_s=08eed96059074b42beed59d161d6423d&bds_cq=&t=device&abp=1&qsr=en_US&segment=organic&abd=0&language=english&sc=&with_date=d&lui=english&abe=0&qadf=moderate&query=IHSG+CNBC+Indonesia+hari+ini+27+Juli+2026&cat=web&cmd=gen_page 200
+2026-07-27 09:45:58,127 [INFO] response: https://www.google.com/search?q=IHSG+CNBC+Indonesia+hari+ini+27+Juli+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-27 09:45:58,244 [INFO] response: https://search.yahoo.com/search;_ylt=8vHVj3r5Ak-1oNDtyBqARTjb;_ylu=D0dd4SfyGUYBZYL2J5O3uMNXvru5QHre6LlO0KCCMPMTwFw?p=IHSG+CNBC+Indonesia+hari+ini+27+Juli+2026&btf=d 200
+2026-07-27 09:45:58,806 [INFO] response: https://www.mojeek.com/search?q=IHSG+CNBC+Indonesia+hari+ini+27+Juli+2026 403
+2026-07-27 09:45:58,947 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-27 09:45:59,911 [INFO] response: https://yandex.com/search/site/?text=IHSG+CNBC+Indonesia+hari+ini+27+Juli+2026&web=1&searchid=1652114 200
+2026-07-27 09:46:00,098 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+Rupiah+DetikFinance+hari+ini+27+Juli+2026&limit=1 502
+2026-07-27 09:46:00,143 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20Rupiah%20DetikFinance%20hari%20ini%2027%20Juli%202026 200
+2026-07-27 09:46:00,802 [INFO] response: https://yandex.com/search/site/?text=IHSG+Rupiah+DetikFinance+hari+ini+27+Juli+2026&web=1&searchid=2473325 200
+2026-07-27 09:46:01,170 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145561Tee3de27ef45479fe14bd071275241c65f793050ddbd1c7fc87a5cd84786eb8a9&bds_s=8674efbff6464036ba2004ef95267546&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=1FY0FBf9QM2SF9yWqgron27t30F4MYYiOeHwiuXS3ncKOFCXBUyZE6TZr9v2Z6F4utYbRVZoeBG0SZc8f0UB&cmd=gen_page 200
+2026-07-27 09:46:01,286 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145561Tee3de27ef45479fe14bd071275241c65f793050ddbd1c7fc87a5cd84786eb8a9&bds_s=1678b95c881a4f6bafec8482d90ca82a&bds_cq=&abe=0&qadf=moderate&lui=english&abp=1&segment=organic&t=device&qsr=en_US&sc=&with_date=d&abd=0&language=english&query=IHSG+Rupiah+DetikFinance+hari+ini+27+Juli+2026&cat=web&cmd=gen_page 200
+2026-07-27 09:46:01,428 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-27 09:46:01,486 [INFO] response: https://www.google.com/search?q=IHSG+Rupiah+DetikFinance+hari+ini+27+Juli+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-27 09:46:01,635 [INFO] response: https://search.yahoo.com/search;_ylt=iihom-jy1StJADNDCep-_MEr;_ylu=mxb8d03J6Q2swFL_3NtljjV8Dk91Q8gG0Q2X2RdceJXywSI?p=IHSG+Rupiah+DetikFinance+hari+ini+27+Juli+2026&btf=d 200
+2026-07-27 09:46:02,192 [INFO] response: https://www.mojeek.com/search?q=IHSG+Rupiah+DetikFinance+hari+ini+27+Juli+2026 403
+2026-07-27 09:46:02,714 [INFO] response: https://search.brave.com/search?q=IHSG+Rupiah+DetikFinance+hari+ini+27+Juli+2026&source=web&tf=pd 200
+2026-07-27 09:46:02,882 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=olahraga%20Indonesia%20Timnas%20liga%20lokal%20atlet%20internasional%20terbaru%20hari%20ini%2027%20Juli%202026%20CNN%20Indonesia%20Kompas%20Detik%20Bola 200
+2026-07-27 09:46:02,972 [INFO] response: https://grokipedia.com/api/typeahead?query=olahraga+Indonesia+Timnas+liga+lokal+atlet+internasional+terbaru+hari+ini+27+Juli+2026+CNN+Indonesia+Kompas+Detik+Bola&limit=1 502
+2026-07-27 09:46:03,108 [INFO] response: https://search.yahoo.com/search;_ylt=Lp9JyOAlFH-8JCcbyH0wrkaV;_ylu=1s2ULpnZpoAhi2acCYtfDp85zgogoOzB7E4jhVcKqCt-VuI?p=olahraga+Indonesia+Timnas+liga+lokal+atlet+internasional+terbaru+hari+ini+27+Juli+2026+CNN+Indonesia+Kompas+Detik+Bola&btf=d 200
+2026-07-27 09:46:03,181 [INFO] response: https://www.google.com/search?q=olahraga+Indonesia+Timnas+liga+lokal+atlet+internasional+terbaru+hari+ini+27+Juli+2026+CNN+Indonesia+Kompas+Detik+Bola&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-27 09:46:03,779 [INFO] response: https://search.brave.com/search?q=olahraga+Indonesia+Timnas+liga+lokal+atlet+internasional+terbaru+hari+ini+27+Juli+2026+CNN+Indonesia+Kompas+Detik+Bola&source=web&tf=pd 200
+2026-07-27 09:46:03,798 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:46:17,162 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:46:17,163 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:46:17,294 [INFO] response: https://grokipedia.com/api/typeahead?query=football+transfer+done+deals+July+27+2026&limit=1 502
+2026-07-27 09:46:17,326 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20transfer%20done%20deals%20July%2027%202026 200
+2026-07-27 09:46:17,855 [INFO] response: https://search.brave.com/search?q=football+transfer+done+deals+July+27+2026&source=web&tf=pd 200
+2026-07-27 09:46:18,044 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=nilai%20tukar%20rupiah%20bank%20indonesia%20hari%20ini%2027%20Juli%202026 200
+2026-07-27 09:46:18,052 [INFO] response: https://grokipedia.com/api/typeahead?query=nilai+tukar+rupiah+bank+indonesia+hari+ini+27+Juli+2026&limit=1 200
+2026-07-27 09:46:18,283 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145578Tf08fe8c95d179ea15b84ce0c575d5165ed4bf5fdbc4abc708663088e6170f877&bds_s=d7b7de742a414963b88fa89538f61077&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=665xzJlchmURLYgLYR7e2NC8XskIfoBshMZ5YKziV2sbOUdsNLl2HGC7spbdzEPpJLDXCECK0VbdHmbvL&cmd=gen_page 200
+2026-07-27 09:46:18,385 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145578Tf08fe8c95d179ea15b84ce0c575d5165ed4bf5fdbc4abc708663088e6170f877&bds_s=bb944094a2cc44ca871042f3aa9647d7&bds_cq=&abd=0&qadf=moderate&abp=1&qsr=en_US&abe=0&t=device&lui=english&sc=&segment=organic&with_date=d&language=english&query=nilai+tukar+rupiah+bank+indonesia+hari+ini+27+Juli+2026&cat=web&cmd=gen_page 200
+2026-07-27 09:46:18,448 [INFO] response: https://www.google.com/search?q=nilai+tukar+rupiah+bank+indonesia+hari+ini+27+Juli+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-27 09:46:19,540 [INFO] response: https://yandex.com/search/site/?text=nilai+tukar+rupiah+bank+indonesia+hari+ini+27+Juli+2026&web=1&searchid=2889973 200
+2026-07-27 09:46:19,590 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:46:41,270 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:46:41,271 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:46:44,215 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:47:07,883 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:47:07,885 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:47:07,903 [INFO] Validasi teknis: 3x visit_webpage sukses terdeteksi (minimal 4).
+2026-07-27 09:47:07,903 [WARNING] Percobaan 1: laporan DICURIGAI tanpa riset yang cukup (cuma 3x visit_webpage sukses). Mencoba ulang dari awal...
+2026-07-27 09:47:07,903 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-07-27 09:47:07,925 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:47:11,820 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:47:11,822 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:47:11,988 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economy%20news%20July%2027%202026%20crypto%20stock%20market 200
+2026-07-27 09:47:11,994 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economy+news+July+27+2026+crypto+stock+market&limit=1 502
+2026-07-27 09:47:12,538 [INFO] response: https://www.mojeek.com/search?q=global+economy+news+July+27+2026+crypto+stock+market 403
+2026-07-27 09:47:12,711 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145632Td7331ca7783c2a66a2318d1097916f09c9b083bf210490f9879fa78bbd76b3bc&bds_s=f90aad94fa7e443ca50d3f4c0f7bb8eb&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=pb8SDxdwHpuogO3d7kaoqQYHSLlpPpC9lSA79Z4AHhGSdHHR7hVt0oZpFRpSOTXksXXMm0n62ZXh9f7LL7&cmd=gen_page 200
+2026-07-27 09:47:12,819 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145632Td7331ca7783c2a66a2318d1097916f09c9b083bf210490f9879fa78bbd76b3bc&bds_s=5d2b2a3c5f6145ed973cb26b3235a4af&bds_cq=&t=device&qadf=moderate&qsr=en_US&with_date=d&abp=1&abe=0&language=english&segment=organic&lui=english&abd=0&sc=&query=global+economy+news+July+27+2026+crypto+stock+market&cat=web&cmd=gen_page 200
+2026-07-27 09:47:12,882 [INFO] response: https://www.google.com/search?q=global+economy+news+July+27+2026+crypto+stock+market&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-27 09:47:13,152 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-27 09:47:13,304 [INFO] response: https://search.yahoo.com/search;_ylt=ijgB7Ow_SVXAwIeZc8Qb7j3b;_ylu=l6p-Ph4JVhVleUrUYeNs8WK3_rYQ0r7tFJvvIFg7_jOdxtA?p=global+economy+news+July+27+2026+crypto+stock+market&btf=d 200
+2026-07-27 09:47:14,275 [INFO] response: https://yandex.com/search/site/?text=global+economy+news+July+27+2026+crypto+stock+market&web=1&searchid=9281563 200
+2026-07-27 09:47:14,308 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-27 09:47:14,308 [INFO] Mencoba provider AI: Groq (Llama 3.3 70B)...
+2026-07-27 09:47:15,284 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:47:15,286 [INFO] Berhasil pakai provider: Groq (Llama 3.3 70B)
+2026-07-27 09:47:15,669 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-27 09:47:15,669 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-27 09:47:15,669 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-27 09:47:22,835 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:47:44,242 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-27 09:47:44,429 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20news%20today%20July%2027%202026%20World%20Cup%20Champions%20League 200
+2026-07-27 09:47:44,487 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+news+today+July+27+2026+World+Cup+Champions+League&limit=1 502
+2026-07-27 09:47:45,513 [INFO] response: https://yandex.com/search/site/?text=sports+news+today+July+27+2026+World+Cup+Champions+League&web=1&searchid=2104039 200
+2026-07-27 09:47:45,555 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:47:47,689 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:47:47,690 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:47:47,849 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20global%20sports%20results%20headlines%20today%20July%2027%202026 200
+2026-07-27 09:47:47,969 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+global+sports+results+headlines+today+July+27+2026&limit=1 502
+2026-07-27 09:47:48,034 [INFO] response: https://www.google.com/search?q=latest+global+sports+results+headlines+today+July+27+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-27 09:47:48,630 [INFO] response: https://search.brave.com/search?q=latest+global+sports+results+headlines+today+July+27+2026&source=web&tf=pd 200
+2026-07-27 09:47:48,642 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:47:50,694 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:47:50,695 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:47:50,893 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+science+AI+news+July+27+2026&limit=1 200
+2026-07-27 09:47:50,901 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20science%20AI%20news%20July%2027%202026 200
+2026-07-27 09:47:51,431 [INFO] response: https://www.mojeek.com/search?q=latest+technology+science+AI+news+July+27+2026 403
+2026-07-27 09:47:51,549 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-27 09:47:51,712 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145671Tbd065c2cbdf574d397236af1832443dc429893abe6adc15badd894ba29297cfb&bds_s=4a8ec72d23c148f5b00325317d1a1d81&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=665xzJlcguhALXVVb0wZlxpZ7JwE7an07z2TAGKhY04ETcNvo7w2RPCmGjNNt8OhDfJbuzxI5mMHLWQAR&cmd=gen_page 200
+2026-07-27 09:47:51,835 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145671Tbd065c2cbdf574d397236af1832443dc429893abe6adc15badd894ba29297cfb&bds_s=75a82073f9854728887a575e7c536db7&bds_cq=&t=device&qadf=moderate&qsr=en_US&with_date=d&abp=1&abe=0&language=english&segment=organic&lui=english&abd=0&sc=&query=latest+technology+science+AI+news+July+27+2026&cat=web&cmd=gen_page 200
+2026-07-27 09:47:51,938 [INFO] response: https://search.yahoo.com/search;_ylt=3wDILAhC7rTXJ5g1gCXzt2II;_ylu=NKZ2mHzFC8Evp3JowzqcKGIV5ZL-LvVy4uAAshRFZ4_oPjE?p=latest+technology+science+AI+news+July+27+2026&btf=d 200
+2026-07-27 09:47:52,038 [INFO] response: https://www.google.com/search?q=latest+technology+science+AI+news+July+27+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-27 09:47:53,099 [INFO] response: https://yandex.com/search/site/?text=latest+technology+science+AI+news+July+27+2026&web=1&searchid=3631999 200
+2026-07-27 09:47:53,148 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-27 09:47:53,148 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-27 09:47:53,148 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-27 09:47:54,322 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:48:05,501 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-27 09:48:06,552 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-27 09:48:06,552 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-27 09:48:06,552 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-27 09:48:06,947 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:48:12,984 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-27 09:48:13,179 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20July%2027%202026%20rupiah%20exchange%20rate%20Indonesia%20economy%20news 200
+2026-07-27 09:48:13,258 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+July+27+2026+rupiah+exchange+rate+Indonesia+economy+news&limit=1 502
+2026-07-27 09:48:13,357 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-27 09:48:14,480 [INFO] response: https://search.brave.com/search?q=IHSG+July+27+2026+rupiah+exchange+rate+Indonesia+economy+news&source=web&tf=pd 200
+2026-07-27 09:48:14,491 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:48:17,857 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:48:17,859 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:48:20,191 [INFO] response: https://grokipedia.com/api/typeahead?query=olahraga+Indonesia+hari+ini+July+27+2026+Timnas+liga+lokal+atlet+internasional&limit=1 502
+2026-07-27 09:48:20,225 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=olahraga%20Indonesia%20hari%20ini%20July%2027%202026%20Timnas%20liga%20lokal%20atlet%20internasional 200
+2026-07-27 09:48:20,348 [INFO] response: https://search.yahoo.com/search;_ylt=8tAOcijkwjXBlNKC5OsQiSaK;_ylu=KABAwXYXqJZPeq4J3nSexyOuf0ANox6dHsBORrbYcdE-e1A?p=olahraga+Indonesia+hari+ini+July+27+2026+Timnas+liga+lokal+atlet+internasional&btf=d 200
+2026-07-27 09:48:21,366 [INFO] response: https://yandex.com/search/site/?text=olahraga+Indonesia+hari+ini+July+27+2026+Timnas+liga+lokal+atlet+internasional&web=1&searchid=7547821 200
+2026-07-27 09:48:21,419 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:48:24,839 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:48:24,841 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:48:25,030 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20sepak%20bola%20atau%20voli%20hasil%20pertandingan%20hari%20ini%2027%20Juli%202026%20media%20besar%20Indonesia 200
+2026-07-27 09:48:25,112 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+sepak+bola+atau+voli+hasil+pertandingan+hari+ini+27+Juli+2026+media+besar+Indonesia&limit=1 502
+2026-07-27 09:48:25,253 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145705Tf7710e6db99f9a16ab18afc0e779ce260303d011c03deebe0445bbfc2eeaaa6f&bds_s=4dbadb25608c44059eba720d2fe506fd&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=665xzJlciU6AAvucnZ2oPA1GQh3KkmEGNoxJh259gFnNhB8flmqzazsNvsye7FRvwWZEmskgtx7tZfvkN&cmd=gen_page 200
+2026-07-27 09:48:25,392 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=a0b2a5493a14c25dc12b62216c42aac1&bds_t=1785145705Tf7710e6db99f9a16ab18afc0e779ce260303d011c03deebe0445bbfc2eeaaa6f&bds_s=4c7d7acc180d4183b0c48bb3dc0e1ed4&bds_cq=&abe=0&qadf=moderate&lui=english&abp=1&segment=organic&t=device&qsr=en_US&sc=&with_date=d&abd=0&language=english&query=Timnas+Indonesia+sepak+bola+atau+voli+hasil+pertandingan+hari+ini+27+Juli+2026+media+besar+Indonesia&cat=web&cmd=gen_page 200
+2026-07-27 09:48:25,455 [INFO] response: https://www.google.com/search?q=Timnas+Indonesia+sepak+bola+atau+voli+hasil+pertandingan+hari+ini+27+Juli+2026+media+besar+Indonesia&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-27 09:48:25,581 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-27 09:48:26,118 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+sepak+bola+atau+voli+hasil+pertandingan+hari+ini+27+Juli+2026+media+besar+Indonesia 403
+2026-07-27 09:48:26,242 [INFO] response: https://search.yahoo.com/search;_ylt=ag-6w-IiC5upyz3gEO3AjjZJ;_ylu=3pHvHyGiuJwXvClBRv3Ane76XvklPwrNiiKBzX9utwyOKYg?p=Timnas+Indonesia+sepak+bola+atau+voli+hasil+pertandingan+hari+ini+27+Juli+2026+media+besar+Indonesia&btf=d 200
+2026-07-27 09:48:26,324 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+sepak+bola+atau+voli+hasil+pertandingan+hari+ini+27+Juli+2026+media+besar+Indonesia&source=web&tf=pd 429
+2026-07-27 09:48:27,396 [INFO] response: https://yandex.com/search/site/?text=Timnas+Indonesia+sepak+bola+atau+voli+hasil+pertandingan+hari+ini+27+Juli+2026+media+besar+Indonesia&web=1&searchid=6247737 200
+2026-07-27 09:48:27,445 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-27 09:48:27,445 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-27 09:48:27,445 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-27 09:48:28,210 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:49:42,170 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-27 09:49:42,177 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:49:45,502 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:49:45,503 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:49:45,508 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-27 09:50:02,070 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-27 09:50:02,072 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-27 09:50:02,088 [INFO] Validasi teknis: 2x visit_webpage sukses terdeteksi (minimal 4).
+2026-07-27 09:50:02,088 [WARNING] Percobaan 2: laporan DICURIGAI tanpa riset yang cukup (cuma 2x visit_webpage sukses). Sudah percobaan terakhir.
+2026-07-27 09:50:02,088 [ERROR] Laporan GAGAL validasi riset setelah 2x percobaan (cuma 2x visit_webpage sukses, minimal 4). Laporan TIDAK dikirim ke Telegram.
+2026-07-27 09:50:02,089 [INFO] Isi laporan yang GAGAL validasi (buat debugging, TIDAK dikirim ke Telegram):
+2026-07-27 09:50:02,089 [INFO] 
+**Laporan Intelijen Harian - 27 Juli 2026**
+
+---
+
+### **1. Geopolitik & Ekonomi Global**
+**Analisis Pasar dan Peristiwa Kunci:**
+Situasi geopolitik yang memanas antara AS-Iran sedikit mereda setelah sinyal negosiasi dari Pakistan, yang berdampak pada penurunan harga minyak dan memicu minat risiko di pasar global. Di pasar kripto, Bitcoin (BTC) berhasil rebound ke level $65,392.6, menunjukkan kenaikan 1.59%, sementara Ethereum (ETH) melonjak 4.24% ke $1,954.52. Indeks Fear & Greed juga naik tipis ke 30 dari sebelumnya 28, menandakan sedikit peningkatan sentimen pasar. Namun, pasar saham tradisional menunjukkan performa beragam, dengan NASDAQ turun 0.64% ke 24,975.82 dan S&P 500 naik tipis 0.05% ke 7,411.98. Pekan ini akan menjadi "super week bank sentral" dengan keputusan The Federal Reserve yang sangat dinanti, serta rilis laporan pendapatan dari raksasa teknologi seperti Apple, Microsoft, Meta, dan Amazon, yang diperkirakan akan menciptakan volatilitas signifikan di pasar aset berisiko.
+
+**Sumber Referensi:**
+- KuCoin Crypto Daily Market Report – July 27, 2026: [https://www.kucoin.com/news/articles/crypto-daily-market-report-july-27-2026](https://www.kucoin.com/news/articles/crypto-daily-market-report-july-27-2026)
+
+---
+
+### **2. Update Olahraga Global**
+**Commonwealth Games 2026 dan Sepak Bola:**
+Pada Hari Keempat Commonwealth Games 2026 di Glasgow hari ini, 27 Juli, atlet India Murali Sreeshankar berhasil lolos ke final lompat jauh putra dengan catatan impresif 8.01 meter pada percobaan pertamanya. Rekan senegaranya, Gurindervir Singh, juga menunjukkan performa kuat dengan mencatat waktu 10.39 detik di babak penyisihan 100 meter putra. Selain itu, India juga berhasil mengamankan kemenangan seri T20I melawan Zimbabwe, membawa mereka kembali ke peringkat teratas.
+
+**Sumber Referensi:**
+- Business Standard - LIVE | Commonwealth Games 2026 Day 4 latest UPDATES: [https://www.business-standard.com/sports/other-sports-news/commonwealth-games-2026-live-updates-day-4-timings-cwg-india-medal-winners-athletics-today-in-glasgow-126072700226_1.html](https://www.business-standard.com/sports/other-sports-news/commonwealth-games-2026-live-updates-day-4-timings-cwg-india-medal-winners-athletics-today-in-glasgow-126072700226_1.html)
+- The Economic Times - School assembly news headlines, July 27, 2026: [https://economictimes.indiatimes.com/news/new-updates/school-assembly-news-headlines-july-27-2026-top-national-international-sports-and-business-updates/articleshow/132641662.cms?from=mdr](https://economictimes.indiatimes.com/news/new-updates/school-assembly-news-headlines-july-27-2026-top-national-international-sports-and-business-updates/articleshow/132641662.cms?from=mdr)
+
+---
+
+### **3. Fakta Teknologi, Sains, atau AI Terbaru Hari Ini**
+**Inovasi Penyimpanan Cahaya Optik:**
+Peneliti telah menemukan cara baru yang kuat untuk mengontrol interaksi antara cahaya menggunakan serat optik yang dibekukan pada suhu ekstrem -196°C. Terobosan ini membuka potensi baru untuk metode penyimpanan cahaya yang lebih efisien dan dapat memiliki implikasi besar dalam teknologi komunikasi di masa depan. Pengembangan ini menunjukkan bagaimana material pada suhu sangat rendah dapat dimanfaatkan untuk memanipulasi properti fundamental partikel cahaya.
+
+**Sumber Referensi:**
+- SciTechDaily - A Fiber Frozen at -196°C Unlocks a New Way To Store Light (July 26, 2026): [https://scitechdaily.com/a-fiber-frozen-at-196c-unlocks-a-new-way-to-store-light/](https://scitechdaily.com/a-fiber-frozen-at-196c-unlocks-a-new-way-to-store-light/)
+
+---
+
+### **4. Indonesia Update**
+**Ekonomi Domestik dan Pasar Keuangan:**
+Pada perdagangan Senin, 27 Juli 2026, Indeks Harga Saham Gabungan (IHSG) dibuka melemah 10.63 poin atau 0.17% ke posisi 6.185,80, bergerak di zona merah seiring dengan sentimen pasar yang menunggu perkembangan global. Nilai tukar Rupiah juga terpantau melemah 9 poin atau sekitar 0.05% ke level Rp17.972 per dolar AS. Pelemahan ini dipicu oleh beberapa faktor, termasuk sentimen mengenai tarif impor baru dari AS, kondisi geopolitik Timur Tengah yang masih memanas, serta berita mengejutkan mengenai pengunduran diri Perry Warjiyo dari jabatan Gubernur Bank Indonesia. Meskipun demikian, Bank Indonesia telah mengumumkan tetap mempertahankan suku bunga acuan pada level 5.75% untuk menjaga stabilitas ekonomi.
+
+**Olahraga Indonesia:**
+Timnas Voli Putra Indonesia sedang dalam persiapan intensif untuk menghadapi Vietnam di Semifinal SEA V Cup 2026 Leg 2. Pelatih timnas sepak bola Indonesia, John Herdman, juga mengungkapkan bahwa skuad Garuda mulai menunjukkan "identitas taktik" yang jelas dan konsisten, menandakan kemajuan signifikan dalam strategi permainan mereka menjelang turnamen ASEAN Hyundai Cup 2026.
+
+**Sumber Referensi:**
+- Tirto.id - Rupiah Melemah ke Rp17.972, IHSG Dibuka di Zona Merah Hari Ini: [https://www.tirto.id/rupiah-melemah-ke-rp17972-ihsg-dibuka-di-zona-merah-hari-ini-hAiE](https://www.tirto.id/rupiah-melemah-ke-rp17972-ihsg-dibuka-di-zona-merah-hari-ini-hAiE)
+- Bisnis.com - Nilai Tukar Rupiah Terhadap Dolar AS Hari Ini Senin 27 Juli 2026: [https://market.bisnis.com/read/20260727/93/1991219/nilai-tukar-rupiah-terhadap-dolar-as-hari-ini-senin-27-juli-2026](https://market.bisnis.com/read/20260727/93/1991219/nilai-tukar-rupiah-terhadap-dolar-as-hari-ini-senin-27-juli-2026)
+- PDI Perjuangan Bali - Jadwal Semifinal SEA V Cup 2026: Timnas Voli Indonesia vs Vietnam: [https://www.pdiperjuanganbali.id/jadwal-semifinal-sea-v-cup-2026-indonesia-vietnam](https://www.pdiperjuanganbali.id/jadwal-semifinal-sea-v-cup-2026-indonesia-vietnam)
+- Jawapos.com - John Herdman Sebut Timnas Indonesia mulai Tunjukkan Identitas: [https://www.jawapos.com/sepak-bola-indonesia/2607220441/john-herdman-sebut-timnas-indonesia-mulai-tunjukkan-identitas-taktik](https://www.jawapos.com/sepak-bola-indonesia/2607220441/john-herdman-sebut-timnas-indonesia-mulai-tunjukkan-identitas-taktik)
+
+2026-07-27 09:50:02,089 [INFO] Mengirim laporan ke Telegram...
+2026-07-27 09:50:02,863 [INFO] Berhasil dikirim (Format Markdown)!
+2026-07-27 09:50:02,863 [INFO] Selesai satu siklus analisa -- GAGAL validasi, laporan tidak dikirim.
