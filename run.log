@@ -4836,3 +4836,141 @@ Pasar keuangan Indonesia terus menunjukkan tanda-tanda tekanan akibat ketidakpas
 2026-07-29 01:43:05,923 [INFO] Semua 2 bagian berhasil dikirim!
 2026-07-29 01:43:05,925 [INFO] History disimpan (5 entri).
 2026-07-29 01:43:05,925 [INFO] Selesai satu siklus analisa dengan sukses.
+2026-07-29 13:44:25,157 [INFO] ==================================================
+2026-07-29 13:44:25,157 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-29 13:44:25,157 [INFO] ==================================================
+2026-07-29 13:44:25,157 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-07-29 13:44:25,752 [INFO] Merakit agen super...
+2026-07-29 13:44:25,766 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-07-29 13:44:25,783 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-29 13:44:31,565 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:44:31,575 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-29 13:44:31,929 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20crypto%20stock%20market%20news%20July%2029%202026 200
+2026-07-29 13:44:32,120 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+crypto+stock+market+news+July+29+2026&limit=1 200
+2026-07-29 13:44:32,767 [INFO] response: https://search.brave.com/search?q=geopolitics+global+economy+crypto+stock+market+news+July+29+2026&source=web&tf=pd 200
+2026-07-29 13:44:32,780 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-29 13:44:34,637 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:44:34,640 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-29 13:44:34,776 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-29 13:44:36,344 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:44:36,345 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-29 13:44:38,292 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-29 13:44:40,281 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:44:40,283 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-29 13:44:40,450 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20trending%20July%2029%202026%20World%20Cup%20Liga%20Champions%20transfer%20news 200
+2026-07-29 13:44:40,642 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+trending+July+29+2026+World+Cup+Liga+Champions+transfer+news&limit=1 502
+2026-07-29 13:44:41,459 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-07-29 13:44:41,465 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-29 13:44:41,465 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-29 13:44:41,465 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-29 13:44:42,362 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:45:02,584 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-29 13:45:02,589 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-29 13:45:02,590 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-29 13:45:02,590 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-29 13:45:12,653 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:46:07,705 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-29 13:46:08,622 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-29 13:46:12,185 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:46:12,187 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-29 13:46:12,336 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20transfer%20news%20July%2029%202026 200
+2026-07-29 13:46:12,393 [INFO] response: https://grokipedia.com/api/typeahead?query=football+transfer+news+July+29+2026&limit=1 502
+2026-07-29 13:46:12,467 [INFO] response: https://www.google.com/search?q=football+transfer+news+July+29+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-29 13:46:12,745 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=8f0d2e09eaa7f7f48dc9a1c2054200dc&bds_t=1785332772T5fffeb18739f9208cbf9781c1f00dece3332c4e8266fac668fd2691101fbcd12&bds_s=4dfcfd7c9be64c57b11c604ae53a053b&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=pb8SDxdwJtO8JPcyopHMTHqMaVRYzyTarLv1HchAZlX0Qj9nDsy7sPOcnV9TxBmO80oKUVvB4t3ZKomMAR&cmd=gen_page 200
+2026-07-29 13:46:12,900 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=8f0d2e09eaa7f7f48dc9a1c2054200dc&bds_t=1785332772T5fffeb18739f9208cbf9781c1f00dece3332c4e8266fac668fd2691101fbcd12&bds_s=1f8373b420464994a6bfb957197e1cd0&bds_cq=&language=english&sc=&segment=organic&abd=0&lui=english&qsr=en_US&abe=0&qadf=moderate&with_date=d&abp=1&t=device&query=football+transfer+news+July+29+2026&cat=web&cmd=gen_page 200
+2026-07-29 13:46:13,458 [INFO] response: https://www.mojeek.com/search?q=football+transfer+news+July+29+2026 403
+2026-07-29 13:46:14,179 [INFO] response: https://search.brave.com/search?q=football+transfer+news+July+29+2026&source=web&tf=pd 200
+2026-07-29 13:46:14,199 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-29 13:46:16,130 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:46:16,131 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-29 13:46:16,367 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-29 13:46:18,021 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:46:18,022 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-29 13:46:18,194 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20science%20AI%20news%20July%2029%202026 200
+2026-07-29 13:46:18,379 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+science+AI+news+July+29+2026&limit=1 200
+2026-07-29 13:46:18,760 [INFO] response: https://search.yahoo.com/search;_ylt=GsmeQAr-NfJln8J2tbebh7nc;_ylu=0aFt2lynhPRT8AdbTpgKqlGut5kBA1xiObyEBER0Ym8UycM?p=latest+technology+science+AI+news+July+29+2026&btf=d 200
+2026-07-29 13:46:19,268 [INFO] response: https://www.mojeek.com/search?q=latest+technology+science+AI+news+July+29+2026 403
+2026-07-29 13:46:19,342 [INFO] response: https://www.google.com/search?q=latest+technology+science+AI+news+July+29+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-29 13:46:20,567 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-07-29 13:46:20,575 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-29 13:46:22,772 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:46:22,773 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-29 13:46:23,221 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-29 13:46:23,222 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-29 13:46:23,222 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-29 13:46:23,917 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:46:26,699 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-29 13:46:26,701 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-29 13:46:26,702 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-29 13:46:26,702 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-29 13:46:27,383 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:47:00,755 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-29 13:47:00,758 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-29 13:47:00,758 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-29 13:47:00,758 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-29 13:47:01,876 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:47:07,052 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-29 13:47:07,237 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20Rupiah%20ekonomi%20Indonesia%20hari%20ini%2029%20Juli%202026 200
+2026-07-29 13:47:07,278 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+Rupiah+ekonomi+Indonesia+hari+ini+29+Juli+2026&limit=1 200
+2026-07-29 13:47:08,425 [INFO] response: https://yandex.com/search/site/?text=IHSG+Rupiah+ekonomi+Indonesia+hari+ini+29+Juli+2026&web=1&searchid=9065854 200
+2026-07-29 13:47:08,471 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-29 13:47:08,471 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-29 13:47:08,471 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-29 13:47:09,258 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:47:12,028 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-29 13:47:12,631 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-29 13:47:15,440 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:47:15,441 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-29 13:47:15,620 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=olahraga%20Indonesia%20terbaru%20hari%20ini%2029%20Juli%202026%20Timnas%20liga%20lokal%20atlet%20internasional 200
+2026-07-29 13:47:15,689 [INFO] response: https://grokipedia.com/api/typeahead?query=olahraga+Indonesia+terbaru+hari+ini+29+Juli+2026+Timnas+liga+lokal+atlet+internasional&limit=1 200
+2026-07-29 13:47:16,483 [INFO] response: https://search.brave.com/search?q=olahraga+Indonesia+terbaru+hari+ini+29+Juli+2026+Timnas+liga+lokal+atlet+internasional&source=web&tf=pd 200
+2026-07-29 13:47:16,506 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-29 13:47:18,875 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:47:18,877 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-29 13:47:20,101 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-29 13:47:30,135 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-29 13:47:30,137 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-29 13:47:30,149 [INFO] Validasi teknis: 6x visit_webpage sukses terdeteksi (minimal 4).
+2026-07-29 13:47:30,149 [INFO] Validasi LULUS -- laporan terbukti berbasis riset asli.
+2026-07-29 13:47:30,149 [INFO] ==================================================
+2026-07-29 13:47:30,150 [INFO] HASIL LAPORAN LENGKAP:
+2026-07-29 13:47:30,150 [INFO] ==================================================
+2026-07-29 13:47:30,150 [INFO] ### Laporan Intelijen Harian - 29 Juli 2026
+
+Berikut adalah rangkuman perkembangan terkini di bidang geopolitik, ekonomi global, olahraga, dan teknologi untuk hari ini, 29 Juli 2026.
+
+---
+
+### 1. Geopolitik & Ekonomi Global: Pasar Saham AS Mixed Menjelang Keputusan Fed, Harga Minyak Reli 5%
+
+Per 29 Juli 2026, pasar saham bergejolak menjelang pengumuman kebijakan suku bunga Federal Reserve. Kontrak futures indeks saham AS menunjukkan pergerakan yang mixed, dengan **Dow futures turun 0,66% menjadi 52.592**, sementara S&P 500 dan Nasdaq 100 futures bergerak di sekitar level tidak berubah. Di tengah ketidakpastian ini, **harga minyak Brent melonjak 5%**, menambah tekanan inflasi di pasar komoditas. Investor juga mengamati event opsi AI terkait teknologi senilai **$190 miliar**, dengan laporan pendapatan Microsoft [NASDAQ:MSFT] menjadi sorotan, diperkirakan akan menunjukkan pergerakan tersirat 6,6%. Probabilitas kenaikan suku bunga Fed saat ini berada di **38%**, memicu kehati-hatian di kalangan trader.
+
+(Sumber: TechStock², [https://ts2.tech/en/stock-market-today-29-07-2026/](https://ts2.tech/en/stock-market-today-29-07-2026/))
+
+### 2. Update Olahraga Global: Chelsea Targetkan Henderson dan Welbeck dalam Bursa Transfer
+
+Kabar terbaru dari bursa transfer sepak bola global hari ini menunjukkan aktivitas signifikan dari Chelsea. Klub raksasa Inggris ini telah **menyepakati kesepakatan untuk mendatangkan Danny Welbeck (35)** dari Brighton dengan kontrak dua tahun. Selain itu, **Jordan Henderson (36) dikabarkan akan membatalkan kontraknya dengan Brentford** untuk bergabung ke Stamford Bridge. Langkah ini menjadi bagian dari strategi manajer baru Xabi Alonso untuk menambah pengalaman ke dalam skuad Chelsea, yang selama dua musim terakhir menjadi yang termuda di Premier League.
+
+(Sumber: BBC Sport, [https://www.bbc.com/sport/football/articles/c935lvyeykwo](https://www.bbc.com/sport/football/articles/c935lvyeykwo))
+
+### 3. Fakta Teknologi, Sains, atau AI Terbaru: Permintaan AI Dorong Rekor Pengiriman Komponen dan Inovasi Chip
+
+Permintaan yang kuat terhadap teknologi AI terus mendorong pertumbuhan signifikan di industri semikonduktor. **NVIDIA dan Broadcom dilaporkan memulai peningkatan volume produksi untuk switch CPO (Co-Packaged Optics) generasi berikutnya**, dengan potensi hambatan pada *optical engine yield* dan kapasitas *advanced packaging*. Selain itu, survei terbaru dari TrendForce mengungkapkan bahwa **permintaan AI yang robust telah mendorong pengiriman komponen MLCC (Multi-Layer Ceramic Capacitor) dari tiga pemasok utama Jepang dan Korea (Murata, Samsung Electro-Mechanics, dan Taiyo Yuden) ke level tertinggi dalam lima tahun pada Juni 2026**. Di sisi lain, NXP Semiconductors juga menemukan peran baru dalam pusat data AI di luar GPU, menunjukkan diversifikasi aplikasi AI yang terus meluas.
+
+(Sumber: Semi Wave Now, [https://semiwavenow.com/news](https://semiwavenow.com/news))
+
+### 4. Indonesia Update: Rupiah Melemah, IHSG Menguat di Pembukaan; Timnas Hadapi Timor Leste
+
+Di pasar domestik, nilai tukar **Rupiah melemah ke level Rp18.099 per dolar AS** pada 29 Juli 2026. Sementara itu, **Indeks Harga Saham Gabungan (IHSG) Bursa Efek Indonesia (BEI) dibuka menguat 0,17 persen ke level 6.141,16** pada perdagangan hari ini. Pergerakan IHSG yang menguat ini terjadi setelah sempat mengalami tekanan pada sesi sebelumnya, menunjukkan volatilitas pasar di tengah sentimen global.
+
+(Sumber: Tirto.id, [https://tirto.id/rupiah-melemah-ke-rp18099-ihsg-menguat-pada-29-juli-2026-hAqv](https://tirto.id/rupiah-melemah-ke-rp18099-ihsg-menguat-pada-29-juli-2026-hAqv))
+
+Dari dunia olahraga Indonesia, **Timnas Indonesia dijadwalkan akan menghadapi Timor Leste dalam laga kedua Grup A Piala AFF 2026**. Pertandingan krusial ini akan berlangsung di Chonburi pada hari Kamis, 29 Juli 2026, dan menjadi tantangan penting bagi skuad Garuda di ajang regional tersebut.
+
+(Sumber: Liputan6.com, [https://www.liputan6.com/bola/read/8257399/3-tantangan-timnas-indonesia-saat-ladeni-timor-leste](https://www.liputan6.com/bola/read/8257399/3-tantangan-timnas-indonesia-saat-ladeni-timor-leste))
+2026-07-29 13:47:30,150 [INFO] ==================================================
+2026-07-29 13:47:30,150 [INFO] Mengirim laporan ke Telegram...
+2026-07-29 13:47:30,150 [INFO] Pesan sepanjang 4123 karakter, akan dipecah jadi beberapa bagian...
+2026-07-29 13:47:33,415 [INFO] Semua 2 bagian berhasil dikirim!
+2026-07-29 13:47:33,416 [INFO] History disimpan (5 entri).
+2026-07-29 13:47:33,416 [INFO] Selesai satu siklus analisa dengan sukses.
