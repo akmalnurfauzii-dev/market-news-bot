@@ -4974,3 +4974,148 @@ Dari dunia olahraga Indonesia, **Timnas Indonesia dijadwalkan akan menghadapi Ti
 2026-07-29 13:47:33,415 [INFO] Semua 2 bagian berhasil dikirim!
 2026-07-29 13:47:33,416 [INFO] History disimpan (5 entri).
 2026-07-29 13:47:33,416 [INFO] Selesai satu siklus analisa dengan sukses.
+2026-07-30 01:22:20,784 [INFO] ==================================================
+2026-07-30 01:22:20,784 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-07-30 01:22:20,784 [INFO] ==================================================
+2026-07-30 01:22:20,784 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-07-30 01:22:21,508 [INFO] Merakit agen super...
+2026-07-30 01:22:21,523 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-07-30 01:22:21,541 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-30 01:22:25,679 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:22:25,690 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-30 01:22:25,916 [INFO] response: https://grokipedia.com/api/typeahead?query=global+stock+market+news+July+30+2026+crypto&limit=1 200
+2026-07-30 01:22:25,988 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20stock%20market%20news%20July%2030%202026%20crypto 200
+2026-07-30 01:22:26,857 [INFO] response: https://yandex.com/search/site/?text=global+stock+market+news+July+30+2026+crypto&web=1&searchid=1650409 200
+2026-07-30 01:22:26,904 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-30 01:22:28,307 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:22:28,308 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-30 01:22:28,725 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-30 01:22:31,447 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:22:31,449 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-30 01:22:31,829 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-30 01:22:35,228 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:22:35,230 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-30 01:22:35,359 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20today%20July%2030%202026 200
+2026-07-30 01:22:35,398 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+today+July+30+2026&limit=1 200
+2026-07-30 01:22:35,445 [INFO] response: https://www.google.com/search?q=global+sports+news+today+July+30+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-30 01:22:35,550 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=7d7e4ea98d35c638863da66e1911bad3&bds_t=1785374555T337329ab00decae3de7459cb64b46cb38741261429bc8fc43c22684c218f6b73&bds_s=0f614c69adaf4c2fb4b7a03a5106dd42&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=pb8SDxdwDJskFrvGEqpUiMn00e8ihZR1DJJeWY1ICOYxZt4c3z2iTA32E6LZUBoxbs8OzvnLSvEX9oZw7j&cmd=gen_page 200
+2026-07-30 01:22:35,613 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=7d7e4ea98d35c638863da66e1911bad3&bds_t=1785374555T337329ab00decae3de7459cb64b46cb38741261429bc8fc43c22684c218f6b73&bds_s=44630bf3613c43b7b61a3f47c864327e&bds_cq=&abd=0&language=english&abp=1&sc=&segment=organic&qadf=moderate&lui=english&qsr=en_US&t=device&with_date=d&abe=0&query=global+sports+news+today+July+30+2026&cat=web&cmd=gen_page 200
+2026-07-30 01:22:36,332 [INFO] response: https://search.brave.com/search?q=global+sports+news+today+July+30+2026&source=web&tf=pd 200
+2026-07-30 01:22:36,344 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-30 01:22:36,344 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-30 01:22:36,344 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-30 01:22:41,822 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:23:01,776 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-30 01:23:01,778 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-30 01:23:01,778 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-30 01:23:01,778 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-30 01:23:06,966 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:23:22,987 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-30 01:23:22,989 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-30 01:23:22,989 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-30 01:23:22,989 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-30 01:23:28,094 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:25:45,852 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-30 01:25:45,854 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-30 01:25:48,637 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:25:48,639 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-30 01:25:49,293 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-30 01:25:51,054 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:25:51,055 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-30 01:25:51,586 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-30 01:25:54,312 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:25:54,314 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-30 01:25:54,454 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+science+AI+news+July+30+2026&limit=1 200
+2026-07-30 01:25:54,495 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20science%20AI%20news%20July%2030%202026 200
+2026-07-30 01:25:54,538 [INFO] response: https://www.google.com/search?q=latest+technology+science+AI+news+July+30+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-30 01:25:55,309 [INFO] response: https://yandex.com/search/site/?text=latest+technology+science+AI+news+July+30+2026&web=1&searchid=3128845 200
+2026-07-30 01:25:55,346 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-30 01:25:57,462 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:25:57,464 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-30 01:25:57,725 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-30 01:25:57,726 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-30 01:25:57,726 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-30 01:25:59,570 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:26:21,969 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-30 01:26:22,072 [INFO] response: https://grokipedia.com/api/typeahead?query=recent+AI+tech+breakthrough+2026&limit=1 200
+2026-07-30 01:26:22,122 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=recent%20AI%20tech%20breakthrough%202026 200
+2026-07-30 01:26:22,180 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-30 01:26:22,601 [INFO] response: https://www.mojeek.com/search?q=recent+AI+tech+breakthrough+2026 403
+2026-07-30 01:26:23,305 [INFO] response: https://yandex.com/search/site/?text=recent+AI+tech+breakthrough+2026&web=1&searchid=1441576 200
+2026-07-30 01:26:23,340 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-30 01:26:23,340 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-30 01:26:23,340 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-30 01:26:24,001 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:26:36,297 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-30 01:26:36,425 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20breakthrough%20July%2030%202026 200
+2026-07-30 01:26:36,477 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+breakthrough+July+30+2026&limit=1 200
+2026-07-30 01:26:36,805 [INFO] response: https://www.mojeek.com/search?q=AI+breakthrough+July+30+2026 403
+2026-07-30 01:26:37,367 [INFO] response: https://search.brave.com/search?q=AI+breakthrough+July+30+2026&source=web&tf=pd 200
+2026-07-30 01:26:37,379 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-07-30 01:26:37,379 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-30 01:26:37,379 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-30 01:26:42,738 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:26:58,308 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-30 01:26:58,810 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-30 01:27:02,389 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:27:02,391 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-30 01:27:02,491 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+nilai+tukar+Rupiah+30+Juli+2026&limit=1 200
+2026-07-30 01:27:02,513 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20nilai%20tukar%20Rupiah%2030%20Juli%202026 200
+2026-07-30 01:27:02,741 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=7d7e4ea98d35c638863da66e1911bad3&bds_t=1785374822T184213bf4dc20ede3ad855d4264345c925f1edcfa5ab98349c781f40d0319956&bds_s=6f16ca85eed54ac68e93a12e2d25845b&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=pb8SDxdwDLWxOgxrwYtrfz68wGoagdqADKh1JfrYtUZ80lN2ISpyPeCagfItGNixfwsrHU0B7jjYLxBEyp&cmd=gen_page 200
+2026-07-30 01:27:02,827 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=7d7e4ea98d35c638863da66e1911bad3&bds_t=1785374822T184213bf4dc20ede3ad855d4264345c925f1edcfa5ab98349c781f40d0319956&bds_s=535f444b04c544acba83906d69353bb1&bds_cq=&qadf=moderate&sc=&abp=1&abe=0&t=device&abd=0&segment=organic&language=english&with_date=d&qsr=en_US&lui=english&query=IHSG+hari+ini+nilai+tukar+Rupiah+30+Juli+2026&cat=web&cmd=gen_page 200
+2026-07-30 01:27:03,157 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+nilai+tukar+Rupiah+30+Juli+2026 403
+2026-07-30 01:27:03,924 [INFO] response: https://yandex.com/search/site/?text=IHSG+hari+ini+nilai+tukar+Rupiah+30+Juli+2026&web=1&searchid=9874623 200
+2026-07-30 01:27:03,962 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-30 01:27:08,346 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:27:08,409 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-30 01:27:08,523 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+30+Juli+2026+site%3Acnbcindonesia.com+OR+site%3Akompas.com+OR+site%3Adetik.com+OR+site%3Abisnis.com&limit=1 200
+2026-07-30 01:27:08,583 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%2030%20Juli%202026%20site%3Acnbcindonesia.com%20OR%20site%3Akompas.com%20OR%20site%3Adetik.com%20OR%20site%3Abisnis.com 200
+2026-07-30 01:27:09,107 [INFO] response: https://search.brave.com/search?q=IHSG+30+Juli+2026+site%3Acnbcindonesia.com+OR+site%3Akompas.com+OR+site%3Adetik.com+OR+site%3Abisnis.com&source=web&tf=pd 200
+2026-07-30 01:27:09,207 [INFO] response: https://grokipedia.com/api/typeahead?query=nilai+tukar+Rupiah+30+Juli+2026+site%3Acnbcindonesia.com+OR+site%3Akompas.com+OR+site%3Adetik.com+OR+site%3Abisnis.com&limit=1 200
+2026-07-30 01:27:09,302 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=nilai%20tukar%20Rupiah%2030%20Juli%202026%20site%3Acnbcindonesia.com%20OR%20site%3Akompas.com%20OR%20site%3Adetik.com%20OR%20site%3Abisnis.com 200
+2026-07-30 01:27:09,757 [INFO] response: https://search.brave.com/search?q=nilai+tukar+Rupiah+30+Juli+2026+site%3Acnbcindonesia.com+OR+site%3Akompas.com+OR+site%3Adetik.com+OR+site%3Abisnis.com&source=web&tf=pd 200
+2026-07-30 01:27:09,772 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-30 01:27:09,921 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-30 01:27:09,922 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 50.103601408s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}]
+2026-07-30 01:27:09,922 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-30 01:27:09,922 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-30 01:27:11,413 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:27:20,657 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-30 01:27:20,783 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+update+olahraga+Indonesia+Juli+30+2026&limit=1 200
+2026-07-30 01:27:20,825 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20update%20olahraga%20Indonesia%20Juli%2030%202026 200
+2026-07-30 01:27:20,868 [INFO] response: https://www.google.com/search?q=Timnas+update+olahraga+Indonesia+Juli+30+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-07-30 01:27:20,953 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=7d7e4ea98d35c638863da66e1911bad3&bds_t=1785374840Te8a05c931fe345176f7bce5c0c3b7419991ace0c6511eefd0b7c7b9c7c9dc92a&bds_s=4f5403ef47044d628fb9bec668ff56b7&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=665xzJlcj3NDdyIo0sVvvxfkmOunQOUooZHm45U3el4FQzUecEO2zt8TcefyivHLWdGvzxy9qPmzOJE29&cmd=gen_page 200
+2026-07-30 01:27:21,107 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=7d7e4ea98d35c638863da66e1911bad3&bds_t=1785374841T01d654e01798afb176d9a2839fbb1589efc6c8ed707bb7b949b5279582b4773e&bds_s=fee7c208727644ea929f72401b195cc4&bds_cq=&language=english&sc=&abd=0&abe=0&with_date=d&qsr=en_US&t=device&qadf=moderate&segment=organic&abp=1&lui=english&query=Timnas+update+olahraga+Indonesia+Juli+30+2026&cat=web&cmd=gen_page 200
+2026-07-30 01:27:21,462 [INFO] response: https://www.mojeek.com/search?q=Timnas+update+olahraga+Indonesia+Juli+30+2026 403
+2026-07-30 01:27:21,507 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-07-30 01:27:21,671 [INFO] response: https://search.yahoo.com/search;_ylt=Ll_zzzElLCApd5x1CNM_hYFU;_ylu=HJxGHifrjMV5NEDa59dQ2mYbErBiBHQWGspkQvADEhq23tM?p=Timnas+update+olahraga+Indonesia+Juli+30+2026&btf=d 200
+2026-07-30 01:27:23,452 [INFO] response: https://search.brave.com/search?q=Timnas+update+olahraga+Indonesia+Juli+30+2026&source=web&tf=pd 200
+2026-07-30 01:27:23,464 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-30 01:27:34,721 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:27:34,723 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-07-30 01:27:34,730 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-07-30 01:27:34,912 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-30 01:27:34,913 [WARNING] Provider Google Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 25.112870524s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '25s'}]}}]
+2026-07-30 01:27:34,913 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-07-30 01:27:34,913 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-07-30 01:27:35,496 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-30 01:27:54,442 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-07-30 01:27:54,443 [INFO] Validasi teknis: 4x visit_webpage sukses terdeteksi (minimal 4).
+2026-07-30 01:27:54,443 [INFO] Validasi LULUS -- laporan terbukti berbasis riset asli.
+2026-07-30 01:27:54,443 [INFO] ==================================================
+2026-07-30 01:27:54,443 [INFO] HASIL LAPORAN LENGKAP:
+2026-07-30 01:27:54,443 [INFO] ==================================================
+2026-07-30 01:27:54,443 [INFO] <function=python_interpreter>
+<parameter=code>
+opec_search = web_search(query="OPEC+ July 30 2026")
+print(opec_search)
+</parameter>
+</function>
+</tool_call>
+2026-07-30 01:27:54,443 [INFO] ==================================================
+2026-07-30 01:27:54,443 [INFO] Mengirim laporan ke Telegram...
+2026-07-30 01:27:54,744 [WARNING] Gagal kirim (parse_mode=Markdown, status=400): {"ok":false,"error_code":400,"description":"Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 150"}
+2026-07-30 01:27:54,745 [WARNING] Markdown gagal, coba teks biasa...
+2026-07-30 01:27:55,252 [INFO] Berhasil dikirim (Format Teks Biasa)!
+2026-07-30 01:27:55,252 [INFO] History disimpan (5 entri).
+2026-07-30 01:27:55,253 [INFO] Selesai satu siklus analisa dengan sukses.
