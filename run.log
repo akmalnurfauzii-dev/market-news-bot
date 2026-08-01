@@ -5872,3 +5872,182 @@ Tim Nasional Indonesia U-20 sedang mematangkan persiapan mereka untuk menghadapi
 2026-08-01 01:56:20,837 [INFO] Semua 2 bagian berhasil dikirim!
 2026-08-01 01:56:20,838 [INFO] History disimpan (5 entri).
 2026-08-01 01:56:20,838 [INFO] Selesai satu siklus analisa dengan sukses.
+2026-08-01 12:55:09,152 [INFO] ==================================================
+2026-08-01 12:55:09,153 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-08-01 12:55:09,153 [INFO] ==================================================
+2026-08-01 12:55:09,153 [INFO] Menyiapkan sistem AI dengan 3 lapis cadangan (Google -> Groq -> OpenRouter)...
+2026-08-01 12:55:09,868 [INFO] Merakit agen super...
+2026-08-01 12:55:09,884 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-08-01 12:55:09,902 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-08-01 12:55:15,039 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:55:15,050 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-08-01 12:55:15,353 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economic%20outlook%20stock%20market%20crypto%20impact%20August%201%202026 200
+2026-08-01 12:55:15,505 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economic+outlook+stock+market+crypto+impact+August+1+2026&limit=1 200
+2026-08-01 12:55:16,028 [INFO] response: https://www.mojeek.com/search?q=global+economic+outlook+stock+market+crypto+impact+August+1+2026 403
+2026-08-01 12:55:17,324 [INFO] response: https://yandex.com/search/site/?text=global+economic+outlook+stock+market+crypto+impact+August+1+2026&web=1&searchid=9291712 200
+2026-08-01 12:55:17,359 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-08-01 12:55:19,565 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:55:19,567 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-08-01 12:55:19,696 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-08-01 12:55:21,463 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:55:21,465 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-08-01 12:55:21,621 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20stock%20market%20performance%20August%201%202026%20OR%20crypto%20market%20news%20August%201%202026 200
+2026-08-01 12:55:21,710 [INFO] response: https://grokipedia.com/api/typeahead?query=global+stock+market+performance+August+1+2026+OR+crypto+market+news+August+1+2026&limit=1 200
+2026-08-01 12:55:22,223 [INFO] response: https://search.brave.com/search?q=global+stock+market+performance+August+1+2026+OR+crypto+market+news+August+1+2026&source=web&tf=pd 200
+2026-08-01 12:55:22,235 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-08-01 12:55:24,844 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:55:24,845 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-08-01 12:55:25,283 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-08-01 12:55:25,283 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-08-01 12:55:25,283 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-08-01 12:55:25,913 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:55:38,722 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-08-01 12:55:38,730 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-08-01 12:55:38,730 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-08-01 12:55:38,730 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-08-01 12:55:39,106 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:55:44,186 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-08-01 12:55:44,192 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-08-01 12:55:44,192 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-08-01 12:55:44,192 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-08-01 12:55:44,764 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:55:49,250 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-08-01 12:55:49,377 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-08-01 12:55:49,377 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-08-01 12:55:49,377 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-08-01 12:55:49,965 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:56:28,795 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-08-01 12:56:28,796 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-08-01 12:56:33,377 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:56:33,379 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-08-01 12:56:33,614 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+August+1+2026+OR+football+transfer+news+August+1+2026&limit=1 200
+2026-08-01 12:56:33,620 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20August%201%202026%20OR%20football%20transfer%20news%20August%201%202026 200
+2026-08-01 12:56:33,728 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-01 12:56:33,961 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=d15c13db4b8f1fa7f042a2914de9549b&bds_t=1785588993Tf8594121137a13891fcfe909b3438feda8355ba5c8c0be52c2d98e7a4b76812b&bds_s=f56c1359d99f4297a704ca8d88be7101&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=pb8SDxdwDLNEZ0DqCa6qeFA1ZA2TvxEuJYgU1SoEbozwmOeCDeP0BdiXR1BxaLba7rmBWVI0KMsJibPhtr&cmd=gen_page 200
+2026-08-01 12:56:34,054 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=d15c13db4b8f1fa7f042a2914de9549b&bds_t=1785588994Tb29366d7fd592f1953cc3a1f2bc922efef41d2fe9039f200026b35a201982fcf&bds_s=5aa92c78bde347c8ba02025f52339861&bds_cq=&qsr=en_US&language=english&lui=english&abd=0&abe=0&abp=1&t=device&segment=organic&qadf=moderate&sc=&with_date=d&query=global+sports+news+August+1+2026+OR+football+transfer+news+August+1+2026&cat=web&cmd=gen_page 200
+2026-08-01 12:56:35,111 [INFO] response: https://yandex.com/search/site/?text=global+sports+news+August+1+2026+OR+football+transfer+news+August+1+2026&web=1&searchid=3310119 200
+2026-08-01 12:56:35,152 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-08-01 12:56:38,721 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:56:38,723 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-08-01 12:56:39,377 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-08-01 12:56:42,549 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:56:42,550 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-08-01 12:56:42,726 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20science%20AI%20news%20August%201%202026 200
+2026-08-01 12:56:42,726 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+science+AI+news+August+1+2026&limit=1 200
+2026-08-01 12:56:43,668 [INFO] response: https://yandex.com/search/site/?text=latest+technology+science+AI+news+August+1+2026&web=1&searchid=2828810 200
+2026-08-01 12:56:43,714 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-08-01 12:56:47,244 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:56:47,246 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-08-01 12:56:47,406 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20breakthrough%20news%20August%201%202026 200
+2026-08-01 12:56:47,527 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+breakthrough+news+August+1+2026&limit=1 200
+2026-08-01 12:56:47,855 [INFO] response: https://search.yahoo.com/search;_ylt=CezbkpiFWtlC5IuWHO1-bgpY;_ylu=0W7msvWrXfet1WUKTGs01EXXxB7kERPBJeZm09XWGW5tSvE?p=latest+AI+breakthrough+news+August+1+2026&btf=d 200
+2026-08-01 12:56:48,307 [INFO] response: https://search.brave.com/search?q=latest+AI+breakthrough+news+August+1+2026&source=web&tf=pd 200
+2026-08-01 12:56:48,318 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-08-01 12:56:48,318 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-08-01 12:56:48,318 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-08-01 12:56:50,673 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:57:06,657 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-08-01 12:57:07,105 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-08-01 12:57:07,105 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-08-01 12:57:07,106 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-08-01 12:57:07,795 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:57:11,638 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-08-01 12:57:11,804 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%201%20Agustus%202026%20nilai%20tukar%20rupiah 200
+2026-08-01 12:57:11,912 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+1+Agustus+2026+nilai+tukar+rupiah&limit=1 200
+2026-08-01 12:57:12,021 [INFO] response: https://search.yahoo.com/search;_ylt=x3RMNSOmuyQc2HRb1f94ap1C;_ylu=rT84wfnrfv7SUf63GxUKcKfHdgfOk7ZACuGHPZnYvyPOUx4?p=IHSG+hari+ini+1+Agustus+2026+nilai+tukar+rupiah&btf=d 200
+2026-08-01 12:57:12,623 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+1+Agustus+2026+nilai+tukar+rupiah&source=web&tf=pd 200
+2026-08-01 12:57:12,635 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-08-01 12:57:12,635 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-08-01 12:57:12,635 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-08-01 12:57:13,263 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:57:15,131 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-08-01 12:57:15,274 [INFO] response: https://grokipedia.com/api/typeahead?query=timnas+Indonesia+olahraga+August+1+2026&limit=1 200
+2026-08-01 12:57:15,291 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=timnas%20Indonesia%20olahraga%20August%201%202026 200
+2026-08-01 12:57:15,507 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=d15c13db4b8f1fa7f042a2914de9549b&bds_t=1785589035T8affc8caa6cf8bc18bc0448a71015862d041efd8a5e953e7211752e410628cec&bds_s=499f907c1f434a8f87f04820f791b540&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=665xzJlcikrsz6HuehKIzkw6wSbZcwJfah3zS6fY9T655wclrKe59UTRhjVGMYWW36WEWqw7EsTSxqYq1&cmd=gen_page 200
+2026-08-01 12:57:15,612 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=d15c13db4b8f1fa7f042a2914de9549b&bds_t=1785589035T8affc8caa6cf8bc18bc0448a71015862d041efd8a5e953e7211752e410628cec&bds_s=1a8a91b679844d069a80ed3191bbef07&bds_cq=&language=english&qadf=moderate&qsr=en_US&segment=organic&abp=1&with_date=d&t=device&lui=english&abd=0&sc=&abe=0&query=timnas+Indonesia+olahraga+August+1+2026&cat=web&cmd=gen_page 200
+2026-08-01 12:57:15,681 [INFO] response: https://www.google.com/search?q=timnas+Indonesia+olahraga+August+1+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-01 12:57:16,593 [INFO] response: https://yandex.com/search/site/?text=timnas+Indonesia+olahraga+August+1+2026&web=1&searchid=4358309 200
+2026-08-01 12:57:16,626 [INFO] Skip Google Gemini 2.5 Flash sementara (udah pakai 4x dalam 1 menit terakhir, proaktif hindari kena limit)...
+2026-08-01 12:57:16,626 [INFO] Skip Groq (Llama 3.3 70B) sementara (proyeksi token bakal ngelewatin 11000 token/menit, proaktif hindari kena limit)...
+2026-08-01 12:57:16,626 [INFO] Mencoba provider AI: OpenRouter (auto-router gratis)...
+2026-08-01 12:57:17,549 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:59:14,931 [INFO] Berhasil pakai provider: OpenRouter (auto-router gratis)
+2026-08-01 12:59:15,156 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20stock%20market%20performance%20August%201%202026 200
+2026-08-01 12:59:15,158 [INFO] response: https://grokipedia.com/api/typeahead?query=global+stock+market+performance+August+1+2026&limit=1 200
+2026-08-01 12:59:15,219 [INFO] response: https://www.google.com/search?q=global+stock+market+performance+August+1+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-01 12:59:15,382 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=d15c13db4b8f1fa7f042a2914de9549b&bds_t=1785589155T878413f8876717599184a45552be194f122c0453cc72917228a3c53fdb37ef6a&bds_s=e3ff38f7208c43028b135893a4edc917&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=pb8SDxdwGqBk4tNMBn6ez2hy4vnEisgI5uCzGKFKZXSnmXMTKzOnv9yAofUiqZv1ifKl0KOjix6jhCxdCt&cmd=gen_page 200
+2026-08-01 12:59:15,581 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=d15c13db4b8f1fa7f042a2914de9549b&bds_t=1785589155T878413f8876717599184a45552be194f122c0453cc72917228a3c53fdb37ef6a&bds_s=6956645af1354377a18656fcc9c86d98&bds_cq=&language=english&sc=&t=device&qadf=moderate&qsr=en_US&abp=1&abe=0&segment=organic&abd=0&lui=english&with_date=d&query=global+stock+market+performance+August+1+2026&cat=web&cmd=gen_page 200
+2026-08-01 12:59:15,731 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-01 12:59:16,281 [INFO] response: https://www.mojeek.com/search?q=global+stock+market+performance+August+1+2026 403
+2026-08-01 12:59:16,398 [INFO] response: https://search.yahoo.com/search;_ylt=r1kE_LhRF1hXAmaG8Qtc3Qww;_ylu=y0N8EaPRksADyMIblr5CBQlJiBNQgC2BNknhNmFWq2E8Brs?p=global+stock+market+performance+August+1+2026&btf=d 200
+2026-08-01 12:59:17,377 [INFO] response: https://yandex.com/search/site/?text=global+stock+market+performance+August+1+2026&web=1&searchid=5060257 200
+2026-08-01 12:59:17,419 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-08-01 12:59:21,264 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:59:21,265 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-08-01 12:59:21,422 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=S%26P%20500%20performance%20August%201%202026%20OR%20global%20inflation%20news%20August%201%202026 200
+2026-08-01 12:59:21,423 [INFO] response: https://grokipedia.com/api/typeahead?query=S%26P+500+performance+August+1+2026+OR+global+inflation+news+August+1+2026&limit=1 200
+2026-08-01 12:59:21,970 [INFO] response: https://www.mojeek.com/search?q=S%26P+500+performance+August+1+2026+OR+global+inflation+news+August+1+2026 403
+2026-08-01 12:59:22,030 [INFO] response: https://www.google.com/search?q=S%26P+500+performance+August+1+2026+OR+global+inflation+news+August+1+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-01 12:59:22,144 [INFO] response: https://search.yahoo.com/search;_ylt=mKaK2ayb9wBV5CQLCkit-FJk;_ylu=H33_56-Jh3dW0R1OLr3bW2TBuMci6OCKUxUqjqv1rLhS8gA?p=S%26P+500+performance+August+1+2026+OR+global+inflation+news+August+1+2026&btf=d 200
+2026-08-01 12:59:22,338 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=d15c13db4b8f1fa7f042a2914de9549b&bds_t=1785589162T396856e3ba1f8fea82cb51c70e97cc48abee46d2feaf9f4de0210bc1107b4f38&bds_s=8c266bfaafad4623bda307d324100a49&bds_cq=&language=english&lui=english&t=device&query=&cat=web&sc=665xzJlchidshE6nbTcUnvtShYLFlTM1H4OmhEuaP3dMbF7g4BBX2F1hKTsrQPKCa3Kx0LlYMlN2ExOQB&cmd=gen_page 200
+2026-08-01 12:59:22,434 [INFO] response: https://www.startpage.com/sp/captcha/?bc=US&bi=Microsoft+Azure&be=d15c13db4b8f1fa7f042a2914de9549b&bds_t=1785589162T396856e3ba1f8fea82cb51c70e97cc48abee46d2feaf9f4de0210bc1107b4f38&bds_s=a9f6b272f3ce472389cdf02e574d5d42&bds_cq=&language=english&abd=0&sc=&qadf=moderate&with_date=d&lui=english&segment=organic&t=device&abp=1&abe=0&qsr=en_US&query=S%26P+500+performance+August+1+2026+OR+global+inflation+news+August+1+2026&cat=web&cmd=gen_page 200
+2026-08-01 12:59:22,633 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-01 12:59:23,122 [INFO] response: https://search.brave.com/search?q=S%26P+500+performance+August+1+2026+OR+global+inflation+news+August+1+2026&source=web&tf=pd 200
+2026-08-01 12:59:23,133 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-08-01 12:59:31,765 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:59:31,766 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-08-01 12:59:33,809 [INFO] Mencoba provider AI: Google Gemini 2.5 Flash...
+2026-08-01 12:59:55,620 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-01 12:59:55,622 [INFO] Berhasil pakai provider: Google Gemini 2.5 Flash
+2026-08-01 12:59:55,623 [INFO] Validasi teknis: 7x visit_webpage sukses terdeteksi (minimal 4).
+2026-08-01 12:59:55,623 [INFO] Validasi LULUS -- laporan terbukti berbasis riset asli.
+2026-08-01 12:59:55,623 [INFO] ==================================================
+2026-08-01 12:59:55,623 [INFO] HASIL LAPORAN LENGKAP:
+2026-08-01 12:59:55,623 [INFO] ==================================================
+2026-08-01 12:59:55,623 [INFO] ### Laporan Intelijen Harian - 01 Agustus 2026
+
+Berikut adalah rangkuman perkembangan terkini di bidang geopolitik, ekonomi global, olahraga, dan teknologi, serta update khusus dari Indonesia untuk hari ini, 01 Agustus 2026.
+
+---
+
+### 1. Geopolitik & Ekonomi Global: Wall Street Menguat Tipis di Tengah Pengaruh AI dan Kekhawatiran Inflasi
+
+Pasar saham AS menutup pekan dengan kenaikan tipis, meskipun ada divergensi di antara saham-saham teknologi besar yang dipengaruhi oleh sentimen AI dan laporan pendapatan. Pada penutupan pekan lalu, Indeks **S&P 500** naik **1.1%**, **Nasdaq** melonjak **1.6%**, dan **Dow Jones Industrial Average** menguat **1.0%**. Sementara itu, **Russell 2000** hanya menunjukkan sedikit perubahan. Pada penutupan Jumat (31 Juli 2026), S&P 500 ditutup pada **7,489.72** (naik 0.7% di hari Jumat saja), Nasdaq pada **25,373.85** (naik 1.0% di hari Jumat), dan Dow Jones Industrial Average pada **52,485.03** (naik 0.5% di hari Jumat). Sepanjang tahun 2026 (Year-to-Date), S&P 500 telah naik 9.4%, Nasdaq 9.2%, dan Dow Jones 9.2%, sementara Russell 2000 memimpin dengan kenaikan 18.1%.
+
+Kinerja perusahaan menunjukkan Microsoft dan Amazon.com melonjak pasca rilis pendapatan. Namun, Apple mengalami penurunan **7.4%** dan Meta Platforms merosot karena konversi kas yang lemah. Situasi inflasi masih menjadi sorotan, dengan angka yang tetap di atas target **2%** Federal Reserve. Data non-pertanian (payroll numbers) Juli akan dirilis pada 7 Agustus, dengan proyeksi ekonom sebesar **83,000** pekerjaan baru dan tingkat pengangguran **4.3%**. Perhatian investor terhadap investasi AI juga semakin meningkat, di mana kinerja Microsoft di sektor AI dan chip menjadi pendorong utama pemulihan pasar.
+Sumber: [TechStock²](https://ts2.tech/en/sp-500-rises-1-over-the-week-while-ai-impact-leads-to-mixed-results-among-major-tech-stocks/)
+
+---
+
+### 2. Update Olahraga Global: Laga Persahabatan Manchester United vs Atletico Madrid dan Bursa Transfer Eropa
+
+Dunia sepak bola global diramaikan dengan laga persahabatan pramusim antara **Manchester United** dan **Atletico Madrid** yang berlangsung pada 1 Agustus 2026. Pemain muda berbakat, **Amad**, menjadi starter dalam pertandingan ini. Sementara itu, bursa transfer musim panas terus bergerak. Kabar terbaru menyebutkan bahwa **Andrey Santos** telah resmi bergabung dengan **Chelsea** dari klub lamanya dengan nilai transfer **£48 juta**, ditambah potensi **£2 juta** dalam bentuk add-ons.
+Sumber: [Metro News](https://metro.co.uk/2026/08/01/man-utd-vs-atletico-madrid-live-latest-score-confirmed-lineups-29269785/)
+
+---
+
+### 3. Satu Fakta Teknologi, Sains, atau AI Terbaru Hari Ini: Penemuan Kristal Waktu Fotonik All-Optical Membuka Era Baru Kontrol Cahaya
+
+Para ilmuwan telah berhasil menciptakan **kristal waktu fotonik *all-optical* pertama di dunia**, sebuah terobosan signifikan yang dilaporkan pada 31 Juli 2026. Penemuan ini memungkinkan mereka untuk mengubah perilaku cahaya terahertz pada kecepatan yang luar biasa cepat. Potensi aplikasi dari terobosan ini sangat luas, termasuk membuka jalan bagi pengembangan komputasi *ultrafast*, sistem komunikasi yang lebih cerdas, dan kemajuan signifikan dalam teknologi lainnya. Inovasi ini menandai langkah maju penting dalam cara kita mengendalikan dan memanfaatkan cahaya untuk tujuan teknologi.
+Sumber: [ScienceDaily](https://www.sciencedaily.com/releases/2026/07/260731034131.htm)
+
+---
+
+### 4. Indonesia Update: IHSG Menguat, Rupiah Stabil di Awal Agustus, dan Timnas Putri Lolos Semifinal AFF Women's Cup
+
+Pasar keuangan domestik Indonesia menunjukkan pergerakan positif di awal Agustus 2026. **Indeks Harga Saham Gabungan (IHSG)** terpantau dibuka menguat **0.63%** atau naik **39.08 poin** ke level **6.225,43** pada pagi hari ini, setelah menutup pekan sebelumnya (31 Juli) dengan kenaikan **0.80%** ke level **6.236,13**. Penguatan ini didorong oleh sentimen global dan domestik, serta optimisme pasar terhadap perkembangan AI dan inflasi yang rendah.
+
+Sementara itu, **nilai tukar Rupiah** terhadap Dolar AS menunjukkan stabilitas. Berdasarkan data per 1 Agustus 2026, Rupiah diperdagangkan di kisaran **Rp 18.022** hingga **Rp 18.053 per Dolar AS**. Penguatan mata uang Garuda ini sejalan dengan ekspektasi pasar, dengan data Doo Financial Futures menunjukkan Rupiah menguat **0.49%** ke level Rp 18.022.
+
+Di kancah olahraga, **Tim Nasional Sepak Bola Putri Indonesia** berhasil menorehkan prestasi membanggakan dengan melaju ke babak semifinal **AFF Women's Cup 2026**. Berita ini menjadi sorotan dalam beberapa hari terakhir, menunjukkan perkembangan positif di dunia sepak bola wanita Indonesia. Timor Leste, bersama pelatih Emral Abus, tersingkir dari turnamen ini.
+Sumber:
+*   IHSG & Rupiah: [Kompas.com](https://money.kompas.com/read/2026/08/01/130000826/nilai-tukar-rupiah-hari-ini-1-agustus-2026-di-bank-mandiri-bca-dan-bni)
+*   IHSG Lainnya: [Bisnis.com](https://market.bisnis.com/read/20260731/7/1992678/ihsg-ditutup-menguat-ke-6236-ditopang-laju-bren-bbri-hingga-ammn-cs)
+*   Timnas Putri: [CNN Indonesia](https://www.cnnindonesia.com/olahraga/20260728150428-142-1390000/timnas-putri-indonesia-lolos-semifinal-aff-womens-cup-2026-catatan)
+2026-08-01 12:59:55,623 [INFO] ==================================================
+2026-08-01 12:59:55,623 [INFO] Mengirim laporan ke Telegram...
+2026-08-01 12:59:55,623 [INFO] Pesan sepanjang 5186 karakter, akan dipecah jadi beberapa bagian...
+2026-08-01 12:59:57,803 [WARNING] Gagal kirim (parse_mode=Markdown, status=400): {"ok":false,"error_code":400,"description":"Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 1500"}
+2026-08-01 12:59:59,485 [INFO] Semua 2 bagian berhasil dikirim!
+2026-08-01 12:59:59,486 [INFO] History disimpan (5 entri).
+2026-08-01 12:59:59,486 [INFO] Selesai satu siklus analisa dengan sukses.
