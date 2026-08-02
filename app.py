@@ -252,17 +252,17 @@ class FallbackModel:
 
 
 def buat_agent():
-    log.info("Menyiapkan AI dengan fallback chain (Flash-Lite → Groq → OpenRouter)...")
+    log.info("Menyiapkan AI dengan fallback chain (Gemini 2.5 Flash → Groq → OpenRouter)...")
     model = FallbackModel([
         {
-            # PROVIDER UTAMA: Gemini 2.5 Flash-Lite
-            # Free tier: 1000 req/hari, 15 RPM — jauh lebih lega dari Flash biasa (20/hari).
-            # Kualitas cukup bagus, patuh instruksi, format output konsisten.
-            "name":      "Gemini 2.5 Flash-Lite",
-            "model_id":  "gemini-2.5-flash-lite",
+            # PROVIDER UTAMA: Gemini 2.5 Flash
+            # Terbukti paling patuh instruksi dan hasilnya paling detail dari semua provider.
+            
+            "name":      "Gemini 2.5 Flash",
+            "model_id":  "gemini-2.5-flash",
             "api_base":  "https://generativelanguage.googleapis.com/v1beta/openai/",
             "api_key":   GOOGLE_API_KEY,
-            "rpm_limit": 13,  # buffer dari limit asli 15 RPM
+            "rpm_limit": 4,   # buffer dari limit asli 5 RPM (free tier)
         },
         {
             # CADANGAN 1: Groq — cepat tapi ada limit token per menit (12.000 TPM)
@@ -325,29 +325,61 @@ def jalankan_analisa_harian():
     histori      = ringkasan_history()
 
     tugas = f"""
-Hari ini tanggal {tanggal}. Fokus HANYA pada berita dari 1-2 hari terakhir (maksimal 48 jam ke belakang).
+Hari ini tanggal {tanggal}. Gunakan HANYA berita dari 1-2 hari terakhir (maksimal 48 jam ke belakang).
 
-Laporan sebelumnya (JANGAN ulangi topik/angka yang persis sama, cari yang baru):
+Laporan sebelumnya — JANGAN ulang topik/angka yang persis sama, cari yang baru:
 {histori}
 
-Kamu adalah analis intelijen, pengamat olahraga, dan jurnalis teknologi senior.
-Buat laporan 4 topik berikut:
+Kamu adalah analis intelijen senior, jurnalis ekonomi, pengamat olahraga, dan pakar teknologi.
+Buat laporan mendalam untuk 4 topik ini:
 
-1. **Geopolitik & Ekonomi Global** — berita internasional terbaru dan dampaknya ke kripto/saham.
-2. **Olahraga Global** — hasil/jadwal pertandingan terkini (World Cup, Liga Champions, transfer pemain, dll).
-3. **Teknologi & AI Terbaru** — satu fakta/terobosan teknologi atau AI dari 1-2 hari terakhir.
-4. **Indonesia Update** — kondisi IHSG dan Rupiah hari ini, berita ekonomi domestik terbaru, plus satu update olahraga Indonesia. Sumber WAJIB dari media besar: CNN Indonesia, CNBC Indonesia, Bisnis.com, Kompas, Detik, Kontan, atau sejenisnya.
+1. **Geopolitik & Ekonomi Global**
+   Cari: berita geopolitik internasional terkini dan dampaknya ke pasar kripto/saham.
+   Sumber target: Reuters, Bloomberg, CNBC, BBC, Al Jazeera, Financial Times.
+   Query pencarian: gunakan Bahasa Inggris.
 
-ATURAN WAJIB:
-- Gunakan `web_search` dulu untuk cari berita, lalu `visit_webpage(url)` untuk baca isi artikel lengkapnya.
-- WAJIB kunjungi minimal 1 artikel per topik via `visit_webpage` sebelum menulis laporan topik itu.
-- Sistem akan MENDETEKSI secara teknis apakah kamu beneran baca artikel atau cuma mengarang.
-- Cantumkan ANGKA SPESIFIK, nama konkret, tanggal/waktu di setiap poin — bukan kalimat generik.
-- Khusus olahraga: sebutkan nama tim, skor, atau jadwal (jam+tanggal) yang konkret.
-- Cantumkan URL sumber di setiap poin/topik.
-- Untuk topik global, query pencarian dalam Bahasa Inggris. Untuk topik Indonesia, gunakan Bahasa Indonesia.
-- Tulis dalam bahasa Indonesia santai, boleh campur sedikit Inggris.
-- Panjang laporan tidak dibatasi — laporan panjang akan otomatis dipecah ke beberapa pesan Telegram.
+2. **Olahraga Global**
+   Cari: hasil pertandingan atau berita transfer pemain dari 24-48 jam terakhir.
+   Sumber target: ESPN, BBC Sport, Sky Sports, UEFA.com, FIFA.com.
+   Query pencarian: gunakan Bahasa Inggris.
+
+3. **Teknologi & AI Terbaru**
+   Cari: satu berita teknologi, AI, atau sains yang konkret dari 1-2 hari terakhir.
+   Sumber target: TechCrunch, The Verge, Wired, MIT Technology Review, Ars Technica.
+   Query pencarian: gunakan Bahasa Inggris.
+
+4. **Indonesia Update**
+   Cari DUA hal terpisah:
+   a) Ekonomi: kondisi IHSG hari ini (level dan persentase perubahan), kurs Rupiah terhadap USD,
+      dan satu berita ekonomi domestik terbaru yang signifikan.
+   b) Olahraga: satu update Timnas Indonesia, liga lokal, atau atlet Indonesia di ajang internasional.
+   Sumber WAJIB dari media besar Indonesia: CNN Indonesia (cnnindonesia.com), CNBC Indonesia (cnbcindonesia.com),
+   Bisnis.com, Kompas.com, Detik.com, Kontan.co.id, Antara, atau Tempo.co.
+   Query pencarian: gunakan Bahasa Indonesia.
+
+CARA KERJA YANG BENAR (sistem akan VERIFIKASI secara teknis):
+LANGKAH 1 — Untuk tiap topik: web_search() dulu cari artikel relevan dari sumber terpercaya di atas.
+LANGKAH 2 — Kunjungi artikel via visit_webpage(url) untuk baca isi lengkapnya.
+LANGKAH 3 — Ekstrak data konkret: angka, nama, tanggal, kutipan langsung dari artikel yang dibaca.
+LANGKAH 4 — Tulis laporan SETELAH membaca, bukan mengarang dari ingatan.
+
+FORMAT LAPORAN YANG DIHARAPKAN (seperti ini, bukan kesimpulan singkat):
+❌ SALAH: "Pasar kripto mengalami volatilitas akibat sentimen global."
+✅ BENAR: "Bitcoin turun 2,3% ke $63.400 pada Senin pagi setelah data inflasi AS bulan Juni
+  menunjukkan CPI naik 3,1% YoY, lebih tinggi dari ekspektasi 2,9%. Analis dari JPMorgan
+  menyebut ini bisa menunda pemangkasan suku bunga Fed ke kuartal 4. (Sumber: Reuters)"
+
+❌ SALAH: "IHSG bergerak mixed hari ini."
+✅ BENAR: "IHSG ditutup melemah 47,3 poin (-0,72%) ke level 6.534,21 pada Senin 28 Juli 2026,
+  tertekan oleh aksi jual asing senilai Rp892 miliar. Sektor perbankan turun paling dalam -1,4%.
+  (Sumber: CNBC Indonesia)"
+
+ATURAN KETAT:
+- Setiap topik WAJIB punya minimal 1 URL sumber valid yang dicantumkan.
+- DILARANG mengarang angka, skor, atau kutipan — hanya dari artikel yang beneran dibaca.
+- Kalau halaman web error/403, coba URL lain dari hasil pencarian yang sama.
+- Panjang laporan TIDAK dibatasi — sistem Telegram otomatis pecah jadi beberapa pesan.
+- Tulis bahasa Indonesia santai, boleh campur Inggris, seperti teman diskusi yang pintar.
 """
 
     MIN_VISIT = 3  # minimal 3 topik terbukti di-visit (sedikit lebih longgar dari 4)
