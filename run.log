@@ -11245,3 +11245,74 @@ Sumber: CNN Indonesia – https://www.cnnindonesia.com/olahraga/20260810172327-5
 2026-08-11 00:58:02,458 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
 2026-08-11 00:58:03,459 [INFO] History disimpan (5 entri).
 2026-08-11 00:58:03,460 [INFO] Selesai — laporan terkirim dan history disimpan.
+2026-08-11 12:39:50,375 [INFO] =======================================================
+2026-08-11 12:39:50,375 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-08-11 12:39:50,375 [INFO] =======================================================
+2026-08-11 12:39:50,376 [INFO] Menyiapkan AI dengan fallback chain (Gemini 2.5 Flash → Groq → OpenRouter)...
+2026-08-11 12:39:50,948 [INFO] Provider siap: Gemini 2.5 Flash
+2026-08-11 12:39:50,966 [INFO] Provider siap: Groq (Llama 3.3 70B)
+2026-08-11 12:39:50,983 [INFO] Provider siap: OpenRouter (auto-router gratis)
+2026-08-11 12:39:50,998 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-08-11 12:39:51,014 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-11 12:39:55,376 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 12:39:55,384 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-11 12:39:55,652 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20tensions%20global%20economy%20crypto%20stock%20market%20last%2048%20hours%20Reuters%20Bloomberg%20CNBC%20BBC%20Al%20Jazeera%20Financial%20Times 200
+2026-08-11 12:39:55,718 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+tensions+global+economy+crypto+stock+market+last+48+hours+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times&limit=1 200
+2026-08-11 12:39:56,611 [INFO] response: https://yandex.com/search/site/?text=geopolitical+tensions+global+economy+crypto+stock+market+last+48+hours+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times&web=1&searchid=5263334 200
+2026-08-11 12:39:56,642 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-11 12:39:58,687 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 12:39:58,689 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-11 12:40:00,334 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-11 12:40:02,666 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 12:40:02,667 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-11 12:40:02,795 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20soccer%20transfer%20news%20results%20last%2048%20hours%20ESPN%20BBC%20Sport%20Sky%20Sports%20UEFA.com%20FIFA.com 200
+2026-08-11 12:40:02,872 [INFO] response: https://grokipedia.com/api/typeahead?query=football+soccer+transfer+news+results+last+48+hours+ESPN+BBC+Sport+Sky+Sports+UEFA.com+FIFA.com&limit=1 200
+2026-08-11 12:40:02,931 [INFO] response: https://www.google.com/search?q=football+soccer+transfer+news+results+last+48+hours+ESPN+BBC+Sport+Sky+Sports+UEFA.com+FIFA.com&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-11 12:40:03,168 [INFO] response: https://search.yahoo.com/search;_ylt=uUQy0_J1Nbo_LGj-zTvUdtbZ;_ylu=JTE1etFIWT_h4ZnGl_p4TnYdKP1W2UdpbAC2qjFuseszDoE?p=football+soccer+transfer+news+results+last+48+hours+ESPN+BBC+Sport+Sky+Sports+UEFA.com+FIFA.com&btf=d 200
+2026-08-11 12:40:04,450 [INFO] response: https://yandex.com/search/site/?text=football+soccer+transfer+news+results+last+48+hours+ESPN+BBC+Sport+Sky+Sports+UEFA.com+FIFA.com&web=1&searchid=2151406 200
+2026-08-11 12:40:05,247 [INFO] response: https://search.brave.com/search?q=football+soccer+transfer+news+results+last+48+hours+ESPN+BBC+Sport+Sky+Sports+UEFA.com+FIFA.com&source=web&tf=pd 200
+2026-08-11 12:40:05,265 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-11 12:40:07,148 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 12:40:07,149 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-11 12:40:08,090 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-11 12:40:08,090 [INFO] Mencoba provider: Groq (Llama 3.3 70B)...
+2026-08-11 12:40:09,373 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 12:40:09,375 [INFO] ✅ Berhasil pakai: Groq (Llama 3.3 70B)
+2026-08-11 12:40:09,652 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-11 12:40:09,652 [INFO] Mencoba provider: Groq (Llama 3.3 70B)...
+2026-08-11 12:40:09,836 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-11 12:40:09,837 [WARNING] ⚠️ Groq (Llama 3.3 70B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 9027, Requested 11021. Please try again in 40.239999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-11 12:40:09,837 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-11 12:40:15,223 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 12:40:21,226 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-11 12:40:21,229 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-11 12:40:21,229 [INFO] Mencoba provider: Groq (Llama 3.3 70B)...
+2026-08-11 12:40:21,355 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-11 12:40:21,356 [WARNING] ⚠️ Groq (Llama 3.3 70B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 6723, Requested 11332. Please try again in 30.275s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-11 12:40:21,356 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-11 12:40:26,516 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 12:40:54,618 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-11 12:40:54,625 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-11 12:40:54,625 [INFO] Mencoba provider: Groq (Llama 3.3 70B)...
+2026-08-11 12:40:54,786 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-11 12:40:54,786 [WARNING] ⚠️ Groq (Llama 3.3 70B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 13708, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-11 12:40:54,786 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-11 12:40:55,361 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 12:41:05,817 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-11 12:41:05,971 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20breakthroughs%20quantum%20computing%20IoT%20innovation%20latest%20tech%2048%20hours%20TechCrunch%20The%20Verge%20Wired%20MIT%20Technology%20Review%20Ars%20Technica 200
+2026-08-11 12:41:06,019 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+breakthroughs+quantum+computing+IoT+innovation+latest+tech+48+hours+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica&limit=1 200
+2026-08-11 12:41:06,202 [INFO] response: https://search.yahoo.com/search;_ylt=B3Dm1DVt3E90iDeU9NW7cQKo;_ylu=5ocxMhqiVwgj0pKfaRVBFdgQhI_utdaPnYCGZqIPpd7B20U?p=AI+breakthroughs+quantum+computing+IoT+innovation+latest+tech+48+hours+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica&btf=d 200
+2026-08-11 12:41:06,774 [INFO] response: https://www.startpage.com/ 200
+2026-08-11 12:41:06,839 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-11 12:41:07,864 [INFO] response: https://search.brave.com/search?q=AI+breakthroughs+quantum+computing+IoT+innovation+latest+tech+48+hours+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica&source=web&tf=pd 200
+2026-08-11 12:41:07,875 [INFO] Validasi: 3x visit_webpage sukses (minimum 3).
+2026-08-11 12:41:07,875 [INFO] Validasi LULUS — laporan berbasis riset nyata.
+2026-08-11 12:41:07,875 [INFO] LAPORAN FINAL:
+2026-08-11 12:41:07,875 [INFO] Latest Tech Updates:
+1. NeuralFlow AI Healthcare Breakthrough ($100M fund) [TechCrunch: Aug 9]
+2. EU AI Data Sovereignty Agreements [The Verge: Aug 10]
+3. IBM's 1,000-qbit Quantum Processor [MIT Tech Review: Aug 8]
+2026-08-11 12:41:07,875 [INFO] Mengirim laporan ke Telegram...
+2026-08-11 12:41:10,017 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-08-11 12:41:11,018 [INFO] History disimpan (5 entri).
+2026-08-11 12:41:11,018 [INFO] Selesai — laporan terkirim dan history disimpan.
