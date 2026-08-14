@@ -12063,3 +12063,179 @@ Strategi ini diambil pasca evaluasi performa Timnas Indonesia di babak penyisiha
 2026-08-13 12:47:35,414 [INFO] ✅ Bagian 2/2 terkirim (Markdown)!
 2026-08-13 12:47:36,415 [INFO] History disimpan (5 entri).
 2026-08-13 12:47:36,415 [INFO] Selesai — laporan terkirim dan history disimpan.
+2026-08-14 01:02:08,851 [INFO] =======================================================
+2026-08-14 01:02:08,851 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-08-14 01:02:08,851 [INFO] =======================================================
+2026-08-14 01:02:08,851 [INFO] Menyiapkan AI dengan fallback chain (Gemini 2.5 Flash → Groq → OpenRouter)...
+2026-08-14 01:02:09,193 [INFO] Provider siap: Gemini 2.5 Flash
+2026-08-14 01:02:09,194 [INFO] Provider siap: Groq (Llama 3.3 70B)
+2026-08-14 01:02:09,195 [INFO] Provider siap: OpenRouter (auto-router gratis)
+2026-08-14 01:02:09,203 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-08-14 01:02:09,215 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-14 01:02:14,709 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:02:14,714 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-14 01:02:15,092 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20tensions%20global%20markets%20OR%20economic%20outlook%20stock%20market%20crypto%20currency%20August%2012%202026%20to%20August%2014%202026 200
+2026-08-14 01:02:15,270 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+tensions+global+markets+OR+economic+outlook+stock+market+crypto+currency+August+12+2026+to+August+14+2026&limit=1 200
+2026-08-14 01:02:15,483 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-14 01:02:15,965 [INFO] response: https://www.mojeek.com/search?q=geopolitical+tensions+global+markets+OR+economic+outlook+stock+market+crypto+currency+August+12+2026+to+August+14+2026 403
+2026-08-14 01:02:16,078 [INFO] response: https://www.google.com/search?q=geopolitical+tensions+global+markets+OR+economic+outlook+stock+market+crypto+currency+August+12+2026+to+August+14+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-14 01:02:16,417 [INFO] response: https://search.yahoo.com/search;_ylt=BV-2QVEzU3iwIy0CYAxl27SW;_ylu=JzAqazRwX-ULWjbiXKsE8IHnQovcwCdUplyxMIJ5eFVzmxQ?p=geopolitical+tensions+global+markets+OR+economic+outlook+stock+market+crypto+currency+August+12+2026+to+August+14+2026&btf=d 200
+2026-08-14 01:02:17,084 [INFO] response: https://search.brave.com/search?q=geopolitical+tensions+global+markets+OR+economic+outlook+stock+market+crypto+currency+August+12+2026+to+August+14+2026&source=web&tf=pd 200
+2026-08-14 01:02:17,099 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-14 01:02:21,066 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:02:21,067 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-14 01:02:21,641 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-14 01:02:24,973 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:02:24,974 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-14 01:02:26,489 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-14 01:02:31,505 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:02:31,506 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-14 01:02:31,917 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-14 01:02:31,917 [INFO] Mencoba provider: Groq (Llama 3.3 70B)...
+2026-08-14 01:02:34,960 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:02:34,963 [INFO] ✅ Berhasil pakai: Groq (Llama 3.3 70B)
+2026-08-14 01:02:35,178 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20sports%20news%20football%20transfer%20updates%20August%202026 200
+2026-08-14 01:02:35,318 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+sports+news+football+transfer+updates+August+2026&limit=1 200
+2026-08-14 01:02:35,484 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-14 01:02:35,746 [INFO] response: https://www.startpage.com/ 200
+2026-08-14 01:02:35,822 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-14 01:02:35,898 [INFO] response: https://www.google.com/search?q=latest+sports+news+football+transfer+updates+August+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-14 01:02:36,437 [INFO] response: https://www.mojeek.com/search?q=latest+sports+news+football+transfer+updates+August+2026 403
+2026-08-14 01:02:36,592 [INFO] response: https://search.yahoo.com/search;_ylt=yIMDL0Dm2aQ-9joZf9kRJjiW;_ylu=kh3bY_BTQtHvxDiGjiDiV8GhL7H--TExNNLPBGQjQP1QCYE?p=latest+sports+news+football+transfer+updates+August+2026&btf=d 200
+2026-08-14 01:02:38,251 [INFO] response: https://yandex.com/search/site/?text=latest+sports+news+football+transfer+updates+August+2026&web=1&searchid=3986742 200
+2026-08-14 01:02:38,286 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-14 01:02:38,286 [INFO] Mencoba provider: Groq (Llama 3.3 70B)...
+2026-08-14 01:02:38,406 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-14 01:02:38,406 [WARNING] ⚠️ Groq (Llama 3.3 70B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 12212, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-14 01:02:38,406 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-14 01:02:39,074 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:02:49,885 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-14 01:02:49,887 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-14 01:02:49,887 [INFO] Mencoba provider: Groq (Llama 3.3 70B)...
+2026-08-14 01:02:50,019 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-14 01:02:50,020 [WARNING] ⚠️ Groq (Llama 3.3 70B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 12267, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-14 01:02:50,020 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-14 01:02:50,631 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:02:52,824 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-14 01:02:53,669 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-14 01:02:53,669 [INFO] Mencoba provider: Groq (Llama 3.3 70B)...
+2026-08-14 01:02:53,768 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-14 01:02:53,769 [WARNING] ⚠️ Groq (Llama 3.3 70B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 14258, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-14 01:02:53,769 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-14 01:02:54,604 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:03:24,364 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-14 01:03:24,836 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-14 01:03:28,299 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:03:28,300 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-14 01:03:28,500 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-14 01:03:31,761 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:03:31,762 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-14 01:03:31,990 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20news%20AI%20breakthrough%20August%2012%202026%20to%20August%2014%202026 200
+2026-08-14 01:03:32,123 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+news+AI+breakthrough+August+12+2026+to+August+14+2026&limit=1 200
+2026-08-14 01:03:34,337 [INFO] response: https://search.brave.com/search?q=latest+technology+news+AI+breakthrough+August+12+2026+to+August+14+2026&source=web&tf=pd 200
+2026-08-14 01:03:34,346 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-14 01:03:56,075 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:03:56,076 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-14 01:03:56,397 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-14 01:03:59,853 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:03:59,854 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-14 01:04:00,051 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20kurs%20Rupiah%20USD%20berita%20ekonomi%20domestik%20terbaru%2012-14%20Agustus%202026 200
+2026-08-14 01:04:00,299 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+kurs+Rupiah+USD+berita+ekonomi+domestik+terbaru+12-14+Agustus+2026&limit=1 200
+2026-08-14 01:04:01,305 [INFO] response: https://yandex.com/search/site/?text=IHSG+hari+ini+kurs+Rupiah+USD+berita+ekonomi+domestik+terbaru+12-14+Agustus+2026&web=1&searchid=4907210 200
+2026-08-14 01:04:01,353 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-14 01:04:01,354 [INFO] Mencoba provider: Groq (Llama 3.3 70B)...
+2026-08-14 01:04:01,496 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-14 01:04:01,496 [WARNING] ⚠️ Groq (Llama 3.3 70B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 21193, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-14 01:04:01,497 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-14 01:04:02,341 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:05:39,704 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-14 01:05:40,541 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-14 01:05:51,788 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:05:51,789 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-14 01:05:52,030 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%2014%20Agustus%202026%20OR%20kurs%20Rupiah%20USD%20hari%20ini%2014%20Agustus%202026%20OR%20berita%20ekonomi%20Indonesia%20terbaru%2014%20Agustus%202026 200
+2026-08-14 01:05:52,160 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+14+Agustus+2026+OR+kurs+Rupiah+USD+hari+ini+14+Agustus+2026+OR+berita+ekonomi+Indonesia+terbaru+14+Agustus+2026&limit=1 200
+2026-08-14 01:05:52,247 [INFO] response: https://www.google.com/search?q=IHSG+hari+ini+14+Agustus+2026+OR+kurs+Rupiah+USD+hari+ini+14+Agustus+2026+OR+berita+ekonomi+Indonesia+terbaru+14+Agustus+2026&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-14 01:05:52,717 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+14+Agustus+2026+OR+kurs+Rupiah+USD+hari+ini+14+Agustus+2026+OR+berita+ekonomi+Indonesia+terbaru+14+Agustus+2026 403
+2026-08-14 01:05:53,648 [INFO] response: https://yandex.com/search/site/?text=IHSG+hari+ini+14+Agustus+2026+OR+kurs+Rupiah+USD+hari+ini+14+Agustus+2026+OR+berita+ekonomi+Indonesia+terbaru+14+Agustus+2026&web=1&searchid=3907184 200
+2026-08-14 01:05:53,680 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-14 01:06:00,652 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:06:00,653 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-14 01:06:00,875 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20penutupan%2013%20Agustus%202026%20OR%20IHSG%20penutupan%2014%20Agustus%202026%20OR%20kurs%20Rupiah%20USD%2013%20Agustus%202026%20OR%20kurs%20Rupiah%20USD%2014%20Agustus%202026%20site%3Acnbcindonesia.com%20OR%20site%3Abisnis.com%20OR%20site%3Akontan.co.id 200
+2026-08-14 01:06:01,274 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+penutupan+13+Agustus+2026+OR+IHSG+penutupan+14+Agustus+2026+OR+kurs+Rupiah+USD+13+Agustus+2026+OR+kurs+Rupiah+USD+14+Agustus+2026+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&limit=1 200
+2026-08-14 01:06:01,347 [INFO] response: https://www.google.com/search?q=IHSG+penutupan+13+Agustus+2026+OR+IHSG+penutupan+14+Agustus+2026+OR+kurs+Rupiah+USD+13+Agustus+2026+OR+kurs+Rupiah+USD+14+Agustus+2026+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-14 01:06:01,848 [INFO] response: https://www.mojeek.com/search?q=IHSG+penutupan+13+Agustus+2026+OR+IHSG+penutupan+14+Agustus+2026+OR+kurs+Rupiah+USD+13+Agustus+2026+OR+kurs+Rupiah+USD+14+Agustus+2026+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id 403
+2026-08-14 01:06:02,003 [INFO] response: https://search.yahoo.com/search;_ylt=Pwf1FOOaooeZVEUnNTkSYRw3;_ylu=NYLP0XKq7AN24LkvjoeDq5aTmyCG45NArhRuUJmfLgh82rc?p=IHSG+penutupan+13+Agustus+2026+OR+IHSG+penutupan+14+Agustus+2026+OR+kurs+Rupiah+USD+13+Agustus+2026+OR+kurs+Rupiah+USD+14+Agustus+2026+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&btf=d 200
+2026-08-14 01:06:02,614 [INFO] response: https://www.startpage.com/ 200
+2026-08-14 01:06:02,726 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-14 01:06:03,225 [INFO] response: https://search.brave.com/search?q=IHSG+penutupan+13+Agustus+2026+OR+IHSG+penutupan+14+Agustus+2026+OR+kurs+Rupiah+USD+13+Agustus+2026+OR+kurs+Rupiah+USD+14+Agustus+2026+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&source=web&tf=pd 200
+2026-08-14 01:06:03,234 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-14 01:06:08,084 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:06:08,085 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-14 01:06:08,309 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=kurs%20Rupiah%20USD%2013%20Agustus%202026%20site%3Acnbcindonesia.com%20OR%20site%3Abisnis.com%20OR%20site%3Akontan.co.id 200
+2026-08-14 01:06:08,386 [INFO] response: https://grokipedia.com/api/typeahead?query=kurs+Rupiah+USD+13+Agustus+2026+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&limit=1 200
+2026-08-14 01:06:08,828 [INFO] response: https://www.mojeek.com/search?q=kurs+Rupiah+USD+13+Agustus+2026+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id 403
+2026-08-14 01:06:08,902 [INFO] response: https://www.google.com/search?q=kurs+Rupiah+USD+13+Agustus+2026+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-14 01:06:09,079 [INFO] response: https://search.yahoo.com/search;_ylt=HyZUhi1r6e61q4p4eEyPB8rJ;_ylu=ex6N9Ghcnqywo2uMpXl0Qyc51iQfUqzZ-J49xIo8fqhXUnU?p=kurs+Rupiah+USD+13+Agustus+2026+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&btf=d 200
+2026-08-14 01:06:10,462 [INFO] response: https://yandex.com/search/site/?text=kurs+Rupiah+USD+13+Agustus+2026+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&web=1&searchid=2309820 200
+2026-08-14 01:06:10,756 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-14 01:06:10,963 [INFO] response: https://www.startpage.com/ 200
+2026-08-14 01:06:11,035 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-14 01:06:11,519 [INFO] response: https://search.brave.com/search?q=kurs+Rupiah+USD+13+Agustus+2026+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&source=web&tf=pd 200
+2026-08-14 01:06:11,532 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-14 01:06:11,670 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-14 01:06:11,671 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 48.346773996s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '48s'}]}}]
+2026-08-14 01:06:11,671 [INFO] Mencoba provider: Groq (Llama 3.3 70B)...
+2026-08-14 01:06:11,822 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-14 01:06:11,822 [WARNING] ⚠️ Groq (Llama 3.3 70B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 30660, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-14 01:06:11,823 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-14 01:06:22,006 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:07:04,085 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-14 01:07:04,300 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20liga%20lokal%20atlet%20Indonesia%20ajang%20internasional%20terbaru%2012-14%20Agustus%202026 200
+2026-08-14 01:07:04,558 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+liga+lokal+atlet+Indonesia+ajang+internasional+terbaru+12-14+Agustus+2026&limit=1 200
+2026-08-14 01:07:05,136 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+liga+lokal+atlet+Indonesia+ajang+internasional+terbaru+12-14+Agustus+2026&source=web&tf=pd 200
+2026-08-14 01:07:05,152 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-14 01:07:05,379 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-14 01:07:05,380 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 54.636001365s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54s'}]}}]
+2026-08-14 01:07:05,380 [INFO] Mencoba provider: Groq (Llama 3.3 70B)...
+2026-08-14 01:07:05,529 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-14 01:07:05,529 [WARNING] ⚠️ Groq (Llama 3.3 70B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 32445, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-14 01:07:05,529 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-14 01:07:06,363 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:07:20,544 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-14 01:07:20,549 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-14 01:07:33,517 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-14 01:07:33,518 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-14 01:07:33,519 [INFO] Validasi: 6x visit_webpage sukses (minimum 3).
+2026-08-14 01:07:33,519 [INFO] Validasi LULUS — laporan berbasis riset nyata.
+2026-08-14 01:07:33,519 [INFO] LAPORAN FINAL:
+2026-08-14 01:07:33,519 [INFO] Berikut adalah laporan intelijen mendalam untuk tanggal 14 Agustus 2026, berdasarkan berita dari 1-2 hari terakhir:
+
+---
+
+### 🌍 1. Geopolitik & Ekonomi Global
+
+Pasar kripto global masih berada di bawah tekanan sentimen negatif dan kekhawatiran geopolitik. **Bitcoin** terpantau bergerak di kisaran **$65,000** menjelang pertemuan FOMC (Federal Open Market Committee) di tengah terus berlangsungnya arus keluar ETF dan meningkatnya ketegangan geopolitik. (Sumber: ET Markets – [https://economictimes.indiatimes.com/markets/cryptocurrency](https://economictimes.indiatimes.com/markets/cryptocurrency)).
+
+Secara lebih luas, risiko resesi global di tahun 2026 dinilai meningkat, dengan konflik geopolitik menjadi faktor pemberat utama. Indeks risiko global dari The World Now menunjukkan eskalasi konflik Houthi di Yaman yang berpotensi memicu ketidakstabilan regional dan kenaikan harga minyak global. Selain itu, Amerika Serikat juga memberlakukan tarif baru terhadap 60 mitra dagang, yang dapat memperkeruh prospek ekonomi global. (Sumber: The World Now – [https://www.the-world-now.com/recession-risk](https://www.the-world-now.com/recession-risk)).
+
+### ⚽ 2. Olahraga Global
+
+Bursa transfer sepak bola Eropa masih ramai dengan beberapa kesepakatan yang dikonfirmasi. Klub Liga Primer Inggris, **Leicester City**, berhasil mendatangkan talenta muda **Harry Howell** dari Brighton dengan status pinjaman. Sementara itu, di kancah Skotlandia, **Celtic** mengamankan tanda tangan gelandang **Mika Baur** dari Paderborn, dan **Rangers** dilaporkan hampir menyelesaikan kepindahan winger PSV, **Couhaib Driouech**, yang telah berada di Ibrox. Di tempat lain, bek QPR, **Tylon Smith**, telah merampungkan kepindahannya ke MLS dengan status pinjaman. (Sumber: BBC Sport – [https://www.bbc.com/sport/football/transfers](https://www.bbc.com/sport/football/transfers)).
+
+### 💻 3. Teknologi & AI Terbaru
+
+OpenAI kembali membuat gebrakan dengan pengumuman produk terbarunya. Pada 13 Agustus 2026, OpenAI meluncurkan pratinjau mode "Ultrafast" untuk model bahasa **GPT-5.6 Sol**, yang diklaim mampu beroperasi hingga **14 kali lebih cepat**. Mode baru ini diharapkan dapat merevolusi kecepatan pemrosesan dan respons untuk para pengembang. Bersamaan dengan itu, OpenAI juga mengumumkan penunjukan **Dali Rajic** sebagai Chief Revenue Officer yang baru, menandakan fokus perusahaan pada strategi komersialisasi dan pertumbuhan bisnis. (Sumber: OpenAI – [https://openai.com/news/](https://openai.com/news/)).
+
+### 🇮🇩 4. Indonesia Update
+
+**a) Ekonomi Domestik:**
+Indeks Harga Saham Gabungan (IHSG) ditutup melemah **1,13%** atau turun **72,08 poin** ke level **6.301,77** pada penutupan perdagangan Kamis, 13 Agustus 2026. Pelemahan ini disebabkan oleh pengumuman rebalancing indeks MSCI Agustus 2026, di mana saham-saham seperti GOTO dan CPIN dikeluarkan dari indeks global, memicu aksi jual dan kekhawatiran terhadap likuiditas pasar modal. Sementara itu, nilai tukar **Rupiah** di pasar spot ditutup **stagnan** di level **Rp17.877 per Dolar AS** pada Kamis, 13 Agustus 2026. Meskipun ada tekanan pelemahan setelah pengumuman MSCI, Rupiah juga dipengaruhi oleh sentimen global dan ketegangan geopolitik antara Iran dan AS. (Sumber: Kontan.co.id – [https://pusatdata.kontan.co.id/news/kurs-rupiah-bertahan-di-posisi-rp-17877-per-dolar-as-hari-ini-kamis-138](https://pusatdata.kontan.co.id/news/kurs-rupiah-bertahan-di-posisi-rp-17877-per-dolar-as-hari-ini-kamis-138) dan CNBC Indonesia – [https://www.cnbcindonesia.com/market/20260813160111-17-759029/ihsg-turun-113-hari-ini-nyaris-tinggalkan-level-6300](https://www.cnbcindonesia.com/market/20260813160111-17-759029/ihsg-turun-113-hari-ini-nyaris-tinggalkan-level-6300)).
+
+**b) Olahraga Domestik:**
+Tim Nasional Indonesia bersiap menghadapi **FIFA ASEAN Cup 2026** dengan misi besar. Pelatih Timnas Indonesia, **John Herdman**, telah menyatakan tekad untuk membalaskan "dendam" terhadap Singapura di ajang tersebut, menyusul hasil kurang memuaskan sebelumnya. Persiapan tim juga diuntungkan dengan mundurnya **India** dari partisipasi, yang mengurangi salah satu pesaing. Di sisi lain, kekuatan tim lawan seperti Singapura akan bertambah dengan kehadiran amunisi baru seperti **Safuwan Baharudin** (Selangor FC) dan **Ikhsan Fandi** (Thespa Gunma), yang kini bisa bergabung karena turnamen ini masuk dalam kalender resmi FIFA. (Sumber: Liputan6.com – [https://www.liputan6.com/bola/read/8269224/menengok-rival-timnas-indonesia-di-fifa-asean-cup-2026-usai-india-mundur](https://www.liputan6.com/bola/read/8269224/menengok-rival-timnas-indonesia-di-fifa-asean-cup-2026-usai-india-mundur) dan Bola.com - [https://www.bola.com/indonesia/read/8268785/mengintip-kekuatan-pesaing-timnas-indonesia-di-grup-a-fifa-asean-cup-2026-misi-revans-dan-duel-seru-menanti](https://www.bola.com/indonesia/read/8268785/mengintip-kekuatan-pesaing-timnas-indonesia-di-grup-a-fifa-asean-cup-2026-misi-revans-dan-duel-seru-menanti)).
+2026-08-14 01:07:33,519 [INFO] Mengirim laporan ke Telegram...
+2026-08-14 01:07:33,519 [INFO] Pesan dipecah jadi 2 bagian.
+2026-08-14 01:07:34,233 [INFO] ✅ Bagian 1/2 terkirim (Markdown)!
+2026-08-14 01:07:35,875 [INFO] ✅ Bagian 2/2 terkirim (Markdown)!
+2026-08-14 01:07:36,876 [INFO] History disimpan (5 entri).
+2026-08-14 01:07:36,876 [INFO] Selesai — laporan terkirim dan history disimpan.
