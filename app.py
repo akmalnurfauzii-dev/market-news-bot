@@ -19,6 +19,8 @@ TELEGRAM_CHAT_ID   = os.environ["TELEGRAM_CHAT_ID"]
 GROQ_API_KEY       = os.environ["GROQ_API_KEY"]
 GOOGLE_API_KEY     = os.environ["GOOGLE_API_KEY"]
 OPENROUTER_API_KEY = os.environ["OPENROUTER_API_KEY"]
+# Opsional — kalau belum ada secret CEREBRAS_API_KEY, fallback Cerebras di-skip otomatis.
+CEREBRAS_API_KEY   = os.environ.get("CEREBRAS_API_KEY", "")
 
 TELEGRAM_MAX_CHARS = 3800
 
@@ -167,13 +169,16 @@ class RecentNewsSearchTool(Tool):
 
 # =========================================================
 # 6. Multi-provider AI dengan fallback cepat
-#    Urutan: Gemini Flash-Lite (1500 req/day) → Groq → OpenRouter
+#    Urutan: Gemini Flash → Groq (gpt-oss-120b) → OpenRouter → Cerebras
 #
-#    Kenapa Flash-Lite PERTAMA:
-#    - Gemini 2.5 Flash (lama) cuma 20 req/hari → habis cepat
-#    - Gemini 2.5 Flash-Lite = 1000 req/hari, 15 RPM → jauh lebih lega
-#    - Kualitas Flash-Lite cukup untuk task riset+laporan ini
-#    - Lebih patuh instruksi dibanding model kecil OpenRouter random
+#    ⚠️ CATATAN PENTING (update 17 Agustus 2026):
+#    - Groq resmi men-deprecate llama-3.3-70b-versatile & llama-3.1-8b-instant
+#      per 17 Juni 2026. Model diganti ke openai/gpt-oss-120b.
+#    - Cerebras katalog free tier-nya SANGAT volatile — pernah collapse dari
+#      belasan model jadi cuma 2 model dalam semalam. Jangan taruh sebagai
+#      provider utama, hanya cadangan terakhir kalau 3 provider lain gagal.
+#    - Selalu cek dashboard/docs resmi tiap provider tiap beberapa bulan,
+#      karena nama model gratis bisa berubah tanpa notifikasi ke user.
 # =========================================================
 class FallbackModel:
     def __init__(self, providers):
@@ -252,22 +257,25 @@ class FallbackModel:
 
 
 def buat_agent():
-    log.info("Menyiapkan AI dengan fallback chain (Gemini 2.5 Flash → Groq → OpenRouter)...")
-    model = FallbackModel([
+    log.info("Menyiapkan AI dengan fallback chain (Gemini → Groq → OpenRouter → Cerebras)...")
+
+    daftar_provider = [
         {
             # PROVIDER UTAMA: Gemini 2.5 Flash
             # Terbukti paling patuh instruksi dan hasilnya paling detail dari semua provider.
-            
+            # Masih free tier per Agustus 2026 (1.500 req/hari, 15 RPM).
             "name":      "Gemini 2.5 Flash",
             "model_id":  "gemini-2.5-flash",
             "api_base":  "https://generativelanguage.googleapis.com/v1beta/openai/",
             "api_key":   GOOGLE_API_KEY,
-            "rpm_limit": 4,   # buffer dari limit asli 5 RPM (free tier)
+            "rpm_limit": 4,   # buffer dari limit asli 5 RPM (kalau masih di quota lama)
         },
         {
-            # CADANGAN 1: Groq — cepat tapi ada limit token per menit (12.000 TPM)
-            "name":      "Groq (Llama 3.3 70B)",
-            "model_id":  "llama-3.3-70b-versatile",
+            # CADANGAN 1: Groq — model DIPERBARUI 17 Agustus 2026.
+            # llama-3.3-70b-versatile SUDAH DEPRECATED sejak 17 Juni 2026.
+            # openai/gpt-oss-120b adalah pengganti resmi yang direkomendasikan Groq.
+            "name":      "Groq (GPT-OSS 120B)",
+            "model_id":  "openai/gpt-oss-120b",
             "api_base":  "https://api.groq.com/openai/v1",
             "api_key":   GROQ_API_KEY,
             "rpm_limit": None,
@@ -280,7 +288,26 @@ def buat_agent():
             "api_key":   OPENROUTER_API_KEY,
             "rpm_limit": None,
         },
-    ])
+    ]
+
+    # CADANGAN 3 (opsional): Cerebras — hanya diaktifkan kalau CEREBRAS_API_KEY di-set.
+    # ⚠️ Katalog model gratis Cerebras SANGAT sering berubah tanpa peringatan.
+    # gpt-oss-120b dipilih karena per 17 Agustus 2026 ini salah satu model paling stabil
+    # di free tier mereka (model lain seperti zai-glm-4.7 sedang dalam proses deprecation
+    # di tanggal yang sama). Context window free tier Cerebras juga dibatasi ~8K token,
+    # jadi taruh ini SELALU sebagai fallback TERAKHIR, bukan primary.
+    if CEREBRAS_API_KEY:
+        daftar_provider.append({
+            "name":      "Cerebras (GPT-OSS 120B)",
+            "model_id":  "gpt-oss-120b",
+            "api_base":  "https://api.cerebras.ai/v1",
+            "api_key":   CEREBRAS_API_KEY,
+            "rpm_limit": None,
+        })
+    else:
+        log.info("CEREBRAS_API_KEY belum di-set — fallback Cerebras di-skip (opsional).")
+
+    model = FallbackModel(daftar_provider)
 
     return CodeAgent(
         tools=[
