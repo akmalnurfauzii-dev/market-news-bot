@@ -13954,3 +13954,357 @@ smolagents.utils.AgentGenerationError: Error in generating model output:
 Semua provider gagal! Error terakhir: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 36.910993279s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}]
 2026-08-16 18:47:23,123 [INFO] Mengirim laporan ke Telegram...
 2026-08-16 18:47:23,971 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-08-17 00:37:05,230 [INFO] =======================================================
+2026-08-17 00:37:05,230 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-08-17 00:37:05,230 [INFO] =======================================================
+2026-08-17 00:37:05,230 [INFO] Menyiapkan AI dengan fallback chain (Gemini → Groq → OpenRouter → Cerebras)...
+2026-08-17 00:37:05,231 [INFO] CEREBRAS_API_KEY belum di-set — fallback Cerebras di-skip (opsional).
+2026-08-17 00:37:05,914 [INFO] Provider siap: Gemini 2.5 Flash
+2026-08-17 00:37:05,915 [INFO] Provider siap: Groq (GPT-OSS 120B)
+2026-08-17 00:37:05,916 [INFO] Provider siap: OpenRouter (auto-router gratis)
+2026-08-17 00:37:05,932 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-08-17 00:37:05,950 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:37:09,740 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:37:09,749 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-17 00:37:10,170 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20tensions%20global%20markets%20crypto%20stocks%20August%2015-17%202026 200
+2026-08-17 00:37:10,251 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+tensions+global+markets+crypto+stocks+August+15-17+2026&limit=1 200
+2026-08-17 00:37:10,538 [INFO] response: https://search.yahoo.com/search;_ylt=oBI4gGDtAh6YXv5IYf_Qzhhz;_ylu=lY97ejyP2nalJ0DoKIexV__GQw9Mo31ofYfxUnO-ouuwbgw?p=geopolitical+tensions+global+markets+crypto+stocks+August+15-17+2026&btf=d 200
+2026-08-17 00:37:11,712 [INFO] response: https://www.mojeek.com/search?q=geopolitical+tensions+global+markets+crypto+stocks+August+15-17+2026 403
+2026-08-17 00:37:12,256 [INFO] response: https://search.brave.com/search?q=geopolitical+tensions+global+markets+crypto+stocks+August+15-17+2026&source=web&tf=pd 200
+2026-08-17 00:37:12,275 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:37:12,424 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:37:12,425 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 47.601086472s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}]
+2026-08-17 00:37:12,425 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:37:13,633 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:37:13,634 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-08-17 00:37:13,812 [INFO] response: https://grokipedia.com/api/typeahead?query=Reuters+Strait+of+Hormuz+crypto+market+August+16+2026&limit=1 200
+2026-08-17 00:37:13,879 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Reuters%20Strait%20of%20Hormuz%20crypto%20market%20August%2016%202026 200
+2026-08-17 00:37:14,649 [INFO] response: https://search.brave.com/search?q=Reuters+Strait+of+Hormuz+crypto+market+August+16+2026&source=web&tf=pd 200
+2026-08-17 00:37:14,667 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:37:14,825 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:37:14,826 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 45.199316056s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}]
+2026-08-17 00:37:14,826 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:37:14,884 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:37:14,884 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4469, Requested 5376. Please try again in 13.8375s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:37:14,885 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:37:16,051 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:37:20,872 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:37:21,320 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:37:21,517 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:37:21,518 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 38.508091696s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}]
+2026-08-17 00:37:21,518 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:37:21,591 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:37:21,591 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 3574, Requested 6164. Please try again in 13.035s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:37:21,591 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:37:21,916 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:37:48,120 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:37:48,314 [INFO] response: https://grokipedia.com/api/typeahead?query=Reuters+Strait+of+Hormuz+crypto+market+August+16+2026+exclude%3Acoingape&limit=1 200
+2026-08-17 00:37:48,329 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Reuters%20Strait%20of%20Hormuz%20crypto%20market%20August%2016%202026%20exclude%3Acoingape 200
+2026-08-17 00:37:48,406 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-17 00:37:49,281 [INFO] response: https://search.brave.com/search?q=Reuters+Strait+of+Hormuz+crypto+market+August+16+2026+exclude%3Acoingape&source=web&tf=pd 200
+2026-08-17 00:37:49,299 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:37:49,471 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:37:49,473 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 10.553317248s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '10s'}]}}]
+2026-08-17 00:37:49,473 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:37:51,689 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:37:51,690 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-08-17 00:37:51,921 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Reuters%20August%2015%202026%20Strait%20of%20Hormuz%20markets%20crypto 200
+2026-08-17 00:37:51,955 [INFO] response: https://grokipedia.com/api/typeahead?query=Reuters+August+15+2026+Strait+of+Hormuz+markets+crypto&limit=1 200
+2026-08-17 00:37:52,038 [INFO] response: https://search.yahoo.com/search;_ylt=TJJ88C34StSV-pUyTh9PJGpi;_ylu=miinlUNDdd0CKEML6y6qKRtjKRh2PbR1ZHEPgWPZ0ywTWnc?p=Reuters+August+15+2026+Strait+of+Hormuz+markets+crypto&btf=d 200
+2026-08-17 00:37:53,042 [INFO] response: https://www.mojeek.com/search?q=Reuters+August+15+2026+Strait+of+Hormuz+markets+crypto 403
+2026-08-17 00:37:53,808 [INFO] response: https://search.brave.com/search?q=Reuters+August+15+2026+Strait+of+Hormuz+markets+crypto&source=web&tf=pd 200
+2026-08-17 00:37:53,826 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:37:53,944 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:37:53,946 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 6.081253863s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}]
+2026-08-17 00:37:53,946 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:37:53,993 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-17 00:37:53,993 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9083, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:37:53,993 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:37:54,621 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:40:32,757 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:40:32,763 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:40:35,554 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:40:35,555 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-17 00:40:36,872 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:40:38,774 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:40:38,775 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-17 00:40:39,012 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20tech%20news%20August%2015-17%202026%20TechCrunch%20The%20Verge%20Wired%20MIT%20Technology%20Review 200
+2026-08-17 00:40:39,022 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+tech+news+August+15-17+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review&limit=1 200
+2026-08-17 00:40:39,073 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-17 00:40:39,732 [INFO] response: https://search.brave.com/search?q=latest+AI+tech+news+August+15-17+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review&source=web&tf=pd 200
+2026-08-17 00:40:39,750 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:40:39,940 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:40:39,941 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 20.087192009s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20s'}]}}]
+2026-08-17 00:40:39,941 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:40:40,032 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-17 00:40:40,033 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 13549, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:40:40,033 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:40:41,713 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:41:07,127 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:41:07,307 [INFO] response: https://grokipedia.com/api/typeahead?query=MIT+Technology+Review+August+16+2026&limit=1 200
+2026-08-17 00:41:07,381 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=MIT%20Technology%20Review%20August%2016%202026 200
+2026-08-17 00:41:07,511 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:41:07,584 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:41:07,661 [INFO] response: https://search.yahoo.com/search;_ylt=zipO4wOn4SI4MwpTDgSArg8o;_ylu=d1QPkS7yXpNh6GGLz33R0MhVWt2-MGqXd8_d4LV-xBu_Q6Y?p=MIT+Technology+Review+August+16+2026&btf=d 200
+2026-08-17 00:41:08,642 [INFO] response: https://www.mojeek.com/search?q=MIT+Technology+Review+August+16+2026 403
+2026-08-17 00:41:09,127 [INFO] response: https://search.brave.com/search?q=MIT+Technology+Review+August+16+2026&source=web&tf=pd 200
+2026-08-17 00:41:09,735 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:41:10,000 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:41:10,001 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 50.028435506s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}]
+2026-08-17 00:41:10,001 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:41:10,092 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-17 00:41:10,092 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 14600, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:41:10,093 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:41:12,340 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:41:32,435 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:41:32,650 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=ESPN%20sports%20news%20August%2015-17%202026 200
+2026-08-17 00:41:32,731 [INFO] response: https://grokipedia.com/api/typeahead?query=ESPN+sports+news+August+15-17+2026&limit=1 200
+2026-08-17 00:41:32,785 [INFO] response: https://search.brave.com/search?q=ESPN+sports+news+August+15-17+2026&source=web&tf=pd 429
+2026-08-17 00:41:32,873 [INFO] response: https://search.yahoo.com/search;_ylt=YMG5w5fPo-Ws9pk8_xCPV2GJ;_ylu=2z_SHKYBDZ3FDZ7qpncF6n-1HXJin6NaI5fOQEdyXWdhknc?p=ESPN+sports+news+August+15-17+2026&btf=d 200
+2026-08-17 00:41:34,001 [INFO] response: https://www.mojeek.com/search?q=ESPN+sports+news+August+15-17+2026 403
+2026-08-17 00:41:34,149 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:41:34,213 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:41:34,219 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:41:34,474 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:41:34,475 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 25.551316045s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '25s'}]}}]
+2026-08-17 00:41:34,475 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:41:34,572 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-17 00:41:34,572 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 16298, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:41:34,573 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:41:35,398 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:41:37,765 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:41:37,767 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:41:37,964 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:41:37,964 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 22.0614375s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '22s'}]}}]
+2026-08-17 00:41:37,964 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:41:38,026 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-17 00:41:38,026 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 16439, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:41:38,027 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:41:38,883 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:41:41,069 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:41:41,188 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:41:41,377 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:41:41,378 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 18.649022488s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}]
+2026-08-17 00:41:41,378 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:41:41,441 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-17 00:41:41,441 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 16677, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:41:41,441 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:41:42,838 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:41:49,414 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:41:49,416 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:41:49,664 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:41:49,665 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 10.362624475s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '10s'}]}}]
+2026-08-17 00:41:49,665 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:41:49,766 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-17 00:41:49,766 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 16933, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:41:49,766 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:41:59,803 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:42:22,781 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:42:23,032 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=BBC%20Sport%20August%2015%202026%20football%20match%20result 200
+2026-08-17 00:42:23,069 [INFO] response: https://grokipedia.com/api/typeahead?query=BBC+Sport+August+15+2026+football+match+result&limit=1 200
+2026-08-17 00:42:23,165 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:42:23,209 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:42:23,796 [INFO] response: https://www.mojeek.com/search?q=BBC+Sport+August+15+2026+football+match+result 403
+2026-08-17 00:42:23,844 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-17 00:42:23,970 [INFO] response: https://search.brave.com/search?q=BBC+Sport+August+15+2026+football+match+result&source=web&tf=pd 429
+2026-08-17 00:42:24,112 [INFO] response: https://search.yahoo.com/search;_ylt=2TxQhiwjKqZRZK8HmwRdxWoK;_ylu=TvzmVSD5CHuM-tls5msWr-LWK5R2SuG0Fce5jxcd-XQC1z0?p=BBC+Sport+August+15+2026+football+match+result&btf=d 200
+2026-08-17 00:42:24,812 [INFO] response: https://grokipedia.com/api/typeahead?query=Sky+Sports+August+16+2026+transfer+news&limit=1 200
+2026-08-17 00:42:24,874 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Sky%20Sports%20August%2016%202026%20transfer%20news 200
+2026-08-17 00:42:25,423 [INFO] response: https://www.mojeek.com/search?q=Sky+Sports+August+16+2026+transfer+news 403
+2026-08-17 00:42:25,534 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:42:25,592 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:42:25,646 [INFO] response: https://search.brave.com/search?q=Sky+Sports+August+16+2026+transfer+news&source=web&tf=pd 429
+2026-08-17 00:42:25,755 [INFO] response: https://search.yahoo.com/search;_ylt=EJdsDMAIJ8npjVUjqhZy3gxv;_ylu=N1pG81iReDN41h5JQzmYQiB3MMcLXQzD0d0L9RPzan02dHk?p=Sky+Sports+August+16+2026+transfer+news&btf=d 200
+2026-08-17 00:42:26,385 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:42:26,715 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:42:26,716 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 33.312018283s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33s'}]}}]
+2026-08-17 00:42:26,716 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:42:26,856 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-17 00:42:26,856 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 18451, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:42:26,856 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:42:36,897 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:42:59,093 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:42:59,095 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:42:59,372 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:42:59,373 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 652.903737ms.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '0s'}]}}]
+2026-08-17 00:42:59,373 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:42:59,469 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-17 00:42:59,469 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 17703, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:42:59,470 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:43:00,000 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:43:14,416 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:43:14,624 [INFO] response: https://grokipedia.com/api/typeahead?query=BBC+Sport+August+15+2026+football+match+result&limit=1 200
+2026-08-17 00:43:14,668 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=BBC%20Sport%20August%2015%202026%20football%20match%20result 200
+2026-08-17 00:43:14,751 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:43:14,903 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:43:14,960 [INFO] response: https://search.brave.com/search?q=BBC+Sport+August+15+2026+football+match+result&source=web&tf=pd 429
+2026-08-17 00:43:15,055 [INFO] response: https://search.yahoo.com/search;_ylt=4Hn1_hK5dKmpK3THLBjvcbNM;_ylu=C5xxiY3VEeUSAabEL_XIlgrRsakZ3IVdYt6Kc_QpLm2VcOI?p=BBC+Sport+August+15+2026+football+match+result&btf=d 200
+2026-08-17 00:43:16,033 [INFO] response: https://www.mojeek.com/search?q=BBC+Sport+August+15+2026+football+match+result 403
+2026-08-17 00:43:16,038 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:43:16,255 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:43:16,256 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 43.76944962s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '43s'}]}}]
+2026-08-17 00:43:16,256 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:43:16,361 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-17 00:43:16,361 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 19323, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:43:16,361 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:43:17,304 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:43:19,291 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:43:19,293 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:43:19,446 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:43:19,446 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 40.579308168s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}]
+2026-08-17 00:43:19,447 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:43:19,526 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-17 00:43:19,526 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 19644, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:43:19,526 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:43:29,565 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:44:27,970 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:44:27,987 [INFO] Validasi: 1x visit_webpage sukses (minimum 3).
+2026-08-17 00:44:27,987 [WARNING] Kurang riset (1x visit). Coba ulang...
+2026-08-17 00:44:27,987 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-08-17 00:44:28,004 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:44:28,221 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:44:28,222 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 31.806171827s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31s'}]}}]
+2026-08-17 00:44:28,222 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:44:29,004 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-17 00:44:29,004 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 400 - {'error': {'message': 'Tool choice is none, but model called a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '{"name": "code", "arguments": web_search(query="Iran US tension market impact crypto Reuters August 15 2026")}'}}
+2026-08-17 00:44:29,004 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:44:35,462 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:45:03,227 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:45:03,230 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:45:03,426 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:45:03,427 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 56.600554635s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '56s'}]}}]
+2026-08-17 00:45:03,427 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:45:04,549 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:45:04,550 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-08-17 00:45:04,552 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:45:04,662 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:45:04,662 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 55.3642093s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '55s'}]}}]
+2026-08-17 00:45:04,663 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:45:04,699 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:45:04,700 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4155, Requested 3970. Please try again in 937.5ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:45:04,700 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:45:04,885 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:45:11,306 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:45:11,308 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:45:11,456 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:45:11,457 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 48.568961427s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '48s'}]}}]
+2026-08-17 00:45:11,457 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:45:12,275 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:45:12,276 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-08-17 00:45:12,278 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:45:12,398 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:45:12,398 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 47.627002673s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}]
+2026-08-17 00:45:12,399 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:45:12,438 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:45:12,439 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7547, Requested 4267. Please try again in 28.605s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:45:12,439 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:45:12,971 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 00:45:18,397 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-17 00:45:18,692 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20tensions%20economic%20impact%20crypto%20stock%20market%20August%2015%2016%2017%202026 200
+2026-08-17 00:45:18,719 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+tensions+economic+impact+crypto+stock+market+August+15+16+17+2026&limit=1 200
+2026-08-17 00:45:18,829 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-17 00:45:18,920 [INFO] response: https://search.yahoo.com/search;_ylt=0bq2J84dqV_Ute_xRIgMzWdA;_ylu=OnSDY1iBjaUVaFcxqZrFOOolwcVfiX8zwGT3H0XTT6QPsfM?p=geopolitical+tensions+economic+impact+crypto+stock+market+August+15+16+17+2026&btf=d 200
+2026-08-17 00:45:19,441 [INFO] response: https://www.mojeek.com/search?q=geopolitical+tensions+economic+impact+crypto+stock+market+August+15+16+17+2026 403
+2026-08-17 00:45:19,551 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:45:19,596 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:45:20,103 [INFO] response: https://search.brave.com/search?q=geopolitical+tensions+economic+impact+crypto+stock+market+August+15+16+17+2026&source=web&tf=pd 200
+2026-08-17 00:45:21,414 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Iran%20US%20tensions%20market%20impact%20August%202026 200
+2026-08-17 00:45:21,479 [INFO] response: https://grokipedia.com/api/typeahead?query=Iran+US+tensions+market+impact+August+2026&limit=1 200
+2026-08-17 00:45:21,522 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-17 00:45:21,571 [INFO] response: https://search.brave.com/search?q=Iran+US+tensions+market+impact+August+2026&source=web&tf=pd 429
+2026-08-17 00:45:21,655 [INFO] response: https://search.yahoo.com/search;_ylt=ceULPdmfIDFQ54Aw4gRq_u-r;_ylu=24z6Sf_920OUrihPvsdzewVGYn0fHQtRxFusF8rNF7E0FZE?p=Iran+US+tensions+market+impact+August+2026&btf=d 200
+2026-08-17 00:45:22,315 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:45:22,367 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:45:22,936 [INFO] response: https://www.mojeek.com/search?q=Iran+US+tensions+market+impact+August+2026 403
+2026-08-17 00:45:24,127 [INFO] response: https://grokipedia.com/api/typeahead?query=global+stock+market+inflation+central+bank+August+2026&limit=1 200
+2026-08-17 00:45:24,209 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20stock%20market%20inflation%20central%20bank%20August%202026 200
+2026-08-17 00:45:24,260 [INFO] response: https://search.brave.com/search?q=global+stock+market+inflation+central+bank+August+2026&source=web&tf=pd 429
+2026-08-17 00:45:24,820 [INFO] response: https://www.mojeek.com/search?q=global+stock+market+inflation+central+bank+August+2026 403
+2026-08-17 00:45:24,944 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:45:25,010 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:45:25,082 [INFO] response: https://search.yahoo.com/search;_ylt=s3Sti355ldD6mwuETrZRKqBf;_ylu=jmxhPLEvXOkEJjm5-F1gG1w55BXHta2jDI3x6jBkTfGAK6E?p=global+stock+market+inflation+central+bank+August+2026&btf=d 200
+2026-08-17 00:45:26,775 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+sports+news+transfer+results+August+15+16+17+2026&limit=1 200
+2026-08-17 00:45:26,846 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20sports%20news%20transfer%20results%20August%2015%2016%2017%202026 200
+2026-08-17 00:45:26,976 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:45:27,039 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:45:27,074 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-17 00:45:28,176 [INFO] response: https://search.yahoo.com/search;_ylt=_ZXez9TxmPx325riJAzcUCFL;_ylu=M15-eI9H5Yb_SZD28M1Z9vPst_ixSASZASDhMt2vvE7KP6s?p=latest+sports+news+transfer+results+August+15+16+17+2026&btf=d 200
+2026-08-17 00:45:29,280 [INFO] response: https://www.mojeek.com/search?q=latest+sports+news+transfer+results+August+15+16+17+2026 403
+2026-08-17 00:45:29,349 [INFO] response: https://search.brave.com/search?q=latest+sports+news+transfer+results+August+15+16+17+2026&source=web&tf=pd 429
+2026-08-17 00:45:30,529 [INFO] response: https://grokipedia.com/api/typeahead?query=football+soccer+transfer+news+August+2026&limit=1 200
+2026-08-17 00:45:30,579 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20soccer%20transfer%20news%20August%202026 200
+2026-08-17 00:45:31,055 [INFO] response: https://www.mojeek.com/search?q=football+soccer+transfer+news+August+2026 403
+2026-08-17 00:45:31,144 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:45:31,194 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:45:31,275 [INFO] response: https://search.yahoo.com/search;_ylt=9wXtfXEYctdtsotU9dAxtJeP;_ylu=2mGgx186myZ2v8paN8ksh8PHFI67k2f86xl3qI5ECijSuIM?p=football+soccer+transfer+news+August+2026&btf=d 200
+2026-08-17 00:45:31,826 [INFO] response: https://search.brave.com/search?q=football+soccer+transfer+news+August+2026&source=web&tf=pd 429
+2026-08-17 00:45:33,012 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+match+results+August+2026&limit=1 200
+2026-08-17 00:45:33,051 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20match%20results%20August%202026 200
+2026-08-17 00:45:33,092 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-17 00:45:33,612 [INFO] response: https://www.mojeek.com/search?q=sports+match+results+August+2026 403
+2026-08-17 00:45:33,685 [INFO] response: https://search.yahoo.com/search;_ylt=fryC6_i8Fsd2KTpkyOvNdAEi;_ylu=QTMdQe8ZS2OB0-ptirBFLWlrfGdWeaHZMzwbhTR9I4zinHk?p=sports+match+results+August+2026&btf=d 200
+2026-08-17 00:45:34,326 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:45:34,374 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:45:34,452 [INFO] response: https://search.brave.com/search?q=sports+match+results+August+2026&source=web&tf=pd 429
+2026-08-17 00:45:35,697 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20AI%20news%20August%2015%2016%2017%202026 200
+2026-08-17 00:45:35,799 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+AI+news+August+15+16+17+2026&limit=1 200
+2026-08-17 00:45:35,852 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-17 00:45:35,933 [INFO] response: https://search.yahoo.com/search;_ylt=ubO6CEKEuPGAKDTxooOToxuk;_ylu=c10H-yFOXaPIyQtwE8azN2Qysh67xwz36tAwUVapMXQ4iSU?p=latest+technology+AI+news+August+15+16+17+2026&btf=d 200
+2026-08-17 00:45:36,804 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:45:36,856 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:45:36,913 [INFO] response: https://search.brave.com/search?q=latest+technology+AI+news+August+15+16+17+2026&source=web&tf=pd 429
+2026-08-17 00:45:37,404 [INFO] response: https://www.mojeek.com/search?q=latest+technology+AI+news+August+15+16+17+2026 403
+2026-08-17 00:45:38,598 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+breakthrough+technology+news+August+2026&limit=1 200
+2026-08-17 00:45:38,639 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20breakthrough%20technology%20news%20August%202026 200
+2026-08-17 00:45:38,714 [INFO] response: https://search.yahoo.com/search;_ylt=bRiA58Qm2sYYPS0wIRr33YyQ;_ylu=IDLD6zyPrqNXeeulmvs_bbyZqqnuSaWZyirgkkDGI7FroFU?p=AI+breakthrough+technology+news+August+2026&btf=d 200
+2026-08-17 00:45:39,277 [INFO] response: https://search.brave.com/search?q=AI+breakthrough+technology+news+August+2026&source=web&tf=pd 429
+2026-08-17 00:45:39,398 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:45:39,447 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:45:39,933 [INFO] response: https://www.mojeek.com/search?q=AI+breakthrough+technology+news+August+2026 403
+2026-08-17 00:45:41,140 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=TechCrunch%20Verge%20Wired%20MIT%20Technology%20Review%20August%202026 200
+2026-08-17 00:45:41,275 [INFO] response: https://grokipedia.com/api/typeahead?query=TechCrunch+Verge+Wired+MIT+Technology+Review+August+2026&limit=1 200
+2026-08-17 00:45:42,370 [INFO] response: https://search.yahoo.com/search;_ylt=MXiJMSI7xZaXVnPJqgRmz1zL;_ylu=pBBsXQhgCSbmgRDMgwrXEUuUzGVKcFdShevmup9Qlh-d5kw?p=TechCrunch+Verge+Wired+MIT+Technology+Review+August+2026&btf=d 200
+2026-08-17 00:45:43,038 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:45:43,232 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:45:43,709 [INFO] response: https://www.mojeek.com/search?q=TechCrunch+Verge+Wired+MIT+Technology+Review+August+2026 403
+2026-08-17 00:45:43,764 [INFO] response: https://search.brave.com/search?q=TechCrunch+Verge+Wired+MIT+Technology+Review+August+2026&source=web&tf=pd 429
+2026-08-17 00:45:45,000 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%2017%20Agustus%202026%20CNBC%20Indonesia 200
+2026-08-17 00:45:45,090 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+17+Agustus+2026+CNBC+Indonesia&limit=1 200
+2026-08-17 00:45:45,626 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+17+Agustus+2026+CNBC+Indonesia 403
+2026-08-17 00:45:45,664 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-17 00:45:45,748 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+17+Agustus+2026+CNBC+Indonesia&source=web&tf=pd 429
+2026-08-17 00:45:45,819 [INFO] response: https://search.yahoo.com/search;_ylt=S7xJAtOiy8w9i_4NUBQSjo1u;_ylu=eCSdND0lH9RbVYjIgji8hlxmzPw8K23q5rfXdUwL2oFamVo?p=IHSG+hari+ini+17+Agustus+2026+CNBC+Indonesia&btf=d 200
+2026-08-17 00:45:46,469 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:45:46,514 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:45:47,690 [INFO] response: https://grokipedia.com/api/typeahead?query=kurs+Rupiah+USD+hari+ini+17+Agustus+2026&limit=1 200
+2026-08-17 00:45:47,749 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=kurs%20Rupiah%20USD%20hari%20ini%2017%20Agustus%202026 200
+2026-08-17 00:45:48,346 [INFO] response: https://www.mojeek.com/search?q=kurs+Rupiah+USD+hari+ini+17+Agustus+2026 403
+2026-08-17 00:45:48,425 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:45:48,477 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:45:48,531 [INFO] response: https://search.brave.com/search?q=kurs+Rupiah+USD+hari+ini+17+Agustus+2026&source=web&tf=pd 429
+2026-08-17 00:45:48,588 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-17 00:45:48,662 [INFO] response: https://search.yahoo.com/search;_ylt=PHba0rKaKp-0YDShOE58J8wi;_ylu=gUwDsCUOcrwHLJdsHpFDUFEdQ5GKaYc4ak8qiGMlDrHo2XY?p=kurs+Rupiah+USD+hari+ini+17+Agustus+2026&btf=d 200
+2026-08-17 00:45:50,345 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20ekonomi%20Indonesia%20terbaru%2017%20Agustus%202026 200
+2026-08-17 00:45:50,436 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+ekonomi+Indonesia+terbaru+17+Agustus+2026&limit=1 200
+2026-08-17 00:45:50,470 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-17 00:45:50,548 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:45:50,686 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:45:51,777 [INFO] response: https://search.yahoo.com/search;_ylt=_9wFjBAIOVuHalNDESC9Q4xt;_ylu=Ad17lE5mEO8QSM_fCGXv5jV4nn9ZhnLJMpqe4YoHPWljpCM?p=berita+ekonomi+Indonesia+terbaru+17+Agustus+2026&btf=d 200
+2026-08-17 00:45:52,725 [INFO] response: https://www.mojeek.com/search?q=berita+ekonomi+Indonesia+terbaru+17+Agustus+2026 403
+2026-08-17 00:45:52,781 [INFO] response: https://search.brave.com/search?q=berita+ekonomi+Indonesia+terbaru+17+Agustus+2026&source=web&tf=pd 429
+2026-08-17 00:45:53,996 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+liga+lokal+atlet+Indonesia+internasional+17+Agustus+2026&limit=1 200
+2026-08-17 00:45:54,018 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20liga%20lokal%20atlet%20Indonesia%20internasional%2017%20Agustus%202026 200
+2026-08-17 00:45:54,066 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-17 00:45:54,163 [INFO] response: https://search.yahoo.com/search;_ylt=8hHQyrZ1oLK3YRtochc8-ez1;_ylu=9jP3l2Zsr-Yq4kwDRg-GTmdiDNYB38GoxZYLxpKoxu3_kBE?p=Timnas+Indonesia+liga+lokal+atlet+Indonesia+internasional+17+Agustus+2026&btf=d 200
+2026-08-17 00:45:54,949 [INFO] response: https://www.startpage.com/ 200
+2026-08-17 00:45:54,993 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-17 00:45:55,063 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+liga+lokal+atlet+Indonesia+internasional+17+Agustus+2026&source=web&tf=pd 429
+2026-08-17 00:45:55,649 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+liga+lokal+atlet+Indonesia+internasional+17+Agustus+2026 403
+2026-08-17 00:45:56,677 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-17 00:45:56,949 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 00:45:56,950 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 3.076652017s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '3s'}]}}]
+2026-08-17 00:45:56,950 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-17 00:45:57,038 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-17 00:45:57,038 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 13071, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 00:45:57,038 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-17 00:45:57,618 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
