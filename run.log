@@ -15015,3 +15015,138 @@ Sementara itu, pemain Timnas Indonesia, Jay Idzes, bersama klubnya Sassuolo, men
 2026-08-19 00:43:18,158 [INFO] ✅ Bagian 2/2 terkirim (Markdown)!
 2026-08-19 00:43:19,159 [INFO] History disimpan (5 entri).
 2026-08-19 00:43:19,159 [INFO] Selesai — laporan terkirim dan history disimpan.
+2026-08-19 12:22:28,759 [INFO] =======================================================
+2026-08-19 12:22:28,759 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-08-19 12:22:28,759 [INFO] =======================================================
+2026-08-19 12:22:28,759 [INFO] Menyiapkan AI dengan fallback chain (Gemini → Groq → OpenRouter → Cerebras)...
+2026-08-19 12:22:28,759 [INFO] CEREBRAS_API_KEY belum di-set — fallback Cerebras di-skip (opsional).
+2026-08-19 12:22:29,469 [INFO] Provider siap: Gemini 2.5 Flash
+2026-08-19 12:22:29,471 [INFO] Provider siap: Groq (GPT-OSS 120B)
+2026-08-19 12:22:29,471 [INFO] Provider siap: OpenRouter (auto-router gratis)
+2026-08-19 12:22:29,486 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-08-19 12:22:29,504 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-19 12:22:33,025 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-19 12:22:33,035 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-19 12:22:33,315 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20tensions%20global%20economy%20crypto%20stock%20market%20impact%20August%2017-19%202026 200
+2026-08-19 12:22:33,374 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+tensions+global+economy+crypto+stock+market+impact+August+17-19+2026&limit=1 200
+2026-08-19 12:22:33,591 [INFO] response: https://search.yahoo.com/search;_ylt=YOy-6wJ7b2XSLHmsa2jyyCB_;_ylu=BYIm3fjoC9g4H4qJA-xfZauGaHqCs_RiBMIO_6hyLf4ffUU?p=geopolitical+tensions+global+economy+crypto+stock+market+impact+August+17-19+2026&btf=d 200
+2026-08-19 12:22:33,954 [INFO] response: https://www.startpage.com/ 200
+2026-08-19 12:22:34,044 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-19 12:22:34,629 [INFO] response: https://www.mojeek.com/search?q=geopolitical+tensions+global+economy+crypto+stock+market+impact+August+17-19+2026 403
+2026-08-19 12:22:35,341 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-08-19 12:22:35,347 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-19 12:22:37,532 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-19 12:22:37,534 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-19 12:22:38,226 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-19 12:22:40,722 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-19 12:22:40,723 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-19 12:22:41,111 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-19 12:22:43,537 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-19 12:22:43,538 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-19 12:22:43,769 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-19 12:22:43,769 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-19 12:22:43,868 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-19 12:22:43,869 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9546, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-19 12:22:43,869 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-19 12:22:45,050 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-19 12:23:06,924 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-19 12:23:06,927 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-19 12:23:06,927 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-19 12:23:07,017 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-19 12:23:07,017 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 10315, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-19 12:23:07,018 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-19 12:23:07,493 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-19 12:23:10,359 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-19 12:23:10,361 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-19 12:23:10,361 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-19 12:23:10,434 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-19 12:23:10,435 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 10456, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-19 12:23:10,435 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-19 12:23:10,956 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-19 12:23:34,937 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-19 12:23:34,951 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-19 12:23:51,130 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-19 12:23:51,131 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-19 12:23:52,027 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20football%20basketball%20tennis%20news%20results%20transfers%20August%2017-19%202026 200
+2026-08-19 12:23:52,400 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+football+basketball+tennis+news+results+transfers+August+17-19+2026&limit=1 200
+2026-08-19 12:23:52,913 [INFO] response: https://www.mojeek.com/search?q=latest+football+basketball+tennis+news+results+transfers+August+17-19+2026 403
+2026-08-19 12:23:53,552 [INFO] response: https://search.brave.com/search?q=latest+football+basketball+tennis+news+results+transfers+August+17-19+2026&source=web&tf=pd 200
+2026-08-19 12:23:53,732 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20results%20transfers%20August%2017%2018%2019%202026 200
+2026-08-19 12:23:53,796 [INFO] response: https://grokipedia.com/api/typeahead?query=football+results+transfers+August+17+18+19+2026&limit=1 200
+2026-08-19 12:23:54,012 [INFO] response: https://www.startpage.com/ 200
+2026-08-19 12:23:54,107 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-19 12:23:54,712 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-08-19 12:23:54,723 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-19 12:24:21,459 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-19 12:24:21,460 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-19 12:24:21,706 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20results%20transfers%20August%2017%2018%2019%202026%20BBC%20Sport%20ESPN%20Sky%20Sports 200
+2026-08-19 12:24:21,768 [INFO] response: https://grokipedia.com/api/typeahead?query=football+results+transfers+August+17+18+19+2026+BBC+Sport+ESPN+Sky+Sports&limit=1 200
+2026-08-19 12:24:22,307 [INFO] response: https://www.mojeek.com/search?q=football+results+transfers+August+17+18+19+2026+BBC+Sport+ESPN+Sky+Sports 403
+2026-08-19 12:24:22,461 [INFO] response: https://search.yahoo.com/search;_ylt=G0a6xGINzoc9s-e2RWENRHoE;_ylu=-pruLj-oSUg6WmBbW8y6Mcg7AQvH9DMCAd5M4zSjXgueUZk?p=football+results+transfers+August+17+18+19+2026+BBC+Sport+ESPN+Sky+Sports&btf=d 200
+2026-08-19 12:24:22,608 [INFO] response: https://www.startpage.com/ 200
+2026-08-19 12:24:22,691 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-19 12:24:23,440 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-08-19 12:24:23,910 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20kurs%20Rupiah%20USD%20berita%20ekonomi%20domestik%2017%2018%2019%20Agustus%202026%20cnbcindonesia.com%20kompas.com%20detik.com 200
+2026-08-19 12:24:23,948 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+kurs+Rupiah+USD+berita+ekonomi+domestik+17+18+19+Agustus+2026+cnbcindonesia.com+kompas.com+detik.com&limit=1 200
+2026-08-19 12:24:24,620 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+kurs+Rupiah+USD+berita+ekonomi+domestik+17+18+19+Agustus+2026+cnbcindonesia.com+kompas.com+detik.com&source=web&tf=pd 200
+2026-08-19 12:24:24,919 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20U-23%20Piala%20AFF%202026%20atau%20Liga%201%20hasil%20pertandingan%2017%2018%2019%20Agustus%202026%20detik.com%20cnnindonesia.com%20kompas.com 200
+2026-08-19 12:24:24,998 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+U-23+Piala+AFF+2026+atau+Liga+1+hasil+pertandingan+17+18+19+Agustus+2026+detik.com+cnnindonesia.com+kompas.com&limit=1 200
+2026-08-19 12:24:25,162 [INFO] response: https://search.yahoo.com/search;_ylt=pWHxHRKduiCs5N3W7dFxMBFF;_ylu=VhveRgRXB6FLLVr3_-6HUKhonAp2x2Flst76q_FZXGopo3U?p=Timnas+Indonesia+U-23+Piala+AFF+2026+atau+Liga+1+hasil+pertandingan+17+18+19+Agustus+2026+detik.com+cnnindonesia.com+kompas.com&btf=d 200
+2026-08-19 12:24:25,265 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-19 12:24:25,943 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+U-23+Piala+AFF+2026+atau+Liga+1+hasil+pertandingan+17+18+19+Agustus+2026+detik.com+cnnindonesia.com+kompas.com&source=web&tf=pd 200
+2026-08-19 12:24:26,173 [INFO] Validasi: 5x visit_webpage sukses (minimum 3).
+2026-08-19 12:24:26,173 [INFO] Validasi LULUS — laporan berbasis riset nyata.
+2026-08-19 12:24:26,173 [INFO] LAPORAN FINAL:
+2026-08-19 12:24:26,173 [INFO] 
+**LAPORAN INTELIJEN HARIAN – 19 AGUSTUS 2026**
+*Berita dari 17–19 Agustus 2026 (maksimal 48 jam ke belakang)*
+
+---
+
+### 🌍 1. Geopolitik & Ekonomi Global
+
+**Ketegangan Global dan Fluktuasi Pasar**
+
+Situasi geopolitik global menunjukkan peningkatan ketegangan di Timur Tengah, dengan konflik Iran-Israel dilaporkan 'meningkat' dan mencatat 14 insiden dalam 7 hari terakhir. Di pasar finansial, bursa India, Sensex, ditutup pada 76.909,68, turun 325,78 poin. Sementara itu, indeks Nifty tercatat 24.078,30, kehilangan 2,1% dalam tujuh hari terakhir. Harga minyak mentah (Crude Oil) mengalami kenaikan, mencapai 8.240,00 dengan peningkatan 97,00.
+
+Di sektor kripto, kabar mengejutkan datang dengan penangkapan Edward Zimbardi di Fiji pada 14 Agustus, yang kini menghadapi tuduhan skema Ponzi kripto senilai $165 juta. Bersamaan dengan itu, Komisi Sekuritas dan Bursa (SEC) AS sedang mengusulkan aturan penawaran khusus kripto untuk tahun 2026, yang mencakup pengecualian pendaftaran dan ketentuan 'safe harbor' untuk aset kripto tertentu, menandakan upaya regulasi yang lebih jelas di industri ini.
+
+* **Sumber:**
+    *   https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-highlights-19th-august-2026/article71360276.ece
+    *   https://t.signalplus.com/crypto-news/all
+    *   https://www.the-world-now.com/current-wars (informasi dari judul hasil web_search)
+
+### 🏏 2. Olahraga Global
+
+**Bursa Transfer Sepak Bola Memanas**
+
+Bursa transfer musim panas 2026 sedang berlangsung aktif, dengan banyak klub Eropa mencari penguatan skuad jelang musim baru. Beberapa kesepakatan penting diperkirakan akan segera diumumkan.
+
+* **Sumber:** https://www.bbc.com/sport/football/scores-fixtures/2026-08-20
+
+### 🤖 3. Teknologi & AI Terbaru
+
+**Integrasi AI Canggih di Industri Otomotif**
+
+Di sektor teknologi, Tesla telah memulai peluncuran pembaruan perangkat lunak over-the-air (OTA) versi 2026.14.13. Pembaruan ini menyematkan model bahasa besar (LLM) Doubao milik ByteDance ke dalam sistem infotainment setiap kendaraan Tesla di China. Integrasi ini menggantikan asisten suara bawaan Tesla dengan LLM lokal yang mampu menangani kueri informasi real-time, percakapan natural, serta mengontrol fungsi kendaraan seperti AC dan navigasi. Doubao juga didukung dengan kemampuan multi-dialek Tiongkok hingga 18 varian, menunjukkan langkah signifikan dalam lokalisasi teknologi AI di pasar otomotif.
+
+* **Sumber:** https://t.signalplus.com/crypto-news/all
+
+### 🇮🇩 4. Indonesia Update
+
+**a) Ekonomi: Pergerakan IHSG dan Fokus Inflasi**
+
+IHSG ditutup pada level data tidak tersedia (data tidak tersedia%) pada 19 Agustus 2026. Kurs Rupiah terhadap USD berada di sekitar data tidak tersedia. Berita ekonomi domestik signifikan: Tidak ada berita ekonomi domestik signifikan yang ditemukan.
+
+* **Sumber:** https://www.cnbcindonesia.com/market/20260819091402-17-760500/setelah-dua-hari-hijau-ini-penyebab-ihsg-turun-1
+
+**b) Olahraga: Perkembangan Timnas dan Liga Lokal**
+
+Tidak menemukan berita Timnas Indonesia atau Liga 1 yang spesifik.
+
+* **Sumber:** https://bola.kompas.com/read/2026/08/19/15503958/tersingkir-dari-piala-aff-2026-pelatih-singapura-singgung-timnas-indonesia
+
+2026-08-19 12:24:26,173 [INFO] Mengirim laporan ke Telegram...
+2026-08-19 12:24:27,428 [INFO] ✅ Bagian 1/1 terkirim (plain text)!
+2026-08-19 12:24:28,429 [INFO] History disimpan (5 entri).
+2026-08-19 12:24:28,429 [INFO] Selesai — laporan terkirim dan history disimpan.
