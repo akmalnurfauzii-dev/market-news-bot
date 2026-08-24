@@ -17909,3 +17909,278 @@ b) **Olahraga Indonesia**:
 2026-08-24 00:43:02,732 [INFO] ✅ Bagian 1/1 terkirim (plain text)!
 2026-08-24 00:43:03,733 [INFO] History disimpan (5 entri).
 2026-08-24 00:43:03,733 [INFO] Selesai — laporan terkirim dan history disimpan.
+2026-08-24 12:24:50,449 [INFO] =======================================================
+2026-08-24 12:24:50,449 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-08-24 12:24:50,449 [INFO] =======================================================
+2026-08-24 12:24:50,449 [INFO] Menyiapkan AI dengan fallback chain (Gemini → Groq → OpenRouter → Cerebras)...
+2026-08-24 12:24:50,449 [INFO] CEREBRAS_API_KEY belum di-set — fallback Cerebras di-skip (opsional).
+2026-08-24 12:24:51,087 [INFO] Provider siap: Gemini 2.5 Flash
+2026-08-24 12:24:51,088 [INFO] Provider siap: Groq (GPT-OSS 120B)
+2026-08-24 12:24:51,089 [INFO] Provider siap: OpenRouter (auto-router gratis)
+2026-08-24 12:24:51,104 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-08-24 12:24:51,121 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:24:51,720 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:24:51,721 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:24:51,721 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:24:56,418 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:24:56,426 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-08-24 12:24:56,437 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:24:56,654 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:24:56,655 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:24:56,655 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:24:56,717 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-24 12:24:56,717 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4919, Requested 7120. Please try again in 30.292499999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:24:56,717 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:25:06,920 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:27:39,950 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:27:40,261 [INFO] response: https://grokipedia.com/api/typeahead?query=U.S.+sanctions+on+Russian+oil+Reuters+Bloomberg+August+23+2026&limit=1 502
+2026-08-24 12:27:40,315 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=U.S.%20sanctions%20on%20Russian%20oil%20Reuters%20Bloomberg%20August%2023%202026 200
+2026-08-24 12:27:40,910 [INFO] response: https://search.brave.com/search?q=U.S.+sanctions+on+Russian+oil+Reuters+Bloomberg+August+23+2026&source=web&tf=pd 200
+2026-08-24 12:27:40,999 [INFO] response: https://grokipedia.com/api/typeahead?query=Manchester+City+Jo%C3%A3o+Pedro+transfer+BBC+Sport+August+24+2026&limit=1 502
+2026-08-24 12:27:41,094 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Manchester%20City%20Jo%C3%A3o%20Pedro%20transfer%20BBC%20Sport%20August%2024%202026 200
+2026-08-24 12:27:41,363 [INFO] response: https://search.yahoo.com/search;_ylt=Um2KGh_PJ-mtbZUWXVXmABB6;_ylu=wHPa3Qco15N4m1QaUfW6SFfhx1sVD_hylmEscpk8XNaReOY?p=Manchester+City+Jo%C3%A3o+Pedro+transfer+BBC+Sport+August+24+2026&btf=d 200
+2026-08-24 12:27:42,564 [INFO] response: https://www.mojeek.com/search?q=Manchester+City+Jo%C3%A3o+Pedro+transfer+BBC+Sport+August+24+2026 403
+2026-08-24 12:27:42,771 [INFO] response: https://www.startpage.com/ 200
+2026-08-24 12:27:42,833 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-24 12:27:43,494 [INFO] response: https://search.brave.com/search?q=Manchester+City+Jo%C3%A3o+Pedro+transfer+BBC+Sport+August+24+2026&source=web&tf=pd 200
+2026-08-24 12:27:43,618 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=OpenAI%20GPT-5%20release%20TechCrunch%20August%2022%202026 200
+2026-08-24 12:27:43,628 [INFO] response: https://grokipedia.com/api/typeahead?query=OpenAI+GPT-5+release+TechCrunch+August+22+2026&limit=1 200
+2026-08-24 12:27:43,746 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-24 12:27:44,068 [INFO] response: https://www.mojeek.com/search?q=OpenAI+GPT-5+release+TechCrunch+August+22+2026 403
+2026-08-24 12:27:44,607 [INFO] response: https://search.brave.com/search?q=OpenAI+GPT-5+release+TechCrunch+August+22+2026&source=web&tf=pd 200
+2026-08-24 12:27:44,742 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+August+24+2026+CNBC+Indonesia&limit=1 200
+2026-08-24 12:27:44,750 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20August%2024%202026%20CNBC%20Indonesia 200
+2026-08-24 12:27:45,114 [INFO] response: https://www.mojeek.com/search?q=IHSG+August+24+2026+CNBC+Indonesia 403
+2026-08-24 12:27:45,214 [INFO] response: https://www.startpage.com/ 200
+2026-08-24 12:27:45,271 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-24 12:27:46,082 [INFO] response: https://search.brave.com/search?q=IHSG+August+24+2026+CNBC+Indonesia&source=web&tf=pd 200
+2026-08-24 12:27:46,209 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+U-23+Indonesia+Thailand+Detik+August+24+2026&limit=1 200
+2026-08-24 12:27:46,256 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20U-23%20Indonesia%20Thailand%20Detik%20August%2024%202026 200
+2026-08-24 12:27:46,880 [INFO] response: https://search.brave.com/search?q=Timnas+U-23+Indonesia+Thailand+Detik+August+24+2026&source=web&tf=pd 200
+2026-08-24 12:27:46,911 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:27:47,179 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:27:47,179 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:27:47,180 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:27:47,380 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-24 12:27:47,381 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9952, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:27:47,381 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:27:47,825 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:27:50,144 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:27:50,146 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:27:50,331 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:27:50,331 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:27:50,331 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:27:50,475 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-24 12:27:50,476 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 10077, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:27:50,476 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:27:50,878 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:29:45,256 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:29:45,267 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:29:45,537 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:29:45,537 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:29:45,537 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:29:45,746 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-24 12:29:45,747 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 11717, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:29:45,747 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:29:50,390 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:30:34,674 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:30:34,689 [INFO] Validasi: 1x visit_webpage sukses (minimum 3).
+2026-08-24 12:30:34,689 [WARNING] Kurang riset (1x visit). Coba ulang...
+2026-08-24 12:30:34,689 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-08-24 12:30:34,701 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:30:34,934 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:30:34,935 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:30:34,935 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:30:36,938 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:30:36,939 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-08-24 12:30:36,941 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:30:37,089 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:30:37,089 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:30:37,090 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:30:37,963 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:30:37,964 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 400 - {'error': {'message': 'Tool choice is none, but model called a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '{"name": "web_search", "arguments": {\n  "query": "geopolitics market impact crypto Reuters August 24 2026"\n}}'}}
+2026-08-24 12:30:37,964 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:30:38,216 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:31:07,172 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:31:07,255 [INFO] response: https://grokipedia.com/api/typeahead?query=oil+prices+Iran+sanctions+August+22+2026+Reuters+Bloomberg+CNBC&limit=1 502
+2026-08-24 12:31:07,378 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=oil%20prices%20Iran%20sanctions%20August%2022%202026%20Reuters%20Bloomberg%20CNBC 200
+2026-08-24 12:31:08,241 [INFO] response: https://search.brave.com/search?q=oil+prices+Iran+sanctions+August+22+2026+Reuters+Bloomberg+CNBC&source=web&tf=pd 200
+2026-08-24 12:31:08,251 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:31:08,469 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:31:08,470 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:31:08,470 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:31:12,381 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:31:12,381 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-08-24 12:31:12,384 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:31:12,572 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:31:12,572 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:31:12,573 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:31:12,634 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-24 12:31:12,634 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7967, Requested 4576. Please try again in 34.072499999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:31:12,635 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:31:12,970 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:31:15,892 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:31:16,067 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:31:16,236 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:31:16,237 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:31:16,237 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:31:16,301 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-24 12:31:16,302 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7478, Requested 4800. Please try again in 32.084999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:31:16,302 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:31:16,667 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:31:31,234 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:31:31,306 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:31:31,513 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:31:31,514 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:31:31,514 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:31:31,669 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-24 12:31:31,669 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5440, Requested 5588. Please try again in 22.71s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:31:31,669 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:31:32,302 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:31:33,084 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:31:33,085 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:31:33,264 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:31:33,265 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:31:33,265 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:31:33,361 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-24 12:31:33,362 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5214, Requested 5050. Please try again in 16.979999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:31:33,362 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:31:35,668 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:31:35,743 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:31:35,744 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:31:35,921 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:31:35,922 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:31:35,922 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:31:36,080 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-24 12:31:36,081 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4852, Requested 5103. Please try again in 14.6625s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:31:36,081 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:31:36,309 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:31:50,403 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:31:50,496 [INFO] response: https://grokipedia.com/api/typeahead?query=Bloomberg+oil+prices+Iran+sanctions+August+24+2026&limit=1 502
+2026-08-24 12:31:50,594 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Bloomberg%20oil%20prices%20Iran%20sanctions%20August%2024%202026 200
+2026-08-24 12:31:50,690 [INFO] response: https://www.startpage.com/ 200
+2026-08-24 12:31:50,869 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-24 12:31:51,021 [INFO] response: https://search.yahoo.com/search;_ylt=HHqnpENqB-pydhrw5I9uuKki;_ylu=EX2o3JGuc3-566rpfEJ0PLJ45uD05e7gbGYxNfOrcDsEbCw?p=Bloomberg+oil+prices+Iran+sanctions+August+24+2026&btf=d 200
+2026-08-24 12:31:52,338 [INFO] response: https://search.brave.com/search?q=Bloomberg+oil+prices+Iran+sanctions+August+24+2026&source=web&tf=pd 200
+2026-08-24 12:31:52,354 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:31:52,568 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:31:52,569 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:31:52,569 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:31:52,667 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-24 12:31:52,668 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 2629, Requested 6253. Please try again in 6.615s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:31:52,668 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:31:52,905 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:32:31,752 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:32:31,952 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:32:32,189 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:32:32,190 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:32:32,190 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:32:33,481 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:32:33,482 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-08-24 12:32:33,484 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:32:33,687 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:32:33,688 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:32:33,688 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:32:33,753 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-24 12:32:33,754 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8098, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:32:33,754 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:32:35,813 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:32:44,371 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:32:44,474 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:32:44,971 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:32:44,972 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:32:44,972 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:32:45,217 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-24 12:32:45,218 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5153, Requested 7501. Please try again in 34.905s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:32:45,218 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:32:45,835 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:32:48,884 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:32:48,886 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:32:49,073 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:32:49,074 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:32:49,074 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:32:49,280 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-24 12:32:49,281 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4611, Requested 7100. Please try again in 27.8325s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:32:49,281 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:32:49,529 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:32:52,661 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:32:52,791 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=oil%20prices%20Iran%20sanctions%20August%2024%202026%20Reuters 200
+2026-08-24 12:32:52,800 [INFO] response: https://grokipedia.com/api/typeahead?query=oil+prices+Iran+sanctions+August+24+2026+Reuters&limit=1 502
+2026-08-24 12:32:52,947 [INFO] response: https://search.yahoo.com/search;_ylt=eRZ24dnJs7lgDCKnkaYwTCje;_ylu=R9Po0TshxC2WQZpq89UF_X-wkCIG6oPryoJwtflrXaFda_Y?p=oil+prices+Iran+sanctions+August+24+2026+Reuters&btf=d 200
+2026-08-24 12:32:53,905 [INFO] response: https://www.mojeek.com/search?q=oil+prices+Iran+sanctions+August+24+2026+Reuters 403
+2026-08-24 12:32:54,078 [INFO] response: https://search.brave.com/search?q=oil+prices+Iran+sanctions+August+24+2026+Reuters&source=web&tf=pd 429
+2026-08-24 12:32:54,220 [INFO] response: https://www.startpage.com/ 200
+2026-08-24 12:32:54,295 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-24 12:32:54,301 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:32:54,533 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:32:54,533 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:32:54,534 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:32:54,636 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-24 12:32:54,637 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9570, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:32:54,637 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:32:54,874 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:32:58,973 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:32:59,068 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:32:59,255 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:32:59,256 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:32:59,256 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:32:59,329 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-24 12:32:59,330 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8667, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:32:59,330 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:32:59,961 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:33:00,867 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:33:00,869 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:33:00,992 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-24 12:33:00,993 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 59.028718136s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '59s'}]}}]
+2026-08-24 12:33:00,993 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:33:01,061 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-24 12:33:01,062 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8721, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:33:01,062 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:33:01,579 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:33:17,427 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:33:17,696 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:33:17,864 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-24 12:33:17,865 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 42.155343862s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '42s'}]}}]
+2026-08-24 12:33:17,865 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:33:18,136 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-24 12:33:18,136 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 10261, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:33:18,136 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:33:18,719 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:33:23,480 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:33:23,634 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:33:23,811 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-24 12:33:23,812 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 36.207647722s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}]
+2026-08-24 12:33:23,812 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:33:24,098 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-24 12:33:24,099 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 10689, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:33:24,099 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:33:24,425 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:33:36,616 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:33:36,621 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-24 12:33:36,839 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-24 12:33:36,840 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 400 - [{'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}]
+2026-08-24 12:33:36,840 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-24 12:33:37,039 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-24 12:33:37,039 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 10417, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-24 12:33:37,039 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-24 12:33:37,435 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-24 12:33:46,566 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-24 12:33:46,567 [INFO] Validasi: 1x visit_webpage sukses (minimum 3).
+2026-08-24 12:33:46,567 [INFO] LAPORAN FINAL:
+2026-08-24 12:33:46,567 [INFO] ⚠️ *Catatan sistem:* AI hanya mengunjungi 1 sumber (kurang dari 3 yang diharapkan). Verifikasi mandiri disarankan.
+
+<code>
+print("=== BLOOMBERG SEARCH ===")
+bloom_search = web_search("Bloomberg oil prices Iran sanctions August 24 2026")
+print(bloom_search)
+</code>
+</tool_call>
+</code>
+Calling tools:
+[{'id': 'call_19', 'type': 'function', 'function': {'name': 'python_interpreter', 'arguments': 'print("=== BLOOMBERG SEARCH ===")\nbloom_search = web_search("Bloomberg oil prices Iran sanctions August 24 2026")\nprint(bloom_search)'}}]</code>
+Calling tools:
+[{'id': 'call_19', 'type': 'function', 'function': {'name': 'python_interpreter', 'arguments': 'print("=== BLOOMBERG SEARCH ===")\nbloom_search = web_search("Bloomberg oil prices Iran sanctions August 24 2026")\nprint(bloom_search)'}}]
+2026-08-24 12:33:46,567 [INFO] Mengirim laporan ke Telegram...
+2026-08-24 12:33:47,802 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-08-24 12:33:48,803 [INFO] History disimpan (5 entri).
+2026-08-24 12:33:48,803 [INFO] Selesai — laporan terkirim dan history disimpan.
