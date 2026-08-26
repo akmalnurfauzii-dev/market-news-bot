@@ -18803,3 +18803,330 @@ print(cnbc_ihsg)
 2026-08-26 00:53:49,136 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7506, Requested 4464. Please try again in 29.775s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
 2026-08-26 00:53:49,136 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
 2026-08-26 00:53:50,406 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:28:43,055 [INFO] =======================================================
+2026-08-26 12:28:43,055 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-08-26 12:28:43,055 [INFO] =======================================================
+2026-08-26 12:28:43,055 [INFO] Menyiapkan AI dengan fallback chain (Gemini → Groq → OpenRouter → Cerebras)...
+2026-08-26 12:28:43,055 [INFO] CEREBRAS_API_KEY belum di-set — fallback Cerebras di-skip (opsional).
+2026-08-26 12:28:43,758 [INFO] Provider siap: Gemini 2.5 Flash
+2026-08-26 12:28:43,759 [INFO] Provider siap: Groq (GPT-OSS 120B)
+2026-08-26 12:28:43,760 [INFO] Provider siap: OpenRouter (auto-router gratis)
+2026-08-26 12:28:43,779 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-08-26 12:28:43,798 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 12:28:49,588 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:28:49,598 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 12:28:49,903 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20crypto%20stock%20market%20August%2025%202026%20Reuters 200
+2026-08-26 12:28:49,917 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+crypto+stock+market+August+25+2026+Reuters&limit=1 200
+2026-08-26 12:28:50,099 [INFO] response: https://search.yahoo.com/search;_ylt=G6BpeMl3ewiXR5_QQTWCe0e6;_ylu=MEvWIULWeybCOlxm68-uhhS-cKXBM4P1wRM2BCOM4f2TyVI?p=geopolitics+global+economy+crypto+stock+market+August+25+2026+Reuters&btf=d 200
+2026-08-26 12:28:51,181 [INFO] response: https://search.brave.com/search?q=geopolitics+global+economy+crypto+stock+market+August+25+2026+Reuters&source=web&tf=pd 200
+2026-08-26 12:28:51,348 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20crypto%20stock%20market%20August%2026%202026%20Bloomberg 200
+2026-08-26 12:28:51,367 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+crypto+stock+market+August+26+2026+Bloomberg&limit=1 200
+2026-08-26 12:28:51,944 [INFO] response: https://search.brave.com/search?q=geopolitics+global+economy+crypto+stock+market+August+26+2026+Bloomberg&source=web&tf=pd 200
+2026-08-26 12:28:52,126 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economic%20outlook%20August%2025%202026%20CNBC 200
+2026-08-26 12:28:52,237 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economic+outlook+August+25+2026+CNBC&limit=1 200
+2026-08-26 12:28:52,725 [INFO] response: https://search.brave.com/search?q=global+economic+outlook+August+25+2026+CNBC&source=web&tf=pd 200
+2026-08-26 12:28:52,899 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=international%20finance%20news%20August%2026%202026%20Financial%20Times 200
+2026-08-26 12:28:52,972 [INFO] response: https://grokipedia.com/api/typeahead?query=international+finance+news+August+26+2026+Financial+Times&limit=1 200
+2026-08-26 12:28:53,623 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-08-26 12:28:53,629 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 12:28:55,484 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:28:55,485 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 12:28:55,583 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 12:28:59,225 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:28:59,227 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 12:28:59,377 [INFO] response: https://grokipedia.com/api/typeahead?query=Morning+Bid%3A+Economic+salvos+Reuters&limit=1 200
+2026-08-26 12:28:59,510 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Morning%20Bid%3A%20Economic%20salvos%20Reuters 200
+2026-08-26 12:28:59,970 [INFO] response: https://search.brave.com/search?q=Morning+Bid%3A+Economic+salvos+Reuters&source=web&tf=pd 200
+2026-08-26 12:29:00,130 [INFO] response: https://grokipedia.com/api/typeahead?query=Oil+prices+slide+Iran+Oman+Strait+of+Hormuz+August+26+2026&limit=1 200
+2026-08-26 12:29:00,148 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Oil%20prices%20slide%20Iran%20Oman%20Strait%20of%20Hormuz%20August%2026%202026 200
+2026-08-26 12:29:00,281 [INFO] response: https://search.yahoo.com/search;_ylt=1Dy_ObwMt6nGfUk7hyIphjwx;_ylu=sc2lCEiVa_ZJIZk4qVvu2XSfsqtSF7EadjHre85Zo5TJcK8?p=Oil+prices+slide+Iran+Oman+Strait+of+Hormuz+August+26+2026&btf=d 200
+2026-08-26 12:29:01,413 [INFO] response: https://search.brave.com/search?q=Oil+prices+slide+Iran+Oman+Strait+of+Hormuz+August+26+2026&source=web&tf=pd 200
+2026-08-26 12:29:01,423 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 12:29:02,925 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:29:02,926 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 12:29:03,489 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-26 12:29:03,489 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-26 12:29:08,129 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:29:08,130 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-08-26 12:29:08,141 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-26 12:29:08,141 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-26 12:29:08,208 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-26 12:29:08,209 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 11286, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-26 12:29:08,209 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-26 12:29:08,789 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:30:16,942 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-26 12:30:17,025 [INFO] Validasi: 1x visit_webpage sukses (minimum 3).
+2026-08-26 12:30:17,025 [WARNING] Kurang riset (1x visit). Coba ulang...
+2026-08-26 12:30:17,025 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-08-26 12:30:17,039 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 12:30:21,832 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:30:21,834 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 12:30:22,021 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20crypto%20stocks%20August%2025%202026%20Reuters 200
+2026-08-26 12:30:22,172 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+crypto+stocks+August+25+2026+Reuters&limit=1 200
+2026-08-26 12:30:22,796 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-08-26 12:30:22,947 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economic+impact+oil+prices+August+25+2026+Bloomberg&limit=1 200
+2026-08-26 12:30:22,966 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economic%20impact%20oil%20prices%20August%2025%202026%20Bloomberg 200
+2026-08-26 12:30:23,175 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:30:23,253 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:30:24,240 [INFO] response: https://search.brave.com/search?q=global+economic+impact+oil+prices+August+25+2026+Bloomberg&source=web&tf=pd 200
+2026-08-26 12:30:24,437 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=international%20relations%20market%20sentiment%20August%2025%202026%20CNBC 200
+2026-08-26 12:30:24,439 [INFO] response: https://grokipedia.com/api/typeahead?query=international+relations+market+sentiment+August+25+2026+CNBC&limit=1 200
+2026-08-26 12:30:24,590 [INFO] response: https://search.yahoo.com/search;_ylt=XONYI984XiHO5yTknt4JxXAI;_ylu=YMyteFsX9iEwS-NLuqXLx0XsrJVQdWAbqOyEE753cXuA1Sk?p=international+relations+market+sentiment+August+25+2026+CNBC&btf=d 200
+2026-08-26 12:30:25,738 [INFO] response: https://www.mojeek.com/search?q=international+relations+market+sentiment+August+25+2026+CNBC 403
+2026-08-26 12:30:26,293 [INFO] response: https://search.brave.com/search?q=international+relations+market+sentiment+August+25+2026+CNBC&source=web&tf=pd 200
+2026-08-26 12:30:26,311 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 12:30:35,515 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:30:35,517 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 12:30:36,842 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 12:30:45,652 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:30:45,654 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 12:30:46,757 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Bitcoin%20price%20August%2025%202026%20Bloomberg 200
+2026-08-26 12:30:46,812 [INFO] response: https://grokipedia.com/api/typeahead?query=Bitcoin+price+August+25+2026+Bloomberg&limit=1 200
+2026-08-26 12:30:46,924 [INFO] response: https://search.yahoo.com/search;_ylt=Mu2Rzx_HhVJg3bJvgGPW5dyK;_ylu=qWW-2BU5zFG9iHSKul9xn-OKbAiPnCKaNo6Xs0EqfSp7sd8?p=Bitcoin+price+August+25+2026+Bloomberg&btf=d 200
+2026-08-26 12:30:47,680 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:30:47,838 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:30:48,413 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-08-26 12:30:48,548 [INFO] response: https://grokipedia.com/api/typeahead?query=Ethereum+news+August+25+2026+Reuters&limit=1 200
+2026-08-26 12:30:48,566 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Ethereum%20news%20August%2025%202026%20Reuters 200
+2026-08-26 12:30:48,675 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:30:48,738 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:30:49,275 [INFO] response: https://www.mojeek.com/search?q=Ethereum+news+August+25+2026+Reuters 403
+2026-08-26 12:30:49,321 [INFO] response: https://search.brave.com/search?q=Ethereum+news+August+25+2026+Reuters&source=web&tf=pd 429
+2026-08-26 12:30:49,436 [INFO] response: https://search.yahoo.com/search;_ylt=uMsmE3C4cPIA2uc-KR4Tab2k;_ylu=gvQ9NBqkK5fdPwplL07wOdkJKcQbR2P89pcMphGtKe5OR3A?p=Ethereum+news+August+25+2026+Reuters&btf=d 200
+2026-08-26 12:30:50,115 [INFO] response: https://grokipedia.com/api/typeahead?query=global+crypto+market+August+25+2026+CNBC&limit=1 200
+2026-08-26 12:30:50,155 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20crypto%20market%20August%2025%202026%20CNBC 200
+2026-08-26 12:30:50,664 [INFO] response: https://www.mojeek.com/search?q=global+crypto+market+August+25+2026+CNBC 403
+2026-08-26 12:30:50,805 [INFO] response: https://search.yahoo.com/search;_ylt=xhtfZKWW-p5Eb7-5MfW5QaJx;_ylu=hCzH_Enp0UZOYRP69-X9YDB3ruPsErXii8fxgtsRTVafs4M?p=global+crypto+market+August+25+2026+CNBC&btf=d 200
+2026-08-26 12:30:51,410 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:30:51,469 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:30:51,513 [INFO] response: https://search.brave.com/search?q=global+crypto+market+August+25+2026+CNBC&source=web&tf=pd 429
+2026-08-26 12:30:51,525 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 12:31:01,219 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:31:01,220 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 12:31:03,151 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-26 12:31:03,151 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-26 12:31:03,246 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-26 12:31:03,247 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 15929, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-26 12:31:03,247 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-26 12:31:04,782 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:31:28,055 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-26 12:31:28,061 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 12:31:31,674 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:31:31,676 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 12:31:31,836 [INFO] response: https://grokipedia.com/api/typeahead?query=football+match+results+August+25+2026+ESPN&limit=1 200
+2026-08-26 12:31:31,872 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20match%20results%20August%2025%202026%20ESPN 200
+2026-08-26 12:31:31,990 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:31:32,042 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:31:32,151 [INFO] response: https://search.yahoo.com/search;_ylt=v0exBmv_luDQ_fHzkE5a4PD7;_ylu=toMy3exgtypuxAtxMqPwCz_1M7pYbkBQoA0c0WpSSbEESg4?p=football+match+results+August+25+2026+ESPN&btf=d 200
+2026-08-26 12:31:32,832 [INFO] response: https://search.brave.com/search?q=football+match+results+August+25+2026+ESPN&source=web&tf=pd 429
+2026-08-26 12:31:33,463 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 200 OK"
+2026-08-26 12:31:33,622 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=soccer%20transfer%20news%20August%2025%202026%20Sky%20Sports 200
+2026-08-26 12:31:33,634 [INFO] response: https://grokipedia.com/api/typeahead?query=soccer+transfer+news+August+25+2026+Sky+Sports&limit=1 200
+2026-08-26 12:31:33,736 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:31:33,780 [INFO] response: https://search.brave.com/search?q=soccer+transfer+news+August+25+2026+Sky+Sports&source=web&tf=pd 429
+2026-08-26 12:31:34,293 [INFO] response: https://www.mojeek.com/search?q=soccer+transfer+news+August+25+2026+Sky+Sports 403
+2026-08-26 12:31:34,397 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:31:34,449 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:31:34,554 [INFO] response: https://search.yahoo.com/search;_ylt=4_QTxi0Nny4Axr_6E_kXeLPT;_ylu=gLAfeUHs7cn6zf9fl-FvQubJoHzv1TvLFlgbxwBqBU6KywM?p=soccer+transfer+news+August+25+2026+Sky+Sports&btf=d 200
+2026-08-26 12:31:35,263 [INFO] response: https://grokipedia.com/api/typeahead?query=premier+league+results+August+25+2026+BBC+Sport&limit=1 200
+2026-08-26 12:31:35,308 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=premier%20league%20results%20August%2025%202026%20BBC%20Sport 200
+2026-08-26 12:31:35,406 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:31:35,475 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:31:35,521 [INFO] response: https://search.brave.com/search?q=premier+league+results+August+25+2026+BBC+Sport&source=web&tf=pd 429
+2026-08-26 12:31:35,622 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:31:36,173 [INFO] response: https://www.mojeek.com/search?q=premier+league+results+August+25+2026+BBC+Sport 403
+2026-08-26 12:31:36,303 [INFO] response: https://search.yahoo.com/search;_ylt=cTIV9v8nCiXLcsWjt-7oQIJe;_ylu=0PsuA_ti_cFAT3nJTsmmPPFjHLdRFEMv8tfo47Xyb4EnGsA?p=premier+league+results+August+25+2026+BBC+Sport&btf=d 200
+2026-08-26 12:31:36,488 [INFO] response: https://grokipedia.com/api/typeahead?query=champions+league+news+August+25+2026+UEFA.com&limit=1 200
+2026-08-26 12:31:36,517 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=champions%20league%20news%20August%2025%202026%20UEFA.com 200
+2026-08-26 12:31:36,616 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:31:36,677 [INFO] response: https://search.brave.com/search?q=champions+league+news+August+25+2026+UEFA.com&source=web&tf=pd 429
+2026-08-26 12:31:36,815 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:31:36,878 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:31:37,023 [INFO] response: https://search.yahoo.com/search;_ylt=V2Vr7SPUOjqFfCEeZQew7Kf-;_ylu=nsILnwCkQV80saxWT42WhCsZ2I6IpLRB8On6ehI-pAkE7f8?p=champions+league+news+August+25+2026+UEFA.com&btf=d 200
+2026-08-26 12:31:38,121 [INFO] response: https://www.mojeek.com/search?q=champions+league+news+August+25+2026+UEFA.com 403
+2026-08-26 12:31:38,128 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 12:31:44,570 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:31:44,571 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 12:31:47,168 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 12:31:55,521 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:31:55,522 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 12:31:55,691 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+breakthrough+August+25+2026+TechCrunch&limit=1 200
+2026-08-26 12:31:55,703 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20breakthrough%20August%2025%202026%20TechCrunch 200
+2026-08-26 12:31:57,690 [INFO] response: https://search.brave.com/search?q=latest+AI+breakthrough+August+25+2026+TechCrunch&source=web&tf=pd 429
+2026-08-26 12:31:57,834 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:31:57,967 [INFO] response: https://search.yahoo.com/search;_ylt=gtGHyD8cRVSui2weR82oDSy4;_ylu=YvDKm_Jpiqu2Uy3SKgAh7OvMjKlHJKtLCSKkied7IGjkekM?p=latest+AI+breakthrough+August+25+2026+TechCrunch&btf=d 200
+2026-08-26 12:31:58,951 [INFO] response: https://www.mojeek.com/search?q=latest+AI+breakthrough+August+25+2026+TechCrunch 403
+2026-08-26 12:31:59,076 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:31:59,162 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:31:59,338 [INFO] response: https://grokipedia.com/api/typeahead?query=new+technology+innovation+August+25+2026+The+Verge&limit=1 200
+2026-08-26 12:31:59,414 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=new%20technology%20innovation%20August%2025%202026%20The%20Verge 200
+2026-08-26 12:31:59,538 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:31:59,642 [INFO] response: https://search.yahoo.com/search;_ylt=FzeXNtuSpxr54qILsMwa_li9;_ylu=AaBNDshQ9V5q5ZGKlvacRCMYF00sA2ni7wXPc5IGA-dfUYM?p=new+technology+innovation+August+25+2026+The+Verge&btf=d 200
+2026-08-26 12:32:00,354 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:32:00,407 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:32:00,899 [INFO] response: https://www.mojeek.com/search?q=new+technology+innovation+August+25+2026+The+Verge 403
+2026-08-26 12:32:00,945 [INFO] response: https://search.brave.com/search?q=new+technology+innovation+August+25+2026+The+Verge&source=web&tf=pd 429
+2026-08-26 12:32:01,100 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=science%20news%20August%2025%202026%20Wired 200
+2026-08-26 12:32:01,113 [INFO] response: https://grokipedia.com/api/typeahead?query=science+news+August+25+2026+Wired&limit=1 200
+2026-08-26 12:32:01,227 [INFO] response: https://search.yahoo.com/search;_ylt=lJjvxGz6QiKYjlzupqkkpLVV;_ylu=9CSKE__gw-pKKBS9cBDm_KNV3WKapk76tzeBN3vhQPM5MEk?p=science+news+August+25+2026+Wired&btf=d 200
+2026-08-26 12:32:02,029 [INFO] response: https://search.brave.com/search?q=science+news+August+25+2026+Wired&source=web&tf=pd 429
+2026-08-26 12:32:02,520 [INFO] response: https://www.mojeek.com/search?q=science+news+August+25+2026+Wired 403
+2026-08-26 12:32:02,698 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:32:02,754 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:32:02,946 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=artificial%20intelligence%20ethics%20August%2025%202026%20MIT%20Technology%20Review 200
+2026-08-26 12:32:02,950 [INFO] response: https://grokipedia.com/api/typeahead?query=artificial+intelligence+ethics+August+25+2026+MIT+Technology+Review&limit=1 200
+2026-08-26 12:32:03,057 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:32:03,119 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:32:03,269 [INFO] response: https://search.yahoo.com/search;_ylt=IyvESzQMqZvcGC46YBsUv1xJ;_ylu=fj4uffFtTrtr0QtmHFnz-5eTezlVdlKQPRERQpDp8DMMsRA?p=artificial+intelligence+ethics+August+25+2026+MIT+Technology+Review&btf=d 200
+2026-08-26 12:32:04,272 [INFO] response: https://www.mojeek.com/search?q=artificial+intelligence+ethics+August+25+2026+MIT+Technology+Review 403
+2026-08-26 12:32:04,317 [INFO] response: https://search.brave.com/search?q=artificial+intelligence+ethics+August+25+2026+MIT+Technology+Review&source=web&tf=pd 429
+2026-08-26 12:32:04,505 [INFO] response: https://grokipedia.com/api/typeahead?query=robotics+development+August+25+2026+Ars+Technica&limit=1 200
+2026-08-26 12:32:04,507 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=robotics%20development%20August%2025%202026%20Ars%20Technica 200
+2026-08-26 12:32:05,053 [INFO] response: https://www.mojeek.com/search?q=robotics+development+August+25+2026+Ars+Technica 403
+2026-08-26 12:32:05,173 [INFO] response: https://search.yahoo.com/search;_ylt=1ZYGMD96QTISj7ossk2amfLG;_ylu=lcgnnkJi9MbtxJTfYozCjaIs3wIXn9DRY-2rMxuHzZxf-KE?p=robotics+development+August+25+2026+Ars+Technica&btf=d 200
+2026-08-26 12:32:05,773 [INFO] response: https://search.brave.com/search?q=robotics+development+August+25+2026+Ars+Technica&source=web&tf=pd 429
+2026-08-26 12:32:05,875 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:32:05,929 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:32:06,110 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:32:06,141 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 12:32:14,640 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:32:14,641 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 12:32:15,980 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-26 12:32:15,980 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-26 12:32:16,138 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-26 12:32:16,138 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 27421, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-26 12:32:16,139 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-26 12:32:17,018 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:33:19,576 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-26 12:33:21,369 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+26+Agustus+2026&limit=1 200
+2026-08-26 12:33:21,369 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%2026%20Agustus%202026 200
+2026-08-26 12:33:21,485 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:33:21,543 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:33:21,667 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:33:21,721 [INFO] response: https://search.brave.com/search?q=IHSG+26+Agustus+2026&source=web&tf=pd 429
+2026-08-26 12:33:21,831 [INFO] response: https://search.yahoo.com/search;_ylt=A9DU0vFCZikkITfDPqY78Jvm;_ylu=oGUD9oFKFwjzAddmbNxSzeEjxNNxskBSxsHZ0o1-i1h7HgQ?p=IHSG+26+Agustus+2026&btf=d 200
+2026-08-26 12:33:22,843 [INFO] response: https://www.mojeek.com/search?q=IHSG+26+Agustus+2026 403
+2026-08-26 12:33:23,002 [INFO] response: https://grokipedia.com/api/typeahead?query=kurs+Rupiah+USD+26+Agustus+2026&limit=1 200
+2026-08-26 12:33:23,016 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=kurs%20Rupiah%20USD%2026%20Agustus%202026 200
+2026-08-26 12:33:23,556 [INFO] response: https://www.mojeek.com/search?q=kurs+Rupiah+USD+26+Agustus+2026 403
+2026-08-26 12:33:23,667 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:33:23,746 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:33:23,849 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:33:23,914 [INFO] response: https://search.brave.com/search?q=kurs+Rupiah+USD+26+Agustus+2026&source=web&tf=pd 429
+2026-08-26 12:33:24,042 [INFO] response: https://search.yahoo.com/search;_ylt=ro2qRGLIQlaEzS4_2GqXjTQB;_ylu=cPl3trQH3RtDa3MnDLKtmZtpGBBNROXrXwXlZkVxoc91gmM?p=kurs+Rupiah+USD+26+Agustus+2026&btf=d 200
+2026-08-26 12:33:24,623 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+ekonomi+Indonesia+26+Agustus+2026&limit=1 200
+2026-08-26 12:33:24,651 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20ekonomi%20Indonesia%2026%20Agustus%202026 200
+2026-08-26 12:33:24,693 [INFO] response: https://search.brave.com/search?q=berita+ekonomi+Indonesia+26+Agustus+2026&source=web&tf=pd 429
+2026-08-26 12:33:25,275 [INFO] response: https://www.mojeek.com/search?q=berita+ekonomi+Indonesia+26+Agustus+2026 403
+2026-08-26 12:33:25,391 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:33:25,451 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:33:25,548 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:33:25,695 [INFO] response: https://search.yahoo.com/search;_ylt=cTgbMkO6YptluAWpFmM7T3TD;_ylu=dotogPhaCnQwFDbbW4RAKvvurzynIdBuP--yR7q4wrBuFLQ?p=berita+ekonomi+Indonesia+26+Agustus+2026&btf=d 200
+2026-08-26 12:33:26,329 [INFO] response: https://grokipedia.com/api/typeahead?query=timnas+Indonesia+Agustus+2026&limit=1 200
+2026-08-26 12:33:26,331 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=timnas%20Indonesia%20Agustus%202026 200
+2026-08-26 12:33:26,888 [INFO] response: https://www.mojeek.com/search?q=timnas+Indonesia+Agustus+2026 403
+2026-08-26 12:33:26,984 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:33:27,158 [INFO] response: https://search.yahoo.com/search;_ylt=O7o73LIlFawFWldeo9NgEmUP;_ylu=SVBMA5RaRlEw2fiP-aq9V3Qh4l1jnlUJHh5eXebtF9_nBfU?p=timnas+Indonesia+Agustus+2026&btf=d 200
+2026-08-26 12:33:27,960 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:33:28,045 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:33:28,094 [INFO] response: https://search.brave.com/search?q=timnas+Indonesia+Agustus+2026&source=web&tf=pd 429
+2026-08-26 12:33:28,256 [INFO] response: https://grokipedia.com/api/typeahead?query=liga+lokal+Indonesia+26+Agustus+2026&limit=1 200
+2026-08-26 12:33:28,276 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=liga%20lokal%20Indonesia%2026%20Agustus%202026 200
+2026-08-26 12:33:28,423 [INFO] response: https://search.yahoo.com/search;_ylt=JqNM2z7xk9-5Mb0pbKKJvsKo;_ylu=CfRQvmsqZtMfW2d2VVaYit76yjSM7Ssa08XlAJq2lTX-biE?p=liga+lokal+Indonesia+26+Agustus+2026&btf=d 200
+2026-08-26 12:33:28,987 [INFO] response: https://search.brave.com/search?q=liga+lokal+Indonesia+26+Agustus+2026&source=web&tf=pd 429
+2026-08-26 12:33:29,108 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:33:29,178 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:33:29,749 [INFO] response: https://www.mojeek.com/search?q=liga+lokal+Indonesia+26+Agustus+2026 403
+2026-08-26 12:33:29,856 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:33:30,021 [INFO] response: https://grokipedia.com/api/typeahead?query=atlet+Indonesia+Olimpiade+Agustus+2026&limit=1 200
+2026-08-26 12:33:30,055 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=atlet%20Indonesia%20Olimpiade%20Agustus%202026 200
+2026-08-26 12:33:30,162 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:33:30,229 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:33:30,327 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:33:30,458 [INFO] response: https://search.yahoo.com/search;_ylt=SSbb89-pzpUeARomG-UiBK1A;_ylu=Oo8mBuppEFXJzcw5b83Xg6phJ8JIT3lHIDsYH5D40tLgWzs?p=atlet+Indonesia+Olimpiade+Agustus+2026&btf=d 200
+2026-08-26 12:33:31,642 [INFO] response: https://www.mojeek.com/search?q=atlet+Indonesia+Olimpiade+Agustus+2026 403
+2026-08-26 12:33:31,684 [INFO] response: https://search.brave.com/search?q=atlet+Indonesia+Olimpiade+Agustus+2026&source=web&tf=pd 429
+2026-08-26 12:33:31,855 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=CNN%20Indonesia%20IHSG%2026%20Agustus%202026 200
+2026-08-26 12:33:31,952 [INFO] response: https://grokipedia.com/api/typeahead?query=CNN+Indonesia+IHSG+26+Agustus+2026&limit=1 200
+2026-08-26 12:33:32,454 [INFO] response: https://www.mojeek.com/search?q=CNN+Indonesia+IHSG+26+Agustus+2026 403
+2026-08-26 12:33:32,578 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:33:32,703 [INFO] response: https://search.yahoo.com/search;_ylt=WbKxzKnnx1jDWTRuvlRLPjiZ;_ylu=YN9D3yNUeH8dpS0Rv-68NbK2cd9HVKnfFOAqPLLbThswog4?p=CNN+Indonesia+IHSG+26+Agustus+2026&btf=d 200
+2026-08-26 12:33:33,287 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:33:33,374 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:33:33,415 [INFO] response: https://search.brave.com/search?q=CNN+Indonesia+IHSG+26+Agustus+2026&source=web&tf=pd 429
+2026-08-26 12:33:33,580 [INFO] response: https://grokipedia.com/api/typeahead?query=Bisnis.com+IHSG+26+Agustus+2026&limit=1 200
+2026-08-26 12:33:33,600 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Bisnis.com%20IHSG%2026%20Agustus%202026 200
+2026-08-26 12:33:33,701 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:33:33,762 [INFO] response: https://search.brave.com/search?q=Bisnis.com+IHSG+26+Agustus+2026&source=web&tf=pd 429
+2026-08-26 12:33:34,254 [INFO] response: https://www.mojeek.com/search?q=Bisnis.com+IHSG+26+Agustus+2026 403
+2026-08-26 12:33:34,403 [INFO] response: https://search.yahoo.com/search;_ylt=Dr5DNIbloXzA99H52q4Zmrew;_ylu=zTsW41FrQqh9eJej0DEBQkmV1YE7zCb_RpeUdUVib0AZyTo?p=Bisnis.com+IHSG+26+Agustus+2026&btf=d 200
+2026-08-26 12:33:34,954 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:33:35,094 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:33:35,247 [INFO] response: https://grokipedia.com/api/typeahead?query=Kompas.com+IHSG+26+Agustus+2026&limit=1 200
+2026-08-26 12:33:35,273 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Kompas.com%20IHSG%2026%20Agustus%202026 200
+2026-08-26 12:33:35,316 [INFO] response: https://search.brave.com/search?q=Kompas.com+IHSG+26+Agustus+2026&source=web&tf=pd 429
+2026-08-26 12:33:35,443 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 12:33:35,566 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:33:35,639 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:33:36,220 [INFO] response: https://www.mojeek.com/search?q=Kompas.com+IHSG+26+Agustus+2026 403
+2026-08-26 12:33:36,351 [INFO] response: https://search.yahoo.com/search;_ylt=sPEjW5il50FBovkaL_4-BoCT;_ylu=Bz88FbANxC8kfoPCs493wY1mNfg8C24KoxSjpZ57CfAb6f0?p=Kompas.com+IHSG+26+Agustus+2026&btf=d 200
+2026-08-26 12:33:36,955 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20Agustus%202026 200
+2026-08-26 12:33:37,111 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+Agustus+2026&limit=1 200
+2026-08-26 12:33:37,259 [INFO] response: https://search.yahoo.com/search;_ylt=zwHRHPU-xQ2UdoiXX-G_rzBL;_ylu=RkIGdvsRIb5uGeO_6dMYZYOg7yWlyIh2ZR9oHgOzNUKCrtQ?p=Timnas+Indonesia+Agustus+2026&btf=d 200
+2026-08-26 12:33:37,704 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+Agustus+2026&source=web&tf=pd 429
+2026-08-26 12:33:37,808 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 12:33:37,860 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 12:33:38,455 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+Agustus+2026 403
+2026-08-26 12:33:44,108 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 12:34:00,755 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 12:34:00,757 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 12:34:00,778 [INFO] Validasi: 1x visit_webpage sukses (minimum 3).
+2026-08-26 12:34:00,778 [INFO] LAPORAN FINAL:
+2026-08-26 12:34:00,778 [INFO] ⚠️ *Catatan sistem:* AI hanya mengunjungi 1 sumber (kurang dari 3 yang diharapkan). Verifikasi mandiri disarankan.
+
+### 🌍 1. Geopolitik & Ekonomi Global
+Pasar kripto global menunjukkan kekuatan signifikan. Bitcoin (BTC) berhasil menembus level $80.000 untuk pertama kalinya sejak Mei 2026 pada 26 Agustus, memicu spekulasi bahwa fase bear market telah berakhir. Kenaikan ini didorong oleh pengumuman Menteri Keuangan AS Scott Bessent pada 20 Agustus mengenai rencana AS untuk melipatgandakan pembelian utang jangka panjang. Analis dari IG memproyeksikan harga Bitcoin bisa mencapai $95.000-$100.000, bahkan hingga $126.000. Selain Bitcoin, aset kripto lain seperti Cardano (ADA) melonjak 36% di bulan Agustus, diikuti oleh XRP, Ethereum (ETH), dan Solana (SOL).
+Ethereum spot ETF mencatat aliran masuk bersih $180 juta pada 25 Agustus, menandai hari ketujuh berturut-turut aliran masuk positif, dengan BlackRock’s ETHA memimpin $146 juta. Total kapitalisasi pasar kripto global mencapai sekitar $2.66 triliun pada 26 Agustus 2026, dengan dominasi Bitcoin di 59.2%. (Sumber: Forbes, Exchange Rates UK, KuCoin, CNBC TV18, LiveCoinRate)
+URL: https://www.forbes.com/sites/digital-assets/2026/08/26/its-going-to-keep-growing-blackrock-just-confirmed-a-bitcoin-price-bombshell/
+URL: https://www.exchangerates.org.uk/news/47005/2026-08-26-bitcoin-price-forecast-prediction-ig-sees-95-000-100-000-after-80k-break.html
+URL: https://www.kucoin.com/news/flash/ethereum-spot-etfs-see-180m-net-inflow-on-august-25-marking-7th-consecutive-day-of-inflows
+URL: https://www.cnbctv18.com/market/cryptocurrency/best-performing-crypto-in-august-cardano-leads-with-36-gain-bitcoin-hits-80000-19977232.htm
+URL: https://livecoinrate.com/market-overview/
+
+Dalam geopolitik, Direktur Pelaksana IMF Kristalina Georgieva mengingatkan bahwa risiko harga minyak dan utang masih menjadi perhatian, dengan potensi percepatan inflasi. Namun, ia mencatat bahwa peningkatan investasi dalam AI dan pertumbuhan pasokan energi di luar Teluk membantu meredakan tekanan ekonomi global akibat guncangan energi dari Iran. Pasar prediksi AS-Iran menunjukkan reaksi terhadap serangan baru dan kebuntuan di Selat Hormuz. Iran dan Oman dilaporkan sedang bernegosiasi untuk mengamankan transit di Selat Hormuz, sementara AS menunda sanksi sekunder. Harga minyak mentah turun menjadi $80.78 USD/Bbl pada 26 Agustus 2026, melemah 1.92% dari hari sebelumnya. (Sumber: Bloomingbit.io, Covers.com, ringkasan web_search Trading Economics)
+URL: https://en.bloomingbit.io/feed/news/119102
+URL: https://www.covers.com/politics/us-iran-prediction-markets-odds
+
+### ⚽ 2. Olahraga Global
+Babak playoff Liga Champions UEFA 2026-27 pada Selasa, 25 Agustus 2026, menyaksikan klub Azerbaijan Sabah FC lolos ke fase grup untuk pertama kalinya setelah mengalahkan Hapoel Be’er Sheva dengan skor 5-2. Kejutan besar terjadi ketika Celtic menyia-nyiakan keunggulan empat golnya dan tersingkir oleh LASK, yang berhasil melakukan comeback luar biasa. Tiga dari tujuh pertandingan playoff telah usai, dengan empat tempat tersisa di fase grup akan ditentukan dalam waktu dekat. Undian fase grup Liga Champions 2026/27 dijadwalkan pada Kamis, 27 Agustus. (Sumber: Sportstar, Channel News Asia, AS USA)
+URL: https://sportstar.thehindu.com/football/champions-league/uefa-champions-league-2026-27-playoff-sabah-lask-celtic-bodo-glimt-group-stage-all-results-list/article71391260.ece
+URL: https://www.channelnewsasia.com/sport/lask-end-celtics-champions-league-hopes-astonishing-comeback-6341026
+URL: https://en.as.com/soccer/champions-league-calendar-202627-the-dates-of-each-day-of-the-league-phase-f202608-n/
+
+### 💻 3. Teknologi & AI Terbaru
+Instagram meluncurkan fitur 'First Draft' pada 25 Agustus 2026, yang memungkinkan kreator iPhone mengubah cuplikan video menjadi draf awal Reel dalam waktu kurang dari 10 detik. Fitur ini menggunakan AI generatif dan memberikan opsi untuk membatalkan (reversible) setiap potongan, memberikan fleksibilitas lebih dalam pengeditan awal. (Sumber: Quasa.io)
+URL: https://quasa.io/insights/instagram-builds-a-reel-in-10-seconds-but-every-cut-stays-reversible
+
+Selain itu, pasar AI terus bergerak dengan berbagai pembaruan model dan penyedia layanan. Informasi terbaru dari LM Market Cap mengarsip pembaruan model AI dan rilis dari penyedia layanan terkemuka di bulan Agustus 2026. (Sumber: LM Market Cap)
+URL: https://lmmarketcap.com/news/archive/2026/08
+
+### 🇮🇩 4. Indonesia Update
+#### a) Ekonomi
+Indeks Harga Saham Gabungan (IHSG) di Bursa Efek Indonesia (BEI) ditutup anjlok 1,48 persen ke level 6.405,69 pada Rabu, 26 Agustus 2026. Penurunan ini setara dengan kehilangan 95,9 poin dari penutupan sehari sebelumnya yang berada di level 6.501, dan didorong oleh aksi jual investor asing serta sikap hati-hati investor terhadap risiko stabilitas keamanan domestik. Kelompok 45 saham unggulan atau indeks LQ45 juga turun 1,46 persen ke posisi 632,55. (Sumber: RRI.co.id, Koran-Jakarta.com, Bisnis.com - ringkasan web_search)
+URL: https://rri.co.id/ekonomi/keuangan/2681647/ihsg-anjlok-ke-level-6405-pada-penutupan-perdagangan-rabu-26-agustus-2026
+
+Sementara itu, nilai tukar Rupiah terhadap dolar AS menunjukkan volatilitas. Rupiah diperkirakan bergerak terbatas pada Rabu, 26 Agustus 2026, dengan sentimen pasar yang perlu dicermati. Sebuah laporan menyebut Rupiah sempat menguat ke Rp17.690 per dolar AS. (Sumber: Kontan.co.id, RMOL.ID - ringkasan web_search)
+
+#### b) Olahraga
+Timnas Voli Putri Indonesia berhasil melaju ke babak perempat final AVC Continental Cup 2026 setelah mengalahkan Australia dengan skor 3-0 pada Rabu, 26 Agustus 2026. Turnamen ini berlangsung di Tianjin, China, dari 21-30 Agustus. (Sumber: Tribunnews - ringkasan web_search)
+URL: https://www.tribunnews.com/sport/7873728/hasil-akhir-avc-continental-2026-timnas-voli-putri-indonesia-lolos-8-besar-usai-hajar-australia-3-0
+
+Dalam sepak bola, Piala AFF 2026 atau ASEAN Championship 2026 sedang berlangsung dari 24 Juli hingga 26 Agustus 2026. Hingga kini, FIFA belum merilis informasi resmi terkait jadwal pertandingan Timnas Indonesia di FIFA ASEAN Cup 2026 yang dijadwalkan bergulir pada 23 September hingga 3 Oktober 2026. (Sumber: skor.id, kumparan.com - ringkasan web_search)
+
+
+2026-08-26 12:34:00,779 [INFO] Mengirim laporan ke Telegram...
+2026-08-26 12:34:00,779 [INFO] Pesan dipecah jadi 2 bagian.
+2026-08-26 12:34:02,492 [INFO] ✅ Bagian 1/2 terkirim (plain text)!
+2026-08-26 12:34:04,240 [INFO] ✅ Bagian 2/2 terkirim (Markdown)!
+2026-08-26 12:34:05,241 [INFO] History disimpan (5 entri).
+2026-08-26 12:34:05,241 [INFO] Selesai — laporan terkirim dan history disimpan.
