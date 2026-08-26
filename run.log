@@ -18579,3 +18579,227 @@ print(cnbc_ihsg)
 2026-08-25 12:30:22,634 [INFO] ✅ Bagian 1/1 terkirim (plain text)!
 2026-08-25 12:30:23,635 [INFO] History disimpan (5 entri).
 2026-08-25 12:30:23,635 [INFO] Selesai — laporan terkirim dan history disimpan.
+2026-08-26 00:38:54,866 [INFO] =======================================================
+2026-08-26 00:38:54,866 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-08-26 00:38:54,866 [INFO] =======================================================
+2026-08-26 00:38:54,867 [INFO] Menyiapkan AI dengan fallback chain (Gemini → Groq → OpenRouter → Cerebras)...
+2026-08-26 00:38:54,867 [INFO] CEREBRAS_API_KEY belum di-set — fallback Cerebras di-skip (opsional).
+2026-08-26 00:38:55,365 [INFO] Provider siap: Gemini 2.5 Flash
+2026-08-26 00:38:55,366 [INFO] Provider siap: Groq (GPT-OSS 120B)
+2026-08-26 00:38:55,367 [INFO] Provider siap: OpenRouter (auto-router gratis)
+2026-08-26 00:38:55,378 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-08-26 00:38:55,392 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:39:55,755 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Request timed out.
+2026-08-26 00:39:55,755 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-26 00:39:57,112 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 00:39:57,119 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-08-26 00:39:57,141 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:40:07,106 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 00:40:07,107 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 00:40:07,417 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+crypto+stock+market+impact+August+25+26+2026+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times&limit=1 502
+2026-08-26 00:40:07,430 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20crypto%20stock%20market%20impact%20August%2025%2026%202026%20Reuters%20Bloomberg%20CNBC%20BBC%20Al%20Jazeera%20Financial%20Times 200
+2026-08-26 00:40:07,987 [INFO] response: https://www.mojeek.com/search?q=geopolitics+crypto+stock+market+impact+August+25+26+2026+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times 403
+2026-08-26 00:40:08,393 [INFO] response: https://search.yahoo.com/search;_ylt=jaZJ0c1EYuvU87joFCzem1zB;_ylu=FJ39jPfAuIZsGqGV02XkYXbjzlKUkMCapxxSrS128HB3C-g?p=geopolitics+crypto+stock+market+impact+August+25+26+2026+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times&btf=d 200
+2026-08-26 00:40:09,471 [INFO] response: https://search.brave.com/search?q=geopolitics+crypto+stock+market+impact+August+25+26+2026+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times&source=web&tf=pd 200
+2026-08-26 00:40:09,676 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economic+news+market+impact+August+25+26+2026+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times&limit=1 502
+2026-08-26 00:40:09,714 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economic%20news%20market%20impact%20August%2025%2026%202026%20Reuters%20Bloomberg%20CNBC%20BBC%20Al%20Jazeera%20Financial%20Times 200
+2026-08-26 00:40:09,968 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:40:10,039 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:40:10,520 [INFO] response: https://www.mojeek.com/search?q=global+economic+news+market+impact+August+25+26+2026+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times 403
+2026-08-26 00:40:11,145 [INFO] response: https://search.brave.com/search?q=global+economic+news+market+impact+August+25+26+2026+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times&source=web&tf=pd 200
+2026-08-26 00:40:11,351 [INFO] response: https://grokipedia.com/api/typeahead?query=crypto+market+news+August+25+26+2026+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times&limit=1 502
+2026-08-26 00:40:11,390 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=crypto%20market%20news%20August%2025%2026%202026%20Reuters%20Bloomberg%20CNBC%20BBC%20Al%20Jazeera%20Financial%20Times 200
+2026-08-26 00:40:11,548 [INFO] response: https://search.yahoo.com/search;_ylt=Ry8DerXJj_pENduWD2DZ1r59;_ylu=L6xO5X55xoI_YgqrM3_y8I69uFjCk_lffXD3U2GVb2E9zig?p=crypto+market+news+August+25+26+2026+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times&btf=d 200
+2026-08-26 00:40:12,734 [INFO] response: https://www.mojeek.com/search?q=crypto+market+news+August+25+26+2026+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times 403
+2026-08-26 00:40:13,289 [INFO] response: https://search.brave.com/search?q=crypto+market+news+August+25+26+2026+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times&source=web&tf=pd 200
+2026-08-26 00:40:13,304 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:40:55,888 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 00:40:55,889 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 00:40:59,389 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:41:16,161 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 00:41:16,162 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 00:41:16,340 [INFO] response: https://grokipedia.com/api/typeahead?query=football+match+results+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports+UEFA.com+FIFA.com&limit=1 502
+2026-08-26 00:41:16,386 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20match%20results%20August%2025%2026%202026%20ESPN%20BBC%20Sport%20Sky%20Sports%20UEFA.com%20FIFA.com 200
+2026-08-26 00:41:16,624 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 00:41:16,821 [INFO] response: https://search.yahoo.com/search;_ylt=kTKuCLiupGwAot09Zm9dVgOj;_ylu=6-qh-bJfbRd4Si_xCdGpoydch1mtKzH0_2vqOGG1N_ERZYs?p=football+match+results+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports+UEFA.com+FIFA.com&btf=d 200
+2026-08-26 00:41:17,057 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:41:17,137 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:41:17,625 [INFO] response: https://www.mojeek.com/search?q=football+match+results+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports+UEFA.com+FIFA.com 403
+2026-08-26 00:41:18,335 [INFO] response: https://search.brave.com/search?q=football+match+results+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports+UEFA.com+FIFA.com&source=web&tf=pd 200
+2026-08-26 00:41:18,563 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20player%20transfer%20news%20August%2025%2026%202026%20ESPN%20BBC%20Sport%20Sky%20Sports%20UEFA.com%20FIFA.com 200
+2026-08-26 00:41:18,614 [INFO] response: https://grokipedia.com/api/typeahead?query=football+player+transfer+news+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports+UEFA.com+FIFA.com&limit=1 502
+2026-08-26 00:41:18,791 [INFO] response: https://search.yahoo.com/search;_ylt=hgTDrg-UQizxUBZEf9_N_kT9;_ylu=-4b65bRvs0XSV2q_tdSjCsNgH-NEaUUvysqoLscxaJ2iyeM?p=football+player+transfer+news+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports+UEFA.com+FIFA.com&btf=d 200
+2026-08-26 00:41:19,673 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:41:19,754 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:41:20,224 [INFO] response: https://www.mojeek.com/search?q=football+player+transfer+news+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports+UEFA.com+FIFA.com 403
+2026-08-26 00:41:20,928 [INFO] response: https://search.brave.com/search?q=football+player+transfer+news+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports+UEFA.com+FIFA.com&source=web&tf=pd 200
+2026-08-26 00:41:21,089 [INFO] response: https://grokipedia.com/api/typeahead?query=NBA+results+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports&limit=1 502
+2026-08-26 00:41:21,162 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=NBA%20results%20August%2025%2026%202026%20ESPN%20BBC%20Sport%20Sky%20Sports 200
+2026-08-26 00:41:21,346 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:41:21,416 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:41:21,648 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 00:41:21,808 [INFO] response: https://search.yahoo.com/search;_ylt=uIsmdm2WAvmkuyVQiocUmJqv;_ylu=qMhENzqO_Suyy8QhLueHuwMLdQSO5ITsvwiOC8MTznm8Xgs?p=NBA+results+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports&btf=d 200
+2026-08-26 00:41:23,007 [INFO] response: https://www.mojeek.com/search?q=NBA+results+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports 403
+2026-08-26 00:41:23,072 [INFO] response: https://search.brave.com/search?q=NBA+results+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports&source=web&tf=pd 429
+2026-08-26 00:41:23,278 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=F1%20news%20August%2025%2026%202026%20ESPN%20BBC%20Sport%20Sky%20Sports 200
+2026-08-26 00:41:23,445 [INFO] response: https://grokipedia.com/api/typeahead?query=F1+news+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports&limit=1 502
+2026-08-26 00:41:23,697 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:41:23,770 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:41:23,939 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 00:41:24,419 [INFO] response: https://www.mojeek.com/search?q=F1+news+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports 403
+2026-08-26 00:41:24,582 [INFO] response: https://search.yahoo.com/search;_ylt=HLfSFzdAl6CVbDPRdESw-_Jt;_ylu=cbzxdFusig9XRXQSgHi38xIhKASz_acF7vFXRn1lM5QGYdw?p=F1+news+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports&btf=d 200
+2026-08-26 00:41:25,191 [INFO] response: https://search.brave.com/search?q=F1+news+August+25+26+2026+ESPN+BBC+Sport+Sky+Sports&source=web&tf=pd 429
+2026-08-26 00:41:25,200 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:42:09,148 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 00:42:09,150 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 00:42:09,390 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20news%20August%2025%2026%202026%20TechCrunch%20The%20Verge%20Wired%20MIT%20Technology%20Review%20Ars%20Technica 200
+2026-08-26 00:42:09,414 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+news+August+25+26+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica&limit=1 200
+2026-08-26 00:42:09,867 [INFO] response: https://www.mojeek.com/search?q=latest+AI+news+August+25+26+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica 403
+2026-08-26 00:42:10,077 [INFO] response: https://search.yahoo.com/search;_ylt=TUSu90SYVcLfYNasHdarzQJO;_ylu=sMS0NmDuuF2aV4Eb7ROD3gHdx_AanrOMET4amyptaWYgjCE?p=latest+AI+news+August+25+26+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica&btf=d 200
+2026-08-26 00:42:10,710 [INFO] response: https://search.brave.com/search?q=latest+AI+news+August+25+26+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica&source=web&tf=pd 429
+2026-08-26 00:42:10,871 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:42:10,965 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:42:11,183 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20news%20August%2025%2026%202026%20TechCrunch%20The%20Verge%20Wired%20MIT%20Technology%20Review%20Ars%20Technica 200
+2026-08-26 00:42:11,242 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+news+August+25+26+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica&limit=1 200
+2026-08-26 00:42:11,315 [INFO] response: https://search.brave.com/search?q=latest+technology+news+August+25+26+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica&source=web&tf=pd 429
+2026-08-26 00:42:11,493 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:42:11,580 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:42:12,038 [INFO] response: https://www.mojeek.com/search?q=latest+technology+news+August+25+26+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica 403
+2026-08-26 00:42:12,193 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 00:42:12,414 [INFO] response: https://search.yahoo.com/search;_ylt=zugnbVwPetxpLgKfOUpsPzpf;_ylu=0rrgD5b59nB58HgPnVA2mVI8y1bKyA4N6ijnYJQLVFW-xFU?p=latest+technology+news+August+25+26+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica&btf=d 200
+2026-08-26 00:42:13,246 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=science%20breakthrough%20August%2025%2026%202026%20Wired%20MIT%20Technology%20Review%20Ars%20Technica 200
+2026-08-26 00:42:13,291 [INFO] response: https://grokipedia.com/api/typeahead?query=science+breakthrough+August+25+26+2026+Wired+MIT+Technology+Review+Ars+Technica&limit=1 200
+2026-08-26 00:42:13,804 [INFO] response: https://www.mojeek.com/search?q=science+breakthrough+August+25+26+2026+Wired+MIT+Technology+Review+Ars+Technica 403
+2026-08-26 00:42:14,018 [INFO] response: https://search.yahoo.com/search;_ylt=3VOddsyTEw88CcFC719TDAJM;_ylu=wHoyALPdC3kGu4YZKf8gqhRyP_IUlplOsIKFJ9NwtEohwgA?p=science+breakthrough+August+25+26+2026+Wired+MIT+Technology+Review+Ars+Technica&btf=d 200
+2026-08-26 00:42:14,693 [INFO] response: https://search.brave.com/search?q=science+breakthrough+August+25+26+2026+Wired+MIT+Technology+Review+Ars+Technica&source=web&tf=pd 429
+2026-08-26 00:42:14,845 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:42:14,919 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:42:14,927 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:43:03,812 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 00:43:03,813 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 00:43:03,814 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:44:03,870 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Request timed out.
+2026-08-26 00:44:03,870 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-26 00:44:04,058 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-26 00:44:04,059 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 20438, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-26 00:44:04,059 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-26 00:44:05,784 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 00:44:27,594 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-26 00:44:48,092 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:45:48,179 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Request timed out.
+2026-08-26 00:45:48,179 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-26 00:45:48,494 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-26 00:45:48,495 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 22443, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-26 00:45:48,495 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-26 00:45:49,656 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 00:46:19,199 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-26 00:46:20,584 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:47:20,674 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Request timed out.
+2026-08-26 00:47:20,674 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-26 00:47:20,898 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-26 00:47:20,898 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 24364, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-26 00:47:20,899 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-26 00:47:22,758 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 00:51:02,979 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-26 00:51:03,276 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20kondisi%20harga%20penutupan%20persentase%20perubahan%2025%2026%20Agustus%202026%20CNBC%20Indonesia%20CNN%20Indonesia%20Kontan%20Bisnis%20com%20Detik%20Kompas 200
+2026-08-26 00:51:03,516 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+kondisi+harga+penutupan+persentase+perubahan+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas&limit=1 200
+2026-08-26 00:51:03,712 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:51:03,785 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:51:04,082 [INFO] response: https://search.yahoo.com/search;_ylt=qHqRUQ2LUrlBRmAw68mZT5qw;_ylu=lxiPOlHOmjPEbrSgefovb3E-7_fpW_eoltgjnv1DA294Vw4?p=IHSG+kondisi+harga+penutupan+persentase+perubahan+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas&btf=d 200
+2026-08-26 00:51:04,666 [INFO] response: https://search.brave.com/search?q=IHSG+kondisi+harga+penutupan+persentase+perubahan+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas&source=web&tf=pd 429
+2026-08-26 00:51:05,193 [INFO] response: https://www.mojeek.com/search?q=IHSG+kondisi+harga+penutupan+persentase+perubahan+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas 403
+2026-08-26 00:51:05,363 [INFO] response: https://grokipedia.com/api/typeahead?query=kurs+rupiah+USD+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas&limit=1 502
+2026-08-26 00:51:05,451 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=kurs%20rupiah%20USD%2025%2026%20Agustus%202026%20CNBC%20Indonesia%20CNN%20Indonesia%20Kontan%20Bisnis%20com%20Detik%20Kompas 200
+2026-08-26 00:51:05,633 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 00:51:05,698 [INFO] response: https://search.brave.com/search?q=kurs+rupiah+USD+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas&source=web&tf=pd 429
+2026-08-26 00:51:06,166 [INFO] response: https://www.mojeek.com/search?q=kurs+rupiah+USD+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas 403
+2026-08-26 00:51:06,322 [INFO] response: https://search.yahoo.com/search;_ylt=3lPV3f1CfBm7Z_9psqNbfF0A;_ylu=NgLtsGBP-agu1zXMR--YT6x2rS6vcPtAcrmui2qdU5WYzVw?p=kurs+rupiah+USD+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas&btf=d 200
+2026-08-26 00:51:06,998 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:51:07,071 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:51:07,263 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+ekonomi+Indonesia+terbaru+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas+Antara+Tempo&limit=1 502
+2026-08-26 00:51:07,312 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20ekonomi%20Indonesia%20terbaru%2025%2026%20Agustus%202026%20CNBC%20Indonesia%20CNN%20Indonesia%20Kontan%20Bisnis%20com%20Detik%20Kompas%20Antara%20Tempo 200
+2026-08-26 00:51:12,313 [INFO] Error in engine brave: TimeoutException(TimeoutError('error sending request for url (https://search.brave.com/search?q=berita+ekonomi+Indonesia+terbaru+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas+Antara+Tempo&source=web&tf=pd) > operation timed out'))
+2026-08-26 00:51:12,469 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 00:51:12,552 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:51:12,641 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:51:12,799 [INFO] response: https://search.yahoo.com/search;_ylt=4JQpMMnvtj9AbHaZmLHAcUz5;_ylu=k0nzZSK8Devcm_ep8ER0Hr4dmIan9Uq9--4eZtu8uPvZcFM?p=berita+ekonomi+Indonesia+terbaru+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas+Antara+Tempo&btf=d 200
+2026-08-26 00:51:13,770 [INFO] response: https://www.mojeek.com/search?q=berita+ekonomi+Indonesia+terbaru+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas+Antara+Tempo 403
+2026-08-26 00:51:13,914 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+liga+lokal+atlet+internasional+25+26+Agustus+2026+CNN+Indonesia+CNBC+Indonesia+Detik+Kompas&limit=1 502
+2026-08-26 00:51:13,989 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20liga%20lokal%20atlet%20internasional%2025%2026%20Agustus%202026%20CNN%20Indonesia%20CNBC%20Indonesia%20Detik%20Kompas 200
+2026-08-26 00:51:14,538 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+liga+lokal+atlet+internasional+25+26+Agustus+2026+CNN+Indonesia+CNBC+Indonesia+Detik+Kompas 403
+2026-08-26 00:51:14,742 [INFO] response: https://search.yahoo.com/search;_ylt=spGZ-_3veZ1iRqaORSL8FHFA;_ylu=FMK_sJofd3khdZnM1iMCAUjPOfx_kl4Eb0rrPX89tBkRdNs?p=Timnas+Indonesia+liga+lokal+atlet+internasional+25+26+Agustus+2026+CNN+Indonesia+CNBC+Indonesia+Detik+Kompas&btf=d 200
+2026-08-26 00:51:15,250 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+liga+lokal+atlet+internasional+25+26+Agustus+2026+CNN+Indonesia+CNBC+Indonesia+Detik+Kompas&source=web&tf=pd 429
+2026-08-26 00:51:15,453 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:51:15,525 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:51:18,182 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20kondisi%20harga%20penutupan%20persentase%20perubahan%2025%2026%20Agustus%202026%20CNBC%20Indonesia%20CNN%20Indonesia%20Kontan%20Bisnis%20com%20Detik%20Kompas 200
+2026-08-26 00:51:18,256 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+kondisi+harga+penutupan+persentase+perubahan+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas&limit=1 502
+2026-08-26 00:51:18,417 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 00:51:18,898 [INFO] response: https://www.mojeek.com/search?q=IHSG+kondisi+harga+penutupan+persentase+perubahan+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas 403
+2026-08-26 00:51:19,070 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:51:19,143 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:51:19,210 [INFO] response: https://search.brave.com/search?q=IHSG+kondisi+harga+penutupan+persentase+perubahan+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas&source=web&tf=pd 429
+2026-08-26 00:51:19,476 [INFO] response: https://search.yahoo.com/search;_ylt=P3IFhi3mAUOI-l3TxugjfBKu;_ylu=AcbQZAgjHPM_C1LO4s6yiHlRIOCEMO3_4JO_FKRVLr1_Qhw?p=IHSG+kondisi+harga+penutupan+persentase+perubahan+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas&btf=d 200
+2026-08-26 00:51:20,002 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=kurs%20rupiah%20USD%2025%2026%20Agustus%202026%20CNBC%20Indonesia%20CNN%20Indonesia%20Kontan%20Bisnis%20com%20Detik%20Kompas 200
+2026-08-26 00:51:20,121 [INFO] response: https://grokipedia.com/api/typeahead?query=kurs+rupiah+USD+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas&limit=1 502
+2026-08-26 00:51:20,184 [INFO] response: https://search.brave.com/search?q=kurs+rupiah+USD+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas&source=web&tf=pd 429
+2026-08-26 00:51:20,640 [INFO] response: https://www.mojeek.com/search?q=kurs+rupiah+USD+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas 403
+2026-08-26 00:51:20,912 [INFO] response: https://search.yahoo.com/search;_ylt=KfH5lagMYG66LcKI1oSaps8W;_ylu=9crraaYV1c3LFqbtI7Wi3Z5KRyjCWO44xazviIKZ_J778T8?p=kurs+rupiah+USD+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas&btf=d 200
+2026-08-26 00:51:21,113 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 00:51:21,300 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:51:21,403 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:51:21,476 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20ekonomi%20Indonesia%20terbaru%2025%2026%20Agustus%202026%20CNBC%20Indonesia%20CNN%20Indonesia%20Kontan%20Bisnis%20com%20Detik%20Kompas%20Antara%20Tempo 200
+2026-08-26 00:51:21,566 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+ekonomi+Indonesia+terbaru+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas+Antara+Tempo&limit=1 502
+2026-08-26 00:51:21,722 [INFO] response: https://search.yahoo.com/search;_ylt=gtdBdS0-ICk3NCtOKcWaNEJf;_ylu=zXvVBfWyCY6-WwHZnHcm4jMM9I000yZdu8sGLgINUK_5pwQ?p=berita+ekonomi+Indonesia+terbaru+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas+Antara+Tempo&btf=d 200
+2026-08-26 00:51:21,858 [INFO] response: https://search.brave.com/search?q=berita+ekonomi+Indonesia+terbaru+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas+Antara+Tempo&source=web&tf=pd 429
+2026-08-26 00:51:22,026 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:51:22,118 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:51:22,652 [INFO] response: https://www.mojeek.com/search?q=berita+ekonomi+Indonesia+terbaru+25+26+Agustus+2026+CNBC+Indonesia+CNN+Indonesia+Kontan+Bisnis+com+Detik+Kompas+Antara+Tempo 403
+2026-08-26 00:51:22,861 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 00:51:22,932 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20liga%20lokal%20atlet%20internasional%2025%2026%20Agustus%202026%20CNN%20Indonesia%20CNBC%20Indonesia%20Detik%20Kompas 200
+2026-08-26 00:51:23,015 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+liga+lokal+atlet+internasional+25+26+Agustus+2026+CNN+Indonesia+CNBC+Indonesia+Detik+Kompas&limit=1 502
+2026-08-26 00:51:23,220 [INFO] response: https://www.startpage.com/ 200
+2026-08-26 00:51:23,310 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-26 00:51:23,389 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+liga+lokal+atlet+internasional+25+26+Agustus+2026+CNN+Indonesia+CNBC+Indonesia+Detik+Kompas&source=web&tf=pd 429
+2026-08-26 00:51:23,587 [INFO] HTTP Request: POST https://html.duckduckgo.com/html/ "HTTP/2 202 Accepted"
+2026-08-26 00:51:24,041 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+liga+lokal+atlet+internasional+25+26+Agustus+2026+CNN+Indonesia+CNBC+Indonesia+Detik+Kompas 403
+2026-08-26 00:51:24,197 [INFO] response: https://search.yahoo.com/search;_ylt=6vpdY6HG2KxwK3wmc8lbKsGr;_ylu=TD_kdRapwD7-K05uWxigrZjPNxv3T3jWJIYbQ90S7Yq5OYI?p=Timnas+Indonesia+liga+lokal+atlet+internasional+25+26+Agustus+2026+CNN+Indonesia+CNBC+Indonesia+Detik+Kompas&btf=d 200
+2026-08-26 00:51:32,018 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:51:52,771 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 00:51:52,772 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 00:51:57,202 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:52:57,226 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Request timed out.
+2026-08-26 00:52:57,226 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-26 00:52:57,562 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-26 00:52:57,563 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 49807, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-26 00:52:57,563 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-26 00:53:00,882 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 00:53:21,192 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-26 00:53:21,206 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:53:41,259 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 00:53:41,261 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-26 00:53:41,274 [INFO] Validasi: 0x visit_webpage sukses (minimum 3).
+2026-08-26 00:53:41,274 [WARNING] Kurang riset (0x visit). Coba ulang...
+2026-08-26 00:53:41,274 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-08-26 00:53:41,284 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:53:41,432 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-26 00:53:41,433 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 18.58632822s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}]
+2026-08-26 00:53:41,433 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-26 00:53:42,277 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-08-26 00:53:42,278 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 400 - {'error': {'message': 'Tool choice is none, but model called a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '{"name": "code", "arguments": {\n  "result": "web_search(query=\\"Reuters August 25 2026 crypto market geopolitics sanctions\\")"\n}}'}}
+2026-08-26 00:53:42,278 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-26 00:53:43,897 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 00:53:46,879 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-26 00:53:46,887 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:53:47,004 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-26 00:53:47,005 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 13.011850037s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '13s'}]}}]
+2026-08-26 00:53:47,005 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-26 00:53:48,944 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-26 00:53:48,945 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-08-26 00:53:48,947 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-26 00:53:49,054 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-26 00:53:49,055 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 10.961589243s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '10s'}]}}]
+2026-08-26 00:53:49,055 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-26 00:53:49,135 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-26 00:53:49,136 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7506, Requested 4464. Please try again in 29.775s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-26 00:53:49,136 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-26 00:53:50,406 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
