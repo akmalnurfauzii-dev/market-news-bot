@@ -19623,3 +19623,149 @@ Response Safety: safe
 2026-08-28 07:51:26,874 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
 2026-08-28 07:51:27,874 [INFO] History disimpan (5 entri).
 2026-08-28 07:51:27,874 [INFO] Selesai — laporan terkirim dan history disimpan.
+2026-08-28 21:35:04,717 [INFO] =======================================================
+2026-08-28 21:35:04,718 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-08-28 21:35:04,718 [INFO] =======================================================
+2026-08-28 21:35:04,718 [INFO] Menyiapkan AI dengan fallback chain (Gemini → Groq → OpenRouter → Cerebras)...
+2026-08-28 21:35:04,718 [INFO] CEREBRAS_API_KEY belum di-set — fallback Cerebras di-skip (opsional).
+2026-08-28 21:35:05,357 [INFO] Provider siap: Gemini 2.5 Flash
+2026-08-28 21:35:05,358 [INFO] Provider siap: Groq (GPT-OSS 120B)
+2026-08-28 21:35:05,359 [INFO] Provider siap: OpenRouter (auto-router gratis)
+2026-08-28 21:35:05,373 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-08-28 21:35:05,388 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-28 21:35:11,618 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-28 21:35:11,626 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-28 21:35:11,906 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitics+economic+news+August+27+28+2026+crypto+stock+market+impact&limit=1 200
+2026-08-28 21:35:11,910 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitics%20economic%20news%20August%2027%2028%202026%20crypto%20stock%20market%20impact 200
+2026-08-28 21:35:12,116 [INFO] response: https://www.startpage.com/ 200
+2026-08-28 21:35:12,174 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-28 21:35:12,291 [INFO] response: https://www.google.com/wml/search?q=global+geopolitics+economic+news+August+27+28+2026+crypto+stock+market+impact&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-28 21:35:13,005 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+August+27+28+2026+match+results+player+transfers&limit=1 200
+2026-08-28 21:35:13,040 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20August%2027%2028%202026%20match%20results%20player%20transfers 200
+2026-08-28 21:35:13,193 [INFO] response: https://www.startpage.com/ 200
+2026-08-28 21:35:13,281 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-28 21:35:14,008 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-08-28 21:35:14,157 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+AI+science+news+August+27+28+2026&limit=1 200
+2026-08-28 21:35:14,542 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20AI%20science%20news%20August%2027%2028%202026 200
+2026-08-28 21:35:14,627 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-28 21:35:14,790 [INFO] response: https://search.yahoo.com/search;_ylt=DESRcPrepH_asvn5HabuYTe-;_ylu=ybDx5vhWLHP9rel3e-kAwVStXfZ-QDNa1UANp0JEC4Kn9uE?p=latest+technology+AI+science+news+August+27+28+2026&btf=d 200
+2026-08-28 21:35:15,588 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlatest%2Btechnology%2BAI%2Bscience%2Bnews%2BAugust%2B27%2B28%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSH6MjbGJP-x9QGIjBUgtTGVdfum776okCFdd8QUOPiEf5JZGdD7fmkLt-or2WzzWxFsMVYrSfP4yr_qO0yAnJSWgFD 429
+2026-08-28 21:35:15,991 [INFO] response: https://www.mojeek.com/search?q=latest+technology+AI+science+news+August+27+28+2026 403
+2026-08-28 21:35:16,138 [INFO] response: https://www.startpage.com/ 200
+2026-08-28 21:35:16,198 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-28 21:35:16,832 [INFO] response: https://search.brave.com/search?q=latest+technology+AI+science+news+August+27+28+2026&source=web&tf=pd 200
+2026-08-28 21:35:17,011 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%2028%20Agustus%202026%2C%20kurs%20Rupiah%20USD%20hari%20ini%2028%20Agustus%202026%2C%20berita%20ekonomi%20domestik%20Indonesia%20terbaru%2027%2028%20Agustus%202026 200
+2026-08-28 21:35:17,120 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+28+Agustus+2026%2C+kurs+Rupiah+USD+hari+ini+28+Agustus+2026%2C+berita+ekonomi+domestik+Indonesia+terbaru+27+28+Agustus+2026&limit=1 200
+2026-08-28 21:35:17,508 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+28+Agustus+2026%2C+kurs+Rupiah+USD+hari+ini+28+Agustus+2026%2C+berita+ekonomi+domestik+Indonesia+terbaru+27+28+Agustus+2026 403
+2026-08-28 21:35:17,624 [INFO] response: https://search.yahoo.com/search;_ylt=1RwRzRmuG5QvgtY-78wQhiyN;_ylu=nv_Zb0kFAziUhLyhRxzEroXEM8nfHjV7JDkYDH8IZmWEvY8?p=IHSG+hari+ini+28+Agustus+2026%2C+kurs+Rupiah+USD+hari+ini+28+Agustus+2026%2C+berita+ekonomi+domestik+Indonesia+terbaru+27+28+Agustus+2026&btf=d 200
+2026-08-28 21:35:18,744 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+28+Agustus+2026%2C+kurs+Rupiah+USD+hari+ini+28+Agustus+2026%2C+berita+ekonomi+domestik+Indonesia+terbaru+27+28+Agustus+2026&source=web&tf=pd 200
+2026-08-28 21:35:18,882 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+Timnas+Indonesia%2C+liga+lokal%2C+atlet+Indonesia+internasional+27+28+Agustus+2026&limit=1 200
+2026-08-28 21:35:18,952 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20Timnas%20Indonesia%2C%20liga%20lokal%2C%20atlet%20Indonesia%20internasional%2027%2028%20Agustus%202026 200
+2026-08-28 21:35:19,043 [INFO] response: https://www.google.com/wml/search?q=berita+Timnas+Indonesia%2C+liga+lokal%2C+atlet+Indonesia+internasional+27+28+Agustus+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-28 21:35:20,360 [INFO] response: https://search.brave.com/search?q=berita+Timnas+Indonesia%2C+liga+lokal%2C+atlet+Indonesia+internasional+27+28+Agustus+2026&source=web&tf=pd 200
+2026-08-28 21:35:20,391 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-28 21:35:23,608 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-28 21:35:23,609 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-28 21:35:24,548 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-28 21:35:27,265 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-28 21:35:27,268 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-28 21:35:33,141 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-28 21:35:37,712 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-28 21:35:37,714 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-28 21:35:37,850 [INFO] response: https://grokipedia.com/api/typeahead?query=Championship+football+transfer+news+August+27+28+2026+Sky+Sports&limit=1 200
+2026-08-28 21:35:37,891 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Championship%20football%20transfer%20news%20August%2027%2028%202026%20Sky%20Sports 200
+2026-08-28 21:35:38,580 [INFO] response: https://search.brave.com/search?q=Championship+football+transfer+news+August+27+28+2026+Sky+Sports&source=web&tf=pd 200
+2026-08-28 21:35:38,611 [INFO] Error in engine grokipedia: DDGSException("ConnectError: ConnectError('error sending request for url (https://grokipedia.com/api/typeahead?query=LaLiga+Hypermotion+Matchday+3+results+August+27+28+2026&limit=1) > Network is unreachable (os error 101)')")
+2026-08-28 21:35:38,785 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=LaLiga%20Hypermotion%20Matchday%203%20results%20August%2027%2028%202026 200
+2026-08-28 21:35:39,245 [INFO] response: https://search.brave.com/search?q=LaLiga+Hypermotion+Matchday+3+results+August+27+28+2026&source=web&tf=pd 200
+2026-08-28 21:35:39,261 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-28 21:35:39,261 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-28 21:35:39,389 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-28 21:35:39,390 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 17739, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-28 21:35:39,390 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-28 21:35:40,280 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-28 21:35:48,589 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-28 21:35:50,059 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-28 21:35:50,059 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-28 21:35:50,201 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-28 21:35:50,201 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 21751, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-28 21:35:50,202 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-28 21:35:52,925 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-28 21:35:59,471 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-28 21:35:59,579 [INFO] response: https://grokipedia.com/api/typeahead?query=LaLiga+Hypermotion+Jornada+3+resultados+27+28+Agosto+2026&limit=1 200
+2026-08-28 21:35:59,641 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=LaLiga%20Hypermotion%20Jornada%203%20resultados%2027%2028%20Agosto%202026 200
+2026-08-28 21:35:59,733 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-28 21:35:59,869 [INFO] response: https://search.yahoo.com/search;_ylt=Dj5Yz9p40IWFa_gl45-S5diI;_ylu=Iz5ItD8Q-u4yrqtx7ae2CZrMcbSAenHDcVWwq6BoKo31KJQ?p=LaLiga+Hypermotion+Jornada+3+resultados+27+28+Agosto+2026&btf=d 200
+2026-08-28 21:36:00,422 [INFO] response: https://www.startpage.com/ 200
+2026-08-28 21:36:00,541 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-28 21:36:00,962 [INFO] response: https://www.mojeek.com/search?q=LaLiga+Hypermotion+Jornada+3+resultados+27+28+Agosto+2026 403
+2026-08-28 21:36:01,571 [INFO] response: https://search.brave.com/search?q=LaLiga+Hypermotion+Jornada+3+resultados+27+28+Agosto+2026&source=web&tf=pd 200
+2026-08-28 21:36:01,834 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-28 21:36:01,834 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-28 21:36:01,940 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-28 21:36:01,941 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 24302, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-28 21:36:01,941 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-28 21:36:02,709 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-28 21:36:12,464 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-28 21:36:12,675 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-28 21:36:16,077 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-28 21:36:16,079 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-28 21:36:16,552 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-28 21:36:16,552 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-28 21:36:16,688 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-28 21:36:16,688 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 27646, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-28 21:36:16,688 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-28 21:36:17,650 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-28 21:36:22,586 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-28 21:36:22,690 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-28 21:36:22,690 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-28 21:36:22,823 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-28 21:36:22,824 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 28170, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-28 21:36:22,824 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-28 21:36:23,376 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-28 21:36:28,969 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-28 21:36:28,971 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-28 21:36:32,055 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-28 21:36:32,057 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-28 21:36:32,058 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-28 21:36:36,101 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-28 21:36:36,102 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-28 21:36:36,598 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-28 21:36:36,598 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-28 21:36:36,730 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-28 21:36:36,730 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 30361, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-28 21:36:36,730 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-28 21:36:38,324 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-28 21:36:43,894 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-28 21:36:43,902 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-28 21:36:50,799 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-28 21:36:50,800 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-28 21:36:50,808 [INFO] Validasi: 7x visit_webpage sukses (minimum 3).
+2026-08-28 21:36:50,808 [INFO] Validasi LULUS — laporan berbasis riset nyata.
+2026-08-28 21:36:50,808 [INFO] LAPORAN FINAL:
+2026-08-28 21:36:50,809 [INFO] 
+**Laporan Mendalam: 4 Topik Terkini (28 Agustus 2026)**
+
+### 1. Geopolitik & Ekonomi Global
+- **Crypto & Regulasi**: CryptoListed on Fed's Jackson Hole Agenda (CoinRank) - kripto dan stablecoin dijadikan topik utama panel Jackson Hole (27-29 Agustus 2026), menandakan semakin pentingnya peran aset digital bagi bank sentral dan pembuat kebijakan.
+- **Bitcoin**: Harga Bitcoin naik 23% pada bulan Agustus, mencapai sekitar **$80.000**. Kenaikan ini terutama didorong oleh operasi pembelian kembali obligasi Treasury AS yang meningkatkan likuiditas, serta aliran masuk ETF spot Bitcoin yang signifikan (total $2.72 miliar pada bulan Agustus).
+- **IHSG (Indeks Harga Saham Gabungan)**: Pada perdagangan Jumat (28/8/2026), IHSG dibuka menguat.
+
+### 2. Olahraga Global
+- **Transfer Pemain**: Ada laporan mengenai pembicaraan lanjutan antara Liverpool dan Paris Saint-Germain (PSG) mengenai transfer Bradley Barcola (pemain internasional Prancis) pada Kamis, 27 Agustus 2026, menjelang batas waktu transfer. Diskusi ini menunjukkan upaya Liverpool untuk memperkuat skuadnya. (Sumber: Sky Sports)
+- **LaLiga Hypermotion**: Pertandingan Jornada 3 LaLiga Hypermotion 2026/27 sedang berlangsung. (Sumber: AS.com)
+
+### 3. Teknologi & AI Terbaru
+- **Inovasi Manufaktur AI**: Peneliti dari Washington State University berhasil menggunakan kecerdasan buatan (AI) untuk menemukan cara yang lebih murah dan efisien dalam mencetak 3D paduan roket NASA, GRCop-42. AI mampu menyaring lebih dari 100 juta kemungkinan pengaturan pencetakan dan mengidentifikasi enam konfigurasi sukses hanya dalam 40 percobaan, termasuk satu yang bekerja pada daya rekor terendah 500 watt. Ini berpotensi mendemokratisasi pencetakan paduan sulit ini menggunakan peralatan komersial yang lebih umum. (Sumber: ScienceDaily, 27 Agustus 2026)
+
+### 4. Indonesia Update
+- **Ekonomi**:
+    - **IHSG**: Pada Jumat, 28 Agustus 2026, IHSG dibuka menguat sebesar 13,97 poin atau 0,21% ke level 6.535,72, didukung oleh sentimen positif pasar global.
+    - **Kurs Rupiah**: Nilai tukar Rupiah terhadap dolar AS pada pembukaan perdagangan Jumat, 28 Agustus 2026, dibuka menguat ke Rp17.729 per dolar AS. Rupiah menguat 0,09% atau sekitar 15 poin dibandingkan penutupan sebelumnya di Rp17.744 per dolar AS. (Sumber: Tirto.id dan Mediaindonesia.com, 28 Agustus 2026)
+- **Olahraga**:
+    - **Timnas Indonesia**: Ketua Umum PSSI, Erick Thohir, dalam rapat Komite Eksekutif (Exco) PSSI pada Jumat, 28 Agustus 2026, membahas perkembangan Timnas Indonesia, peningkatan kualitas wasit, dan kondisi liga lokal. Sebelumnya, Timnas Indonesia berhasil menang besar 5-0 atas Kamboja di Piala AFF 2026. (Sumber: Atletic Zone Hub dan Bola.com, 28 Agustus 2026)
+
+2026-08-28 21:36:50,809 [INFO] Mengirim laporan ke Telegram...
+2026-08-28 21:36:51,327 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-08-28 21:36:52,328 [INFO] History disimpan (5 entri).
+2026-08-28 21:36:52,328 [INFO] Selesai — laporan terkirim dan history disimpan.
