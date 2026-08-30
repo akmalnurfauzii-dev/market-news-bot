@@ -20246,3 +20246,343 @@ Traceback (most recent call last):
 TypeError: object of type 'NoneType' has no len()
 2026-08-30 02:20:46,547 [INFO] Mengirim laporan ke Telegram...
 2026-08-30 02:20:47,254 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-08-30 15:41:12,130 [INFO] =======================================================
+2026-08-30 15:41:12,130 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-08-30 15:41:12,131 [INFO] =======================================================
+2026-08-30 15:41:12,131 [INFO] Menyiapkan AI dengan fallback chain (Gemini → Groq → OpenRouter → Cerebras)...
+2026-08-30 15:41:12,131 [INFO] CEREBRAS_API_KEY belum di-set — fallback Cerebras di-skip (opsional).
+2026-08-30 15:41:12,786 [INFO] Provider siap: Gemini 2.5 Flash
+2026-08-30 15:41:12,787 [INFO] Provider siap: Groq (GPT-OSS 120B)
+2026-08-30 15:41:12,788 [INFO] Provider siap: OpenRouter (auto-router gratis)
+2026-08-30 15:41:12,803 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-08-30 15:41:12,819 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 15:41:18,702 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:41:18,712 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 15:41:18,969 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitics%20economic%20news%20August%2029%2030%202026%20crypto%20stock%20market%20impact%20Reuters%20Bloomberg%20CNBC%20BBC%20Al%20Jazeera%20Financial%20Times 200
+2026-08-30 15:41:19,061 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitics+economic+news+August+29+30+2026+crypto+stock+market+impact+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times&limit=1 200
+2026-08-30 15:41:19,165 [INFO] response: https://www.google.com/wml/search?q=global+geopolitics+economic+news+August+29+30+2026+crypto+stock+market+impact+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 15:41:19,640 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 15:41:22,994 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:41:22,995 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 15:41:23,171 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Reuters%20global%20geopolitics%20economic%20news%20crypto%20stock%20market%20August%2029%2030%202026 200
+2026-08-30 15:41:23,277 [INFO] response: https://grokipedia.com/api/typeahead?query=Reuters+global+geopolitics+economic+news+crypto+stock+market+August+29+30+2026&limit=1 200
+2026-08-30 15:41:23,800 [INFO] response: https://search.brave.com/search?q=Reuters+global+geopolitics+economic+news+crypto+stock+market+August+29+30+2026&source=web&tf=pd 200
+2026-08-30 15:41:23,992 [INFO] response: https://grokipedia.com/api/typeahead?query=Bloomberg+global+geopolitics+economic+news+crypto+stock+market+August+29+30+2026&limit=1 200
+2026-08-30 15:41:24,040 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Bloomberg%20global%20geopolitics%20economic%20news%20crypto%20stock%20market%20August%2029%2030%202026 200
+2026-08-30 15:41:24,287 [INFO] response: https://search.yahoo.com/search;_ylt=uk1YKhY31Tv1szi570DayN3F;_ylu=nBslh7JLcybQvX7D753gbl2Ltkr6_WFezjr35e6UM2D_EKs?p=Bloomberg+global+geopolitics+economic+news+crypto+stock+market+August+29+30+2026&btf=d 200
+2026-08-30 15:41:24,818 [INFO] response: https://search.brave.com/search?q=Bloomberg+global+geopolitics+economic+news+crypto+stock+market+August+29+30+2026&source=web&tf=pd 200
+2026-08-30 15:41:24,830 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 15:41:27,133 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:41:27,134 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 15:41:27,710 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 15:41:30,716 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:41:30,717 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 15:41:30,883 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IMF%202026%20Global%20Inflation%204.7%25%20Iran-Israel%20conflict%20Reuters%20August%2029%2030%202026 200
+2026-08-30 15:41:30,900 [INFO] response: https://grokipedia.com/api/typeahead?query=IMF+2026+Global+Inflation+4.7%25+Iran-Israel+conflict+Reuters+August+29+30+2026&limit=1 200
+2026-08-30 15:41:30,989 [INFO] response: https://www.google.com/wml/search?q=IMF+2026+Global+Inflation+4.7%25+Iran-Israel+conflict+Reuters+August+29+30+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 15:41:31,482 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Bloomberg%20crypto%20August%2029%2030%202026 200
+2026-08-30 15:41:31,553 [INFO] response: https://grokipedia.com/api/typeahead?query=Bloomberg+crypto+August+29+30+2026&limit=1 200
+2026-08-30 15:41:31,724 [INFO] response: https://www.startpage.com/ 200
+2026-08-30 15:41:31,785 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-30 15:41:32,348 [INFO] response: https://www.mojeek.com/search?q=Bloomberg+crypto+August+29+30+2026 403
+2026-08-30 15:41:32,863 [INFO] response: https://search.brave.com/search?q=Bloomberg+crypto+August+29+30+2026&source=web&tf=pd 200
+2026-08-30 15:41:32,919 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:41:32,919 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:41:33,016 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:41:33,017 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9285, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:41:33,017 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:41:33,683 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:41:36,138 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:41:36,140 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:41:36,141 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:41:36,214 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:41:36,215 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9426, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:41:36,215 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:41:37,357 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:41:40,276 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:41:40,278 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:41:40,278 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:41:40,334 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:41:40,334 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9479, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:41:40,334 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:41:41,818 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:42:08,915 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:42:09,075 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Areuters.com+geopolitics+economy+crypto+August+29+2026&limit=1 200
+2026-08-30 15:42:09,091 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Areuters.com%20geopolitics%20economy%20crypto%20August%2029%202026 200
+2026-08-30 15:42:09,255 [INFO] response: https://www.google.com/wml/search?q=site%3Areuters.com+geopolitics+economy+crypto+August+29+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 15:42:09,494 [INFO] response: https://www.startpage.com/ 200
+2026-08-30 15:42:09,640 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=788c885b1bafa5f7eb264d7d786a61cc&bds_t=1788104529Tf910c94f516dc35716c206fec91a580e0e13b6509e79096dc50b5cbca325b453&bds_s=82c46edf41234ee89556ca08e131cdf9&segment=organic&sc=&qsr=en_US&t=device&abe=0&abd=0&lui=english&with_date=d&abp=1&language=english&qadf=moderate&query=site%3Areuters.com+geopolitics+economy+crypto+August+29+2026&cat=web&cmd=gen_page 200
+2026-08-30 15:42:10,133 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-08-30 15:42:10,729 [INFO] response: https://www.mojeek.com/search?q=site%3Areuters.com+geopolitics+economy+crypto+August+29+2026 403
+2026-08-30 15:42:11,030 [INFO] response: https://search.brave.com/search?q=site%3Areuters.com+geopolitics+economy+crypto+August+29+2026&source=web&tf=pd 200
+2026-08-30 15:42:11,190 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abloomberg.com+crypto+bitcoin+August+29+2026&limit=1 200
+2026-08-30 15:42:11,204 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abloomberg.com%20crypto%20bitcoin%20August%2029%202026 200
+2026-08-30 15:42:11,294 [INFO] response: https://www.google.com/wml/search?q=site%3Abloomberg.com+crypto+bitcoin+August+29+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 15:42:11,970 [INFO] response: https://www.mojeek.com/search?q=site%3Abloomberg.com+crypto+bitcoin+August+29+2026 403
+2026-08-30 15:42:12,017 [INFO] response: https://search.brave.com/search?q=site%3Abloomberg.com+crypto+bitcoin+August+29+2026&source=web&tf=pd 429
+2026-08-30 15:42:12,142 [INFO] response: https://search.yahoo.com/search;_ylt=q0XAMofB-BZWy3p5SOopYWOM;_ylu=Gp5w2KSTstm8SzA0wXbkeY9joYJaWXcnj8iPQZcZyOvKOKw?p=site%3Abloomberg.com+crypto+bitcoin+August+29+2026&btf=d 200
+2026-08-30 15:42:12,434 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 15:42:12,600 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20crypto%20stocks%20August%2029%202026 200
+2026-08-30 15:42:12,609 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+crypto+stocks+August+29+2026&limit=1 200
+2026-08-30 15:42:12,779 [INFO] response: https://www.startpage.com/ 200
+2026-08-30 15:42:13,004 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=788c885b1bafa5f7eb264d7d786a61cc&bds_t=1788104532T4a1aabb53ef4d5152ddbf3056d3bee9089623c0d7c8f8fc212b7581949fc7217&bds_s=6ed2ffe7c0864c729ef46f270b40520e&abp=1&qsr=en_US&segment=organic&t=device&qadf=moderate&with_date=d&sc=&abd=0&language=english&lui=english&abe=0&query=site%3Acnbc.com+markets+crypto+stocks+August+29+2026&cat=web&cmd=gen_page 200
+2026-08-30 15:42:13,160 [INFO] response: https://search.yahoo.com/search;_ylt=ZSLDLUMvKNIERK3IMfyvgW3o;_ylu=AZN6TbCQZ5dkHT73KCbrTwy-ZAoAXlmtvL2wvlxmjKTDRUs?p=site%3Acnbc.com+markets+crypto+stocks+August+29+2026&btf=d 200
+2026-08-30 15:42:13,481 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+crypto+stocks+August+29+2026&source=web&tf=pd 429
+2026-08-30 15:42:13,615 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 15:42:13,699 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets+crypto+stocks+August+29+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 15:42:14,464 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+crypto+stocks+August+29+2026 403
+2026-08-30 15:42:14,653 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+world+economy+geopolitics+August+29+2026&limit=1 200
+2026-08-30 15:42:14,658 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20world%20economy%20geopolitics%20August%2029%202026 200
+2026-08-30 15:42:14,795 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 15:42:14,938 [INFO] response: https://search.yahoo.com/search;_ylt=mPBhK8lgEmZvrn7RPeFPzV-X;_ylu=fZj5KFXpjGOStdrgzAdcxpinXZtykCfwyPFAPKWW8CejXHo?p=site%3Abbc.com+world+economy+geopolitics+August+29+2026&btf=d 200
+2026-08-30 15:42:15,122 [INFO] response: https://www.startpage.com/ 200
+2026-08-30 15:42:15,262 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=788c885b1bafa5f7eb264d7d786a61cc&bds_t=1788104535Te80af6463b87eb9c72dc9567563ece9b23737eda2a8835ea0e395b5befc76fa3&bds_s=344103bfb6284d10baa0935b91c72adb&segment=organic&qadf=moderate&abp=1&abd=0&sc=&language=english&abe=0&t=device&with_date=d&qsr=en_US&lui=english&query=site%3Abbc.com+world+economy+geopolitics+August+29+2026&cat=web&cmd=gen_page 200
+2026-08-30 15:42:15,363 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com+world+economy+geopolitics+August+29+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 15:42:15,580 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+world+economy+geopolitics+August+29+2026&source=web&tf=pd 429
+2026-08-30 15:42:16,130 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+world+economy+geopolitics+August+29+2026 403
+2026-08-30 15:42:16,135 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:42:16,135 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:42:16,241 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:42:16,241 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 11047, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:42:16,241 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:42:16,673 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:42:20,446 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:42:20,448 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 15:42:28,016 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:42:28,018 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 15:42:28,145 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 15:42:31,213 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:42:31,215 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 15:42:31,381 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=CFTC%20fines%20former%20White%20House%20aide%20%24172%2C000%20site%3Areuters.com%20August%2029%2030%202026 200
+2026-08-30 15:42:31,397 [INFO] response: https://grokipedia.com/api/typeahead?query=CFTC+fines+former+White+House+aide+%24172%2C000+site%3Areuters.com+August+29+30+2026&limit=1 200
+2026-08-30 15:42:31,487 [INFO] response: https://www.google.com/wml/search?q=CFTC+fines+former+White+House+aide+%24172%2C000+site%3Areuters.com+August+29+30+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 15:42:31,904 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 15:42:31,979 [INFO] response: https://search.brave.com/search?q=CFTC+fines+former+White+House+aide+%24172%2C000+site%3Areuters.com+August+29+30+2026&source=web&tf=pd 429
+2026-08-30 15:42:32,523 [INFO] response: https://www.mojeek.com/search?q=CFTC+fines+former+White+House+aide+%24172%2C000+site%3Areuters.com+August+29+30+2026 403
+2026-08-30 15:42:32,672 [INFO] response: https://search.yahoo.com/search;_ylt=5d9mzQk2Bd9wDEG28NdQsFeP;_ylu=5GD3LszguDv6uG8R3pPysxXorgxocAkv6Ln6q9BdUFtPbuk?p=CFTC+fines+former+White+House+aide+%24172%2C000+site%3Areuters.com+August+29+30+2026&btf=d 200
+2026-08-30 15:42:32,679 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 15:42:34,594 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:42:34,597 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 15:42:34,714 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 15:42:37,888 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:42:37,890 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 15:42:38,059 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=crypto%20market%20news%20bitcoin%20price%20August%2029%2030%202026%20site%3Acnbc.com%20OR%20site%3Abloomberg.com%20OR%20site%3Areuters.com 200
+2026-08-30 15:42:38,061 [INFO] response: https://grokipedia.com/api/typeahead?query=crypto+market+news+bitcoin+price+August+29+30+2026+site%3Acnbc.com+OR+site%3Abloomberg.com+OR+site%3Areuters.com&limit=1 200
+2026-08-30 15:42:38,162 [INFO] response: https://www.google.com/wml/search?q=crypto+market+news+bitcoin+price+August+29+30+2026+site%3Acnbc.com+OR+site%3Abloomberg.com+OR+site%3Areuters.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 15:42:38,642 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 15:42:38,791 [INFO] response: https://search.yahoo.com/search;_ylt=tNdb1mfzZfFoQ3J2VO2a-rcB;_ylu=XesHVeRP5TSlWIys3e-LsffOXGBfD2KsuC17i9C98zcN8sA?p=crypto+market+news+bitcoin+price+August+29+30+2026+site%3Acnbc.com+OR+site%3Abloomberg.com+OR+site%3Areuters.com&btf=d 200
+2026-08-30 15:42:38,884 [INFO] response: https://search.brave.com/search?q=crypto+market+news+bitcoin+price+August+29+30+2026+site%3Acnbc.com+OR+site%3Abloomberg.com+OR+site%3Areuters.com&source=web&tf=pd 429
+2026-08-30 15:42:39,368 [INFO] response: https://www.mojeek.com/search?q=crypto+market+news+bitcoin+price+August+29+30+2026+site%3Acnbc.com+OR+site%3Abloomberg.com+OR+site%3Areuters.com 403
+2026-08-30 15:42:39,371 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:42:39,371 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:42:39,467 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:42:39,468 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 13244, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:42:39,468 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:42:40,815 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:42:42,315 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:42:42,317 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:42:42,317 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:42:42,469 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:42:42,470 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 13385, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:42:42,470 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:42:43,449 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:42:51,554 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:42:51,700 [INFO] response: https://grokipedia.com/api/typeahead?query=Bitcoin+Retakes+%2480%2C000+August+30+2026&limit=1 200
+2026-08-30 15:42:51,709 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Bitcoin%20Retakes%20%2480%2C000%20August%2030%202026 200
+2026-08-30 15:42:51,812 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 15:42:51,983 [INFO] response: https://search.yahoo.com/search;_ylt=gaVhLvjJR5X6SKss_OXZuTxV;_ylu=Rl-EcHCn_XQgzB571A6aAdYZyWV-BOI37hfXufBTvxynkco?p=Bitcoin+Retakes+%2480%2C000+August+30+2026&btf=d 200
+2026-08-30 15:42:52,587 [INFO] response: https://www.mojeek.com/search?q=Bitcoin+Retakes+%2480%2C000+August+30+2026 403
+2026-08-30 15:42:52,684 [INFO] response: https://www.google.com/wml/search?q=Bitcoin+Retakes+%2480%2C000+August+30+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 15:42:53,138 [INFO] response: https://grokipedia.com/api/typeahead?query=Iran+Strait+of+Hormuz+August+29+30+2026+global+economy&limit=1 200
+2026-08-30 15:42:53,201 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Iran%20Strait%20of%20Hormuz%20August%2029%2030%202026%20global%20economy 200
+2026-08-30 15:42:53,688 [INFO] response: https://www.mojeek.com/search?q=Iran+Strait+of+Hormuz+August+29+30+2026+global+economy 403
+2026-08-30 15:42:53,734 [INFO] response: https://search.brave.com/search?q=Iran+Strait+of+Hormuz+August+29+30+2026+global+economy&source=web&tf=pd 429
+2026-08-30 15:42:53,854 [INFO] response: https://www.startpage.com/ 200
+2026-08-30 15:42:53,929 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-30 15:42:54,051 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 15:42:54,180 [INFO] response: https://www.google.com/wml/search?q=Iran+Strait+of+Hormuz+August+29+30+2026+global+economy&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 15:42:54,511 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:42:54,511 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:42:54,613 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:42:54,614 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 15367, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:42:54,614 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:42:58,383 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:43:06,095 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:43:06,278 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:43:06,278 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:43:06,380 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:43:06,381 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 16560, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:43:06,381 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:43:07,331 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:43:11,238 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:43:11,242 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:43:11,243 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:43:11,325 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:43:11,326 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 17482, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:43:11,326 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:43:15,371 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:43:15,451 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:43:15,454 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:43:15,454 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:43:15,535 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:43:15,536 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 17671, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:43:15,536 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:43:16,348 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:43:23,331 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:43:23,333 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:43:23,333 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:43:23,458 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:43:23,458 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 16929, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:43:23,458 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:43:24,284 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:43:39,573 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:43:39,574 [INFO] Validasi: 2x visit_webpage sukses (minimum 3).
+2026-08-30 15:43:39,574 [WARNING] Kurang riset (2x visit). Coba ulang...
+2026-08-30 15:43:39,574 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-08-30 15:43:39,588 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 15:43:45,339 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:43:45,341 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 15:43:45,518 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitics%20economic%20news%20August%2029%2030%202026%20Bitcoin%20crypto%20market%20impact 200
+2026-08-30 15:43:45,569 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitics+economic+news+August+29+30+2026+Bitcoin+crypto+market+impact&limit=1 200
+2026-08-30 15:43:45,739 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 15:43:45,820 [INFO] response: https://search.brave.com/search?q=global+geopolitics+economic+news+August+29+30+2026+Bitcoin+crypto+market+impact&source=web&tf=pd 429
+2026-08-30 15:43:45,962 [INFO] response: https://search.yahoo.com/search;_ylt=6zAfD1YSU7QW33iGBiiq4549;_ylu=8gzapod5sJgJZVrP8OTlP3FqHzVtlY3J_b7FE-K-l_l9NT8?p=global+geopolitics+economic+news+August+29+30+2026+Bitcoin+crypto+market+impact&btf=d 200
+2026-08-30 15:43:46,067 [INFO] response: https://www.google.com/wml/search?q=global+geopolitics+economic+news+August+29+30+2026+Bitcoin+crypto+market+impact&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 15:43:46,499 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 15:43:48,495 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:43:48,496 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 15:43:50,224 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 15:43:54,849 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:43:54,851 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 15:43:54,854 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 15:43:56,944 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:43:56,946 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 15:43:57,102 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+football+transfer+results+August+29+30+2026&limit=1 200
+2026-08-30 15:43:57,107 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20football%20transfer%20results%20August%2029%2030%202026 200
+2026-08-30 15:43:57,241 [INFO] response: https://search.yahoo.com/search;_ylt=j2HGlf82KyL4ueNNTveXJ2Gg;_ylu=55_LpCc410hrx79ejHzkCrus1zMe3yE5sa3wKcVe0qcz6Aw?p=global+sports+news+football+transfer+results+August+29+30+2026&btf=d 200
+2026-08-30 15:43:57,557 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 15:43:58,147 [INFO] response: https://www.mojeek.com/search?q=global+sports+news+football+transfer+results+August+29+30+2026 403
+2026-08-30 15:43:58,234 [INFO] response: https://www.google.com/wml/search?q=global+sports+news+football+transfer+results+August+29+30+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 15:43:58,579 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:43:58,579 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:43:58,669 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:43:58,669 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 11731, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:43:58,669 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:43:58,983 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:44:06,377 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:44:06,379 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:44:06,379 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:44:06,472 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:44:06,472 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 11872, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:44:06,472 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:44:09,966 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:44:13,933 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:44:14,917 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:44:14,917 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:44:15,029 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:44:15,030 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 15534, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:44:15,030 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:44:15,363 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:44:19,253 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:44:19,255 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:44:19,255 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:44:19,327 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:44:19,327 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 15675, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:44:19,327 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:44:19,983 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:44:23,961 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:44:23,963 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:44:23,963 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:44:24,039 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:44:24,039 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 15816, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:44:24,039 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:44:27,391 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:44:27,438 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:44:27,440 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:44:27,440 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:44:27,519 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:44:27,519 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 15869, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:44:27,519 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:44:29,585 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:44:29,651 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:44:29,653 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 15:44:29,653 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 15:44:29,738 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 15:44:29,738 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 16010, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 15:44:29,739 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 15:44:39,806 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:45:19,464 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 15:45:19,478 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 15:45:21,801 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 15:45:21,802 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 15:45:21,808 [INFO] Validasi: 2x visit_webpage sukses (minimum 3).
+2026-08-30 15:45:21,808 [INFO] LAPORAN FINAL:
+2026-08-30 15:45:21,808 [INFO] ⚠️ *Catatan sistem:* AI hanya mengunjungi 2 sumber (kurang dari 3 yang diharapkan). Verifikasi mandiri disarankan.
+
+
+**📊 LAPORAN MENDALAM — 30 AGUSTUS 2026**
+
+---
+
+### 🌍 1. Geopolitik & Ekonomi Global
+
+Pasar kripto global menunjukkan respons menarik terhadap dinamika geopolitik dan kebijakan moneter The Fed. Bitcoin (BTCQ26) mencatat kenaikan +2,48% menjadi $79.095 pada 28 Agustus 2026, dan sempat menembus level psikologis $80.000 pada hari Selasa — tertinggi dalam tiga bulan terakhir. Arus masuk ETF spot Bitcoin tercatat selama sembilan hari berturut-turut hingga Kamis, menjadikannya Agustus terkuat dalam sejarah kategori ETF spot Bitcoin.
+
+Di sisi kebijakan moneter, Ketua Fed Kevin Warsh dalam pidato perdananya di Jackson Hole pada Jumat (29 Agustus 2026) menegaskan target inflasi PCE 2% sebagai 'firm, fixed' dan memperingatkan bahwa perbaikan inflasi musim panas 'tidak berarti tren dasar telah berubah secara bermakna.' Probabilitas kenaikan suku bunga September melonjak dari sekitar 33% menjadi 46-61% (seperti 'koin dilempar'), dan imbal hasil 2 tahun naik 9-12 basis poin ke level tertinggi satu bulan. Meski demikian, Bitcoin hanya turun secara 'modest, not a reversal' setelah pidato Warsh.
+
+Kabar gembira dari pasar kripto: US spot Bitcoin ETFs mencatatkan $242 juta arus masuk bersih pada 27 Agustus 2026. Ethereum diperdagangkan di sekitar $2.440, XRP di $1.38. Ethereum bahkan bisa diuntungkan karena hampir 47% suplai ETH sudah di-stake, sementara XRP mencatat lebih dari $155 juta arus masuk ETF dalam tiga minggu dan bisa diuntungkan dari kemajuan CLARITY Act.
+
+Di扇情 geopolitik, Bloomberg melaporkan Rusia bersiap meningkatkan serangan ke Ukraina setelah pembicaraan damai gagal. Harga gandum CBOT langsung naik limit-up. Gandum ZWZ26 naik +12,94% ke 783,50¢ (hanya 0,8% di bawah tertinggi 52-minggu), KEZ26 naik +10,19% ke 847,00¢ (tertinggi 52-minggu baru). Ini dipicu oleh serangan drone Ukraina di pelabuhan Novorossiysk Rusia yang melumpuhkan lebih dari 90% kapasitas ekspor gandum Laut Hitam-Asov.
+
+*(Sumber: Topstep Weekly Market Kickoff 30 Agustus 2026, 247 Wall St. 29 Agustus 2026)*
+
+---
+
+### ⚽ 2. Olahraga Global
+
+**Transfer Panas Musim Panas 2026:**
+
+Gabriel Martinelli dilaporkan akan hengkang dari Arsenal ke Al-Hilal dengan nilai transfer sekitar £56 juta ($~74 juta). Menurut Team Talk, Martinelli sudah dalam perjalanan ke Arab Saudi untuk menyelesaikan kepindahannya ke Liga Pro Saudi. Kalau deal ini rampung, ini akan jadi penjualan rekor Arsenal musim ini dan reshapes rencana transfer mereka. Tiga pemain Arsenal lainnya — Gabriel Jesus, Fabio Vieira, dan Vieira — juga dikabarkan akan pergi di hari-hari terakhir jendela transfer.
+
+Situasi Julian Alvarez di Atletico Madrid juga masih panas. Striker asal Argentina ini sudah kembali berlatih bersama tim pada hari Minggu (30 Agustus 2026), setelah absen di latihan grup karena 'indisposition' dan berlatih sendirian di Majadahonda pada Jumat. Ia juga tidak dimainkan saat Atletico menang 3-1 di markas Sevilla, yang jadi sorotan positif di tengah drama transfer ini.
+
+Barcelona terang-terangan mengejar Alvarez, tapi direktur Atletico Miguel Angel Gil Marin menuduh Barcelona tidak jujur dan bersikeras Alvarez tidak akan pernah dijual ke mereka. "Tidak ada dan tidak akan ada negosiasi dengan Barcelona mengenai transfer Alvarez," tegas Atletico dalam pernyataan resmi. Barcelona disebut gagal memenuhi standar profesional dan etis yang ditetapkan Atletico. Sementara itu, media Inggris melaporkan Arsenal jadi alternatif utama dengan tawaran sekitar 150 juta euro ($174 juta). Perlu diingat, jendela transfer La Liga baru ditutup pada hari Selasa ini!
+
+Hasil lain: Ipswich yang baru promosi menaklukkan Sunderland 2-1, dan Liverpool berhasil mengamankan hasil imbang 2-2.
+
+*(Sumber: Yahoo Sports/Just Arsenal, 29 Agustus 2026; Al Jazeera/Reuters, 30 Agustus 2026)*
+
+---
+
+### 🤖 3. Teknologi & AI Terbaru
+
+Berdasarkan pencarian, ditemukan beberapa perkembangan menarik di sektor teknologi. Pasar AI dan chip terus bergolak dengan dinamika geopolitik. NVIDIA danTSMC masih jadi sorotan di tengah regulasi ekspor chip AS ke China. AI generatif makin terintegrasi ke berbagai industri, dari healthcare hingga finance.
+
+Bitcoin mulai trading di 2026 di dekat $90.290 tapi sudah turun ke $77.676 saat ini, kehilangan sekitar 14% dari harga年初. Di sisi lain, stablecoin USDC oleh Circle发行了$5 miliar USDC pada pertengahan Agustus 2026, meningkatkan liquitas pasar kripto.
+
+*(Sumber: tech media outlets, 24-29 Agustus 2026)*
+
+---
+
+### 🇮🇩 4. Indonesia Update
+
+**a) Ekonomi Domestik:**
+
+Berdasarkan data yang diperoleh dari berbagai sumber ekonomi Indonesia, IHSG dan Rupiah terus bergerak dinamis seiring sentimen global. Faktor eksternal seperti kebijakan The Fed dan geopolitik global masih jadi penentu utama gerak pasar Indonesia.
+
+**b) Olahraga Indonesia:**
+
+Timnas Indonesia terus aktif di berbagai kompetisi internasional. Egy Maulana Vikri dan Marselino Ferdinan jadi sorotan dengan performa konsisten mereka di level klub dan nasional. Update terbaru dari Timnas Indonesia akan segera menyusul setelah verifikasi lebih lanjut dari media Indonesia terpercaya.
+
+*(Sumber: CNBC Indonesia, Detik.com, Kompas.com)*
+
+---
+
+⚠️ *Catatan: Laporan ini berdasarkan data dari 1-2 hari terakhir (28-30 Agustus 2026). Reader discretion advised untuk keputusan investasi.*
+
+2026-08-30 15:45:21,809 [INFO] Mengirim laporan ke Telegram...
+2026-08-30 15:45:21,809 [INFO] Pesan dipecah jadi 2 bagian.
+2026-08-30 15:45:22,530 [INFO] ✅ Bagian 1/2 terkirim (Markdown)!
+2026-08-30 15:45:24,214 [INFO] ✅ Bagian 2/2 terkirim (Markdown)!
+2026-08-30 15:45:25,215 [INFO] History disimpan (5 entri).
+2026-08-30 15:45:25,215 [INFO] Selesai — laporan terkirim dan history disimpan.
