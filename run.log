@@ -20065,3 +20065,184 @@ Response Safety: safe
 2026-08-29 15:57:26,261 [INFO] ✅ Bagian 2/2 terkirim (Markdown)!
 2026-08-29 15:57:27,262 [INFO] History disimpan (5 entri).
 2026-08-29 15:57:27,262 [INFO] Selesai — laporan terkirim dan history disimpan.
+2026-08-30 02:18:44,517 [INFO] =======================================================
+2026-08-30 02:18:44,518 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-08-30 02:18:44,518 [INFO] =======================================================
+2026-08-30 02:18:44,518 [INFO] Menyiapkan AI dengan fallback chain (Gemini → Groq → OpenRouter → Cerebras)...
+2026-08-30 02:18:44,518 [INFO] CEREBRAS_API_KEY belum di-set — fallback Cerebras di-skip (opsional).
+2026-08-30 02:18:45,203 [INFO] Provider siap: Gemini 2.5 Flash
+2026-08-30 02:18:45,204 [INFO] Provider siap: Groq (GPT-OSS 120B)
+2026-08-30 02:18:45,205 [INFO] Provider siap: OpenRouter (auto-router gratis)
+2026-08-30 02:18:45,220 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-08-30 02:18:45,237 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 02:18:51,067 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:18:51,076 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 02:18:51,337 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitics%20economic%20news%20crypto%20stock%20market%20impact%20August%2029%2030%202026 200
+2026-08-30 02:18:51,413 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitics+economic+news+crypto+stock+market+impact+August+29+30+2026&limit=1 200
+2026-08-30 02:18:52,064 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-08-30 02:18:52,071 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 02:18:54,544 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:18:54,546 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 02:18:54,975 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 02:18:57,361 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:18:57,362 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 02:18:57,518 [INFO] response: https://grokipedia.com/api/typeahead?query=football+transfer+news+latest+OR+sport+match+results+August+29+30+2026&limit=1 200
+2026-08-30 02:18:57,524 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20transfer%20news%20latest%20OR%20sport%20match%20results%20August%2029%2030%202026 200
+2026-08-30 02:18:57,725 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 02:18:57,935 [INFO] response: https://search.yahoo.com/search;_ylt=CmpjC4paSyY8634YorV9hAHJ;_ylu=UEhLDNxsIxeqBnA7OY_gZxt2xuHDNXg4I52c2l-62ggsfAw?p=football+transfer+news+latest+OR+sport+match+results+August+29+30+2026&btf=d 200
+2026-08-30 02:19:03,003 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=football+transfer+news+latest+OR+sport+match+results+August+29+30+2026) > operation timed out'))
+2026-08-30 02:19:03,101 [INFO] response: https://www.google.com/wml/search?q=football+transfer+news+latest+OR+sport+match+results+August+29+30+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 02:19:03,172 [INFO] response: https://www.startpage.com/ 200
+2026-08-30 02:19:03,230 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-30 02:19:03,505 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 02:19:06,284 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:19:06,286 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 02:19:07,116 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 02:19:07,116 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 02:19:07,304 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 02:19:07,304 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9097, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 02:19:07,305 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 02:19:08,732 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:19:10,276 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 02:19:10,278 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 02:19:10,278 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 02:19:10,347 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 02:19:10,348 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9380, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 02:19:10,348 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 02:19:10,697 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:19:12,544 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 02:19:12,546 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 02:19:12,546 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 02:19:12,614 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 02:19:12,615 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9433, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 02:19:12,615 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 02:19:13,874 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:19:13,973 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 02:19:14,165 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20breakthroughs%20OR%20technology%20innovation%20August%2029%2030%202026%20site%3Atechcrunch.com%20OR%20site%3Atheverge.com%20OR%20site%3Awired.com%20OR%20site%3Amittechnologyreview.com 200
+2026-08-30 02:19:14,242 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+breakthroughs+OR+technology+innovation+August+29+30+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com+OR+site%3Awired.com+OR+site%3Amittechnologyreview.com&limit=1 200
+2026-08-30 02:19:14,559 [INFO] response: https://search.brave.com/search?q=AI+breakthroughs+OR+technology+innovation+August+29+30+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com+OR+site%3Awired.com+OR+site%3Amittechnologyreview.com&source=web&tf=pd 200
+2026-08-30 02:19:14,779 [INFO] response: https://www.startpage.com/ 200
+2026-08-30 02:19:14,853 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-30 02:19:14,953 [INFO] response: https://www.google.com/wml/search?q=AI+breakthroughs+OR+technology+innovation+August+29+30+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com+OR+site%3Awired.com+OR+site%3Amittechnologyreview.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 02:19:15,746 [INFO] response: https://search.yahoo.com/search;_ylt=XD3Py9xw6tCOA7v7GzWmyLL_;_ylu=zxu7YTCrizkFVInuI0kMwZ0030ItuBUcR-llnZT9Soy5pKc?p=AI+breakthroughs+OR+technology+innovation+August+29+30+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com+OR+site%3Awired.com+OR+site%3Amittechnologyreview.com&btf=d 200
+2026-08-30 02:19:15,897 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 02:19:20,923 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 02:19:20,923 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 02:19:21,023 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 02:19:21,024 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9876, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 02:19:21,024 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 02:19:21,654 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:19:27,524 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 02:19:27,656 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 02:19:27,656 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 02:19:27,759 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 02:19:27,760 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 11417, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 02:19:27,760 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 02:19:28,261 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:19:41,644 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 02:19:41,857 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20level%20persentase%20perubahan%20Rupiah%20USD%2030%20Agustus%202026%20site%3Acnnindonesia.com%20OR%20site%3Acnbcindonesia.com%20OR%20site%3Abisnis.com%20OR%20site%3Akompas.com%20OR%20site%3Adetik.com%20OR%20site%3Akontan.co.id%20OR%20site%3Aantaranews.com%20OR%20site%3Atempo.co 200
+2026-08-30 02:19:42,338 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+level+persentase+perubahan+Rupiah+USD+30+Agustus+2026+site%3Acnnindonesia.com+OR+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akompas.com+OR+site%3Adetik.com+OR+site%3Akontan.co.id+OR+site%3Aantaranews.com+OR+site%3Atempo.co&limit=1 200
+2026-08-30 02:19:42,464 [INFO] response: https://search.yahoo.com/search;_ylt=LRt8u4FF__2hNb0oW8BPCPS4;_ylu=j4HwQDDkt03fuIrOiAYlImEN-DdY7-DVy4YUOja24FTe6g8?p=IHSG+hari+ini+level+persentase+perubahan+Rupiah+USD+30+Agustus+2026+site%3Acnnindonesia.com+OR+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akompas.com+OR+site%3Adetik.com+OR+site%3Akontan.co.id+OR+site%3Aantaranews.com+OR+site%3Atempo.co&btf=d 200
+2026-08-30 02:19:42,565 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+level+persentase+perubahan+Rupiah+USD+30+Agustus+2026+site%3Acnnindonesia.com+OR+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akompas.com+OR+site%3Adetik.com+OR+site%3Akontan.co.id+OR+site%3Aantaranews.com+OR+site%3Atempo.co&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 02:19:47,849 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=IHSG+hari+ini+level+persentase+perubahan+Rupiah+USD+30+Agustus+2026+site%3Acnnindonesia.com+OR+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akompas.com+OR+site%3Adetik.com+OR+site%3Akontan.co.id+OR+site%3Aantaranews.com+OR+site%3Atempo.co) > operation timed out'))
+2026-08-30 02:19:47,968 [INFO] response: https://www.startpage.com/ 200
+2026-08-30 02:19:48,059 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-30 02:19:48,138 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+level+persentase+perubahan+Rupiah+USD+30+Agustus+2026+site%3Acnnindonesia.com+OR+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akompas.com+OR+site%3Adetik.com+OR+site%3Akontan.co.id+OR+site%3Aantaranews.com+OR+site%3Atempo.co&source=web&tf=pd 200
+2026-08-30 02:19:48,248 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 02:19:48,272 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 02:19:48,272 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 02:19:48,373 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 02:19:48,374 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 12078, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 02:19:48,374 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 02:19:49,058 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:19:53,798 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 02:19:53,800 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 02:19:56,530 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:19:56,535 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 02:19:56,676 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+Rupiah+USD+terbaru+site%3Acnbcindonesia.com+OR+site%3Akompas.com&limit=1 200
+2026-08-30 02:19:56,704 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20Rupiah%20USD%20terbaru%20site%3Acnbcindonesia.com%20OR%20site%3Akompas.com 200
+2026-08-30 02:19:56,801 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+Rupiah+USD+terbaru+site%3Acnbcindonesia.com+OR+site%3Akompas.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 02:19:57,254 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+Rupiah+USD+terbaru+site%3Acnbcindonesia.com+OR+site%3Akompas.com&source=web&tf=pd 200
+2026-08-30 02:19:57,490 [INFO] response: https://www.startpage.com/ 200
+2026-08-30 02:19:57,752 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-30 02:19:57,855 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 02:19:58,006 [INFO] response: https://search.yahoo.com/search;_ylt=E-mSia6zUXZx7_iQW7pjwxFY;_ylu=iJbYkKv7bo4sIs-JPZy-3n-fOyW7BkKMTLF3BS6SJHKSDXI?p=IHSG+hari+ini+Rupiah+USD+terbaru+site%3Acnbcindonesia.com+OR+site%3Akompas.com&btf=d 200
+2026-08-30 02:20:03,016 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 02:20:05,917 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:20:05,918 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 02:20:06,081 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20Rupiah%20USD%20site%3Acnbcindonesia.com%20OR%20site%3Abisnis.com%20OR%20site%3Akontan.co.id 200
+2026-08-30 02:20:06,189 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+Rupiah+USD+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&limit=1 200
+2026-08-30 02:20:06,464 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+Rupiah+USD+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&source=web&tf=pd 200
+2026-08-30 02:20:06,498 [INFO] Error in engine google: DDGSException("ConnectError: ConnectError('error sending request for url (https://www.google.com/wml/search?q=IHSG+hari+ini+Rupiah+USD+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad) > Network is unreachable (os error 101)')")
+2026-08-30 02:20:06,659 [INFO] response: https://www.startpage.com/ 200
+2026-08-30 02:20:06,740 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-30 02:20:06,874 [INFO] response: https://search.yahoo.com/search;_ylt=DvibQCo5khjMpz8T0pQqqvRk;_ylu=nzjbDSx32bTMWd6FSkNXLJGKX11uXTWjMUudUWzg9-TGUf0?p=IHSG+hari+ini+Rupiah+USD+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&btf=d 200
+2026-08-30 02:20:07,044 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 02:20:12,069 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 02:20:14,660 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:20:14,661 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 02:20:14,800 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+Rupiah+USD+terbaru&limit=1 200
+2026-08-30 02:20:14,807 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20Rupiah%20USD%20terbaru 200
+2026-08-30 02:20:19,809 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=IHSG+hari+ini+Rupiah+USD+terbaru) > operation timed out'))
+2026-08-30 02:20:19,992 [INFO] response: https://www.startpage.com/ 200
+2026-08-30 02:20:20,047 [INFO] response: https://www.startpage.com/sp/search 200
+2026-08-30 02:20:20,119 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+Rupiah+USD+terbaru&source=web&tf=pd 200
+2026-08-30 02:20:20,220 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+Rupiah+USD+terbaru&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-08-30 02:20:20,451 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-08-30 02:20:20,607 [INFO] response: https://search.yahoo.com/search;_ylt=qcZHC7wj5jsNYe93PcZSgmP7;_ylu=gKzqmvmR8SZ5YiBtsrLKYBYBERZqFSn9mAabzhlU2OirL7I?p=IHSG+hari+ini+Rupiah+USD+terbaru&btf=d 200
+2026-08-30 02:20:20,617 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-08-30 02:20:23,053 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:20:23,056 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-08-30 02:20:23,057 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 02:20:23,057 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 02:20:23,168 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 02:20:23,168 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 13177, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 02:20:23,168 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 02:20:23,905 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:20:25,380 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 02:20:25,382 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 02:20:25,382 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 02:20:25,454 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 02:20:25,454 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 13393, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 02:20:25,454 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 02:20:29,790 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:20:30,377 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 02:20:30,632 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 02:20:30,632 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 02:20:30,768 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 02:20:30,768 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 14973, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 02:20:30,768 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 02:20:31,441 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:20:33,111 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 02:20:33,113 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 02:20:33,113 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 02:20:33,196 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 02:20:33,196 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 15114, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 02:20:33,196 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 02:20:33,510 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:20:37,906 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 02:20:37,908 [INFO] Skip Gemini 2.5 Flash (proaktif, deket RPM limit)...
+2026-08-30 02:20:37,909 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-08-30 02:20:37,990 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-08-30 02:20:37,990 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 14459, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-30 02:20:37,990 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-08-30 02:20:38,549 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-30 02:20:46,545 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-08-30 02:20:46,546 [INFO] Validasi: 4x visit_webpage sukses (minimum 3).
+2026-08-30 02:20:46,546 [INFO] Validasi LULUS — laporan berbasis riset nyata.
+2026-08-30 02:20:46,546 [INFO] LAPORAN FINAL:
+2026-08-30 02:20:46,546 [INFO] None
+2026-08-30 02:20:46,546 [INFO] Mengirim laporan ke Telegram...
+2026-08-30 02:20:46,546 [ERROR] ❌ Bot gagal generate laporan: object of type 'NoneType' has no len()
+Traceback (most recent call last):
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 443, in jalankan_analisa_harian
+    kirim_ke_telegram(hasil)
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 120, in kirim_ke_telegram
+    chunks = _pecah(pesan)
+             ^^^^^^^^^^^^^
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 107, in _pecah
+    while len(pesan) > TELEGRAM_MAX_CHARS:
+          ^^^^^^^^^^
+TypeError: object of type 'NoneType' has no len()
+2026-08-30 02:20:46,547 [INFO] Mengirim laporan ke Telegram...
+2026-08-30 02:20:47,254 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
