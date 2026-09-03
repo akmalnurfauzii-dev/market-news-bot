@@ -21747,3 +21747,112 @@ Timnas Voli Indonesia telah mengumumkan daftar 12 pemain yang akan memperkuat ti
 2026-09-02 15:37:49,047 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
 2026-09-02 15:37:50,048 [INFO] History disimpan (5 entri).
 2026-09-02 15:37:50,048 [INFO] Selesai — laporan terkirim dan history disimpan.
+2026-09-03 01:59:28,085 [INFO] =======================================================
+2026-09-03 01:59:28,085 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-09-03 01:59:28,085 [INFO] =======================================================
+2026-09-03 01:59:28,085 [INFO] Menyiapkan AI dengan fallback chain (Gemini → Groq → OpenRouter → Cerebras)...
+2026-09-03 01:59:28,085 [INFO] CEREBRAS_API_KEY belum di-set — fallback Cerebras di-skip (opsional).
+2026-09-03 01:59:28,566 [INFO] Provider siap: Gemini 2.5 Flash
+2026-09-03 01:59:28,567 [INFO] Provider siap: Groq (GPT-OSS 120B)
+2026-09-03 01:59:28,568 [INFO] Provider siap: OpenRouter (auto-router gratis)
+2026-09-03 01:59:28,578 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-09-03 01:59:28,590 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-03 01:59:33,723 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 01:59:33,730 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-09-03 01:59:33,999 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20crypto%20stock%20market%20impact%20September%201%202026%20OR%20September%202%202026 200
+2026-09-03 01:59:34,084 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+crypto+stock+market+impact+September+1+2026+OR+September+2+2026&limit=1 200
+2026-09-03 01:59:34,935 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-09-03 01:59:34,941 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-03 01:59:40,409 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 01:59:40,410 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-09-03 01:59:40,611 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20markets%20geopolitical%20news%20September%201%202026%20OR%20September%202%202026 200
+2026-09-03 01:59:40,629 [INFO] response: https://grokipedia.com/api/typeahead?query=global+markets+geopolitical+news+September+1+2026+OR+September+2+2026&limit=1 200
+2026-09-03 01:59:40,892 [INFO] response: https://search.yahoo.com/search;_ylt=NXlvrVQOKPqINwV3MS7-GTU_;_ylu=rnmlSg5gz1m_DDrH4JNFQG0ag7Z89ZLkCj8Hb59sgTtivms?p=global+markets+geopolitical+news+September+1+2026+OR+September+2+2026&btf=d 200
+2026-09-03 01:59:41,719 [INFO] response: https://www.startpage.com/ 200
+2026-09-03 01:59:41,833 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-03 01:59:42,277 [INFO] response: https://www.mojeek.com/search?q=global+markets+geopolitical+news+September+1+2026+OR+September+2+2026 403
+2026-09-03 01:59:42,927 [INFO] response: https://search.brave.com/search?q=global+markets+geopolitical+news+September+1+2026+OR+September+2+2026&source=web&tf=pd 200
+2026-09-03 01:59:43,593 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+transfer+results+September+1+2026+OR+September+2+2026&limit=1 200
+2026-09-03 01:59:43,636 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20transfer%20results%20September%201%202026%20OR%20September%202%202026 200
+2026-09-03 01:59:43,942 [INFO] response: https://www.startpage.com/ 200
+2026-09-03 01:59:44,010 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-03 01:59:44,121 [INFO] response: https://www.google.com/wml/search?q=global+sports+news+transfer+results+September+1+2026+OR+September+2+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-03 01:59:44,592 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-03 01:59:50,888 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-03 01:59:50,889 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-03 01:59:50,889 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-03 01:59:51,155 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-03 01:59:51,156 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8816, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-03 01:59:51,156 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-03 01:59:56,395 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 01:59:59,039 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-03 01:59:59,041 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-03 02:00:11,739 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 02:00:11,740 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-09-03 02:00:11,771 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-03 02:00:12,937 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-03 02:00:12,938 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-03 02:00:12,938 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-03 02:00:13,101 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-03 02:00:13,101 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 14970, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-03 02:00:13,101 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-03 02:00:13,888 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 02:01:24,309 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-03 02:01:24,486 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+market+crypto+impact+September+2+2026&limit=1 200
+2026-09-03 02:01:24,495 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20market%20crypto%20impact%20September%202%202026 200
+2026-09-03 02:01:24,663 [INFO] response: https://www.google.com/wml/search?q=geopolitics+market+crypto+impact+September+2+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-03 02:01:25,346 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+results+transfers+September+1+2026+September+2+2026&limit=1 200
+2026-09-03 02:01:25,377 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20results%20transfers%20September%201%202026%20September%202%202026 200
+2026-09-03 02:01:25,467 [INFO] response: https://www.google.com/wml/search?q=sports+results+transfers+September+1+2026+September+2+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-03 02:01:26,025 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20technology%20science%20news%20September%201%202026%20September%202%202026 200
+2026-09-03 02:01:26,084 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+technology+science+news+September+1+2026+September+2+2026&limit=1 200
+2026-09-03 02:01:26,334 [INFO] response: https://search.yahoo.com/search;_ylt=bEA0JhXpkA4CN_nrQpytv9us;_ylu=Gf0dpN6U06TFQem6qd_8cXqIdytPu_rIIwoBP0kpLNaNB5k?p=latest+AI+technology+science+news+September+1+2026+September+2+2026&btf=d 200
+2026-09-03 02:01:27,409 [INFO] response: https://www.mojeek.com/search?q=latest+AI+technology+science+news+September+1+2026+September+2+2026 403
+2026-09-03 02:01:27,998 [INFO] response: https://search.brave.com/search?q=latest+AI+technology+science+news+September+1+2026+September+2+2026&source=web&tf=pd 200
+2026-09-03 02:01:28,158 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20kurs%20rupiah%20USD%20berita%20ekonomi%20Indonesia%202%20September%202026 200
+2026-09-03 02:01:28,167 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+kurs+rupiah+USD+berita+ekonomi+Indonesia+2+September+2026&limit=1 200
+2026-09-03 02:01:28,353 [INFO] response: https://www.startpage.com/ 200
+2026-09-03 02:01:28,466 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-03 02:01:29,042 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+kurs+rupiah+USD+berita+ekonomi+Indonesia+2+September+2026&source=web&tf=pd 200
+2026-09-03 02:01:29,258 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+Liga+1+atlet+Indonesia+ajang+internasional+2+September+2026&limit=1 200
+2026-09-03 02:01:29,287 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20Liga%201%20atlet%20Indonesia%20ajang%20internasional%202%20September%202026 200
+2026-09-03 02:01:29,474 [INFO] response: https://search.yahoo.com/search;_ylt=lWSw6OhAEuwSzTnH_1AZTJZN;_ylu=O3tpgCHXKlP8J4CAAmkTXx9J-h94TCpb8_ptiq-FbuZTMI8?p=Timnas+Indonesia+Liga+1+atlet+Indonesia+ajang+internasional+2+September+2026&btf=d 200
+2026-09-03 02:01:30,329 [INFO] response: https://www.google.com/wml/search?q=Timnas+Indonesia+Liga+1+atlet+Indonesia+ajang+internasional+2+September+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-03 02:01:30,962 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+Liga+1+atlet+Indonesia+ajang+internasional+2+September+2026 403
+2026-09-03 02:01:31,635 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+Liga+1+atlet+Indonesia+ajang+internasional+2+September+2026&source=web&tf=pd 200
+2026-09-03 02:01:31,660 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-03 02:02:00,522 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-03 02:02:00,524 [INFO] ✅ Berhasil pakai: Gemini 2.5 Flash
+2026-09-03 02:02:12,655 [INFO] Validasi: 3x visit_webpage sukses (minimum 3).
+2026-09-03 02:02:12,655 [INFO] Validasi LULUS — laporan berbasis riset nyata.
+2026-09-03 02:02:12,655 [INFO] LAPORAN FINAL:
+2026-09-03 02:02:12,655 [INFO] 
+## 📊 LAPORAN MENDALAM — 3 SEPTEMBER 2026
+
+---
+
+### 🌍 1. Geopolitik & Ekonomi Global
+Tidak dapat menemukan berita geopolitik & ekonomi global yang spesifik dari sumber yang diminta. (Sumber: N/A)
+
+
+### ⚽ 2. Olahraga Global
+Tidak dapat menemukan berita olahraga global yang spesifik. (Sumber: N/A)
+
+
+### 💻 3. Teknologi & AI Terbaru
+Tidak dapat menemukan berita teknologi & AI terbaru yang konkret. (Sumber: N/A)
+
+
+### 🇮🇩 4. Indonesia Update
+--- 4a. Ekonomi ---
+Tidak dapat menemukan berita ekonomi domestik Indonesia yang spesifik. (Sumber: N/A)
+
+
+--- 4b. Olahraga ---
+Tidak dapat menemukan update olahraga Indonesia yang spesifik. (Sumber: N/A)
+
+
+2026-09-03 02:02:12,655 [INFO] Mengirim laporan ke Telegram...
+2026-09-03 02:02:13,249 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-09-03 02:02:14,250 [INFO] History disimpan (5 entri).
+2026-09-03 02:02:14,250 [INFO] Selesai — laporan terkirim dan history disimpan.
