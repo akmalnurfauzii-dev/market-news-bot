@@ -22718,3 +22718,171 @@ Response Safety: safe
 2026-09-04 15:30:48,212 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
 2026-09-04 15:30:49,213 [INFO] History disimpan (5 entri).
 2026-09-04 15:30:49,213 [INFO] Selesai — laporan terkirim dan history disimpan.
+2026-09-05 01:55:19,945 [INFO] =======================================================
+2026-09-05 01:55:19,945 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-09-05 01:55:19,945 [INFO] =======================================================
+2026-09-05 01:55:19,945 [INFO] Menyiapkan AI dengan fallback chain (Gemini → Groq → OpenRouter → Cerebras)...
+2026-09-05 01:55:19,945 [INFO] CEREBRAS_API_KEY belum di-set — fallback Cerebras di-skip (opsional).
+2026-09-05 01:55:20,673 [INFO] Provider siap: Gemini 2.5 Flash
+2026-09-05 01:55:20,674 [INFO] Provider siap: Groq (GPT-OSS 120B)
+2026-09-05 01:55:20,675 [INFO] Provider siap: OpenRouter (auto-router gratis)
+2026-09-05 01:55:20,690 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-09-05 01:55:20,705 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:21,218 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:21,219 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-05 01:55:21,219 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:22,673 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:22,682 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-09-05 01:55:22,712 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:22,788 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:22,789 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-05 01:55:22,789 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:22,989 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-05 01:55:22,989 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 3744, Requested 4629. Please try again in 2.7975s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:22,989 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:24,133 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:25,029 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-05 01:55:25,032 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:25,109 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:25,110 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-05 01:55:25,110 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:25,167 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-05 01:55:25,168 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 3452, Requested 4602. Please try again in 405ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:25,168 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:25,435 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:26,288 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-05 01:55:26,290 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:26,370 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:26,370 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-05 01:55:26,370 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:26,431 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-05 01:55:26,432 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 3284, Requested 4906. Please try again in 1.425s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:26,432 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:27,144 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:27,206 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-05 01:55:27,208 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:27,286 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:27,287 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'service': 'generativelanguage.googleapis.com', 'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent'}}]}}]
+2026-09-05 01:55:27,287 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:27,346 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-05 01:55:27,347 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 3162, Requested 4959. Please try again in 907.5ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:27,347 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:28,221 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:28,804 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-05 01:55:28,806 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:28,886 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:28,887 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-05 01:55:28,888 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:29,082 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-05 01:55:29,083 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 2930, Requested 5191. Please try again in 907.5ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:29,083 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:29,551 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:30,751 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-05 01:55:30,754 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:30,827 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:30,827 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-05 01:55:30,828 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:30,889 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-05 01:55:30,890 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 2689, Requested 5687. Please try again in 2.82s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:30,890 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:32,195 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:32,304 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-05 01:55:32,306 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:32,385 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:32,386 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'service': 'generativelanguage.googleapis.com', 'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent'}}]}}]
+2026-09-05 01:55:32,386 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:32,471 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-05 01:55:32,472 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 2481, Requested 5950. Please try again in 3.2325s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:32,472 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:32,692 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:34,006 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-05 01:55:34,255 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitics%20economy%20cryptocurrency%20news%20September%202026 200
+2026-09-05 01:55:34,404 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitics+economy+cryptocurrency+news+September+2026&limit=1 200
+2026-09-05 01:55:34,950 [INFO] response: https://search.brave.com/search?q=global+geopolitics+economy+cryptocurrency+news+September+2026&source=web&tf=pd 200
+2026-09-05 01:55:34,961 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:35,069 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:35,070 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-05 01:55:35,070 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:35,161 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-05 01:55:35,162 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 2123, Requested 6568. Please try again in 5.182499999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:35,162 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:36,000 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:36,567 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-05 01:55:37,012 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:37,121 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:37,122 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-05 01:55:37,122 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:37,188 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-05 01:55:37,189 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8723, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:37,189 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:39,154 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:40,552 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-05 01:55:40,701 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+football+results+transfers+September+4+2026&limit=1 200
+2026-09-05 01:55:40,721 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20football%20results%20transfers%20September%204%202026 200
+2026-09-05 01:55:40,917 [INFO] response: https://www.startpage.com/ 200
+2026-09-05 01:55:40,970 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-05 01:55:41,155 [INFO] response: https://search.yahoo.com/search;_ylt=QpDjE390Lh9ykQyMUCocbULc;_ylu=iLCdZ_YyjPVJ-zZQPLRlsReyegod64sCfcHKpQx9HrFk-c4?p=sports+football+results+transfers+September+4+2026&btf=d 200
+2026-09-05 01:55:41,683 [INFO] response: https://search.brave.com/search?q=sports+football+results+transfers+September+4+2026&source=web&tf=pd 200
+2026-09-05 01:55:41,694 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:41,803 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:41,804 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-05 01:55:41,804 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:41,871 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-05 01:55:41,872 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 10004, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:41,872 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:42,162 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:44,086 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-05 01:55:44,089 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:44,176 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:44,177 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-05 01:55:44,177 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:44,247 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-05 01:55:44,247 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 10018, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:44,247 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:45,104 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:46,271 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-05 01:55:46,274 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:46,385 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:46,385 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-05 01:55:46,385 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:46,462 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-05 01:55:46,462 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 10239, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:46,462 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:46,823 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:48,087 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-05 01:55:48,236 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=technology%20AI%20artificial%20intelligence%20news%20September%204%202026 200
+2026-09-05 01:55:48,253 [INFO] response: https://grokipedia.com/api/typeahead?query=technology+AI+artificial+intelligence+news+September+4+2026&limit=1 200
+2026-09-05 01:55:48,482 [INFO] response: https://www.google.com/wml/search?q=technology+AI+artificial+intelligence+news+September+4+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-05 01:55:48,700 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:48,787 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:48,788 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-05 01:55:48,788 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:48,858 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-05 01:55:48,858 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 11145, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:48,858 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:50,969 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:53,471 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-05 01:55:53,627 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+indeks+harga+saham+gabungan+September+2026+rupiah&limit=1 200
+2026-09-05 01:55:53,641 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20indeks%20harga%20saham%20gabungan%20September%202026%20rupiah 200
+2026-09-05 01:55:54,200 [INFO] response: https://www.mojeek.com/search?q=IHSG+indeks+harga+saham+gabungan+September+2026+rupiah 403
+2026-09-05 01:55:54,314 [INFO] response: https://www.startpage.com/ 200
+2026-09-05 01:55:54,374 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-05 01:55:54,467 [INFO] response: https://search.yahoo.com/search;_ylt=JE8fqWYlFzEv3vGuRyUxE7qp;_ylu=kNXGcT8581mZiBM8tyu2ANvdU7TN8sJSJp5FvoSvkgVVs5Q?p=IHSG+indeks+harga+saham+gabungan+September+2026+rupiah&btf=d 200
+2026-09-05 01:55:54,963 [INFO] response: https://search.brave.com/search?q=IHSG+indeks+harga+saham+gabungan+September+2026+rupiah&source=web&tf=pd 200
+2026-09-05 01:55:54,971 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:55,135 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:55,136 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'service': 'generativelanguage.googleapis.com', 'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent'}}]}}]
+2026-09-05 01:55:55,136 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:55,244 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-05 01:55:55,245 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 12307, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:55,245 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:55,626 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 01:55:58,371 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-05 01:55:59,006 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-05 01:55:59,144 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-05 01:55:59,152 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-05 01:55:59,152 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-05 01:55:59,231 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-05 01:55:59,232 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 14128, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-05 01:55:59,232 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-05 01:55:59,885 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
