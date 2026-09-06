@@ -16,13 +16,20 @@ except ImportError:
 # =========================================================
 TELEGRAM_TOKEN     = os.environ["TELEGRAM_TOKEN"]
 TELEGRAM_CHAT_ID   = os.environ["TELEGRAM_CHAT_ID"]
-GROQ_API_KEY       = os.environ["GROQ_API_KEY"]
 GOOGLE_API_KEY     = os.environ["GOOGLE_API_KEY"]
 OPENROUTER_API_KEY = os.environ["OPENROUTER_API_KEY"]
-# Opsional — kalau belum ada secret CEREBRAS_API_KEY, fallback Cerebras di-skip otomatis.
-CEREBRAS_API_KEY   = os.environ.get("CEREBRAS_API_KEY", "")
+# Provider baru — kalau secret belum diset, otomatis di-skip (nggak error).
+NVIDIA_API_KEY     = os.environ.get("NVIDIA_API_KEY", "")
+ZAI_API_KEY        = os.environ.get("ZAI_API_KEY", "")
+# Groq dicabut dari chain utama (selalu 413 karena TPM 8000 < kebutuhan kita ~30k token).
+# Kalau suatu saat prompt sudah dipangkas jauh, boleh diaktifkan lagi lewat secret ini.
+GROQ_API_KEY       = os.environ.get("GROQ_API_KEY", "")
 
 TELEGRAM_MAX_CHARS = 3800
+
+# Penanda minimal yang WAJIB ada di laporan asli — dipakai buat validasi sebelum kirim/simpan.
+REPORT_MARKERS = ["LAPORAN MENDALAM", "Geopolitik", "Olahraga"]
+MIN_REPORT_LENGTH = 400
 
 # =========================================================
 # 2. Logging ke file + console
@@ -87,7 +94,21 @@ def ringkasan_history():
 
 
 # =========================================================
-# 4. Kirim Telegram (otomatis pecah kalau panjang)
+# 4. Validasi laporan sebelum dikirim/disimpan
+#    Ini yang mencegah kasus "User Safety: unsafe..." kekirim ke
+#    Telegram mentah-mentah kayak yang kejadian 6 Sept kemarin.
+# =========================================================
+def laporan_valid(teks):
+    if not teks or len(teks.strip()) < MIN_REPORT_LENGTH:
+        return False, f"Terlalu pendek ({len(teks.strip()) if teks else 0} karakter, minimal {MIN_REPORT_LENGTH})"
+    ditemukan = sum(1 for marker in REPORT_MARKERS if marker.lower() in teks.lower())
+    if ditemukan == 0:
+        return False, "Tidak ada penanda laporan (LAPORAN MENDALAM/Geopolitik/Olahraga) — kemungkinan output rusak/moderasi"
+    return True, "OK"
+
+
+# =========================================================
+# 5. Kirim Telegram (otomatis pecah kalau panjang)
 # =========================================================
 def _kirim_satu(pesan, parse_mode=None):
     url  = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
@@ -133,7 +154,7 @@ def kirim_ke_telegram(pesan):
 
 
 # =========================================================
-# 5. Tool pencarian 24 jam terakhir
+# 6. Tool pencarian 24 jam terakhir
 # =========================================================
 class RecentNewsSearchTool(Tool):
     name        = "web_search"
@@ -168,17 +189,20 @@ class RecentNewsSearchTool(Tool):
 
 
 # =========================================================
-# 6. Multi-provider AI dengan fallback cepat
-#    Urutan: Gemini Flash → Groq (gpt-oss-120b) → OpenRouter → Cerebras
+# 7. Multi-provider AI dengan fallback cepat
+#    Urutan baru: Gemini Flash → NVIDIA NIM (Qwen) → Z.AI (GLM-4.5-Flash)
+#                 → OpenRouter → (Groq, opsional, hampir pasti gagal di prompt sebesar ini)
 #
-#    ⚠️ CATATAN PENTING (update 17 Agustus 2026):
-#    - Groq resmi men-deprecate llama-3.3-70b-versatile & llama-3.1-8b-instant
-#      per 17 Juni 2026. Model diganti ke openai/gpt-oss-120b.
-#    - Cerebras katalog free tier-nya SANGAT volatile — pernah collapse dari
-#      belasan model jadi cuma 2 model dalam semalam. Jangan taruh sebagai
-#      provider utama, hanya cadangan terakhir kalau 3 provider lain gagal.
-#    - Selalu cek dashboard/docs resmi tiap provider tiap beberapa bulan,
-#      karena nama model gratis bisa berubah tanpa notifikasi ke user.
+#    ⚠️ CATATAN PENTING (update 7 September 2026):
+#    - Groq dicabut dari urutan utama: TPM gratis 8000, sedangkan request
+#      kita konsisten 29-32 ribu token → SELALU 413 Payload Too Large.
+#      Kalau context sudah dipangkas signifikan, boleh diaktifkan lagi.
+#    - NVIDIA NIM & Z.AI ditambahkan karena context window jauh lebih besar
+#      (100K+ / 128K) — nggak akan kena masalah "payload too large".
+#    - Gemini API key WAJIB dari project Google Cloud yang bersih —
+#      jangan numpuk banyak automation di satu project yang sama, karena
+#      pola pemakaian otomatis/terjadwal bisa memicu Google men-disable
+#      seluruh project (bukan cuma satu key).
 # =========================================================
 class FallbackModel:
     def __init__(self, providers):
@@ -189,16 +213,13 @@ class FallbackModel:
                     model_id=p["model_id"],
                     api_base=p["api_base"],
                     api_key=p["api_key"],
-                    # Matikan retry internal openai SDK — biar langsung pindah provider
-                    # kalau kena error, nggak nunggu ratusan detik.
                     client_kwargs={"max_retries": 0, "timeout": 60.0},
-                    # Matikan retry internal smolagents — lapisan berbeda dari atas.
                     retry=False,
                 )
                 self.providers.append({
                     "name":       p["name"],
                     "model":      m,
-                    "rpm_limit":  p.get("rpm_limit"),   # proaktif skip kalau hampir limit
+                    "rpm_limit":  p.get("rpm_limit"),
                     "timestamps": [],
                 })
                 log.info(f"Provider siap: {p['name']}")
@@ -212,7 +233,6 @@ class FallbackModel:
         return getattr(self.providers[0]["model"], attr)
 
     def _boleh_pakai(self, entry):
-        """Cek proaktif RPM — skip kalau udah mepet limit, biar nggak kena 429."""
         limit = entry.get("rpm_limit")
         if not limit:
             return True
@@ -236,7 +256,6 @@ class FallbackModel:
                 log.warning(f"⚠️ {entry['name']} gagal: {e}")
                 last_err = e
 
-        # Kalau semua skip proaktif, paksa coba provider pertama
         entry = self.providers[0]
         log.warning("Semua provider di-skip proaktif, paksa coba provider pertama...")
         try:
@@ -257,63 +276,67 @@ class FallbackModel:
 
 
 def buat_agent():
-    log.info("Menyiapkan AI dengan fallback chain (Gemini → Groq → OpenRouter → Cerebras)...")
+    log.info("Menyiapkan AI dengan fallback chain (Gemini → NVIDIA → Z.AI → OpenRouter)...")
 
     daftar_provider = [
         {
             # PROVIDER UTAMA: Gemini 2.5 Flash
-            # Terbukti paling patuh instruksi dan hasilnya paling detail dari semua provider.
-            # Masih free tier per Agustus 2026 (1.500 req/hari, 15 RPM).
             "name":      "Gemini 2.5 Flash",
             "model_id":  "gemini-2.5-flash",
             "api_base":  "https://generativelanguage.googleapis.com/v1beta/openai/",
             "api_key":   GOOGLE_API_KEY,
-            "rpm_limit": 4,   # buffer dari limit asli 5 RPM (kalau masih di quota lama)
+            "rpm_limit": 4,
         },
-        {
-            # CADANGAN 1: Groq — model DIPERBARUI 17 Agustus 2026.
-            # llama-3.3-70b-versatile SUDAH DEPRECATED sejak 17 Juni 2026.
-            # openai/gpt-oss-120b adalah pengganti resmi yang direkomendasikan Groq.
+    ]
+
+    if NVIDIA_API_KEY:
+        daftar_provider.append({
+            # CADANGAN 1: NVIDIA NIM — Qwen3.5, context besar, ~40 RPM.
+            "name":      "NVIDIA NIM (Qwen3.5)",
+            "model_id":  "qwen/qwen3.5-397b-a17b",
+            "api_base":  "https://integrate.api.nvidia.com/v1",
+            "api_key":   NVIDIA_API_KEY,
+            "rpm_limit": None,
+        })
+    else:
+        log.info("NVIDIA_API_KEY belum diset — provider NVIDIA di-skip.")
+
+    if ZAI_API_KEY:
+        daftar_provider.append({
+            # CADANGAN 2: Z.AI GLM-4.5-Flash — gratis, context 128K.
+            "name":      "Z.AI (GLM-4.5-Flash)",
+            "model_id":  "glm-4.5-flash",
+            "api_base":  "https://api.z.ai/api/paas/v4/",
+            "api_key":   ZAI_API_KEY,
+            "rpm_limit": None,
+        })
+    else:
+        log.info("ZAI_API_KEY belum diset — provider Z.AI di-skip.")
+
+    daftar_provider.append({
+        # CADANGAN 3: OpenRouter (auto-router gratis)
+        "name":      "OpenRouter (auto-router gratis)",
+        "model_id":  "openrouter/free",
+        "api_base":  "https://openrouter.ai/api/v1",
+        "api_key":   OPENROUTER_API_KEY,
+        "rpm_limit": None,
+    })
+
+    if GROQ_API_KEY:
+        # Opsional, paling akhir — hampir pasti gagal (413) selama prompt masih ~30k token.
+        daftar_provider.append({
             "name":      "Groq (GPT-OSS 120B)",
             "model_id":  "openai/gpt-oss-120b",
             "api_base":  "https://api.groq.com/openai/v1",
             "api_key":   GROQ_API_KEY,
             "rpm_limit": None,
-        },
-        {
-            # CADANGAN 2: OpenRouter — pakai openrouter/free (router resmi, nggak bisa ditarik)
-            "name":      "OpenRouter (auto-router gratis)",
-            "model_id":  "openrouter/free",
-            "api_base":  "https://openrouter.ai/api/v1",
-            "api_key":   OPENROUTER_API_KEY,
-            "rpm_limit": None,
-        },
-    ]
-
-    # CADANGAN 3 (opsional): Cerebras — hanya diaktifkan kalau CEREBRAS_API_KEY di-set.
-    # ⚠️ Katalog model gratis Cerebras SANGAT sering berubah tanpa peringatan.
-    # gpt-oss-120b dipilih karena per 17 Agustus 2026 ini salah satu model paling stabil
-    # di free tier mereka (model lain seperti zai-glm-4.7 sedang dalam proses deprecation
-    # di tanggal yang sama). Context window free tier Cerebras juga dibatasi ~8K token,
-    # jadi taruh ini SELALU sebagai fallback TERAKHIR, bukan primary.
-    if CEREBRAS_API_KEY:
-        daftar_provider.append({
-            "name":      "Cerebras (GPT-OSS 120B)",
-            "model_id":  "gpt-oss-120b",
-            "api_base":  "https://api.cerebras.ai/v1",
-            "api_key":   CEREBRAS_API_KEY,
-            "rpm_limit": None,
         })
-    else:
-        log.info("CEREBRAS_API_KEY belum di-set — fallback Cerebras di-skip (opsional).")
 
     model = FallbackModel(daftar_provider)
 
     return CodeAgent(
         tools=[
             RecentNewsSearchTool(),
-            # max_output_length=5000: batasi output per halaman biar konteks nggak membengkak
-            # ke puluhan ribu token (default aslinya 40.000 karakter — terlalu besar).
             VisitWebpageTool(max_output_length=5000),
         ],
         model=model,
@@ -323,14 +346,9 @@ def buat_agent():
 
 
 # =========================================================
-# 7. Validasi teknis: cek beneran ada visit_webpage sukses
+# 8. Validasi teknis: cek beneran ada visit_webpage sukses
 # =========================================================
 def hitung_visit_sukses(agent):
-    """
-    Introspeksi riwayat langkah agent — hitung berapa kali visit_webpage()
-    beneran dipanggil DAN berhasil (bukan error). Ini penegakan teknis,
-    bukan cuma percaya klaim si AI di laporannya.
-    """
     jumlah = 0
     for step in agent.memory.steps:
         code = getattr(step, "code_action", None)
@@ -341,7 +359,7 @@ def hitung_visit_sukses(agent):
 
 
 # =========================================================
-# 8. Fungsi utama analisa harian
+# 9. Fungsi utama analisa harian
 # =========================================================
 def jalankan_analisa_harian():
     log.info("=" * 55)
@@ -390,16 +408,9 @@ LANGKAH 2 — Kunjungi artikel via visit_webpage(url) untuk baca isi lengkapnya.
 LANGKAH 3 — Ekstrak data konkret: angka, nama, tanggal, kutipan langsung dari artikel yang dibaca.
 LANGKAH 4 — Tulis laporan SETELAH membaca, bukan mengarang dari ingatan.
 
-FORMAT LAPORAN YANG DIHARAPKAN (seperti ini, bukan kesimpulan singkat):
-❌ SALAH: "Pasar kripto mengalami volatilitas akibat sentimen global."
-✅ BENAR: "Bitcoin turun 2,3% ke $63.400 pada Senin pagi setelah data inflasi AS bulan Juni
-  menunjukkan CPI naik 3,1% YoY, lebih tinggi dari ekspektasi 2,9%. Analis dari JPMorgan
-  menyebut ini bisa menunda pemangkasan suku bunga Fed ke kuartal 4. (Sumber: Reuters)"
-
-❌ SALAH: "IHSG bergerak mixed hari ini."
-✅ BENAR: "IHSG ditutup melemah 47,3 poin (-0,72%) ke level 6.534,21 pada Senin 28 Juli 2026,
-  tertekan oleh aksi jual asing senilai Rp892 miliar. Sektor perbankan turun paling dalam -1,4%.
-  (Sumber: CNBC Indonesia)"
+FORMAT LAPORAN YANG DIHARAPKAN — WAJIB diawali dengan judul persis:
+"## 📊 LAPORAN MENDALAM — {tanggal.upper()}"
+lalu tiap bagian pakai heading topiknya (Geopolitik, Olahraga, Teknologi, Indonesia).
 
 ATURAN KETAT:
 - Setiap topik WAJIB punya minimal 1 URL sumber valid yang dicantumkan.
@@ -407,9 +418,11 @@ ATURAN KETAT:
 - Kalau halaman web error/403, coba URL lain dari hasil pencarian yang sama.
 - Panjang laporan TIDAK dibatasi — sistem Telegram otomatis pecah jadi beberapa pesan.
 - Tulis bahasa Indonesia santai, boleh campur Inggris, seperti teman diskusi yang pintar.
+- JANGAN keluarkan teks lain selain laporan itu sendiri (jangan ada output berupa
+  klasifikasi/kategori/label keamanan atau semacamnya).
 """
 
-    MIN_VISIT = 3  # minimal 3 topik terbukti di-visit (sedikit lebih longgar dari 4)
+    MIN_VISIT = 3
     MAX_COBA  = 2
 
     agent = buat_agent()
@@ -424,11 +437,26 @@ ATURAN KETAT:
             n_visit = hitung_visit_sukses(agent)
             log.info(f"Validasi: {n_visit}x visit_webpage sukses (minimum {MIN_VISIT}).")
 
+            ok, alasan = laporan_valid(hasil)
+            if not ok:
+                log.warning(f"Laporan tidak valid: {alasan}")
+                if percobaan < MAX_COBA:
+                    log.warning("Mengulang percobaan karena output tidak valid...")
+                    continue
+
             if n_visit >= MIN_VISIT:
                 log.info("Validasi LULUS — laporan berbasis riset nyata.")
                 break
             elif percobaan < MAX_COBA:
                 log.warning(f"Kurang riset ({n_visit}x visit). Coba ulang...")
+
+        # Validasi FINAL sebelum kirim/simpan — ini yang mencegah sampah terkirim.
+        ok, alasan = laporan_valid(hasil)
+        if not ok:
+            pesan_error = f"❌ Laporan hari ini gagal divalidasi ({alasan}). Tidak dikirim/disimpan untuk menjaga kualitas history."
+            log.error(pesan_error)
+            kirim_ke_telegram(pesan_error)
+            return
 
         if n_visit < MIN_VISIT:
             peringatan = (
@@ -454,7 +482,7 @@ ATURAN KETAT:
 
 
 # =========================================================
-# 9. Entry point — jalan SEKALI, cron GitHub Actions yang atur jadwal
+# 10. Entry point — jalan SEKALI, cron GitHub Actions yang atur jadwal
 # =========================================================
 if __name__ == "__main__":
     try:
