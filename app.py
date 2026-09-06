@@ -25,7 +25,6 @@ GROQ_API_KEY       = os.environ.get("GROQ_API_KEY", "")
 
 TELEGRAM_MAX_CHARS = 3800
 
-# Marker laporan yang WAJIB ada (sekarang 5 topik)
 REPORT_MARKERS = [
     "## 📊 LAPORAN MENDALAM",
     "Geopolitik",
@@ -49,9 +48,6 @@ log = logging.getLogger("market-bot")
 HISTORY_FILE = "history.json"
 MAX_HISTORY = 5
 
-# =========================================================
-# 2. Whitelist domain sumber (prioritas)
-# =========================================================
 DOMAIN_INTERNASIONAL = [
     "reuters.com", "bloomberg.com", "cnbc.com", "bbc.com", "bbc.co.uk",
     "aljazeera.com", "ft.com", "espn.com", "skysports.com", "uefa.com",
@@ -104,13 +100,6 @@ def ringkasan_history():
     )
 
 def laporan_valid(teks):
-    """
-    Validasi ketat:
-    - minimal panjang
-    - wajib ada judul laporan
-    - minimal 4 topik utama (Geopolitik, Olahraga, Teknologi, Indonesia, Trending)
-    - tidak boleh ada pola output rusak (JSON, tag </code, dll)
-    """
     if not teks or len(teks.strip()) < MIN_REPORT_LENGTH:
         return False, f"Terlalu pendek ({len(teks.strip()) if teks else 0} karakter, minimal {MIN_REPORT_LENGTH})"
 
@@ -120,7 +109,7 @@ def laporan_valid(teks):
     topik = ["Geopolitik", "Olahraga", "Teknologi", "Indonesia", "Trending Indonesia"]
     ditemukan = sum(1 for t in topik if t.lower() in teks.lower())
     if ditemukan < 4:
-        return False, f"Hanya {ditemukan} topik ditemukan, minimal 4 (Geopolitik, Olahraga, Teknologi, Indonesia, Trending Indonesia)"
+        return False, f"Hanya {ditemukan} topik ditemukan, minimal 4"
 
     bad_patterns = [
         "</code", "User Safety", "Response Safety",
@@ -131,7 +120,6 @@ def laporan_valid(teks):
         if pat in teks:
             return False, f"Terdeteksi output rusak: {pat}"
 
-    # Cek ada minimal 3 tanggal (format 6 September 2026 atau 2026-09-06)
     tanggal_patterns = [
         r"\b\d{1,2}\s+(Januari|Februari|Maret|April|Mei|Juni|Juli|Agustus|September|Oktober|November|Desember)\s+\d{4}\b",
         r"\b\d{4}-\d{2}-\d{2}\b",
@@ -140,7 +128,7 @@ def laporan_valid(teks):
     for pat in tanggal_patterns:
         jumlah_tanggal += len(re.findall(pat, teks))
     if jumlah_tanggal < 2:
-        return False, f"Hanya {jumlah_tanggal} tanggal ditemukan, minimal 2 tanggal publikasi"
+        return False, f"Hanya {jumlah_tanggal} tanggal ditemukan, minimal 2"
 
     return True, "OK"
 
@@ -176,7 +164,6 @@ def kirim_ke_telegram(pesan):
     for i, chunk in enumerate(chunks, 1):
         prefix = f"📄 Bagian {i}/{len(chunks)}\n\n" if len(chunks) > 1 else ""
         teks   = prefix + chunk
-        # Coba Markdown, fallback ke plain
         if _kirim_satu(teks, parse_mode="Markdown"):
             log.info(f"✅ Bagian {i}/{len(chunks)} terkirim (Markdown)!")
         else:
@@ -198,20 +185,14 @@ class RecentNewsSearchTool(Tool):
     output_type = "string"
 
     def forward(self, query: str) -> str:
+        # Paksa backend html agar hemat request
         try:
-            # Paksa backend html agar cepat dan hemat request
-            results = DDGS(backend="html").text(query, timelimit="d", max_results=5)
+            results = DDGS(backend="html").text(query, timelimit="d", max_results=4)
         except Exception:
             try:
-                results = DDGS().text(query, timelimit="d", max_results=5)
+                results = DDGS(backend="html").text(query, timelimit="w", max_results=4)
             except Exception as e:
                 return f"Pencarian gagal: {e}"
-
-        if not results:
-            try:
-                results = DDGS(backend="html").text(query, timelimit="w", max_results=5)
-            except Exception:
-                return "Tidak ada hasil ditemukan."
 
         if not results:
             return "Tidak ada hasil ditemukan, coba kata kunci lain."
@@ -221,10 +202,8 @@ class RecentNewsSearchTool(Tool):
             title = r.get('title', '')
             body  = r.get('body', '')
             url   = r.get('href', '')
-            # Coba ambil tanggal publikasi
             date_str = r.get('date') or r.get('published') or r.get('timestamp') or ''
             if not date_str:
-                # Coba dari body
                 m = re.search(r"\b(\d{1,2}\s+\w+\s+\d{4})\b", body)
                 if m:
                     date_str = m.group(1)
@@ -236,8 +215,8 @@ class RecentNewsSearchTool(Tool):
 class FallbackModel:
     """
     Multi‑provider dengan beberapa model per provider.
-    Model diurutkan dari yang paling ringan/murah ke yang lebih mahal.
-    Jika model mati (404/410/retired), otomatis ditandai dan tidak dicoba lagi.
+    Model diurutkan dari yang paling stabil ke yang lebih murah/cadangan.
+    Jika model mati (404/410/retired) atau sering gagal format, otomatis ditandai.
     """
     def __init__(self, providers):
         self.providers = []
@@ -342,22 +321,19 @@ class FallbackModel:
 
 
 def buat_agent():
-    log.info("Menyiapkan AI dengan fallback chain multi‑model (otomatis pilih dari murah ke mahal)...")
+    log.info("Menyiapkan AI dengan fallback chain multi‑model (stabil → murah)...")
 
     daftar_provider = [
         {
             "name": "Gemini",
             "api_base": "https://generativelanguage.googleapis.com/v1beta/openai/",
             "api_key": GOOGLE_API_KEY,
+            # Urutan dari paling stabil ke murah
             "models": [
-                "gemini-3.5-flash-lite",
-                "gemini-3.1-flash-lite",
-                "gemini-2.5-flash-lite",
-                "gemini-3.5-flash",
                 "gemini-3.6-flash",
-                "gemini-3.7-flash",
-                "gemini-3.8-flash",
-                "gemini-3.1-pro-preview",
+                "gemini-3.5-flash",
+                "gemini-3.1-flash-lite",
+                "gemini-3.5-flash-lite",
             ],
         },
     ]
@@ -370,7 +346,6 @@ def buat_agent():
             "models": [
                 "nvidia/nemotron-3-super-120b-a12b",
                 "meta/llama-4-maverick-17b-128e-instruct",
-                "deepseek-ai/deepseek-v3.1",
             ],
         })
     else:
@@ -400,7 +375,6 @@ def buat_agent():
             "api_key": GROQ_API_KEY,
             "models": [
                 "llama-3.3-70b-versatile",
-                "openai/gpt-oss-120b",
             ],
         })
 
@@ -413,7 +387,7 @@ def buat_agent():
         ],
         model=model,
         additional_authorized_imports=["datetime", "os", "re"],
-        max_steps=8,
+        max_steps=7,
     )
 
 
@@ -514,7 +488,7 @@ ATURAN KETAT:
 - JANGAN keluarkan teks lain selain laporan itu sendiri.
 """
 
-    MIN_VISIT = 4  # sekarang 5 topik, minimal kunjungi 4
+    MIN_VISIT = 4
     MAX_COBA  = 2
 
     agent = buat_agent()
