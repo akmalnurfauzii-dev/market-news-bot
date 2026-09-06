@@ -3,6 +3,7 @@ import time
 import json
 import logging
 import datetime
+import re
 import requests
 from smolagents import Tool, CodeAgent, VisitWebpageTool, OpenAIServerModel
 
@@ -24,9 +25,16 @@ GROQ_API_KEY       = os.environ.get("GROQ_API_KEY", "")
 
 TELEGRAM_MAX_CHARS = 3800
 
-# Marker laporan yang WAJIB ada
-REPORT_MARKERS = ["## 📊 LAPORAN MENDALAM", "Geopolitik", "Olahraga", "Teknologi", "Indonesia"]
-MIN_REPORT_LENGTH = 400
+# Marker laporan yang WAJIB ada (sekarang 5 topik)
+REPORT_MARKERS = [
+    "## 📊 LAPORAN MENDALAM",
+    "Geopolitik",
+    "Olahraga",
+    "Teknologi",
+    "Indonesia",
+    "Trending Indonesia",
+]
+MIN_REPORT_LENGTH = 500
 
 logging.basicConfig(
     level=logging.INFO,
@@ -40,6 +48,21 @@ log = logging.getLogger("market-bot")
 
 HISTORY_FILE = "history.json"
 MAX_HISTORY = 5
+
+# =========================================================
+# 2. Whitelist domain sumber (prioritas)
+# =========================================================
+DOMAIN_INTERNASIONAL = [
+    "reuters.com", "bloomberg.com", "cnbc.com", "bbc.com", "bbc.co.uk",
+    "aljazeera.com", "ft.com", "espn.com", "skysports.com", "uefa.com",
+    "fifa.com", "techcrunch.com", "theverge.com", "wired.com",
+    "technologyreview.com", "arstechnica.com", "theguardian.com",
+]
+DOMAIN_INDONESIA = [
+    "cnnindonesia.com", "cnbcindonesia.com", "bisnis.com", "kompas.com",
+    "detik.com", "kontan.co.id", "antara.com", "tempo.co", "liputan6.com",
+    "bola.com", "tribunnews.com", "jawapos.com", "suara.com", "okezone.com",
+]
 
 def load_history():
     if not os.path.exists(HISTORY_FILE):
@@ -85,7 +108,7 @@ def laporan_valid(teks):
     Validasi ketat:
     - minimal panjang
     - wajib ada judul laporan
-    - minimal 3 bagian topik (Geopolitik, Olahraga, Teknologi, Indonesia)
+    - minimal 4 topik utama (Geopolitik, Olahraga, Teknologi, Indonesia, Trending)
     - tidak boleh ada pola output rusak (JSON, tag </code, dll)
     """
     if not teks or len(teks.strip()) < MIN_REPORT_LENGTH:
@@ -94,20 +117,30 @@ def laporan_valid(teks):
     if "## 📊 LAPORAN MENDALAM" not in teks:
         return False, "Tidak ada judul '## 📊 LAPORAN MENDALAM'"
 
-    # Cek minimal 3 topik muncul sebagai heading atau kata
-    topik = ["Geopolitik", "Olahraga", "Teknologi", "Indonesia"]
+    topik = ["Geopolitik", "Olahraga", "Teknologi", "Indonesia", "Trending Indonesia"]
     ditemukan = sum(1 for t in topik if t.lower() in teks.lower())
-    if ditemukan < 3:
-        return False, f"Hanya {ditemukan} topik ditemukan, minimal 3 (Geopolitik, Olahraga, Teknologi, Indonesia)"
+    if ditemukan < 4:
+        return False, f"Hanya {ditemukan} topik ditemukan, minimal 4 (Geopolitik, Olahraga, Teknologi, Indonesia, Trending Indonesia)"
 
-    # Pola output rusak yang sering muncul
     bad_patterns = [
         "</code", "User Safety", "Response Safety",
         '"tool": "web_search"', '"request_id"', '```',
+        "Error fetching the webpage", "Code parsing failed",
     ]
     for pat in bad_patterns:
         if pat in teks:
             return False, f"Terdeteksi output rusak: {pat}"
+
+    # Cek ada minimal 3 tanggal (format 6 September 2026 atau 2026-09-06)
+    tanggal_patterns = [
+        r"\b\d{1,2}\s+(Januari|Februari|Maret|April|Mei|Juni|Juli|Agustus|September|Oktober|November|Desember)\s+\d{4}\b",
+        r"\b\d{4}-\d{2}-\d{2}\b",
+    ]
+    jumlah_tanggal = 0
+    for pat in tanggal_patterns:
+        jumlah_tanggal += len(re.findall(pat, teks))
+    if jumlah_tanggal < 2:
+        return False, f"Hanya {jumlah_tanggal} tanggal ditemukan, minimal 2 tanggal publikasi"
 
     return True, "OK"
 
@@ -143,40 +176,38 @@ def kirim_ke_telegram(pesan):
     for i, chunk in enumerate(chunks, 1):
         prefix = f"📄 Bagian {i}/{len(chunks)}\n\n" if len(chunks) > 1 else ""
         teks   = prefix + chunk
+        # Coba Markdown, fallback ke plain
         if _kirim_satu(teks, parse_mode="Markdown"):
             log.info(f"✅ Bagian {i}/{len(chunks)} terkirim (Markdown)!")
-        elif _kirim_satu(teks):
-            log.info(f"✅ Bagian {i}/{len(chunks)} terkirim (plain text)!")
         else:
-            log.error(f"❌ Bagian {i}/{len(chunks)} GAGAL terkirim.")
+            if _kirim_satu(teks):
+                log.info(f"✅ Bagian {i}/{len(chunks)} terkirim (plain text)!")
+            else:
+                log.error(f"❌ Bagian {i}/{len(chunks)} GAGAL terkirim.")
         time.sleep(1)
-
 
 class RecentNewsSearchTool(Tool):
     name        = "web_search"
     description = (
-        "Cari berita/informasi TERBARU dari 24 jam terakhir. "
+        "Cari berita/informasi TERBARU dari 24-48 jam terakhir. "
         "Untuk topik global gunakan query Bahasa Inggris. "
         "Untuk topik Indonesia gunakan Bahasa Indonesia. "
-        "Kembalikan STRING berisi judul, ringkasan, dan URL."
+        "Kembalikan STRING berisi judul, ringkasan, URL, dan tanggal publikasi jika tersedia."
     )
     inputs      = {"query": {"type": "string", "description": "Kata kunci pencarian"}}
     output_type = "string"
 
     def forward(self, query: str) -> str:
-        # Hanya gunakan backend html duckduckgo untuk mengurangi request ke banyak engine
         try:
-            # Parameter backend="html" memaksa hanya satu engine
+            # Paksa backend html agar cepat dan hemat request
             results = DDGS(backend="html").text(query, timelimit="d", max_results=5)
         except Exception:
-            # Fallback ke default
             try:
                 results = DDGS().text(query, timelimit="d", max_results=5)
             except Exception as e:
                 return f"Pencarian gagal: {e}"
 
         if not results:
-            # Coba 7 hari jika 24 jam kosong
             try:
                 results = DDGS(backend="html").text(query, timelimit="w", max_results=5)
             except Exception:
@@ -187,16 +218,26 @@ class RecentNewsSearchTool(Tool):
 
         out = ""
         for r in results:
-            out += f"- {r.get('title','')}\n  {r.get('body','')}\n  URL: {r.get('href','')}\n\n"
+            title = r.get('title', '')
+            body  = r.get('body', '')
+            url   = r.get('href', '')
+            # Coba ambil tanggal publikasi
+            date_str = r.get('date') or r.get('published') or r.get('timestamp') or ''
+            if not date_str:
+                # Coba dari body
+                m = re.search(r"\b(\d{1,2}\s+\w+\s+\d{4})\b", body)
+                if m:
+                    date_str = m.group(1)
+            if not date_str:
+                date_str = "tanggal tidak tersedia"
+            out += f"- {title}\n  Tanggal: {date_str}\n  {body}\n  URL: {url}\n\n"
         return out
-
 
 class FallbackModel:
     """
     Multi‑provider dengan beberapa model per provider.
     Model diurutkan dari yang paling ringan/murah ke yang lebih mahal.
     Jika model mati (404/410/retired), otomatis ditandai dan tidak dicoba lagi.
-    Tidak ada rate limit proaktif, karena error 429 akan ditangani langsung.
     """
     def __init__(self, providers):
         self.providers = []
@@ -246,12 +287,10 @@ class FallbackModel:
     def _try_all(self, method_name, *args, **kwargs):
         last_err = None
         for entry in self.providers:
-            # Lewati provider jika semua model sudah dead
             if all(entry["dead"]):
                 log.info(f"Provider {entry['name']} semua model mati, skip.")
                 continue
 
-            # Coba model mulai dari current_idx
             while entry["current_idx"] < len(entry["models"]):
                 if entry["dead"][entry["current_idx"]]:
                     entry["current_idx"] += 1
@@ -278,14 +317,12 @@ class FallbackModel:
                     elif self._is_rate_limit_error(e):
                         log.warning("Rate limit tercapai, pindah ke provider berikutnya.")
                         last_err = e
-                        break  # keluar while, lanjut provider berikutnya
+                        break
                     else:
-                        # Error lain (timeout, 5xx, dsb) → coba model berikutnya di provider yang sama
                         last_err = e
                         entry["current_idx"] += 1
                         continue
 
-            # Jika keluar dari while karena current_idx >= len models, tandai semua sudah dicoba
             if entry["current_idx"] >= len(entry["models"]):
                 log.warning(f"Semua model di {entry['name']} sudah dicoba dan gagal.")
 
@@ -312,7 +349,6 @@ def buat_agent():
             "name": "Gemini",
             "api_base": "https://generativelanguage.googleapis.com/v1beta/openai/",
             "api_key": GOOGLE_API_KEY,
-            # Urutan dari yang PALING MURAH ke lebih mahal
             "models": [
                 "gemini-3.5-flash-lite",
                 "gemini-3.1-flash-lite",
@@ -373,11 +409,11 @@ def buat_agent():
     return CodeAgent(
         tools=[
             RecentNewsSearchTool(),
-            VisitWebpageTool(max_output_length=2500),  # Batasi output agar hemat token
+            VisitWebpageTool(max_output_length=2500),
         ],
         model=model,
         additional_authorized_imports=["datetime", "os", "re"],
-        max_steps=8,  # Dikurangi dari 10 ke 8
+        max_steps=8,
     )
 
 
@@ -406,7 +442,7 @@ Laporan sebelumnya — JANGAN ulang topik/angka yang persis sama, cari yang baru
 {histori}
 
 Kamu adalah analis intelijen senior, jurnalis ekonomi, pengamat olahraga, dan pakar teknologi.
-Buat laporan mendalam untuk 4 topik ini:
+Buat laporan mendalam untuk 5 topik berikut:
 
 1. **Geopolitik & Ekonomi Global**
    Cari: berita geopolitik internasional terkini dan dampaknya ke pasar kripto/saham.
@@ -428,13 +464,19 @@ Buat laporan mendalam untuk 4 topik ini:
    a) Ekonomi: kondisi IHSG hari ini (level dan persentase perubahan), kurs Rupiah terhadap USD,
       dan satu berita ekonomi domestik terbaru yang signifikan.
    b) Olahraga: satu update Timnas Indonesia, liga lokal, atau atlet Indonesia di ajang internasional.
-   Sumber WAJIB dari media besar Indonesia: CNN Indonesia (cnnindonesia.com), CNBC Indonesia (cnbcindonesia.com),
-   Bisnis.com, Kompas.com, Detik.com, Kontan.co.id, Antara, atau Tempo.co.
+   Sumber WAJIB dari media besar Indonesia: CNN Indonesia, CNBC Indonesia, Bisnis.com, Kompas.com, Detik.com, Kontan.co.id, Antara, Tempo.co, Liputan6, Bola.com.
    Query pencarian: gunakan Bahasa Indonesia.
+
+5. **Trending Indonesia**
+   Cari: satu berita viral/ trending yang sedang ramai dibicarakan di Indonesia dalam 1-2 hari terakhir.
+   Bisa tentang bencana alam, sosial, politik ringan, fenomena unik, atau apa pun yang banyak diberitakan.
+   Sumber: media besar Indonesia (sama seperti di atas).
+   Contoh (hanya ilustrasi): "Erupsi Anak Krakatau hari ini", "Viral video ...", "Fenomena ...".
+   Query pencarian: gunakan Bahasa Indonesia dengan kata kunci "viral", "trending", "ramai", atau kejadian aktual.
 
 CARA KERJA YANG BENAR (sistem akan VERIFIKASI secara teknis):
 - LANGKAH 1: Untuk SETIAP topik, lakukan SATU pencarian (web_search) dengan query spesifik.
-- LANGKAH 2: Pilih SATU URL terbaik dari hasil pencarian itu, lalu kunjungi dengan visit_webpage(url).
+- LANGKAH 2: Pilih SATU URL terbaik dari hasil pencarian, lalu kunjungi dengan visit_webpage(url).
 - LANGKAH 3: Ekstrak data konkret: angka, nama, tanggal, kutipan langsung dari artikel yang dibaca.
 - LANGKAH 4: JANGAN melakukan pencarian berulang untuk topik yang sama. Jika halaman error, coba URL lain dari hasil pencarian yang sama, tetapi jangan lebih dari 2 kali percobaan.
 - LANGKAH 5: Setelah semua topik selesai, langsung tulis laporan akhir dalam format naratif.
@@ -449,12 +491,22 @@ PENTING TENTANG FORMAT OUTPUT KODE:
   print(hasil)
   </code>
 
+PENTING TENTANG KEDALAMAN LAPORAN:
+- Setiap topik minimal 2-3 paragraf naratif, bukan satu paragraf singkat.
+- Untuk setiap berita, WAJIB sertakan:
+  * Tanggal publikasi atau tanggal kejadian (misal: "6 September 2026").
+  * Nama media sumber dan URL.
+  * Kutipan langsung singkat dari artikel (1-2 kalimat).
+  * Analisis singkat: mengapa ini penting, dampaknya, atau konteksnya.
+- Jangan hanya menulis kesimpulan kering, bangun cerita yang hidup dan mudah dipahami.
+
 FORMAT LAPORAN YANG DIHARAPKAN — WAJIB diawali dengan judul persis:
 "## 📊 LAPORAN MENDALAM — {tanggal.upper()}"
-lalu tiap bagian pakai heading topiknya (Geopolitik, Olahraga, Teknologi, Indonesia).
+lalu tiap bagian pakai heading topiknya (Geopolitik, Olahraga, Teknologi, Indonesia, Trending Indonesia).
 
 ATURAN KETAT:
 - Setiap topik WAJIB punya minimal 1 URL sumber valid yang dicantumkan.
+- Sumber harus berasal dari daftar domain yang disebutkan di atas (atau media besar lain yang relevan).
 - DILARANG mengarang angka, skor, atau kutipan — hanya dari artikel yang beneran dibaca.
 - Jangan menampilkan hasil mentah (JSON, request_id, dll) di laporan akhir.
 - Panjang laporan TIDAK dibatasi — sistem Telegram otomatis pecah jadi beberapa pesan.
@@ -462,7 +514,7 @@ ATURAN KETAT:
 - JANGAN keluarkan teks lain selain laporan itu sendiri.
 """
 
-    MIN_VISIT = 3
+    MIN_VISIT = 4  # sekarang 5 topik, minimal kunjungi 4
     MAX_COBA  = 2
 
     agent = buat_agent()
