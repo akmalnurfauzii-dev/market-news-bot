@@ -23242,3 +23242,782 @@ Response Safety: safe
 2026-09-05 14:25:46,659 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 18537, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
 2026-09-05 14:25:46,659 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
 2026-09-05 14:25:56,681 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:49:50,366 [INFO] =======================================================
+2026-09-06 01:49:50,366 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-09-06 01:49:50,366 [INFO] =======================================================
+2026-09-06 01:49:50,366 [INFO] Menyiapkan AI dengan fallback chain (Gemini → Groq → OpenRouter → Cerebras)...
+2026-09-06 01:49:50,366 [INFO] CEREBRAS_API_KEY belum di-set — fallback Cerebras di-skip (opsional).
+2026-09-06 01:49:50,921 [INFO] Provider siap: Gemini 2.5 Flash
+2026-09-06 01:49:50,922 [INFO] Provider siap: Groq (GPT-OSS 120B)
+2026-09-06 01:49:50,923 [INFO] Provider siap: OpenRouter (auto-router gratis)
+2026-09-06 01:49:50,935 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-09-06 01:49:50,949 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:49:51,411 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:49:51,412 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:49:51,412 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:49:53,966 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:49:53,974 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-09-06 01:49:53,998 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:49:54,063 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:49:54,063 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:49:54,063 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:49:55,263 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:49:55,264 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-09-06 01:49:55,266 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:49:55,331 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:49:55,332 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:49:55,332 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:49:55,440 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-06 01:49:55,440 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7456, Requested 3979. Please try again in 25.7625s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:49:55,440 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:49:56,328 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:49:57,486 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:49:57,489 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:49:57,552 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:49:57,552 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:49:57,552 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:49:57,672 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-06 01:49:57,672 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7159, Requested 4600. Please try again in 28.1925s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:49:57,672 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:49:58,982 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:49:59,998 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:50:00,001 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:50:00,069 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:50:00,070 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:50:00,070 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:50:00,175 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-06 01:50:00,175 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6824, Requested 4995. Please try again in 28.6425s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:50:00,175 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:50:01,070 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:50:01,481 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:50:01,484 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:50:01,550 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:50:01,551 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:50:01,551 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:50:01,953 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-06 01:50:01,954 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6587, Requested 5230. Please try again in 28.6275s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:50:01,954 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:50:02,242 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:50:05,651 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:50:05,653 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:50:05,725 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:50:05,726 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:50:05,726 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:50:05,835 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-06 01:50:05,835 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6069, Requested 5629. Please try again in 27.735s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:50:05,835 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:50:07,141 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:50:08,667 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:50:09,044 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economy%20markets%20news%20September%205%202026 200
+2026-09-06 01:50:09,131 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economy+markets+news+September+5+2026&limit=1 200
+2026-09-06 01:50:09,659 [INFO] response: https://www.mojeek.com/search?q=global+economy+markets+news+September+5+2026 403
+2026-09-06 01:50:09,780 [INFO] response: https://www.google.com/wml/search?q=global+economy+markets+news+September+5+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:50:10,042 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:50:10,113 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:50:10,114 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:50:10,114 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:50:10,232 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-06 01:50:10,233 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5484, Requested 6526. Please try again in 30.075s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:50:10,233 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:50:11,124 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:50:11,622 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:50:11,624 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:50:11,698 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:50:11,698 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:50:11,699 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:50:11,807 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-06 01:50:11,808 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5273, Requested 6748. Please try again in 30.1575s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:50:11,808 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:50:12,717 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:50:12,859 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:50:12,861 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:50:12,921 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:50:12,922 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:50:12,922 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:50:13,034 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-06 01:50:13,034 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5110, Requested 7156. Please try again in 31.995s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:50:13,035 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:50:13,264 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:50:16,273 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:50:16,275 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:50:16,363 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:50:16,364 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:50:16,364 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:50:16,656 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-06 01:50:16,656 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4627, Requested 7184. Please try again in 28.5825s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:50:16,656 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:50:17,398 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:50:18,636 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:50:18,823 [INFO] response: https://grokipedia.com/api/typeahead?query=global+sports+news+September+5+2026&limit=1 200
+2026-09-06 01:50:18,868 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20sports%20news%20September%205%202026 200
+2026-09-06 01:50:19,077 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:50:19,668 [INFO] response: https://www.mojeek.com/search?q=global+sports+news+September+5+2026 403
+2026-09-06 01:50:19,967 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:50:20,077 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:50:20,200 [INFO] response: https://www.google.com/wml/search?q=global+sports+news+September+5+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:50:20,752 [INFO] response: https://search.yahoo.com/search;_ylt=PJbxbSE40BeL6pmNc7GgJyfN;_ylu=CW0tkSxACxT0z2CtR0Z-3Eb_xp2z5zvzm3_PCWwivWHtzrU?p=global+sports+news+September+5+2026&btf=d 200
+2026-09-06 01:50:21,382 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:50:21,609 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:50:21,610 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:50:21,610 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:50:21,736 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-06 01:50:21,736 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 3950, Requested 7889. Please try again in 28.7925s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:50:21,736 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:50:23,092 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:50:24,952 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:50:25,115 [INFO] response: https://grokipedia.com/api/typeahead?query=technology+AI+news+September+2026&limit=1 200
+2026-09-06 01:50:25,164 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=technology%20AI%20news%20September%202026 200
+2026-09-06 01:50:25,455 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:50:25,572 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:50:25,745 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:50:26,572 [INFO] response: https://search.brave.com/search?q=technology+AI+news+September+2026&source=web&tf=pd 200
+2026-09-06 01:50:26,596 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:50:26,662 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:50:26,662 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'service': 'generativelanguage.googleapis.com', 'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent'}}]}}]
+2026-09-06 01:50:26,662 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:50:26,793 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:50:26,793 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8821, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:50:26,794 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:50:27,569 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:50:28,960 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:50:28,961 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:50:29,034 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:50:29,034 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'service': 'generativelanguage.googleapis.com', 'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent'}}]}}]
+2026-09-06 01:50:29,035 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:50:29,167 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:50:29,168 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8875, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:50:29,168 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:50:39,229 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:50:45,130 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:50:45,340 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20rupiah%20ekonomi%20Indonesia%205%20September%202026 200
+2026-09-06 01:50:45,376 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+rupiah+ekonomi+Indonesia+5+September+2026&limit=1 200
+2026-09-06 01:50:45,948 [INFO] response: https://www.mojeek.com/search?q=IHSG+rupiah+ekonomi+Indonesia+5+September+2026 403
+2026-09-06 01:50:46,068 [INFO] response: https://www.google.com/wml/search?q=IHSG+rupiah+ekonomi+Indonesia+5+September+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:50:46,778 [INFO] response: https://search.brave.com/search?q=IHSG+rupiah+ekonomi+Indonesia+5+September+2026&source=web&tf=pd 200
+2026-09-06 01:50:46,789 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:50:46,922 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:50:46,922 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'service': 'generativelanguage.googleapis.com', 'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent'}}]}}]
+2026-09-06 01:50:46,922 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:50:47,109 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:50:47,110 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 9563, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:50:47,110 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:50:57,168 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:51:03,546 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:51:03,910 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:51:04,040 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:51:04,040 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'service': 'generativelanguage.googleapis.com', 'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent'}}]}}]
+2026-09-06 01:51:04,040 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:51:04,264 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:51:04,264 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 11705, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:51:04,265 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:51:04,811 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:51:08,754 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:51:08,756 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:51:08,835 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:51:08,836 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:51:08,836 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:51:09,018 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:51:09,018 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 12085, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:51:09,019 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:51:10,558 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:51:14,719 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:51:14,955 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20economy%20news%20September%205%202026%20Reuters%20Bloomberg 200
+2026-09-06 01:51:14,984 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+economy+news+September+5+2026+Reuters+Bloomberg&limit=1 200
+2026-09-06 01:51:15,804 [INFO] response: https://search.brave.com/search?q=geopolitics+economy+news+September+5+2026+Reuters+Bloomberg&source=web&tf=pd 200
+2026-09-06 01:51:16,051 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+results+news+September+5+2026+ESPN+BBC&limit=1 200
+2026-09-06 01:51:16,076 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20results%20news%20September%205%202026%20ESPN%20BBC 200
+2026-09-06 01:51:16,208 [INFO] response: https://www.google.com/wml/search?q=sports+results+news+September+5+2026+ESPN+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:51:16,651 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20technology%20news%20September%205%202026%20TechCrunch%20Verge 200
+2026-09-06 01:51:16,811 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+technology+news+September+5+2026+TechCrunch+Verge&limit=1 200
+2026-09-06 01:51:16,970 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:51:17,253 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:51:17,341 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:51:17,473 [INFO] response: https://www.google.com/wml/search?q=AI+technology+news+September+5+2026+TechCrunch+Verge&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:51:17,792 [INFO] Error in engine grokipedia: DDGSException("ConnectError: ConnectError('error sending request for url (https://grokipedia.com/api/typeahead?query=IHSG+rupiah+ekonomi+Indonesia+September+5+2026&limit=1) > Network is unreachable (os error 101)')")
+2026-09-06 01:51:17,902 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20rupiah%20ekonomi%20Indonesia%20September%205%202026 200
+2026-09-06 01:51:17,931 [INFO] response: https://www.google.com/wml/search?q=IHSG+rupiah+ekonomi+Indonesia+September+5+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:51:18,281 [INFO] response: https://search.yahoo.com/search;_ylt=7dinEmwTHtU8Y7zmJCKmbELT;_ylu=TGtGZLxyTKMIYQDm5TVdZqcuTl7_6HQKyx4-SZp1JPvL6l8?p=IHSG+rupiah+ekonomi+Indonesia+September+5+2026&btf=d 200
+2026-09-06 01:51:19,410 [INFO] response: https://www.mojeek.com/search?q=IHSG+rupiah+ekonomi+Indonesia+September+5+2026 403
+2026-09-06 01:51:20,009 [INFO] response: https://search.brave.com/search?q=IHSG+rupiah+ekonomi+Indonesia+September+5+2026&source=web&tf=pd 200
+2026-09-06 01:51:20,024 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:51:20,183 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:51:20,183 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:51:20,183 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:51:20,391 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:51:20,392 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 13726, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:51:20,392 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:51:30,525 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:51:32,906 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:51:37,907 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:51:38,057 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:51:38,057 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:51:38,057 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:51:38,271 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:51:38,271 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 14250, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:51:38,271 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:51:39,348 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:51:41,310 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:51:41,311 [INFO] Validasi: 2x visit_webpage sukses (minimum 3).
+2026-09-06 01:51:41,311 [WARNING] Kurang riset (2x visit). Coba ulang...
+2026-09-06 01:51:41,311 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-09-06 01:51:41,328 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:51:41,385 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:51:41,386 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:51:41,386 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:51:48,168 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:51:48,169 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-09-06 01:51:48,172 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:51:48,292 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:51:48,293 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:51:48,293 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:51:48,551 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-06 01:51:48,552 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5601, Requested 4034. Please try again in 12.2625s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:51:48,552 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:51:49,006 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:52:08,933 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:52:09,124 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+news+September+4+2026+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times&limit=1 200
+2026-09-06 01:52:09,157 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20news%20September%204%202026%20Reuters%20Bloomberg%20CNBC%20BBC%20Al%20Jazeera%20Financial%20Times 200
+2026-09-06 01:52:09,394 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:52:09,493 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:52:09,621 [INFO] response: https://www.google.com/wml/search?q=geopolitics+global+economy+news+September+4+2026+Reuters+Bloomberg+CNBC+BBC+Al+Jazeera+Financial+Times&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:52:10,187 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20news%20September%204%202026%20site%3Areuters.com 200
+2026-09-06 01:52:10,222 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+news+September+4+2026+site%3Areuters.com&limit=1 200
+2026-09-06 01:52:10,359 [INFO] response: https://search.yahoo.com/search;_ylt=JoS92ia0kDCH-hsNBASIHFO-;_ylu=Amu2xhTl35ag7mPaNHGDNbZYHkeLg3I55342dG8OOvs1B1w?p=geopolitics+global+economy+news+September+4+2026+site%3Areuters.com&btf=d 200
+2026-09-06 01:52:11,304 [INFO] response: https://search.brave.com/search?q=geopolitics+global+economy+news+September+4+2026+site%3Areuters.com&source=web&tf=pd 200
+2026-09-06 01:52:11,314 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:52:11,442 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:52:11,443 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:52:11,443 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:52:15,968 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:52:15,969 [INFO] ✅ Berhasil pakai: Groq (GPT-OSS 120B)
+2026-09-06 01:52:16,206 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Reuters%20September%205%202026%20Middle%20East%20tension%20oil%20price%20crypto%20market 200
+2026-09-06 01:52:16,213 [INFO] response: https://grokipedia.com/api/typeahead?query=Reuters+September+5+2026+Middle+East+tension+oil+price+crypto+market&limit=1 200
+2026-09-06 01:52:16,839 [INFO] response: https://www.mojeek.com/search?q=Reuters+September+5+2026+Middle+East+tension+oil+price+crypto+market 403
+2026-09-06 01:52:17,046 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:52:17,141 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:52:17,296 [INFO] response: https://search.yahoo.com/search;_ylt=0mu2Jrp56UhpMFbKmJsiNgYG;_ylu=DYfdV13rddthWhRmgZHeP2SE3pyDaOQQ95Q-SJOIhHAX6GE?p=Reuters+September+5+2026+Middle+East+tension+oil+price+crypto+market&btf=d 200
+2026-09-06 01:52:18,194 [INFO] response: https://www.google.com/wml/search?q=Reuters+September+5+2026+Middle+East+tension+oil+price+crypto+market&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:52:18,639 [INFO] response: https://grokipedia.com/api/typeahead?query=Bloomberg+September+5+2026+Fed+rate+cut+signals+market+reaction&limit=1 200
+2026-09-06 01:52:18,706 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Bloomberg%20September%205%202026%20Fed%20rate%20cut%20signals%20market%20reaction 200
+2026-09-06 01:52:18,860 [INFO] response: https://search.yahoo.com/search;_ylt=34X8MV2Zq4_BHFH1-AzUW3Iq;_ylu=ob8M_8Mj3ngbsqWgInG5eBsdimicFtOE6ZNPayaIW0K8UJE?p=Bloomberg+September+5+2026+Fed+rate+cut+signals+market+reaction&btf=d 200
+2026-09-06 01:52:19,733 [INFO] response: https://www.google.com/wml/search?q=Bloomberg+September+5+2026+Fed+rate+cut+signals+market+reaction&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:52:20,167 [INFO] response: https://grokipedia.com/api/typeahead?query=CNBC+September+5+2026+crypto+volatility+geopolitical+uncertainty&limit=1 200
+2026-09-06 01:52:20,196 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=CNBC%20September%205%202026%20crypto%20volatility%20geopolitical%20uncertainty 200
+2026-09-06 01:52:20,357 [INFO] response: https://search.yahoo.com/search;_ylt=f9pz-xHM9tB9Dv7m-Ee4qDVc;_ylu=u0qL7-gNSJdTcPAGP6fyVfPJRMExZoRAoneZ3l6MH1qIu6o?p=CNBC+September+5+2026+crypto+volatility+geopolitical+uncertainty&btf=d 200
+2026-09-06 01:52:22,343 [INFO] response: https://search.brave.com/search?q=CNBC+September+5+2026+crypto+volatility+geopolitical+uncertainty&source=web&tf=pd 200
+2026-09-06 01:52:22,599 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Financial%20Times%20September%205%202026%20global%20economic%20outlook%20inflation%20concerns 200
+2026-09-06 01:52:22,634 [INFO] response: https://grokipedia.com/api/typeahead?query=Financial+Times+September+5+2026+global+economic+outlook+inflation+concerns&limit=1 200
+2026-09-06 01:52:23,217 [INFO] response: https://search.brave.com/search?q=Financial+Times+September+5+2026+global+economic+outlook+inflation+concerns&source=web&tf=pd 200
+2026-09-06 01:52:23,464 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=ESPN%20September%205%202026%20Manchester%20United%20Liverpool%20result 200
+2026-09-06 01:52:23,479 [INFO] response: https://grokipedia.com/api/typeahead?query=ESPN+September+5+2026+Manchester+United+Liverpool+result&limit=1 200
+2026-09-06 01:52:23,603 [INFO] response: https://www.google.com/wml/search?q=ESPN+September+5+2026+Manchester+United+Liverpool+result&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:52:24,183 [INFO] response: https://search.brave.com/search?q=ESPN+September+5+2026+Manchester+United+Liverpool+result&source=web&tf=pd 429
+2026-09-06 01:52:24,803 [INFO] response: https://www.mojeek.com/search?q=ESPN+September+5+2026+Manchester+United+Liverpool+result 403
+2026-09-06 01:52:24,932 [INFO] response: https://search.yahoo.com/search;_ylt=y0FVhKpJq66-oRVf7HubU779;_ylu=M7DMAj0t5PLlVgj-kX1qDaQfmpu_7jl5ORaDd61rg2Za8P8?p=ESPN+September+5+2026+Manchester+United+Liverpool+result&btf=d 200
+2026-09-06 01:52:26,287 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:52:26,518 [INFO] response: https://grokipedia.com/api/typeahead?query=BBC+Sport+September+5+2026+transfer+news&limit=1 200
+2026-09-06 01:52:26,541 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=BBC%20Sport%20September%205%202026%20transfer%20news 200
+2026-09-06 01:52:26,659 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:52:27,130 [INFO] response: https://www.mojeek.com/search?q=BBC+Sport+September+5+2026+transfer+news 403
+2026-09-06 01:52:27,329 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:52:27,422 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:52:27,562 [INFO] response: https://search.yahoo.com/search;_ylt=7Ut1YlU4ddCPeK-U3fG63Mh3;_ylu=5UK2hgh1qt4Q-TJVsi9sjFsbF0AvsFUWnKKZk2E-eLRPWXs?p=BBC+Sport+September+5+2026+transfer+news&btf=d 200
+2026-09-06 01:52:27,753 [INFO] response: https://search.brave.com/search?q=BBC+Sport+September+5+2026+transfer+news&source=web&tf=pd 429
+2026-09-06 01:52:27,891 [INFO] response: https://www.google.com/wml/search?q=BBC+Sport+September+5+2026+transfer+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:52:28,268 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=UEFA.com%20September%205%202026%20Nations%20League%20result 200
+2026-09-06 01:52:28,305 [INFO] response: https://grokipedia.com/api/typeahead?query=UEFA.com+September+5+2026+Nations+League+result&limit=1 200
+2026-09-06 01:52:28,454 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:52:28,599 [INFO] response: https://www.google.com/wml/search?q=UEFA.com+September+5+2026+Nations+League+result&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:52:29,102 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=TechCrunch%20September%205%202026%20new%20AI%20model%20release 200
+2026-09-06 01:52:29,122 [INFO] response: https://grokipedia.com/api/typeahead?query=TechCrunch+September+5+2026+new+AI+model+release&limit=1 200
+2026-09-06 01:52:29,241 [INFO] response: https://www.google.com/wml/search?q=TechCrunch+September+5+2026+new+AI+model+release&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:52:29,514 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:52:30,018 [INFO] response: https://www.mojeek.com/search?q=TechCrunch+September+5+2026+new+AI+model+release 403
+2026-09-06 01:52:30,180 [INFO] response: https://search.brave.com/search?q=TechCrunch+September+5+2026+new+AI+model+release&source=web&tf=pd 429
+2026-09-06 01:52:30,318 [INFO] response: https://search.yahoo.com/search;_ylt=GAyvNnPc0fwp39p8SETEJTrW;_ylu=n19WWbAASrcYT3T88o6bCwL4ASzJNSIiS2LI4draCmnyCrg?p=TechCrunch+September+5+2026+new+AI+model+release&btf=d 200
+2026-09-06 01:52:31,088 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=The%20Verge%20September%205%202026%20quantum%20computer%20breakthrough 200
+2026-09-06 01:52:31,148 [INFO] response: https://grokipedia.com/api/typeahead?query=The+Verge+September+5+2026+quantum+computer+breakthrough&limit=1 200
+2026-09-06 01:52:31,267 [INFO] response: https://www.google.com/wml/search?q=The+Verge+September+5+2026+quantum+computer+breakthrough&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:52:31,571 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:52:31,749 [INFO] response: https://search.brave.com/search?q=The+Verge+September+5+2026+quantum+computer+breakthrough&source=web&tf=pd 429
+2026-09-06 01:52:32,479 [INFO] response: https://www.mojeek.com/search?q=The+Verge+September+5+2026+quantum+computer+breakthrough 403
+2026-09-06 01:52:32,789 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:52:32,883 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:52:33,053 [INFO] response: https://search.yahoo.com/search;_ylt=G4opby5SOMxaLElTHfja9Dah;_ylu=zHSLwzHBKKpKoGLnJRwYOxIuOSzqT2BRTAwukQyjkJtFffI?p=The+Verge+September+5+2026+quantum+computer+breakthrough&btf=d 200
+2026-09-06 01:52:33,896 [INFO] response: https://grokipedia.com/api/typeahead?query=MIT+Technology+Review+September+5+2026+mRNA+vaccine+breakthrough&limit=1 200
+2026-09-06 01:52:33,929 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=MIT%20Technology%20Review%20September%205%202026%20mRNA%20vaccine%20breakthrough 200
+2026-09-06 01:52:34,050 [INFO] response: https://www.google.com/wml/search?q=MIT+Technology+Review+September+5+2026+mRNA+vaccine+breakthrough&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:52:34,469 [INFO] response: https://grokipedia.com/api/typeahead?query=CNN+Indonesia+5+September+2026+IHSG&limit=1 200
+2026-09-06 01:52:34,490 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=CNN%20Indonesia%205%20September%202026%20IHSG 200
+2026-09-06 01:52:34,626 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:52:34,772 [INFO] response: https://www.google.com/wml/search?q=CNN+Indonesia+5+September+2026+IHSG&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:52:35,111 [INFO] response: https://search.yahoo.com/search;_ylt=jIIHejqKzrhHRbvOnAhRb7aS;_ylu=Z6IVSy8GTnop4ixEYF2N8X49rj9rYa1iyyxlaJ0tpERATGM?p=CNN+Indonesia+5+September+2026+IHSG&btf=d 200
+2026-09-06 01:52:35,901 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:52:36,006 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:52:36,450 [INFO] response: https://www.mojeek.com/search?q=CNN+Indonesia+5+September+2026+IHSG 403
+2026-09-06 01:52:36,597 [INFO] response: https://search.brave.com/search?q=CNN+Indonesia+5+September+2026+IHSG&source=web&tf=pd 429
+2026-09-06 01:52:36,864 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=CNBC%20Indonesia%205%20September%202026%20kurs%20rupiah%20usd 200
+2026-09-06 01:52:36,895 [INFO] response: https://grokipedia.com/api/typeahead?query=CNBC+Indonesia+5+September+2026+kurs+rupiah+usd&limit=1 200
+2026-09-06 01:52:37,023 [INFO] response: https://www.google.com/wml/search?q=CNBC+Indonesia+5+September+2026+kurs+rupiah+usd&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:52:37,393 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:52:37,502 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:52:37,668 [INFO] response: https://search.brave.com/search?q=CNBC+Indonesia+5+September+2026+kurs+rupiah+usd&source=web&tf=pd 429
+2026-09-06 01:52:38,110 [INFO] response: https://www.mojeek.com/search?q=CNBC+Indonesia+5+September+2026+kurs+rupiah+usd 403
+2026-09-06 01:52:38,309 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:52:38,486 [INFO] response: https://search.yahoo.com/search;_ylt=PAZvLxo1hGQiR_vG6p_d-67S;_ylu=IoLjOhqiE6wycsR7ZGhOYk0D_MRCBu1Rg4MQ31NN29VizMI?p=CNBC+Indonesia+5+September+2026+kurs+rupiah+usd&btf=d 200
+2026-09-06 01:52:39,264 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Bisnis.com%205%20September%202026%20kebijakan%20moneter%20Indonesia 200
+2026-09-06 01:52:39,277 [INFO] response: https://grokipedia.com/api/typeahead?query=Bisnis.com+5+September+2026+kebijakan+moneter+Indonesia&limit=1 200
+2026-09-06 01:52:39,401 [INFO] response: https://www.google.com/wml/search?q=Bisnis.com+5+September+2026+kebijakan+moneter+Indonesia&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:52:39,673 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:52:39,839 [INFO] response: https://search.brave.com/search?q=Bisnis.com+5+September+2026+kebijakan+moneter+Indonesia&source=web&tf=pd 429
+2026-09-06 01:52:40,032 [INFO] response: https://search.yahoo.com/search;_ylt=UuQvu6h9joB-nNH4DS7PUYWq;_ylu=1g5050zhRO3FxMuLisseQowR6cfwxw0VmDLsEsNHV-B1yDQ?p=Bisnis.com+5+September+2026+kebijakan+moneter+Indonesia&btf=d 200
+2026-09-06 01:52:40,757 [INFO] response: https://grokipedia.com/api/typeahead?query=Detik.com+5+September+2026+Timnas+Indonesia&limit=1 200
+2026-09-06 01:52:40,775 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Detik.com%205%20September%202026%20Timnas%20Indonesia 200
+2026-09-06 01:52:40,902 [INFO] response: https://www.google.com/wml/search?q=Detik.com+5+September+2026+Timnas+Indonesia&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:52:41,252 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:52:41,851 [INFO] response: https://www.mojeek.com/search?q=Detik.com+5+September+2026+Timnas+Indonesia 403
+2026-09-06 01:52:42,003 [INFO] response: https://search.brave.com/search?q=Detik.com+5+September+2026+Timnas+Indonesia&source=web&tf=pd 429
+2026-09-06 01:52:42,365 [INFO] response: https://search.yahoo.com/search;_ylt=G_oMjk_7uL-yuDozmfSoF5oY;_ylu=CQVs0p41rm1_7hRySk1q7T7uPK9CqmBcB1gYr79A4l3phOU?p=Detik.com+5+September+2026+Timnas+Indonesia&btf=d 200
+2026-09-06 01:52:42,988 [INFO] response: https://grokipedia.com/api/typeahead?query=Kompas.com+5+September+2026+Liga+1+hasil&limit=1 200
+2026-09-06 01:52:43,082 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Kompas.com%205%20September%202026%20Liga%201%20hasil 200
+2026-09-06 01:52:43,250 [INFO] response: https://search.brave.com/search?q=Kompas.com+5+September+2026+Liga+1+hasil&source=web&tf=pd 429
+2026-09-06 01:52:43,383 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:52:43,579 [INFO] response: https://search.yahoo.com/search;_ylt=ynuC9yyOQ1d9eTFQUTskBQns;_ylu=NGBuy-0zDJA7P0U5ISAN83BBRkWPIU7XftiOAB3_ObeLbgY?p=Kompas.com+5+September+2026+Liga+1+hasil&btf=d 200
+2026-09-06 01:52:43,712 [INFO] response: https://www.google.com/wml/search?q=Kompas.com+5+September+2026+Liga+1+hasil&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:52:44,344 [INFO] response: https://www.mojeek.com/search?q=Kompas.com+5+September+2026+Liga+1+hasil 403
+2026-09-06 01:52:44,367 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:52:44,519 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:52:44,519 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:52:44,519 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:52:44,713 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:52:44,714 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 18567, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:52:44,714 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:52:45,607 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:53:02,338 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:53:02,536 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+September+5+2026+Reuters&limit=1 200
+2026-09-06 01:53:02,574 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20September%205%202026%20Reuters 200
+2026-09-06 01:53:02,697 [INFO] response: https://www.google.com/wml/search?q=geopolitics+global+economy+September+5+2026+Reuters&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:53:03,084 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitics+economy+September+5+2026+Bloomberg&limit=1 200
+2026-09-06 01:53:03,150 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitics%20economy%20September%205%202026%20Bloomberg 200
+2026-09-06 01:53:03,289 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:53:03,417 [INFO] response: https://search.yahoo.com/search;_ylt=LWieNrNMsrMD9hhdrIH2yM11;_ylu=rlcmePWZhN7MUF8_Fp4V7voQ_LbDHOpgVaPlW-VnbXbHZ-0?p=global+geopolitics+economy+September+5+2026+Bloomberg&btf=d 200
+2026-09-06 01:53:04,378 [INFO] response: https://search.brave.com/search?q=global+geopolitics+economy+September+5+2026+Bloomberg&source=web&tf=pd 429
+2026-09-06 01:53:04,527 [INFO] response: https://www.google.com/wml/search?q=global+geopolitics+economy+September+5+2026+Bloomberg&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:53:04,922 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitics+economy+September+5+2026+CNBC&limit=1 200
+2026-09-06 01:53:05,010 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitics%20economy%20September%205%202026%20CNBC 200
+2026-09-06 01:53:05,422 [INFO] response: https://www.mojeek.com/search?q=global+geopolitics+economy+September+5+2026+CNBC 403
+2026-09-06 01:53:05,585 [INFO] response: https://search.yahoo.com/search;_ylt=p-Rjwt6Occ2E-h2lO0X-GAiW;_ylu=04pijCvk6cPcvwlApNJRn9GqZ9fzbYvEyHFTI88kLuWQwwk?p=global+geopolitics+economy+September+5+2026+CNBC&btf=d 200
+2026-09-06 01:53:06,239 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:53:06,385 [INFO] response: https://www.google.com/wml/search?q=global+geopolitics+economy+September+5+2026+CNBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:53:06,812 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitics+economy+September+5+2026+Financial+Times&limit=1 200
+2026-09-06 01:53:06,876 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitics%20economy%20September%205%202026%20Financial%20Times 200
+2026-09-06 01:53:07,011 [INFO] response: https://www.google.com/wml/search?q=global+geopolitics+economy+September+5+2026+Financial+Times&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:53:07,334 [INFO] response: https://search.brave.com/search?q=global+geopolitics+economy+September+5+2026+Financial+Times&source=web&tf=pd 429
+2026-09-06 01:53:07,786 [INFO] response: https://www.mojeek.com/search?q=global+geopolitics+economy+September+5+2026+Financial+Times 403
+2026-09-06 01:53:07,943 [INFO] response: https://search.yahoo.com/search;_ylt=AUWkp-JiAU3P67QID-N7Ti5w;_ylu=eHlS1LlLA14AJme6ZlPHjcCsxu8Htf_agHiQGaiyCbgkB8M?p=global+geopolitics+economy+September+5+2026+Financial+Times&btf=d 200
+2026-09-06 01:53:08,757 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:53:08,787 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:53:08,984 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:53:08,985 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:53:08,985 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:53:09,199 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:53:09,200 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 18676, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:53:09,200 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:53:11,792 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:53:15,523 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:53:15,782 [INFO] response: https://grokipedia.com/api/typeahead?query=US+China+AI+safety+talks+September+5+2026&limit=1 200
+2026-09-06 01:53:15,812 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=US%20China%20AI%20safety%20talks%20September%205%202026 200
+2026-09-06 01:53:16,014 [INFO] response: https://search.brave.com/search?q=US+China+AI+safety+talks+September+5+2026&source=web&tf=pd 429
+2026-09-06 01:53:16,224 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:53:16,324 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:53:16,445 [INFO] response: https://www.google.com/wml/search?q=US+China+AI+safety+talks+September+5+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:53:16,744 [INFO] response: https://search.yahoo.com/search;_ylt=uqkpOmyQEG9VLIEM6pZDmm-H;_ylu=HjzU4m0A8FeuobHzkQLv_54pyxhG6Ao-PXwyGKrhRmVXD_0?p=US+China+AI+safety+talks+September+5+2026&btf=d 200
+2026-09-06 01:53:17,522 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:53:18,002 [INFO] response: https://www.mojeek.com/search?q=US+China+AI+safety+talks+September+5+2026 403
+2026-09-06 01:53:18,248 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=US%20Iran%20oil%20tankers%20attack%20September%205%202026 200
+2026-09-06 01:53:18,257 [INFO] response: https://grokipedia.com/api/typeahead?query=US+Iran+oil+tankers+attack+September+5+2026&limit=1 200
+2026-09-06 01:53:18,387 [INFO] response: https://www.google.com/wml/search?q=US+Iran+oil+tankers+attack+September+5+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:53:18,804 [INFO] response: https://grokipedia.com/api/typeahead?query=BBC+Middle+East+crisis+September+5+2026&limit=1 200
+2026-09-06 01:53:18,896 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=BBC%20Middle%20East%20crisis%20September%205%202026 200
+2026-09-06 01:53:19,106 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:53:19,197 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:53:19,378 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:53:19,547 [INFO] response: https://search.brave.com/search?q=BBC+Middle+East+crisis+September+5+2026&source=web&tf=pd 429
+2026-09-06 01:53:19,708 [INFO] response: https://search.yahoo.com/search;_ylt=JUHaDS_6gs15cqkzgl2C67L9;_ylu=VrniOIIpXkB09zSYy9NxhMRAnNpXTA5q1RU6tpiuFikcFT8?p=BBC+Middle+East+crisis+September+5+2026&btf=d 200
+2026-09-06 01:53:20,844 [INFO] response: https://www.mojeek.com/search?q=BBC+Middle+East+crisis+September+5+2026 403
+2026-09-06 01:53:20,963 [INFO] response: https://www.google.com/wml/search?q=BBC+Middle+East+crisis+September+5+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:53:21,380 [INFO] response: https://grokipedia.com/api/typeahead?query=Al+Jazeera+Middle+East+September+5+2026&limit=1 200
+2026-09-06 01:53:21,409 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Al%20Jazeera%20Middle%20East%20September%205%202026 200
+2026-09-06 01:53:21,581 [INFO] response: https://search.brave.com/search?q=Al+Jazeera+Middle+East+September+5+2026&source=web&tf=pd 429
+2026-09-06 01:53:21,870 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:53:22,194 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=e68365f356e78e6ef2182c0b5c8a6d16&bds_t=1788659601Te7dc21481de9ee031309c3f7369644b617fa41974d271b0edb3c7b7aa99ca66c&bds_s=63b614a1290245158703ad31115ea28b&sc=&abe=0&abd=0&lui=english&with_date=d&segment=organic&qsr=en_US&t=device&abp=1&language=english&qadf=moderate&query=Al+Jazeera+Middle+East+September+5+2026&cat=web&cmd=gen_page 200
+2026-09-06 01:53:22,395 [INFO] response: https://search.yahoo.com/search;_ylt=TOaZyJcjKqCVGm-5wPIxBCmS;_ylu=uErBXqdiWNT0buWsVMs2Lr78TiXUMIG2mu9Aki_EmeBo6a4?p=Al+Jazeera+Middle+East+September+5+2026&btf=d 200
+2026-09-06 01:53:23,400 [INFO] response: https://www.mojeek.com/search?q=Al+Jazeera+Middle+East+September+5+2026 403
+2026-09-06 01:53:23,521 [INFO] response: https://www.google.com/wml/search?q=Al+Jazeera+Middle+East+September+5+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:53:23,739 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:53:23,915 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:53:23,916 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'service': 'generativelanguage.googleapis.com', 'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent'}}]}}]
+2026-09-06 01:53:23,916 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:53:24,131 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:53:24,132 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 21513, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:53:24,132 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:53:25,749 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:53:41,845 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:53:42,346 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:53:42,500 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:53:42,500 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'service': 'generativelanguage.googleapis.com', 'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent'}}]}}]
+2026-09-06 01:53:42,500 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:53:42,757 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:53:42,757 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 24194, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:53:42,757 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:53:43,860 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:53:47,924 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:53:48,429 [INFO] response: https://grokipedia.com/api/typeahead?query=BBC+Middle+East+September+5+2026+Iran+US+strikes+oil+tankers&limit=1 200
+2026-09-06 01:53:48,453 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=BBC%20Middle%20East%20September%205%202026%20Iran%20US%20strikes%20oil%20tankers 200
+2026-09-06 01:53:48,592 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:53:49,123 [INFO] response: https://www.mojeek.com/search?q=BBC+Middle+East+September+5+2026+Iran+US+strikes+oil+tankers 403
+2026-09-06 01:53:49,275 [INFO] response: https://search.yahoo.com/search;_ylt=xOcjQVF-4BMPLdkCmCi2Sfv5;_ylu=dXT1bquptVjOY4uVLfhwUAx0poGUxwwMrCFPnFQ2gdGjXwc?p=BBC+Middle+East+September+5+2026+Iran+US+strikes+oil+tankers&btf=d 200
+2026-09-06 01:53:49,469 [INFO] response: https://search.brave.com/search?q=BBC+Middle+East+September+5+2026+Iran+US+strikes+oil+tankers&source=web&tf=pd 429
+2026-09-06 01:53:49,614 [INFO] response: https://www.google.com/wml/search?q=BBC+Middle+East+September+5+2026+Iran+US+strikes+oil+tankers&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:53:50,104 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=US%20strikes%20Iranian%20oil%20tankers%20September%205%202026%20economic%20impact%20market%20reaction 200
+2026-09-06 01:53:50,120 [INFO] response: https://grokipedia.com/api/typeahead?query=US+strikes+Iranian+oil+tankers+September+5+2026+economic+impact+market+reaction&limit=1 200
+2026-09-06 01:53:50,280 [INFO] response: https://search.yahoo.com/search;_ylt=01TLrpyjOPp9cVbTEaRS574z;_ylu=tRYgYnA8aX3EggPDglU9iQx1NP1UqquJFnc04hDdEpT-hdE?p=US+strikes+Iranian+oil+tankers+September+5+2026+economic+impact+market+reaction&btf=d 200
+2026-09-06 01:53:51,151 [INFO] response: https://search.brave.com/search?q=US+strikes+Iranian+oil+tankers+September+5+2026+economic+impact+market+reaction&source=web&tf=pd 429
+2026-09-06 01:53:51,642 [INFO] response: https://www.mojeek.com/search?q=US+strikes+Iranian+oil+tankers+September+5+2026+economic+impact+market+reaction 403
+2026-09-06 01:53:51,763 [INFO] response: https://www.google.com/wml/search?q=US+strikes+Iranian+oil+tankers+September+5+2026+economic+impact+market+reaction&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:53:52,154 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:53:52,409 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:53:52,409 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:53:52,409 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:53:52,695 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:53:52,696 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 26396, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:53:52,696 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:53:54,880 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:54:02,439 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:54:23,537 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:54:23,727 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:54:23,728 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'service': 'generativelanguage.googleapis.com', 'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent'}}]}}]
+2026-09-06 01:54:23,728 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:54:23,981 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:54:23,982 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 31236, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:54:23,982 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:54:25,139 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:54:34,699 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:54:34,941 [INFO] response: https://grokipedia.com/api/typeahead?query=ESPN+September+5+2026+Manchester+United+Liverpool+result&limit=1 200
+2026-09-06 01:54:35,372 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=ESPN%20September%205%202026%20Manchester%20United%20Liverpool%20result 200
+2026-09-06 01:54:35,575 [INFO] response: https://search.brave.com/search?q=ESPN+September+5+2026+Manchester+United+Liverpool+result&source=web&tf=pd 429
+2026-09-06 01:54:35,873 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:54:35,977 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:54:36,112 [INFO] response: https://www.google.com/wml/search?q=ESPN+September+5+2026+Manchester+United+Liverpool+result&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:54:36,638 [INFO] response: https://search.yahoo.com/search;_ylt=19_bCJ8NQnKT8y7RY9W4SyBQ;_ylu=dBCSMon7OiLqWWhxe35q4Gwa470qBcWehBpBqilcQnLinr8?p=ESPN+September+5+2026+Manchester+United+Liverpool+result&btf=d 200
+2026-09-06 01:54:37,133 [INFO] response: https://www.mojeek.com/search?q=ESPN+September+5+2026+Manchester+United+Liverpool+result 403
+2026-09-06 01:54:37,277 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:54:37,506 [INFO] response: https://grokipedia.com/api/typeahead?query=BBC+Sport+September+5+2026+transfer+news&limit=1 200
+2026-09-06 01:54:37,530 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=BBC%20Sport%20September%205%202026%20transfer%20news 200
+2026-09-06 01:54:37,654 [INFO] response: https://www.google.com/wml/search?q=BBC+Sport+September+5+2026+transfer+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:54:38,440 [INFO] response: https://www.mojeek.com/search?q=BBC+Sport+September+5+2026+transfer+news 403
+2026-09-06 01:54:38,599 [INFO] response: https://search.yahoo.com/search;_ylt=HnwJmGzBnGT-Wrtwv2lZIZsF;_ylu=QS-beFsBN96hlMSD2VBRW2aiT9Al7SQLOxIEy4-idwA8NTA?p=BBC+Sport+September+5+2026+transfer+news&btf=d 200
+2026-09-06 01:54:39,467 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=UEFA%20Nations%20League%20September%205%202026%20result 200
+2026-09-06 01:54:39,497 [INFO] response: https://grokipedia.com/api/typeahead?query=UEFA+Nations+League+September+5+2026+result&limit=1 200
+2026-09-06 01:54:39,941 [INFO] response: https://www.mojeek.com/search?q=UEFA+Nations+League+September+5+2026+result 403
+2026-09-06 01:54:40,297 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:54:40,403 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:54:40,581 [INFO] response: https://search.yahoo.com/search;_ylt=PaTocD8IEYitN9qUS14SMQGN;_ylu=2gcZOtn9yQoTUodOG2ROx1Zurig1_vFgBeybqeU-UN7PQMY?p=UEFA+Nations+League+September+5+2026+result&btf=d 200
+2026-09-06 01:54:41,287 [INFO] response: https://search.brave.com/search?q=UEFA+Nations+League+September+5+2026+result&source=web&tf=pd 429
+2026-09-06 01:54:41,424 [INFO] response: https://www.google.com/wml/search?q=UEFA+Nations+League+September+5+2026+result&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:54:41,764 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:54:41,948 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:54:41,948 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:54:41,949 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:54:42,195 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:54:42,195 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 30923, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:54:42,195 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:54:43,327 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:55:12,076 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:55:12,078 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:55:12,295 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:55:12,296 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:55:12,296 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:55:12,587 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:55:12,587 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 33717, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:55:12,587 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:55:13,490 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:55:20,460 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:55:20,468 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:55:20,632 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:55:20,633 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:55:20,633 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:55:21,053 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:55:21,054 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 35254, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:55:21,054 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:55:23,056 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:55:29,764 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:55:30,009 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20conflict%20Iran%20US%20oil%20price%20September%205%202026%20Reuters%20Bloomberg 200
+2026-09-06 01:55:30,142 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+conflict+Iran+US+oil+price+September+5+2026+Reuters+Bloomberg&limit=1 200
+2026-09-06 01:55:30,319 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:55:30,592 [INFO] response: https://search.yahoo.com/search;_ylt=dx6X4AQvWFZsIXWCN6Lm5spj;_ylu=GM0Jdiq0OUcUbAcPYS83rG5Lbp4z3MxqTeTYBF4c0Dfrv0k?p=Middle+East+conflict+Iran+US+oil+price+September+5+2026+Reuters+Bloomberg&btf=d 200
+2026-09-06 01:55:31,545 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:55:31,632 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:55:32,249 [INFO] response: https://www.mojeek.com/search?q=Middle+East+conflict+Iran+US+oil+price+September+5+2026+Reuters+Bloomberg 403
+2026-09-06 01:55:32,403 [INFO] response: https://search.brave.com/search?q=Middle+East+conflict+Iran+US+oil+price+September+5+2026+Reuters+Bloomberg&source=web&tf=pd 429
+2026-09-06 01:55:32,563 [INFO] response: https://www.google.com/wml/search?q=Middle+East+conflict+Iran+US+oil+price+September+5+2026+Reuters+Bloomberg&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:55:33,147 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20stock%20market%20crypto%20market%20reaction%20geopolitical%20tensions%20September%205%202026 200
+2026-09-06 01:55:33,320 [INFO] response: https://grokipedia.com/api/typeahead?query=global+stock+market+crypto+market+reaction+geopolitical+tensions+September+5+2026&limit=1 200
+2026-09-06 01:55:33,491 [INFO] response: https://search.yahoo.com/search;_ylt=OVtqjLLaB22rp67m8SAXi9mh;_ylu=UhP0YVasaLwgbcz-VFlFj8qTRqcb5gLGpOFM_q2ivPTxXkg?p=global+stock+market+crypto+market+reaction+geopolitical+tensions+September+5+2026&btf=d 200
+2026-09-06 01:55:34,593 [INFO] response: https://www.mojeek.com/search?q=global+stock+market+crypto+market+reaction+geopolitical+tensions+September+5+2026 403
+2026-09-06 01:55:34,716 [INFO] response: https://www.google.com/wml/search?q=global+stock+market+crypto+market+reaction+geopolitical+tensions+September+5+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:55:35,195 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20results%20September%205%202026%20ESPN%20BBC%20Sport 200
+2026-09-06 01:55:35,213 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+results+September+5+2026+ESPN+BBC+Sport&limit=1 200
+2026-09-06 01:55:35,381 [INFO] response: https://search.brave.com/search?q=Premier+League+results+September+5+2026+ESPN+BBC+Sport&source=web&tf=pd 429
+2026-09-06 01:55:35,516 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:55:35,968 [INFO] response: https://www.mojeek.com/search?q=Premier+League+results+September+5+2026+ESPN+BBC+Sport 403
+2026-09-06 01:55:36,131 [INFO] response: https://search.yahoo.com/search;_ylt=5KoyqwDjyCJubwZCya3fDpQ4;_ylu=7hKihU8BmetORkyYT3tNplWUopfPwetV2lTgkGLFpSG7IDg?p=Premier+League+results+September+5+2026+ESPN+BBC+Sport&btf=d 200
+2026-09-06 01:55:36,974 [INFO] response: https://www.google.com/wml/search?q=Premier+League+results+September+5+2026+ESPN+BBC+Sport&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:55:37,520 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=transfer%20news%20football%20September%205%202026%20BBC%20Sky%20Sports 200
+2026-09-06 01:55:37,580 [INFO] response: https://grokipedia.com/api/typeahead?query=transfer+news+football+September+5+2026+BBC+Sky+Sports&limit=1 200
+2026-09-06 01:55:37,849 [INFO] response: https://search.brave.com/search?q=transfer+news+football+September+5+2026+BBC+Sky+Sports&source=web&tf=pd 429
+2026-09-06 01:55:38,028 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:55:38,221 [INFO] response: https://search.yahoo.com/search;_ylt=oSgR4nvEJZC3dMlwPUK3Cp9B;_ylu=qWr7OB24f82H2jUdhzP2fWwzfuJ9OBKwJat2Cq9Aqd4WUTE?p=transfer+news+football+September+5+2026+BBC+Sky+Sports&btf=d 200
+2026-09-06 01:55:39,107 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:55:39,201 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:55:39,621 [INFO] response: https://www.mojeek.com/search?q=transfer+news+football+September+5+2026+BBC+Sky+Sports 403
+2026-09-06 01:55:39,749 [INFO] response: https://www.google.com/wml/search?q=transfer+news+football+September+5+2026+BBC+Sky+Sports&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:55:40,205 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20technology%20news%20September%205%202026%20TechCrunch%20Verge%20Wired 200
+2026-09-06 01:55:40,210 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+technology+news+September+5+2026+TechCrunch+Verge+Wired&limit=1 200
+2026-09-06 01:55:40,420 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:55:40,506 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:55:40,627 [INFO] response: https://www.google.com/wml/search?q=AI+technology+news+September+5+2026+TechCrunch+Verge+Wired&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:55:41,065 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=quantum%20computing%20breakthrough%20September%202026 200
+2026-09-06 01:55:41,085 [INFO] response: https://grokipedia.com/api/typeahead?query=quantum+computing+breakthrough+September+2026&limit=1 200
+2026-09-06 01:55:41,234 [INFO] response: https://search.brave.com/search?q=quantum+computing+breakthrough+September+2026&source=web&tf=pd 429
+2026-09-06 01:55:41,412 [INFO] response: https://search.yahoo.com/search;_ylt=RTNZ_AhcNBsPBKbja39ovaXv;_ylu=HLrHaSVpeCXttr5Vn1PMg_iLQKHPcSZDhG_1aaC_t1KNlA4?p=quantum+computing+breakthrough+September+2026&btf=d 200
+2026-09-06 01:55:42,136 [INFO] response: https://www.google.com/wml/search?q=quantum+computing+breakthrough+September+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:55:42,710 [INFO] response: https://www.mojeek.com/search?q=quantum+computing+breakthrough+September+2026 403
+2026-09-06 01:55:43,030 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:55:43,118 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:55:43,341 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20Indonesia%205%20September%202026%20CNBC%20Bisnis 200
+2026-09-06 01:55:43,482 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+Indonesia+5+September+2026+CNBC+Bisnis&limit=1 200
+2026-09-06 01:55:43,610 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:55:43,791 [INFO] response: https://search.yahoo.com/search;_ylt=pXXeKQB4xX_0Et_y0WaogyK1;_ylu=Lkwe054KIZ_fyoMS45Q5EcjrDWSA2HoWtVZhj4dtKmxGu-4?p=IHSG+Indonesia+5+September+2026+CNBC+Bisnis&btf=d 200
+2026-09-06 01:55:44,508 [INFO] response: https://search.brave.com/search?q=IHSG+Indonesia+5+September+2026+CNBC+Bisnis&source=web&tf=pd 429
+2026-09-06 01:55:44,872 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:55:44,975 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:55:45,426 [INFO] response: https://www.mojeek.com/search?q=IHSG+Indonesia+5+September+2026+CNBC+Bisnis 403
+2026-09-06 01:55:45,551 [INFO] response: https://www.google.com/wml/search?q=IHSG+Indonesia+5+September+2026+CNBC+Bisnis&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:55:46,006 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+ASEAN+Cup+2026+September+2026+Kompas+Detik&limit=1 200
+2026-09-06 01:55:46,053 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20ASEAN%20Cup%202026%20September%202026%20Kompas%20Detik 200
+2026-09-06 01:55:46,183 [INFO] response: https://www.google.com/wml/search?q=Timnas+Indonesia+ASEAN+Cup+2026+September+2026+Kompas+Detik&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:55:46,841 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+ASEAN+Cup+2026+September+2026+Kompas+Detik 403
+2026-09-06 01:55:46,992 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+ASEAN+Cup+2026+September+2026+Kompas+Detik&source=web&tf=pd 429
+2026-09-06 01:55:47,132 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:55:47,290 [INFO] response: https://search.yahoo.com/search;_ylt=S77o9E0Uv3DHh4-H-BpSpoOa;_ylu=hBOMK-ksHmRdSaqsMzT0jZ_yfBNlvoy9fZpDvrtxgfppRus?p=Timnas+Indonesia+ASEAN+Cup+2026+September+2026+Kompas+Detik&btf=d 200
+2026-09-06 01:55:48,107 [INFO] response: https://grokipedia.com/api/typeahead?query=kurs+rupiah+USD+5+September+2026+Indonesia&limit=1 200
+2026-09-06 01:55:48,139 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=kurs%20rupiah%20USD%205%20September%202026%20Indonesia 200
+2026-09-06 01:55:48,258 [INFO] response: https://www.google.com/wml/search?q=kurs+rupiah+USD+5+September+2026+Indonesia&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:55:48,545 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:55:49,007 [INFO] response: https://www.mojeek.com/search?q=kurs+rupiah+USD+5+September+2026+Indonesia 403
+2026-09-06 01:55:49,160 [INFO] response: https://search.yahoo.com/search;_ylt=jZF2-xiQIGgX5O6d9VaUae3O;_ylu=7aBOXWTR7xrfA0QnA8NXbWZ8idPDGnQr-jgohfmDxNsVk8M?p=kurs+rupiah+USD+5+September+2026+Indonesia&btf=d 200
+2026-09-06 01:55:49,813 [INFO] response: https://search.brave.com/search?q=kurs+rupiah+USD+5+September+2026+Indonesia&source=web&tf=pd 429
+2026-09-06 01:55:50,060 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:55:50,172 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:55:50,177 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:55:50,390 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:55:50,391 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:55:50,391 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:55:50,656 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:55:50,656 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 38485, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:55:50,657 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:55:52,774 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:56:03,919 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:56:06,412 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=OpenAI%20next%20generation%20AI%20model%20September%202026 200
+2026-09-06 01:56:06,553 [INFO] response: https://grokipedia.com/api/typeahead?query=OpenAI+next+generation+AI+model+September+2026&limit=1 200
+2026-09-06 01:56:06,706 [INFO] response: https://search.brave.com/search?q=OpenAI+next+generation+AI+model+September+2026&source=web&tf=pd 429
+2026-09-06 01:56:06,865 [INFO] response: https://search.yahoo.com/search;_ylt=EIni48MRUjHzcHdY6YtTjDC6;_ylu=UJmrQYoIZ5jJc9ytRqAyJbgjU5qMy2eJSVGnfH9c1519hv0?p=OpenAI+next+generation+AI+model+September+2026&btf=d 200
+2026-09-06 01:56:07,766 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:56:07,854 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:56:07,975 [INFO] response: https://www.google.com/wml/search?q=OpenAI+next+generation+AI+model+September+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:56:08,231 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:56:08,705 [INFO] response: https://www.mojeek.com/search?q=OpenAI+next+generation+AI+model+September+2026 403
+2026-09-06 01:56:09,577 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:56:09,802 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:56:09,803 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'service': 'generativelanguage.googleapis.com', 'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent'}}]}}]
+2026-09-06 01:56:09,803 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:56:10,133 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:56:10,133 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 38934, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:56:10,134 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:56:20,288 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:57:07,265 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:57:07,494 [INFO] response: https://grokipedia.com/api/typeahead?query=oil+price+Brent+crude+September+5+2026+Iran+US+conflict+Reuters&limit=1 200
+2026-09-06 01:57:07,499 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=oil%20price%20Brent%20crude%20September%205%202026%20Iran%20US%20conflict%20Reuters 200
+2026-09-06 01:57:07,706 [INFO] response: https://search.brave.com/search?q=oil+price+Brent+crude+September+5+2026+Iran+US+conflict+Reuters&source=web&tf=pd 429
+2026-09-06 01:57:07,936 [INFO] response: https://search.yahoo.com/search;_ylt=RJmVOzbwiNqyjRk7HqqFXCCv;_ylu=F-f_DTJkksN0bzXxkQEd_8WbELmn3uhqMKCS23StUkqhqCQ?p=oil+price+Brent+crude+September+5+2026+Iran+US+conflict+Reuters&btf=d 200
+2026-09-06 01:57:08,804 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:57:08,917 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:57:09,039 [INFO] response: https://www.google.com/wml/search?q=oil+price+Brent+crude+September+5+2026+Iran+US+conflict+Reuters&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:57:09,415 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:57:09,883 [INFO] response: https://www.mojeek.com/search?q=oil+price+Brent+crude+September+5+2026+Iran+US+conflict+Reuters 403
+2026-09-06 01:57:09,977 [INFO] Error in engine grokipedia: DDGSException("ConnectError: ConnectError('error sending request for url (https://grokipedia.com/api/typeahead?query=Bitcoin+crypto+market+reaction+Iran+US+conflict+September+5+2026&limit=1) > Network is unreachable (os error 101)')")
+2026-09-06 01:57:10,106 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Bitcoin%20crypto%20market%20reaction%20Iran%20US%20conflict%20September%205%202026 200
+2026-09-06 01:57:10,398 [INFO] response: https://www.mojeek.com/search?q=Bitcoin+crypto+market+reaction+Iran+US+conflict+September+5+2026 403
+2026-09-06 01:57:10,535 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:57:10,760 [INFO] response: https://search.brave.com/search?q=Bitcoin+crypto+market+reaction+Iran+US+conflict+September+5+2026&source=web&tf=pd 429
+2026-09-06 01:57:11,073 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:57:11,159 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:57:11,308 [INFO] response: https://search.yahoo.com/search;_ylt=14UpE6Zq9AM500oGx10C9L01;_ylu=sGDJ-3qGk83IOtP0hvnStyILT4rG4QbPJ2eXVxLlymvBels?p=Bitcoin+crypto+market+reaction+Iran+US+conflict+September+5+2026&btf=d 200
+2026-09-06 01:57:12,009 [INFO] response: https://www.google.com/wml/search?q=Bitcoin+crypto+market+reaction+Iran+US+conflict+September+5+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:57:12,411 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20results%205%20September%202026%20Manchester%20City%20Coventry 200
+2026-09-06 01:57:12,426 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+results+5+September+2026+Manchester+City+Coventry&limit=1 200
+2026-09-06 01:57:12,702 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:57:12,802 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:57:12,922 [INFO] response: https://www.google.com/wml/search?q=Premier+League+results+5+September+2026+Manchester+City+Coventry&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:57:13,438 [INFO] response: https://search.yahoo.com/search;_ylt=Ag-r9FOZII2_fETcxt5_mOz-;_ylu=7HfcspbEW6HWCMhPsk5YrNAnZnMqLNS4jox1rHbRFMKTakg?p=Premier+League+results+5+September+2026+Manchester+City+Coventry&btf=d 200
+2026-09-06 01:57:14,392 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20results%20September%205%202026%20Serie%20A%20La%20Liga%20Bundesliga 200
+2026-09-06 01:57:14,437 [INFO] response: https://grokipedia.com/api/typeahead?query=football+results+September+5+2026+Serie+A+La+Liga+Bundesliga&limit=1 200
+2026-09-06 01:57:14,710 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:57:14,916 [INFO] response: https://search.yahoo.com/search;_ylt=dTPft2Zbn07Q7rzNHbsYxCDz;_ylu=NvNxoNh_nu5DtryQ_FVvEBGugoHoEJSRLr7qj-cv1ZvUWeo?p=football+results+September+5+2026+Serie+A+La+Liga+Bundesliga&btf=d 200
+2026-09-06 01:57:15,741 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:57:15,846 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:57:16,003 [INFO] response: https://search.brave.com/search?q=football+results+September+5+2026+Serie+A+La+Liga+Bundesliga&source=web&tf=pd 429
+2026-09-06 01:57:16,141 [INFO] response: https://www.google.com/wml/search?q=football+results+September+5+2026+Serie+A+La+Liga+Bundesliga&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:57:16,519 [INFO] response: https://grokipedia.com/api/typeahead?query=TechCrunch+September+5+2026+AI+artificial+intelligence&limit=1 200
+2026-09-06 01:57:16,589 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=TechCrunch%20September%205%202026%20AI%20artificial%20intelligence 200
+2026-09-06 01:57:16,727 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:57:16,903 [INFO] response: https://search.yahoo.com/search;_ylt=VPy-AH-mcz49wTnXvVO6UNTc;_ylu=1xOqETTRb16RVeaXYcfIosJKgic4LYOaz2Pt6s2BIZPU_Tc?p=TechCrunch+September+5+2026+AI+artificial+intelligence&btf=d 200
+2026-09-06 01:57:17,730 [INFO] response: https://www.google.com/wml/search?q=TechCrunch+September+5+2026+AI+artificial+intelligence&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:57:18,234 [INFO] response: https://grokipedia.com/api/typeahead?query=The+Verge+September+5+2026+technology+AI&limit=1 200
+2026-09-06 01:57:18,237 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=The%20Verge%20September%205%202026%20technology%20AI 200
+2026-09-06 01:57:18,374 [INFO] response: https://search.yahoo.com/search;_ylt=fBRD1_m0SbC62RAgKPK9sktK;_ylu=js2GIR3fRRoj3ClQ_DZgfMMxOy_c9RHQWbjEI8Sklgg_65I?p=The+Verge+September+5+2026+technology+AI&btf=d 200
+2026-09-06 01:57:19,244 [INFO] response: https://search.brave.com/search?q=The+Verge+September+5+2026+technology+AI&source=web&tf=pd 429
+2026-09-06 01:57:19,388 [INFO] response: https://www.google.com/wml/search?q=The+Verge+September+5+2026+technology+AI&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:57:19,813 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=quantum%20computer%20breakthrough%20September%206%202026%20Japan%20neutral%20atom 200
+2026-09-06 01:57:19,835 [INFO] response: https://grokipedia.com/api/typeahead?query=quantum+computer+breakthrough+September+6+2026+Japan+neutral+atom&limit=1 200
+2026-09-06 01:57:20,011 [INFO] response: https://search.yahoo.com/search;_ylt=7ERTkhI5o-HFU6xHI5GqOY3M;_ylu=I-fbeNrnvsP6KBJ1XDVGB4Tg91S8g1G9cdS75D_6pubjhJo?p=quantum+computer+breakthrough+September+6+2026+Japan+neutral+atom&btf=d 200
+2026-09-06 01:57:20,904 [INFO] response: https://www.google.com/wml/search?q=quantum+computer+breakthrough+September+6+2026+Japan+neutral+atom&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:57:21,291 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+level+6636+5+September+2026+detail+CNBC+Indonesia&limit=1 200
+2026-09-06 01:57:21,361 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20level%206636%205%20September%202026%20detail%20CNBC%20Indonesia 200
+2026-09-06 01:57:21,810 [INFO] response: https://www.mojeek.com/search?q=IHSG+level+6636+5+September+2026+detail+CNBC+Indonesia 403
+2026-09-06 01:57:22,002 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:57:22,102 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:57:22,256 [INFO] response: https://search.brave.com/search?q=IHSG+level+6636+5+September+2026+detail+CNBC+Indonesia&source=web&tf=pd 429
+2026-09-06 01:57:22,470 [INFO] response: https://search.yahoo.com/search;_ylt=1Xwt5674o0mcrq09nNe57GEt;_ylu=GCHspO_fg-VFzHSCGfzGrIXRhArRBESZYQLWl8MKsZd5JNk?p=IHSG+level+6636+5+September+2026+detail+CNBC+Indonesia&btf=d 200
+2026-09-06 01:57:23,196 [INFO] response: https://www.google.com/wml/search?q=IHSG+level+6636+5+September+2026+detail+CNBC+Indonesia&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:57:23,613 [INFO] response: https://grokipedia.com/api/typeahead?query=kurs+rupiah+dollar+5+September+2026+Rp17642&limit=1 200
+2026-09-06 01:57:23,619 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=kurs%20rupiah%20dollar%205%20September%202026%20Rp17642 200
+2026-09-06 01:57:23,812 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:57:23,908 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:57:24,222 [INFO] response: https://search.brave.com/search?q=kurs+rupiah+dollar+5+September+2026+Rp17642&source=web&tf=pd 429
+2026-09-06 01:57:24,682 [INFO] response: https://www.mojeek.com/search?q=kurs+rupiah+dollar+5+September+2026+Rp17642 403
+2026-09-06 01:57:24,803 [INFO] response: https://www.google.com/wml/search?q=kurs+rupiah+dollar+5+September+2026+Rp17642&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:57:25,167 [INFO] response: https://search.yahoo.com/search;_ylt=hiGUjqlp8yQTD12KvtcxaCpC;_ylu=WID-Di6t4yiw3yBvK338_tmODOTs-fXhKOJoRCasqEbr7f8?p=kurs+rupiah+dollar+5+September+2026+Rp17642&btf=d 200
+2026-09-06 01:57:25,921 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20ASEAN%20Cup%202026%2026%20pemain%20September%202026 200
+2026-09-06 01:57:25,951 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+ASEAN+Cup+2026+26+pemain+September+2026&limit=1 200
+2026-09-06 01:57:26,106 [INFO] response: https://search.yahoo.com/search;_ylt=OiWL6y92nx8xPzQX6bCnCmjI;_ylu=WBLCBtwQgz9VljRtq24H6k5-EuxkUJ8_vSHEeIy_MopovII?p=Timnas+Indonesia+ASEAN+Cup+2026+26+pemain+September+2026&btf=d 200
+2026-09-06 01:57:27,075 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+ASEAN+Cup+2026+26+pemain+September+2026 403
+2026-09-06 01:57:27,220 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:57:27,467 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:57:27,558 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:57:27,683 [INFO] response: https://www.google.com/wml/search?q=Timnas+Indonesia+ASEAN+Cup+2026+26+pemain+September+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:57:28,124 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+ASEAN+Cup+2026+26+pemain+September+2026&source=web&tf=pd 429
+2026-09-06 01:57:28,378 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Bank%20Indonesia%20BI%20Rate%20September%202026%205.75%25 200
+2026-09-06 01:57:28,380 [INFO] response: https://grokipedia.com/api/typeahead?query=Bank+Indonesia+BI+Rate+September+2026+5.75%25&limit=1 200
+2026-09-06 01:57:28,612 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:57:28,786 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:57:28,910 [INFO] response: https://www.google.com/wml/search?q=Bank+Indonesia+BI+Rate+September+2026+5.75%25&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:57:29,641 [INFO] response: https://www.mojeek.com/search?q=Bank+Indonesia+BI+Rate+September+2026+5.75%25 403
+2026-09-06 01:57:29,811 [INFO] response: https://search.yahoo.com/search;_ylt=PDhV5kvggUSzSdn68ymJBZJZ;_ylu=JG-DA8C-jdzZ9cg0VUOG6D-kezr6H16lQqIx5PCwx8z1Gvc?p=Bank+Indonesia+BI+Rate+September+2026+5.75%25&btf=d 200
+2026-09-06 01:57:30,559 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:57:30,734 [INFO] response: https://search.brave.com/search?q=Bank+Indonesia+BI+Rate+September+2026+5.75%25&source=web&tf=pd 429
+2026-09-06 01:57:30,762 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:57:30,990 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:57:30,991 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:57:30,991 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:57:31,415 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:57:31,416 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 44083, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:57:31,416 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:57:34,041 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:57:55,082 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:57:55,645 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Brent%20crude%20oil%20price%20September%205%202026%20Iran%20US%20conflict%20Trading%20Economics 200
+2026-09-06 01:57:55,796 [INFO] response: https://grokipedia.com/api/typeahead?query=Brent+crude+oil+price+September+5+2026+Iran+US+conflict+Trading+Economics&limit=1 200
+2026-09-06 01:57:56,205 [INFO] response: https://www.mojeek.com/search?q=Brent+crude+oil+price+September+5+2026+Iran+US+conflict+Trading+Economics 403
+2026-09-06 01:57:56,338 [INFO] response: https://www.google.com/wml/search?q=Brent+crude+oil+price+September+5+2026+Iran+US+conflict+Trading+Economics&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:58:04,056 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:58:04,279 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:58:04,280 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:58:04,280 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:58:04,658 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:58:04,658 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 49253, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:58:04,658 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:58:07,534 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 01:58:22,904 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 01:58:23,346 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20US500%20S%26P%20500%20September%205%202026%20Trading%20Economics 200
+2026-09-06 01:58:23,364 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+US500+S%26P+500+September+5+2026+Trading+Economics&limit=1 200
+2026-09-06 01:58:23,559 [INFO] response: https://search.brave.com/search?q=stock+market+US500+S%26P+500+September+5+2026+Trading+Economics&source=web&tf=pd 429
+2026-09-06 01:58:23,823 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:58:23,928 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:58:24,157 [INFO] Error in engine google: DDGSException("ConnectError: ConnectError('error sending request for url (https://www.google.com/wml/search?q=stock+market+US500+S%26P+500+September+5+2026+Trading+Economics&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad) > Network is unreachable (os error 101)')")
+2026-09-06 01:58:24,588 [INFO] response: https://www.mojeek.com/search?q=stock+market+US500+S%26P+500+September+5+2026+Trading+Economics 403
+2026-09-06 01:58:24,756 [INFO] response: https://search.yahoo.com/search;_ylt=mGAjGDGfa4PT9fqJ2a5FPTt7;_ylu=4L_RMInaJKpKgterWTIjfILIfo8OsLPmzFZY7yF0uD-LmOE?p=stock+market+US500+S%26P+500+September+5+2026+Trading+Economics&btf=d 200
+2026-09-06 01:58:30,657 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=OpenAI%20ChatGPT%20GPT-6%20Astra%20September%205%202026%20release 200
+2026-09-06 01:58:30,669 [INFO] response: https://grokipedia.com/api/typeahead?query=OpenAI+ChatGPT+GPT-6+Astra+September+5+2026+release&limit=1 200
+2026-09-06 01:58:30,799 [INFO] response: https://www.google.com/wml/search?q=OpenAI+ChatGPT+GPT-6+Astra+September+5+2026+release&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:58:31,136 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:58:31,215 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:58:31,646 [INFO] response: https://www.mojeek.com/search?q=OpenAI+ChatGPT+GPT-6+Astra+September+5+2026+release 403
+2026-09-06 01:58:31,798 [INFO] response: https://search.yahoo.com/search;_ylt=uP5kvBwmuamArImMdCSzQsvF;_ylu=RLt7sjTNVAG7TiNe2I0ajH39S9k86VnpFe91TGg9HcmZLPg?p=OpenAI+ChatGPT+GPT-6+Astra+September+5+2026+release&btf=d 200
+2026-09-06 01:58:32,556 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:58:32,734 [INFO] response: https://search.brave.com/search?q=OpenAI+ChatGPT+GPT-6+Astra+September+5+2026+release&source=web&tf=pd 429
+2026-09-06 01:58:32,990 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+26+pemain+skuad+ASEAN+Cup+5+September+2026&limit=1 200
+2026-09-06 01:58:32,994 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%2026%20pemain%20skuad%20ASEAN%20Cup%205%20September%202026 200
+2026-09-06 01:58:33,177 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:58:33,286 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:58:33,436 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+26+pemain+skuad+ASEAN+Cup+5+September+2026&source=web&tf=pd 429
+2026-09-06 01:58:33,574 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:58:34,023 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+26+pemain+skuad+ASEAN+Cup+5+September+2026 403
+2026-09-06 01:58:34,144 [INFO] response: https://www.google.com/wml/search?q=Timnas+Indonesia+26+pemain+skuad+ASEAN+Cup+5+September+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:58:34,523 [INFO] response: https://search.yahoo.com/search;_ylt=xKtyv7hkJzKkV8q_jcZZFgJ3;_ylu=B4FJBiYC8plG8uekCcxC4R1pdLxyGqAOV4a5XEOK-8tY_Ds?p=Timnas+Indonesia+26+pemain+skuad+ASEAN+Cup+5+September+2026&btf=d 200
+2026-09-06 01:58:35,278 [INFO] response: https://grokipedia.com/api/typeahead?query=Liga+1+Indonesia+5+September+2026+hasil+pertandingan&limit=1 200
+2026-09-06 01:58:35,367 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Liga%201%20Indonesia%205%20September%202026%20hasil%20pertandingan 200
+2026-09-06 01:58:35,492 [INFO] response: https://www.google.com/wml/search?q=Liga+1+Indonesia+5+September+2026+hasil+pertandingan&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-06 01:58:36,221 [INFO] response: https://search.brave.com/search?q=Liga+1+Indonesia+5+September+2026+hasil+pertandingan&source=web&tf=pd 429
+2026-09-06 01:58:36,805 [INFO] response: https://www.mojeek.com/search?q=Liga+1+Indonesia+5+September+2026+hasil+pertandingan 403
+2026-09-06 01:58:36,936 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-06 01:58:37,341 [INFO] response: https://www.startpage.com/ 200
+2026-09-06 01:58:37,432 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-06 01:58:37,596 [INFO] response: https://search.yahoo.com/search;_ylt=pfK0YRLg44DQ6qESYnqfWcU3;_ylu=7lbubm4FAxpPNDBFYTTCH4kAMtnQqRovZM-CDWJw-BZYx30?p=Liga+1+Indonesia+5+September+2026+hasil+pertandingan&btf=d 200
+2026-09-06 01:58:39,907 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 01:58:40,187 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 01:58:40,188 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 01:58:40,188 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 01:58:40,550 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 01:58:40,551 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 59437, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 01:58:40,551 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 01:58:41,460 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 02:00:22,365 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 02:00:22,392 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 02:00:22,721 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 02:00:22,722 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 02:00:22,722 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 02:00:23,278 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 02:00:23,278 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 66486, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 02:00:23,278 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 02:00:25,716 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 02:01:08,750 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 02:01:08,760 [INFO] Mencoba provider: Gemini 2.5 Flash...
+2026-09-06 02:01:09,101 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-06 02:01:09,102 [WARNING] ⚠️ Gemini 2.5 Flash gagal: Error code: 401 - [{'error': {'code': 401, 'message': 'The bound service account is deleted or disabled. The service account bound to the API key must be active.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCOUNT_STATE_INVALID', 'metadata': {'method': 'google.ai.generativelanguage.v1main.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}]
+2026-09-06 02:01:09,102 [INFO] Mencoba provider: Groq (GPT-OSS 120B)...
+2026-09-06 02:01:09,483 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-09-06 02:01:09,483 [WARNING] ⚠️ Groq (GPT-OSS 120B) gagal: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kpk0f1gtfc3rpezjqcmnqprg` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 70396, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-09-06 02:01:09,483 [INFO] Mencoba provider: OpenRouter (auto-router gratis)...
+2026-09-06 02:01:11,439 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-06 02:01:23,536 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis)
+2026-09-06 02:01:23,537 [INFO] Validasi: 2x visit_webpage sukses (minimum 3).
+2026-09-06 02:01:23,537 [INFO] LAPORAN FINAL:
+2026-09-06 02:01:23,537 [INFO] ⚠️ *Catatan sistem:* AI hanya mengunjungi 2 sumber (kurang dari 3 yang diharapkan). Verifikasi mandiri disarankan.
+
+User Safety: safe
+Response Safety: safe
+2026-09-06 02:01:23,537 [INFO] Mengirim laporan ke Telegram...
+2026-09-06 02:01:24,143 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-09-06 02:01:25,144 [INFO] History disimpan (5 entri).
+2026-09-06 02:01:25,144 [INFO] Selesai — laporan terkirim dan history disimpan.
