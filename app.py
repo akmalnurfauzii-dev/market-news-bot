@@ -23,7 +23,9 @@ ZAI_API_KEY        = os.environ.get("ZAI_API_KEY", "")
 GROQ_API_KEY       = os.environ.get("GROQ_API_KEY", "")
 
 TELEGRAM_MAX_CHARS = 3800
-REPORT_MARKERS = ["LAPORAN MENDALAM", "Geopolitik", "Olahraga"]
+
+# Marker laporan yang WAJIB ada
+REPORT_MARKERS = ["## 📊 LAPORAN MENDALAM", "Geopolitik", "Olahraga", "Teknologi", "Indonesia"]
 MIN_REPORT_LENGTH = 400
 
 logging.basicConfig(
@@ -79,11 +81,34 @@ def ringkasan_history():
     )
 
 def laporan_valid(teks):
+    """
+    Validasi ketat:
+    - minimal panjang
+    - wajib ada judul laporan
+    - minimal 3 bagian topik (Geopolitik, Olahraga, Teknologi, Indonesia)
+    - tidak boleh ada pola output rusak (JSON, tag </code, dll)
+    """
     if not teks or len(teks.strip()) < MIN_REPORT_LENGTH:
         return False, f"Terlalu pendek ({len(teks.strip()) if teks else 0} karakter, minimal {MIN_REPORT_LENGTH})"
-    ditemukan = sum(1 for marker in REPORT_MARKERS if marker.lower() in teks.lower())
-    if ditemukan == 0:
-        return False, "Tidak ada penanda laporan (LAPORAN MENDALAM/Geopolitik/Olahraga) — kemungkinan output rusak/moderasi"
+
+    if "## 📊 LAPORAN MENDALAM" not in teks:
+        return False, "Tidak ada judul '## 📊 LAPORAN MENDALAM'"
+
+    # Cek minimal 3 topik muncul sebagai heading atau kata
+    topik = ["Geopolitik", "Olahraga", "Teknologi", "Indonesia"]
+    ditemukan = sum(1 for t in topik if t.lower() in teks.lower())
+    if ditemukan < 3:
+        return False, f"Hanya {ditemukan} topik ditemukan, minimal 3 (Geopolitik, Olahraga, Teknologi, Indonesia)"
+
+    # Pola output rusak yang sering muncul
+    bad_patterns = [
+        "</code", "User Safety", "Response Safety",
+        '"tool": "web_search"', '"request_id"', '```',
+    ]
+    for pat in bad_patterns:
+        if pat in teks:
+            return False, f"Terdeteksi output rusak: {pat}"
+
     return True, "OK"
 
 def _kirim_satu(pesan, parse_mode=None):
@@ -126,6 +151,7 @@ def kirim_ke_telegram(pesan):
             log.error(f"❌ Bagian {i}/{len(chunks)} GAGAL terkirim.")
         time.sleep(1)
 
+
 class RecentNewsSearchTool(Tool):
     name        = "web_search"
     description = (
@@ -138,14 +164,21 @@ class RecentNewsSearchTool(Tool):
     output_type = "string"
 
     def forward(self, query: str) -> str:
+        # Hanya gunakan backend html duckduckgo untuk mengurangi request ke banyak engine
         try:
-            results = DDGS().text(query, timelimit="d", max_results=8)
-        except Exception as e:
-            return f"Pencarian gagal: {e}"
+            # Parameter backend="html" memaksa hanya satu engine
+            results = DDGS(backend="html").text(query, timelimit="d", max_results=5)
+        except Exception:
+            # Fallback ke default
+            try:
+                results = DDGS().text(query, timelimit="d", max_results=5)
+            except Exception as e:
+                return f"Pencarian gagal: {e}"
 
         if not results:
+            # Coba 7 hari jika 24 jam kosong
             try:
-                results = DDGS().text(query, timelimit="w", max_results=8)
+                results = DDGS(backend="html").text(query, timelimit="w", max_results=5)
             except Exception:
                 return "Tidak ada hasil ditemukan."
 
@@ -157,11 +190,13 @@ class RecentNewsSearchTool(Tool):
             out += f"- {r.get('title','')}\n  {r.get('body','')}\n  URL: {r.get('href','')}\n\n"
         return out
 
+
 class FallbackModel:
     """
     Multi‑provider dengan beberapa model per provider.
     Model diurutkan dari yang paling ringan/murah ke yang lebih mahal.
     Jika model mati (404/410/retired), otomatis ditandai dan tidak dicoba lagi.
+    Tidak ada rate limit proaktif, karena error 429 akan ditangani langsung.
     """
     def __init__(self, providers):
         self.providers = []
@@ -170,8 +205,6 @@ class FallbackModel:
                 "name":       p["name"],
                 "api_base":   p["api_base"],
                 "api_key":    p["api_key"],
-                "rpm_limit":  p.get("rpm_limit"),
-                "timestamps": [],
                 "models":     p["models"],
                 "model_objs": [],
                 "dead":       [False] * len(p["models"]),
@@ -183,7 +216,7 @@ class FallbackModel:
                         model_id=model_id,
                         api_base=p["api_base"],
                         api_key=p["api_key"],
-                        client_kwargs={"max_retries": 0, "timeout": 60.0},
+                        client_kwargs={"max_retries": 0, "timeout": 45.0},
                         retry=False,
                     )
                     entry["model_objs"].append(m)
@@ -206,25 +239,19 @@ class FallbackModel:
         ]
         return any(marker in msg for marker in dead_markers)
 
-    def _boleh_pakai(self, entry):
-        limit = entry.get("rpm_limit")
-        if not limit:
-            return True
-        now = time.time()
-        entry["timestamps"] = [t for t in entry["timestamps"] if now - t < 60]
-        return len(entry["timestamps"]) < limit
+    def _is_rate_limit_error(self, e):
+        msg = str(e).lower()
+        return "rate limit" in msg or "429" in msg or "too many requests" in msg
 
     def _try_all(self, method_name, *args, **kwargs):
         last_err = None
         for entry in self.providers:
+            # Lewati provider jika semua model sudah dead
             if all(entry["dead"]):
                 log.info(f"Provider {entry['name']} semua model mati, skip.")
                 continue
 
-            if not self._boleh_pakai(entry):
-                log.info(f"Skip {entry['name']} (rate limit tercapai)...")
-                continue
-
+            # Coba model mulai dari current_idx
             while entry["current_idx"] < len(entry["models"]):
                 if entry["dead"][entry["current_idx"]]:
                     entry["current_idx"] += 1
@@ -239,7 +266,6 @@ class FallbackModel:
                 try:
                     log.info(f"Mencoba provider {entry['name']} dengan model {entry['models'][entry['current_idx']]}...")
                     result = getattr(model_obj, method_name)(*args, **kwargs)
-                    entry["timestamps"].append(time.time())
                     log.info(f"✅ Berhasil pakai: {entry['name']} / {entry['models'][entry['current_idx']]}")
                     return result
                 except Exception as e:
@@ -249,12 +275,19 @@ class FallbackModel:
                         entry["dead"][entry["current_idx"]] = True
                         entry["current_idx"] += 1
                         continue
-                    else:
+                    elif self._is_rate_limit_error(e):
+                        log.warning("Rate limit tercapai, pindah ke provider berikutnya.")
                         last_err = e
-                        break
+                        break  # keluar while, lanjut provider berikutnya
+                    else:
+                        # Error lain (timeout, 5xx, dsb) → coba model berikutnya di provider yang sama
+                        last_err = e
+                        entry["current_idx"] += 1
+                        continue
 
+            # Jika keluar dari while karena current_idx >= len models, tandai semua sudah dicoba
             if entry["current_idx"] >= len(entry["models"]):
-                log.warning(f"Semua model di {entry['name']} sudah dicoba dan gagal/mati.")
+                log.warning(f"Semua model di {entry['name']} sudah dicoba dan gagal.")
 
         raise Exception(f"Semua provider gagal! Error terakhir: {last_err}")
 
@@ -272,24 +305,23 @@ class FallbackModel:
 
 
 def buat_agent():
-    log.info("Menyiapkan AI dengan fallback chain multi-model (otomatis pilih dari murah ke mahal)...")
+    log.info("Menyiapkan AI dengan fallback chain multi‑model (otomatis pilih dari murah ke mahal)...")
 
     daftar_provider = [
         {
             "name": "Gemini",
             "api_base": "https://generativelanguage.googleapis.com/v1beta/openai/",
             "api_key": GOOGLE_API_KEY,
-            "rpm_limit": 4,
             # Urutan dari yang PALING MURAH ke lebih mahal
             "models": [
-                "gemini-3.5-flash-lite",   # Flash-Lite stabil & tercepat (paling hemat)
-                "gemini-3.1-flash-lite",   # Alternatif hemat biaya
-                "gemini-2.5-flash-lite",   # Model lite berbasis arsitektur 2.5
-                "gemini-3.5-flash",        # Flash legacy dasar (throughput tinggi)
-                "gemini-3.6-flash",        # Flash stabil harian
-                "gemini-3.7-flash",        # Flash multi‑step execution
-                "gemini-3.8-flash",        # Flash terbaru & paling cerdas
-                "gemini-3.1-pro-preview",  # Pro (penalaran tinggi) — butuh akun berbayar
+                "gemini-3.5-flash-lite",
+                "gemini-3.1-flash-lite",
+                "gemini-2.5-flash-lite",
+                "gemini-3.5-flash",
+                "gemini-3.6-flash",
+                "gemini-3.7-flash",
+                "gemini-3.8-flash",
+                "gemini-3.1-pro-preview",
             ],
         },
     ]
@@ -299,7 +331,6 @@ def buat_agent():
             "name": "NVIDIA NIM",
             "api_base": "https://integrate.api.nvidia.com/v1",
             "api_key": NVIDIA_API_KEY,
-            "rpm_limit": None,
             "models": [
                 "nvidia/nemotron-3-super-120b-a12b",
                 "meta/llama-4-maverick-17b-128e-instruct",
@@ -314,7 +345,6 @@ def buat_agent():
             "name": "Z.AI",
             "api_base": "https://api.z.ai/api/paas/v4/",
             "api_key": ZAI_API_KEY,
-            "rpm_limit": None,
             "models": ["glm-4.5-flash"],
         })
     else:
@@ -324,7 +354,6 @@ def buat_agent():
         "name": "OpenRouter (auto-router gratis)",
         "api_base": "https://openrouter.ai/api/v1",
         "api_key": OPENROUTER_API_KEY,
-        "rpm_limit": None,
         "models": ["openrouter/free"],
     })
 
@@ -333,7 +362,6 @@ def buat_agent():
             "name": "Groq (opsional)",
             "api_base": "https://api.groq.com/openai/v1",
             "api_key": GROQ_API_KEY,
-            "rpm_limit": None,
             "models": [
                 "llama-3.3-70b-versatile",
                 "openai/gpt-oss-120b",
@@ -345,11 +373,11 @@ def buat_agent():
     return CodeAgent(
         tools=[
             RecentNewsSearchTool(),
-            VisitWebpageTool(max_output_length=5000),
+            VisitWebpageTool(max_output_length=2500),  # Batasi output agar hemat token
         ],
         model=model,
         additional_authorized_imports=["datetime", "os", "re"],
-        max_steps=10,
+        max_steps=8,  # Dikurangi dari 10 ke 8
     )
 
 
@@ -405,10 +433,21 @@ Buat laporan mendalam untuk 4 topik ini:
    Query pencarian: gunakan Bahasa Indonesia.
 
 CARA KERJA YANG BENAR (sistem akan VERIFIKASI secara teknis):
-LANGKAH 1 — Untuk tiap topik: web_search() dulu cari artikel relevan dari sumber terpercaya di atas.
-LANGKAH 2 — Kunjungi artikel via visit_webpage(url) untuk baca isi lengkapnya.
-LANGKAH 3 — Ekstrak data konkret: angka, nama, tanggal, kutipan langsung dari artikel yang dibaca.
-LANGKAH 4 — Tulis laporan SETELAH membaca, bukan mengarang dari ingatan.
+- LANGKAH 1: Untuk SETIAP topik, lakukan SATU pencarian (web_search) dengan query spesifik.
+- LANGKAH 2: Pilih SATU URL terbaik dari hasil pencarian itu, lalu kunjungi dengan visit_webpage(url).
+- LANGKAH 3: Ekstrak data konkret: angka, nama, tanggal, kutipan langsung dari artikel yang dibaca.
+- LANGKAH 4: JANGAN melakukan pencarian berulang untuk topik yang sama. Jika halaman error, coba URL lain dari hasil pencarian yang sama, tetapi jangan lebih dari 2 kali percobaan.
+- LANGKAH 5: Setelah semua topik selesai, langsung tulis laporan akhir dalam format naratif.
+
+PENTING TENTANG FORMAT OUTPUT KODE:
+- Gunakan SELALU tag <code> ... </code> untuk blok kode Python.
+- JANGAN gunakan triple backtick (```) atau ```python.
+- JANGAN mencampur <code> dengan tag lain.
+- Setiap langkah harus dimulai dengan pemikiran singkat, lalu blok kode, contoh:
+  <code>
+  hasil = web_search(query="...")
+  print(hasil)
+  </code>
 
 FORMAT LAPORAN YANG DIHARAPKAN — WAJIB diawali dengan judul persis:
 "## 📊 LAPORAN MENDALAM — {tanggal.upper()}"
@@ -417,11 +456,10 @@ lalu tiap bagian pakai heading topiknya (Geopolitik, Olahraga, Teknologi, Indone
 ATURAN KETAT:
 - Setiap topik WAJIB punya minimal 1 URL sumber valid yang dicantumkan.
 - DILARANG mengarang angka, skor, atau kutipan — hanya dari artikel yang beneran dibaca.
-- Kalau halaman web error/403, coba URL lain dari hasil pencarian yang sama.
+- Jangan menampilkan hasil mentah (JSON, request_id, dll) di laporan akhir.
 - Panjang laporan TIDAK dibatasi — sistem Telegram otomatis pecah jadi beberapa pesan.
 - Tulis bahasa Indonesia santai, boleh campur Inggris, seperti teman diskusi yang pintar.
-- JANGAN keluarkan teks lain selain laporan itu sendiri (jangan ada output berupa
-  klasifikasi/kategori/label keamanan atau semacamnya).
+- JANGAN keluarkan teks lain selain laporan itu sendiri.
 """
 
     MIN_VISIT = 3
@@ -446,11 +484,11 @@ ATURAN KETAT:
                     log.warning("Mengulang percobaan karena output tidak valid...")
                     continue
 
-            if n_visit >= MIN_VISIT:
-                log.info("Validasi LULUS — laporan berbasis riset nyata.")
+            if n_visit >= MIN_VISIT and ok:
+                log.info("Validasi LULUS — laporan berbasis riset nyata dan format benar.")
                 break
             elif percobaan < MAX_COBA:
-                log.warning(f"Kurang riset ({n_visit}x visit). Coba ulang...")
+                log.warning(f"Kurang riset atau format salah. Coba ulang...")
 
         ok, alasan = laporan_valid(hasil)
         if not ok:
