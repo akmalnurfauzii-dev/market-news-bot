@@ -5,7 +5,8 @@ import logging
 import datetime
 import re
 import requests
-from smolagents import Tool, CodeAgent, VisitWebpageTool, OpenAIServerModel
+from bs4 import BeautifulSoup
+from smolagents import Tool, CodeAgent, OpenAIServerModel
 
 try:
     from ddgs import DDGS
@@ -60,6 +61,12 @@ DOMAIN_INDONESIA = [
     "bola.com", "tribunnews.com", "jawapos.com", "suara.com", "okezone.com",
 ]
 
+# Global untuk melacak URL yang berhasil di-fetch
+FETCHED_URLS = set()
+
+# Opsional: menyimpan teks hasil fetch untuk keperluan log/debug
+FETCHED_CONTENT = {}
+
 def load_history():
     if not os.path.exists(HISTORY_FILE):
         return []
@@ -99,7 +106,16 @@ def ringkasan_history():
         f"- [{h['tanggal']}] {h['ringkasan'][:300]}..." for h in history
     )
 
-def laporan_valid(teks):
+def laporan_valid(teks, fetched_urls):
+    """
+    Validasi ketat:
+    - minimal panjang
+    - wajib ada judul laporan
+    - minimal 4 topik
+    - minimal 4 URL dari domain whitelist DAN terdaftar di fetched_urls
+    - tidak boleh ada pola output rusak
+    - minimal 2 tanggal publikasi (case-insensitive)
+    """
     if not teks or len(teks.strip()) < MIN_REPORT_LENGTH:
         return False, f"Terlalu pendek ({len(teks.strip()) if teks else 0} karakter, minimal {MIN_REPORT_LENGTH})"
 
@@ -110,6 +126,18 @@ def laporan_valid(teks):
     ditemukan = sum(1 for t in topik if t.lower() in teks.lower())
     if ditemukan < 4:
         return False, f"Hanya {ditemukan} topik ditemukan, minimal 4"
+
+    # Ekstrak URL dari laporan
+    urls = re.findall(r'https?://[^\s\)]+', teks)
+    domain_whitelist = DOMAIN_INTERNASIONAL + DOMAIN_INDONESIA
+    valid_urls = [u for u in urls if any(domain in u for domain in domain_whitelist)]
+    if len(valid_urls) < 4:
+        return False, f"Hanya {len(valid_urls)} URL whitelist ditemukan, minimal 4"
+
+    # Pastikan minimal 4 URL yang valid juga ada di fetched_urls
+    matching_fetched = [u for u in valid_urls if any(u.startswith(fu) or fu in u for fu in fetched_urls)]
+    if len(matching_fetched) < 4:
+        return False, f"Hanya {len(matching_fetched)} URL yang benar-benar di-fetch, minimal 4"
 
     bad_patterns = [
         "</code", "User Safety", "Response Safety",
@@ -126,7 +154,7 @@ def laporan_valid(teks):
     ]
     jumlah_tanggal = 0
     for pat in tanggal_patterns:
-        jumlah_tanggal += len(re.findall(pat, teks))
+        jumlah_tanggal += len(re.findall(pat, teks, re.IGNORECASE))
     if jumlah_tanggal < 2:
         return False, f"Hanya {jumlah_tanggal} tanggal ditemukan, minimal 2"
 
@@ -185,14 +213,20 @@ class RecentNewsSearchTool(Tool):
     output_type = "string"
 
     def forward(self, query: str) -> str:
-        # Paksa backend html agar hemat request
-        try:
-            results = DDGS(backend="html").text(query, timelimit="d", max_results=4)
-        except Exception:
+        results = None
+        for attempt in range(3):
             try:
-                results = DDGS(backend="html").text(query, timelimit="w", max_results=4)
+                if attempt == 0:
+                    results = DDGS(backend="html").text(query, timelimit="d", max_results=4)
+                elif attempt == 1:
+                    results = DDGS().text(query, timelimit="d", max_results=4)
+                else:
+                    results = DDGS(backend="html").text(query, timelimit="w", max_results=4)
+                if results:
+                    break
             except Exception as e:
-                return f"Pencarian gagal: {e}"
+                log.warning(f"Percobaan {attempt+1} gagal: {e}")
+                continue
 
         if not results:
             return "Tidak ada hasil ditemukan, coba kata kunci lain."
@@ -211,6 +245,52 @@ class RecentNewsSearchTool(Tool):
                 date_str = "tanggal tidak tersedia"
             out += f"- {title}\n  Tanggal: {date_str}\n  {body}\n  URL: {url}\n\n"
         return out
+
+class FetchWebpageTool(Tool):
+    name        = "fetch_webpage"
+    description = (
+        "Ambil isi halaman web dari URL yang diberikan dan kembalikan teks artikel yang sudah dibersihkan. "
+        "Gunakan setelah mendapatkan URL dari web_search."
+    )
+    inputs      = {"url": {"type": "string", "description": "URL halaman web yang akan diambil"}}
+    output_type = "string"
+
+    def forward(self, url: str) -> str:
+        global FETCHED_URLS, FETCHED_CONTENT
+        try:
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+            }
+            r = requests.get(url, headers=headers, timeout=15)
+            r.raise_for_status()
+            soup = BeautifulSoup(r.text, "html.parser")
+
+            # Buang elemen yang tidak relevan
+            for tag in soup(["script", "style", "nav", "header", "footer", "aside", "form", "button"]):
+                tag.decompose()
+
+            # Coba ambil konten utama
+            main = soup.find("article") or soup.find("main") or soup.body
+            paragraphs = main.find_all("p") if main else []
+            text = "\n".join(p.get_text(strip=True) for p in paragraphs)
+
+            # Jika tidak ada paragraf, ambil semua teks
+            if not text:
+                text = soup.get_text(separator="\n", strip=True)
+
+            # Potong hingga 2500 karakter
+            text = text[:2500]
+
+            # Tandai URL berhasil di-fetch dan simpan konten
+            FETCHED_URLS.add(url)
+            FETCHED_CONTENT[url] = text
+            return text
+        except Exception as e:
+            return f"Error fetching the webpage: {e}"
+
+class FormatError(Exception):
+    """Error yang menandakan model menghasilkan format yang salah."""
+    pass
 
 class FallbackModel:
     """
@@ -263,6 +343,12 @@ class FallbackModel:
         msg = str(e).lower()
         return "rate limit" in msg or "429" in msg or "too many requests" in msg
 
+    def _is_format_error(self, output):
+        if not isinstance(output, str):
+            return False
+        bad_patterns = ["</code", "```", "Code parsing failed"]
+        return any(pat in output for pat in bad_patterns)
+
     def _try_all(self, method_name, *args, **kwargs):
         last_err = None
         for entry in self.providers:
@@ -284,6 +370,13 @@ class FallbackModel:
                 try:
                     log.info(f"Mencoba provider {entry['name']} dengan model {entry['models'][entry['current_idx']]}...")
                     result = getattr(model_obj, method_name)(*args, **kwargs)
+                    # Periksa format output
+                    if self._is_format_error(result):
+                        log.warning(f"Model {entry['models'][entry['current_idx']]} menghasilkan format salah. Tandai mati.")
+                        entry["dead"][entry["current_idx"]] = True
+                        entry["current_idx"] += 1
+                        last_err = FormatError("Format output tidak valid")
+                        continue
                     log.info(f"✅ Berhasil pakai: {entry['name']} / {entry['models'][entry['current_idx']]}")
                     return result
                 except Exception as e:
@@ -321,19 +414,19 @@ class FallbackModel:
 
 
 def buat_agent():
-    log.info("Menyiapkan AI dengan fallback chain multi‑model (stabil → murah)...")
+    log.info("Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...")
 
     daftar_provider = [
         {
             "name": "Gemini",
             "api_base": "https://generativelanguage.googleapis.com/v1beta/openai/",
             "api_key": GOOGLE_API_KEY,
-            # Urutan dari paling stabil ke murah
+            # Urutan dari paling stabil (free tier) ke paling murah
             "models": [
-                "gemini-3.6-flash",
-                "gemini-3.5-flash",
-                "gemini-3.1-flash-lite",
-                "gemini-3.5-flash-lite",
+                "gemini-3.6-flash",          # paling stabil di free tier
+                "gemini-3.5-flash",          # cadangan
+                "gemini-3.1-flash-lite",     # lebih hemat
+                "gemini-3.5-flash-lite",     # paling hemat
             ],
         },
     ]
@@ -383,25 +476,30 @@ def buat_agent():
     return CodeAgent(
         tools=[
             RecentNewsSearchTool(),
-            VisitWebpageTool(max_output_length=2500),
+            FetchWebpageTool(),
         ],
         model=model,
-        additional_authorized_imports=["datetime", "os", "re"],
-        max_steps=7,
+        additional_authorized_imports=["datetime", "os", "re", "requests", "bs4"],
+        max_steps=10,   # Naikkan dari 7 menjadi 10 agar cukup untuk riset
     )
 
 
 def hitung_visit_sukses(agent):
+    """Hitung berapa kali tool fetch_webpage dipanggil dan berhasil."""
     jumlah = 0
     for step in agent.memory.steps:
         code = getattr(step, "code_action", None)
         obs  = getattr(step, "observations", None) or ""
-        if code and "visit_webpage(" in code and "Error fetching" not in obs:
+        if code and "fetch_webpage(" in code and "Error fetching the webpage:" not in obs:
             jumlah += 1
     return jumlah
 
 
 def jalankan_analisa_harian():
+    global FETCHED_URLS, FETCHED_CONTENT
+    FETCHED_URLS = set()
+    FETCHED_CONTENT = {}
+
     log.info("=" * 55)
     log.info("MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...")
     log.info("=" * 55)
@@ -450,7 +548,7 @@ Buat laporan mendalam untuk 5 topik berikut:
 
 CARA KERJA YANG BENAR (sistem akan VERIFIKASI secara teknis):
 - LANGKAH 1: Untuk SETIAP topik, lakukan SATU pencarian (web_search) dengan query spesifik.
-- LANGKAH 2: Pilih SATU URL terbaik dari hasil pencarian, lalu kunjungi dengan visit_webpage(url).
+- LANGKAH 2: Pilih SATU URL terbaik dari hasil pencarian, lalu kunjungi dengan fetch_webpage(url).
 - LANGKAH 3: Ekstrak data konkret: angka, nama, tanggal, kutipan langsung dari artikel yang dibaca.
 - LANGKAH 4: JANGAN melakukan pencarian berulang untuk topik yang sama. Jika halaman error, coba URL lain dari hasil pencarian yang sama, tetapi jangan lebih dari 2 kali percobaan.
 - LANGKAH 5: Setelah semua topik selesai, langsung tulis laporan akhir dalam format naratif.
@@ -464,6 +562,17 @@ PENTING TENTANG FORMAT OUTPUT KODE:
   hasil = web_search(query="...")
   print(hasil)
   </code>
+  Kemudian langkah berikutnya:
+  <code>
+  artikel = fetch_webpage(url="...")
+  print(artikel)
+  </code>
+
+PENTING TENTANG ANTI-HALUSINASI:
+- Setiap angka penting (harga, level, skor, persentase) yang kamu tulis harus benar-benar ada di teks hasil fetch_webpage.
+- Jangan menambahkan angka dari ingatan atau perkiraan.
+- Untuk setiap topik, tulis minimal SATU kalimat kutipan langsung dari artikel yang kamu baca (gunakan tanda kutip).
+- Jika kamu tidak menemukan data spesifik di halaman, tulis "Data spesifik tidak ditemukan di sumber" daripada mengarang.
 
 PENTING TENTANG KEDALAMAN LAPORAN:
 - Setiap topik minimal 2-3 paragraf naratif, bukan satu paragraf singkat.
@@ -501,9 +610,10 @@ ATURAN KETAT:
             log.info(f"Menjalankan agent (percobaan {percobaan}/{MAX_COBA})...")
             hasil   = agent.run(tugas)
             n_visit = hitung_visit_sukses(agent)
-            log.info(f"Validasi: {n_visit}x visit_webpage sukses (minimum {MIN_VISIT}).")
+            log.info(f"Validasi: {n_visit}x fetch_webpage sukses (minimum {MIN_VISIT}).")
+            log.info(f"URL yang berhasil di-fetch: {FETCHED_URLS}")
 
-            ok, alasan = laporan_valid(hasil)
+            ok, alasan = laporan_valid(hasil, FETCHED_URLS)
             if not ok:
                 log.warning(f"Laporan tidak valid: {alasan}")
                 if percobaan < MAX_COBA:
@@ -516,19 +626,20 @@ ATURAN KETAT:
             elif percobaan < MAX_COBA:
                 log.warning(f"Kurang riset atau format salah. Coba ulang...")
 
-        ok, alasan = laporan_valid(hasil)
+        # Validasi final
+        ok, alasan = laporan_valid(hasil, FETCHED_URLS)
         if not ok:
             pesan_error = f"❌ Laporan hari ini gagal divalidasi ({alasan}). Tidak dikirim/disimpan untuk menjaga kualitas history."
             log.error(pesan_error)
             kirim_ke_telegram(pesan_error)
             return
 
+        # Jika n_visit kurang dari minimum, batalkan pengiriman
         if n_visit < MIN_VISIT:
-            peringatan = (
-                f"⚠️ *Catatan sistem:* AI hanya mengunjungi {n_visit} sumber "
-                f"(kurang dari {MIN_VISIT} yang diharapkan). Verifikasi mandiri disarankan.\n\n"
-            )
-            hasil = peringatan + hasil
+            pesan_error = f"❌ Bot hanya berhasil mengunjungi {n_visit} sumber (minimal {MIN_VISIT}). Laporan tidak dikirim karena berpotensi tidak akurat."
+            log.error(pesan_error)
+            kirim_ke_telegram(pesan_error)
+            return
 
         log.info("LAPORAN FINAL:")
         log.info(hasil)
