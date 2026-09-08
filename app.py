@@ -49,11 +49,24 @@ log = logging.getLogger("market-bot")
 HISTORY_FILE = "history.json"
 MAX_HISTORY = 5
 
+# Pola yang menandakan entri history rusak/tercemar (jangan pernah disimpan
+# dan jangan dipakai sebagai konteks histori untuk prompt berikutnya)
+CORRUPT_MARKERS = [
+    "</code", "User Safety", "Response Safety", "Safety Categories",
+    '"tool": "web_search"', '"request_id"', '```',
+    "Error fetching the webpage", "Code parsing failed",
+    "Catatan sistem",
+]
+
 DOMAIN_INTERNASIONAL = [
-    "reuters.com", "bloomberg.com", "cnbc.com", "bbc.com", "bbc.co.uk",
-    "aljazeera.com", "ft.com", "espn.com", "skysports.com", "uefa.com",
-    "fifa.com", "techcrunch.com", "theverge.com", "wired.com",
+    "bbc.com", "bbc.co.uk", "aljazeera.com", "ft.com",
+    "espn.com", "skysports.com", "uefa.com", "fifa.com",
+    "techcrunch.com", "theverge.com", "wired.com",
     "technologyreview.com", "arstechnica.com", "theguardian.com",
+    # Reuters/Bloomberg/CNBC sering block scraper (401/403) — tetap boleh
+    # dikutip dari hasil search, tapi fetch_webpage akan sering gagal untuk
+    # domain ini sehingga sengaja diletakkan di urutan belakang.
+    "reuters.com", "bloomberg.com", "cnbc.com",
 ]
 DOMAIN_INDONESIA = [
     "cnnindonesia.com", "cnbcindonesia.com", "bisnis.com", "kompas.com",
@@ -61,11 +74,19 @@ DOMAIN_INDONESIA = [
     "bola.com", "tribunnews.com", "jawapos.com", "suara.com", "okezone.com",
 ]
 
+# Domain yang diketahui sering memblokir scraper otomatis (401/403).
+# Bukan berarti dilarang dikutip dari hasil pencarian, tapi fetch_webpage
+# akan mencoba domain lain dulu kalau tersedia.
+HARD_TO_FETCH_DOMAINS = ["reuters.com", "bloomberg.com"]
+
 # Gabungan whitelist
 DOMAIN_WHITELIST = DOMAIN_INTERNASIONAL + DOMAIN_INDONESIA
 
-# Global untuk melacak URL yang berhasil di-fetch
+# Global untuk melacak URL yang berhasil di-fetch DAN URL yang benar-benar
+# muncul di hasil web_search (agar model tidak bisa mengarang URL)
 FETCHED_URLS = set()
+SEEN_SEARCH_URLS = set()
+
 
 def load_history():
     if not os.path.exists(HISTORY_FILE):
@@ -81,10 +102,32 @@ def load_history():
     valid = []
     for entry in data:
         if isinstance(entry, dict) and "tanggal" in entry and "ringkasan" in entry:
+            ringkasan = entry.get("ringkasan", "")
+            # Buang entri lama yang tercemar (JSON mentah, safety label, dll)
+            if any(bad in ringkasan for bad in CORRUPT_MARKERS):
+                continue
             valid.append(entry)
     return valid
 
+
+def bersihkan_history_file():
+    """Tulis ulang history.json tanpa entri yang tercemar. Dipanggil sekali
+    di awal run supaya file di disk juga ikut bersih, bukan cuma saat load."""
+    if not os.path.exists(HISTORY_FILE):
+        return
+    bersih = load_history()
+    try:
+        with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+            json.dump(bersih, f, ensure_ascii=False, indent=2)
+        log.info(f"history.json dibersihkan dari entri rusak ({len(bersih)} entri tersisa).")
+    except Exception as e:
+        log.warning(f"Gagal membersihkan history: {e}")
+
+
 def simpan_history(laporan):
+    if any(bad in laporan for bad in CORRUPT_MARKERS):
+        log.warning("Laporan mengandung artefak sistem/format rusak — TIDAK disimpan ke history.")
+        return
     history = load_history()
     history.append({
         "tanggal": datetime.date.today().isoformat(),
@@ -98,6 +141,7 @@ def simpan_history(laporan):
     except Exception as e:
         log.warning(f"Gagal simpan history: {e}")
 
+
 def ringkasan_history():
     history = load_history()
     if not history:
@@ -105,6 +149,7 @@ def ringkasan_history():
     return "\n".join(
         f"- [{h['tanggal']}] {h['ringkasan'][:300]}..." for h in history
     )
+
 
 def laporan_valid(teks, fetched_urls):
     """
@@ -127,7 +172,8 @@ def laporan_valid(teks, fetched_urls):
     if ditemukan < 4:
         return False, f"Hanya {ditemukan} topik ditemukan, minimal 4"
 
-    urls = re.findall(r'https?://[^\s\)]+', teks)
+    urls = re.findall(r'https?://[^\s\)\]]+', teks)
+    urls = [u.rstrip('.,;:') for u in urls]
     valid_urls = [u for u in urls if any(domain in u for domain in DOMAIN_WHITELIST)]
     if len(valid_urls) < 3:
         return False, f"Hanya {len(valid_urls)} URL whitelist ditemukan, minimal 3"
@@ -157,6 +203,7 @@ def laporan_valid(teks, fetched_urls):
 
     return True, "OK"
 
+
 def _kirim_satu(pesan, parse_mode=None):
     url  = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     data = {"chat_id": TELEGRAM_CHAT_ID, "text": pesan}
@@ -169,6 +216,7 @@ def _kirim_satu(pesan, parse_mode=None):
         log.error(f"Koneksi Telegram error: {e}")
         return False
 
+
 def _pecah(pesan):
     chunks = []
     while len(pesan) > TELEGRAM_MAX_CHARS:
@@ -180,6 +228,7 @@ def _pecah(pesan):
     if pesan:
         chunks.append(pesan)
     return chunks
+
 
 def kirim_ke_telegram(pesan):
     log.info("Mengirim laporan ke Telegram...")
@@ -198,27 +247,33 @@ def kirim_ke_telegram(pesan):
                 log.error(f"❌ Bagian {i}/{len(chunks)} GAGAL terkirim.")
         time.sleep(1)
 
+
 class RecentNewsSearchTool(Tool):
     name        = "web_search"
     description = (
         "Cari berita/informasi TERBARU dari 24-48 jam terakhir. "
         "Untuk topik global gunakan query Bahasa Inggris. "
         "Untuk topik Indonesia gunakan Bahasa Indonesia. "
-        "Hanya hasil dari sumber terpercaya yang ditampilkan."
+        "Hanya hasil dari sumber terpercaya yang ditampilkan. "
+        "PENTING: hanya gunakan URL PERSIS seperti yang muncul di hasil tool "
+        "ini untuk fetch_webpage — jangan pernah menyusun/mengarang URL sendiri."
     )
     inputs      = {"query": {"type": "string", "description": "Kata kunci pencarian"}}
     output_type = "string"
 
     def forward(self, query: str) -> str:
+        global SEEN_SEARCH_URLS
         results = None
+        # PENTING: parameter `backend` ada di method .text()/.news(), BUKAN
+        # di constructor DDGS(). DDGS(backend=...) selalu raise TypeError.
         for attempt in range(3):
             try:
                 if attempt == 0:
-                    results = DDGS(backend="html").text(query, timelimit="d", max_results=6)
+                    results = DDGS().text(query, backend="html", timelimit="d", max_results=6)
                 elif attempt == 1:
                     results = DDGS().text(query, timelimit="d", max_results=6)
                 else:
-                    results = DDGS(backend="html").text(query, timelimit="w", max_results=6)
+                    results = DDGS().text(query, timelimit="w", max_results=6)
                 if results:
                     break
             except Exception as e:
@@ -236,13 +291,14 @@ class RecentNewsSearchTool(Tool):
                 filtered.append(r)
 
         if not filtered:
-            return "Tidak ada hasil dari sumber terpercaya. Coba query dengan menyertakan nama situs (misal: site:reuters.com)."
+            return "Tidak ada hasil dari sumber terpercaya. Coba query dengan menyertakan nama situs (misal: site:bbc.com)."
 
         out = ""
         for r in filtered[:5]:  # batasi 5 hasil
             title = r.get('title', '')
             body  = r.get('body', '')
             url   = r.get('href', '')
+            SEEN_SEARCH_URLS.add(url)
             date_str = r.get('date') or r.get('published') or r.get('timestamp') or ''
             if not date_str:
                 m = re.search(r"\b(\d{1,2}\s+\w+\s+\d{4})\b", body)
@@ -253,11 +309,13 @@ class RecentNewsSearchTool(Tool):
             out += f"- {title}\n  Tanggal: {date_str}\n  {body}\n  URL: {url}\n\n"
         return out
 
+
 class FetchWebpageTool(Tool):
     name        = "fetch_webpage"
     description = (
         "Ambil isi halaman web dari URL yang diberikan dan kembalikan teks artikel yang sudah dibersihkan. "
-        "Gunakan setelah mendapatkan URL dari web_search. Hanya menerima URL dari domain terpercaya."
+        "Gunakan setelah mendapatkan URL dari web_search — WAJIB pakai URL yang persis sama, jangan diubah/dikarang. "
+        "Hanya menerima URL dari domain terpercaya."
     )
     inputs      = {"url": {"type": "string", "description": "URL halaman web yang akan diambil"}}
     output_type = "string"
@@ -268,9 +326,22 @@ class FetchWebpageTool(Tool):
         if not any(domain in url for domain in DOMAIN_WHITELIST):
             return "Domain tidak diizinkan. Gunakan hanya URL dari sumber terpercaya."
 
+        # Anti-halusinasi: URL harus benar-benar pernah muncul di hasil web_search
+        if SEEN_SEARCH_URLS and not any(url == u or url.startswith(u) or u.startswith(url) for u in SEEN_SEARCH_URLS):
+            return (
+                "URL ini tidak pernah muncul di hasil web_search sebelumnya. "
+                "Jangan mengarang URL — gunakan persis URL dari hasil web_search."
+            )
+
         try:
             headers = {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                "User-Agent": (
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+                ),
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "en-US,en;q=0.9,id;q=0.8",
+                "Referer": "https://www.google.com/",
             }
             r = requests.get(url, headers=headers, timeout=15)
             r.raise_for_status()
@@ -286,14 +357,22 @@ class FetchWebpageTool(Tool):
             if not text:
                 text = soup.get_text(separator="\n", strip=True)
 
+            if not text or len(text.strip()) < 100:
+                return "Halaman berhasil diambil tapi kontennya kosong/terlalu pendek. Coba URL lain."
+
             text = text[:2500]
             FETCHED_URLS.add(url)
             return text
         except Exception as e:
-            return f"Error fetching the webpage: {e}"
+            hint = ""
+            if any(d in url for d in HARD_TO_FETCH_DOMAINS):
+                hint = " (domain ini sering memblokir bot — coba sumber lain seperti BBC/Al Jazeera/CNBC Indonesia dst.)"
+            return f"Error fetching the webpage: {e}{hint}"
+
 
 class FormatError(Exception):
     pass
+
 
 class FallbackModel:
     """
@@ -481,7 +560,7 @@ def buat_agent():
         ],
         model=model,
         additional_authorized_imports=["datetime", "os", "re", "requests", "bs4"],
-        max_steps=12,   # naikkan agar cukup untuk 5 topik + cadangan
+        max_steps=18,   # dinaikkan dari 12 — cukup untuk 5 topik + retry domain gagal
     )
 
 
@@ -497,8 +576,12 @@ def hitung_visit_sukses(agent):
 
 
 def jalankan_analisa_harian():
-    global FETCHED_URLS
+    global FETCHED_URLS, SEEN_SEARCH_URLS
     FETCHED_URLS = set()
+    SEEN_SEARCH_URLS = set()
+
+    # Bersihkan history lama yang tercemar sebelum dipakai sebagai konteks
+    bersihkan_history_file()
 
     log.info("=" * 55)
     log.info("MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...")
@@ -518,7 +601,9 @@ Buat laporan mendalam untuk 5 topik berikut:
 
 1. **Geopolitik & Ekonomi Global**
    Cari: berita geopolitik internasional terkini dan dampaknya ke pasar kripto/saham.
-   Sumber target: Reuters, Bloomberg, CNBC, BBC, Al Jazeera, Financial Times.
+   Sumber target: BBC, Al Jazeera, Financial Times, CNBC. (Catatan: Reuters/Bloomberg sering
+   memblokir fetch otomatis — kalau fetch_webpage gagal untuk domain itu, JANGAN diulang lebih
+   dari sekali, langsung pindah ke sumber lain yang tersedia.)
    Query pencarian: gunakan Bahasa Inggris.
 
 2. **Olahraga Global**
@@ -548,43 +633,54 @@ Buat laporan mendalam untuk 5 topik berikut:
 
 CARA KERJA YANG BENAR (sistem akan VERIFIKASI secara teknis):
 - LANGKAH 1: Untuk SETIAP topik, lakukan SATU pencarian (web_search) dengan query spesifik.
-- LANGKAH 2: Pilih SATU URL terbaik dari hasil pencarian, lalu kunjungi dengan fetch_webpage(url).
-- LANGKAH 3: Ekstrak data konkret: angka, nama, tanggal, kutipan langsung dari artikel yang dibaca.
-- LANGKAH 4: JANGAN melakukan pencarian berulang untuk topik yang sama. Jika halaman error, coba URL lain dari hasil pencarian yang sama, tetapi jangan lebih dari 2 kali percobaan.
-- LANGKAH 5: Setelah semua topik selesai, langsung tulis laporan akhir dalam format naratif.
+- LANGKAH 2: Pilih SATU URL terbaik dari hasil pencarian — WAJIB salin PERSIS dari output web_search,
+  JANGAN PERNAH mengetik ulang, menyusun, menebak, atau memperbaiki URL sendiri. Kalau ragu, salin-tempel.
+- LANGKAH 3: Kunjungi dengan fetch_webpage(url) menggunakan URL persis itu.
+- LANGKAH 4: Ekstrak data konkret: angka, nama, tanggal, kutipan langsung dari artikel yang dibaca.
+- LANGKAH 5: JANGAN melakukan pencarian berulang untuk topik yang sama. Jika halaman error, coba URL
+  lain dari hasil pencarian yang sama, tetapi jangan lebih dari 2 kali percobaan per topik.
+- LANGKAH 6: HANYA setelah SEMUA topik selesai di-fetch dan datanya lengkap, baru tulis laporan akhir.
 
-PENTING TENTANG FORMAT OUTPUT KODE:
+ATURAN FORMAT KODE (WAJIB, sistem akan menolak jika dilanggar):
 - Gunakan SELALU tag <code> ... </code> untuk blok kode Python.
 - JANGAN gunakan triple backtick (```) atau ```python.
-- JANGAN mencampur <code> dengan tag lain.
-- Setiap langkah harus dimulai dengan pemikiran singkat, lalu blok kode, contoh:
+- SATU step HANYA BOLEH berisi SATU blok <code>...</code>. Jangan pernah menaruh dua blok <code> dalam satu step.
+- JANGAN menulis draft/isi laporan akhir di dalam blok <code> yang sama dengan pemanggilan tool
+  (web_search/fetch_webpage). Laporan akhir baru ditulis di step TERAKHIR, setelah semua riset selesai.
+- Setiap langkah dimulai dengan pemikiran singkat (di luar tag <code>), lalu SATU blok kode, contoh:
   <code>
   hasil = web_search(query="...")
   print(hasil)
   </code>
-  Kemudian langkah berikutnya:
+  Step berikutnya (step terpisah):
   <code>
-  artikel = fetch_webpage(url="...")
+  artikel = fetch_webpage(url="...")  # URL disalin PERSIS dari hasil web_search di atas
   print(artikel)
   </code>
 
 PENTING TENTANG SUMBER:
-- HANYA gunakan URL dari domain yang sudah dikenal (Reuters, BBC, CNBC, CNN Indonesia, Kompas, Detik, dll).
+- HANYA gunakan URL dari domain yang sudah dikenal (BBC, Al Jazeera, CNBC, CNN Indonesia, Kompas, Detik, dll).
 - JANGAN PERNAH mengunjungi atau mengutip dari Facebook, LinkedIn, Twitter, atau domain tidak jelas.
-- Jika hasil pencarian tidak menampilkan sumber terpercaya, coba lagi dengan menambahkan kata "site:reuters.com" atau nama media yang kamu inginkan.
+- JANGAN PERNAH mengarang atau menyusun URL sendiri (misal menebak pola "namamedia.com/2026/09/08/judul-acak").
+  Setiap URL yang dipakai di fetch_webpage HARUS persis salinan dari hasil web_search sebelumnya.
+- Jika hasil pencarian tidak menampilkan sumber terpercaya, coba lagi dengan menambahkan kata "site:bbc.com" atau nama media yang kamu inginkan.
 
 PENTING TENTANG ANTI-HALUSINASI:
 - Setiap angka penting (harga, level, skor, persentase) yang kamu tulis harus benar-benar ada di teks hasil fetch_webpage.
 - Jangan menambahkan angka dari ingatan atau perkiraan.
-- Untuk setiap topik, tulis minimal SATU kalimat kutipan langsung dari artikel yang kamu baca (gunakan tanda kutip).
+- Untuk setiap topik, tulis minimal SATU kalimat kutipan langsung dari artikel yang kamu baca (gunakan tanda kutip),
+  dan kutipan itu HARUS benar-benar ada kata-katanya di teks fetch_webpage — jangan menyusun kutipan sendiri.
 - Jika kamu tidak menemukan data spesifik di halaman, tulis "Data spesifik tidak ditemukan di sumber" daripada mengarang.
+- Jika sampai batas langkah tersisa kamu belum berhasil fetch minimal 3 sumber, tulis laporan JUJUR apa
+  adanya untuk topik yang datanya ada, dan tulis "Data tidak berhasil diverifikasi" untuk topik yang gagal —
+  JANGAN mengarang isi untuk topik yang belum sempat di-fetch.
 
 PENTING TENTANG KEDALAMAN LAPORAN:
 - Setiap topik minimal 2-3 paragraf naratif, bukan satu paragraf singkat.
 - Untuk setiap berita, WAJIB sertakan:
   * Tanggal publikasi atau tanggal kejadian (misal: "6 September 2026").
-  * Nama media sumber dan URL.
-  * Kutipan langsung singkat dari artikel (1-2 kalimat).
+  * Nama media sumber dan URL (persis dari hasil fetch_webpage/web_search).
+  * Kutipan langsung singkat dari artikel (1-2 kalimat), diambil kata-per-kata dari teks yang benar-benar dibaca.
   * Analisis singkat: mengapa ini penting, dampaknya, atau konteksnya.
 - Jangan hanya menulis kesimpulan kering, bangun cerita yang hidup dan mudah dipahami.
 
@@ -593,13 +689,14 @@ FORMAT LAPORAN YANG DIHARAPKAN — WAJIB diawali dengan judul persis:
 lalu tiap bagian pakai heading topiknya (Geopolitik, Olahraga, Teknologi, Indonesia, Trending Indonesia).
 
 ATURAN KETAT:
-- Setiap topik WAJIB punya minimal 1 URL sumber valid yang dicantumkan.
+- Setiap topik WAJIB punya minimal 1 URL sumber valid yang dicantumkan, dan URL itu harus persis sama
+  dengan URL yang berhasil kamu fetch_webpage (bukan URL yang kamu susun ulang atau perkirakan).
 - Sumber harus berasal dari daftar domain yang disebutkan di atas (atau media besar lain yang relevan).
 - DILARANG mengarang angka, skor, atau kutipan — hanya dari artikel yang beneran dibaca.
 - Jangan menampilkan hasil mentah (JSON, request_id, dll) di laporan akhir.
 - Panjang laporan TIDAK dibatasi — sistem Telegram otomatis pecah jadi beberapa pesan.
 - Tulis bahasa Indonesia santai, boleh campur Inggris, seperti teman diskusi yang pintar.
-- JANGAN keluarkan teks lain selain laporan itu sendiri.
+- JANGAN keluarkan teks lain selain laporan itu sendiri (laporan hanya ditulis di step terakhir).
 """
 
     MIN_VISIT = 3   # turunkan ke 3 karena beberapa topik mungkin gagal
