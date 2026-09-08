@@ -26059,3 +26059,176 @@ Sumber: [Kompas.com - Fenomena Cuaca Ekstrem](https://www.kompas.com)
 2026-09-08 15:41:25,929 [ERROR] ❌ Laporan hari ini gagal divalidasi (Hanya 0 URL whitelist ditemukan, minimal 3). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-09-08 15:41:25,929 [INFO] Mengirim laporan ke Telegram...
 2026-09-08 15:41:26,417 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-09-08 21:44:55,263 [INFO] history.json dibersihkan dari entri rusak (1 entri tersisa).
+2026-09-08 21:44:55,263 [INFO] =======================================================
+2026-09-08 21:44:55,263 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-09-08 21:44:55,263 [INFO] =======================================================
+2026-09-08 21:44:55,263 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-09-08 21:44:55,917 [INFO] Provider siap: Gemini dengan 4 model
+2026-09-08 21:44:55,919 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-09-08 21:44:55,920 [INFO] Provider siap: Z.AI dengan 1 model
+2026-09-08 21:44:55,921 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-09-08 21:44:55,922 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-09-08 21:44:55,935 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-09-08 21:44:55,951 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-09-08 21:45:41,373 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Request timed out.
+2026-09-08 21:45:41,374 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-08 21:45:58,838 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:45:58,848 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-09-08 21:45:58,889 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-08 21:45:58,889 [WARNING] backend is not set. Using 'auto'
+2026-09-08 21:45:59,147 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20stock%20market%20crypto%20September%202026%20site%3Acnbc.com%20OR%20site%3Abbc.com%20OR%20site%3Aaljazeera.com 200
+2026-09-08 21:45:59,305 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+stock+market+crypto+September+2026+site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com&limit=1 200
+2026-09-08 21:45:59,610 [INFO] response: https://search.yahoo.com/search;_ylt=7BG0t8o06kIdIzKzlw7s9AQc;_ylu=R8VxpXiAttWd2wm0VVUmt3HVqCp2MW3IVNr8ptChSIdeLqk?p=geopolitics+stock+market+crypto+September+2026+site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com&btf=d 200
+2026-09-08 21:46:00,544 [INFO] response: https://search.brave.com/search?q=geopolitics+stock+market+crypto+September+2026+site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com&source=web&tf=pd 200
+2026-09-08 21:46:00,554 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-08 21:46:06,309 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-08 21:46:06,310 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-08 21:46:06,310 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:46:08,035 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:46:08,036 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:46:09,796 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:46:14,396 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:46:14,398 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:46:14,399 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:46:15,349 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:46:15,352 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:46:15,353 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:46:20,993 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:46:20,995 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:46:23,551 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:46:25,477 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:46:25,479 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:46:25,480 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:46:34,407 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:46:34,408 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:46:34,409 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:46:41,007 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:46:41,008 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:46:41,033 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:46:45,508 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:46:45,509 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:46:45,517 [INFO] Validasi: 3x fetch_webpage sukses (minimum 3).
+2026-09-08 21:46:45,517 [INFO] URL yang berhasil di-fetch: {'https://www.cnbc.com/2026/09/07/stock-market-today-live-updates.html'}
+2026-09-08 21:46:45,517 [WARNING] Laporan tidak valid: Hanya 1 URL yang benar-benar di-fetch, minimal 3
+2026-09-08 21:46:45,517 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-09-08 21:46:45,517 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-09-08 21:46:45,530 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:46:51,160 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:46:51,161 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:46:51,163 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-08 21:46:51,164 [WARNING] backend is not set. Using 'auto'
+2026-09-08 21:46:51,385 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitical%20news%20September%202026%20site%3Abbc.com%20OR%20site%3Acnbc.com 200
+2026-09-08 21:46:51,560 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitical+news+September+2026+site%3Abbc.com+OR+site%3Acnbc.com&limit=1 200
+2026-09-08 21:46:51,997 [INFO] response: https://search.brave.com/search?q=global+geopolitical+news+September+2026+site%3Abbc.com+OR+site%3Acnbc.com&source=web&tf=pd 200
+2026-09-08 21:46:52,007 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:47:00,588 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:47:00,589 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:47:00,591 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:47:04,436 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:47:04,437 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:47:04,438 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:47:07,712 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:47:07,713 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:47:07,715 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-08 21:47:07,715 [WARNING] backend is not set. Using 'auto'
+2026-09-08 21:47:07,904 [INFO] response: https://grokipedia.com/api/typeahead?query=Israel+to+shut+down+UK+consulate+in+Jerusalem+September+2026&limit=1 200
+2026-09-08 21:47:07,921 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Israel%20to%20shut%20down%20UK%20consulate%20in%20Jerusalem%20September%202026 200
+2026-09-08 21:47:08,173 [INFO] response: https://www.google.com/wml/search?q=Israel+to+shut+down+UK+consulate+in+Jerusalem+September+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-08 21:47:08,422 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:47:09,875 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:47:09,876 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:47:10,081 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:47:12,174 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:47:12,175 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:47:12,177 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-08 21:47:12,177 [WARNING] backend is not set. Using 'auto'
+2026-09-08 21:47:12,431 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+sports+news+8+september+2026+site%3Abbc.com%2Fsport&limit=1 200
+2026-09-08 21:47:12,484 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20sports%20news%208%20september%202026%20site%3Abbc.com/sport 200
+2026-09-08 21:47:12,641 [INFO] response: https://search.yahoo.com/search;_ylt=4ui664662vPwQg9TYP6w-4Ty;_ylu=q_PYjXHgXiVCpIvQEw3VaIUXzZ07-mNfju_SXH4Re9h_XxY?p=latest+sports+news+8+september+2026+site%3Abbc.com%2Fsport&btf=d 200
+2026-09-08 21:47:13,308 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:47:14,711 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:47:14,712 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:47:15,071 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:47:17,488 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:47:17,490 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:47:17,492 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-08 21:47:17,492 [WARNING] backend is not set. Using 'auto'
+2026-09-08 21:47:17,701 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20technology%20news%207-8%20september%202026%20site%3Atechcrunch.com 200
+2026-09-08 21:47:17,902 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+technology+news+7-8+september+2026+site%3Atechcrunch.com&limit=1 200
+2026-09-08 21:47:18,237 [INFO] response: https://search.brave.com/search?q=latest+AI+technology+news+7-8+september+2026+site%3Atechcrunch.com&source=web&tf=pd 200
+2026-09-08 21:47:18,246 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:47:19,950 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:47:19,951 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:47:20,133 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:47:25,341 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:47:25,342 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:47:25,345 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-08 21:47:25,345 [WARNING] backend is not set. Using 'auto'
+2026-09-08 21:47:25,554 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20kurs%20rupiah%20berita%20ekonomi%20terkini%208%20September%202026%20site%3Acnbcindonesia.com 200
+2026-09-08 21:47:25,698 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+kurs+rupiah+berita+ekonomi+terkini+8+September+2026+site%3Acnbcindonesia.com&limit=1 200
+2026-09-08 21:47:25,931 [INFO] response: https://www.google.com/wml/search?q=IHSG+kurs+rupiah+berita+ekonomi+terkini+8+September+2026+site%3Acnbcindonesia.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-08 21:47:26,625 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-09-08 21:47:27,077 [INFO] response: https://search.brave.com/search?q=IHSG+kurs+rupiah+berita+ekonomi+terkini+8+September+2026+site%3Acnbcindonesia.com&source=web&tf=pd 200
+2026-09-08 21:47:27,085 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-08 21:47:27,085 [WARNING] backend is not set. Using 'auto'
+2026-09-08 21:47:27,275 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+Timnas+Indonesia+terbaru+8+September+2026+site%3Abola.com&limit=1 200
+2026-09-08 21:47:27,314 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20Timnas%20Indonesia%20terbaru%208%20September%202026%20site%3Abola.com 200
+2026-09-08 21:47:27,522 [INFO] response: https://www.startpage.com/ 200
+2026-09-08 21:47:27,601 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-08 21:47:27,844 [INFO] response: https://www.google.com/wml/search?q=berita+Timnas+Indonesia+terbaru+8+September+2026+site%3Abola.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-08 21:47:28,118 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-08 21:47:28,625 [INFO] response: https://www.mojeek.com/search?q=berita+Timnas+Indonesia+terbaru+8+September+2026+site%3Abola.com 403
+2026-09-08 21:47:28,818 [INFO] response: https://search.yahoo.com/search;_ylt=Dtp3KLt9PDMCSy_ngmjuQL_-;_ylu=0-dK0kuZN1c0hh3nYLGpeIufSYRlwv45-nSNvj-UZEdTiug?p=berita+Timnas+Indonesia+terbaru+8+September+2026+site%3Abola.com&btf=d 200
+2026-09-08 21:47:29,268 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:47:31,743 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:47:31,744 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:47:31,746 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-08 21:47:31,746 [WARNING] backend is not set. Using 'auto'
+2026-09-08 21:47:31,994 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20trending%20Indonesia%208%20September%202026%20site%3Adetik.com%20OR%20site%3Akompas.com 200
+2026-09-08 21:47:32,091 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+trending+Indonesia+8+September+2026+site%3Adetik.com+OR+site%3Akompas.com&limit=1 200
+2026-09-08 21:47:32,581 [INFO] response: https://www.mojeek.com/search?q=berita+viral+trending+Indonesia+8+September+2026+site%3Adetik.com+OR+site%3Akompas.com 403
+2026-09-08 21:47:32,748 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-08 21:47:33,275 [INFO] response: https://search.brave.com/search?q=berita+viral+trending+Indonesia+8+September+2026+site%3Adetik.com+OR+site%3Akompas.com&source=web&tf=pd 200
+2026-09-08 21:47:33,285 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:47:40,461 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:47:40,462 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:47:40,469 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-08 21:47:45,239 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-08 21:47:45,241 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-08 21:47:45,254 [INFO] Validasi: 3x fetch_webpage sukses (minimum 3).
+2026-09-08 21:47:45,254 [INFO] URL yang berhasil di-fetch: {'https://www.bbc.com/sport/football/articles/cr4vwgydyvpo', 'https://www.bbc.com/news/live/cmp8djn8983gt', 'https://www.cnbc.com/2026/09/07/stock-market-today-live-updates.html', 'https://techcrunch.com/2026/09/08/the-exploration-company-nabs-450-million-to-challenge-spacex/'}
+2026-09-08 21:47:45,256 [INFO] Validasi LULUS — laporan berbasis riset nyata dan format benar.
+2026-09-08 21:47:45,257 [INFO] LAPORAN FINAL:
+2026-09-08 21:47:45,257 [INFO] ## 📊 LAPORAN MENDALAM — 08 SEPTEMBER 2026
+
+### Geopolitik & Ekonomi Global
+Ketegangan di Timur Tengah mencapai babak baru yang krusial pada 8 September 2026. Pemerintah Israel secara resmi mengumumkan penutupan konsulat Inggris di Yerusalem sebagai bentuk balasan atas sanksi yang dijatuhkan Inggris terkait pemukiman di Tepi Barat. BBC News (https://www.bbc.com/news/live/cmp8djn8983gt) melaporkan bahwa Menteri Luar Negeri Israel, Gideon Saar, menyatakan langkah ini merupakan salah satu dari empat 'kontra-langkah' terhadap kebijakan Inggris.
+
+Langkah ini dipandang oleh analis sebagai pergeseran signifikan dalam postur diplomatik Inggris di Timur Tengah, menyusul keputusan sebelumnya terkait pengakuan negara Palestina setahun lalu. Menteri Luar Negeri Inggris, Ed Miliband, menegaskan bahwa ini adalah 'penegasan kembali logika untuk akhirnya sampai pada solusi dua negara — negara Palestina yang layak di samping Israel.'
+
+### Olahraga Global
+Dunia sepak bola Inggris dikejutkan dengan pemecatan manajer Wycombe Wanderers, Michael Duff, pada 8 September 2026. Seperti yang dilaporkan oleh BBC Sport (https://www.bbc.com/sport/football/articles/cr4vwgydyvpo), klub League One tersebut mengambil keputusan drastis setelah performa tim yang tanpa kemenangan dalam lima pertandingan awal musim ini.
+
+Duff, yang pernah melatih Cheltenham Town dan Barnsley, resmi menjadi manajer pertama di empat divisi teratas sepak bola Inggris yang kehilangan pekerjaannya musim ini. Dalam pernyataan resminya, pihak klub mengungkapkan: 'Klub telah mengambil keputusan sehubungan dengan serangkaian hasil yang mengecewakan sejak musim semi dan percaya bahwa ini adalah waktu yang tepat untuk mengambil arah baru.'
+
+### Teknologi & AI Terbaru
+Di sektor eksplorasi ruang angkasa, The Exploration Company (TEC) yang berbasis di Eropa baru saja mendapatkan suntikan dana sebesar $450 juta. Dilaporkan oleh TechCrunch (https://techcrunch.com/2026/09/08/the-exploration-company-nabs-450-million-to-challenge-spacex/), pendanaan Seri C ini merupakan yang terbesar yang pernah diraih oleh perusahaan antariksa Eropa, dengan tujuan membangun peluncur berat yang dapat digunakan kembali sebagai alternatif bagi SpaceX milik Elon Musk.
+
+Hélène Huby, pemimpin TEC, menekankan pendekatan pragmatis perusahaan di tengah dominasi SpaceX. Huby menyatakan keinginannya melihat Eropa memiliki peta jalan penerbangan antariksa manusia, namun tetap realistis: 'Tidak akan bisa meyakinkan investor modal ventura (VC) untuk menghabiskan $4 miliar untuk kapsul kru, kemudian menunggu 10 tahun.'
+
+### Indonesia Update
+a) **Ekonomi**: Pada 8 September 2026, IHSG menunjukkan tren penguatan. Menurut data dari CNBC Indonesia (https://www.cnbcindonesia.com/market/20260908121423-17-766128/ihsg-sesi-i-menguat-084-parkir-di-level-667495), indeks menguat 0,84% dan parkir di level 6.674,95 pada sesi I perdagangan. Sementara itu, nilai tukar Rupiah terhadap Dolar AS menunjukkan penguatan tipis sebesar 0,03% dan ditutup di level Rp17.625/US$ (https://www.cnbcindonesia.com/market/20260908144011-17-766198/rupiah-berbalik-ditutup-menguat-dolar-as-turun-tipis-ke-rp17625).
+
+b) **Olahraga**: Timnas Indonesia U-20 mendapatkan sambutan heroik setelah memastikan diri lolos ke putaran final Piala Asia U-20 2027. Bola.com (https://www.bola.com/indonesia/read/8287506/timnas-indonesia-u-20-tiba-di-jakarta-usai-lolos-ke-piala-asia-u-20-2027-bakal-dijamu-erick-thohir) mencatat bahwa tim asuhan Nova Arianto mendarat di Bandara Internasional Soekarno-Hatta pada 8 September 2026 setelah penampilan impresif, termasuk mengalahkan Australia U-20 dengan skor 2-0.
+
+### Trending Indonesia
+Dunia maya Indonesia diramaikan oleh dua berita viral pada 8 September 2026. Pertama, klarifikasi BMKG terkait video viral ramalan gempa bermagnitudo 9. Detik.com (https://news.detik.com/berita/d-8653476/bmkg-minta-warga-tak-terpengaruh-video-viral-ramalan-gempa-m-9) mengutip pernyataan pihak BMKG: 'Masyarakat Indonesia diimbau agar tetap tenang dan waspada serta tidak terpengaruh informasi yang belum terverifikasi.'
+
+Kedua, kisah masinis KRL yang sempat menjadi viral karena terpaksa menghentikan kereta di Stasiun UI selama 3 menit. Kompas.com (https://megapolitan.kompas.com/read/2026/09/08/13350121/krl-bogor-tertahan-3-menit-di-stasiun-ui-karena-masinis-mules-kai) melaporkan bahwa pihak KAI Commuter telah memberikan tanggapan resmi bahwa tindakan tersebut diperbolehkan demi keselamatan dan kenyamanan masinis.
+2026-09-08 21:47:45,257 [INFO] Mengirim laporan ke Telegram...
+2026-09-08 21:47:45,257 [INFO] Pesan dipecah jadi 2 bagian.
+2026-09-08 21:47:46,031 [INFO] ✅ Bagian 1/2 terkirim (Markdown)!
+2026-09-08 21:47:47,648 [INFO] ✅ Bagian 2/2 terkirim (Markdown)!
+2026-09-08 21:47:48,649 [INFO] History disimpan (2 entri).
+2026-09-08 21:47:48,649 [INFO] Selesai — laporan terkirim dan history disimpan.
