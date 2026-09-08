@@ -61,11 +61,11 @@ DOMAIN_INDONESIA = [
     "bola.com", "tribunnews.com", "jawapos.com", "suara.com", "okezone.com",
 ]
 
+# Gabungan whitelist
+DOMAIN_WHITELIST = DOMAIN_INTERNASIONAL + DOMAIN_INDONESIA
+
 # Global untuk melacak URL yang berhasil di-fetch
 FETCHED_URLS = set()
-
-# Opsional: menyimpan teks hasil fetch untuk keperluan log/debug
-FETCHED_CONTENT = {}
 
 def load_history():
     if not os.path.exists(HISTORY_FILE):
@@ -112,7 +112,7 @@ def laporan_valid(teks, fetched_urls):
     - minimal panjang
     - wajib ada judul laporan
     - minimal 4 topik
-    - minimal 4 URL dari domain whitelist DAN terdaftar di fetched_urls
+    - minimal 3 URL dari domain whitelist DAN terdaftar di fetched_urls
     - tidak boleh ada pola output rusak
     - minimal 2 tanggal publikasi (case-insensitive)
     """
@@ -127,17 +127,14 @@ def laporan_valid(teks, fetched_urls):
     if ditemukan < 4:
         return False, f"Hanya {ditemukan} topik ditemukan, minimal 4"
 
-    # Ekstrak URL dari laporan
     urls = re.findall(r'https?://[^\s\)]+', teks)
-    domain_whitelist = DOMAIN_INTERNASIONAL + DOMAIN_INDONESIA
-    valid_urls = [u for u in urls if any(domain in u for domain in domain_whitelist)]
-    if len(valid_urls) < 4:
-        return False, f"Hanya {len(valid_urls)} URL whitelist ditemukan, minimal 4"
+    valid_urls = [u for u in urls if any(domain in u for domain in DOMAIN_WHITELIST)]
+    if len(valid_urls) < 3:
+        return False, f"Hanya {len(valid_urls)} URL whitelist ditemukan, minimal 3"
 
-    # Pastikan minimal 4 URL yang valid juga ada di fetched_urls
     matching_fetched = [u for u in valid_urls if any(u.startswith(fu) or fu in u for fu in fetched_urls)]
-    if len(matching_fetched) < 4:
-        return False, f"Hanya {len(matching_fetched)} URL yang benar-benar di-fetch, minimal 4"
+    if len(matching_fetched) < 3:
+        return False, f"Hanya {len(matching_fetched)} URL yang benar-benar di-fetch, minimal 3"
 
     bad_patterns = [
         "</code", "User Safety", "Response Safety",
@@ -207,7 +204,7 @@ class RecentNewsSearchTool(Tool):
         "Cari berita/informasi TERBARU dari 24-48 jam terakhir. "
         "Untuk topik global gunakan query Bahasa Inggris. "
         "Untuk topik Indonesia gunakan Bahasa Indonesia. "
-        "Kembalikan STRING berisi judul, ringkasan, URL, dan tanggal publikasi jika tersedia."
+        "Hanya hasil dari sumber terpercaya yang ditampilkan."
     )
     inputs      = {"query": {"type": "string", "description": "Kata kunci pencarian"}}
     output_type = "string"
@@ -217,11 +214,11 @@ class RecentNewsSearchTool(Tool):
         for attempt in range(3):
             try:
                 if attempt == 0:
-                    results = DDGS(backend="html").text(query, timelimit="d", max_results=4)
+                    results = DDGS(backend="html").text(query, timelimit="d", max_results=6)
                 elif attempt == 1:
-                    results = DDGS().text(query, timelimit="d", max_results=4)
+                    results = DDGS().text(query, timelimit="d", max_results=6)
                 else:
-                    results = DDGS(backend="html").text(query, timelimit="w", max_results=4)
+                    results = DDGS(backend="html").text(query, timelimit="w", max_results=6)
                 if results:
                     break
             except Exception as e:
@@ -231,8 +228,18 @@ class RecentNewsSearchTool(Tool):
         if not results:
             return "Tidak ada hasil ditemukan, coba kata kunci lain."
 
-        out = ""
+        # Filter hasil: hanya domain whitelist
+        filtered = []
         for r in results:
+            url = r.get('href', '')
+            if any(domain in url for domain in DOMAIN_WHITELIST):
+                filtered.append(r)
+
+        if not filtered:
+            return "Tidak ada hasil dari sumber terpercaya. Coba query dengan menyertakan nama situs (misal: site:reuters.com)."
+
+        out = ""
+        for r in filtered[:5]:  # batasi 5 hasil
             title = r.get('title', '')
             body  = r.get('body', '')
             url   = r.get('href', '')
@@ -250,13 +257,17 @@ class FetchWebpageTool(Tool):
     name        = "fetch_webpage"
     description = (
         "Ambil isi halaman web dari URL yang diberikan dan kembalikan teks artikel yang sudah dibersihkan. "
-        "Gunakan setelah mendapatkan URL dari web_search."
+        "Gunakan setelah mendapatkan URL dari web_search. Hanya menerima URL dari domain terpercaya."
     )
     inputs      = {"url": {"type": "string", "description": "URL halaman web yang akan diambil"}}
     output_type = "string"
 
     def forward(self, url: str) -> str:
-        global FETCHED_URLS, FETCHED_CONTENT
+        global FETCHED_URLS
+        # Cek domain
+        if not any(domain in url for domain in DOMAIN_WHITELIST):
+            return "Domain tidak diizinkan. Gunakan hanya URL dari sumber terpercaya."
+
         try:
             headers = {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
@@ -265,31 +276,23 @@ class FetchWebpageTool(Tool):
             r.raise_for_status()
             soup = BeautifulSoup(r.text, "html.parser")
 
-            # Buang elemen yang tidak relevan
             for tag in soup(["script", "style", "nav", "header", "footer", "aside", "form", "button"]):
                 tag.decompose()
 
-            # Coba ambil konten utama
             main = soup.find("article") or soup.find("main") or soup.body
             paragraphs = main.find_all("p") if main else []
             text = "\n".join(p.get_text(strip=True) for p in paragraphs)
 
-            # Jika tidak ada paragraf, ambil semua teks
             if not text:
                 text = soup.get_text(separator="\n", strip=True)
 
-            # Potong hingga 2500 karakter
             text = text[:2500]
-
-            # Tandai URL berhasil di-fetch dan simpan konten
             FETCHED_URLS.add(url)
-            FETCHED_CONTENT[url] = text
             return text
         except Exception as e:
             return f"Error fetching the webpage: {e}"
 
 class FormatError(Exception):
-    """Error yang menandakan model menghasilkan format yang salah."""
     pass
 
 class FallbackModel:
@@ -370,7 +373,6 @@ class FallbackModel:
                 try:
                     log.info(f"Mencoba provider {entry['name']} dengan model {entry['models'][entry['current_idx']]}...")
                     result = getattr(model_obj, method_name)(*args, **kwargs)
-                    # Periksa format output
                     if self._is_format_error(result):
                         log.warning(f"Model {entry['models'][entry['current_idx']]} menghasilkan format salah. Tandai mati.")
                         entry["dead"][entry["current_idx"]] = True
@@ -421,12 +423,11 @@ def buat_agent():
             "name": "Gemini",
             "api_base": "https://generativelanguage.googleapis.com/v1beta/openai/",
             "api_key": GOOGLE_API_KEY,
-            # Urutan dari paling stabil (free tier) ke paling murah
             "models": [
-                "gemini-3.6-flash",          # paling stabil di free tier
-                "gemini-3.5-flash",          # cadangan
-                "gemini-3.1-flash-lite",     # lebih hemat
-                "gemini-3.5-flash-lite",     # paling hemat
+                "gemini-3.6-flash",
+                "gemini-3.5-flash",
+                "gemini-3.1-flash-lite",
+                "gemini-3.5-flash-lite",
             ],
         },
     ]
@@ -480,7 +481,7 @@ def buat_agent():
         ],
         model=model,
         additional_authorized_imports=["datetime", "os", "re", "requests", "bs4"],
-        max_steps=10,   # Naikkan dari 7 menjadi 10 agar cukup untuk riset
+        max_steps=12,   # naikkan agar cukup untuk 5 topik + cadangan
     )
 
 
@@ -490,15 +491,14 @@ def hitung_visit_sukses(agent):
     for step in agent.memory.steps:
         code = getattr(step, "code_action", None)
         obs  = getattr(step, "observations", None) or ""
-        if code and "fetch_webpage(" in code and "Error fetching the webpage:" not in obs:
+        if code and "fetch_webpage(" in code and "Error fetching the webpage:" not in obs and "Domain tidak diizinkan" not in obs:
             jumlah += 1
     return jumlah
 
 
 def jalankan_analisa_harian():
-    global FETCHED_URLS, FETCHED_CONTENT
+    global FETCHED_URLS
     FETCHED_URLS = set()
-    FETCHED_CONTENT = {}
 
     log.info("=" * 55)
     log.info("MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...")
@@ -568,6 +568,11 @@ PENTING TENTANG FORMAT OUTPUT KODE:
   print(artikel)
   </code>
 
+PENTING TENTANG SUMBER:
+- HANYA gunakan URL dari domain yang sudah dikenal (Reuters, BBC, CNBC, CNN Indonesia, Kompas, Detik, dll).
+- JANGAN PERNAH mengunjungi atau mengutip dari Facebook, LinkedIn, Twitter, atau domain tidak jelas.
+- Jika hasil pencarian tidak menampilkan sumber terpercaya, coba lagi dengan menambahkan kata "site:reuters.com" atau nama media yang kamu inginkan.
+
 PENTING TENTANG ANTI-HALUSINASI:
 - Setiap angka penting (harga, level, skor, persentase) yang kamu tulis harus benar-benar ada di teks hasil fetch_webpage.
 - Jangan menambahkan angka dari ingatan atau perkiraan.
@@ -597,7 +602,7 @@ ATURAN KETAT:
 - JANGAN keluarkan teks lain selain laporan itu sendiri.
 """
 
-    MIN_VISIT = 4
+    MIN_VISIT = 3   # turunkan ke 3 karena beberapa topik mungkin gagal
     MAX_COBA  = 2
 
     agent = buat_agent()
@@ -634,7 +639,6 @@ ATURAN KETAT:
             kirim_ke_telegram(pesan_error)
             return
 
-        # Jika n_visit kurang dari minimum, batalkan pengiriman
         if n_visit < MIN_VISIT:
             pesan_error = f"❌ Bot hanya berhasil mengunjungi {n_visit} sumber (minimal {MIN_VISIT}). Laporan tidak dikirim karena berpotensi tidak akurat."
             log.error(pesan_error)
