@@ -29459,3 +29459,188 @@ Topik yang sedang hangat diperbincangkan di Indonesia dalam 1-2 hari terakhir be
 2026-09-14 02:19:17,961 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (462 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-09-14 02:19:17,961 [INFO] Mengirim laporan ke Telegram...
 2026-09-14 02:19:18,517 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-09-14 17:12:48,005 [INFO] history.json dibersihkan dari entri rusak (4 entri tersisa).
+2026-09-14 17:12:48,005 [INFO] =======================================================
+2026-09-14 17:12:48,005 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-09-14 17:12:48,005 [INFO] =======================================================
+2026-09-14 17:12:48,006 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-09-14 17:12:48,764 [INFO] Provider siap: Gemini dengan 4 model
+2026-09-14 17:12:48,766 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-09-14 17:12:48,766 [INFO] Provider siap: Z.AI dengan 1 model
+2026-09-14 17:12:48,767 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-09-14 17:12:48,768 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-09-14 17:12:48,783 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-09-14 17:12:48,802 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-09-14 17:12:49,713 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-14 17:12:49,714 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-14 17:12:49,714 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-14 17:12:54,147 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-14 17:12:54,148 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-14 17:12:54,149 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-14 17:12:55,030 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-14 17:12:55,031 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-14 17:12:55,031 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:12:55,818 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:12:55,827 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:12:55,871 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-14 17:12:55,871 [WARNING] backend is not set. Using 'auto'
+2026-09-14 17:12:56,048 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitics+stock+market+crypto+news+September+2026+cnbc&limit=1 200
+2026-09-14 17:12:56,073 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitics%20stock%20market%20crypto%20news%20September%202026%20cnbc 200
+2026-09-14 17:12:56,433 [INFO] response: https://www.startpage.com/ 200
+2026-09-14 17:12:56,512 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-14 17:12:56,914 [INFO] response: https://www.mojeek.com/search?q=global+geopolitics+stock+market+crypto+news+September+2026+cnbc 403
+2026-09-14 17:12:57,637 [INFO] response: https://search.brave.com/search?q=global+geopolitics+stock+market+crypto+news+September+2026+cnbc&source=web&tf=pd 200
+2026-09-14 17:12:57,648 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:12:58,740 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:12:58,741 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:01,057 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:02,081 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:02,083 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:02,085 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-14 17:13:02,085 [WARNING] backend is not set. Using 'auto'
+2026-09-14 17:13:02,228 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Coinbase%20moves%20to%20boost%20community%20bank%20stablecoin%20capabilities%20cnbc 200
+2026-09-14 17:13:02,274 [INFO] response: https://grokipedia.com/api/typeahead?query=Coinbase+moves+to+boost+community+bank+stablecoin+capabilities+cnbc&limit=1 200
+2026-09-14 17:13:02,877 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-09-14 17:13:02,881 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:03,857 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:03,858 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:04,010 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:04,660 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:04,661 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:04,663 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-14 17:13:04,663 [WARNING] backend is not set. Using 'auto'
+2026-09-14 17:13:04,822 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20soccer%20match%20results%20transfer%20news%20September%202026%20espn%20bbc 200
+2026-09-14 17:13:04,829 [INFO] response: https://grokipedia.com/api/typeahead?query=football+soccer+match+results+transfer+news+September+2026+espn+bbc&limit=1 200
+2026-09-14 17:13:05,280 [INFO] response: https://www.mojeek.com/search?q=football+soccer+match+results+transfer+news+September+2026+espn+bbc 403
+2026-09-14 17:13:05,542 [INFO] response: https://www.startpage.com/ 200
+2026-09-14 17:13:05,627 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-14 17:13:05,854 [INFO] response: https://search.yahoo.com/search;_ylt=5lpxOGJEn0lNrsjyTFqnbnTc;_ylu=PwWbDxPndvJ4Mol_aV0P8f3CRULOSBEzV0usDkmVBAuuaxg?p=football+soccer+match+results+transfer+news+September+2026+espn+bbc&btf=d 200
+2026-09-14 17:13:07,165 [INFO] response: https://search.brave.com/search?q=football+soccer+match+results+transfer+news+September+2026+espn+bbc&source=web&tf=pd 200
+2026-09-14 17:13:07,175 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:08,026 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:08,027 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:08,029 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-14 17:13:08,029 [WARNING] backend is not set. Using 'auto'
+2026-09-14 17:13:08,127 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+results+September+2026+bbc+sport&limit=1 200
+2026-09-14 17:13:08,195 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20results%20September%202026%20bbc%20sport 200
+2026-09-14 17:13:08,482 [INFO] response: https://search.yahoo.com/search;_ylt=LJ-3pe4vNHjIiMGa25tEiwLb;_ylu=fj3gkjcjewojSrsHwGvHE4WSTv7vMzZuLrtvQhZb1l2okTQ?p=Premier+League+results+September+2026+bbc+sport&btf=d 200
+2026-09-14 17:13:09,591 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:10,735 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:10,735 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:11,078 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:11,996 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:11,997 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:11,999 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-14 17:13:11,999 [WARNING] backend is not set. Using 'auto'
+2026-09-14 17:13:12,162 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=technology%20AI%20news%20techcrunch%20wired%20september%202026 200
+2026-09-14 17:13:12,182 [INFO] response: https://grokipedia.com/api/typeahead?query=technology+AI+news+techcrunch+wired+september+2026&limit=1 200
+2026-09-14 17:13:12,561 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtechnology%2BAI%2Bnews%2Btechcrunch%2Bwired%2Bseptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0pfrwGKjWoNUGIjD0gMjD_TrFAjOL3zoJhuchQD700_s_jOVmwkW2Rs-Bwu6KEcGqKZWJQTGClzmgDo4yAnJSWgFD 429
+2026-09-14 17:13:13,142 [INFO] response: https://search.brave.com/search?q=technology+AI+news+techcrunch+wired+september+2026&source=web&tf=pd 200
+2026-09-14 17:13:13,153 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:14,227 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:14,230 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:14,420 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:15,168 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:15,169 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:15,171 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-14 17:13:15,171 [WARNING] backend is not set. Using 'auto'
+2026-09-14 17:13:15,318 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20rupiah%20kurs%20berita%20ekonomi%20indonesia%20september%202026%20cnn%20indonesia%20kompas 200
+2026-09-14 17:13:15,813 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+rupiah+kurs+berita+ekonomi+indonesia+september+2026+cnn+indonesia+kompas&limit=1 200
+2026-09-14 17:13:16,475 [INFO] response: https://search.brave.com/search?q=IHSG+rupiah+kurs+berita+ekonomi+indonesia+september+2026+cnn+indonesia+kompas&source=web&tf=pd 200
+2026-09-14 17:13:16,493 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:17,600 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:17,602 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:17,721 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:19,147 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:19,148 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:23,930 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:24,884 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:24,886 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:24,887 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-14 17:13:24,887 [WARNING] backend is not set. Using 'auto'
+2026-09-14 17:13:25,011 [INFO] response: https://grokipedia.com/api/typeahead?query=timnas+indonesia+olahraga+September+2026+bola.com+kompas&limit=1 200
+2026-09-14 17:13:25,041 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=timnas%20indonesia%20olahraga%20September%202026%20bola.com%20kompas 200
+2026-09-14 17:13:25,788 [INFO] response: https://search.brave.com/search?q=timnas+indonesia+olahraga+September+2026+bola.com+kompas&source=web&tf=pd 200
+2026-09-14 17:13:25,807 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:26,881 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:26,882 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:28,486 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:29,402 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:29,404 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:29,406 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-14 17:13:29,406 [WARNING] backend is not set. Using 'auto'
+2026-09-14 17:13:29,585 [INFO] response: https://grokipedia.com/api/typeahead?query=viral+trending+berita+indonesia+september+2026+kompas+detik+cnn&limit=1 200
+2026-09-14 17:13:29,616 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=viral%20trending%20berita%20indonesia%20september%202026%20kompas%20detik%20cnn 200
+2026-09-14 17:13:29,798 [INFO] response: https://www.startpage.com/ 200
+2026-09-14 17:13:29,911 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-14 17:13:30,469 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dviral%2Btrending%2Bberita%2Bindonesia%2Bseptember%2B2026%2Bkompas%2Bdetik%2Bcnn%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0pfrwGLnWoNUGIjBYO1FnXR4b6e9Y7m2ZUpmROB1YV0OeMx82BEvMftih8nWfchZE67yRN1Cr0Nela0kyAnJSWgFD 429
+2026-09-14 17:13:31,011 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-09-14 17:13:31,015 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:31,921 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:31,922 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:13:31,924 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-14 17:13:31,924 [WARNING] backend is not set. Using 'auto'
+2026-09-14 17:13:32,070 [INFO] response: https://grokipedia.com/api/typeahead?query=karnaval+Pekalongan+mirip+ritual+satanic+september+2026+tribunnews&limit=1 200
+2026-09-14 17:13:32,074 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=karnaval%20Pekalongan%20mirip%20ritual%20satanic%20september%202026%20tribunnews 200
+2026-09-14 17:13:32,165 [INFO] response: https://www.google.com/wml/search?q=karnaval+Pekalongan+mirip+ritual+satanic+september+2026+tribunnews&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-14 17:13:32,979 [INFO] response: https://search.brave.com/search?q=karnaval+Pekalongan+mirip+ritual+satanic+september+2026+tribunnews&source=web&tf=pd 200
+2026-09-14 17:13:32,990 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:33,154 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-14 17:13:33,156 [WARNING] ⚠️ Gemini / gemini-3.5-flash-lite gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 26.863272982s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '26s'}]}}]
+2026-09-14 17:13:33,156 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-14 17:13:33,156 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-14 17:13:35,783 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:13:35,784 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-14 17:13:35,788 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:13:35,985 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-14 17:13:35,985 [WARNING] ⚠️ Gemini / gemini-3.5-flash-lite gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\nPlease retry in 24.043393874s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24s'}]}}]
+2026-09-14 17:13:35,985 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-14 17:13:35,985 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-14 17:14:11,568 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:14:11,569 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-14 17:14:11,581 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-14 17:14:19,106 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-14 17:14:19,108 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-14 17:14:19,109 [INFO] Validasi: 7x fetch_webpage sukses (minimum 3).
+2026-09-14 17:14:19,109 [INFO] URL yang berhasil di-fetch: {'https://techcrunch.com/2026/09/14/only-at-techcrunch-disrupt-2026-what-happens-when-openai-ships-your-roadmap/', 'https://indikatorbisnis.com/detail/857397/ihsg-dibuka-turun-011-persen-rupiah-melemah-ke-rp17614', 'https://www.cnbc.com/2026/09/14/clarity-act-senate-vote-crypto-regulation.html', 'https://www.cnbc.com/quotes/COIN', 'https://bola.kompas.com/read/2026/09/13/13560578/erick-thohir-dan-pramono-anung-tegaskan-dukungan-untuk-fifa-asean-cup-2026', 'https://www.bbc.com/sport/football/live/ckz7z14eelwjt'}
+2026-09-14 17:14:19,110 [INFO] Validasi LULUS — laporan berbasis riset nyata dan format benar.
+2026-09-14 17:14:19,111 [INFO] LAPORAN FINAL:
+2026-09-14 17:14:19,111 [INFO] ## 📊 LAPORAN MENDALAM — 14 SEPTEMBER 2026
+
+### Geopolitik & Ekonomi Global
+Pasar aset kripto dan keuangan global tengah menghadapi momen penentuan yang krusial pada pertengahan September 2026 ini. Menjelang pemungutan suara awal di Senat AS yang dijadwalkan pada hari Selasa, rancangan undang-undang struktur pasar kripto yang dikenal sebagai *Clarity Act* memicu perdebatan sengit antara industri kripto, perbankan tradisional, dan para pembuat kebijakan. RUU ini dirancang untuk menetapkan kerangka regulasi yang jelas bagi aset digital, namun perjalanannya terhambat oleh berbagai isu sensitif terkait potensi pelarian dana simpanan bank konvensional serta aturan etika bagi pejabat tinggi.
+
+Menurut laporan dari CNBC yang dipublikasikan pada 14 September 2026, perjuangan RUU ini di Senat memerlukan kompromi politik yang mendalam agar dapat melewati ambang batas filibuster: *"The Clarity Act, which would establish a new regulatory structure for cryptocurrencies and other digital assets, has languished in the Senate for months."* (Sumber: CNBC, https://www.cnbc.com/2026/09/14/clarity-act-senate-vote-crypto-regulation.html). Perubahan teks terakhir yang disepakati mencakup pembatasan imbal hasil (*yield*) pada stablecoin guna melindungi bank komunitas dari potensi *deposit flight*, serta pengetatan aturan etika federal. Sentimen ini langsung berimbas pada pergerakan saham perusahaan terkait kripto seperti Coinbase, di mana investor terus memantau apakah regulasi baru ini akan memberikan kepastian hukum jangka panjang atau justru memperketat ruang gerak ekosistem aset digital.
+
+### Olahraga Global
+Dinamika kompetisi sepak bola Liga Inggris (Premier League) musim 2026 kembali menyita perhatian publik global, terutama dengan persaingan ketat di papan atas klasemen sementara. Menjelang duel penting antara Leeds United dan Newcastle United, BBC Sport menyajikan ulasan mendalam mengenai performa kedua kesebelasan yang tengah mengincar posisi di zona empat besar. Pertandingan ini sarat akan gengsi dan ambisi taktis dari masing-masing manajer untuk mengamankan tren positif di awal musim.
+
+Berdasarkan laporan langsung dari BBC Sport pada 14 September 2026, kedua tim memiliki motivasi tinggi setelah catatan statistik yang impresif di pekan-pekan sebelumnya: *"Leeds and Newcastle would move into top four with win"* serta catatan menarik bahwa *"Only three teams have had fewer shots on target than Newcastle in the Premier League this season (8), though they’ve scored six goals from these."* (Sumber: BBC Sport, https://www.bbc.com/sport/football/live/ckz7z14eelwjt). Efisiensi serangan Newcastle menjadi sorotan utama para pengamat karena mereka mampu memaksimalkan peluang minim menjadi gol secara efektif, sementara Leeds United mengandalkan intensitas tekanan tinggi di paruh lapangan lawan untuk meredam dominasi tim tamu.
+
+### Teknologi & AI Terbaru
+Ekosistem kecerdasan buatan (*artificial intelligence*) kembali diguncang oleh perdebatan strategis yang mendasar mengenai masa depan perusahaan rintisan (*startup*). Di tengah persiapan ajang bergengsi TechCrunch Disrupt 2026 yang akan digelar di Moscone West, San Francisco, isu utama yang dihadapi para pendiri *startup* AI bukan lagi sekadar bersaing dengan sesama perusahaan baru, melainkan ancaman dari platform model dasar raksasa seperti OpenAI, Anthropic, dan Google yang dapat sewaktu-waktu mengintegrasikan fitur andalan mereka ke dalam ekosistem utama.
+
+Dalam artikel preview yang dirilis TechCrunch pada 14 September 2026 untuk sesi *Builders Stage* bertajuk *"What Happens When OpenAI Ships Your Roadmap"*, ditekankan betapa rentannya posisi produk *single-feature* di industri ini: *"For AI founders, the biggest competitive threat may no longer be another startup. It may be the platform you’re building on."* (Sumber: TechCrunch, https://techcrunch.com/2026/09/14/only-at-techcrunch-disrupt-2026-what-happens-when-openai-ships-your-roadmap/). Realitas ini memaksa para inovator untuk mengalihkan strategi defensif mereka; al hanya mengandalkan keunggulan model semata, masa depan *startup* AI kini sangat ditentukan oleh kepemilikan data proprietari, integrasi *workflow* yang mendalam dengan operasional pelanggan, serta tingkat kepercayaan yang sulit ditiru oleh pengembang model dasar.
+
+### Indonesia Update
+**Ekonomi Domestik:** 
+Pergerakan pasar keuangan domestik pada awal pekan, Senin, 14 September 2026, dibuka dalam zona merah di tengah sikap hati-hati para investor (*wait and see*) menanti hasil rapat FOMC Bank Sentral AS (The Fed). Indeks Harga Saham Gabungan (IHSG) Bursa Efek Indonesia mengalami tekanan koreksi seiring dengan bayang-bayang inflasi global dan dinamika geopolitik energi. 
+
+Berdasarkan laporan dari media domestik Indikator Bisnis pada 14 September 2026, tercatat bahwa: *"IHSG dibuka melemah 7,51 poin atau 0,11 persen ke posisi 6.533,87. Sementara itu, kelompok 45 saham unggulan atau Indeks LQ45 turun 0,74 poin atau 0,11 persen ke posisi 648,98."* (Sumber: Indikator Bisnis, https://indikatorbisnis.com/detail/857397/ihsg-dibuka-turun-011-persen-rupiah-melemah-ke-rp17614). Para analis pasar memperingatkan bahwa jika IHSG gagal mempertahankan level *support* krusial di kisaran 6.530, tekanan jual berpotensi menyeret indeks menuju level 6.425, sementara perhatian pelaku pasar tetap terfokus pada arah kebijakan suku bunga global yang memengaruhi kestabilan nilai tukar Rupiah.
+
+**Olahraga Nasional:**
+Di sektor olahraga nasional, persiapan Indonesia menuju perhelatan internasional semakin gencar dilakukan. Ketua Umum PSSI Erick Thohir bersama Gubernur DKI Jakarta Pramono Anung secara resmi menyatakan kesiapan penuh ibu kota dalam menyambut turnamen besar tingkat regional Asia Tenggara, yakni FIFA ASEAN Cup 2026, yang rangkaian sosialisasinya digelar melalui parade publik di area *Car Free Day* Jakarta.
+
+Mengutip laporan dari Kompas.com pada 13 September 2026, Erick Thohir menyampaikan apresiasi atas dukungan lintas sektoral pemerintah: *"Alhamdulillah, terima kasih atas dukungan FIFA, Bapak Presiden, dan juga Pak Gubernur. Setelah sebelumnya menjadi tuan rumah Kejuaraan Dunia FIFA U17, sekarang kita kembali mendapat kesempatan untuk menyelenggarakan FIFA ASEAN Cup yang akan bergulir pada 25 September sampai 5 Oktober."* (Sumber: Kompas.com, https://bola.kompas.com/read/2026/09/13/13560578/erick-thohir-dan-pramono-anung-tegaskan-dukungan-untuk-fifa-asean-cup-2026). Komitmen ini diharapkan tidak hanya sukses secara penyelenggaraan, tetapi juga mampu mendongkrak prestasi skuad Garuda di kancah internasional.
+
+### Trending Indonesia
+Dunia maya dan pemberitaan nasional di Indonesia dalam 1-2 hari terakhir dihebohkan oleh kontroversi penyelenggaraan *Simbang Kulon Night Carnival* (SKNC) 2026 di Kecamatan Buaran, Kabupaten Pekalongan. Acara karnaval yang awalnya dimaksudkan untuk memeriahkan perayaan lokal tersebut mendadak viral dan menuai kecaman luas setelah sejumlah peserta menampilkan atribut visual, kostum bernuansa iblis, serta aksi yang dinilai sebagian masyarakat menyerupai praktik okultisme atau ritual satanik.
+
+Menurut laporan dari Detik.com pada 14 September 2026, kehebohan ini memaksa pemerintah daerah turun tangan untuk meredakan ketegangan sosial di masyarakat: *"Simbang Kulon Night Carnival 2026 di Pekalongan menuai kontroversi karena menampilkan unsur satanik. Pemkab akan klarifikasi dengan panitia dan MUI."* (Sumber: Detik.com, https://www.detik.com/jateng/berita/d-8662066/heboh-simbang-kulon-night-carnival-pekalongan-disebut-ritual-satanic). Kontroversi ini semakin memanas setelah beredar kabar duka terkait salah satu peserta yang meninggal dunia tidak lama setelah acara selesai, memicu perdebatan publik mengenai batasan kreativitas budaya, norma kesopanan, serta perlunya pengawasan ketat dari tokoh agama dan pihak berwenang agar tradisi lokal tetap sejalan dengan nilai-nilai keagamaan dan Pancasila.
+2026-09-14 17:14:19,111 [INFO] Mengirim laporan ke Telegram...
+2026-09-14 17:14:19,111 [INFO] Pesan dipecah jadi 3 bagian.
+2026-09-14 17:14:19,734 [INFO] ✅ Bagian 1/3 terkirim (Markdown)!
+2026-09-14 17:14:21,338 [INFO] ✅ Bagian 2/3 terkirim (Markdown)!
+2026-09-14 17:14:22,910 [INFO] ✅ Bagian 3/3 terkirim (Markdown)!
+2026-09-14 17:14:23,911 [INFO] History disimpan (5 entri).
+2026-09-14 17:14:23,911 [INFO] Selesai — laporan terkirim dan history disimpan.
