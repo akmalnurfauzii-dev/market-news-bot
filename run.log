@@ -31496,3 +31496,580 @@ Menurut laporan dari Detik.com pada 14 September 2026, kehebohan ini memaksa pem
 2026-09-17 15:52:14,926 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (282 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-09-17 15:52:14,926 [INFO] Mengirim laporan ke Telegram...
 2026-09-17 15:52:15,428 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-09-18 02:05:22,549 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-09-18 02:05:22,549 [INFO] =======================================================
+2026-09-18 02:05:22,549 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-09-18 02:05:22,549 [INFO] =======================================================
+2026-09-18 02:05:22,549 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-09-18 02:05:23,139 [INFO] Provider siap: Gemini dengan 4 model
+2026-09-18 02:05:23,140 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-09-18 02:05:23,141 [INFO] Provider siap: Z.AI dengan 1 model
+2026-09-18 02:05:23,142 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-09-18 02:05:23,143 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-09-18 02:05:23,153 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-09-18 02:05:23,170 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-09-18 02:05:27,504 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:05:27,511 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-09-18 02:05:27,544 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:05:27,544 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:05:27,799 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20stock%20market%20crypto%20September%202026%20CNBC%20BBC 200
+2026-09-18 02:05:27,799 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+stock+market+crypto+September+2026+CNBC+BBC&limit=1 200
+2026-09-18 02:05:28,246 [INFO] response: https://search.yahoo.com/search;_ylt=UQV9x0bBgMByUxQ_83dR5yn6;_ylu=sGJmKDRTvV_5iDpG5DfmIgMlzY02bHQgBSSFcF8hr2EcJyI?p=geopolitics+stock+market+crypto+September+2026+CNBC+BBC&btf=d 200
+2026-09-18 02:05:28,842 [INFO] response: https://www.mojeek.com/search?q=geopolitics+stock+market+crypto+September+2026+CNBC+BBC 403
+2026-09-18 02:05:29,403 [INFO] response: https://search.brave.com/search?q=geopolitics+stock+market+crypto+September+2026+CNBC+BBC&source=web&tf=pd 200
+2026-09-18 02:05:29,411 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-09-18 02:05:50,169 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:05:50,170 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-09-18 02:05:50,172 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:05:50,172 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:05:50,426 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20war%20oil%20market%20September%2017%202026%20CNBC%20BBC 200
+2026-09-18 02:05:50,541 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+war+oil+market+September+17+2026+CNBC+BBC&limit=1 200
+2026-09-18 02:05:51,037 [INFO] response: https://www.mojeek.com/search?q=Middle+East+war+oil+market+September+17+2026+CNBC+BBC 403
+2026-09-18 02:05:51,651 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DMiddle%2BEast%2Bwar%2Boil%2Bmarket%2BSeptember%2B17%2B2026%2BCNBC%2BBBC%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGP-4stUGIjBOgVat4OvTRxB9gLIIeeqDNIwIhHZ_a_MMRsZ7hKgts0IxFPZvclFjySncxxG1ywkyAnJSWgFD 429
+2026-09-18 02:05:51,918 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:05:52,008 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:05:52,585 [INFO] response: https://search.brave.com/search?q=Middle+East+war+oil+market+September+17+2026+CNBC+BBC&source=web&tf=pd 200
+2026-09-18 02:05:52,594 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-09-18 02:05:54,963 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:05:54,964 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-09-18 02:05:55,862 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-09-18 02:05:59,030 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:05:59,031 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-09-18 02:05:59,033 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:05:59,033 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:05:59,270 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Champions%20League%20UEFA%20football%20match%20results%20September%2017%202026%20BBC%20Sport%20ESPN 200
+2026-09-18 02:05:59,332 [INFO] response: https://grokipedia.com/api/typeahead?query=Champions+League+UEFA+football+match+results+September+17+2026+BBC+Sport+ESPN&limit=1 200
+2026-09-18 02:05:59,831 [INFO] response: https://www.mojeek.com/search?q=Champions+League+UEFA+football+match+results+September+17+2026+BBC+Sport+ESPN 403
+2026-09-18 02:06:00,629 [INFO] response: https://search.brave.com/search?q=Champions+League+UEFA+football+match+results+September+17+2026+BBC+Sport+ESPN&source=web&tf=pd 200
+2026-09-18 02:06:00,641 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-09-18 02:06:03,149 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-18 02:06:03,149 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-18 02:06:03,149 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-18 02:06:48,190 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Request timed out.
+2026-09-18 02:06:48,190 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-18 02:07:08,908 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:07:08,910 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-18 02:07:09,019 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-18 02:07:37,574 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-18 02:07:37,575 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-18 02:07:37,575 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-18 02:07:39,944 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:07:39,945 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-18 02:07:39,947 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:07:39,947 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:07:40,169 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Champions%20League%20football%20match%20results%20September%2017%202026%20BBC 200
+2026-09-18 02:07:40,291 [INFO] response: https://grokipedia.com/api/typeahead?query=Champions+League+football+match+results+September+17+2026+BBC&limit=1 200
+2026-09-18 02:07:40,640 [INFO] response: https://search.yahoo.com/search;_ylt=ILjG8iko7KbIdGbD008ALpxH;_ylu=Vp8QmjZLQApI8PZBQ32J6fAnRQMTbiI3wWJeeKw9xA68Kq4?p=Champions+League+football+match+results+September+17+2026+BBC&btf=d 200
+2026-09-18 02:07:41,378 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DChampions%2BLeague%2Bfootball%2Bmatch%2Bresults%2BSeptember%2B17%2B2026%2BBBC%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGO25stUGIjD8nwUactSIM4PNDB_hU7HBHx_tfnrdpKrnlxS2gJsb9jbKnwwBkN-SmnBNiCfkwCgyAnJSWgFD 429
+2026-09-18 02:07:42,168 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-09-18 02:07:42,172 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-18 02:07:45,552 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:07:45,553 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-18 02:07:45,554 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:07:45,555 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:07:45,767 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Champions%20League%20match%20results%20September%2017%202026%20Sky%20Sports 200
+2026-09-18 02:07:45,825 [INFO] response: https://grokipedia.com/api/typeahead?query=Champions+League+match+results+September+17+2026+Sky+Sports&limit=1 200
+2026-09-18 02:07:46,109 [INFO] response: https://search.yahoo.com/search;_ylt=I-QUTzCJlqCG7dfFtdVzt10Y;_ylu=KD-s1Axj5Vu8njKDlM22LkgIKdcFZaUt7sIG4TSNc3MAO9I?p=Champions+League+match+results+September+17+2026+Sky+Sports&btf=d 200
+2026-09-18 02:07:46,338 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:07:46,496 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:07:47,127 [INFO] response: https://search.brave.com/search?q=Champions+League+match+results+September+17+2026+Sky+Sports&source=web&tf=pd 200
+2026-09-18 02:07:47,141 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-18 02:08:31,256 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-18 02:08:31,257 [WARNING] ⚠️ Gemini / gemini-3.5-flash-lite gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-18 02:08:31,257 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:08:31,257 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-18 02:08:31,605 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-18 02:08:31,605 [WARNING] ⚠️ NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b gagal: Error code: 503 - {'error': {'message': 'Service temporarily overloaded', 'type': 'Service Unavailable', 'code': 503}}
+2026-09-18 02:08:31,605 [INFO] Mencoba provider NVIDIA NIM dengan model meta/llama-4-maverick-17b-128e-instruct...
+2026-09-18 02:08:31,767 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-18 02:08:31,767 [WARNING] ⚠️ NVIDIA NIM / meta/llama-4-maverick-17b-128e-instruct gagal: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410, 'detail': "The model 'meta/llama-4-maverick-17b-128e-instruct' has reached its end of life on 2026-07-27T00:00:00Z and is no longer available."}
+2026-09-18 02:08:31,767 [WARNING] Model meta/llama-4-maverick-17b-128e-instruct ditandai mati (retired/404/410).
+2026-09-18 02:08:31,767 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:08:31,767 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-18 02:09:16,983 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Request timed out.
+2026-09-18 02:09:16,983 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:09:16,983 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:09:17,452 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:09:20,620 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:09:20,960 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:09:20,960 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:09:20,960 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:09:20,960 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:09:21,557 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:09:27,061 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:09:28,298 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:09:28,299 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:09:28,299 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:09:28,299 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:09:28,856 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:09:32,569 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:09:32,795 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:09:32,795 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:09:32,795 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:09:32,795 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:09:33,778 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:09:35,154 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:09:35,155 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:09:35,155 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:09:35,155 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:09:35,155 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:09:35,429 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:09:36,665 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:09:36,667 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:09:36,667 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:09:36,667 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:09:36,667 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:09:36,933 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:09:39,616 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:09:39,824 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:09:39,825 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:09:39,825 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:09:39,825 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:09:40,832 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:09:57,381 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:09:57,808 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:09:57,808 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:09:57,808 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:09:57,808 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:09:58,504 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:10:00,922 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:10:00,924 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:10:00,924 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:10:01,115 [INFO] response: https://grokipedia.com/api/typeahead?query=Crystal+Palace+4-0+Lech+Poznan+Europa+League+September+2026+BBC&limit=1 200
+2026-09-18 02:10:01,168 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Crystal%20Palace%204-0%20Lech%20Poznan%20Europa%20League%20September%202026%20BBC 200
+2026-09-18 02:10:01,913 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DCrystal%2BPalace%2B4-0%2BLech%2BPoznan%2BEuropa%2BLeague%2BSeptember%2B2026%2BBBC%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGPm6stUGIjAkmQEoVDMxPpQlEAhB-2t8c5CnJA0od8nDuCH5Wh8VXmcw1L57hLL07DN1Gy88epcyAnJSWgFD 429
+2026-09-18 02:10:02,661 [INFO] response: https://search.brave.com/search?q=Crystal+Palace+4-0+Lech+Poznan+Europa+League+September+2026+BBC&source=web&tf=pd 200
+2026-09-18 02:10:02,668 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:10:02,668 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:10:02,668 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:10:02,668 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:10:03,041 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:10:04,059 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:10:04,402 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:10:04,402 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:10:04,403 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:10:04,403 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:10:05,107 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:10:11,659 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:10:11,660 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:10:11,661 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:10:11,872 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20technology%20science%20September%2017%202026%20TechCrunch%20The%20Verge%20Wired 200
+2026-09-18 02:10:12,056 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+technology+science+September+17+2026+TechCrunch+The+Verge+Wired&limit=1 200
+2026-09-18 02:10:12,341 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:10:12,427 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:10:12,714 [INFO] response: https://search.yahoo.com/search;_ylt=w_2P0rvndVJ0M_h0yiH7nTYB;_ylu=lrtxMfWa0_uqDH6W6r62hgrK0b5A7EUq6JYKRlAffszFLaw?p=latest+AI+technology+science+September+17+2026+TechCrunch+The+Verge+Wired&btf=d 200
+2026-09-18 02:10:13,457 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-09-18 02:10:13,460 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:10:13,460 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:10:13,460 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:10:13,460 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:10:14,633 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:10:17,477 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:10:17,613 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:10:17,614 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:10:17,614 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:10:17,614 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:10:18,928 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:10:21,849 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:10:21,850 [INFO] Validasi: 9x fetch_webpage sukses (minimum 3).
+2026-09-18 02:10:21,850 [INFO] URL yang berhasil di-fetch: {'https://www.bbc.com/sport/football/articles/cmx2zgxwwp95o', 'https://www.espn.com/soccer/scoreboard', 'https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html', 'https://www.bbc.com/sport/football/live/cmqlw97ze15zt', 'https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/', 'https://www.skysports.com/football/juventus-vs-nec-nijmegen/577753'}
+2026-09-18 02:10:21,850 [WARNING] Laporan tidak valid: Tidak ada judul '## 📊 LAPORAN MENDALAM'
+2026-09-18 02:10:21,850 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-09-18 02:10:21,850 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-09-18 02:10:21,861 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:10:21,862 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:10:21,862 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:10:21,862 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:10:27,669 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:10:38,184 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:10:38,187 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:10:38,187 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:10:38,187 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:10:38,187 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:10:39,820 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:11:18,288 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:11:18,291 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:11:18,291 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:11:18,499 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economy%20market%20geopolitics%20news%20September%2017%202026 200
+2026-09-18 02:11:18,619 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economy+market+geopolitics+news+September+17+2026&limit=1 200
+2026-09-18 02:11:19,172 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dglobal%2Beconomy%2Bmarket%2Bgeopolitics%2Bnews%2BSeptember%2B17%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGMa7stUGIjAPfLsCwNMWNs0UryET92hLNNRL0x4iLHiP6TaON0YkQrfaMKJSvuyvDj1_XVfs1u8yAnJSWgFD 429
+2026-09-18 02:11:19,395 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:11:19,475 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:11:19,839 [INFO] response: https://search.yahoo.com/search;_ylt=GVODwC4FTpgYrBUA5IdNhJsW;_ylu=ehzZB0Vx12rnHncH0icEwzrvpuAfGIERfK-hzLNz3KbZ_DM?p=global+economy+market+geopolitics+news+September+17+2026&btf=d 200
+2026-09-18 02:11:20,341 [INFO] response: https://www.mojeek.com/search?q=global+economy+market+geopolitics+news+September+17+2026 403
+2026-09-18 02:11:21,083 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-09-18 02:11:21,085 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:11:21,085 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:11:21,286 [INFO] response: https://grokipedia.com/api/typeahead?query=football+transfer+news+results+September+17+2026+ESPN&limit=1 200
+2026-09-18 02:11:21,289 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20transfer%20news%20results%20September%2017%202026%20ESPN 200
+2026-09-18 02:11:21,890 [INFO] response: https://search.brave.com/search?q=football+transfer+news+results+September+17+2026+ESPN&source=web&tf=pd 200
+2026-09-18 02:11:21,899 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:11:21,899 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:11:21,899 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:11:21,899 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:11:22,343 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:11:32,598 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:11:32,600 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:11:32,600 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:11:32,820 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20geopolitics%20economy%20September%2017%202026 200
+2026-09-18 02:11:32,887 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+geopolitics+economy+September+17+2026&limit=1 200
+2026-09-18 02:11:33,397 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+geopolitics+economy+September+17+2026 403
+2026-09-18 02:11:34,644 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Bgeopolitics%2Beconomy%2BSeptember%2B17%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGNa7stUGIjAv3tc-KN8ErPZfdJ2mIZPvHZ5Cux67HZwrz9tg3eGRTHLutrUGeA86zV2HNnEtJv8yAnJSWgFD 429
+2026-09-18 02:11:35,214 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-09-18 02:11:35,607 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+geopolitics+economy+September+17+2026&source=web&tf=pd 200
+2026-09-18 02:11:35,613 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:11:35,613 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:11:35,800 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+economy+September+17+2026&limit=1 200
+2026-09-18 02:11:35,827 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20economy%20September%2017%202026 200
+2026-09-18 02:11:36,346 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+economy+September+17+2026 403
+2026-09-18 02:11:36,531 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:11:36,726 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:11:36,790 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:11:37,010 [INFO] response: https://search.yahoo.com/search;_ylt=tETFuHi_OgzJImPHQyopvNam;_ylu=C2UvaZ236VmdOEM6UP8V5ahadET1TXLEHVy7eE7WTRuxbL0?p=site%3Acnbc.com+markets+economy+September+17+2026&btf=d 200
+2026-09-18 02:11:37,114 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+economy+September+17+2026&source=web&tf=pd 429
+2026-09-18 02:11:37,816 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Acnbc.com%2Bmarkets%2Beconomy%2BSeptember%2B17%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGNm7stUGIjDIA6ArCNvPpoGQaEj6_NBnHv3aw-dY89DWD37M-Tax9shg8_GO5dSGfP15Xhwb4WsyAnJSWgFD 429
+2026-09-18 02:11:37,817 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-18 02:11:37,994 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+economy+September+17+2026&limit=1 200
+2026-09-18 02:11:38,027 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20economy%20September%2017%202026 200
+2026-09-18 02:11:38,196 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:11:38,406 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:11:38,462 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:11:38,674 [INFO] response: https://search.yahoo.com/search;_ylt=z9Pq9y4NjPNXC3E8JvxbdFjo;_ylu=nGyUVel_IpPUsGmjJBvewH0ldvWuepLLdB8iE8rTzUu68x8?p=site%3Acnbc.com+markets+economy+September+17+2026&btf=d 200
+2026-09-18 02:11:39,243 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+economy+September+17+2026 403
+2026-09-18 02:11:39,313 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+economy+September+17+2026&source=web&tf=pd 429
+2026-09-18 02:11:39,939 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Acnbc.com%2Bmarkets%2Beconomy%2BSeptember%2B17%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGNu7stUGIjDWwdPV6zMOnnD3QW84QSijwPvOKJ5Uwb5bHBaDxCf7us51i1fX0hEBNye3ZCcV3t8yAnJSWgFD 429
+2026-09-18 02:11:39,939 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-18 02:11:39,999 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20economy%20September%2017%202026 200
+2026-09-18 02:11:40,103 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+economy+September+17+2026&limit=1 200
+2026-09-18 02:11:40,324 [INFO] response: https://search.yahoo.com/search;_ylt=ESYGsuRXV9aINfWfHdfp9Y7c;_ylu=DnwUrVMPjL29nBiDS9xsa7w_APqorKyKxM5YnNh-8Xb6xfk?p=site%3Acnbc.com+markets+economy+September+17+2026&btf=w 200
+2026-09-18 02:11:40,576 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:11:40,655 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:11:40,824 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:11:41,423 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Acnbc.com%2Bmarkets%2Beconomy%2BSeptember%2B17%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSGIUYXGNy7stUGIjBsW3Lw2blOxdkiQXzMpr1Odl0qLYWG_dFdcrdo0aB7zfMCxVpb7FwaJp3-OahyVsYyAnJSWgFD 429
+2026-09-18 02:11:41,492 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+economy+September+17+2026&source=web&tf=pw 429
+2026-09-18 02:11:42,035 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+economy+September+17+2026 403
+2026-09-18 02:11:42,035 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-18 02:11:42,038 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:11:42,038 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:11:42,038 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:11:42,038 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:11:42,290 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:11:45,201 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:11:45,202 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:11:45,202 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:11:45,202 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:11:45,202 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:11:45,607 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:11:47,985 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:11:47,986 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:11:47,986 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:11:47,987 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:11:47,987 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:11:48,519 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:11:49,091 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:11:49,092 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:11:49,092 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:11:49,092 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:11:49,092 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:11:55,039 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:12:08,720 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:12:08,722 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:12:08,722 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:12:08,923 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20tensions%20impact%20global%20markets%20stocks%20latest%20news%20September%2017%202026%20CNBC 200
+2026-09-18 02:12:09,012 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+tensions+impact+global+markets+stocks+latest+news+September+17+2026+CNBC&limit=1 502
+2026-09-18 02:12:09,476 [INFO] response: https://www.mojeek.com/search?q=geopolitical+tensions+impact+global+markets+stocks+latest+news+September+17+2026+CNBC 403
+2026-09-18 02:12:09,544 [INFO] response: https://search.brave.com/search?q=geopolitical+tensions+impact+global+markets+stocks+latest+news+September+17+2026+CNBC&source=web&tf=pd 429
+2026-09-18 02:12:10,851 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgeopolitical%2Btensions%2Bimpact%2Bglobal%2Bmarkets%2Bstocks%2Blatest%2Bnews%2BSeptember%2B17%2B2026%2BCNBC%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGPq7stUGIjDTxFT8IiOkjtYCo1GX8_3IoExUCTPZNq-tOMxUO3Kn63uPGG-KuMBFPp9p7E3suY4yAnJSWgFD 429
+2026-09-18 02:12:11,099 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:12:11,182 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:12:11,332 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:12:11,600 [INFO] response: https://search.yahoo.com/search;_ylt=SxzzZeaomlrpgy7JKt8Ayh5W;_ylu=5Y9INQBRWLc5Owf4ImmEh-TtbL00CGdAiYLAJEZlNuqO0uY?p=geopolitical+tensions+impact+global+markets+stocks+latest+news+September+17+2026+CNBC&btf=d 200
+2026-09-18 02:12:11,721 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-18 02:12:11,777 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20tensions%20impact%20global%20markets%20stocks%20latest%20news%20September%2017%202026%20CNBC 200
+2026-09-18 02:12:11,937 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+tensions+impact+global+markets+stocks+latest+news+September+17+2026+CNBC&limit=1 200
+2026-09-18 02:12:12,003 [INFO] response: https://search.brave.com/search?q=geopolitical+tensions+impact+global+markets+stocks+latest+news+September+17+2026+CNBC&source=web&tf=pd 429
+2026-09-18 02:12:12,165 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:12:12,397 [INFO] response: https://search.yahoo.com/search;_ylt=N9D_HQ-yG2rx9niyqx6jDu0D;_ylu=OkXfQgSZq0cKvdDEHli-zEJbTkclLxdkeChEFbZ3luP1OKs?p=geopolitical+tensions+impact+global+markets+stocks+latest+news+September+17+2026+CNBC&btf=d 200
+2026-09-18 02:12:17,434 [INFO] Error in engine google: TimeoutException(TimeoutError('error sending request for url (https://www.google.com/wml/search?q=geopolitical+tensions+impact+global+markets+stocks+latest+news+September+17+2026+CNBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad) > operation timed out'))
+2026-09-18 02:12:17,587 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:12:17,650 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:12:17,957 [INFO] response: https://www.mojeek.com/search?q=geopolitical+tensions+impact+global+markets+stocks+latest+news+September+17+2026+CNBC 403
+2026-09-18 02:12:17,958 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.google.com/wml/search?q=geopolitical+tensions+impact+global+markets+stocks+latest+news+September+17+2026+CNBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad) > operation timed out
+2026-09-18 02:12:18,015 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20tensions%20impact%20global%20markets%20stocks%20latest%20news%20September%2017%202026%20CNBC 200
+2026-09-18 02:12:18,162 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+tensions+impact+global+markets+stocks+latest+news+September+17+2026+CNBC&limit=1 200
+2026-09-18 02:12:18,331 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:12:18,393 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:12:18,601 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:12:19,239 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgeopolitical%2Btensions%2Bimpact%2Bglobal%2Bmarkets%2Bstocks%2Blatest%2Bnews%2BSeptember%2B17%2B2026%2BCNBC%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSGIUYXGIK8stUGIjCHu2mZBxSelPpshYjRgR0BsSRDIvQXmnxVzpcc1cwYCCO_5Q4mVloENLWhJzx-s7EyAnJSWgFD 429
+2026-09-18 02:12:19,493 [INFO] response: https://search.yahoo.com/search;_ylt=0LNDvdgZMzkNIKuwJlvuYwyH;_ylu=N_h-o1HIVAIDOcZY7XxdS3XxPTzUVwU6F88CNinpEFgTbqw?p=geopolitical+tensions+impact+global+markets+stocks+latest+news+September+17+2026+CNBC&btf=w 200
+2026-09-18 02:12:19,991 [INFO] response: https://www.mojeek.com/search?q=geopolitical+tensions+impact+global+markets+stocks+latest+news+September+17+2026+CNBC 403
+2026-09-18 02:12:20,056 [INFO] response: https://search.brave.com/search?q=geopolitical+tensions+impact+global+markets+stocks+latest+news+September+17+2026+CNBC&source=web&tf=pw 429
+2026-09-18 02:12:20,059 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-18 02:12:20,060 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:12:20,060 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:12:20,060 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:12:20,060 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:12:20,476 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:12:21,164 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:12:21,166 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:12:21,166 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:12:21,370 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20conflict%20markets%20oil%20prices%20latest%20September%202026 200
+2026-09-18 02:12:21,400 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+conflict+markets+oil+prices+latest+September+2026&limit=1 200
+2026-09-18 02:12:21,820 [INFO] response: https://search.yahoo.com/search;_ylt=COm9mCYRzjHsVFP88arx67eb;_ylu=yhSqN1OPgUaI-rVmRQDtin9wtvJLFNfmo11JoBrNoDSS-sk?p=Middle+East+conflict+markets+oil+prices+latest+September+2026&btf=d 200
+2026-09-18 02:12:22,036 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:12:22,098 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:12:22,544 [INFO] response: https://www.mojeek.com/search?q=Middle+East+conflict+markets+oil+prices+latest+September+2026 403
+2026-09-18 02:12:22,722 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:12:22,809 [INFO] response: https://search.brave.com/search?q=Middle+East+conflict+markets+oil+prices+latest+September+2026&source=web&tf=pd 429
+2026-09-18 02:12:24,028 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DMiddle%2BEast%2Bconflict%2Bmarkets%2Boil%2Bprices%2Blatest%2BSeptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGIe8stUGIjDh5_kk9LeIx4ZZdDZ-UoBUUskIi9_GnSSLjnBoO9feohd67y6Goh6bFk0P6cDEfK4yAnJSWgFD 429
+2026-09-18 02:12:24,028 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-18 02:12:24,089 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20conflict%20markets%20oil%20prices%20latest%20September%202026 200
+2026-09-18 02:12:24,243 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+conflict+markets+oil+prices+latest+September+2026&limit=1 200
+2026-09-18 02:12:24,400 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:12:24,466 [INFO] response: https://search.brave.com/search?q=Middle+East+conflict+markets+oil+prices+latest+September+2026&source=web&tf=pd 429
+2026-09-18 02:12:24,648 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:12:24,730 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:12:25,315 [INFO] response: https://www.mojeek.com/search?q=Middle+East+conflict+markets+oil+prices+latest+September+2026 403
+2026-09-18 02:12:25,547 [INFO] response: https://search.yahoo.com/search;_ylt=mVH59VgIEYtHizzHKosx55Up;_ylu=f6v1QpV2MZ9UN2xr73IsRosPeTpzEZh6LqWosbfjiHDzbUU?p=Middle+East+conflict+markets+oil+prices+latest+September+2026&btf=d 200
+2026-09-18 02:12:26,254 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DMiddle%2BEast%2Bconflict%2Bmarkets%2Boil%2Bprices%2Blatest%2BSeptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGIm8stUGIjA7YgzjeDnLxF-__fxwxafsJZgHSsbQfbRDG7t-ZINn7GJzxRKTu3J1JFsJuNYo69wyAnJSWgFD 429
+2026-09-18 02:12:26,254 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-18 02:12:26,458 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20conflict%20markets%20oil%20prices%20latest%20September%202026 200
+2026-09-18 02:12:26,481 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+conflict+markets+oil+prices+latest+September+2026&limit=1 200
+2026-09-18 02:12:26,650 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:12:27,454 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DMiddle%2BEast%2Bconflict%2Bmarkets%2Boil%2Bprices%2Blatest%2BSeptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSGIUYXGIq8stUGIjAtaOWN7aiTDXnrZHhtX5CQOx0t_-SIjww5Z-EVPywDq04DLg-XrKILE0DShfxGDTkyAnJSWgFD 429
+2026-09-18 02:12:27,905 [INFO] response: https://www.mojeek.com/search?q=Middle+East+conflict+markets+oil+prices+latest+September+2026 403
+2026-09-18 02:12:28,132 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:12:28,202 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:12:28,273 [INFO] response: https://search.brave.com/search?q=Middle+East+conflict+markets+oil+prices+latest+September+2026&source=web&tf=pw 429
+2026-09-18 02:12:28,555 [INFO] response: https://search.yahoo.com/search;_ylt=qawfg0B7of1c1NoiHjcLlLEl;_ylu=s7gLpYAgaT4HV_yAETW8OEYRZMV2cJD7YYA_KT60_DZhFxY?p=Middle+East+conflict+markets+oil+prices+latest+September+2026&btf=w 200
+2026-09-18 02:12:28,563 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-18 02:12:28,565 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:12:28,565 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:12:28,565 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:12:28,565 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:12:28,828 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:12:33,950 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:12:33,952 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:12:33,952 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:12:34,142 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+economy+markets+September+17+2026&limit=1 200
+2026-09-18 02:12:34,167 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20economy%20markets%20September%2017%202026 200
+2026-09-18 02:12:34,381 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:12:34,629 [INFO] response: https://search.yahoo.com/search;_ylt=15vT8jw9V_znHHsrtgaNV7BQ;_ylu=uKGTbfS7CpvjYEZWfKbjyrRyM2r3SsA8-Ku-1T4oYaLfPzs?p=site%3Abbc.com+economy+markets+September+17+2026&btf=d 200
+2026-09-18 02:12:35,193 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+economy+markets+September+17+2026 403
+2026-09-18 02:12:36,466 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Beconomy%2Bmarkets%2BSeptember%2B17%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGJS8stUGIjAyVwXv-XXwpXz0HDdO54c16p0LFutUEIf12pVm61jHwQXDLddHo1uHPm5YzP1lEWYyAnJSWgFD 429
+2026-09-18 02:12:36,805 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:12:36,888 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:12:36,955 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+economy+markets+September+17+2026&source=web&tf=pd 429
+2026-09-18 02:12:36,956 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-18 02:12:37,150 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+economy+markets+September+17+2026&limit=1 200
+2026-09-18 02:12:37,159 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20economy%20markets%20September%2017%202026 200
+2026-09-18 02:12:37,391 [INFO] response: https://search.yahoo.com/search;_ylt=185PjfCwUv9pME4GBNyggvhp;_ylu=ay_NKx9r95yQFFsj_ZI-zPOfJN-Mag0vJIr_3O3-zMw4cK4?p=site%3Abbc.com+economy+markets+September+17+2026&btf=d 200
+2026-09-18 02:12:37,583 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+economy+markets+September+17+2026&source=web&tf=pd 429
+2026-09-18 02:12:38,954 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Beconomy%2Bmarkets%2BSeptember%2B17%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGJa8stUGIjD00s0MUbqMkLzfgQW6vaQ9oPnNH_TBdk8hRVCTjWJX4X9EgoleaWm4mo3xbekaPZ8yAnJSWgFD 429
+2026-09-18 02:12:39,526 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-09-18 02:12:40,085 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+economy+markets+September+17+2026 403
+2026-09-18 02:12:40,310 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:12:40,397 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:12:40,400 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:12:40,400 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:12:40,400 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:12:40,400 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:12:40,714 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:12:41,345 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:12:41,346 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:12:41,346 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:12:41,346 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:12:41,346 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:12:41,601 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:12:42,971 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:12:42,973 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:12:42,973 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:12:42,973 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:12:42,973 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:12:44,526 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:12:44,876 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:12:44,877 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:12:44,877 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:12:44,877 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:12:44,877 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:12:47,172 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:12:51,795 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:12:51,797 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:12:51,797 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:12:51,986 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+tensions+global+markets+September+17+2026&limit=1 200
+2026-09-18 02:12:52,019 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20tensions%20global%20markets%20September%2017%202026 200
+2026-09-18 02:12:52,210 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:12:52,276 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:12:52,809 [INFO] response: https://www.mojeek.com/search?q=geopolitical+tensions+global+markets+September+17+2026 403
+2026-09-18 02:12:52,980 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:12:53,622 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgeopolitical%2Btensions%2Bglobal%2Bmarkets%2BSeptember%2B17%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGKW8stUGIjBae1R_b0_LTtGypGQ98muws7YkRU4sHqIe5ygjJwCgaB6wNnz5SUWVVYvBTi3LelcyAnJSWgFD 429
+2026-09-18 02:12:53,915 [INFO] response: https://search.yahoo.com/search;_ylt=HVz3vbKoXWGudq1uTvh3v84s;_ylu=HRqVNsKjC9YfW8rXJ2mi_Y8-_2_KrU8SgJkRGSESrJeI5oU?p=geopolitical+tensions+global+markets+September+17+2026&btf=d 200
+2026-09-18 02:12:53,992 [INFO] response: https://search.brave.com/search?q=geopolitical+tensions+global+markets+September+17+2026&source=web&tf=pd 429
+2026-09-18 02:12:53,999 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-18 02:12:54,185 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+tensions+global+markets+September+17+2026&limit=1 200
+2026-09-18 02:12:54,208 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20tensions%20global%20markets%20September%2017%202026 200
+2026-09-18 02:12:54,695 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgeopolitical%2Btensions%2Bglobal%2Bmarkets%2BSeptember%2B17%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGKa8stUGIjD6_zU5Y_qJGhucrs71pFoY41izaWm-4odr8nhsaXrlvRMH06AZmSua1yPT0PJQ0a0yAnJSWgFD 429
+2026-09-18 02:12:54,936 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:12:55,020 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:12:55,308 [INFO] response: https://search.yahoo.com/search;_ylt=JhEsnEmCAIAguOdlaS9ch-Jv;_ylu=SahJdrCChdLf1nwv2OwRAQMa8WUwFaWxDZlKpD_Xaa5HWR4?p=geopolitical+tensions+global+markets+September+17+2026&btf=d 200
+2026-09-18 02:12:55,462 [INFO] response: https://search.brave.com/search?q=geopolitical+tensions+global+markets+September+17+2026&source=web&tf=pd 429
+2026-09-18 02:12:55,646 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:12:56,171 [INFO] response: https://www.mojeek.com/search?q=geopolitical+tensions+global+markets+September+17+2026 403
+2026-09-18 02:12:56,172 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-18 02:12:56,237 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20tensions%20global%20markets%20September%2017%202026 200
+2026-09-18 02:12:56,361 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+tensions+global+markets+September+17+2026&limit=1 200
+2026-09-18 02:12:56,600 [INFO] response: https://search.yahoo.com/search;_ylt=rUWVBc6qudnaJ0MbgRZySyN0;_ylu=8NDXBjr69fTCbkh6rIRIFHfMB8rCs2BD-Z7FSYQZmJqUT3A?p=geopolitical+tensions+global+markets+September+17+2026&btf=w 200
+2026-09-18 02:12:56,711 [INFO] response: https://search.brave.com/search?q=geopolitical+tensions+global+markets+September+17+2026&source=web&tf=pw 429
+2026-09-18 02:12:57,343 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgeopolitical%2Btensions%2Bglobal%2Bmarkets%2BSeptember%2B17%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSGIUYXGKi8stUGIjAf3l7PyttF3ykLZuDjH7_frjZ6K-4LOas2Bme5GHYXjtj_6OpdD02t8jQlCjVx00syAnJSWgFD 429
+2026-09-18 02:12:57,908 [INFO] response: https://www.mojeek.com/search?q=geopolitical+tensions+global+markets+September+17+2026 403
+2026-09-18 02:12:58,106 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:12:58,292 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:12:58,385 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:12:58,386 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-18 02:12:58,388 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:12:58,388 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:12:58,388 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:12:58,388 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:12:58,820 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:13:01,294 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:13:01,296 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:13:01,296 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:13:01,564 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20technology%20news%20September%2017%202026%20site%3Atechcrunch.com 200
+2026-09-18 02:13:01,566 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+technology+news+September+17+2026+site%3Atechcrunch.com&limit=1 200
+2026-09-18 02:13:01,808 [INFO] response: https://search.yahoo.com/search;_ylt=5Mpd3B9lt8f-PNJSoK19T01b;_ylu=YcIt7nv67rVMqqeMGS_GWgCwvncq9OQGjcCbCFhekSyK-e0?p=AI+technology+news+September+17+2026+site%3Atechcrunch.com&btf=d 200
+2026-09-18 02:13:02,065 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:13:02,148 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:13:02,742 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DAI%2Btechnology%2Bnews%2BSeptember%2B17%2B2026%2Bsite%253Atechcrunch.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGK68stUGIjCJardFnqCPjv68RU6Tl2C-1ae7Hxf4AZVG-_gwnoOocoY6XvwIPcXm0d6F8o5bp9AyAnJSWgFD 429
+2026-09-18 02:13:02,810 [INFO] response: https://search.brave.com/search?q=AI+technology+news+September+17+2026+site%3Atechcrunch.com&source=web&tf=pd 429
+2026-09-18 02:13:03,019 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:13:03,531 [INFO] response: https://www.mojeek.com/search?q=AI+technology+news+September+17+2026+site%3Atechcrunch.com 403
+2026-09-18 02:13:03,532 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-18 02:13:03,588 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20technology%20news%20September%2017%202026%20site%3Atechcrunch.com 200
+2026-09-18 02:13:03,713 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+technology+news+September+17+2026+site%3Atechcrunch.com&limit=1 200
+2026-09-18 02:13:04,208 [INFO] response: https://www.mojeek.com/search?q=AI+technology+news+September+17+2026+site%3Atechcrunch.com 403
+2026-09-18 02:13:04,738 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DAI%2Btechnology%2Bnews%2BSeptember%2B17%2B2026%2Bsite%253Atechcrunch.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGLC8stUGIjAlYensl2NFA2Wzn3k2NjqgLj41Tgzd8nCAtY6XIU1Zfv39XNEvQ_XOsqUtVK27JsgyAnJSWgFD 429
+2026-09-18 02:13:04,814 [INFO] response: https://search.brave.com/search?q=AI+technology+news+September+17+2026+site%3Atechcrunch.com&source=web&tf=pd 429
+2026-09-18 02:13:05,158 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:13:05,603 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:13:05,783 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:13:06,055 [INFO] response: https://search.yahoo.com/search;_ylt=BpSbzIxPITklt_mMh__rPUnR;_ylu=YmdhOz1RpMgtzeARq2hPAtgpgYLEqfNYbg-9jJsJGrdwyQY?p=AI+technology+news+September+17+2026+site%3Atechcrunch.com&btf=d 200
+2026-09-18 02:13:06,100 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-18 02:13:06,300 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+technology+news+September+17+2026+site%3Atechcrunch.com&limit=1 200
+2026-09-18 02:13:06,325 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20technology%20news%20September%2017%202026%20site%3Atechcrunch.com 200
+2026-09-18 02:13:06,390 [INFO] response: https://search.brave.com/search?q=AI+technology+news+September+17+2026+site%3Atechcrunch.com&source=web&tf=pw 429
+2026-09-18 02:13:06,595 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:13:06,654 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:13:07,200 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DAI%2Btechnology%2Bnews%2BSeptember%2B17%2B2026%2Bsite%253Atechcrunch.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSGIUYXGLK8stUGIjDwRv4froHkF1PLvKL7WatYJNS_EzyJsC2D_6Nuem4zG_9zEcGyJ0zLRRXWilDWiHgyAnJSWgFD 429
+2026-09-18 02:13:07,368 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:13:07,890 [INFO] response: https://www.mojeek.com/search?q=AI+technology+news+September+17+2026+site%3Atechcrunch.com 403
+2026-09-18 02:13:08,124 [INFO] response: https://search.yahoo.com/search;_ylt=M0ZHUuYoU03JirgXXCCCgJlu;_ylu=MWywhk8C93RVMsAxTaHRFLcqIyqFG2zlY0VnRhLlzeW5kcs?p=AI+technology+news+September+17+2026+site%3Atechcrunch.com&btf=w 200
+2026-09-18 02:13:08,163 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-18 02:13:08,164 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:13:08,164 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:13:08,164 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:13:08,164 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:13:08,944 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:13:10,471 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:13:10,473 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:13:10,473 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:13:10,646 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+global+news+September+2026&limit=1 200
+2026-09-18 02:13:10,673 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20global%20news%20September%202026 200
+2026-09-18 02:13:10,888 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:13:10,971 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:13:11,233 [INFO] response: https://search.yahoo.com/search;_ylt=_LzAkuglsQQHsexOrkT7kon2;_ylu=oHVLakhTDk2CHNjL-V1wJ_lqdSxCKnHo9_ENw9j04ujQBO4?p=latest+global+news+September+2026&btf=d 200
+2026-09-18 02:13:11,917 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlatest%2Bglobal%2Bnews%2BSeptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGLe8stUGIjCja0Jf6UidrIkgKLvAb_FyhS99aiFR2oMNt-9d7lzbic0ryKZwU8_xhC_GfM3hQ44yAnJSWgFD 429
+2026-09-18 02:13:12,384 [INFO] response: https://www.mojeek.com/search?q=latest+global+news+September+2026 403
+2026-09-18 02:13:12,466 [INFO] response: https://search.brave.com/search?q=latest+global+news+September+2026&source=web&tf=pd 429
+2026-09-18 02:13:12,647 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:13:12,653 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-18 02:13:12,718 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20global%20news%20September%202026 200
+2026-09-18 02:13:12,813 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+global+news+September+2026&limit=1 200
+2026-09-18 02:13:12,882 [INFO] response: https://search.brave.com/search?q=latest+global+news+September+2026&source=web&tf=pd 429
+2026-09-18 02:13:13,166 [INFO] response: https://search.yahoo.com/search;_ylt=nk3s6kBZg30kQOoqKyPjvfNN;_ylu=62sJg43w8orcLtf0wFJi2PX-FAEpebbsMMSflaq7XqG2zDo?p=latest+global+news+September+2026&btf=d 200
+2026-09-18 02:13:13,890 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlatest%2Bglobal%2Bnews%2BSeptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGLm8stUGIjADyqRKgyv11pYPUriIXcdPCfz8kTFt01IP_gh996vPH_RgQtW94k3cotJeW8STp_kyAnJSWgFD 429
+2026-09-18 02:13:14,065 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:13:14,556 [INFO] response: https://www.mojeek.com/search?q=latest+global+news+September+2026 403
+2026-09-18 02:13:14,722 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:13:14,794 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:13:14,795 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-18 02:13:14,948 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+global+news+September+2026&limit=1 200
+2026-09-18 02:13:14,997 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20global%20news%20September%202026 200
+2026-09-18 02:13:15,158 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:13:15,451 [INFO] response: https://search.yahoo.com/search;_ylt=lEImqF8Yd7hJ-ppL-nAYQctl;_ylu=Ltr3vXxsbV-fDk3ddPgij81rwkSqWHnh2U0NVUdbZisSfRM?p=latest+global+news+September+2026&btf=w 200
+2026-09-18 02:13:15,950 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlatest%2Bglobal%2Bnews%2BSeptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSGIUYXGLu8stUGIjDdoGDpySHyizSLGsHYlKjBa3ke2j3xa3YXuwO_mIH_4kQqVoGsZYSkoEB8-LC-NNgyAnJSWgFD 429
+2026-09-18 02:13:16,137 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:13:16,217 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:13:16,287 [INFO] response: https://search.brave.com/search?q=latest+global+news+September+2026&source=web&tf=pw 429
+2026-09-18 02:13:16,905 [INFO] response: https://www.mojeek.com/search?q=latest+global+news+September+2026 403
+2026-09-18 02:13:16,905 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-18 02:13:16,907 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:13:16,907 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:13:16,907 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:13:16,907 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:13:17,305 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:13:20,547 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:13:20,548 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:13:20,548 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:13:20,736 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=September%202026%20terkini 200
+2026-09-18 02:13:20,811 [INFO] response: https://grokipedia.com/api/typeahead?query=September+2026+terkini&limit=1 200
+2026-09-18 02:13:21,254 [INFO] response: https://www.mojeek.com/search?q=September+2026+terkini 403
+2026-09-18 02:13:21,529 [INFO] response: https://search.yahoo.com/search;_ylt=Ay0_6Ml3RSXQ2WOAYNdHcf1P;_ylu=pvpupmtxDvuaq5j_2Wg6IUPGOImki0zMAx731uq_SsagC78?p=September+2026+terkini&btf=d 200
+2026-09-18 02:13:21,690 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:13:22,170 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DSeptember%2B2026%2Bterkini%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGMG8stUGIjA4eF7igCuGSP3iP_qrF-8P_17K-_2iyyN52EOkjdWSJZOw2AfN-EYsKZJy4TPTtC0yAnJSWgFD 429
+2026-09-18 02:13:22,331 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:13:22,405 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:13:22,511 [INFO] response: https://search.brave.com/search?q=September+2026+terkini&source=web&tf=pd 429
+2026-09-18 02:13:22,530 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-18 02:13:22,673 [INFO] response: https://grokipedia.com/api/typeahead?query=September+2026+terkini&limit=1 200
+2026-09-18 02:13:22,719 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=September%202026%20terkini 200
+2026-09-18 02:13:23,169 [INFO] response: https://www.mojeek.com/search?q=September+2026+terkini 403
+2026-09-18 02:13:23,277 [INFO] response: https://search.brave.com/search?q=September+2026+terkini&source=web&tf=pd 429
+2026-09-18 02:13:23,431 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:13:23,709 [INFO] response: https://search.yahoo.com/search;_ylt=fTS-LRMKIlDGJ_974_KUMp4p;_ylu=_fBW22PPuOaFLDsljo9xiiXSL9m9ROX76pN7FTHOvqenT4o?p=September+2026+terkini&btf=d 200
+2026-09-18 02:13:24,143 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:13:24,283 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:13:25,001 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DSeptember%2B2026%2Bterkini%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGMS8stUGIjAG7hPAsR8__p-Lrpg7gEc4c8LocgER_YAKSoepjs9zJg6bgRQaQCn-1oNyrCYdhyEyAnJSWgFD 429
+2026-09-18 02:13:25,001 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-18 02:13:25,058 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=September%202026%20terkini 200
+2026-09-18 02:13:25,149 [INFO] response: https://grokipedia.com/api/typeahead?query=September+2026+terkini&limit=1 200
+2026-09-18 02:13:25,298 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-18 02:13:25,948 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DSeptember%2B2026%2Bterkini%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSGIUYXGMW8stUGIjA7AzhBpgejPLNSzcIHGAYIhgm-mSebISIe_qknZ2lW8LIVVhrneac1rbBZ09AqBsMyAnJSWgFD 429
+2026-09-18 02:13:26,226 [INFO] response: https://search.yahoo.com/search;_ylt=Lcxd_WGjOgL7RUtPY1d70Xpu;_ylu=2aaAItWB9gyFolOPCZDYj-H5222tEkH__9FCT5pDn8wlsnE?p=September+2026+terkini&btf=w 200
+2026-09-18 02:13:26,457 [INFO] response: https://www.startpage.com/ 200
+2026-09-18 02:13:26,522 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-18 02:13:26,593 [INFO] response: https://search.brave.com/search?q=September+2026+terkini&source=web&tf=pw 429
+2026-09-18 02:13:27,292 [INFO] response: https://www.mojeek.com/search?q=September+2026+terkini 403
+2026-09-18 02:13:27,292 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-18 02:13:27,294 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:13:27,294 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:13:27,294 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:13:27,294 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:13:29,348 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:13:47,098 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:13:47,100 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-18 02:13:47,100 [WARNING] backend is not set. Using 'auto'
+2026-09-18 02:13:47,277 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economy+stock+market+news+today&limit=1 200
+2026-09-18 02:13:47,300 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economy%20stock%20market%20news%20today 200
+2026-09-18 02:13:47,757 [INFO] response: https://www.mojeek.com/search?q=global+economy+stock+market+news+today 403
+2026-09-18 02:13:48,197 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dglobal%2Beconomy%2Bstock%2Bmarket%2Bnews%2Btoday%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSGIUYXGNu8stUGIjAhyawIldGCLPcjR4bWGwLW6e-ZEggjxC9ReU3Hj1MNG7Do7iDrTSiu2RGoPI57J8AyAnJSWgFD 429
+2026-09-18 02:13:48,263 [INFO] response: https://search.brave.com/search?q=global+economy+stock+market+news+today&source=web&tf=pd 429
+2026-09-18 02:13:48,541 [INFO] response: https://search.yahoo.com/search;_ylt=hKJUbu2i0obHxkJKGzIaXToe;_ylu=ECF_aF2z5KX0TYMdaMM-3rRequ9iq4MXhJnTCc1JWleXAVg?p=global+economy+stock+market+news+today&btf=d 200
+2026-09-18 02:13:49,365 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-09-18 02:13:49,368 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:13:49,368 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:13:49,368 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:13:49,368 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:13:49,890 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:13:56,147 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:13:56,149 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-18 02:13:56,150 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-18 02:13:56,150 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-18 02:13:56,150 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-18 02:13:57,236 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-18 02:14:03,219 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-18 02:14:03,219 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-09-18 02:14:03,219 [INFO] URL yang berhasil di-fetch: {'https://www.bbc.com/sport/football/articles/cmx2zgxwwp95o', 'https://www.espn.com/soccer/scoreboard', 'https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html', 'https://www.bbc.com/sport/football/live/cmqlw97ze15zt', 'https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/', 'https://www.skysports.com/football/juventus-vs-nec-nijmegen/577753'}
+2026-09-18 02:14:03,219 [WARNING] Laporan tidak valid: Tidak ada judul '## 📊 LAPORAN MENDALAM'
+2026-09-18 02:14:03,219 [ERROR] ❌ Laporan hari ini gagal divalidasi (Tidak ada judul '## 📊 LAPORAN MENDALAM'). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-09-18 02:14:03,220 [INFO] Mengirim laporan ke Telegram...
+2026-09-18 02:14:03,861 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
