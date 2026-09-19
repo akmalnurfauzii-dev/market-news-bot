@@ -32471,3 +32471,297 @@ Menurut laporan dari Detik.com pada 14 September 2026, kehebohan ini memaksa pem
 2026-09-18 15:28:46,876 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (298 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-09-18 15:28:46,876 [INFO] Mengirim laporan ke Telegram...
 2026-09-18 15:28:47,381 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-09-19 02:09:19,265 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-09-19 02:09:19,265 [INFO] =======================================================
+2026-09-19 02:09:19,265 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-09-19 02:09:19,265 [INFO] =======================================================
+2026-09-19 02:09:19,265 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-09-19 02:09:19,580 [INFO] Provider siap: Gemini dengan 4 model
+2026-09-19 02:09:19,581 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-09-19 02:09:19,582 [INFO] Provider siap: Z.AI dengan 1 model
+2026-09-19 02:09:19,582 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-09-19 02:09:19,583 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-09-19 02:09:19,594 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-09-19 02:09:19,611 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-09-19 02:09:25,948 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-19 02:09:25,949 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-19 02:09:25,949 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-19 02:10:11,018 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Request timed out.
+2026-09-19 02:10:11,019 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:12,884 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:12,891 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:12,893 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:14,095 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:14,096 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:14,097 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:16,057 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:16,058 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:16,059 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:17,545 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:17,546 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:17,547 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:18,776 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:18,776 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:18,777 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:20,241 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:20,242 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:20,243 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:21,423 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:21,425 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:21,427 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:22,581 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:22,582 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:22,583 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:23,679 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:23,680 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:23,681 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:24,879 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:24,880 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:24,881 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:26,107 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:26,108 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:26,109 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:27,279 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:27,280 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:27,281 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:28,779 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:28,780 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:28,781 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:30,027 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:30,028 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:30,029 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:31,170 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:31,170 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:31,171 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:32,942 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:32,943 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:32,944 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:33,044 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-19 02:10:33,045 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 26.973431913s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '26s'}]}}]
+2026-09-19 02:10:33,045 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-19 02:10:33,045 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-19 02:10:47,955 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:47,956 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-19 02:10:47,979 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:49,243 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:49,244 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:10:49,256 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-19 02:10:49,256 [WARNING] backend is not set. Using 'auto'
+2026-09-19 02:10:49,372 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitics+markets+news+September+2026&limit=1 200
+2026-09-19 02:10:49,448 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitics%20markets%20news%20September%202026 200
+2026-09-19 02:10:49,552 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:10:49,911 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=e2e211c876b763fe955c4a754f087840&bds_t=1789783849T35c813f6e3f70c3e1e73795d04fa19736c2c30ad0db12c0de57cda5ad0a833d3&bds_s=362ad75e951d4b8c8c6bdc95ec83233e&qadf=moderate&sc=&language=english&abe=0&segment=organic&abd=0&qsr=en_US&lui=english&t=device&with_date=d&abp=1&query=global+geopolitics+markets+news+September+2026&cat=web&cmd=gen_page 200
+2026-09-19 02:10:50,460 [INFO] response: https://search.brave.com/search?q=global+geopolitics+markets+news+September+2026&source=web&tf=pd 200
+2026-09-19 02:10:50,469 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:50,594 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-19 02:10:50,595 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 9.424488471s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '9s'}]}}]
+2026-09-19 02:10:50,595 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-19 02:10:50,595 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-19 02:10:53,609 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:10:53,610 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-19 02:10:53,610 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-09-19 02:10:53,610 [INFO] URL yang berhasil di-fetch: set()
+2026-09-19 02:10:53,610 [WARNING] Laporan tidak valid: Terlalu pendek (139 karakter, minimal 500)
+2026-09-19 02:10:53,610 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-09-19 02:10:53,610 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-09-19 02:10:53,622 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:10:53,733 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-19 02:10:53,734 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 6.284443878s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}]
+2026-09-19 02:10:53,734 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-19 02:10:53,734 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-19 02:11:16,758 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:11:16,758 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-19 02:11:16,761 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:11:17,862 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:11:17,862 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:11:17,866 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-19 02:11:17,866 [WARNING] backend is not set. Using 'auto'
+2026-09-19 02:11:17,959 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitics+stock+market+impact+September+18+2026+site%3Acnbc.com&limit=1 200
+2026-09-19 02:11:18,023 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitics%20stock%20market%20impact%20September%2018%202026%20site%3Acnbc.com 200
+2026-09-19 02:11:18,328 [INFO] response: https://www.mojeek.com/search?q=global+geopolitics+stock+market+impact+September+18+2026+site%3Acnbc.com 403
+2026-09-19 02:11:18,417 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:18,452 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-19 02:11:18,809 [INFO] response: https://search.yahoo.com/search;_ylt=pycDKpAdgB_CiBTxY7Y9_fIY;_ylu=AncB0LlYFT-8iCH6CKDbpUqiYqd6a1RTc2B4Ey54Jiswf5I?p=global+geopolitics+stock+market+impact+September+18+2026+site%3Acnbc.com&btf=d 200
+2026-09-19 02:11:19,348 [INFO] response: https://search.brave.com/search?q=global+geopolitics+stock+market+impact+September+18+2026+site%3Acnbc.com&source=web&tf=pd 200
+2026-09-19 02:11:19,353 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-19 02:11:19,353 [WARNING] backend is not set. Using 'auto'
+2026-09-19 02:11:19,494 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+football+match+results+September+18+2026+site%3Aespn.com&limit=1 200
+2026-09-19 02:11:19,512 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20football%20match%20results%20September%2018%202026%20site%3Aespn.com 200
+2026-09-19 02:11:19,997 [INFO] response: https://search.brave.com/search?q=latest+football+match+results+September+18+2026+site%3Aespn.com&source=web&tf=pd 200
+2026-09-19 02:11:20,002 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-19 02:11:20,002 [WARNING] backend is not set. Using 'auto'
+2026-09-19 02:11:20,130 [INFO] response: https://grokipedia.com/api/typeahead?query=new+AI+technology+breakthrough+September+18+2026+site%3Atheverge.com&limit=1 200
+2026-09-19 02:11:20,139 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=new%20AI%20technology%20breakthrough%20September%2018%202026%20site%3Atheverge.com 200
+2026-09-19 02:11:20,476 [INFO] response: https://www.mojeek.com/search?q=new+AI+technology+breakthrough+September+18+2026+site%3Atheverge.com 403
+2026-09-19 02:11:20,680 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:20,711 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-19 02:11:21,246 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnew%2BAI%2Btechnology%2Bbreakthrough%2BSeptember%2B18%2B2026%2Bsite%253Atheverge.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ5l1NhGMjet9UGIjBsxpkae6CSkE6grJbMJ_tSYBCCPZBttN6WGT2zP9Nr7nO761lbbNzcr8KGe7VgpfcyAnJSWgFD 429
+2026-09-19 02:11:21,530 [INFO] response: https://search.brave.com/search?q=new+AI+technology+breakthrough+September+18+2026+site%3Atheverge.com&source=web&tf=pd 200
+2026-09-19 02:11:21,993 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-09-19 02:11:21,995 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-19 02:11:21,995 [WARNING] backend is not set. Using 'auto'
+2026-09-19 02:11:22,086 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+IHSG+kurs+rupiah+18+September+2026+site%3Acnbcindonesia.com&limit=1 200
+2026-09-19 02:11:22,169 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20IHSG%20kurs%20rupiah%2018%20September%202026%20site%3Acnbcindonesia.com 200
+2026-09-19 02:11:22,529 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dberita%2BIHSG%2Bkurs%2Brupiah%2B18%2BSeptember%2B2026%2Bsite%253Acnbcindonesia.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ5l1NhGMret9UGIjANB_0C9bmdiH1vw9v6GbtPd-ARAvLOw3lffl1oSCz_LhduEhoB4VxJ72mWV7gODkEyAnJSWgFD 429
+2026-09-19 02:11:22,592 [INFO] response: https://search.yahoo.com/search;_ylt=vlzU5bl_ZaNJVzF1pZJWTjdc;_ylu=9S6fqRWDBZI1yoTRHfLLc6LwKLrEpmabDGCmVg4_mZbQ0Bg?p=berita+IHSG+kurs+rupiah+18+September+2026+site%3Acnbcindonesia.com&btf=d 200
+2026-09-19 02:11:22,990 [INFO] response: https://www.mojeek.com/search?q=berita+IHSG+kurs+rupiah+18+September+2026+site%3Acnbcindonesia.com 403
+2026-09-19 02:11:23,077 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:23,112 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-19 02:11:23,172 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-19 02:11:23,264 [INFO] response: https://search.brave.com/search?q=berita+IHSG+kurs+rupiah+18+September+2026+site%3Acnbcindonesia.com&source=web&tf=pd 429
+2026-09-19 02:11:23,265 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-19 02:11:23,342 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+IHSG+kurs+rupiah+18+September+2026+site%3Acnbcindonesia.com&limit=1 200
+2026-09-19 02:11:23,400 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20IHSG%20kurs%20rupiah%2018%20September%202026%20site%3Acnbcindonesia.com 200
+2026-09-19 02:11:23,432 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-19 02:11:23,483 [INFO] response: https://www.google.com/wml/search?q=berita+IHSG+kurs+rupiah+18+September+2026+site%3Acnbcindonesia.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-19 02:11:23,709 [INFO] response: https://search.brave.com/search?q=berita+IHSG+kurs+rupiah+18+September+2026+site%3Acnbcindonesia.com&source=web&tf=pd 429
+2026-09-19 02:11:24,041 [INFO] response: https://www.mojeek.com/search?q=berita+IHSG+kurs+rupiah+18+September+2026+site%3Acnbcindonesia.com 403
+2026-09-19 02:11:24,095 [INFO] response: https://search.yahoo.com/search;_ylt=FRIF8Fr2vvKPCFNfHgIIiiPF;_ylu=hMQGN2KfksNU51ArgKNi8qlKjIIMtY5-oJk6kur8bi43Vwk?p=berita+IHSG+kurs+rupiah+18+September+2026+site%3Acnbcindonesia.com&btf=d 200
+2026-09-19 02:11:24,201 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:24,244 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-19 02:11:24,245 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-19 02:11:24,253 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20IHSG%20kurs%20rupiah%2018%20September%202026%20site%3Acnbcindonesia.com 200
+2026-09-19 02:11:24,339 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+IHSG+kurs+rupiah+18+September+2026+site%3Acnbcindonesia.com&limit=1 200
+2026-09-19 02:11:24,430 [INFO] response: https://search.brave.com/search?q=berita+IHSG+kurs+rupiah+18+September+2026+site%3Acnbcindonesia.com&source=web&tf=pw 429
+2026-09-19 02:11:24,783 [INFO] response: https://www.mojeek.com/search?q=berita+IHSG+kurs+rupiah+18+September+2026+site%3Acnbcindonesia.com 403
+2026-09-19 02:11:24,843 [INFO] response: https://search.yahoo.com/search;_ylt=xMcdexgD75qrbGMet6qRfVju;_ylu=KI9W8wGuBqJx-ql8aEo76eT6EzsQTMNneeCt120Eq_zw7OY?p=berita+IHSG+kurs+rupiah+18+September+2026+site%3Acnbcindonesia.com&btf=w 200
+2026-09-19 02:11:25,241 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dberita%2BIHSG%2Bkurs%2Brupiah%2B18%2BSeptember%2B2026%2Bsite%253Acnbcindonesia.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ5l1NhGMzet9UGIjDws2PBIR1yZ8dPPayJqu0Aajsy02-vP8zRo7HszvUkX2Kmy0Be6-RilHwhlwZZt44yAnJSWgFD 429
+2026-09-19 02:11:25,391 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:25,447 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-19 02:11:25,499 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-19 02:11:25,500 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-19 02:11:25,501 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-19 02:11:25,501 [WARNING] backend is not set. Using 'auto'
+2026-09-19 02:11:25,586 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+trending+Indonesia+18+September+2026+site%3Adetik.com&limit=1 200
+2026-09-19 02:11:25,620 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20trending%20Indonesia%2018%20September%202026%20site%3Adetik.com 200
+2026-09-19 02:11:25,733 [INFO] response: https://search.brave.com/search?q=berita+viral+trending+Indonesia+18+September+2026+site%3Adetik.com&source=web&tf=pd 429
+2026-09-19 02:11:25,778 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-19 02:11:26,106 [INFO] response: https://www.mojeek.com/search?q=berita+viral+trending+Indonesia+18+September+2026+site%3Adetik.com 403
+2026-09-19 02:11:26,164 [INFO] response: https://search.yahoo.com/search;_ylt=kYwljQ_nRiBDALqpQG-wNqtt;_ylu=RMaS7RcPnpL_l_H2uNPut-MYt90QyBz5e3teiRZNFHyCovU?p=berita+viral+trending+Indonesia+18+September+2026+site%3Adetik.com&btf=d 200
+2026-09-19 02:11:26,254 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:26,305 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-19 02:11:26,561 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dberita%2Bviral%2Btrending%2BIndonesia%2B18%2BSeptember%2B2026%2Bsite%253Adetik.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ5l1NhGM7et9UGIjDLTPQIwgP25TDl8w8bJrvZd5t0P5tK0InSuFf794r-1PqR9wTKrx_hpe2hNGwnWyUyAnJSWgFD 429
+2026-09-19 02:11:26,561 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-19 02:11:26,571 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20trending%20Indonesia%2018%20September%202026%20site%3Adetik.com 200
+2026-09-19 02:11:26,663 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+trending+Indonesia+18+September+2026+site%3Adetik.com&limit=1 200
+2026-09-19 02:11:26,716 [INFO] response: https://www.google.com/wml/search?q=berita+viral+trending+Indonesia+18+September+2026+site%3Adetik.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-19 02:11:26,926 [INFO] response: https://search.yahoo.com/search;_ylt=skjPe2jo-yWWTQN_g2A4Zjq5;_ylu=5i1FnVIWjR1txzUfmun9DoG_RNk9Qvf0bF3-EFcER6dfNMQ?p=berita+viral+trending+Indonesia+18+September+2026+site%3Adetik.com&btf=d 200
+2026-09-19 02:11:27,278 [INFO] response: https://www.mojeek.com/search?q=berita+viral+trending+Indonesia+18+September+2026+site%3Adetik.com 403
+2026-09-19 02:11:27,340 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:27,576 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=e2e211c876b763fe955c4a754f087840&bds_t=1789783887Td03d1e59bfe3315a019d1c4b65080fad59d655796329ca57e70380a02cfb4675&bds_s=d54cab474c26409b969c5d2fa6882703&qadf=moderate&language=english&abe=0&sc=&segment=organic&t=device&abd=0&lui=english&abp=1&qsr=en_US&with_date=d&query=berita+viral+trending+Indonesia+18+September+2026+site%3Adetik.com&cat=web&cmd=gen_page 200
+2026-09-19 02:11:27,644 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-19 02:11:27,748 [INFO] response: https://search.brave.com/search?q=berita+viral+trending+Indonesia+18+September+2026+site%3Adetik.com&source=web&tf=pd 429
+2026-09-19 02:11:27,750 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-19 02:11:27,854 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+trending+Indonesia+18+September+2026+site%3Adetik.com&limit=1 200
+2026-09-19 02:11:27,914 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20trending%20Indonesia%2018%20September%202026%20site%3Adetik.com 200
+2026-09-19 02:11:27,998 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:28,029 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-19 02:11:28,188 [INFO] response: https://search.brave.com/search?q=berita+viral+trending+Indonesia+18+September+2026+site%3Adetik.com&source=web&tf=pw 429
+2026-09-19 02:11:28,365 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-19 02:11:28,420 [INFO] response: https://search.yahoo.com/search;_ylt=zJ5IO4_D6X-S3DMrsOrOTvCk;_ylu=7kZe11CDl9n3YhGI2rUCUm9FaKJN1GaLhFBU824ZCgcjBsQ?p=berita+viral+trending+Indonesia+18+September+2026+site%3Adetik.com&btf=w 200
+2026-09-19 02:11:28,964 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dberita%2Bviral%2Btrending%2BIndonesia%2B18%2BSeptember%2B2026%2Bsite%253Adetik.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ5l1NhGNDet9UGIjDi67ulC46Eul9QkI6A2TvBtghq8KjmuvGCEHHLKAEjYLlIM7njtszVFGwRZTBTv5UyAnJSWgFD 429
+2026-09-19 02:11:29,409 [INFO] response: https://www.mojeek.com/search?q=berita+viral+trending+Indonesia+18+September+2026+site%3Adetik.com 403
+2026-09-19 02:11:29,410 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-19 02:11:29,414 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:11:30,595 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:11:30,596 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:11:30,852 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-19 02:11:30,852 [WARNING] backend is not set. Using 'auto'
+2026-09-19 02:11:30,943 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+kurs+rupiah+18+September+2026+berita+ekonomi&limit=1 200
+2026-09-19 02:11:31,011 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20kurs%20rupiah%2018%20September%202026%20berita%20ekonomi 200
+2026-09-19 02:11:31,062 [INFO] response: https://search.yahoo.com/search;_ylt=eL9C2fNYroh_2p1HgefHpvvY;_ylu=ZCZvdP26Em6lbF4j1AfJDqcCfNeejhOjXHu12VuNIV_b7Go?p=IHSG+hari+ini+kurs+rupiah+18+September+2026+berita+ekonomi&btf=d 200
+2026-09-19 02:11:31,179 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:31,220 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-19 02:11:31,525 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+kurs+rupiah+18+September+2026+berita+ekonomi 403
+2026-09-19 02:11:31,564 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-19 02:11:31,660 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+kurs+rupiah+18+September+2026+berita+ekonomi&source=web&tf=pd 429
+2026-09-19 02:11:32,132 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DIHSG%2Bhari%2Bini%2Bkurs%2Brupiah%2B18%2BSeptember%2B2026%2Bberita%2Bekonomi%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ5l1NhGNPet9UGIjAbLBclk-VUYol8jsrC_YOWkKawATq2VDKBr4XMSJDp3U6_29Qr1J2h1n42wobq5OsyAnJSWgFD 429
+2026-09-19 02:11:32,132 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-19 02:11:32,141 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20kurs%20rupiah%2018%20September%202026%20berita%20ekonomi 200
+2026-09-19 02:11:32,235 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+kurs+rupiah+18+September+2026+berita+ekonomi&limit=1 200
+2026-09-19 02:11:32,682 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DIHSG%2Bhari%2Bini%2Bkurs%2Brupiah%2B18%2BSeptember%2B2026%2Bberita%2Bekonomi%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ5l1NhGNTet9UGIjAonLwh-PevFNXZAJ8_YMFV7Rn9SzjKeUtXhfa5HWsG9qdN07SyW9xGUWSroVFyrboyAnJSWgFD 429
+2026-09-19 02:11:32,719 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-19 02:11:32,778 [INFO] response: https://search.yahoo.com/search;_ylt=BqgOqqtVa0WkHHIW1B1rmHNJ;_ylu=U-aNJBKbfdp32MjDkW15WZK8jUD46qfoNnyjnARq6hnVi7c?p=IHSG+hari+ini+kurs+rupiah+18+September+2026+berita+ekonomi&btf=d 200
+2026-09-19 02:11:32,934 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:32,968 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-19 02:11:33,298 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+kurs+rupiah+18+September+2026+berita+ekonomi 403
+2026-09-19 02:11:33,386 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+kurs+rupiah+18+September+2026+berita+ekonomi&source=web&tf=pd 429
+2026-09-19 02:11:33,389 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-19 02:11:33,472 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+kurs+rupiah+18+September+2026+berita+ekonomi&limit=1 200
+2026-09-19 02:11:33,503 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20kurs%20rupiah%2018%20September%202026%20berita%20ekonomi 200
+2026-09-19 02:11:33,593 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+kurs+rupiah+18+September+2026+berita+ekonomi&source=web&tf=pw 429
+2026-09-19 02:11:33,895 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+kurs+rupiah+18+September+2026+berita+ekonomi 403
+2026-09-19 02:11:33,946 [INFO] response: https://search.yahoo.com/search;_ylt=d4nwrG04t57FzF4v1PmgzDXN;_ylu=xJ-XtUv_1Std9eXphQecwhRI_oGuRZ0gw_t128QHayFeZIg?p=IHSG+hari+ini+kurs+rupiah+18+September+2026+berita+ekonomi&btf=w 200
+2026-09-19 02:11:34,025 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-19 02:11:34,252 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:34,315 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-19 02:11:34,777 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DIHSG%2Bhari%2Bini%2Bkurs%2Brupiah%2B18%2BSeptember%2B2026%2Bberita%2Bekonomi%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ5l1NhGNbet9UGIjCMqa_FM166lKHN3sAlHUw6GYwJ7kRvnsmjwxZOQZIXkSHfFAVU0lDRvqnkYDoSVvMyAnJSWgFD 429
+2026-09-19 02:11:34,777 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-19 02:11:34,778 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-19 02:11:34,778 [WARNING] backend is not set. Using 'auto'
+2026-09-19 02:11:34,915 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+terbaru+timnas+indonesia+September+2026&limit=1 200
+2026-09-19 02:11:34,945 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20terbaru%20timnas%20indonesia%20September%202026 200
+2026-09-19 02:11:35,268 [INFO] response: https://www.mojeek.com/search?q=berita+terbaru+timnas+indonesia+September+2026 403
+2026-09-19 02:11:35,327 [INFO] response: https://search.yahoo.com/search;_ylt=L2Vqjn7lN8tm_KJEKRPufICW;_ylu=pmeSTT4NsUBCwhMs5L5md2JN05z4Czbv2IUcAxYt-fH3hVc?p=berita+terbaru+timnas+indonesia+September+2026&btf=d 200
+2026-09-19 02:11:35,545 [INFO] response: https://search.brave.com/search?q=berita+terbaru+timnas+indonesia+September+2026&source=web&tf=pd 429
+2026-09-19 02:11:35,592 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-19 02:11:35,664 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:35,697 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-19 02:11:35,951 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dberita%2Bterbaru%2Btimnas%2Bindonesia%2BSeptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ5l1NhGNfet9UGIjDeBkaX7GqeP04nZ6d8vmNHKfr0toYNckfT_jlCNmFrfflvoN049Je0MtNCZN0RylUyAnJSWgFD 429
+2026-09-19 02:11:35,952 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-19 02:11:35,960 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20terbaru%20timnas%20indonesia%20September%202026 200
+2026-09-19 02:11:36,057 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+terbaru+timnas+indonesia+September+2026&limit=1 200
+2026-09-19 02:11:36,150 [INFO] response: https://search.brave.com/search?q=berita+terbaru+timnas+indonesia+September+2026&source=web&tf=pd 429
+2026-09-19 02:11:36,213 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:36,257 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-19 02:11:36,293 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-19 02:11:36,667 [INFO] response: https://www.mojeek.com/search?q=berita+terbaru+timnas+indonesia+September+2026 403
+2026-09-19 02:11:36,754 [INFO] response: https://search.yahoo.com/search;_ylt=fjQNrG_ZphwyV_WQj5Un5FFJ;_ylu=ozIsomkCEVvMFrKZvcgK-dZEO8IkKYRUkRvoCyCcCxKT0X4?p=berita+terbaru+timnas+indonesia+September+2026&btf=d 200
+2026-09-19 02:11:36,831 [INFO] response: https://www.google.com/wml/search?q=berita+terbaru+timnas+indonesia+September+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 200
+2026-09-19 02:11:37,049 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-19 02:11:37,049 [WARNING] backend is not set. Using 'auto'
+2026-09-19 02:11:37,107 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+indonesia+18+September+2026&limit=1 200
+2026-09-19 02:11:37,238 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20indonesia%2018%20September%202026 200
+2026-09-19 02:11:37,308 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:37,439 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-19 02:11:37,484 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-19 02:11:37,532 [INFO] response: https://search.yahoo.com/search;_ylt=2DYB0VofPsUKJm4PwFdP48sm;_ylu=ZjxzdrGVijk2FdwYEELidhid_SzxqUzPQrsLFRXBlCMkFpA?p=berita+viral+indonesia+18+September+2026&btf=d 200
+2026-09-19 02:11:37,974 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dberita%2Bviral%2Bindonesia%2B18%2BSeptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ5l1NhGNnet9UGIjCJnF1-3l7vDbwqKptOasB4lX64yfvLFzd5eMhLpOgiB5zAXJZeJ0z6Rf-ga4M3UnwyAnJSWgFD 429
+2026-09-19 02:11:38,065 [INFO] response: https://search.brave.com/search?q=berita+viral+indonesia+18+September+2026&source=web&tf=pd 429
+2026-09-19 02:11:38,439 [INFO] response: https://www.mojeek.com/search?q=berita+viral+indonesia+18+September+2026 403
+2026-09-19 02:11:38,440 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-19 02:11:38,448 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20indonesia%2018%20September%202026 200
+2026-09-19 02:11:38,484 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+indonesia+18+September+2026&limit=1 200
+2026-09-19 02:11:38,588 [INFO] response: https://search.brave.com/search?q=berita+viral+indonesia+18+September+2026&source=web&tf=pd 429
+2026-09-19 02:11:39,050 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dberita%2Bviral%2Bindonesia%2B18%2BSeptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ5l1NhGNret9UGIjC9yTViozLegLl6nFk4q05bsGoSHLaHXMRpsZ9WRjUAfVDvsNVKxxVi-5R_3sK2cYwyAnJSWgFD 429
+2026-09-19 02:11:39,110 [INFO] response: https://search.yahoo.com/search;_ylt=BgXoORzFuAic8isUHnlCmpxy;_ylu=yDqCRASm8S63AaaSeN-cuwZk0Jtc9tg7g6WiiUCncOI3704?p=berita+viral+indonesia+18+September+2026&btf=d 200
+2026-09-19 02:11:39,170 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-19 02:11:39,231 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:39,448 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=e2e211c876b763fe955c4a754f087840&bds_t=1789783899T12982cabafcdfc22a6c84f6d098f069c7a7c9e51e760e1b99f40ad7a0bb04f55&bds_s=47688f5f47714d6c8e8788835fab8f1c&abp=1&segment=organic&language=english&abe=0&sc=&with_date=d&lui=english&t=device&qadf=moderate&abd=0&qsr=en_US&query=berita+viral+indonesia+18+September+2026&cat=web&cmd=gen_page 200
+2026-09-19 02:11:39,750 [INFO] response: https://www.mojeek.com/search?q=berita+viral+indonesia+18+September+2026 403
+2026-09-19 02:11:39,750 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-19 02:11:39,757 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20indonesia%2018%20September%202026 200
+2026-09-19 02:11:39,799 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+indonesia+18+September+2026&limit=1 200
+2026-09-19 02:11:40,098 [INFO] response: https://www.mojeek.com/search?q=berita+viral+indonesia+18+September+2026 403
+2026-09-19 02:11:40,154 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-19 02:11:40,243 [INFO] response: https://search.brave.com/search?q=berita+viral+indonesia+18+September+2026&source=web&tf=pw 429
+2026-09-19 02:11:40,531 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dberita%2Bviral%2Bindonesia%2B18%2BSeptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ5l1NhGNzet9UGIjC5VRMk_vX8LVSUGH2pSxsPPLHPSd1uoJ3_5a_EkptswA4JXn0ZcKghoJuCz7kvERIyAnJSWgFD 429
+2026-09-19 02:11:40,599 [INFO] response: https://www.startpage.com/ 200
+2026-09-19 02:11:40,649 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-19 02:11:40,747 [INFO] response: https://search.yahoo.com/search;_ylt=-4qXh_a3Tq9Zp4e9d9nyuaq7;_ylu=5TXKqYz4LNwWlIFxNZQJYIQSrWNKtW4AJR8XbLqq0LaFvyo?p=berita+viral+indonesia+18+September+2026&btf=w 200
+2026-09-19 02:11:40,771 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-19 02:11:40,775 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:11:42,603 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:11:42,604 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:11:42,607 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:11:47,580 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:11:47,581 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:11:47,606 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-19 02:11:52,719 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-19 02:11:52,720 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-19 02:11:52,728 [INFO] Validasi: 3x fetch_webpage sukses (minimum 3).
+2026-09-19 02:11:52,728 [INFO] URL yang berhasil di-fetch: {'https://www.cnbc.com/2026/09/18/stock-market-next-week-outlook-for-sept-21-25-2026.html', 'https://www.theverge.com/ai-artificial-intelligence/997724/us-military-ai-intel-report-chinese-ship'}
+2026-09-19 02:11:52,728 [WARNING] Laporan tidak valid: Hanya 2 URL yang benar-benar di-fetch, minimal 3
+2026-09-19 02:11:52,728 [ERROR] ❌ Laporan hari ini gagal divalidasi (Hanya 2 URL yang benar-benar di-fetch, minimal 3). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-09-19 02:11:52,728 [INFO] Mengirim laporan ke Telegram...
+2026-09-19 02:11:53,255 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
