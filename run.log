@@ -35399,3 +35399,361 @@ Menurut laporan dari Detik.com pada 14 September 2026, kehebohan ini memaksa pem
 2026-09-22 02:30:03,844 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (57 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-09-22 02:30:03,844 [INFO] Mengirim laporan ke Telegram...
 2026-09-22 02:30:04,368 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-09-22 15:55:23,413 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-09-22 15:55:23,413 [INFO] =======================================================
+2026-09-22 15:55:23,413 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-09-22 15:55:23,413 [INFO] =======================================================
+2026-09-22 15:55:23,414 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-09-22 15:55:23,775 [INFO] Provider siap: Gemini dengan 4 model
+2026-09-22 15:55:23,776 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-09-22 15:55:23,776 [INFO] Provider siap: Z.AI dengan 1 model
+2026-09-22 15:55:23,777 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-09-22 15:55:23,777 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-09-22 15:55:23,785 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-09-22 15:55:23,796 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-09-22 15:55:28,879 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-22 15:55:28,880 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-22 15:55:28,880 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-22 15:56:13,929 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Request timed out.
+2026-09-22 15:56:13,929 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-22 15:56:35,204 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-22 15:56:35,205 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-22 15:56:35,205 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-22 15:56:47,327 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-22 15:56:47,327 [WARNING] ⚠️ Gemini / gemini-3.5-flash-lite gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-22 15:56:47,327 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:56:47,327 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-22 15:56:50,156 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:56:50,161 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-22 15:56:50,177 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:56:50,177 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-22 15:56:52,528 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:56:52,529 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-22 15:56:52,530 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:56:52,530 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-22 15:56:53,657 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:56:53,657 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-22 15:56:53,658 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:56:53,658 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-22 15:56:53,834 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-22 15:56:53,835 [WARNING] ⚠️ NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b gagal: Error code: 503 - {'error': {'message': 'Service temporarily overloaded', 'type': 'Service Unavailable', 'code': 503}}
+2026-09-22 15:56:53,835 [INFO] Mencoba provider NVIDIA NIM dengan model meta/llama-4-maverick-17b-128e-instruct...
+2026-09-22 15:56:53,983 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-22 15:56:53,983 [WARNING] ⚠️ NVIDIA NIM / meta/llama-4-maverick-17b-128e-instruct gagal: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410, 'detail': "The model 'meta/llama-4-maverick-17b-128e-instruct' has reached its end of life on 2026-07-27T00:00:00Z and is no longer available."}
+2026-09-22 15:56:53,984 [WARNING] Model meta/llama-4-maverick-17b-128e-instruct ditandai mati (retired/404/410).
+2026-09-22 15:56:53,984 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 15:56:53,984 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 15:56:54,552 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 15:56:54,553 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 15:56:54,553 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 15:56:54,553 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 15:56:55,344 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:56:58,311 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 15:56:58,313 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:56:58,313 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 15:56:58,313 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 15:56:58,666 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 15:56:58,666 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 15:56:58,666 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 15:56:58,666 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 15:56:58,876 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:56:59,937 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 15:56:59,946 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-22 15:56:59,946 [WARNING] backend is not set. Using 'auto'
+2026-09-22 15:57:00,256 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+impact+crypto+stocks+September+20+2026&limit=1 200
+2026-09-22 15:57:00,366 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20impact%20crypto%20stocks%20September%2020%202026 200
+2026-09-22 15:57:00,896 [INFO] response: https://www.mojeek.com/search?q=geopolitics+impact+crypto+stocks+September+20+2026 403
+2026-09-22 15:57:01,404 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgeopolitics%2Bimpact%2Bcrypto%2Bstocks%2BSeptember%2B20%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQUqWd3GM3KytUGIjCzzvgIQLn8BMECS_Wy-kXJmkFLsJfmdWBjBTCs-oKX-l9NHlio_-HXNBVedkxzSmIyAnJSWgFD 429
+2026-09-22 15:57:01,663 [INFO] response: https://www.startpage.com/ 200
+2026-09-22 15:57:01,740 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-22 15:57:02,100 [INFO] response: https://search.yahoo.com/search;_ylt=kb4_2-S4efRnGFxZLQcJ5OJC;_ylu=pxkny6S1vrz9nYzFX2flow_6CsAYrVZHW9M0jIPNnDYkR5g?p=geopolitics+impact+crypto+stocks+September+20+2026&btf=d 200
+2026-09-22 15:57:02,695 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:57:02,695 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 15:57:02,695 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 15:57:03,055 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 15:57:03,055 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 15:57:03,055 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 15:57:03,055 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 15:57:03,556 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:57:07,417 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 15:57:07,418 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-22 15:57:07,418 [WARNING] backend is not set. Using 'auto'
+2026-09-22 15:57:07,575 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+geopolitics+crypto+September+2026&limit=1 502
+2026-09-22 15:57:07,871 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20geopolitics%20crypto%20September%202026 200
+2026-09-22 15:57:08,409 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+geopolitics+crypto+September+2026 403
+2026-09-22 15:57:08,992 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-09-22 15:57:09,199 [INFO] response: https://www.startpage.com/ 200
+2026-09-22 15:57:09,287 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-22 15:57:09,710 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+geopolitics+crypto+September+2026&source=web&tf=pd 200
+2026-09-22 15:57:09,717 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:57:09,717 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 15:57:09,717 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 15:57:10,276 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 15:57:10,277 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 15:57:10,277 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 15:57:10,277 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 15:57:11,275 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:57:26,710 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 15:57:26,711 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:57:26,711 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 15:57:26,711 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 15:57:39,089 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:57:39,089 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-22 15:57:39,091 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:57:39,091 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 15:57:39,091 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 15:57:39,461 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 15:57:39,462 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 15:57:39,462 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 15:57:39,462 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 15:57:40,487 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:57:54,981 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 15:57:55,193 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:57:55,193 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 15:57:55,193 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 15:57:59,611 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:57:59,611 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-22 15:57:59,613 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:57:59,613 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 15:57:59,613 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 15:57:59,983 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 15:57:59,983 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 15:57:59,983 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 15:57:59,983 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 15:58:01,267 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:58:02,311 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 15:58:02,312 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-22 15:58:02,312 [WARNING] backend is not set. Using 'auto'
+2026-09-22 15:58:02,556 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com+football+results+September+20+2026&limit=1 200
+2026-09-22 15:58:02,579 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com%20football%20results%20September%2020%202026 200
+2026-09-22 15:58:02,817 [INFO] response: https://search.yahoo.com/search;_ylt=Sf8vYw4Awy_PnhVEmJiGlwz6;_ylu=lPo61queh1uxMIoxw9JWADjhtclhOLxIJfgfs21jkNkYKnw?p=site%3Aespn.com+football+results+September+20+2026&btf=d 200
+2026-09-22 15:58:03,897 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Aespn.com%2Bfootball%2Bresults%2BSeptember%2B20%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQUqWd3GIvLytUGIjDsOwgBSViXQaZW4VQRA1xFvyADgy_SY3ZUF24nXm5h4e2vpQBeE92ljeRTx4BJrlAyAnJSWgFD 429
+2026-09-22 15:58:04,133 [INFO] response: https://www.startpage.com/ 200
+2026-09-22 15:58:04,194 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-22 15:58:04,625 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com+football+results+September+20+2026&source=web&tf=pd 200
+2026-09-22 15:58:04,630 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:58:04,630 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 15:58:04,630 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 15:58:07,850 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:58:07,851 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-22 15:58:07,853 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:58:07,853 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 15:58:07,853 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 15:58:11,110 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:58:11,110 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-22 15:58:11,112 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:58:11,112 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 15:58:11,112 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 15:58:11,466 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 15:58:11,467 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 15:58:11,467 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 15:58:11,467 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 15:58:12,276 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:58:14,580 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 15:58:14,581 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:58:14,581 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 15:58:14,581 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 15:58:14,953 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 15:58:14,954 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 15:58:14,954 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 15:58:14,954 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 15:58:15,530 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 15:58:20,313 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 15:58:20,365 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 15:58:20,365 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 15:58:20,365 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 15:58:20,930 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 15:58:20,930 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 15:58:20,930 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 15:58:20,930 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 15:58:21,893 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:01:09,236 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 16:01:09,237 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-22 16:01:09,238 [WARNING] backend is not set. Using 'auto'
+2026-09-22 16:01:09,449 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atheverge.com+AI+September+21+2026&limit=1 502
+2026-09-22 16:01:09,584 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atheverge.com%20AI%20September%2021%202026 200
+2026-09-22 16:01:10,107 [INFO] response: https://www.mojeek.com/search?q=site%3Atheverge.com+AI+September+21+2026 403
+2026-09-22 16:01:10,672 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Atheverge.com%2BAI%2BSeptember%2B21%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQUqWd3GMbMytUGIjBbjgQV0hAd5bo1EHtWwJSA39xzyxB5noWbjb-fyd7DZtOukCcAfI-xUfv9ahUJ21YyAnJSWgFD 429
+2026-09-22 16:01:10,894 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-22 16:01:11,327 [INFO] response: https://search.yahoo.com/search;_ylt=nv2hBss7nrmNkaxhI0b2jDb9;_ylu=j_uyO1UNsrkGhEHPYuzXMoaxqGmDYNY25xd7rf9ijRzFxgc?p=site%3Atheverge.com+AI+September+21+2026&btf=d 200
+2026-09-22 16:01:11,860 [INFO] response: https://www.startpage.com/ 200
+2026-09-22 16:01:11,945 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-22 16:01:13,561 [INFO] response: https://search.brave.com/search?q=site%3Atheverge.com+AI+September+21+2026&source=web&tf=pd 200
+2026-09-22 16:01:13,568 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:01:13,568 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:01:13,568 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:01:14,124 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 16:01:14,125 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 16:01:14,125 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 16:01:14,125 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 16:01:15,510 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:01:19,651 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 16:01:19,900 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:01:19,900 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:01:19,900 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:01:51,200 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:01:51,201 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-22 16:01:51,204 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:01:51,204 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:01:51,204 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:01:51,585 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 16:01:51,585 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 16:01:51,585 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 16:01:51,585 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 16:01:52,714 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:02:06,593 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 16:02:06,593 [INFO] Validasi: 6x fetch_webpage sukses (minimum 3).
+2026-09-22 16:02:06,593 [INFO] URL yang berhasil di-fetch: {'https://www.theverge.com/gadgets/997659/googlebooks-breakdown-acer-asus-hp-lenovo-dell', 'https://www.espn.com/nfl/recap?gameId=401872933', 'https://www.bbc.com/news/live/c6j9xpgl8pzwt'}
+2026-09-22 16:02:06,593 [WARNING] Laporan tidak valid: Terlalu pendek (314 karakter, minimal 500)
+2026-09-22 16:02:06,593 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-09-22 16:02:06,593 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-09-22 16:02:06,601 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:02:06,601 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:02:06,601 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:02:28,586 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:02:28,586 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-22 16:02:28,588 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:02:28,588 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:02:28,588 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:02:28,946 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 16:02:28,947 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 16:02:28,947 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 16:02:28,947 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 16:02:29,899 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:02:30,746 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 16:02:30,747 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:02:30,747 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:02:30,747 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:02:31,130 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 16:02:31,130 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 16:02:31,130 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 16:02:31,130 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 16:02:31,640 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:02:32,874 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 16:02:32,875 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-22 16:02:32,875 [WARNING] backend is not set. Using 'auto'
+2026-09-22 16:02:33,141 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20Middle%20East%20oil%20market%20stock%20crypto%20September%202026%20BBC 200
+2026-09-22 16:02:33,143 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+Middle+East+oil+market+stock+crypto+September+2026+BBC&limit=1 200
+2026-09-22 16:02:33,448 [INFO] response: https://search.yahoo.com/search;_ylt=0jY5kFJqOsFfEOr5hT_pT4E6;_ylu=lrmMwjaP012YtAa5J6vlUdaNQyusO_yr5ropJqaYLivj9gk?p=geopolitics+Middle+East+oil+market+stock+crypto+September+2026+BBC&btf=d 200
+2026-09-22 16:02:34,003 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:02:34,003 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:02:34,003 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:02:34,354 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 16:02:34,355 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 16:02:34,355 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 16:02:34,355 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 16:02:34,685 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:02:38,362 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 16:02:38,362 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:02:38,362 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:02:38,362 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:02:49,730 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:02:49,730 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-22 16:02:49,732 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:02:49,732 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:02:49,732 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:02:56,882 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:02:56,882 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-22 16:02:56,884 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:02:56,884 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:02:56,884 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:02:57,241 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 16:02:57,241 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 16:02:57,242 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 16:02:57,242 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 16:02:57,668 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:03:00,414 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 16:03:00,415 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-22 16:03:00,415 [WARNING] backend is not set. Using 'auto'
+2026-09-22 16:03:00,557 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+Middle+East+oil+market+September+2026&limit=1 502
+2026-09-22 16:03:00,740 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20Middle%20East%20oil%20market%20September%202026 200
+2026-09-22 16:03:01,149 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+Middle+East+oil+market+September+2026&source=web&tf=pd 200
+2026-09-22 16:03:01,154 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:03:01,154 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:03:01,154 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:03:01,524 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 16:03:01,524 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 16:03:01,524 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 16:03:01,524 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 16:03:03,138 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:03:07,693 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 16:03:08,346 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:03:08,346 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:03:08,346 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:03:20,688 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:03:20,688 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-22 16:03:20,691 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:03:20,691 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:03:20,691 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:03:30,360 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:03:30,360 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-22 16:03:30,363 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:03:30,363 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:03:30,363 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:03:30,753 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 16:03:30,754 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 16:03:30,754 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 16:03:30,754 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 16:03:31,537 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:03:33,014 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 16:03:33,015 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:03:33,015 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:03:33,015 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:03:39,284 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:03:39,285 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-22 16:03:39,287 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:03:39,287 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:03:39,287 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:03:39,665 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 16:03:39,665 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 16:03:39,665 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 16:03:39,665 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 16:03:40,172 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:03:46,341 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-22 16:03:46,342 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-22 16:03:46,342 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-22 16:03:46,342 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-22 16:03:46,972 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-22 16:03:46,973 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - {'error': {'code': '1305', 'message': 'The service may be temporarily overloaded, please try again later'}}
+2026-09-22 16:03:46,973 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-22 16:03:46,973 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-22 16:03:47,761 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-22 16:04:20,581 [WARNING] ⚠️ OpenRouter (auto-router gratis) / openrouter/free gagal: Connection error.
+2026-09-22 16:04:20,581 [WARNING] Semua model di OpenRouter (auto-router gratis) sudah dicoba dan gagal.
+2026-09-22 16:04:20,581 [INFO] Mencoba provider Groq (opsional) dengan model llama-3.3-70b-versatile...
+2026-09-22 16:04:20,746 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-09-22 16:04:20,746 [WARNING] ⚠️ Groq (opsional) / llama-3.3-70b-versatile gagal: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-09-22 16:04:20,746 [WARNING] Model llama-3.3-70b-versatile ditandai mati (retired/404/410).
+2026-09-22 16:04:20,746 [WARNING] Semua model di Groq (opsional) sudah dicoba dan gagal.
+2026-09-22 16:04:20,747 [ERROR] ❌ Bot gagal generate laporan: Error in generating model output:
+Semua provider gagal! Error terakhir: Connection error.
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/smolagents/agents.py", line 1677, in _step_stream
+    chat_message: ChatMessage = self.model.generate(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 485, in generate
+    return self._try_all("generate", messages, stop_sequences=stop_sequences, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 482, in _try_all
+    raise Exception(f"Semua provider gagal! Error terakhir: {last_err}")
+Exception: Semua provider gagal! Error terakhir: Connection error.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/market-news-bot/market-news-bot/app.py", line 713, in jalankan_analisa_harian
+    hasil   = agent.run(tugas)
+              ^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/smolagents/agents.py", line 499, in run
+    steps = list(self._run_stream(task=self.task, max_steps=max_steps, images=images))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/smolagents/agents.py", line 596, in _run_stream
+    raise e
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/smolagents/agents.py", line 578, in _run_stream
+    for output in self._step_stream(action_step):
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/smolagents/agents.py", line 1700, in _step_stream
+    raise AgentGenerationError(f"Error in generating model output:\n{e}", self.logger) from e
+smolagents.utils.AgentGenerationError: Error in generating model output:
+Semua provider gagal! Error terakhir: Connection error.
+2026-09-22 16:04:20,748 [INFO] Mengirim laporan ke Telegram...
+2026-09-22 16:04:21,396 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
