@@ -37162,3 +37162,370 @@ Semua provider gagal! Error terakhir: Connection error.
 2026-09-24 02:10:51,866 [ERROR] ❌ Laporan hari ini gagal divalidasi (Hanya 2 URL whitelist ditemukan, minimal 3). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-09-24 02:10:51,866 [INFO] Mengirim laporan ke Telegram...
 2026-09-24 02:10:52,363 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-09-24 16:06:00,717 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-09-24 16:06:00,717 [INFO] =======================================================
+2026-09-24 16:06:00,717 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-09-24 16:06:00,717 [INFO] =======================================================
+2026-09-24 16:06:00,717 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-09-24 16:06:01,126 [INFO] Provider siap: Gemini dengan 4 model
+2026-09-24 16:06:01,128 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-09-24 16:06:01,128 [INFO] Provider siap: Z.AI dengan 1 model
+2026-09-24 16:06:01,129 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-09-24 16:06:01,130 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-09-24 16:06:01,145 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-09-24 16:06:01,203 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-09-24 16:06:01,708 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-24 16:06:01,709 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-24 16:06:01,710 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-24 16:06:02,039 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-24 16:06:02,040 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-24 16:06:02,040 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-24 16:06:02,436 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-24 16:06:02,437 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-24 16:06:02,437 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-24 16:06:04,168 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-24 16:06:04,172 [WARNING] ⚠️ Gemini / gemini-3.5-flash-lite gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-24 16:06:04,172 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:04,173 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-24 16:06:07,795 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:06:07,805 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-24 16:06:07,837 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:07,837 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-24 16:06:12,962 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:06:12,963 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-24 16:06:12,967 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:12,967 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-24 16:06:13,588 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:06:13,589 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-24 16:06:13,591 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:13,591 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-24 16:06:14,868 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:06:14,869 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-24 16:06:14,874 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:14,874 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-24 16:06:25,958 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:06:25,959 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-24 16:06:25,962 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:25,962 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-24 16:06:26,616 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:06:26,617 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-24 16:06:26,620 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:26,620 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-24 16:06:29,492 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:06:29,493 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-24 16:06:29,496 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:29,496 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-24 16:06:29,645 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-24 16:06:29,646 [WARNING] ⚠️ NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b gagal: Error code: 503 - {'error': {'message': 'Service temporarily overloaded', 'type': 'Service Unavailable', 'code': 503}}
+2026-09-24 16:06:29,646 [INFO] Mencoba provider NVIDIA NIM dengan model meta/llama-4-maverick-17b-128e-instruct...
+2026-09-24 16:06:29,746 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-24 16:06:29,746 [WARNING] ⚠️ NVIDIA NIM / meta/llama-4-maverick-17b-128e-instruct gagal: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410, 'detail': "The model 'meta/llama-4-maverick-17b-128e-instruct' has reached its end of life on 2026-07-27T00:00:00Z and is no longer available."}
+2026-09-24 16:06:29,747 [WARNING] Model meta/llama-4-maverick-17b-128e-instruct ditandai mati (retired/404/410).
+2026-09-24 16:06:29,747 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:06:29,747 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-24 16:06:33,843 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:06:33,844 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-24 16:06:33,847 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:33,847 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:06:33,847 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-24 16:06:36,213 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:06:36,214 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-24 16:06:36,217 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:36,217 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:06:36,217 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-24 16:06:38,468 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:06:38,469 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-24 16:06:38,472 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:38,472 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:06:38,472 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-24 16:06:44,249 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:06:44,250 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-24 16:06:44,253 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:44,253 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:06:44,253 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-24 16:06:46,867 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:06:46,868 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-24 16:06:46,871 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:46,871 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:06:46,871 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-24 16:06:51,198 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:06:51,199 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-24 16:06:51,203 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:51,203 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:06:51,203 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-24 16:06:53,763 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:06:53,764 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-24 16:06:53,768 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:06:53,768 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:06:53,768 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-24 16:07:13,210 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:07:13,211 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-24 16:07:13,214 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:07:13,214 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:07:13,215 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-24 16:07:38,381 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:07:38,382 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-24 16:07:38,385 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:07:38,385 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:07:38,385 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-24 16:08:23,444 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Request timed out.
+2026-09-24 16:08:23,444 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:08:23,444 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:08:24,642 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:08:24,879 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:08:24,881 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:08:24,881 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:08:24,881 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:08:24,881 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:08:25,150 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:08:30,451 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:08:30,454 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:08:30,454 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:08:30,454 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:08:30,454 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:08:30,870 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:08:37,307 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:08:37,308 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-09-24 16:08:37,308 [INFO] URL yang berhasil di-fetch: set()
+2026-09-24 16:08:37,308 [WARNING] Laporan tidak valid: Terlalu pendek (0 karakter, minimal 500)
+2026-09-24 16:08:37,308 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-09-24 16:08:37,308 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-09-24 16:08:37,326 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:08:37,326 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:08:37,326 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:08:37,326 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:08:38,324 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:08:42,935 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:08:42,950 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-24 16:08:42,951 [WARNING] backend is not set. Using 'auto'
+2026-09-24 16:08:43,292 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+cryptocurrency+stock+market+September+2026&limit=1 200
+2026-09-24 16:08:43,370 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20cryptocurrency%20stock%20market%20September%202026 200
+2026-09-24 16:08:43,443 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-24 16:08:43,772 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgeopolitics%2Bglobal%2Beconomy%2Bcryptocurrency%2Bstock%2Bmarket%2BSeptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQEm4bRGIuW1dUGIjAPoGtML4mldfARSw1aNYJOkEvWmJYZNVYXGH5H7wX7AQcs5hQjfN5e2Or-eWgDxGEyAnJSWgFD 429
+2026-09-24 16:08:43,916 [INFO] response: https://www.startpage.com/ 200
+2026-09-24 16:08:43,960 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-24 16:08:44,454 [INFO] response: https://www.mojeek.com/search?q=geopolitics+global+economy+cryptocurrency+stock+market+September+2026 403
+2026-09-24 16:08:44,679 [INFO] response: https://search.yahoo.com/search;_ylt=k7h65FhqDuDSPJxTwgTvK7yR;_ylu=PQAd8dQ3GlcR0bXidMSxAnpETftzhzPNzoHg1LxSRxgFTUE?p=geopolitics+global+economy+cryptocurrency+stock+market+September+2026&btf=d 200
+2026-09-24 16:08:45,183 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:08:45,183 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:08:45,183 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:08:45,183 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:08:58,287 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:09:22,282 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:09:22,284 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-24 16:09:22,284 [WARNING] backend is not set. Using 'auto'
+2026-09-24 16:09:22,441 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+geopolitics+markets+crypto+stocks+September+24+2026&limit=1 200
+2026-09-24 16:09:22,677 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20geopolitics%20markets%20crypto%20stocks%20September%2024%202026 200
+2026-09-24 16:09:22,912 [INFO] response: https://search.yahoo.com/search;_ylt=PiY-v-JswIQ9Vytai0VnUfj0;_ylu=9A0TshCwPLk0M1vCRKVEpUZwfuLoUk8UokrwDlOnklkZCOc?p=site%3Abbc.com+geopolitics+markets+crypto+stocks+September+24+2026&btf=d 200
+2026-09-24 16:09:23,378 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-24 16:09:23,471 [INFO] response: https://www.startpage.com/ 200
+2026-09-24 16:09:23,727 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-24 16:09:24,212 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Bgeopolitics%2Bmarkets%2Bcrypto%2Bstocks%2BSeptember%2B24%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQEm4bRGLOW1dUGIjBaFga3h9iGLUMgubEiRvEpIDJZUn0c8WuZ-t0WNkTZb5wWx_slErlgdkz-xaGR4sUyAnJSWgFD 429
+2026-09-24 16:09:24,863 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+geopolitics+markets+crypto+stocks+September+24+2026 403
+2026-09-24 16:09:25,310 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+geopolitics+markets+crypto+stocks+September+24+2026&source=web&tf=pd 200
+2026-09-24 16:09:25,321 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:09:25,321 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:09:25,321 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:09:25,322 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:09:25,841 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:09:28,141 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:09:28,143 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-24 16:09:28,143 [WARNING] backend is not set. Using 'auto'
+2026-09-24 16:09:28,292 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+football+results+transfers+September+22+2026+September+24+2026+ESPN+BBC+Sport+Sky+Sports+UEFA+FIFA&limit=1 502
+2026-09-24 16:09:28,695 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20football%20results%20transfers%20September%2022%202026%20September%2024%202026%20ESPN%20BBC%20Sport%20Sky%20Sports%20UEFA%20FIFA 200
+2026-09-24 16:09:29,047 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlatest%2Bfootball%2Bresults%2Btransfers%2BSeptember%2B22%2B2026%2BSeptember%2B24%2B2026%2BESPN%2BBBC%2BSport%2BSky%2BSports%2BUEFA%2BFIFA%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQEm4bRGLiW1dUGIjAdNW8HMGHhMRv75UGK8ZD14RqIARwMzMCYimZEa5J9PuYDTtFdx8S-QXNfMnAtn4oyAnJSWgFD 429
+2026-09-24 16:09:29,154 [INFO] response: https://search.yahoo.com/search;_ylt=3zazmKFIUpwZzdaaJs4EGlNw;_ylu=t2K2T8n9l6COSDa1xnlUzfmW91K9EpUZgVvJtb8qTJ-3j8g?p=latest+football+results+transfers+September+22+2026+September+24+2026+ESPN+BBC+Sport+Sky+Sports+UEFA+FIFA&btf=d 200
+2026-09-24 16:09:29,310 [INFO] response: https://www.startpage.com/ 200
+2026-09-24 16:09:29,372 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-24 16:09:29,417 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-24 16:09:29,907 [INFO] response: https://www.mojeek.com/search?q=latest+football+results+transfers+September+22+2026+September+24+2026+ESPN+BBC+Sport+Sky+Sports+UEFA+FIFA 403
+2026-09-24 16:09:30,818 [INFO] response: https://search.brave.com/search?q=latest+football+results+transfers+September+22+2026+September+24+2026+ESPN+BBC+Sport+Sky+Sports+UEFA+FIFA&source=web&tf=pd 200
+2026-09-24 16:09:30,828 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:09:30,829 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:09:30,829 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:09:30,829 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:09:31,143 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:09:39,176 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:09:39,177 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:09:39,177 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:09:39,177 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:09:39,178 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:09:39,457 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:09:46,491 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:09:46,493 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-24 16:09:46,493 [WARNING] backend is not set. Using 'auto'
+2026-09-24 16:09:46,666 [INFO] response: https://grokipedia.com/api/typeahead?query=BBC+geopolitics+cryptocurrency+stocks+September+2026&limit=1 200
+2026-09-24 16:09:46,852 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=BBC%20geopolitics%20cryptocurrency%20stocks%20September%202026 200
+2026-09-24 16:09:47,006 [INFO] response: https://search.yahoo.com/search;_ylt=nKVmDo4udRHz-nhGzjVv8Ovm;_ylu=RktGISdRqBmvU-TaYhKbsCHau3jOhum6svmSP8pzxLPXygI?p=BBC+geopolitics+cryptocurrency+stocks+September+2026&btf=d 200
+2026-09-24 16:09:48,117 [INFO] response: https://www.mojeek.com/search?q=BBC+geopolitics+cryptocurrency+stocks+September+2026 403
+2026-09-24 16:09:48,685 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DBBC%2Bgeopolitics%2Bcryptocurrency%2Bstocks%2BSeptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQEm4bRGMyW1dUGIjARemQhmZ7MbJTWYncZFUAQD_MK8ds5tdAb4mdbHtJ84jurzynbSM4zb-CSg6el9VgyAnJSWgFD 429
+2026-09-24 16:09:48,818 [INFO] response: https://www.startpage.com/ 200
+2026-09-24 16:09:48,865 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-24 16:09:49,451 [INFO] response: https://search.brave.com/search?q=BBC+geopolitics+cryptocurrency+stocks+September+2026&source=web&tf=pd 200
+2026-09-24 16:09:49,467 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:09:49,467 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:09:49,467 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:09:49,467 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:09:50,414 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:09:51,724 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:09:51,726 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-24 16:09:51,727 [WARNING] backend is not set. Using 'auto'
+2026-09-24 16:09:51,929 [INFO] response: https://grokipedia.com/api/typeahead?query=Financial+Times+global+economy+cryptocurrency+stocks+September+2026&limit=1 200
+2026-09-24 16:09:52,023 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Financial%20Times%20global%20economy%20cryptocurrency%20stocks%20September%202026 200
+2026-09-24 16:09:52,615 [INFO] response: https://search.brave.com/search?q=Financial+Times+global+economy+cryptocurrency+stocks+September+2026&source=web&tf=pd 200
+2026-09-24 16:09:52,630 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:09:52,630 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:09:52,630 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:09:52,630 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:09:53,354 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:09:55,051 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:09:55,053 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-24 16:09:55,053 [WARNING] backend is not set. Using 'auto'
+2026-09-24 16:09:55,410 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20AI%20science%20news%20September%2023%202026%20September%2024%202026%20TechCrunch%20The%20Verge%20Wired%20MIT%20Technology%20Review%20Ars%20Technica 200
+2026-09-24 16:09:55,428 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+AI+science+news+September+23+2026+September+24+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica&limit=1 200
+2026-09-24 16:09:55,516 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-24 16:09:56,147 [INFO] response: https://www.mojeek.com/search?q=latest+technology+AI+science+news+September+23+2026+September+24+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica 403
+2026-09-24 16:09:56,243 [INFO] response: https://www.startpage.com/ 200
+2026-09-24 16:09:56,286 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-24 16:09:56,828 [INFO] response: https://search.brave.com/search?q=latest+technology+AI+science+news+September+23+2026+September+24+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica&source=web&tf=pd 200
+2026-09-24 16:09:56,846 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:09:56,846 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:09:56,846 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:09:56,846 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:09:57,090 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:10:03,545 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:10:03,547 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-24 16:10:03,547 [WARNING] backend is not set. Using 'auto'
+2026-09-24 16:10:03,753 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+AI+science+news+September+23+2026+September+24+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica&limit=1 200
+2026-09-24 16:10:04,024 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20AI%20science%20news%20September%2023%202026%20September%2024%202026%20TechCrunch%20The%20Verge%20Wired%20MIT%20Technology%20Review%20Ars%20Technica 200
+2026-09-24 16:10:04,568 [INFO] response: https://www.mojeek.com/search?q=latest+technology+AI+science+news+September+23+2026+September+24+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica 403
+2026-09-24 16:10:04,662 [INFO] response: https://www.startpage.com/ 200
+2026-09-24 16:10:04,703 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-24 16:10:05,152 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dlatest%2Btechnology%2BAI%2Bscience%2Bnews%2BSeptember%2B23%2B2026%2BSeptember%2B24%2B2026%2BTechCrunch%2BThe%2BVerge%2BWired%2BMIT%2BTechnology%2BReview%2BArs%2BTechnica%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQEm4bRGNyW1dUGIjBx1-09MlWkrzMyZdR-yFG_gxQOpfglrSEXHYyLvz3tqfVCB2_7g3cSfyTFEd2XklMyAnJSWgFD 429
+2026-09-24 16:10:05,197 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-24 16:10:05,330 [INFO] response: https://search.yahoo.com/search;_ylt=G9XozfznBJyn6XPwMol_yOyc;_ylu=Sh5gFokao2beCyasfybtowUY996Mmo4IrSlAeCG7GQt1SbE?p=latest+technology+AI+science+news+September+23+2026+September+24+2026+TechCrunch+The+Verge+Wired+MIT+Technology+Review+Ars+Technica&btf=d 200
+2026-09-24 16:10:05,878 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:10:05,878 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:10:05,878 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:10:05,878 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:10:06,330 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:10:08,329 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:10:08,331 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-24 16:10:08,332 [WARNING] backend is not set. Using 'auto'
+2026-09-24 16:10:08,471 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechcrunch.com+AI+September+2026&limit=1 200
+2026-09-24 16:10:08,626 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechcrunch.com%20AI%20September%202026 200
+2026-09-24 16:10:09,122 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Atechcrunch.com%2BAI%2BSeptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQEm4bRGOCW1dUGIjDSa1727n9zx-QauMH-tF4XFsKLjFV2H68y1kul15tqLXPIksWOxVCQ3HadF0WlIlEyAnJSWgFD 429
+2026-09-24 16:10:09,456 [INFO] response: https://search.brave.com/search?q=site%3Atechcrunch.com+AI+September+2026&source=web&tf=pd 200
+2026-09-24 16:10:09,468 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:10:09,468 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:10:09,468 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:10:09,468 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:10:09,830 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:10:14,900 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:10:14,902 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-24 16:10:14,902 [WARNING] backend is not set. Using 'auto'
+2026-09-24 16:10:15,053 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+kurs+rupiah+dolar+berita+ekonomi+Indonesia+September+24+2026&limit=1 502
+2026-09-24 16:10:15,244 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20kurs%20rupiah%20dolar%20berita%20ekonomi%20Indonesia%20September%2024%202026 200
+2026-09-24 16:10:15,310 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-24 16:10:15,806 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+kurs+rupiah+dolar+berita+ekonomi+Indonesia+September+24+2026 403
+2026-09-24 16:10:15,906 [INFO] response: https://www.startpage.com/ 200
+2026-09-24 16:10:15,965 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-24 16:10:16,082 [INFO] response: https://search.yahoo.com/search;_ylt=RyquMmXR6gqkCG35sgoRVC0-;_ylu=gBz9fmqMqFig8UFv2k6A8xsTvY1b1rt9VmweM-4U0iw0Bok?p=IHSG+hari+ini+kurs+rupiah+dolar+berita+ekonomi+Indonesia+September+24+2026&btf=d 200
+2026-09-24 16:10:16,858 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:10:16,858 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:10:16,858 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:10:16,858 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:10:17,223 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:10:19,053 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:10:19,056 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-24 16:10:19,056 [WARNING] backend is not set. Using 'auto'
+2026-09-24 16:10:19,266 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Akompas.com+IHSG+hari+ini+kurs+rupiah+September+2026&limit=1 200
+2026-09-24 16:10:19,437 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Akompas.com%20IHSG%20hari%20ini%20kurs%20rupiah%20September%202026 200
+2026-09-24 16:10:19,545 [INFO] response: https://search.yahoo.com/search;_ylt=qrdFXo8V6KFzNyoyLkQzThGk;_ylu=G0b8WVw7e3XXRFGnF6tfIVzwbzrt-IR4XHETyPhw2fn4B18?p=site%3Akompas.com+IHSG+hari+ini+kurs+rupiah+September+2026&btf=d 200
+2026-09-24 16:10:20,410 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Akompas.com%2BIHSG%2Bhari%2Bini%2Bkurs%2Brupiah%2BSeptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQEm4bRGOyW1dUGIjAq7QCyawHq1cZV1NnneS9ddmKxeA9w56ccAKf4vDfG9PVU-6p1T2pHlGyo9zyO2vUyAnJSWgFD 429
+2026-09-24 16:10:20,504 [INFO] response: https://www.startpage.com/ 200
+2026-09-24 16:10:20,545 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-24 16:10:20,628 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-24 16:10:21,142 [INFO] response: https://search.brave.com/search?q=site%3Akompas.com+IHSG+hari+ini+kurs+rupiah+September+2026&source=web&tf=pd 200
+2026-09-24 16:10:21,157 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:10:21,157 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:10:21,157 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:10:21,157 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:10:21,749 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:10:27,066 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:10:27,068 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-24 16:10:27,068 [WARNING] backend is not set. Using 'auto'
+2026-09-24 16:10:27,307 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+sepak+bola+liga+internasional+atlet+September+2026+site%3Abola.com+OR+site%3Adetik.com+OR+site%3Akompas.com&limit=1 200
+2026-09-24 16:10:27,377 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20sepak%20bola%20liga%20internasional%20atlet%20September%202026%20site%3Abola.com%20OR%20site%3Adetik.com%20OR%20site%3Akompas.com 200
+2026-09-24 16:10:27,864 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+sepak+bola+liga+internasional+atlet+September+2026+site%3Abola.com+OR+site%3Adetik.com+OR+site%3Akompas.com 403
+2026-09-24 16:10:27,978 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+sepak+bola+liga+internasional+atlet+September+2026+site%3Abola.com+OR+site%3Adetik.com+OR+site%3Akompas.com&source=web&tf=pd 429
+2026-09-24 16:10:28,030 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-24 16:10:28,118 [INFO] response: https://www.startpage.com/ 200
+2026-09-24 16:10:28,166 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-24 16:10:28,272 [INFO] response: https://search.yahoo.com/search;_ylt=xsSx-W5ESuViGhF3mcbiA1V7;_ylu=HsX8TcctGdp2ckRxDuFgOean0xODMCZctJMp3scm9fZWkhU?p=Timnas+Indonesia+sepak+bola+liga+internasional+atlet+September+2026+site%3Abola.com+OR+site%3Adetik.com+OR+site%3Akompas.com&btf=d 200
+2026-09-24 16:10:29,159 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DTimnas%2BIndonesia%2Bsepak%2Bbola%2Bliga%2Binternasional%2Batlet%2BSeptember%2B2026%2Bsite%253Abola.com%2BOR%2Bsite%253Adetik.com%2BOR%2Bsite%253Akompas.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQEm4bRGPSW1dUGIjBnDADvsw0ElKqvHjlTu3N3GlOdAAk-PWj4i7d-kL8p9tOM74ewwcp231s6UPGuFAQyAnJSWgFD 429
+2026-09-24 16:10:29,159 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-24 16:10:29,381 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+sepak+bola+liga+internasional+atlet+September+2026+site%3Abola.com+OR+site%3Adetik.com+OR+site%3Akompas.com&limit=1 200
+2026-09-24 16:10:29,480 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20sepak%20bola%20liga%20internasional%20atlet%20September%202026%20site%3Abola.com%20OR%20site%3Adetik.com%20OR%20site%3Akompas.com 200
+2026-09-24 16:10:30,000 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+sepak+bola+liga+internasional+atlet+September+2026+site%3Abola.com+OR+site%3Adetik.com+OR+site%3Akompas.com 403
+2026-09-24 16:10:30,084 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-24 16:10:30,172 [INFO] response: https://www.startpage.com/ 200
+2026-09-24 16:10:30,222 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-24 16:10:30,342 [INFO] response: https://search.yahoo.com/search;_ylt=rE1h0VzWFS3UZgTHUiWOC8J_;_ylu=nPSN_g7thMN8F3JhA5lgjIqyGBXlIzMfEeMZPpbWhiZ-9yI?p=Timnas+Indonesia+sepak+bola+liga+internasional+atlet+September+2026+site%3Abola.com+OR+site%3Adetik.com+OR+site%3Akompas.com&btf=d 200
+2026-09-24 16:10:30,789 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:10:30,789 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:10:30,789 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:10:30,789 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:10:31,649 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:10:35,714 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:10:35,716 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:10:35,716 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:10:35,716 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:10:35,716 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:10:36,822 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:11:00,000 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:11:00,002 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:11:00,002 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:11:00,002 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:11:00,002 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:11:00,579 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:11:06,837 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:11:06,839 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-24 16:11:06,839 [WARNING] backend is not set. Using 'auto'
+2026-09-24 16:11:07,037 [INFO] response: https://grokipedia.com/api/typeahead?query=viral+trending+Indonesia+September+24+2026+bencana+sosial+politik+unik+site%3Adetik.com+OR+site%3Akompas.com+OR+site%3Aliputan6.com+OR+site%3Acnnindonesia.com&limit=1 502
+2026-09-24 16:11:07,209 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=viral%20trending%20Indonesia%20September%2024%202026%20bencana%20sosial%20politik%20unik%20site%3Adetik.com%20OR%20site%3Akompas.com%20OR%20site%3Aliputan6.com%20OR%20site%3Acnnindonesia.com 200
+2026-09-24 16:11:07,251 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-24 16:11:07,345 [INFO] response: https://www.startpage.com/ 200
+2026-09-24 16:11:07,391 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-24 16:11:07,939 [INFO] response: https://www.mojeek.com/search?q=viral+trending+Indonesia+September+24+2026+bencana+sosial+politik+unik+site%3Adetik.com+OR+site%3Akompas.com+OR+site%3Aliputan6.com+OR+site%3Acnnindonesia.com 403
+2026-09-24 16:11:08,808 [INFO] response: https://search.yahoo.com/search;_ylt=ZwCYuHG2ytMZk9h0txVypXX8;_ylu=enBKT1k56v2cyK3LmFmdGFegYIMG3bSr7rwVdrhNR9fOPGM?p=viral+trending+Indonesia+September+24+2026+bencana+sosial+politik+unik+site%3Adetik.com+OR+site%3Akompas.com+OR+site%3Aliputan6.com+OR+site%3Acnnindonesia.com&btf=d 200
+2026-09-24 16:11:09,301 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:11:09,301 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:11:09,301 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:11:09,301 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:11:30,912 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:11:33,078 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:11:33,806 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:11:33,806 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:11:33,806 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:11:33,806 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:11:34,207 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:11:38,402 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:11:38,597 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:11:38,597 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:11:38,597 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:11:38,598 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:11:39,310 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:11:49,008 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:11:49,283 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-24 16:11:49,283 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-24 16:11:49,284 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-09-24 16:11:49,284 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-09-24 16:11:50,388 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-24 16:12:01,805 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-09-24 16:12:01,807 [INFO] Validasi: 3x fetch_webpage sukses (minimum 3).
+2026-09-24 16:12:01,807 [INFO] URL yang berhasil di-fetch: {'https://www.bbc.com/sport/football/teams/tottenham-hotspur', 'https://www.bbc.com/sport/football/teams/arsenal', 'https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/', 'https://www.kompas.com/tren/read/2026/09/24/070000865/11-tuntutan-demo-buruh-hari-ini-24-september-2026-apa-saja-', 'https://www.bbc.com/business'}
+2026-09-24 16:12:01,807 [WARNING] Laporan tidak valid: Tidak ada judul '## 📊 LAPORAN MENDALAM'
+2026-09-24 16:12:01,807 [ERROR] ❌ Laporan hari ini gagal divalidasi (Tidak ada judul '## 📊 LAPORAN MENDALAM'). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-09-24 16:12:01,807 [INFO] Mengirim laporan ke Telegram...
+2026-09-24 16:12:02,510 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
