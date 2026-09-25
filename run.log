@@ -37529,3 +37529,662 @@ Semua provider gagal! Error terakhir: Connection error.
 2026-09-24 16:12:01,807 [ERROR] ❌ Laporan hari ini gagal divalidasi (Tidak ada judul '## 📊 LAPORAN MENDALAM'). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-09-24 16:12:01,807 [INFO] Mengirim laporan ke Telegram...
 2026-09-24 16:12:02,510 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-09-25 02:24:59,484 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-09-25 02:24:59,485 [INFO] =======================================================
+2026-09-25 02:24:59,485 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-09-25 02:24:59,485 [INFO] =======================================================
+2026-09-25 02:24:59,485 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-09-25 02:24:59,821 [INFO] Provider siap: Gemini dengan 4 model
+2026-09-25 02:24:59,822 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-09-25 02:24:59,823 [INFO] Provider siap: Z.AI dengan 1 model
+2026-09-25 02:24:59,824 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-09-25 02:24:59,825 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-09-25 02:24:59,839 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-09-25 02:24:59,893 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-09-25 02:25:01,029 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-25 02:25:01,030 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-25 02:25:01,030 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:25:13,295 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:25:13,304 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-09-25 02:25:13,346 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:25:13,347 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:25:13,613 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+stock+market+crypto+september+2026+site%3Acnbc.com&limit=1 200
+2026-09-25 02:25:13,645 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20stock%20market%20crypto%20september%202026%20site%3Acnbc.com 200
+2026-09-25 02:25:14,356 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgeopolitical%2Bstock%2Bmarket%2Bcrypto%2Bseptember%2B2026%2Bsite%253Acnbc.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGIm319UGIjDoejxZaI1da-_7oUzZgx_ZKDDJFN54hir8tdVMp33Ku78RH5czeOfNookeTKOGKTAyAnJSWgFD 429
+2026-09-25 02:25:14,854 [INFO] response: https://www.mojeek.com/search?q=geopolitical+stock+market+crypto+september+2026+site%3Acnbc.com 403
+2026-09-25 02:25:15,398 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-09-25 02:25:15,717 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:25:15,786 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:25:16,342 [INFO] response: https://search.brave.com/search?q=geopolitical+stock+market+crypto+september+2026+site%3Acnbc.com&source=web&tf=pd 200
+2026-09-25 02:25:16,356 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:25:16,514 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-25 02:25:16,515 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 43.498433979s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '43s'}]}}]
+2026-09-25 02:25:16,515 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-25 02:25:16,515 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-25 02:25:16,851 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-25 02:25:16,852 [WARNING] ⚠️ NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b gagal: Error code: 503 - {'error': {'message': 'Service temporarily overloaded', 'type': 'Service Unavailable', 'code': 503}}
+2026-09-25 02:25:16,852 [INFO] Mencoba provider NVIDIA NIM dengan model meta/llama-4-maverick-17b-128e-instruct...
+2026-09-25 02:25:17,028 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-25 02:25:17,029 [WARNING] ⚠️ NVIDIA NIM / meta/llama-4-maverick-17b-128e-instruct gagal: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410, 'detail': "The model 'meta/llama-4-maverick-17b-128e-instruct' has reached its end of life on 2026-07-27T00:00:00Z and is no longer available."}
+2026-09-25 02:25:17,029 [WARNING] Model meta/llama-4-maverick-17b-128e-instruct ditandai mati (retired/404/410).
+2026-09-25 02:25:17,029 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-25 02:25:17,029 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-25 02:25:20,700 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:25:20,701 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-25 02:25:20,705 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:25:20,884 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-25 02:25:20,885 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 39.128684321s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}]
+2026-09-25 02:25:20,885 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-25 02:25:20,885 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-25 02:25:20,885 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-25 02:25:23,165 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:25:23,166 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-25 02:25:23,170 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:25:23,294 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-25 02:25:23,295 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 36.7176621s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}]
+2026-09-25 02:25:23,295 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-25 02:25:23,295 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-25 02:25:23,295 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-25 02:25:25,550 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:25:25,551 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-25 02:25:25,555 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:25:25,717 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-25 02:25:25,717 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 34.294355671s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '34s'}]}}]
+2026-09-25 02:25:25,717 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-25 02:25:25,718 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-25 02:25:25,718 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-25 02:25:29,248 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:25:29,249 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-25 02:25:29,253 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:25:40,166 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:25:40,167 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-09-25 02:25:40,169 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:25:40,169 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:25:40,407 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20impact%20stock%20market%20crypto%20september%202026 200
+2026-09-25 02:25:40,423 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+impact+stock+market+crypto+september+2026&limit=1 200
+2026-09-25 02:25:41,030 [INFO] response: https://search.brave.com/search?q=geopolitical+impact+stock+market+crypto+september+2026&source=web&tf=pd 200
+2026-09-25 02:25:41,054 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:25:41,187 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-25 02:25:41,188 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 18.825106907s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}]
+2026-09-25 02:25:41,188 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-25 02:25:41,188 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-25 02:25:41,188 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-25 02:25:55,326 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:25:55,326 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-25 02:25:55,330 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:25:55,521 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-25 02:25:55,522 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 4.491669743s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '4s'}]}}]
+2026-09-25 02:25:55,522 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-25 02:25:55,522 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-25 02:25:55,522 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-25 02:26:13,919 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:26:13,920 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-25 02:26:13,923 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:26:14,114 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-25 02:26:14,115 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 45.897800001s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}]
+2026-09-25 02:26:14,115 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-25 02:26:14,115 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-25 02:26:14,115 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-25 02:26:45,499 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:26:45,500 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-25 02:26:45,503 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:26:45,684 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-25 02:26:45,684 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 14.328932632s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '14s'}]}}]
+2026-09-25 02:26:45,684 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-25 02:26:45,684 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-25 02:26:45,684 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-25 02:26:54,144 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:26:54,145 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-25 02:26:54,148 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:26:54,347 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-25 02:26:54,348 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 5.665552255s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '5s'}]}}]
+2026-09-25 02:26:54,348 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-25 02:26:54,348 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-25 02:26:54,348 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-25 02:27:12,808 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:27:12,809 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-25 02:27:12,812 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:27:13,000 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-25 02:27:13,001 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 47.012721147s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}]
+2026-09-25 02:27:13,001 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-25 02:27:13,001 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-25 02:27:13,001 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-25 02:27:31,024 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:27:31,025 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-25 02:27:31,028 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:27:31,260 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-25 02:27:31,261 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 28.753789795s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '28s'}]}}]
+2026-09-25 02:27:31,261 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-25 02:27:31,261 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-25 02:27:31,261 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-25 02:27:39,873 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:27:39,874 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-25 02:27:39,877 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:27:40,100 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-25 02:27:40,101 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 19.912930025s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}]
+2026-09-25 02:27:40,101 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-09-25 02:27:40,101 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-25 02:27:40,101 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-25 02:27:47,393 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:27:47,394 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-25 02:27:47,397 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-25 02:27:47,610 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-25 02:27:47,611 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 12.404541301s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '12s'}]}}]
+2026-09-25 02:27:47,611 [WARNING] Model gemini-3.5-flash ditandai mati (retired/404/410).
+2026-09-25 02:27:47,611 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-25 02:27:50,191 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:27:50,192 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-25 02:27:50,194 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:27:50,194 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:27:50,437 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitical%20impact%20stock%20market%20crypto 200
+2026-09-25 02:27:50,446 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitical+impact+stock+market+crypto&limit=1 200
+2026-09-25 02:27:51,037 [INFO] response: https://search.brave.com/search?q=geopolitical+impact+stock+market+crypto&source=web&tf=pd 200
+2026-09-25 02:27:51,047 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-25 02:27:54,656 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:27:54,657 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-25 02:27:54,658 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-25 02:27:57,688 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:27:57,689 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-25 02:27:57,690 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-25 02:28:01,345 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:28:01,346 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-25 02:28:01,348 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:28:01,348 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:28:01,609 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20global%20geopolitical%20events%20stock%20market 200
+2026-09-25 02:28:01,706 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+global+geopolitical+events+stock+market&limit=1 200
+2026-09-25 02:28:01,968 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:02,058 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:02,472 [INFO] response: https://www.mojeek.com/search?q=latest+global+geopolitical+events+stock+market 403
+2026-09-25 02:28:03,259 [INFO] response: https://search.brave.com/search?q=latest+global+geopolitical+events+stock+market&source=web&tf=pd 200
+2026-09-25 02:28:03,284 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-25 02:28:03,791 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-25 02:28:03,792 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-25 02:28:03,792 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:28:08,911 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:28:08,912 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:28:08,913 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-09-25 02:28:08,913 [INFO] URL yang berhasil di-fetch: set()
+2026-09-25 02:28:08,914 [WARNING] Laporan tidak valid: Hanya 2 URL whitelist ditemukan, minimal 3
+2026-09-25 02:28:08,914 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-09-25 02:28:08,914 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-09-25 02:28:08,928 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:28:09,709 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:28:09,710 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:28:09,711 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:28:09,711 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:28:09,926 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20stock%20market%20crypto%20news%20September%202024%20cnbc%20bbc 200
+2026-09-25 02:28:10,112 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+stock+market+crypto+news+September+2024+cnbc+bbc&limit=1 200
+2026-09-25 02:28:10,503 [INFO] response: https://search.yahoo.com/search;_ylt=qawpE8w75pFRHzT7TXGkOiML;_ylu=cSkFN5OFJrhShKE1nOUYZ3IdbSHFq-zIJBEFcYIQAdyzHA8?p=geopolitics+stock+market+crypto+news+September+2024+cnbc+bbc&btf=d 200
+2026-09-25 02:28:10,976 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dgeopolitics%2Bstock%2Bmarket%2Bcrypto%2Bnews%2BSeptember%2B2024%2Bcnbc%2Bbbc%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGLq419UGIjDTuzrqLUvYiI0B8fqBilEDP_JUa2YAWC-4PIbR2EF2TVzvxTtU-ZkpxOCQL7JuLMQyAnJSWgFD 429
+2026-09-25 02:28:11,103 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:14,475 [INFO] response: https://search.brave.com/search?q=geopolitics+stock+market+crypto+news+September+2024+cnbc+bbc&source=web&tf=pd 200
+2026-09-25 02:28:14,498 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:28:15,025 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:28:15,026 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:28:15,028 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:28:15,028 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:28:15,242 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+geopolitics+stock+market&limit=1 200
+2026-09-25 02:28:15,298 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20geopolitics%20stock%20market 200
+2026-09-25 02:28:15,774 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+geopolitics+stock+market&source=web&tf=pd 200
+2026-09-25 02:28:15,786 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:28:16,328 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:28:16,329 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:28:16,598 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:28:17,395 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:28:17,396 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:28:17,398 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:28:17,398 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:28:17,622 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20football%20results%20transfer 200
+2026-09-25 02:28:17,637 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+football+results+transfer&limit=1 200
+2026-09-25 02:28:18,274 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%252Fsport%2Bfootball%2Bresults%2Btransfer%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGMG419UGIjCJKaTKzQykclS1UttQ1GWCiTXfShRm4Qtmkgn1WJBrgbEVMo90HU7dX_V_rssdldoyAnJSWgFD 429
+2026-09-25 02:28:18,522 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:18,598 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:18,830 [INFO] response: https://search.yahoo.com/search;_ylt=wL6hIJRUs6mRwg6mCYewUiYf;_ylu=GXXWBiffUnjBsrU-99rx4G3ng3JbZSVzig7tI5SJuJCBdvY?p=site%3Abbc.com%2Fsport+football+results+transfer&btf=d 200
+2026-09-25 02:28:19,425 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+football+results+transfer&source=web&tf=pd 200
+2026-09-25 02:28:19,438 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:28:20,382 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:28:20,383 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:28:20,538 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:28:21,347 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:28:21,348 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:28:21,350 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:28:21,350 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:28:21,568 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atheverge.com%20AI%20technology%20news 200
+2026-09-25 02:28:21,579 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atheverge.com+AI+technology+news&limit=1 200
+2026-09-25 02:28:22,104 [INFO] response: https://www.mojeek.com/search?q=site%3Atheverge.com+AI+technology+news 403
+2026-09-25 02:28:22,360 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:22,432 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:23,009 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Atheverge.com%2BAI%2Btechnology%2Bnews%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGMa419UGIjA0YO7qoC1SLywVEWwKOowuHfrTw7cQr2j8L8hTM8IhLDfJMXKntkT0UMHHkrHVc7cyAnJSWgFD 429
+2026-09-25 02:28:23,286 [INFO] response: https://search.yahoo.com/search;_ylt=KWm-nWzXyWt7zl1O3nr9o6ie;_ylu=FTHynkcej3lb-50h1MrTKiI4fVckP92xFM39L2hTdZ8DqNw?p=site%3Atheverge.com+AI+technology+news&btf=d 200
+2026-09-25 02:28:23,443 [INFO] response: https://search.brave.com/search?q=site%3Atheverge.com+AI+technology+news&source=web&tf=pd 429
+2026-09-25 02:28:23,666 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:23,666 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-25 02:28:23,879 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atheverge.com%20AI%20technology%20news 200
+2026-09-25 02:28:23,894 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atheverge.com+AI+technology+news&limit=1 200
+2026-09-25 02:28:24,449 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Atheverge.com%2BAI%2Btechnology%2Bnews%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGMi419UGIjCO3B-pc72ZeKvhXqoomqkiy20E4br4vfDBESxg2ZrFGJr1SQlUqQgoiwbUE_el-JkyAnJSWgFD 429
+2026-09-25 02:28:24,721 [INFO] response: https://search.yahoo.com/search;_ylt=9cLe-W27-WfkbjBCOo06ZAGl;_ylu=ms2ZfyhH7venh2R_Dw15VvY4gL4Rii8sNVu3ejEPK2OXuh4?p=site%3Atheverge.com+AI+technology+news&btf=d 200
+2026-09-25 02:28:24,888 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:25,060 [INFO] response: https://search.brave.com/search?q=site%3Atheverge.com+AI+technology+news&source=web&tf=pd 429
+2026-09-25 02:28:25,537 [INFO] response: https://www.mojeek.com/search?q=site%3Atheverge.com+AI+technology+news 403
+2026-09-25 02:28:25,733 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:25,823 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:25,824 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-25 02:28:25,902 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atheverge.com%20AI%20technology%20news 200
+2026-09-25 02:28:26,039 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atheverge.com+AI+technology+news&limit=1 200
+2026-09-25 02:28:26,551 [INFO] response: https://www.mojeek.com/search?q=site%3Atheverge.com+AI+technology+news 403
+2026-09-25 02:28:26,812 [INFO] response: https://search.yahoo.com/search;_ylt=meSlSsYX7xKs5Ycg2ybonSWx;_ylu=1V6sc8COTW8HtVckkPRRa_29q8jJH67jGRd07voQ4zZr01w?p=site%3Atheverge.com+AI+technology+news&btf=w 200
+2026-09-25 02:28:27,554 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Atheverge.com%2BAI%2Btechnology%2Bnews%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSs19vyGMq419UGIjDbGWhZRQbY1c6fNf2C__dEwo7j6LAQ9QIMt9Ul3i6Fbip91GTt36juonLJwftRbGAyAnJSWgFD 429
+2026-09-25 02:28:27,733 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:27,829 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:27,985 [INFO] response: https://search.brave.com/search?q=site%3Atheverge.com+AI+technology+news&source=web&tf=pw 429
+2026-09-25 02:28:28,121 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:28,143 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-25 02:28:28,145 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:28:29,001 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:28:29,002 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:28:29,004 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:28:29,004 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:28:29,222 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=the%20verge%20AI%20technology 200
+2026-09-25 02:28:29,233 [INFO] response: https://grokipedia.com/api/typeahead?query=the+verge+AI+technology&limit=1 200
+2026-09-25 02:28:29,383 [INFO] response: https://search.brave.com/search?q=the+verge+AI+technology&source=web&tf=pd 429
+2026-09-25 02:28:29,678 [INFO] response: https://search.yahoo.com/search;_ylt=2O4hJ4N3J8V9O3wmaqv4ONUA;_ylu=XWFIrFbZLFjanvzxJY7BVrFTlyNIyUfmJ1NugSKxZpIiCHk?p=the+verge+AI+technology&btf=d 200
+2026-09-25 02:28:29,864 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:29,932 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:30,037 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:30,469 [INFO] response: https://www.mojeek.com/search?q=the+verge+AI+technology 403
+2026-09-25 02:28:31,106 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dthe%2Bverge%2BAI%2Btechnology%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGM6419UGIjDpFfVUSZO00emsyEYZx1krWzZSkd6IFgrp0rve9hN6rr9BLVM8hhvRn8h7YQtvkDYyAnJSWgFD 429
+2026-09-25 02:28:31,107 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-25 02:28:31,186 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=the%20verge%20AI%20technology 200
+2026-09-25 02:28:31,498 [INFO] response: https://grokipedia.com/api/typeahead?query=the+verge+AI+technology&limit=1 200
+2026-09-25 02:28:31,762 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:31,847 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:31,971 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:32,266 [INFO] response: https://search.yahoo.com/search;_ylt=nm15c6IsFCanbR_VChs2sAZi;_ylu=ms1ulqKjU7jmZWgT2UfHmXeQqwSOIHQRaEXCz9LKJ4gwAaw?p=the+verge+AI+technology&btf=d 200
+2026-09-25 02:28:32,858 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dthe%2Bverge%2BAI%2Btechnology%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGNC419UGIjCpgu9wXF3psFDEXQBlUhmqAWoEl_RotHxpUxdGlQdcgjslAOT_n2VplWKfLF1S0OUyAnJSWgFD 429
+2026-09-25 02:28:33,258 [INFO] response: https://www.mojeek.com/search?q=the+verge+AI+technology 403
+2026-09-25 02:28:33,431 [INFO] response: https://search.brave.com/search?q=the+verge+AI+technology&source=web&tf=pd 429
+2026-09-25 02:28:33,452 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-25 02:28:33,529 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=the%20verge%20AI%20technology 200
+2026-09-25 02:28:33,673 [INFO] response: https://grokipedia.com/api/typeahead?query=the+verge+AI+technology&limit=1 200
+2026-09-25 02:28:33,829 [INFO] response: https://search.brave.com/search?q=the+verge+AI+technology&source=web&tf=pw 429
+2026-09-25 02:28:34,489 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dthe%2Bverge%2BAI%2Btechnology%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSs19vyGNG419UGIjCOCBfQF2vp9bPg6abBBIsfNJrK3fC4q2TxbcWOwCZnP9gJccDYCvAC19R0AgM3M2oyAnJSWgFD 429
+2026-09-25 02:28:34,688 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:34,977 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=2ccd3bfec0988da40b69b4363b07e897&bds_t=1790303314T9b5e6460b9e8676b3c352c54456667340ab7b11389d6d67fd748d628bfbe8e46&bds_s=9a39ac97e2f346269cc6e431e1f398d3&language=english&with_date=w&segment=organic&t=device&lui=english&abd=0&abp=1&sc=&qadf=moderate&qsr=en_US&abe=0&query=the+verge+AI+technology&cat=web&cmd=gen_page 200
+2026-09-25 02:28:35,289 [INFO] response: https://search.yahoo.com/search;_ylt=ddkn42LTNGfl_ZY46cTRlfAV;_ylu=q4TULashvVjJ74CzuOIsvgEznBqEFaAA5YEmAyKtwtlCp7c?p=the+verge+AI+technology&btf=w 200
+2026-09-25 02:28:35,772 [INFO] response: https://www.mojeek.com/search?q=the+verge+AI+technology 403
+2026-09-25 02:28:35,930 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:35,952 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-25 02:28:35,954 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:28:36,790 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:28:36,791 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:28:36,793 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:28:36,793 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:28:36,933 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechnologyreview.com+AI&limit=1 200
+2026-09-25 02:28:37,010 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechnologyreview.com%20AI 200
+2026-09-25 02:28:37,117 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:37,402 [INFO] response: https://search.yahoo.com/search;_ylt=bZGMsOk5R6GCe4xSL_cPlSEK;_ylu=Udb1dRO4lzlwYUUwC_5bNYpikuf16GjT3pX1VUzdkEOzZ9o?p=site%3Atechnologyreview.com+AI&btf=d 200
+2026-09-25 02:28:37,826 [INFO] response: https://www.mojeek.com/search?q=site%3Atechnologyreview.com+AI 403
+2026-09-25 02:28:38,012 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:38,087 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:38,243 [INFO] response: https://search.brave.com/search?q=site%3Atechnologyreview.com+AI&source=web&tf=pd 429
+2026-09-25 02:28:38,943 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Atechnologyreview.com%2BAI%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGNa419UGIjCPyas-8-AUA4ArsPiCg3gisThKZL4nzqOeUQiYT9xNVX5c-AVqWijcFNji1MTBezoyAnJSWgFD 429
+2026-09-25 02:28:38,944 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-25 02:28:39,022 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechnologyreview.com%20AI 200
+2026-09-25 02:28:39,086 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechnologyreview.com+AI&limit=1 200
+2026-09-25 02:28:39,508 [INFO] response: https://www.mojeek.com/search?q=site%3Atechnologyreview.com+AI 403
+2026-09-25 02:28:39,675 [INFO] response: https://search.brave.com/search?q=site%3Atechnologyreview.com+AI&source=web&tf=pd 429
+2026-09-25 02:28:39,876 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:39,954 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:40,238 [INFO] response: https://search.yahoo.com/search;_ylt=x5x2B8_JvLYMqN1XlRubnx-Z;_ylu=s71FKgTTuwlxKFYAulNtQhD0-aFWxs81w6NIgS7om4GzY-s?p=site%3Atechnologyreview.com+AI&btf=d 200
+2026-09-25 02:28:40,870 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Atechnologyreview.com%2BAI%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGNi419UGIjDo8Zi-iDrwJZUt22irVktay73X9MfuzCdRV1qUAfKxzV5J-faJOeoiURMuWX6h4FUyAnJSWgFD 429
+2026-09-25 02:28:40,976 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:40,999 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-25 02:28:41,076 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechnologyreview.com%20AI 200
+2026-09-25 02:28:41,123 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechnologyreview.com+AI&limit=1 200
+2026-09-25 02:28:41,832 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Atechnologyreview.com%2BAI%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSs19vyGNm419UGIjDaMYtbgAPePbzMnYpRdR4Pm4zWnhr91WNIv5sd3ln4S1kgKNUBaaSYwqwuwvJEaPQyAnJSWgFD 429
+2026-09-25 02:28:42,039 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:42,111 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:42,344 [INFO] response: https://search.yahoo.com/search;_ylt=6He151c5kMSFQOyTZjQ5o-3f;_ylu=ra38Jy8uPk6t9g-qrgEPlwFn21NXn_tal22SUvJEtCaFGW8?p=site%3Atechnologyreview.com+AI&btf=w 200
+2026-09-25 02:28:42,778 [INFO] response: https://www.mojeek.com/search?q=site%3Atechnologyreview.com+AI 403
+2026-09-25 02:28:42,881 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:43,053 [INFO] response: https://search.brave.com/search?q=site%3Atechnologyreview.com+AI&source=web&tf=pw 429
+2026-09-25 02:28:43,073 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-25 02:28:43,075 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:28:43,940 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:28:43,941 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:28:43,942 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:28:43,943 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:28:44,132 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Awired.com+artificial+intelligence&limit=1 200
+2026-09-25 02:28:44,169 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Awired.com%20artificial%20intelligence 200
+2026-09-25 02:28:44,356 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:44,460 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:44,689 [INFO] response: https://search.yahoo.com/search;_ylt=MmDioI_5ENZTGbWE4OnKcl1g;_ylu=vo6SRfs41pt8FGrp5CapHAhYXsRDqxbsO96KYvdT_w0qbnw?p=site%3Awired.com+artificial+intelligence&btf=d 200
+2026-09-25 02:28:45,149 [INFO] response: https://www.mojeek.com/search?q=site%3Awired.com+artificial+intelligence 403
+2026-09-25 02:28:45,305 [INFO] response: https://search.brave.com/search?q=site%3Awired.com+artificial+intelligence&source=web&tf=pd 429
+2026-09-25 02:28:45,430 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:46,170 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Awired.com%2Bartificial%2Bintelligence%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGN2419UGIjBKgOphhOIi1KfpOi8rKJGc0tLzX3WMQmcJwIvnIIhjhhEJF4QW6WVePeSIl2Y8BA0yAnJSWgFD 429
+2026-09-25 02:28:46,171 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-25 02:28:46,248 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Awired.com%20artificial%20intelligence 200
+2026-09-25 02:28:46,338 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Awired.com+artificial+intelligence&limit=1 200
+2026-09-25 02:28:46,616 [INFO] response: https://search.yahoo.com/search;_ylt=M-z_8-_OwCva8Ip6hha_1uGX;_ylu=POs7e_a78syVve96OU9veqiGc9Aw0jzL78BnjrUkF4q10z8?p=site%3Awired.com+artificial+intelligence&btf=d 200
+2026-09-25 02:28:47,080 [INFO] response: https://www.mojeek.com/search?q=site%3Awired.com+artificial+intelligence 403
+2026-09-25 02:28:47,527 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Awired.com%2Bartificial%2Bintelligence%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGN-419UGIjDW6HNcIVcw07ROALdXV2ARpldZTc6ME2jtcEwf8XGRu-omE2Pnq-G7wNQOK2TueHsyAnJSWgFD 429
+2026-09-25 02:28:47,706 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:47,779 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:47,883 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:48,052 [INFO] response: https://search.brave.com/search?q=site%3Awired.com+artificial+intelligence&source=web&tf=pd 429
+2026-09-25 02:28:48,072 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-25 02:28:48,150 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Awired.com%20artificial%20intelligence 200
+2026-09-25 02:28:48,300 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Awired.com+artificial+intelligence&limit=1 200
+2026-09-25 02:28:48,401 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:48,573 [INFO] response: https://search.brave.com/search?q=site%3Awired.com+artificial+intelligence&source=web&tf=pw 429
+2026-09-25 02:28:48,785 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:48,858 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:49,526 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Awired.com%2Bartificial%2Bintelligence%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSs19vyGOG419UGIjACbfrePob7jx1lB9cr0K7NaV3VKcuIVIpMJUsCSnfHbrf7bVaDOD6K4xizSGAjHhwyAnJSWgFD 429
+2026-09-25 02:28:49,803 [INFO] response: https://search.yahoo.com/search;_ylt=wx2VEKxBt_65B0fNdHpPjB2D;_ylu=TL4sznJJVjmd8rpOEQw5n3rlEVXxTKbvKKPWe4HcrzdwnhE?p=site%3Awired.com+artificial+intelligence&btf=w 200
+2026-09-25 02:28:50,216 [INFO] response: https://www.mojeek.com/search?q=site%3Awired.com+artificial+intelligence 403
+2026-09-25 02:28:50,217 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-25 02:28:50,219 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:28:50,925 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:28:50,926 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:28:50,928 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:28:50,928 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:28:51,073 [INFO] response: https://grokipedia.com/api/typeahead?query=wired+artificial+intelligence+2026&limit=1 200
+2026-09-25 02:28:51,160 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=wired%20artificial%20intelligence%202026 200
+2026-09-25 02:28:51,392 [INFO] response: https://search.yahoo.com/search;_ylt=q1RI5wlBJPjIGGtqYFhx2ioA;_ylu=bnOfww9pizkMCRQLA08G85StPyjbgq0XaqCt0nSt1M1dQHY?p=wired+artificial+intelligence+2026&btf=d 200
+2026-09-25 02:28:51,537 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:52,035 [INFO] response: https://www.mojeek.com/search?q=wired+artificial+intelligence+2026 403
+2026-09-25 02:28:52,210 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:52,301 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:52,783 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dwired%2Bartificial%2Bintelligence%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGOS419UGIjAVdjUDMjJhcBAsSk1poqFuTgokMKu73ZECFRuVXzQD3QeoXH02koBmAiBS9aqrabwyAnJSWgFD 429
+2026-09-25 02:28:52,966 [INFO] response: https://search.brave.com/search?q=wired+artificial+intelligence+2026&source=web&tf=pd 429
+2026-09-25 02:28:52,986 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-25 02:28:53,124 [INFO] response: https://grokipedia.com/api/typeahead?query=wired+artificial+intelligence+2026&limit=1 200
+2026-09-25 02:28:53,222 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=wired%20artificial%20intelligence%202026 200
+2026-09-25 02:28:53,763 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dwired%2Bartificial%2Bintelligence%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGOW419UGIjANiiNR8f-L-fhaoVc6Tda4viLGOND0WiFYswhfeze9D1wQQpXLMwn8Gw9eG7A_zI8yAnJSWgFD 429
+2026-09-25 02:28:54,192 [INFO] response: https://www.mojeek.com/search?q=wired+artificial+intelligence+2026 403
+2026-09-25 02:28:54,296 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:54,503 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:54,611 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:54,772 [INFO] response: https://search.brave.com/search?q=wired+artificial+intelligence+2026&source=web&tf=pd 429
+2026-09-25 02:28:55,059 [INFO] response: https://search.yahoo.com/search;_ylt=fHPmz2Y63DCj7SkSHxm6JixV;_ylu=RIXMYsLZDul4xHpaFe5yYFVqDRbLBkxcdPSfRBixNU0xV8c?p=wired+artificial+intelligence+2026&btf=d 200
+2026-09-25 02:28:55,061 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-25 02:28:55,139 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=wired%20artificial%20intelligence%202026 200
+2026-09-25 02:28:55,206 [INFO] response: https://grokipedia.com/api/typeahead?query=wired+artificial+intelligence+2026&limit=1 200
+2026-09-25 02:28:55,336 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:55,511 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:55,605 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:56,108 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dwired%2Bartificial%2Bintelligence%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSs19vyGOe419UGIjBE88qgoOQ0n4XDF8fYj4knRNiCKzjU0MuHB7RduNXTYU8e87FbDKLnK8qFT-zh10kyAnJSWgFD 429
+2026-09-25 02:28:56,535 [INFO] response: https://www.mojeek.com/search?q=wired+artificial+intelligence+2026 403
+2026-09-25 02:28:56,803 [INFO] response: https://search.yahoo.com/search;_ylt=CXj6pAkQdSvXf2WMfqz7gGfF;_ylu=j_FE0TapLa944RRiBOHGwyJ5ooF96SMu78PBZZI56p6ZC-o?p=wired+artificial+intelligence+2026&btf=w 200
+2026-09-25 02:28:56,955 [INFO] response: https://search.brave.com/search?q=wired+artificial+intelligence+2026&source=web&tf=pw 429
+2026-09-25 02:28:56,975 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-25 02:28:56,977 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:28:57,730 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:28:57,731 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:28:57,733 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:28:57,733 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:28:57,957 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=techcrunch%20artificial%20intelligence 200
+2026-09-25 02:28:57,997 [INFO] response: https://grokipedia.com/api/typeahead?query=techcrunch+artificial+intelligence&limit=1 200
+2026-09-25 02:28:58,146 [INFO] response: https://search.brave.com/search?q=techcrunch+artificial+intelligence&source=web&tf=pd 429
+2026-09-25 02:28:58,288 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:28:58,737 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtechcrunch%2Bartificial%2Bintelligence%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGOq419UGIjA1Z6el4e4MCXg_i0QMFTIfbkIv5LZkDy36aAkA6uNKAh9khkEKa0xrDJT5xsW9sOEyAnJSWgFD 429
+2026-09-25 02:28:59,155 [INFO] response: https://www.mojeek.com/search?q=techcrunch+artificial+intelligence 403
+2026-09-25 02:28:59,350 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:28:59,444 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:28:59,709 [INFO] response: https://search.yahoo.com/search;_ylt=m6tlcdiofn_L6s2eo4Ef5UA1;_ylu=hdyGLUeiSgHehRRc-Zqvn2FJjt4YblH8e-BQ6EvOTFm5ls0?p=techcrunch+artificial+intelligence&btf=d 200
+2026-09-25 02:28:59,810 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-25 02:28:59,975 [INFO] response: https://grokipedia.com/api/typeahead?query=techcrunch+artificial+intelligence&limit=1 200
+2026-09-25 02:29:00,021 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=techcrunch%20artificial%20intelligence 200
+2026-09-25 02:29:00,484 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtechcrunch%2Bartificial%2Bintelligence%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGOy419UGIjDRzMEaDG7aqj2mYQMKw036rJkDSf_y-MoU4wBCjaYqqyqZ5U2DteUSgzI2Go0bCzkyAnJSWgFD 429
+2026-09-25 02:29:00,714 [INFO] response: https://search.yahoo.com/search;_ylt=geNcobooolYdlI_f39q6-YR8;_ylu=k8humB4zBZ9b_6hzBz4fIj6oMOubrrpcnz0xHbjp5iuniIY?p=techcrunch+artificial+intelligence&btf=d 200
+2026-09-25 02:29:00,912 [INFO] response: https://search.brave.com/search?q=techcrunch+artificial+intelligence&source=web&tf=pd 429
+2026-09-25 02:29:01,103 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:01,202 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:01,308 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:01,725 [INFO] response: https://www.mojeek.com/search?q=techcrunch+artificial+intelligence 403
+2026-09-25 02:29:01,726 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-25 02:29:01,804 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=techcrunch%20artificial%20intelligence 200
+2026-09-25 02:29:01,879 [INFO] response: https://grokipedia.com/api/typeahead?query=techcrunch+artificial+intelligence&limit=1 200
+2026-09-25 02:29:02,563 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtechcrunch%2Bartificial%2Bintelligence%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSs19vyGO6419UGIjBf-mFiLAvUxOtpqNojFqFXOKXTLIltCxoL_MEgk4TmM6vKESM0Qhck-NeuOVsqa-kyAnJSWgFD 429
+2026-09-25 02:29:02,718 [INFO] response: https://search.brave.com/search?q=techcrunch+artificial+intelligence&source=web&tf=pw 429
+2026-09-25 02:29:02,910 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:02,981 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:03,083 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:03,366 [INFO] response: https://search.yahoo.com/search;_ylt=9Ir4F8XetwKRZh3e3zQj_yFP;_ylu=DJXAnyXCR_OyuWWISk51l6hDrL90Ih0k1CRfQ_pn9S78VtE?p=techcrunch+artificial+intelligence&btf=w 200
+2026-09-25 02:29:03,815 [INFO] response: https://www.mojeek.com/search?q=techcrunch+artificial+intelligence 403
+2026-09-25 02:29:03,816 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-25 02:29:03,817 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:29:04,501 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:29:04,502 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:29:04,503 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:29:04,503 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:29:04,715 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=artificial%20intelligence%20news%20cnbc 200
+2026-09-25 02:29:04,731 [INFO] response: https://grokipedia.com/api/typeahead?query=artificial+intelligence+news+cnbc&limit=1 200
+2026-09-25 02:29:04,859 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:05,289 [INFO] response: https://www.mojeek.com/search?q=artificial+intelligence+news+cnbc 403
+2026-09-25 02:29:05,560 [INFO] response: https://search.yahoo.com/search;_ylt=jaAhMbe129lK7K8Jf8nMFGnN;_ylu=VXMiQH5xjQUd6DB_sRRDrv-KkVjFNcN-80dr_ILscmOVJyk?p=artificial+intelligence+news+cnbc&btf=d 200
+2026-09-25 02:29:06,285 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dartificial%2Bintelligence%2Bnews%2Bcnbc%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGPG419UGIjDV0wW80QLGeHkW8cnqg8NJc3GVXQA7npupX3UjKtoRnqD2pWqeJrvmH8IO0xDYALUyAnJSWgFD 429
+2026-09-25 02:29:06,434 [INFO] response: https://search.brave.com/search?q=artificial+intelligence+news+cnbc&source=web&tf=pd 429
+2026-09-25 02:29:06,637 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:06,711 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:06,712 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-25 02:29:06,792 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=artificial%20intelligence%20news%20cnbc 200
+2026-09-25 02:29:06,936 [INFO] response: https://grokipedia.com/api/typeahead?query=artificial+intelligence+news+cnbc&limit=1 200
+2026-09-25 02:29:07,040 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:07,214 [INFO] response: https://search.brave.com/search?q=artificial+intelligence+news+cnbc&source=web&tf=pd 429
+2026-09-25 02:29:07,812 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dartificial%2Bintelligence%2Bnews%2Bcnbc%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGPO419UGIjC71QA8VIU-8SJMBs8mQrT36t_ci-8JVL3DWeOxo0YvR0iXZ5RmRhYVIB8o2njy2QYyAnJSWgFD 429
+2026-09-25 02:29:08,230 [INFO] response: https://www.mojeek.com/search?q=artificial+intelligence+news+cnbc 403
+2026-09-25 02:29:08,443 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:08,558 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:08,785 [INFO] response: https://search.yahoo.com/search;_ylt=y7R_HFW03kODZK1K8PSMxxKl;_ylu=OkRz3jJTxw7lDanyQf1trnOZyUOfvv9DPBZ5eswx0HF2vPY?p=artificial+intelligence+news+cnbc&btf=d 200
+2026-09-25 02:29:08,823 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-25 02:29:08,901 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=artificial%20intelligence%20news%20cnbc 200
+2026-09-25 02:29:09,075 [INFO] response: https://grokipedia.com/api/typeahead?query=artificial+intelligence+news+cnbc&limit=1 200
+2026-09-25 02:29:09,179 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:09,356 [INFO] response: https://search.brave.com/search?q=artificial+intelligence+news+cnbc&source=web&tf=pw 429
+2026-09-25 02:29:09,585 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:09,768 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:10,039 [INFO] response: https://search.yahoo.com/search;_ylt=q4Ex7W2fqUO2ovTqcq0Bg_dv;_ylu=VUG6v0v6n94UW-Wlmrxfv76heNs-BN-4G4jT5FVcLMnw1hY?p=artificial+intelligence+news+cnbc&btf=w 200
+2026-09-25 02:29:10,444 [INFO] response: https://www.mojeek.com/search?q=artificial+intelligence+news+cnbc 403
+2026-09-25 02:29:10,890 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dartificial%2Bintelligence%2Bnews%2Bcnbc%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSs19vyGPa419UGIjBoNGkHk9dpS8wf2UaO9ls1XN1HEmS5LnP-JMLBAS1PuZJsdYQEmTCXtaRXrZ_iZK0yAnJSWgFD 429
+2026-09-25 02:29:10,891 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-25 02:29:10,892 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:29:11,804 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:29:11,805 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:29:11,807 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:29:11,807 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:29:12,026 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news%20technology 200
+2026-09-25 02:29:12,072 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews+technology&limit=1 200
+2026-09-25 02:29:12,777 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%252Fnews%2Btechnology%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGPi419UGIjD3q4tJq6Lzr3lSLtw8Or8axR8r1QYHDYU0ng7NAoWhBZNdN5AcRD1SsIPSbMEmji8yAnJSWgFD 429
+2026-09-25 02:29:12,956 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:13,043 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:13,201 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews+technology&source=web&tf=pd 429
+2026-09-25 02:29:13,654 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews+technology 403
+2026-09-25 02:29:13,936 [INFO] response: https://search.yahoo.com/search;_ylt=tg4KcTtYJgvDWErlGvJu3YKL;_ylu=7MW0NAiOE9dulMlo60GSWNIp7YTVeHTmy06BFXb2Ox5f_Lk?p=site%3Abbc.com%2Fnews+technology&btf=d 200
+2026-09-25 02:29:14,077 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:14,100 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-25 02:29:14,178 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news%20technology 200
+2026-09-25 02:29:14,264 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews+technology&limit=1 200
+2026-09-25 02:29:14,438 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:14,506 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:14,943 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews+technology 403
+2026-09-25 02:29:15,092 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews+technology&source=web&tf=pd 429
+2026-09-25 02:29:15,737 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%252Fnews%2Btechnology%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGPu419UGIjCF7cWOaZh8OJIELuZ8Ljpi7oq0EGDo4a_zvOb0gJiQUQv9i6e09Fz8UBUC9-t2Ub4yAnJSWgFD 429
+2026-09-25 02:29:15,867 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:16,090 [INFO] response: https://search.yahoo.com/search;_ylt=IRIaI4HOwSOmsubmtX79dj9u;_ylu=abGS06EciGfOO2C3EmS6b8nDnQEfxiuUw5P7mmgrk5ORtxk?p=site%3Abbc.com%2Fnews+technology&btf=d 200
+2026-09-25 02:29:16,128 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-25 02:29:16,295 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews+technology&limit=1 200
+2026-09-25 02:29:16,333 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news%20technology 200
+2026-09-25 02:29:16,604 [INFO] response: https://search.yahoo.com/search;_ylt=f44wQRNzL1jKpxqMUEsSM4-b;_ylu=P8_CQQ7E3PGMYWyk8FxnkSImeu5BwnR3lSuSWrR9rvCCvXw?p=site%3Abbc.com%2Fnews+technology&btf=w 200
+2026-09-25 02:29:16,775 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:16,841 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:16,994 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews+technology&source=web&tf=pw 429
+2026-09-25 02:29:17,441 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews+technology 403
+2026-09-25 02:29:17,566 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:18,307 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%252Fnews%2Btechnology%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSs19vyGP2419UGIjDHO5dPxPAfs3BJzvIEQAL002bH8IOXRC9Fpp9ObdPn_pMhllEk9DlJNqW4Q9aEcFQyAnJSWgFD 429
+2026-09-25 02:29:18,308 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-25 02:29:18,310 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:29:19,229 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:29:19,230 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:29:19,231 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:29:19,231 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:29:19,465 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=bbc%20technology 200
+2026-09-25 02:29:19,564 [INFO] response: https://grokipedia.com/api/typeahead?query=bbc+technology&limit=1 200
+2026-09-25 02:29:19,602 [INFO] response: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=BBC%20Technology&explaintext=0&exintro=0&redirects=1 200
+2026-09-25 02:29:19,871 [INFO] response: https://search.yahoo.com/search;_ylt=c737uOn4KNJPaWcs8aHynGd1;_ylu=KxE_k_DhbfOsB6qmeCSk3HtqiR0XgJrvJNgF0FkKxG0XzB4?p=bbc+technology&btf=d 200
+2026-09-25 02:29:19,980 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:20,403 [INFO] response: https://www.mojeek.com/search?q=bbc+technology 403
+2026-09-25 02:29:20,560 [INFO] response: https://search.brave.com/search?q=bbc+technology&source=web&tf=pd 429
+2026-09-25 02:29:21,206 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dbbc%2Btechnology%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGIC519UGIjB3y0iwJEshCPD66fEVBsDFMb1mit3KIvXkn2z-1ucR4vFLEn0nFmHvGn06VDC6JyIyAnJSWgFD 429
+2026-09-25 02:29:21,391 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:21,467 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:21,470 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:29:22,368 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:29:22,369 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:29:22,371 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:29:22,371 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:29:22,594 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20artificial%20intelligence 200
+2026-09-25 02:29:22,601 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+artificial+intelligence&limit=1 200
+2026-09-25 02:29:23,019 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+artificial+intelligence 403
+2026-09-25 02:29:23,491 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Bartificial%2Bintelligence%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGIO519UGIjCphJtTgyrfRFRF74rP-fsR9ulr_gblcvMGYGlsO_P8fdEkdpDRUIi0GnJGj6Pkl3kyAnJSWgFD 429
+2026-09-25 02:29:23,718 [INFO] response: https://search.yahoo.com/search;_ylt=75ZCZSq7pC9WPhOKViFH1uiK;_ylu=FdzbXmBoRNwQrlvH91naXjwrf7moW_R7whJVMZZN-n0f9Ek?p=site%3Abbc.com+artificial+intelligence&btf=d 200
+2026-09-25 02:29:23,864 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:24,060 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:24,153 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:24,301 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+artificial+intelligence&source=web&tf=pd 429
+2026-09-25 02:29:24,321 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-25 02:29:24,399 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20artificial%20intelligence 200
+2026-09-25 02:29:24,529 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+artificial+intelligence&limit=1 200
+2026-09-25 02:29:24,639 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:24,817 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+artificial+intelligence&source=web&tf=pd 429
+2026-09-25 02:29:25,260 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+artificial+intelligence 403
+2026-09-25 02:29:25,525 [INFO] response: https://search.yahoo.com/search;_ylt=D19Ile3zPC5TGiRXzDMXFjov;_ylu=xyPXDDRVQoirM3REz13Pcz8dviLtBNUQv9uyZYwc20nEWqc?p=site%3Abbc.com+artificial+intelligence&btf=d 200
+2026-09-25 02:29:25,731 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:25,839 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:26,304 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Bartificial%2Bintelligence%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGIW519UGIjDKFLaXHSKSujp3HOFs9v-axXhTtF28wGkVtAXWvaCZ8hVAg2BiH9emLWfyanp6EVMyAnJSWgFD 429
+2026-09-25 02:29:26,304 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-25 02:29:26,382 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20artificial%20intelligence 200
+2026-09-25 02:29:26,521 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+artificial+intelligence&limit=1 200
+2026-09-25 02:29:26,690 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:26,848 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:27,293 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+artificial+intelligence 403
+2026-09-25 02:29:27,970 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Bartificial%2Bintelligence%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSs19vyGIe519UGIjATpX5IOmK_ZpC5pOyTOlNyXw_3QeDhvnEfDIJTvORJs4AiiZUfDon8SuV3iNH8r7oyAnJSWgFD 429
+2026-09-25 02:29:28,078 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:28,327 [INFO] response: https://search.yahoo.com/search;_ylt=uVFgIwgKTg1LV2vgYnlG7OsA;_ylu=rdoN2Kd-kg4oXAtoTQmi9jhRhxDXs4Zi8BaI4fp2Cl5E_ak?p=site%3Abbc.com+artificial+intelligence&btf=w 200
+2026-09-25 02:29:28,509 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+artificial+intelligence&source=web&tf=pw 429
+2026-09-25 02:29:28,529 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-25 02:29:28,531 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:29:29,610 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:29:29,611 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:29:29,612 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:29:29,613 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:29:29,746 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+robots&limit=1 200
+2026-09-25 02:29:29,855 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20robots 200
+2026-09-25 02:29:30,424 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Brobots%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGIm519UGIjBG4ber2PIySSscR6oRm5F2lTreVn3l9M96Ahs9SOnBhT_NPmKRzPU8xieyIbOqG7gyAnJSWgFD 429
+2026-09-25 02:29:30,700 [INFO] response: https://search.yahoo.com/search;_ylt=gB6f145tSt_DATE_8md9WapI;_ylu=zeyjnveGeXOtePiJQGHVgml1P0lSFCGmyRJ272vbZTghB3U?p=site%3Abbc.com+robots&btf=d 200
+2026-09-25 02:29:30,814 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:30,985 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+robots&source=web&tf=pd 429
+2026-09-25 02:29:31,189 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:31,283 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:31,688 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+robots 403
+2026-09-25 02:29:31,688 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-25 02:29:31,815 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+robots&limit=1 200
+2026-09-25 02:29:31,903 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20robots 200
+2026-09-25 02:29:32,056 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+robots&source=web&tf=pd 429
+2026-09-25 02:29:32,202 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:32,376 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:32,480 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:32,893 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+robots 403
+2026-09-25 02:29:33,332 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Brobots%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGI2519UGIjCQhCZDiV7H78mX8554PiWJG75rdV3G3WKOlzn2QJEolT-wHxAKRgnwhzCIrV_vBcEyAnJSWgFD 429
+2026-09-25 02:29:33,625 [INFO] response: https://search.yahoo.com/search;_ylt=XWyh-Ef8hiZ40rg8zCe1GpNf;_ylu=aEniDs36j_P2L4smDX_8VKw3vf_U7Lw5PflLHHp4agVWFK4?p=site%3Abbc.com+robots&btf=d 200
+2026-09-25 02:29:33,627 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-25 02:29:33,706 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20robots 200
+2026-09-25 02:29:33,750 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+robots&limit=1 200
+2026-09-25 02:29:34,063 [INFO] response: https://search.yahoo.com/search;_ylt=aZbJ1bkemYTjcH1ebOrliimx;_ylu=5TEyHDsSqzSaB204Jy3sgjazcrmmXG0eVUQvx3YU10zuT98?p=site%3Abbc.com+robots&btf=w 200
+2026-09-25 02:29:34,177 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:34,387 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:34,476 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:34,634 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+robots&source=web&tf=pw 429
+2026-09-25 02:29:35,091 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+robots 403
+2026-09-25 02:29:35,733 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Brobots%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSs19vyGI-519UGIjDZk3Xy4vHf6bi3p3jXnWGp3cEpswyBRDOhCFmaZ2w5-oKIVD1OIOLuBP0nAxgjlQMyAnJSWgFD 429
+2026-09-25 02:29:35,734 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-25 02:29:35,736 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:29:36,742 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:29:36,743 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:29:36,745 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:29:36,745 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:29:36,951 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20sci-tech 200
+2026-09-25 02:29:37,100 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+sci-tech&limit=1 200
+2026-09-25 02:29:37,267 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:37,355 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:37,519 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+sci-tech&source=web&tf=pd 429
+2026-09-25 02:29:37,768 [INFO] response: https://search.yahoo.com/search;_ylt=PHkQSeVvqBrsTUqXV-rJE8Kv;_ylu=_XoIYGnAu3gX14jrVEMASxzTHNGDe1Xy19utK3Lsw1gFguY?p=site%3Abbc.com+sci-tech&btf=d 200
+2026-09-25 02:29:37,908 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:38,366 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+sci-tech 403
+2026-09-25 02:29:38,943 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Bsci-tech%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGJK519UGIjAneAGINoTSLycMXzImtvoNIn2ZBiw2p8kYi9ZwO-uM8TFcaZ4BNm9umzLSeGQnpDAyAnJSWgFD 429
+2026-09-25 02:29:38,943 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-25 02:29:39,147 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+sci-tech&limit=1 200
+2026-09-25 02:29:39,157 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20sci-tech 200
+2026-09-25 02:29:39,355 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:39,428 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:39,555 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:39,949 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+sci-tech 403
+2026-09-25 02:29:40,218 [INFO] response: https://search.yahoo.com/search;_ylt=U9qVmbk-PDbpE3mirFKJ9S_J;_ylu=u4O2rLSrWkSQppOL635QsgShG252k8Sf0jBcyUvWPaLbp7I?p=site%3Abbc.com+sci-tech&btf=d 200
+2026-09-25 02:29:40,375 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+sci-tech&source=web&tf=pd 429
+2026-09-25 02:29:41,133 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Bsci-tech%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGJS519UGIjDu1nf74a5NDbBMz-TWEPSuXupXGQ7onbAAz-7t4LjoiH1y_JQMVQjr7s9Ck0sO60IyAnJSWgFD 429
+2026-09-25 02:29:41,134 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-25 02:29:41,212 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20sci-tech 200
+2026-09-25 02:29:41,351 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+sci-tech&limit=1 200
+2026-09-25 02:29:41,531 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:41,623 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:41,853 [INFO] response: https://search.yahoo.com/search;_ylt=IjTNEh5zCRjCR9akgG1BSjLZ;_ylu=R3OhS2Xdh2lmn955DeGSHbhddGtwbcwnC9cUb-xn1wQJc9c?p=site%3Abbc.com+sci-tech&btf=w 200
+2026-09-25 02:29:42,569 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Bsci-tech%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSs19vyGJa519UGIjDpnRxJOHoMnE1ggrwrfc4SzqGNeDmlfPX9hBbrgoBlsH5ODTrNqJGhB4zu2108L8UyAnJSWgFD 429
+2026-09-25 02:29:42,722 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+sci-tech&source=web&tf=pw 429
+2026-09-25 02:29:43,166 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+sci-tech 403
+2026-09-25 02:29:43,274 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:43,297 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-25 02:29:43,299 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:29:44,182 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:29:44,183 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:29:44,185 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-25 02:29:44,185 [WARNING] backend is not set. Using 'auto'
+2026-09-25 02:29:44,410 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+technology&limit=1 200
+2026-09-25 02:29:44,417 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20technology 200
+2026-09-25 02:29:44,825 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+technology 403
+2026-09-25 02:29:45,053 [INFO] response: https://search.yahoo.com/search;_ylt=3W33uny-BlkdCBS5BvZLV-RO;_ylu=uIhbUMPmuehH3exuE89797s1WpvdJ77g2MmNd-swQnHn8Bc?p=site%3Aaljazeera.com+technology&btf=d 200
+2026-09-25 02:29:45,279 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:45,366 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:45,469 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:46,220 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Aaljazeera.com%2Btechnology%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGJm519UGIjC4eF01ShrQh1QqNEx5acy-oVu_NrzvFP-FaWcMb50hVt3cbKsUYJZdaYP71a2J1C8yAnJSWgFD 429
+2026-09-25 02:29:46,375 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+technology&source=web&tf=pd 429
+2026-09-25 02:29:46,396 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-25 02:29:46,615 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20technology 200
+2026-09-25 02:29:46,639 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+technology&limit=1 200
+2026-09-25 02:29:47,402 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Aaljazeera.com%2Btechnology%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgSs19vyGJu519UGIjCeU3lXwvVkTR427eDTYjBXwwH_9N-OwMaGLXD0YZkHFvFBH2y32q_MTbohz8GQhXcyAnJSWgFD 429
+2026-09-25 02:29:47,593 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:47,663 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:47,822 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+technology&source=web&tf=pd 429
+2026-09-25 02:29:47,946 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:48,429 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+technology 403
+2026-09-25 02:29:48,654 [INFO] response: https://search.yahoo.com/search;_ylt=GWzL2xCXldXjBp-1Wm4XvDWT;_ylu=bMepg8A1X44veLQAxbomp1pZzExNUpKUvkMRsa_qnWtY_kg?p=site%3Aaljazeera.com+technology&btf=d 200
+2026-09-25 02:29:48,692 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-25 02:29:48,770 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20technology 200
+2026-09-25 02:29:48,907 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+technology&limit=1 200
+2026-09-25 02:29:49,301 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+technology 403
+2026-09-25 02:29:49,998 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Aaljazeera.com%2Btechnology%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgSs19vyGJ2519UGIjCWHWwfOQQCeZyBVRf_xUeYRqVguUTn403aHa142fppx6iS7d5IZNoFsaVvlHY3qjIyAnJSWgFD 429
+2026-09-25 02:29:50,104 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-25 02:29:50,298 [INFO] response: https://www.startpage.com/ 200
+2026-09-25 02:29:50,372 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-25 02:29:50,600 [INFO] response: https://search.yahoo.com/search;_ylt=kkxGNM1A5t3Jo0gSQRhvIWzI;_ylu=n9vGGb_4npMyawz5qNypaX0VWoqqvAHyJ9_Jm_Ufg5wrjhU?p=site%3Aaljazeera.com+technology&btf=w 200
+2026-09-25 02:29:50,789 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+technology&source=web&tf=pw 429
+2026-09-25 02:29:50,809 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-25 02:29:50,811 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-25 02:29:56,425 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-25 02:29:56,426 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-25 02:29:56,427 [INFO] Validasi: 2x fetch_webpage sukses (minimum 3).
+2026-09-25 02:29:56,427 [INFO] URL yang berhasil di-fetch: {'https://www.bbc.com/news/articles/c6gqdgg8w59xo', 'https://www.bbc.com/sport/football/articles/c639merx84jno'}
+2026-09-25 02:29:56,427 [WARNING] Laporan tidak valid: Hanya 2 URL whitelist ditemukan, minimal 3
+2026-09-25 02:29:56,428 [ERROR] ❌ Laporan hari ini gagal divalidasi (Hanya 2 URL whitelist ditemukan, minimal 3). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-09-25 02:29:56,428 [INFO] Mengirim laporan ke Telegram...
+2026-09-25 02:29:57,632 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
