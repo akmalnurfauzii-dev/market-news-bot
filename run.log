@@ -39495,3 +39495,674 @@ Topik yang sedang viral di media sosial Indonesia hari ini adalah mengenai hoaks
 2026-09-28 02:32:46,687 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (291 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-09-28 02:32:46,687 [INFO] Mengirim laporan ke Telegram...
 2026-09-28 02:32:47,183 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-09-28 18:55:21,477 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-09-28 18:55:21,477 [INFO] =======================================================
+2026-09-28 18:55:21,477 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-09-28 18:55:21,477 [INFO] =======================================================
+2026-09-28 18:55:21,477 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-09-28 18:55:21,839 [INFO] Provider siap: Gemini dengan 4 model
+2026-09-28 18:55:21,841 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-09-28 18:55:21,842 [INFO] Provider siap: Z.AI dengan 1 model
+2026-09-28 18:55:21,843 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-09-28 18:55:21,844 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-09-28 18:55:21,858 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-09-28 18:55:21,905 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-09-28 18:55:23,713 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-28 18:55:23,714 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-28 18:55:23,714 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-09-28 18:55:23,999 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-28 18:55:23,999 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-28 18:55:23,999 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-28 18:55:39,205 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:55:39,216 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-09-28 18:55:39,218 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-09-28 18:55:45,992 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-28 18:55:45,993 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-09-28 18:55:45,993 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:55:55,903 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:55:55,904 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:55:55,946 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:55:55,946 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:55:56,164 [INFO] response: https://grokipedia.com/api/typeahead?query=global+stock+market+news+geopolitics+cnbc+bbc+september+27+2026&limit=1 200
+2026-09-28 18:55:56,184 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20stock%20market%20news%20geopolitics%20cnbc%20bbc%20september%2027%202026 200
+2026-09-28 18:55:56,395 [INFO] response: https://search.yahoo.com/search;_ylt=j6fOKRpLEu6tnaakx8SST7k7;_ylu=nmNvEFRUnUIAI8myHXt9nk7bMNcv8cVKDKElzkKTLgqy2Xk?p=global+stock+market+news+geopolitics+cnbc+bbc+september+27+2026&btf=d 200
+2026-09-28 18:55:56,585 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:55:56,632 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:55:56,738 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:55:57,266 [INFO] response: https://www.mojeek.com/search?q=global+stock+market+news+geopolitics+cnbc+bbc+september+27+2026 403
+2026-09-28 18:55:57,968 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dglobal%2Bstock%2Bmarket%2Bnews%2Bgeopolitics%2Bcnbc%2Bbbc%2Bseptember%2B27%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGL3w6tUGIjCRPBjEWSE3_HjdLObz-N3OeRrzWVkyHBJ7dpeM42iG1_G7SfmdxbP0q4_iBGh4wAsyAnJSWgFD 429
+2026-09-28 18:55:59,018 [INFO] response: https://search.brave.com/search?q=global+stock+market+news+geopolitics+cnbc+bbc+september+27+2026&source=web&tf=pd 200
+2026-09-28 18:55:59,029 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:55:59,950 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:55:59,951 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:56:00,216 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:56:05,563 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:56:05,565 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:56:05,567 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:56:05,567 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:56:05,722 [INFO] response: https://grokipedia.com/api/typeahead?query=football+match+results+scores+premier+league+la+liga+espn+bbc+september+27+2026&limit=1 200
+2026-09-28 18:56:05,725 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20match%20results%20scores%20premier%20league%20la%20liga%20espn%20bbc%20september%2027%202026 200
+2026-09-28 18:56:05,856 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:56:05,917 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:56:06,416 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dfootball%2Bmatch%2Bresults%2Bscores%2Bpremier%2Bleague%2Bla%2Bliga%2Bespn%2Bbbc%2Bseptember%2B27%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGMbw6tUGIjAz3IT5HSRQNyHLswBR2P9D8jjcuz7yGjJPjxcjQ-wJwmMNSEpxO7eASO8_F5Wl-C4yAnJSWgFD 429
+2026-09-28 18:56:06,520 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:56:07,264 [INFO] response: https://search.brave.com/search?q=football+match+results+scores+premier+league+la+liga+espn+bbc+september+27+2026&source=web&tf=pd 200
+2026-09-28 18:56:07,271 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:56:15,226 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:56:15,227 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:56:15,229 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:56:15,229 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:56:15,386 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com+football+match+results+September+2026&limit=1 200
+2026-09-28 18:56:15,394 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com%20football%20match%20results%20September%202026 200
+2026-09-28 18:56:16,222 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com+football+match+results+September+2026&source=web&tf=pd 200
+2026-09-28 18:56:16,229 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:56:17,126 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:56:17,130 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:56:17,131 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:56:17,132 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:56:17,275 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com%2Fsoccer%2Fmatch%2F_%2FgameId%2F&limit=1 200
+2026-09-28 18:56:17,287 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com/soccer/match/_/gameId/ 200
+2026-09-28 18:56:17,418 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:56:17,490 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:56:17,647 [INFO] response: https://search.yahoo.com/search;_ylt=vejHgLNeFk7tVD9xxGmleC2A;_ylu=WSdxUjr0iSmYBOVeiUwEcUwfMXOpBvLbX28npE44E9OISS4?p=site%3Aespn.com%2Fsoccer%2Fmatch%2F_%2FgameId%2F&btf=d 200
+2026-09-28 18:56:18,173 [INFO] response: https://www.mojeek.com/search?q=site%3Aespn.com%2Fsoccer%2Fmatch%2F_%2FgameId%2F 403
+2026-09-28 18:56:18,276 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:56:18,503 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com%2Fsoccer%2Fmatch%2F_%2FgameId%2F&source=web&tf=pd 200
+2026-09-28 18:56:19,086 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Aespn.com%252Fsoccer%252Fmatch%252F_%252FgameId%252F%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGNLw6tUGIjDfEeGbyYS6MJHQs0YaXyomU81vPiIU54WWoQNr15zxkx-y17a5jqxg_jnrEr0OVw0yAnJSWgFD 429
+2026-09-28 18:56:19,086 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-28 18:56:19,097 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com/soccer/match/_/gameId/ 200
+2026-09-28 18:56:19,226 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com%2Fsoccer%2Fmatch%2F_%2FgameId%2F&limit=1 200
+2026-09-28 18:56:19,727 [INFO] response: https://www.mojeek.com/search?q=site%3Aespn.com%2Fsoccer%2Fmatch%2F_%2FgameId%2F 403
+2026-09-28 18:56:19,825 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:56:19,968 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:56:20,020 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:56:20,181 [INFO] response: https://search.yahoo.com/search;_ylt=BrmRw9MMbBBXdiMlSZbE7Gfk;_ylu=RUnU8EWOKdaykd8nCeITRmKI2lZWb8u2tIQ6xomQoBDCDes?p=site%3Aespn.com%2Fsoccer%2Fmatch%2F_%2FgameId%2F&btf=d 200
+2026-09-28 18:56:20,289 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com%2Fsoccer%2Fmatch%2F_%2FgameId%2F&source=web&tf=pd 200
+2026-09-28 18:56:20,871 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Aespn.com%252Fsoccer%252Fmatch%252F_%252FgameId%252F%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGNTw6tUGIjBeZc7Y5HMk3MKATncx1y4gT10nlARdDnYBsjUT_Y-Z0s_Ob-NeWmM2jTep0LGn2xMyAnJSWgFD 429
+2026-09-28 18:56:20,872 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-28 18:56:21,011 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com%2Fsoccer%2Fmatch%2F_%2FgameId%2F&limit=1 200
+2026-09-28 18:56:21,155 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com/soccer/match/_/gameId/ 200
+2026-09-28 18:56:21,317 [INFO] response: https://search.yahoo.com/search;_ylt=KDqB7R8ks3est6gKKvEwZOeh;_ylu=ppGmLltCCJ0BVsi33DUC0UMYNloDUx-xzG5Ib3A_tRKJZfY?p=site%3Aespn.com%2Fsoccer%2Fmatch%2F_%2FgameId%2F&btf=w 200
+2026-09-28 18:56:21,481 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com%2Fsoccer%2Fmatch%2F_%2FgameId%2F&source=web&tf=pw 200
+2026-09-28 18:56:21,629 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:56:21,700 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:56:22,128 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Aespn.com%252Fsoccer%252Fmatch%252F_%252FgameId%252F%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ0vrblGNXw6tUGIjDJuCmEa7NnjSYmA_rKJ0ZKkTuDQBR2A5VhTySQmtWisohypVxQTyEJGHqf2FWNDpIyAnJSWgFD 429
+2026-09-28 18:56:22,619 [INFO] response: https://www.mojeek.com/search?q=site%3Aespn.com%2Fsoccer%2Fmatch%2F_%2FgameId%2F 403
+2026-09-28 18:56:22,737 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:56:22,759 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-28 18:56:22,760 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:56:30,288 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:56:30,289 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:56:30,291 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:56:30,291 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:56:30,447 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Columbus%20Crew%20Inter%20Miami%20September%2027%202026%20espn 200
+2026-09-28 18:56:30,451 [INFO] response: https://grokipedia.com/api/typeahead?query=Columbus+Crew+Inter+Miami+September+27+2026+espn&limit=1 200
+2026-09-28 18:56:30,995 [INFO] response: https://www.mojeek.com/search?q=Columbus+Crew+Inter+Miami+September+27+2026+espn 403
+2026-09-28 18:56:31,475 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DColumbus%2BCrew%2BInter%2BMiami%2BSeptember%2B27%2B2026%2Bespn%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGN_w6tUGIjBNjzqjoxmeEF8WzTdIVvQ6eLXBv21HZIuXFCuk2cplVBRgOE-p1Pt5jyyfV5jsecEyAnJSWgFD 429
+2026-09-28 18:56:31,576 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:56:31,761 [INFO] response: https://search.yahoo.com/search;_ylt=VyuUSJ8TMacPjf1PRpPhhRBv;_ylu=lFvZc8aknC1xjhgC7EN1JVVOJJF4vSuBF2kN8iOigU9A0ds?p=Columbus+Crew+Inter+Miami+September+27+2026+espn&btf=d 200
+2026-09-28 18:56:31,890 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:56:31,940 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:56:31,989 [INFO] response: https://search.brave.com/search?q=Columbus+Crew+Inter+Miami+September+27+2026+espn&source=web&tf=pd 429
+2026-09-28 18:56:31,995 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-28 18:56:32,144 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Columbus%20Crew%20Inter%20Miami%20September%2027%202026%20espn 200
+2026-09-28 18:56:32,159 [INFO] response: https://grokipedia.com/api/typeahead?query=Columbus+Crew+Inter+Miami+September+27+2026+espn&limit=1 200
+2026-09-28 18:56:32,207 [INFO] response: https://search.brave.com/search?q=Columbus+Crew+Inter+Miami+September+27+2026+espn&source=web&tf=pd 429
+2026-09-28 18:56:32,375 [INFO] response: https://search.yahoo.com/search;_ylt=AXHqFGTuNubEtqh4blb8dlfa;_ylu=xfnQGnDH1Sg5wChoXvC8c5PVH_FWh5KikZGAd7VJJPBV5rg?p=Columbus+Crew+Inter+Miami+September+27+2026+espn&btf=d 200
+2026-09-28 18:56:32,521 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:56:32,583 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:56:32,917 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DColumbus%2BCrew%2BInter%2BMiami%2BSeptember%2B27%2B2026%2Bespn%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGODw6tUGIjC5DYwYFBk7mAdcX7txxYnszzpWooV8y5w2cavnGo6CGC8B61qOSdjwpRkZS03a0j0yAnJSWgFD 429
+2026-09-28 18:56:33,404 [INFO] response: https://www.mojeek.com/search?q=Columbus+Crew+Inter+Miami+September+27+2026+espn 403
+2026-09-28 18:56:33,531 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:56:33,532 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-28 18:56:33,543 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Columbus%20Crew%20Inter%20Miami%20September%2027%202026%20espn 200
+2026-09-28 18:56:33,680 [INFO] response: https://grokipedia.com/api/typeahead?query=Columbus+Crew+Inter+Miami+September+27+2026+espn&limit=1 200
+2026-09-28 18:56:34,191 [INFO] response: https://www.mojeek.com/search?q=Columbus+Crew+Inter+Miami+September+27+2026+espn 403
+2026-09-28 18:56:34,236 [INFO] response: https://search.brave.com/search?q=Columbus+Crew+Inter+Miami+September+27+2026+espn&source=web&tf=pw 429
+2026-09-28 18:56:34,350 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:56:34,450 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:56:34,584 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:56:34,742 [INFO] response: https://search.yahoo.com/search;_ylt=reDul9C7LS4SSwVCBQJIQ0S9;_ylu=KCDaRGjpkDyl7TvicOjBiZWFp035bGyawoh5G4ctq4-_3Ko?p=Columbus+Crew+Inter+Miami+September+27+2026+espn&btf=w 200
+2026-09-28 18:56:35,098 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DColumbus%2BCrew%2BInter%2BMiami%2BSeptember%2B27%2B2026%2Bespn%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ0vrblGOLw6tUGIjDf94O-4bXiKsEh6vd6z6Yv54XJvu2PPhYWVnK2TthSR_oNOp8n-1bm4AaO6Xv9P-0yAnJSWgFD 429
+2026-09-28 18:56:35,099 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-28 18:56:35,101 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:56:36,369 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:56:36,370 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:56:36,372 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:56:36,372 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:56:36,510 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com%2Fcolumbus-crew-inter-miami&limit=1 200
+2026-09-28 18:56:36,525 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com/columbus-crew-inter-miami 200
+2026-09-28 18:56:36,629 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:56:36,699 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com%2Fcolumbus-crew-inter-miami&source=web&tf=pd 429
+2026-09-28 18:56:36,860 [INFO] response: https://search.yahoo.com/search;_ylt=nlnc19iyibfU2KW7aWSvyHkv;_ylu=86Pr5eHqJQjfvSGIXSBbe2A_iSsiRnwhfScT4B_uCYp9FjE?p=site%3Aespn.com%2Fcolumbus-crew-inter-miami&btf=d 200
+2026-09-28 18:56:37,441 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Aespn.com%252Fcolumbus-crew-inter-miami%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGOTw6tUGIjDOeWwu-Vu4nb37ytRS9chK7iH7TI4SPlD5Tg3ZkKC8pd6WHELOSenjsbrEFb1B4E4yAnJSWgFD 429
+2026-09-28 18:56:37,579 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:56:37,646 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:56:38,135 [INFO] response: https://www.mojeek.com/search?q=site%3Aespn.com%2Fcolumbus-crew-inter-miami 403
+2026-09-28 18:56:38,135 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-28 18:56:38,278 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com%2Fcolumbus-crew-inter-miami&limit=1 200
+2026-09-28 18:56:38,461 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com/columbus-crew-inter-miami 200
+2026-09-28 18:56:38,896 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Aespn.com%252Fcolumbus-crew-inter-miami%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGObw6tUGIjC1BRmJYW-YxJuiY7SLTxnqfA2l-miuHlb8MK4iFgNDb3hjWjVun3owXomeZ3N0vagyAnJSWgFD 429
+2026-09-28 18:56:39,013 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:56:39,072 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:56:39,234 [INFO] response: https://search.yahoo.com/search;_ylt=eufgTE3i3KN2o0Of1_TYv4jo;_ylu=Mr91roNDEflFjSaZQUsKOoVAocJU01nJhGydKUTErbTCaAA?p=site%3Aespn.com%2Fcolumbus-crew-inter-miami&btf=d 200
+2026-09-28 18:56:39,791 [INFO] response: https://www.mojeek.com/search?q=site%3Aespn.com%2Fcolumbus-crew-inter-miami 403
+2026-09-28 18:56:39,894 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:56:39,970 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com%2Fcolumbus-crew-inter-miami&source=web&tf=pd 429
+2026-09-28 18:56:39,975 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-28 18:56:39,987 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com/columbus-crew-inter-miami 200
+2026-09-28 18:56:40,109 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com%2Fcolumbus-crew-inter-miami&limit=1 200
+2026-09-28 18:56:40,271 [INFO] response: https://search.yahoo.com/search;_ylt=vPlFAWpxXIdsWK9DF6q3IypF;_ylu=KOQkErRvVDzZVjqf3eZS7ZsYD0K0FqaHqLpNuUVskLdX3Yo?p=site%3Aespn.com%2Fcolumbus-crew-inter-miami&btf=w 200
+2026-09-28 18:56:40,386 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:56:40,461 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:56:40,511 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com%2Fcolumbus-crew-inter-miami&source=web&tf=pw 429
+2026-09-28 18:56:41,066 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Aespn.com%252Fcolumbus-crew-inter-miami%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ0vrblGOjw6tUGIjDMuIaahfdCxElDWLPoFYIMGxZRNelXZ_AHUx6s66HIuDFFP0e1m66xFZimUcYIf3oyAnJSWgFD 429
+2026-09-28 18:56:41,173 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:56:41,669 [INFO] response: https://www.mojeek.com/search?q=site%3Aespn.com%2Fcolumbus-crew-inter-miami 403
+2026-09-28 18:56:41,670 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-28 18:56:41,671 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:56:42,580 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:56:42,581 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:56:42,583 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:56:42,583 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:56:42,723 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+football+results+september+2026&limit=1 200
+2026-09-28 18:56:42,750 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20football%20results%20september%202026 200
+2026-09-28 18:56:42,853 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:56:42,920 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+football+results+september+2026&source=web&tf=pd 429
+2026-09-28 18:56:43,030 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:56:43,090 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:56:43,452 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%252Fsport%2Bfootball%2Bresults%2Bseptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGOvw6tUGIjDCMjDBgA2fr9ACQc-IFeWl9FaT-lO2LhpyO060WDuIvKKrxbSJOE-GMnD9i8t5WYAyAnJSWgFD 429
+2026-09-28 18:56:43,591 [INFO] response: https://search.yahoo.com/search;_ylt=d0vPtgcxdtNVE6gJ8z1cXkXN;_ylu=KXd12gt9pdsOf4AMBIT22cEoYlm2pOONkUMhmvFHGJiqi-o?p=site%3Abbc.com%2Fsport+football+results+september+2026&btf=d 200
+2026-09-28 18:56:44,182 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+football+results+september+2026 403
+2026-09-28 18:56:44,183 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-28 18:56:44,194 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20football%20results%20september%202026 200
+2026-09-28 18:56:44,325 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+football+results+september+2026&limit=1 200
+2026-09-28 18:56:44,368 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+football+results+september+2026&source=web&tf=pd 429
+2026-09-28 18:56:44,483 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:56:44,545 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:56:44,712 [INFO] response: https://search.yahoo.com/search;_ylt=jq-zuza16muJPs5rVuqwUeqh;_ylu=MUcg_0YpJKS8xzJjZ8M1aAAuv124KaeqcJw4O60Grdaaknk?p=site%3Abbc.com%2Fsport+football+results+september+2026&btf=d 200
+2026-09-28 18:56:45,147 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%252Fsport%2Bfootball%2Bresults%2Bseptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGOzw6tUGIjDJmAj8v5FS5FSNIWRDSFfCPATfmL7Lx_DAsOii2MtzP91Jg_dHHrTcKPrdH-nopcUyAnJSWgFD 429
+2026-09-28 18:56:45,249 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:56:45,925 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+football+results+september+2026 403
+2026-09-28 18:56:45,926 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-28 18:56:46,061 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+football+results+september+2026&limit=1 200
+2026-09-28 18:56:46,084 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20football%20results%20september%202026 200
+2026-09-28 18:56:46,197 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:56:46,271 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:56:46,773 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+football+results+september+2026 403
+2026-09-28 18:56:46,819 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+football+results+september+2026&source=web&tf=pw 429
+2026-09-28 18:56:46,926 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:56:47,287 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%252Fsport%2Bfootball%2Bresults%2Bseptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ0vrblGO_w6tUGIjBLB4gt3L7jnJ2B2Hu16LCkZy__a9Z2MKLZJTPLcplo7dR2IZli48z1TMMHMnjHHsYyAnJSWgFD 429
+2026-09-28 18:56:47,453 [INFO] response: https://search.yahoo.com/search;_ylt=5xHqZF39v7wmc2stX_EYdeGQ;_ylu=-WsP1vUeFbsveEwwV5lgum9fUVELrwZ0Q__6bs_MHUUWe9o?p=site%3Abbc.com%2Fsport+football+results+september+2026&btf=w 200
+2026-09-28 18:56:47,456 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-28 18:56:47,458 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:56:58,420 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:56:58,422 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:56:58,424 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:56:58,424 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:56:58,583 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+results+September+27+2026+bbc+sport&limit=1 200
+2026-09-28 18:56:58,607 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20results%20September%2027%202026%20bbc%20sport 200
+2026-09-28 18:56:58,956 [INFO] response: https://search.yahoo.com/search;_ylt=AYkR04DJBcTZxwELRo-RvA-S;_ylu=KrXE7wf-Ta9KxZ3MD4C51V-J5NsFFSxGg5YXregop9JO4rs?p=Premier+League+results+September+27+2026+bbc+sport&btf=d 200
+2026-09-28 18:56:59,527 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DPremier%2BLeague%2Bresults%2BSeptember%2B27%2B2026%2Bbbc%2Bsport%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGPvw6tUGIjCm2x3xkmNj41lYEai41MrOSOHrpYnVf0BifQkOuMUOT2U9YfmlWh93ZkTEla0oMpEyAnJSWgFD 429
+2026-09-28 18:56:59,637 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:56:59,696 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:56:59,758 [INFO] response: https://search.brave.com/search?q=Premier+League+results+September+27+2026+bbc+sport&source=web&tf=pd 429
+2026-09-28 18:56:59,864 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:57:00,357 [INFO] response: https://www.mojeek.com/search?q=Premier+League+results+September+27+2026+bbc+sport 403
+2026-09-28 18:57:00,358 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-28 18:57:00,369 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20results%20September%2027%202026%20bbc%20sport 200
+2026-09-28 18:57:00,509 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+results+September+27+2026+bbc+sport&limit=1 200
+2026-09-28 18:57:00,993 [INFO] response: https://www.mojeek.com/search?q=Premier+League+results+September+27+2026+bbc+sport 403
+2026-09-28 18:57:01,163 [INFO] response: https://search.yahoo.com/search;_ylt=NCZ18KW6OiYUQw0W8Ihloc_n;_ylu=ZDuP9vNRTyTab88J0AMPafYARqCV6VM0oTzXMRiOei1wptY?p=Premier+League+results+September+27+2026+bbc+sport&btf=d 200
+2026-09-28 18:57:01,221 [INFO] response: https://search.brave.com/search?q=Premier+League+results+September+27+2026+bbc+sport&source=web&tf=pd 429
+2026-09-28 18:57:01,366 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:57:01,470 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:57:01,572 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:57:02,268 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DPremier%2BLeague%2Bresults%2BSeptember%2B27%2B2026%2Bbbc%2Bsport%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGP3w6tUGIjCSq4dTUDMAOb6qUjymCvUPk2FecSCE0_516GIyoVlKPnGbkdbvLb1OIc9C2FYpUagyAnJSWgFD 429
+2026-09-28 18:57:02,268 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-28 18:57:02,279 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20results%20September%2027%202026%20bbc%20sport 200
+2026-09-28 18:57:02,402 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+results+September+27+2026+bbc+sport&limit=1 200
+2026-09-28 18:57:02,533 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:57:02,609 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:57:03,176 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DPremier%2BLeague%2Bresults%2BSeptember%2B27%2B2026%2Bbbc%2Bsport%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ0vrblGP7w6tUGIjBgLRUtO5stQ7p6iJe_Vp7V0NUTLU_ZDVFU4x-apGJK2cYRKacolfGef9J4dkrnrKAyAnJSWgFD 429
+2026-09-28 18:57:03,306 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:57:03,451 [INFO] response: https://search.yahoo.com/search;_ylt=EUeg7YmWBSnxAIOLOLFh3muh;_ylu=gWb-gYnsk8RLr8-rIHJKhaEJELPpq7HFDKvBivxZdrPike8?p=Premier+League+results+September+27+2026+bbc+sport&btf=w 200
+2026-09-28 18:57:03,529 [INFO] response: https://search.brave.com/search?q=Premier+League+results+September+27+2026+bbc+sport&source=web&tf=pw 429
+2026-09-28 18:57:04,045 [INFO] response: https://www.mojeek.com/search?q=Premier+League+results+September+27+2026+bbc+sport 403
+2026-09-28 18:57:04,046 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-28 18:57:04,047 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:57:14,692 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:57:14,693 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:57:14,695 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:57:14,695 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:57:14,821 [INFO] response: https://grokipedia.com/api/typeahead?query=Clemson+California+college+football+September+25+2026+espn&limit=1 200
+2026-09-28 18:57:14,846 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Clemson%20California%20college%20football%20September%2025%202026%20espn 200
+2026-09-28 18:57:14,948 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:57:15,113 [INFO] response: https://search.yahoo.com/search;_ylt=oP4P5f7tqqwUDRZjMCdWVvww;_ylu=VTbkFx6VRI7po3uyzDR7YAl5sww5FyXGXju6Rq6nWfBQkmA?p=Clemson+California+college+football+September+25+2026+espn&btf=d 200
+2026-09-28 18:57:15,510 [INFO] response: https://search.brave.com/search?q=Clemson+California+college+football+September+25+2026+espn&source=web&tf=pd 429
+2026-09-28 18:57:15,982 [INFO] response: https://www.mojeek.com/search?q=Clemson+California+college+football+September+25+2026+espn 403
+2026-09-28 18:57:16,093 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:57:16,182 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:57:16,570 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DClemson%2BCalifornia%2Bcollege%2Bfootball%2BSeptember%2B25%2B2026%2Bespn%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGIzx6tUGIjBxd38cB34r_81LVIKeKHIOi40YzUAhfeYUNIAcvNms7B1I6GGPKWuwyU9QYp1G5e0yAnJSWgFD 429
+2026-09-28 18:57:16,570 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-28 18:57:16,582 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Clemson%20California%20college%20football%20September%2025%202026%20espn 200
+2026-09-28 18:57:16,732 [INFO] response: https://grokipedia.com/api/typeahead?query=Clemson+California+college+football+September+25+2026+espn&limit=1 200
+2026-09-28 18:57:16,777 [INFO] response: https://search.brave.com/search?q=Clemson+California+college+football+September+25+2026+espn&source=web&tf=pd 429
+2026-09-28 18:57:16,915 [INFO] response: https://search.yahoo.com/search;_ylt=2tOFo6NBrI5EB0blJJOwZ9Xu;_ylu=3CLo4awqVoO8fSvCBVl_1AZAwAXhkblie9edLJJtNZqFXa8?p=Clemson+California+college+football+September+25+2026+espn&btf=d 200
+2026-09-28 18:57:17,054 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:57:17,587 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DClemson%2BCalifornia%2Bcollege%2Bfootball%2BSeptember%2B25%2B2026%2Bespn%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGI3x6tUGIjAkIQ0A4LRnhO0Ebjtgdf3GMnIz9rwqscKj_1frVzrzaFe_ABTn4tOc9vS-LfFCWRMyAnJSWgFD 429
+2026-09-28 18:57:18,071 [INFO] response: https://www.mojeek.com/search?q=Clemson+California+college+football+September+25+2026+espn 403
+2026-09-28 18:57:18,172 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:57:18,236 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:57:18,237 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-28 18:57:18,247 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Clemson%20California%20college%20football%20September%2025%202026%20espn 200
+2026-09-28 18:57:18,375 [INFO] response: https://grokipedia.com/api/typeahead?query=Clemson+California+college+football+September+25+2026+espn&limit=1 200
+2026-09-28 18:57:18,513 [INFO] response: https://search.yahoo.com/search;_ylt=HtG3UWPQWfwj21oAlSj-pQF0;_ylu=8SNcLkgv0ahZOAlosS7pK4Geb69vJcTlNogbS0wUPs-lNGo?p=Clemson+California+college+football+September+25+2026+espn&btf=w 200
+2026-09-28 18:57:19,053 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3DClemson%2BCalifornia%2Bcollege%2Bfootball%2BSeptember%2B25%2B2026%2Bespn%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ0vrblGI7x6tUGIjCEnq2q096ynsuiFFGiKsUm_Mv1_Fnxld3amUz4GpnQPKtmf-2VmIE2BozX9zZTZgsyAnJSWgFD 429
+2026-09-28 18:57:19,532 [INFO] response: https://www.mojeek.com/search?q=Clemson+California+college+football+September+25+2026+espn 403
+2026-09-28 18:57:19,595 [INFO] response: https://search.brave.com/search?q=Clemson+California+college+football+September+25+2026+espn&source=web&tf=pw 429
+2026-09-28 18:57:19,710 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:57:19,779 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:57:19,886 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:57:19,908 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-28 18:57:19,910 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:57:28,031 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:57:28,032 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:57:28,068 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:57:48,935 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:57:48,937 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:57:48,938 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:57:48,938 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:57:49,090 [INFO] response: https://grokipedia.com/api/typeahead?query=football+match+results+September+27+2026+bbc&limit=1 200
+2026-09-28 18:57:49,103 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20match%20results%20September%2027%202026%20bbc 200
+2026-09-28 18:57:49,618 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dfootball%2Bmatch%2Bresults%2BSeptember%2B27%2B2026%2Bbbc%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGK3x6tUGIjDnXk72f7TwPP2dpNTLplY24MQuYwYBwS5-yPlU9Ba4OvKVScnpdnEATHf-em7y_-YyAnJSWgFD 429
+2026-09-28 18:57:49,731 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:57:49,791 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:57:50,285 [INFO] response: https://www.mojeek.com/search?q=football+match+results+September+27+2026+bbc 403
+2026-09-28 18:57:50,391 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:57:50,571 [INFO] response: https://search.yahoo.com/search;_ylt=sHCH_M7eOeUZRRLQ9HWHsyN3;_ylu=Eq2mFPnsR6-qPPeQMgycxyKAyOsYELMPvAa1sf5FmY_dLk4?p=football+match+results+September+27+2026+bbc&btf=d 200
+2026-09-28 18:57:51,190 [INFO] response: https://search.brave.com/search?q=football+match+results+September+27+2026+bbc&source=web&tf=pd 200
+2026-09-28 18:57:51,199 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:57:59,517 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:57:59,519 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:57:59,682 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:58:00,907 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:58:00,908 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:58:01,239 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:58:05,382 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:58:05,384 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:58:05,385 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:58:05,385 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:58:05,557 [INFO] response: https://grokipedia.com/api/typeahead?query=technology+artificial+intelligence+news+techcrunch+the+verge+september+2026&limit=1 200
+2026-09-28 18:58:05,568 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=technology%20artificial%20intelligence%20news%20techcrunch%20the%20verge%20september%202026 200
+2026-09-28 18:58:05,926 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtechnology%2Bartificial%2Bintelligence%2Bnews%2Btechcrunch%2Bthe%2Bverge%2Bseptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGL3x6tUGIjCzVmkEf8rM8SZb_Bp8iMshbmtiZr8iUQOcgwbg82IP_hMqQoHBjamN95AotyzIOOsyAnJSWgFD 429
+2026-09-28 18:58:06,083 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:06,139 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:58:06,772 [INFO] response: https://www.mojeek.com/search?q=technology+artificial+intelligence+news+techcrunch+the+verge+september+2026 403
+2026-09-28 18:58:07,057 [INFO] response: https://search.yahoo.com/search;_ylt=xTl89c01GryC3mGc-7lETaZ-;_ylu=RCdhZ6sSbzYGTWCdWhw_oyAPf7-RWxgx8SLbRJPhni2F0XI?p=technology+artificial+intelligence+news+techcrunch+the+verge+september+2026&btf=d 200
+2026-09-28 18:58:07,179 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:07,253 [INFO] response: https://search.brave.com/search?q=technology+artificial+intelligence+news+techcrunch+the+verge+september+2026&source=web&tf=pd 429
+2026-09-28 18:58:07,254 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-28 18:58:07,424 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=technology%20artificial%20intelligence%20news%20techcrunch%20the%20verge%20september%202026 200
+2026-09-28 18:58:07,427 [INFO] response: https://grokipedia.com/api/typeahead?query=technology+artificial+intelligence+news+techcrunch+the+verge+september+2026&limit=1 200
+2026-09-28 18:58:07,565 [INFO] response: https://search.yahoo.com/search;_ylt=sSdVYF0U6RHobnW00LNK47y6;_ylu=SilLhnQBzHWU2s4N-3llAdpjSYWVFxwTCEEsciCHBIgRXag?p=technology+artificial+intelligence+news+techcrunch+the+verge+september+2026&btf=d 200
+2026-09-28 18:58:07,643 [INFO] response: https://search.brave.com/search?q=technology+artificial+intelligence+news+techcrunch+the+verge+september+2026&source=web&tf=pd 429
+2026-09-28 18:58:08,208 [INFO] response: https://www.mojeek.com/search?q=technology+artificial+intelligence+news+techcrunch+the+verge+september+2026 403
+2026-09-28 18:58:08,316 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:08,364 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:58:08,469 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:08,950 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtechnology%2Bartificial%2Bintelligence%2Bnews%2Btechcrunch%2Bthe%2Bverge%2Bseptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGMDx6tUGIjAdshQY4XYA9kuT0C46-RZBGwuIWnuVsumn9EeBkfjHti8YxvuvWxg5B9vJMvlBGXEyAnJSWgFD 429
+2026-09-28 18:58:08,951 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-28 18:58:08,962 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=technology%20artificial%20intelligence%20news%20techcrunch%20the%20verge%20september%202026 200
+2026-09-28 18:58:09,108 [INFO] response: https://grokipedia.com/api/typeahead?query=technology+artificial+intelligence+news+techcrunch+the+verge+september+2026&limit=1 200
+2026-09-28 18:58:09,476 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dtechnology%2Bartificial%2Bintelligence%2Bnews%2Btechcrunch%2Bthe%2Bverge%2Bseptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ0vrblGMHx6tUGIjDDNcIP5Cnwf_R8bOXPLSnb2ib5zZNOgCdQdnSMFsfqbbBY_OcxCW2jRbcFVXENEWkyAnJSWgFD 429
+2026-09-28 18:58:09,524 [INFO] response: https://search.brave.com/search?q=technology+artificial+intelligence+news+techcrunch+the+verge+september+2026&source=web&tf=pw 429
+2026-09-28 18:58:09,683 [INFO] response: https://search.yahoo.com/search;_ylt=0DotqyS5CBkz1IZQXU1PYref;_ylu=QWWBKB7JXZISdH3Wtw_IbYu9xhZvS-U3H-ipapI8n_F9Dfo?p=technology+artificial+intelligence+news+techcrunch+the+verge+september+2026&btf=w 200
+2026-09-28 18:58:10,198 [INFO] response: https://www.mojeek.com/search?q=technology+artificial+intelligence+news+techcrunch+the+verge+september+2026 403
+2026-09-28 18:58:10,335 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:10,379 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:58:10,483 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:10,505 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-28 18:58:10,507 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:58:19,167 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:58:19,168 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:58:19,170 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:58:19,170 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:58:19,332 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechcrunch.com+artificial+intelligence+september+2026&limit=1 200
+2026-09-28 18:58:19,339 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechcrunch.com%20artificial%20intelligence%20september%202026 200
+2026-09-28 18:58:19,813 [INFO] response: https://www.mojeek.com/search?q=site%3Atechcrunch.com+artificial+intelligence+september+2026 403
+2026-09-28 18:58:19,976 [INFO] response: https://search.yahoo.com/search;_ylt=mj7pC_J73BtEZBQMW7mjp9wz;_ylu=LaNcih4VmfO8O1lb4fCUz9VYnYtMOV0i3_Q5ePf8sE-leVE?p=site%3Atechcrunch.com+artificial+intelligence+september+2026&btf=d 200
+2026-09-28 18:58:20,560 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Atechcrunch.com%2Bartificial%2Bintelligence%2Bseptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGMzx6tUGIjCSBRHQA1V23awrcfqfPO1PXex4kInJ6sO7KFjHCjnjs9ckYtFHsJNW2qjzaU8UsV4yAnJSWgFD 429
+2026-09-28 18:58:20,661 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:20,729 [INFO] response: https://search.brave.com/search?q=site%3Atechcrunch.com+artificial+intelligence+september+2026&source=web&tf=pd 429
+2026-09-28 18:58:20,835 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:20,900 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:58:20,901 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-28 18:58:21,062 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechcrunch.com+artificial+intelligence+september+2026&limit=1 200
+2026-09-28 18:58:21,076 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechcrunch.com%20artificial%20intelligence%20september%202026 200
+2026-09-28 18:58:21,124 [INFO] response: https://search.brave.com/search?q=site%3Atechcrunch.com+artificial+intelligence+september+2026&source=web&tf=pd 429
+2026-09-28 18:58:21,231 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:21,282 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:58:21,961 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Atechcrunch.com%2Bartificial%2Bintelligence%2Bseptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGM3x6tUGIjA41JnTR_LB06GFjI4bylVcNso0QFVte8ACkajcwM3S9VgZqbjNI9PPPyQBQ4fSTAIyAnJSWgFD 429
+2026-09-28 18:58:22,063 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:22,562 [INFO] response: https://www.mojeek.com/search?q=site%3Atechcrunch.com+artificial+intelligence+september+2026 403
+2026-09-28 18:58:22,703 [INFO] response: https://search.yahoo.com/search;_ylt=__ZJ-4oeRsfYXb4pcsmanm1A;_ylu=_yqSQNiuBd3sJpHIvTHJBY_wvCA4qaM_-utBWx2P7-Wki04?p=site%3Atechcrunch.com+artificial+intelligence+september+2026&btf=d 200
+2026-09-28 18:58:22,727 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-28 18:58:22,738 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechcrunch.com%20artificial%20intelligence%20september%202026 200
+2026-09-28 18:58:23,060 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechcrunch.com+artificial+intelligence+september+2026&limit=1 200
+2026-09-28 18:58:23,199 [INFO] response: https://search.yahoo.com/search;_ylt=IxnouHlGTw-N1eao1W19en57;_ylu=GhnexLXA2Q4xP8MUTpr4SkPjdRd1YCul8NLRsBmyWk-6CPc?p=site%3Atechcrunch.com+artificial+intelligence+september+2026&btf=w 200
+2026-09-28 18:58:23,330 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:23,863 [INFO] response: https://www.mojeek.com/search?q=site%3Atechcrunch.com+artificial+intelligence+september+2026 403
+2026-09-28 18:58:24,419 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Atechcrunch.com%2Bartificial%2Bintelligence%2Bseptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ0vrblGM_x6tUGIjBs-scxjKFz1fIlPx4LRiIDtql2jKrj2FoYzDxBpiwLoOvQd2HUASuAIaO3dWV4FKkyAnJSWgFD 429
+2026-09-28 18:58:24,467 [INFO] response: https://search.brave.com/search?q=site%3Atechcrunch.com+artificial+intelligence+september+2026&source=web&tf=pw 429
+2026-09-28 18:58:24,573 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:24,715 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:58:24,716 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-28 18:58:24,718 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:58:25,697 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:58:25,699 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:58:25,700 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:58:25,700 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:58:25,862 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atheverge.com%20artificial%20intelligence%20september%202026 200
+2026-09-28 18:58:25,864 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atheverge.com+artificial+intelligence+september+2026&limit=1 200
+2026-09-28 18:58:26,338 [INFO] response: https://www.mojeek.com/search?q=site%3Atheverge.com+artificial+intelligence+september+2026 403
+2026-09-28 18:58:26,456 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:26,686 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=bd550fbc1f09f3bbf99b37ab0926ae64&bds_t=1790621906Tce203035e18d639c25e5300d01df6b405d1f3e884456dedce54fa33cb48b5033&bds_s=4339fcdb501d45dfbf639a5edac5f94d&segment=organic&lui=english&language=english&abe=0&abd=0&sc=&with_date=d&qadf=moderate&qsr=en_US&t=device&abp=1&query=site%3Atheverge.com+artificial+intelligence+september+2026&cat=web&cmd=gen_page 200
+2026-09-28 18:58:26,788 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:26,853 [INFO] response: https://search.brave.com/search?q=site%3Atheverge.com+artificial+intelligence+september+2026&source=web&tf=pd 429
+2026-09-28 18:58:27,051 [INFO] response: https://search.yahoo.com/search;_ylt=cbod9_IwXshj1oeFi2_eDDiO;_ylu=Lxm_Vd3HUjrtuz0lsrChYZk1nY9PDY3Iapnonl_YlLgZrDI?p=site%3Atheverge.com+artificial+intelligence+september+2026&btf=d 200
+2026-09-28 18:58:27,542 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Atheverge.com%2Bartificial%2Bintelligence%2Bseptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGNPx6tUGIjBred3sPHc0na5CmeXo1vfYddl2ujY8qKKJv-AhOtpymfuNyZHyRReQDKnfBBdLqIgyAnJSWgFD 429
+2026-09-28 18:58:27,543 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-28 18:58:27,553 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atheverge.com%20artificial%20intelligence%20september%202026 200
+2026-09-28 18:58:27,677 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atheverge.com+artificial+intelligence+september+2026&limit=1 200
+2026-09-28 18:58:27,798 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:27,877 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:58:27,924 [INFO] response: https://search.brave.com/search?q=site%3Atheverge.com+artificial+intelligence+september+2026&source=web&tf=pd 429
+2026-09-28 18:58:28,483 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Atheverge.com%2Bartificial%2Bintelligence%2Bseptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGNPx6tUGIjBred3sPHc0na5CmeXo1vfYddl2ujY8qKKJv-AhOtpymfuNyZHyRReQDKnfBBdLqIgyAnJSWgFD 429
+2026-09-28 18:58:28,962 [INFO] response: https://www.mojeek.com/search?q=site%3Atheverge.com+artificial+intelligence+september+2026 403
+2026-09-28 18:58:29,062 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:29,247 [INFO] response: https://search.yahoo.com/search;_ylt=BIpbuT6IgtN4DRMB-OLbYH5y;_ylu=Hh-n7OI0R6jSGjlpB7_h94PSnBJC3OP8q7esrYUSj7nosqI?p=site%3Atheverge.com+artificial+intelligence+september+2026&btf=d 200
+2026-09-28 18:58:29,253 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-28 18:58:29,399 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atheverge.com+artificial+intelligence+september+2026&limit=1 200
+2026-09-28 18:58:29,421 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atheverge.com%20artificial%20intelligence%20september%202026 200
+2026-09-28 18:58:29,921 [INFO] response: https://www.mojeek.com/search?q=site%3Atheverge.com+artificial+intelligence+september+2026 403
+2026-09-28 18:58:30,023 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:30,429 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Atheverge.com%2Bartificial%2Bintelligence%2Bseptember%2B2026%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ0vrblGNbx6tUGIjBMN5aIHQLFNu3CK1JBtC5fKA2qZoCVOJZamT9kLe8Nxr-4gUYz7UfFTNi0X9hFCqYyAnJSWgFD 429
+2026-09-28 18:58:30,534 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:30,586 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:58:30,755 [INFO] response: https://search.yahoo.com/search;_ylt=BVUznrXdq5ghGIWjZUrXRi_a;_ylu=A7hHYmeRbQRk4jN1xoQY4oF7KVa9HLgPUW-AsCurJ5vOxRw?p=site%3Atheverge.com+artificial+intelligence+september+2026&btf=w 200
+2026-09-28 18:58:30,801 [INFO] response: https://search.brave.com/search?q=site%3Atheverge.com+artificial+intelligence+september+2026&source=web&tf=pw 429
+2026-09-28 18:58:30,803 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-28 18:58:30,805 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:58:43,340 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:58:43,341 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:58:43,342 [INFO] Validasi: 4x fetch_webpage sukses (minimum 3).
+2026-09-28 18:58:43,342 [INFO] URL yang berhasil di-fetch: {'https://www.cnbc.com/2026/09/27/stock-market-today-live-updates.html', 'https://www.bbc.com/sport/football/live/cw1mvy3k479et', 'https://www.espn.com/college-football/recap?gameId=401858234'}
+2026-09-28 18:58:43,343 [WARNING] Laporan tidak valid: Hanya 2 URL whitelist ditemukan, minimal 3
+2026-09-28 18:58:43,343 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-09-28 18:58:43,343 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-09-28 18:58:43,358 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:58:44,030 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:58:44,031 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:58:44,033 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:58:44,033 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:58:44,207 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitics%20stock%20market%20stock%20exchange%20economy%20September%202026%20site%3Acnbc.com 200
+2026-09-28 18:58:44,214 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitics+stock+market+stock+exchange+economy+September+2026+site%3Acnbc.com&limit=1 200
+2026-09-28 18:58:44,368 [INFO] response: https://search.yahoo.com/search;_ylt=LFPMPR5bRzEWDf9MTAP2RSSX;_ylu=An8u10qPk1VGPQHoWuJMrNKl9mEa9vUTkrRTUOpP5-QIFJc?p=global+geopolitics+stock+market+stock+exchange+economy+September+2026+site%3Acnbc.com&btf=d 200
+2026-09-28 18:58:44,711 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dglobal%2Bgeopolitics%2Bstock%2Bmarket%2Bstock%2Bexchange%2Beconomy%2BSeptember%2B2026%2Bsite%253Acnbc.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGOTx6tUGIjDLrBiIJTRLJCazhfW2eSSO58NUKoCk9WK6eqZTr0xl9RAMrVeOfgKNIol0CG5NVeUyAnJSWgFD 429
+2026-09-28 18:58:44,811 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:44,944 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:44,990 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:58:45,463 [INFO] response: https://www.mojeek.com/search?q=global+geopolitics+stock+market+stock+exchange+economy+September+2026+site%3Acnbc.com 403
+2026-09-28 18:58:45,513 [INFO] response: https://search.brave.com/search?q=global+geopolitics+stock+market+stock+exchange+economy+September+2026+site%3Acnbc.com&source=web&tf=pd 429
+2026-09-28 18:58:45,515 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-28 18:58:45,527 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitics%20stock%20market%20stock%20exchange%20economy%20September%202026%20site%3Acnbc.com 200
+2026-09-28 18:58:45,687 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitics+stock+market+stock+exchange+economy+September+2026+site%3Acnbc.com&limit=1 200
+2026-09-28 18:58:46,205 [INFO] response: https://www.mojeek.com/search?q=global+geopolitics+stock+market+stock+exchange+economy+September+2026+site%3Acnbc.com 403
+2026-09-28 18:58:46,325 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:46,374 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:58:46,960 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dglobal%2Bgeopolitics%2Bstock%2Bmarket%2Bstock%2Bexchange%2Beconomy%2BSeptember%2B2026%2Bsite%253Acnbc.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGObx6tUGIjBJrOwfYfHMln4icOSMzRJBTbbdptZjwQuPpkwbKnIfEf5pieW-Sv18fPc3e5Pu-KMyAnJSWgFD 429
+2026-09-28 18:58:47,003 [INFO] response: https://search.brave.com/search?q=global+geopolitics+stock+market+stock+exchange+economy+September+2026+site%3Acnbc.com&source=web&tf=pd 429
+2026-09-28 18:58:47,108 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:47,299 [INFO] response: https://search.yahoo.com/search;_ylt=oucBmINigM2xakeW-3TWaWnL;_ylu=tEt5cmToOFbthkrw5Z3Ovn2eAfFIUgvQYhQbcyLwTkoMuKA?p=global+geopolitics+stock+market+stock+exchange+economy+September+2026+site%3Acnbc.com&btf=d 200
+2026-09-28 18:58:47,305 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-28 18:58:47,316 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitics%20stock%20market%20stock%20exchange%20economy%20September%202026%20site%3Acnbc.com 200
+2026-09-28 18:58:47,501 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitics+stock+market+stock+exchange+economy+September+2026+site%3Acnbc.com&limit=1 200
+2026-09-28 18:58:47,549 [INFO] response: https://search.brave.com/search?q=global+geopolitics+stock+market+stock+exchange+economy+September+2026+site%3Acnbc.com&source=web&tf=pw 429
+2026-09-28 18:58:48,026 [INFO] response: https://www.mojeek.com/search?q=global+geopolitics+stock+market+stock+exchange+economy+September+2026+site%3Acnbc.com 403
+2026-09-28 18:58:48,470 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dglobal%2Bgeopolitics%2Bstock%2Bmarket%2Bstock%2Bexchange%2Beconomy%2BSeptember%2B2026%2Bsite%253Acnbc.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ0vrblGOjx6tUGIjB_E4vLRDGKBwmXiitj4VV8WiGUOu-idUShNbjEMF0WZknhMVM7VtyyTX1ANuVqXm8yAnJSWgFD 429
+2026-09-28 18:58:48,597 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:48,739 [INFO] response: https://search.yahoo.com/search;_ylt=G1MpPTsL11yPQQ1GmKq65Nfp;_ylu=mIr5pPaUXVe49X4L1jVNEp6Se19RcLx-jVeMBmwX-CvLkk4?p=global+geopolitics+stock+market+stock+exchange+economy+September+2026+site%3Acnbc.com&btf=w 200
+2026-09-28 18:58:48,879 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:48,968 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:58:48,968 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-28 18:58:48,970 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:58:49,596 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:58:49,597 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:58:49,598 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:58:49,598 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:58:49,758 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20news%20September%202026%20site%3Acnbc.com 200
+2026-09-28 18:58:49,874 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+news+September+2026+site%3Acnbc.com&limit=1 200
+2026-09-28 18:58:49,918 [INFO] response: https://search.brave.com/search?q=stock+market+news+September+2026+site%3Acnbc.com&source=web&tf=pd 429
+2026-09-28 18:58:50,428 [INFO] response: https://www.mojeek.com/search?q=stock+market+news+September+2026+site%3Acnbc.com 403
+2026-09-28 18:58:50,565 [INFO] response: https://search.yahoo.com/search;_ylt=nKhYmzOcHg9lhGtE2S0y_dZe;_ylu=I2qBmgYHugSnD5aVtRqr3aKeDc1maKHPcB6o6xSLst3Lngc?p=stock+market+news+September+2026+site%3Acnbc.com&btf=d 200
+2026-09-28 18:58:50,694 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:50,736 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:58:51,402 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dstock%2Bmarket%2Bnews%2BSeptember%2B2026%2Bsite%253Acnbc.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGOrx6tUGIjCFs58DgxGd4XL7eytOQke3lfLc2H8In6Wblpuj93-UGcVn44w_cQZt--uGkoz2X8QyAnJSWgFD 429
+2026-09-28 18:58:51,502 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:51,524 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-28 18:58:51,535 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20news%20September%202026%20site%3Acnbc.com 200
+2026-09-28 18:58:51,654 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+news+September+2026+site%3Acnbc.com&limit=1 200
+2026-09-28 18:58:52,023 [INFO] response: https://search.brave.com/search?q=stock+market+news+September+2026+site%3Acnbc.com&source=web&tf=pd 429
+2026-09-28 18:58:52,190 [INFO] response: https://search.yahoo.com/search;_ylt=13BOj-PZU7EXGk_5C2rXpLVe;_ylu=8XILUHJf-91Gz54LjO6iuOaaMoFdDw6kxBbBucnaye_V7dY?p=stock+market+news+September+2026+site%3Acnbc.com&btf=d 200
+2026-09-28 18:58:52,342 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:52,961 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dstock%2Bmarket%2Bnews%2BSeptember%2B2026%2Bsite%253Acnbc.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGOzx6tUGIjA2-jgc_6WY6zyLrCv17rMKAaS6J48JmDnwGEl4GUFl6cZzra3na1mM7PzXj8sU3RIyAnJSWgFD 429
+2026-09-28 18:58:53,064 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:53,111 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:58:53,587 [INFO] response: https://www.mojeek.com/search?q=stock+market+news+September+2026+site%3Acnbc.com 403
+2026-09-28 18:58:53,588 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-28 18:58:53,598 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20news%20September%202026%20site%3Acnbc.com 200
+2026-09-28 18:58:53,710 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+news+September+2026+site%3Acnbc.com&limit=1 200
+2026-09-28 18:58:54,194 [INFO] response: https://www.mojeek.com/search?q=stock+market+news+September+2026+site%3Acnbc.com 403
+2026-09-28 18:58:54,357 [INFO] response: https://search.yahoo.com/search;_ylt=D1rutA_fy9LsMvGupfU7owgP;_ylu=4kIpbinSMWJM9JdCr1fkVuUhpst3QkwSbhcZnIhadT3_Kdk?p=stock+market+news+September+2026+site%3Acnbc.com&btf=w 200
+2026-09-28 18:58:54,480 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:58:54,546 [INFO] response: https://search.brave.com/search?q=stock+market+news+September+2026+site%3Acnbc.com&source=web&tf=pw 429
+2026-09-28 18:58:54,651 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:58:54,720 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:58:55,075 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dstock%2Bmarket%2Bnews%2BSeptember%2B2026%2Bsite%253Acnbc.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ0vrblGO7x6tUGIjBzfWXPUN87ufCH0qHJx1SkUZ9dwUCfY0bkQfhphe5N6GYr2F2vq7kO0lEQGlBuHjYyAnJSWgFD 429
+2026-09-28 18:58:55,078 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-28 18:58:55,080 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:59:04,001 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:59:04,002 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:59:04,004 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:59:04,004 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:59:04,123 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+news+CNBC&limit=1 200
+2026-09-28 18:59:04,144 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20news%20CNBC 200
+2026-09-28 18:59:04,250 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:59:04,299 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:59:04,437 [INFO] response: https://search.yahoo.com/search;_ylt=ETrLs1yl5YeFX31CHJ838Qes;_ylu=32M-d0fXPxOBY4nkqkGEsm7V7Mt_l4o62w_fxGsZu1bfiVA?p=stock+market+news+CNBC&btf=d 200
+2026-09-28 18:59:04,508 [INFO] response: https://search.brave.com/search?q=stock+market+news+CNBC&source=web&tf=pd 429
+2026-09-28 18:59:04,610 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:59:05,106 [INFO] response: https://www.mojeek.com/search?q=stock+market+news+CNBC 403
+2026-09-28 18:59:05,550 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dstock%2Bmarket%2Bnews%2BCNBC%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGPnx6tUGIjDs3tHELkg-gtfpJVF2jUtJQw4LxRiXOMRv5xJmuNSgGrk3fmobZ7ukUry3SVQtDEQyAnJSWgFD 429
+2026-09-28 18:59:05,550 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-28 18:59:05,562 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20news%20CNBC 200
+2026-09-28 18:59:05,669 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+news+CNBC&limit=1 200
+2026-09-28 18:59:05,772 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:59:05,918 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:59:06,061 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:59:06,106 [INFO] response: https://search.brave.com/search?q=stock+market+news+CNBC&source=web&tf=pd 429
+2026-09-28 18:59:06,609 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dstock%2Bmarket%2Bnews%2BCNBC%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGPrx6tUGIjDeTa3tjv4Li0TxUQUOcOesR32YgvkkFrq5MdcmBf6HkvHGED-RqO627obZjuZuHXgyAnJSWgFD 429
+2026-09-28 18:59:07,083 [INFO] response: https://www.mojeek.com/search?q=stock+market+news+CNBC 403
+2026-09-28 18:59:07,392 [INFO] response: https://search.yahoo.com/search;_ylt=m8mOrhoS6zfnnpf_oqU0JH0Q;_ylu=ULhL7OVkCmphw8r-2oWuHzEcT7N_-pssp32K7GWKM5joV6E?p=stock+market+news+CNBC&btf=d 200
+2026-09-28 18:59:07,417 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-28 18:59:07,428 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20news%20CNBC 200
+2026-09-28 18:59:07,547 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+news+CNBC&limit=1 200
+2026-09-28 18:59:08,031 [INFO] response: https://www.mojeek.com/search?q=stock+market+news+CNBC 403
+2026-09-28 18:59:08,106 [INFO] response: https://search.brave.com/search?q=stock+market+news+CNBC&source=web&tf=pw 429
+2026-09-28 18:59:08,214 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:59:08,312 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:59:08,704 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dstock%2Bmarket%2Bnews%2BCNBC%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ0vrblGPzx6tUGIjAM_5x_G7Ko2nAuyEy3AMp8cFrk4NSHXxxXISTq7AP5GH2opbWYpQK16ical_Ydw30yAnJSWgFD 429
+2026-09-28 18:59:08,857 [INFO] response: https://search.yahoo.com/search;_ylt=nO2oA1HfnDQTh2Q58aZSN57z;_ylu=Ul1gkAuq4uCGtq63OHJmKUb_BjG_v_SpqxtA3G4H1gphLi0?p=stock+market+news+CNBC&btf=w 200
+2026-09-28 18:59:08,996 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:59:09,018 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-28 18:59:09,019 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:59:17,133 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:59:17,134 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:59:17,135 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:59:17,135 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:59:17,272 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market 200
+2026-09-28 18:59:17,343 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market&limit=1 200
+2026-09-28 18:59:17,374 [INFO] response: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=Stock%20market&explaintext=0&exintro=0&redirects=1 200
+2026-09-28 18:59:17,537 [INFO] response: https://search.yahoo.com/search;_ylt=PRGI6LB8Ul9mRpZdVkHQ6hLQ;_ylu=jU1G3BEMkNkOXW2G7I3svI4Le8qQhJWz1aekSzr_zy4-ddM?p=stock+market&btf=d 200
+2026-09-28 18:59:17,646 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:59:17,722 [INFO] response: https://search.brave.com/search?q=stock+market&source=web&tf=pd 429
+2026-09-28 18:59:17,830 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:59:17,880 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:59:18,352 [INFO] response: https://www.mojeek.com/search?q=stock+market 403
+2026-09-28 18:59:18,878 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dstock%2Bmarket%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGIby6tUGIjAtLYP297rewFmVsg-Va-xMKBKeVCOEje8WbDvsWjm2LC9uY7KNKyJHGmPSBc-d-wIyAnJSWgFD 429
+2026-09-28 18:59:18,880 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:59:26,920 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:59:26,921 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:59:26,923 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:59:26,923 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:59:27,128 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+world+news&limit=1 200
+2026-09-28 18:59:27,187 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20world%20news 200
+2026-09-28 18:59:27,233 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+world+news&source=web&tf=pd 429
+2026-09-28 18:59:27,714 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+world+news 403
+2026-09-28 18:59:27,817 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:59:27,996 [INFO] response: https://search.yahoo.com/search;_ylt=UpoozFtI-Tv5w5etsrP4kfkb;_ylu=Wb1z25bYuXnbkO38Eq8nV9DsEwcFBzEDMDgZ0h-3EbhrGcA?p=site%3Abbc.com+world+news&btf=d 200
+2026-09-28 18:59:28,108 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:59:28,176 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:59:28,625 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Bworld%2Bnews%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGJDy6tUGIjAHMMzruM59JfHJJ_0HEcTmPkDagiPJ8RzJLJ9SpQ-JbU0QGeFgBzd_Iz30DInL_rkyAnJSWgFD 429
+2026-09-28 18:59:28,626 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-28 18:59:28,637 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20world%20news 200
+2026-09-28 18:59:28,748 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+world+news&limit=1 200
+2026-09-28 18:59:29,153 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Bworld%2Bnews%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGJDy6tUGIjAHMMzruM59JfHJJ_0HEcTmPkDagiPJ8RzJLJ9SpQ-JbU0QGeFgBzd_Iz30DInL_rkyAnJSWgFD 429
+2026-09-28 18:59:29,254 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:59:29,380 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:59:29,455 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:59:29,592 [INFO] response: https://search.yahoo.com/search;_ylt=dySefBtC0k_QvWZDGI6C0Fn8;_ylu=ywMHKhgFhZAO5s0WMrsuwFTsoKWbqVvWd1geAmaz14pYIq0?p=site%3Abbc.com+world+news&btf=d 200
+2026-09-28 18:59:29,676 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+world+news&source=web&tf=pd 429
+2026-09-28 18:59:30,162 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+world+news 403
+2026-09-28 18:59:30,163 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-28 18:59:30,173 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20world%20news 200
+2026-09-28 18:59:30,285 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+world+news&limit=1 200
+2026-09-28 18:59:30,760 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+world+news 403
+2026-09-28 18:59:30,891 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:59:31,391 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dsite%253Abbc.com%2Bworld%2Bnews%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ0vrblGJLy6tUGIjDe-LqYEOF_iQS36DAfksQuojDXsHoJncQ4wucpmf45mISF-fqxatGlUk3u9mWdiAYyAnJSWgFD 429
+2026-09-28 18:59:31,496 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:59:31,565 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:59:31,712 [INFO] response: https://search.yahoo.com/search;_ylt=urlwcw7xsjB051vyJQ1s0nZD;_ylu=43QOHmOZoKMlR2szL5hNic4GX8gBgo28g4ypNUmx2ONsG40?p=site%3Abbc.com+world+news&btf=w 200
+2026-09-28 18:59:31,778 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+world+news&source=web&tf=pw 429
+2026-09-28 18:59:31,780 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-28 18:59:31,781 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 18:59:45,413 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 18:59:45,415 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-09-28 18:59:45,416 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-09-28 18:59:45,416 [WARNING] backend is not set. Using 'auto'
+2026-09-28 18:59:45,540 [INFO] response: https://grokipedia.com/api/typeahead?query=news+site%3Aaljazeera.com&limit=1 200
+2026-09-28 18:59:45,563 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=news%20site%3Aaljazeera.com 200
+2026-09-28 18:59:45,674 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:59:45,724 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:59:46,237 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnews%2Bsite%253Aaljazeera.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGKHy6tUGIjBYjMLEf1doJX8_CVOZbZO2sasF-wccRg2omOw8VnH8rB_qm7rorwU400EA7XcpfZ8yAnJSWgFD 429
+2026-09-28 18:59:46,287 [INFO] response: https://search.brave.com/search?q=news+site%3Aaljazeera.com&source=web&tf=pd 429
+2026-09-28 18:59:46,389 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:59:46,571 [INFO] response: https://search.yahoo.com/search;_ylt=BUNG92K-48jbakiWRLpncgWj;_ylu=y4Givdwp-6GqMSC4GWkxCebVruKJiGQ-mDdHZsULCqlcaEo?p=news+site%3Aaljazeera.com&btf=d 200
+2026-09-28 18:59:47,055 [INFO] response: https://www.mojeek.com/search?q=news+site%3Aaljazeera.com 403
+2026-09-28 18:59:47,056 [WARNING] Percobaan 1 gagal: No results found.
+2026-09-28 18:59:47,068 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=news%20site%3Aaljazeera.com 200
+2026-09-28 18:59:47,178 [INFO] response: https://grokipedia.com/api/typeahead?query=news+site%3Aaljazeera.com&limit=1 200
+2026-09-28 18:59:47,563 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnews%2Bsite%253Aaljazeera.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Ad&hl=en-US&q=EgQ0vrblGKPy6tUGIjCzcdpf4qB1dWC-kdbLK6oF2A_gsC5OKZBJ2UKONzwRKIAWFOGZA-v-xaJGKyDsxnIyAnJSWgFD 429
+2026-09-28 18:59:47,727 [INFO] response: https://search.yahoo.com/search;_ylt=vsPOmKp4Mah-zt3qltLsrVLG;_ylu=Ez1xvhS2o85g0r3kexl6rLmEDPInn2vJcALprhbI5YWzD2g?p=news+site%3Aaljazeera.com&btf=d 200
+2026-09-28 18:59:47,840 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:59:47,905 [INFO] response: https://www.startpage.com/sp/search 200
+2026-09-28 18:59:48,385 [INFO] response: https://www.mojeek.com/search?q=news+site%3Aaljazeera.com 403
+2026-09-28 18:59:48,431 [INFO] response: https://search.brave.com/search?q=news+site%3Aaljazeera.com&source=web&tf=pd 429
+2026-09-28 18:59:48,540 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:59:48,562 [WARNING] Percobaan 2 gagal: No results found.
+2026-09-28 18:59:48,692 [INFO] response: https://grokipedia.com/api/typeahead?query=news+site%3Aaljazeera.com&limit=1 200
+2026-09-28 18:59:48,701 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=news%20site%3Aaljazeera.com 200
+2026-09-28 18:59:48,798 [INFO] response: https://www.startpage.com/ 200
+2026-09-28 18:59:48,923 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=bd550fbc1f09f3bbf99b37ab0926ae64&bds_t=1790621988T17a1351c25832e8da20467665e61c3947c4884385809a1ffb5819807eb9073fe&bds_s=b7f3695010134069aa2ae84e327ca5f3&with_date=w&abe=0&t=device&lui=english&segment=organic&abd=0&language=english&qadf=moderate&qsr=en_US&abp=1&sc=&query=news+site%3Aaljazeera.com&cat=web&cmd=gen_page 200
+2026-09-28 18:59:49,083 [INFO] response: https://search.yahoo.com/search;_ylt=O5g-O2B8bQ-qib8hU5UoTFrZ;_ylu=NzVR4sBTIApxME_Eu8MYld7f7lwajkeqiuwe1ZXfzB9NFzE?p=news+site%3Aaljazeera.com&btf=w 200
+2026-09-28 18:59:49,730 [INFO] response: https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Dnews%2Bsite%253Aaljazeera.com%26sca_esv%3D1%26filter%3D1%26start%3D0%26hl%3Den-US%26lr%3Dlang_en%26cr%3DcountryUS%26tbs%3Dqdr%253Aw&hl=en-US&q=EgQ0vrblGKXy6tUGIjCWwEtWORzROgcjT8jzZ1a5Qgph5StUjuBw_K_4udTGZDz5JAd8ugTDwyDAaz_8ZgUyAnJSWgFD 429
+2026-09-28 18:59:49,788 [INFO] response: https://search.brave.com/search?q=news+site%3Aaljazeera.com&source=web&tf=pw 429
+2026-09-28 18:59:50,305 [INFO] response: https://www.mojeek.com/search?q=news+site%3Aaljazeera.com 403
+2026-09-28 18:59:50,407 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-09-28 18:59:50,429 [WARNING] Percobaan 3 gagal: No results found.
+2026-09-28 18:59:50,431 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-09-28 19:00:35,519 [WARNING] ⚠️ Gemini / gemini-3.5-flash-lite gagal: Request timed out.
+2026-09-28 19:00:35,519 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-28 19:00:35,519 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-28 19:00:39,236 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 19:00:39,237 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-28 19:00:39,240 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-28 19:00:39,240 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-28 19:00:43,338 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 19:00:43,338 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-28 19:00:43,341 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-28 19:00:43,341 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-28 19:00:45,248 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 19:00:45,249 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-28 19:00:45,252 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-28 19:00:45,252 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-28 19:00:47,527 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 19:00:47,528 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-28 19:00:47,530 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-28 19:00:47,530 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-28 19:00:48,815 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 19:00:48,816 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-09-28 19:00:48,818 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-28 19:00:48,819 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-09-28 19:00:48,987 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-09-28 19:00:48,988 [WARNING] ⚠️ NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b gagal: Error code: 503 - {'error': {'message': 'Service temporarily overloaded', 'type': 'Service Unavailable', 'code': 503}}
+2026-09-28 19:00:48,988 [INFO] Mencoba provider NVIDIA NIM dengan model meta/llama-4-maverick-17b-128e-instruct...
+2026-09-28 19:00:49,077 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-09-28 19:00:49,077 [WARNING] ⚠️ NVIDIA NIM / meta/llama-4-maverick-17b-128e-instruct gagal: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410, 'detail': "The model 'meta/llama-4-maverick-17b-128e-instruct' has reached its end of life on 2026-07-27T00:00:00Z and is no longer available."}
+2026-09-28 19:00:49,077 [WARNING] Model meta/llama-4-maverick-17b-128e-instruct ditandai mati (retired/404/410).
+2026-09-28 19:00:49,077 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-28 19:00:49,077 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-28 19:00:54,930 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 19:00:54,931 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-28 19:00:54,934 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-28 19:00:54,934 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-28 19:00:54,934 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-28 19:00:56,917 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 19:00:56,918 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-28 19:00:56,920 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-28 19:00:56,921 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-28 19:00:56,921 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-28 19:00:58,734 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 19:00:58,735 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-28 19:00:58,738 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-28 19:00:58,738 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-28 19:00:58,738 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-28 19:01:00,798 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 19:01:00,798 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-28 19:01:00,801 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-28 19:01:00,801 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-28 19:01:00,801 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-28 19:01:12,169 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 19:01:12,170 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-28 19:01:12,174 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-28 19:01:12,174 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-28 19:01:12,174 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-28 19:01:15,136 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 19:01:15,136 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-28 19:01:15,139 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-28 19:01:15,139 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-28 19:01:15,139 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-28 19:01:16,855 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 19:01:16,856 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-28 19:01:16,859 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-09-28 19:01:16,859 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-09-28 19:01:16,859 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-09-28 19:01:25,319 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-09-28 19:01:25,320 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-09-28 19:01:25,320 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-09-28 19:01:25,321 [INFO] URL yang berhasil di-fetch: {'https://www.cnbc.com/2026/09/27/stock-market-today-live-updates.html', 'https://www.bbc.com/sport/football/live/cw1mvy3k479et', 'https://www.espn.com/college-football/recap?gameId=401858234'}
+2026-09-28 19:01:25,321 [WARNING] Laporan tidak valid: Terlalu pendek (324 karakter, minimal 500)
+2026-09-28 19:01:25,321 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (324 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-09-28 19:01:25,321 [INFO] Mengirim laporan ke Telegram...
+2026-09-28 19:01:26,003 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
