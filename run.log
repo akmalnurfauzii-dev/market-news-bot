@@ -43476,3 +43476,1026 @@ Dalam proses penyelidikan terbaru yang dijadwalkan pada hari Jumat, 2 Oktober 20
 2026-10-03 02:52:44,215 [ERROR] ❌ Laporan hari ini gagal divalidasi (Hanya 0 topik ditemukan, minimal 4). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-10-03 02:52:44,215 [INFO] Mengirim laporan ke Telegram...
 2026-10-03 02:52:44,940 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-10-03 15:23:40,349 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-10-03 15:23:40,349 [INFO] =======================================================
+2026-10-03 15:23:40,349 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-10-03 15:23:40,350 [INFO] =======================================================
+2026-10-03 15:23:40,350 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-10-03 15:23:40,719 [INFO] Provider siap: Gemini dengan 4 model
+2026-10-03 15:23:40,720 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-10-03 15:23:40,721 [INFO] Provider siap: Z.AI dengan 1 model
+2026-10-03 15:23:40,722 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-10-03 15:23:40,723 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-10-03 15:23:40,738 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-10-03 15:23:40,783 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:23:44,188 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:23:44,199 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-03 15:23:44,241 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:23:44,241 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:23:44,559 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economy%20geopolitics%20stocks%20crypto%20October%202%202026%20CNBC%20BBC 200
+2026-10-03 15:23:44,583 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economy+geopolitics+stocks+crypto+October+2+2026+CNBC+BBC&limit=1 200
+2026-10-03 15:23:45,247 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-10-03 15:23:45,590 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:23:45,685 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:23:46,130 [INFO] response: https://www.mojeek.com/search?q=global+economy+geopolitics+stocks+crypto+October+2+2026+CNBC+BBC 403
+2026-10-03 15:23:46,323 [INFO] response: https://search.brave.com/search?q=global+economy+geopolitics+stocks+crypto+October+2+2026+CNBC+BBC&source=web&tf=pd 429
+2026-10-03 15:23:46,750 [INFO] response: https://www.google.com/wml/search?q=global+economy+geopolitics+stocks+crypto+October+2+2026+CNBC+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:23:46,752 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:23:48,392 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:23:48,394 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-03 15:23:48,396 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:23:48,396 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:23:48,627 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+economy+geopolitical+2026&limit=1 200
+2026-10-03 15:23:48,631 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20economy%20geopolitical%202026 200
+2026-10-03 15:23:49,172 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets+economy+geopolitical+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:23:49,320 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+economy+geopolitical+2026&source=web&tf=pd 429
+2026-10-03 15:23:49,626 [INFO] response: https://search.yahoo.com/search;_ylt=51udWViLQJQviJ9X3oKOrECG;_ylu=IL3FJwbZ_go_Iqk1KwURj2qLiZNmSA_OdYSWVKZ3SeS_vmQ?p=site%3Acnbc.com+markets+economy+geopolitical+2026&btf=d 200
+2026-10-03 15:23:49,913 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:23:50,005 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:23:50,132 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:23:50,571 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+economy+geopolitical+2026 403
+2026-10-03 15:23:50,571 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:23:50,808 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20economy%20geopolitical%202026 200
+2026-10-03 15:23:50,869 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+economy+geopolitical+2026&limit=1 200
+2026-10-03 15:23:51,017 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+economy+geopolitical+2026&source=web&tf=pd 429
+2026-10-03 15:23:51,146 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:23:51,347 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:23:51,432 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:23:51,889 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+economy+geopolitical+2026 403
+2026-10-03 15:23:52,218 [INFO] response: https://search.yahoo.com/search;_ylt=uMnbDIrLLCfm7y82cnnTyNFz;_ylu=aXEEVO5pIyHN7F-s0nfTyoCumkZeN0A0lGhiPzB78zKL9dg?p=site%3Acnbc.com+markets+economy+geopolitical+2026&btf=d 200
+2026-10-03 15:23:52,500 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets+economy+geopolitical+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:23:52,500 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:23:52,578 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20economy%20geopolitical%202026 200
+2026-10-03 15:23:52,728 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+economy+geopolitical+2026&limit=1 200
+2026-10-03 15:23:52,874 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+economy+geopolitical+2026&source=web&tf=pw 429
+2026-10-03 15:23:53,160 [INFO] response: https://search.yahoo.com/search;_ylt=7c7Q55adeDonFbaNknTn5zk6;_ylu=4gemcQt4KESZ1ruqqzVhbqzfqrBIfeOyciNo624sttnDGPs?p=site%3Acnbc.com+markets+economy+geopolitical+2026&btf=w 200
+2026-10-03 15:23:53,478 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:23:53,572 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:23:53,697 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:23:54,154 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+economy+geopolitical+2026 403
+2026-10-03 15:23:54,700 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets+economy+geopolitical+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:23:54,701 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:23:54,703 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:23:55,826 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:23:55,827 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-03 15:23:55,829 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:23:55,829 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:23:56,042 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+world+news+October+2026&limit=1 200
+2026-10-03 15:23:56,076 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20world%20news%20October%202026 200
+2026-10-03 15:23:56,551 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+world+news+October+2026 403
+2026-10-03 15:23:56,698 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:23:57,088 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com+world+news+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:23:57,277 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:23:57,352 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:23:57,581 [INFO] response: https://search.yahoo.com/search;_ylt=JfrABjbmRO4gxdK6NokaZxXi;_ylu=JkT0-SwrjM0QdFIlBoxGRXypSEae8huEGRJ0W2-RI4iLl1g?p=site%3Abbc.com+world+news+October+2026&btf=d 200
+2026-10-03 15:23:57,770 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+world+news+October+2026&source=web&tf=pd 429
+2026-10-03 15:23:57,790 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:23:57,868 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20world%20news%20October%202026 200
+2026-10-03 15:23:58,105 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+world+news+October+2026&limit=1 200
+2026-10-03 15:23:58,645 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com+world+news+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:23:58,789 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+world+news+October+2026&source=web&tf=pd 429
+2026-10-03 15:23:58,976 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:23:59,191 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:23:59,371 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:23:59,609 [INFO] response: https://search.yahoo.com/search;_ylt=msYZjq4IX4q7DLJMd8Q96SLi;_ylu=8Fd357sQ_HlzmW8kZ-xNRHbB-gpnNyti84Rmwtua20Sth80?p=site%3Abbc.com+world+news+October+2026&btf=d 200
+2026-10-03 15:24:00,136 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+world+news+October+2026 403
+2026-10-03 15:24:00,136 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:24:00,215 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20world%20news%20October%202026 200
+2026-10-03 15:24:00,497 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+world+news+October+2026&limit=1 200
+2026-10-03 15:24:00,970 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com+world+news+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:24:01,112 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+world+news+October+2026&source=web&tf=pw 429
+2026-10-03 15:24:01,267 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:24:01,675 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+world+news+October+2026 403
+2026-10-03 15:24:01,856 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:24:01,933 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:24:02,209 [INFO] response: https://search.yahoo.com/search;_ylt=f_6Tqys5J51U_GQBEhtAREEm;_ylu=nal28zO0IV9YAa0t8y7awEAJYp82s-fcjS_-J7UW91t_jGk?p=site%3Abbc.com+world+news+October+2026&btf=w 200
+2026-10-03 15:24:02,211 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:24:02,213 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:24:03,428 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:24:03,429 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-03 15:24:03,431 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:24:03,431 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:24:03,685 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20crypto%20geopolitics 200
+2026-10-03 15:24:03,690 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+crypto+geopolitics&limit=1 200
+2026-10-03 15:24:04,100 [INFO] response: https://www.mojeek.com/search?q=stock+market+crypto+geopolitics 403
+2026-10-03 15:24:04,592 [INFO] response: https://www.google.com/wml/search?q=stock+market+crypto+geopolitics&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:24:04,829 [INFO] response: https://search.yahoo.com/search;_ylt=k-4vYuDCEimM3t6qtopBPtbX;_ylu=jXfpLlswzg-ig_1W9tCzYxsMS6A2xG1sZPuWTX5b0dtSlT8?p=stock+market+crypto+geopolitics&btf=d 200
+2026-10-03 15:24:05,017 [INFO] response: https://search.brave.com/search?q=stock+market+crypto+geopolitics&source=web&tf=pd 429
+2026-10-03 15:24:05,142 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:24:05,403 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:24:05,476 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:24:05,476 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:24:05,653 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+crypto+geopolitics&limit=1 200
+2026-10-03 15:24:05,709 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20crypto%20geopolitics 200
+2026-10-03 15:24:05,897 [INFO] response: https://search.brave.com/search?q=stock+market+crypto+geopolitics&source=web&tf=pd 429
+2026-10-03 15:24:06,202 [INFO] response: https://search.yahoo.com/search;_ylt=VQi7k6bRbmPHwuhWO3U1FRtO;_ylu=48Fp7PcqxzOQNIZI7mGGTo1kiZidXQtA5eL--7H22TTNQAw?p=stock+market+crypto+geopolitics&btf=d 200
+2026-10-03 15:24:06,335 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:24:06,540 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:24:06,632 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:24:07,047 [INFO] response: https://www.mojeek.com/search?q=stock+market+crypto+geopolitics 403
+2026-10-03 15:24:07,514 [INFO] response: https://www.google.com/wml/search?q=stock+market+crypto+geopolitics&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:24:07,514 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:24:07,593 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20crypto%20geopolitics 200
+2026-10-03 15:24:07,753 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+crypto+geopolitics&limit=1 200
+2026-10-03 15:24:08,068 [INFO] response: https://www.google.com/wml/search?q=stock+market+crypto+geopolitics&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:24:08,260 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:24:08,357 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:24:08,491 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:24:08,763 [INFO] response: https://search.yahoo.com/search;_ylt=a4zGTy5bZqqb9xNczq8CUjub;_ylu=4A-bDDLwuuBdBcIf36tWnVwoWJx93WkkxpMHYn2-FHG4U7U?p=stock+market+crypto+geopolitics&btf=w 200
+2026-10-03 15:24:09,264 [INFO] response: https://www.mojeek.com/search?q=stock+market+crypto+geopolitics 403
+2026-10-03 15:24:09,405 [INFO] response: https://search.brave.com/search?q=stock+market+crypto+geopolitics&source=web&tf=pw 429
+2026-10-03 15:24:09,427 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:24:09,429 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:24:10,474 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:24:10,475 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-03 15:24:10,477 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:24:10,477 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:24:10,712 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets 200
+2026-10-03 15:24:10,821 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets&limit=1 200
+2026-10-03 15:24:11,299 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets 403
+2026-10-03 15:24:11,527 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:24:11,620 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:24:11,887 [INFO] response: https://search.yahoo.com/search;_ylt=ibkW7m3gEVUFKOhFIYzDqufp;_ylu=fTHZTUQ8nJJ0FxY4PG9S1b9pj9kPg9lKubu9FId5NDoOfCE?p=site%3Acnbc.com+markets&btf=d 200
+2026-10-03 15:24:12,115 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:24:12,564 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:24:12,731 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets&source=web&tf=pd 429
+2026-10-03 15:24:12,752 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:24:12,830 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets 200
+2026-10-03 15:24:12,957 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets&limit=1 200
+2026-10-03 15:24:13,170 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets&source=web&tf=pd 429
+2026-10-03 15:24:13,459 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:24:13,876 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=2d32e9095ecfb4c1710ff203ca4d428c&bds_t=1791041053T4a22df26e89cea32e2a9d6758024c53f9a38c11e341069adf96114064fd9bcd3&bds_s=34544671a2d8489785ee7054b567d76e&segment=organic&qadf=moderate&qsr=en_US&with_date=d&sc=&abe=0&abp=1&language=english&t=device&lui=english&abd=0&query=site%3Acnbc.com+markets&cat=web&cmd=gen_page 200
+2026-10-03 15:24:14,288 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets 403
+2026-10-03 15:24:14,517 [INFO] response: https://search.yahoo.com/search;_ylt=APDeynnTERRR-hqr8mZ-CmUT;_ylu=kStxOfk8bA44HAA9nHRJi2NUmf999uZMMLkW8_qV9YL3HFg?p=site%3Acnbc.com+markets&btf=d 200
+2026-10-03 15:24:14,681 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:24:15,215 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:24:15,216 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:24:15,427 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets&limit=1 200
+2026-10-03 15:24:15,454 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets 200
+2026-10-03 15:24:15,723 [INFO] response: https://search.yahoo.com/search;_ylt=ytb4x8NKA6e4AUb-NuI8HD09;_ylu=A9LnGp3aOjj2YkDkiIWl-F2ETaT6YG0jlx1W_tgGjmW2rDc?p=site%3Acnbc.com+markets&btf=w 200
+2026-10-03 15:24:15,871 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:24:16,365 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets 403
+2026-10-03 15:24:16,654 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:24:16,793 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets&source=web&tf=pw 429
+2026-10-03 15:24:17,027 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:24:17,118 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:24:17,119 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:24:17,121 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:24:18,154 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:24:18,156 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-03 15:24:18,157 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:24:18,157 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:24:18,301 [INFO] response: https://grokipedia.com/api/typeahead?query=berita&limit=1 200
+2026-10-03 15:24:18,390 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita 200
+2026-10-03 15:24:18,535 [INFO] response: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=Berita&explaintext=0&exintro=0&redirects=1 200
+2026-10-03 15:24:18,698 [INFO] response: https://search.brave.com/search?q=berita&source=web&tf=pd 429
+2026-10-03 15:24:18,952 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:24:19,044 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:24:19,277 [INFO] response: https://search.yahoo.com/search;_ylt=SGFIN0D5CU09MAlzX7UmyMUM;_ylu=mT_xfgyh4iKl9bQZruoyvf1G9fZH2r80GfZ7vVEXKeZyt7k?p=berita&btf=d 200
+2026-10-03 15:24:19,615 [INFO] response: https://www.google.com/wml/search?q=berita&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:24:20,051 [INFO] response: https://www.mojeek.com/search?q=berita 403
+2026-10-03 15:24:20,174 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:24:20,199 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:24:20,329 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-03 15:24:20,330 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 39.688478406s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}]
+2026-10-03 15:24:20,330 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-03 15:24:20,330 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-03 15:24:20,515 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-10-03 15:24:20,516 [WARNING] ⚠️ NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b gagal: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410, 'detail': "The model 'nvidia/nemotron-3-super-120b-a12b' has reached its end of life on 2026-10-03T09:00:00Z and is no longer available."}
+2026-10-03 15:24:20,516 [WARNING] Model nvidia/nemotron-3-super-120b-a12b ditandai mati (retired/404/410).
+2026-10-03 15:24:20,516 [INFO] Mencoba provider NVIDIA NIM dengan model meta/llama-4-maverick-17b-128e-instruct...
+2026-10-03 15:24:20,699 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-10-03 15:24:20,700 [WARNING] ⚠️ NVIDIA NIM / meta/llama-4-maverick-17b-128e-instruct gagal: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410, 'detail': "The model 'meta/llama-4-maverick-17b-128e-instruct' has reached its end of life on 2026-07-27T00:00:00Z and is no longer available."}
+2026-10-03 15:24:20,700 [WARNING] Model meta/llama-4-maverick-17b-128e-instruct ditandai mati (retired/404/410).
+2026-10-03 15:24:20,700 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-10-03 15:24:20,700 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-03 15:24:52,823 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:24:52,824 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-03 15:24:52,828 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:24:54,641 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:24:54,643 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-03 15:24:54,645 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:24:54,645 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:24:54,859 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20CNBC%20Indonesia 200
+2026-10-03 15:24:54,864 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+CNBC+Indonesia&limit=1 200
+2026-10-03 15:24:55,240 [INFO] response: https://search.yahoo.com/search;_ylt=VPtvPEMQcWtbPHQ_iauGA_cz;_ylu=4hT3viWnQWTVpeuBTsLEoxERjN65z3lFHGgrOdO5E6nul1Q?p=IHSG+hari+ini+CNBC+Indonesia&btf=d 200
+2026-10-03 15:24:55,348 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:24:55,622 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:24:55,729 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:24:55,952 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+CNBC+Indonesia&source=web&tf=pd 429
+2026-10-03 15:24:56,542 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+CNBC+Indonesia 403
+2026-10-03 15:24:56,822 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+CNBC+Indonesia&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:24:56,822 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:24:56,900 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20CNBC%20Indonesia 200
+2026-10-03 15:24:57,034 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+CNBC+Indonesia&limit=1 200
+2026-10-03 15:24:57,514 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+CNBC+Indonesia 403
+2026-10-03 15:24:57,939 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+CNBC+Indonesia&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:24:58,210 [INFO] response: https://search.yahoo.com/search;_ylt=sOs-AZptaLRc8hfND2qC0P2a;_ylu=HD9AEmDpnZ9pp1iAVogyWTrQTK4KbEAwvmz_gxhaONKRR2U?p=IHSG+hari+ini+CNBC+Indonesia&btf=d 200
+2026-10-03 15:24:58,350 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:24:58,546 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:24:58,638 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:24:58,786 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+CNBC+Indonesia&source=web&tf=pd 429
+2026-10-03 15:24:58,806 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:24:58,883 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20CNBC%20Indonesia 200
+2026-10-03 15:24:59,179 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+CNBC+Indonesia&limit=1 200
+2026-10-03 15:24:59,294 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:24:59,468 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+CNBC+Indonesia&source=web&tf=pw 429
+2026-10-03 15:24:59,719 [INFO] response: https://search.yahoo.com/search;_ylt=7RwwNwAIQVcX2g8IRcDZ-Fyp;_ylu=teOoD9t33mqwaF7Paoi7UrnR2yJgIpbJR93JVLAdMydDzjs?p=IHSG+hari+ini+CNBC+Indonesia&btf=w 200
+2026-10-03 15:25:00,139 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+CNBC+Indonesia&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:25:00,378 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:25:00,467 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:25:00,871 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+CNBC+Indonesia 403
+2026-10-03 15:25:00,872 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:25:00,874 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:25:02,855 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:25:02,856 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-03 15:25:02,858 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:25:02,858 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:25:03,058 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+IHSG&limit=1 200
+2026-10-03 15:25:03,084 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20IHSG 200
+2026-10-03 15:25:03,298 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:25:03,386 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:25:03,508 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:25:03,809 [INFO] response: https://search.yahoo.com/search;_ylt=k4hdMUm8R6_FJArEOOhiGer-;_ylu=Tb1kGyf5l0HEMYjCpEvf0lgqwyDruO6JZDmxY2BCFUhL73A?p=site%3Acnbcindonesia.com+IHSG&btf=d 200
+2026-10-03 15:25:04,290 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+IHSG 403
+2026-10-03 15:25:04,651 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+IHSG&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:25:04,800 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+IHSG&source=web&tf=pd 429
+2026-10-03 15:25:04,820 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:25:04,899 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20IHSG 200
+2026-10-03 15:25:05,013 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+IHSG&limit=1 200
+2026-10-03 15:25:05,164 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+IHSG&source=web&tf=pd 429
+2026-10-03 15:25:05,454 [INFO] response: https://search.yahoo.com/search;_ylt=Y5pzuRyakk4Sm0SIluHQK7D7;_ylu=Y0_8l9YNPvIVcYDxeAfYIBS-GD6ktpU4-PAM2W11la9EiYs?p=site%3Acnbcindonesia.com+IHSG&btf=d 200
+2026-10-03 15:25:05,965 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+IHSG&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:25:06,380 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+IHSG 403
+2026-10-03 15:25:06,564 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:25:06,635 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:25:06,741 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:25:06,763 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:25:06,842 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20IHSG 200
+2026-10-03 15:25:06,956 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+IHSG&limit=1 200
+2026-10-03 15:25:07,368 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+IHSG 403
+2026-10-03 15:25:07,478 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:25:07,642 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+IHSG&source=web&tf=pw 429
+2026-10-03 15:25:07,934 [INFO] response: https://search.yahoo.com/search;_ylt=4Yp2ZkjI5YsSzYK7zj7e4t8d;_ylu=vZd_HiZJYWQyxuUMJuKKDEFJlQ6gy25I7tWTGLAmLY2Lhjk?p=site%3Acnbcindonesia.com+IHSG&btf=w 200
+2026-10-03 15:25:08,114 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:25:08,197 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:25:08,674 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+IHSG&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:25:08,674 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:25:08,676 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:25:09,703 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:25:09,704 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-03 15:25:09,705 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:25:09,706 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:25:09,833 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Adetik.com&limit=1 200
+2026-10-03 15:25:09,921 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Adetik.com 200
+2026-10-03 15:25:10,105 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:25:10,181 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:25:10,474 [INFO] response: https://www.google.com/wml/search?q=site%3Adetik.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:25:10,978 [INFO] response: https://www.mojeek.com/search?q=site%3Adetik.com 403
+2026-10-03 15:25:11,214 [INFO] response: https://search.yahoo.com/search;_ylt=vfV1ZiutIkwcCp1saJVMWccP;_ylu=Cfeks3CWUHgMTyANbm8mgvRbdUfAhQvM22ETZWGbXBKi13Q?p=site%3Adetik.com&btf=d 200
+2026-10-03 15:25:11,356 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:25:11,525 [INFO] response: https://search.brave.com/search?q=site%3Adetik.com&source=web&tf=pd 429
+2026-10-03 15:25:11,545 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:25:11,623 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Adetik.com 200
+2026-10-03 15:25:11,669 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Adetik.com&limit=1 200
+2026-10-03 15:25:12,123 [INFO] response: https://www.mojeek.com/search?q=site%3Adetik.com 403
+2026-10-03 15:25:12,390 [INFO] response: https://search.yahoo.com/search;_ylt=PWNM822INitrYisx7x2zE1nA;_ylu=mzAdoX9hfWBwuqYoDl8BRYJKePaafJV7vE_oF8c_YbB-3bg?p=site%3Adetik.com&btf=d 200
+2026-10-03 15:25:12,703 [INFO] response: https://www.google.com/wml/search?q=site%3Adetik.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:25:12,828 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:25:13,014 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:25:13,114 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:25:13,254 [INFO] response: https://search.brave.com/search?q=site%3Adetik.com&source=web&tf=pd 429
+2026-10-03 15:25:13,277 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:25:13,355 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Adetik.com 200
+2026-10-03 15:25:13,396 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Adetik.com&limit=1 200
+2026-10-03 15:25:13,509 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:25:14,022 [INFO] response: https://www.google.com/wml/search?q=site%3Adetik.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:25:14,212 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:25:14,286 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:25:14,558 [INFO] response: https://search.yahoo.com/search;_ylt=bLzui_DTZUoGV_HexOPjt6Ly;_ylu=caHgQmX44YjQHAzlZRMY2v9feeDt-3rZQCngRV7iiugryeg?p=site%3Adetik.com&btf=w 200
+2026-10-03 15:25:14,975 [INFO] response: https://www.mojeek.com/search?q=site%3Adetik.com 403
+2026-10-03 15:25:15,122 [INFO] response: https://search.brave.com/search?q=site%3Adetik.com&source=web&tf=pw 429
+2026-10-03 15:25:15,142 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:25:15,144 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:25:16,393 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:25:16,395 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-03 15:25:16,396 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:25:16,396 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:25:16,609 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Akompas.com 200
+2026-10-03 15:25:16,632 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Akompas.com&limit=1 200
+2026-10-03 15:25:16,810 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:25:16,902 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:25:17,312 [INFO] response: https://www.mojeek.com/search?q=site%3Akompas.com 403
+2026-10-03 15:25:17,465 [INFO] response: https://search.brave.com/search?q=site%3Akompas.com&source=web&tf=pd 429
+2026-10-03 15:25:17,835 [INFO] response: https://www.google.com/wml/search?q=site%3Akompas.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:25:17,948 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:25:18,204 [INFO] response: https://search.yahoo.com/search;_ylt=hvxCLRZSWRwnC4UkLipFYvor;_ylu=pSaqn3Hee1GnEJrBamKXYeXV5WMRm8Ng5phBuCJM_7zUIH0?p=site%3Akompas.com&btf=d 200
+2026-10-03 15:25:18,243 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:25:18,321 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Akompas.com 200
+2026-10-03 15:25:18,449 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Akompas.com&limit=1 200
+2026-10-03 15:25:18,551 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:25:18,969 [INFO] response: https://www.mojeek.com/search?q=site%3Akompas.com 403
+2026-10-03 15:25:19,246 [INFO] response: https://search.yahoo.com/search;_ylt=orD-YoWI5x17z0v30K5BP1U9;_ylu=jPxYGNJa1D6B9VQ5vYkknvqDn4r_Sp1-YZ4Utp3ahPdbl2k?p=site%3Akompas.com&btf=d 200
+2026-10-03 15:25:19,776 [INFO] response: https://www.google.com/wml/search?q=site%3Akompas.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:25:19,927 [INFO] response: https://search.brave.com/search?q=site%3Akompas.com&source=web&tf=pd 429
+2026-10-03 15:25:20,130 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:25:20,218 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:25:20,219 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:25:20,445 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Akompas.com&limit=1 200
+2026-10-03 15:25:20,459 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Akompas.com 200
+2026-10-03 15:25:20,611 [INFO] response: https://search.brave.com/search?q=site%3Akompas.com&source=web&tf=pw 429
+2026-10-03 15:25:20,858 [INFO] response: https://search.yahoo.com/search;_ylt=NRH26PsuuIT5sAX_mWpiUJSO;_ylu=hBi_SOMiEL0seP8xWo1LR4t1t1BU8JpYeml5STqPnvx1cgI?p=site%3Akompas.com&btf=w 200
+2026-10-03 15:25:21,409 [INFO] response: https://www.mojeek.com/search?q=site%3Akompas.com 403
+2026-10-03 15:25:21,638 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:25:21,748 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:25:22,165 [INFO] response: https://www.google.com/wml/search?q=site%3Akompas.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:25:22,288 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:25:22,289 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:25:22,291 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:25:26,578 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:25:26,579 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-03 15:25:26,581 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:25:26,581 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:25:26,824 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnnindonesia.com 200
+2026-10-03 15:25:26,930 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnnindonesia.com&limit=1 200
+2026-10-03 15:25:27,401 [INFO] response: https://www.google.com/wml/search?q=site%3Acnnindonesia.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:25:27,509 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:25:27,721 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:25:27,805 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:25:28,221 [INFO] response: https://www.mojeek.com/search?q=site%3Acnnindonesia.com 403
+2026-10-03 15:25:28,365 [INFO] response: https://search.brave.com/search?q=site%3Acnnindonesia.com&source=web&tf=pd 429
+2026-10-03 15:25:28,652 [INFO] response: https://search.yahoo.com/search;_ylt=7sZe_71KvyYoBZBVyk09jEe3;_ylu=Of1hMMnRZTT_gKEgNycRl_oR30t57Niv2QezXZiLT4eTYWo?p=site%3Acnnindonesia.com&btf=d 200
+2026-10-03 15:25:28,703 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:25:28,902 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnnindonesia.com&limit=1 200
+2026-10-03 15:25:28,925 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnnindonesia.com 200
+2026-10-03 15:25:29,077 [INFO] response: https://search.brave.com/search?q=site%3Acnnindonesia.com&source=web&tf=pd 429
+2026-10-03 15:25:29,203 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:25:29,403 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:25:29,576 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:25:29,805 [INFO] response: https://search.yahoo.com/search;_ylt=GxVT0RqFV32kApKDjvFb8yiQ;_ylu=Fih8Wtuk9iRmHrCZcc-5CeLO_Blcauvnksu5EISVKDukXOs?p=site%3Acnnindonesia.com&btf=d 200
+2026-10-03 15:25:30,301 [INFO] response: https://www.google.com/wml/search?q=site%3Acnnindonesia.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:25:30,753 [INFO] response: https://www.mojeek.com/search?q=site%3Acnnindonesia.com 403
+2026-10-03 15:25:30,754 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:25:30,831 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnnindonesia.com 200
+2026-10-03 15:25:30,961 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnnindonesia.com&limit=1 200
+2026-10-03 15:25:31,152 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:25:31,227 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:25:31,626 [INFO] response: https://www.mojeek.com/search?q=site%3Acnnindonesia.com 403
+2026-10-03 15:25:31,731 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:25:32,017 [INFO] response: https://search.yahoo.com/search;_ylt=1jaaCHjIcuX4YQx2N77xntnS;_ylu=CKPrbHxoeyfbM2L-XixrQw2hKcUv5oGvPlI2FVLbXa8J3Z8?p=site%3Acnnindonesia.com&btf=w 200
+2026-10-03 15:25:32,170 [INFO] response: https://search.brave.com/search?q=site%3Acnnindonesia.com&source=web&tf=pw 429
+2026-10-03 15:25:32,459 [INFO] response: https://www.google.com/wml/search?q=site%3Acnnindonesia.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:25:32,459 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:25:32,461 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:25:33,505 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:25:33,506 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-03 15:25:33,508 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:25:33,508 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:25:33,709 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=2026 200
+2026-10-03 15:25:33,728 [INFO] response: https://grokipedia.com/api/typeahead?query=2026&limit=1 200
+2026-10-03 15:25:33,841 [INFO] response: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=2026&explaintext=0&exintro=0&redirects=1 200
+2026-10-03 15:25:33,985 [INFO] response: https://search.brave.com/search?q=2026&source=web&tf=pd 429
+2026-10-03 15:25:34,416 [INFO] response: https://www.mojeek.com/search?q=2026 403
+2026-10-03 15:25:34,689 [INFO] response: https://search.yahoo.com/search;_ylt=DFzk1V4OCSCHcA_lb72j3M9g;_ylu=vBqy3JD6IIWGsWbMpdEPi4tSlkECbFQfa67WdEs1OmtxM9s?p=2026&btf=d 200
+2026-10-03 15:25:35,057 [INFO] response: https://www.google.com/wml/search?q=2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:25:35,293 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:25:35,370 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:25:35,474 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:25:35,499 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:25:35,620 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-03 15:25:35,621 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 24.397817538s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24s'}]}}]
+2026-10-03 15:25:35,621 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-03 15:25:35,621 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-03 15:25:35,621 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-03 15:26:00,365 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:26:00,366 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-03 15:26:00,369 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 15:26:02,762 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-03 15:26:02,763 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-10-03 15:26:02,763 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:26:40,905 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:26:40,906 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:26:40,931 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:26:43,028 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:26:43,029 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:26:43,031 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:26:43,031 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:26:43,217 [INFO] response: https://grokipedia.com/api/typeahead?query=Israel+Lebanon+October+2026&limit=1 200
+2026-10-03 15:26:43,263 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Israel%20Lebanon%20October%202026 200
+2026-10-03 15:26:43,705 [INFO] response: https://www.google.com/wml/search?q=Israel+Lebanon+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:26:43,892 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:26:43,972 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:26:44,405 [INFO] response: https://www.mojeek.com/search?q=Israel+Lebanon+October+2026 403
+2026-10-03 15:26:44,617 [INFO] response: https://search.brave.com/search?q=Israel+Lebanon+October+2026&source=web&tf=pd 429
+2026-10-03 15:26:44,941 [INFO] response: https://search.yahoo.com/search;_ylt=4hurfI1ldN6OPwAETkL95HNQ;_ylu=rnrp_-CktHOdAypHMspu2LpRIApG3ZaT3cHrj1jLbpb4Plc?p=Israel+Lebanon+October+2026&btf=d 200
+2026-10-03 15:26:45,084 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:26:45,107 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:26:45,226 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Israel%20Lebanon%20October%202026 200
+2026-10-03 15:26:45,462 [INFO] response: https://grokipedia.com/api/typeahead?query=Israel+Lebanon+October+2026&limit=1 200
+2026-10-03 15:26:45,733 [INFO] response: https://search.yahoo.com/search;_ylt=_YWPI_-5mpB3rlZEBqHpKzhR;_ylu=M2_kqoJjMd2rqRW4WXLs0IVjjaHClBkp68jHAzLph8BtR2w?p=Israel+Lebanon+October+2026&btf=d 200
+2026-10-03 15:26:46,177 [INFO] response: https://www.mojeek.com/search?q=Israel+Lebanon+October+2026 403
+2026-10-03 15:26:46,282 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:26:46,487 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:26:46,610 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:26:47,050 [INFO] response: https://www.google.com/wml/search?q=Israel+Lebanon+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:26:47,207 [INFO] response: https://search.brave.com/search?q=Israel+Lebanon+October+2026&source=web&tf=pd 429
+2026-10-03 15:26:47,227 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:26:47,304 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Israel%20Lebanon%20October%202026 200
+2026-10-03 15:26:47,424 [INFO] response: https://grokipedia.com/api/typeahead?query=Israel+Lebanon+October+2026&limit=1 200
+2026-10-03 15:26:47,692 [INFO] response: https://search.yahoo.com/search;_ylt=Etq780tjU--u7Aus9Ki6zbLn;_ylu=--G33EOh4-px2CLvg5wag1wu8oNoadZ665SeJKhNifmE9c8?p=Israel+Lebanon+October+2026&btf=w 200
+2026-10-03 15:26:48,092 [INFO] response: https://www.mojeek.com/search?q=Israel+Lebanon+October+2026 403
+2026-10-03 15:26:48,234 [INFO] response: https://search.brave.com/search?q=Israel+Lebanon+October+2026&source=web&tf=pw 429
+2026-10-03 15:26:48,680 [INFO] response: https://www.google.com/wml/search?q=Israel+Lebanon+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:26:48,861 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:26:48,951 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:26:49,061 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:26:49,084 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:26:49,086 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:26:50,635 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:26:50,636 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:26:50,638 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:26:50,638 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:26:50,852 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Israel 200
+2026-10-03 15:26:50,965 [INFO] response: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=Israel&explaintext=0&exintro=0&redirects=1 200
+2026-10-03 15:26:50,977 [INFO] response: https://grokipedia.com/api/typeahead?query=Israel&limit=1 200
+2026-10-03 15:26:51,079 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:26:51,244 [INFO] response: https://search.brave.com/search?q=Israel&source=web&tf=pd 429
+2026-10-03 15:26:51,528 [INFO] response: https://search.yahoo.com/search;_ylt=3YotnnFocrZnE37cvNYoKg1X;_ylu=Wz4RSFhuHtzUS5a8OvjIh3VGCgbTRl0txTtx4Pk9mJGglD0?p=Israel&btf=d 200
+2026-10-03 15:26:51,970 [INFO] response: https://www.mojeek.com/search?q=Israel 403
+2026-10-03 15:26:52,161 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:26:52,449 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=2d32e9095ecfb4c1710ff203ca4d428c&bds_t=1791041212Tbdc70f4e0b3747f25fef1ec5abaf1727faffeb2d44d4b3372cccfc702e88555b&bds_s=57deadb5dd3f4b57be2dcb92ccc20140&with_date=d&qadf=moderate&abp=1&t=device&language=english&sc=&lui=english&abd=0&abe=0&qsr=en_US&segment=organic&query=Israel&cat=web&cmd=gen_page 200
+2026-10-03 15:26:52,729 [INFO] response: https://www.google.com/wml/search?q=Israel&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:26:52,732 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:26:54,445 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:26:54,446 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:26:54,447 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:26:54,447 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:26:54,679 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20news 200
+2026-10-03 15:26:54,722 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+news&limit=1 200
+2026-10-03 15:26:55,273 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:26:55,539 [INFO] response: https://search.yahoo.com/search;_ylt=nf0lBlhCwbkAMoSTMhTkPFfS;_ylu=XqBNuj8l4yGnUXla4tBHzJfzF8K4kFbdWgpz4D3k08opbYs?p=site%3Aaljazeera.com+news&btf=d 200
+2026-10-03 15:26:55,839 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:26:56,033 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:26:56,137 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:26:56,561 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+news 403
+2026-10-03 15:26:57,279 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+news&source=web&tf=pd 429
+2026-10-03 15:26:57,299 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:26:57,377 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20news 200
+2026-10-03 15:26:57,463 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+news&limit=1 200
+2026-10-03 15:26:57,610 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+news&source=web&tf=pd 429
+2026-10-03 15:26:57,823 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:26:57,899 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:26:58,005 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:26:58,565 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:26:58,975 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+news 403
+2026-10-03 15:26:59,208 [INFO] response: https://search.yahoo.com/search;_ylt=PBplZjA5K6WkjNCAQS-WZx3G;_ylu=7nM49ExwD8vtVp1T-6WzE3gZthmlbwhNY3mPjTQKYdkUgGs?p=site%3Aaljazeera.com+news&btf=d 200
+2026-10-03 15:26:59,247 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:26:59,324 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20news 200
+2026-10-03 15:26:59,415 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+news&limit=1 200
+2026-10-03 15:26:59,563 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+news&source=web&tf=pw 429
+2026-10-03 15:26:59,986 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+news 403
+2026-10-03 15:27:00,092 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:27:00,299 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:27:00,393 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:27:00,724 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:27:00,992 [INFO] response: https://search.yahoo.com/search;_ylt=JzvlCTA111lMmHwwWQd7f2Fl;_ylu=GVDNUXROqWldWhlXBslIH2BckzsUvGlrrjgXfvWjKmLfWk4?p=site%3Aaljazeera.com+news&btf=w 200
+2026-10-03 15:27:00,994 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:27:00,996 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:27:26,740 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:27:26,743 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:27:26,744 [INFO] Validasi: 1x fetch_webpage sukses (minimum 3).
+2026-10-03 15:27:26,744 [INFO] URL yang berhasil di-fetch: set()
+2026-10-03 15:27:26,744 [WARNING] Laporan tidak valid: Hanya 0 URL yang benar-benar di-fetch, minimal 3
+2026-10-03 15:27:26,744 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-10-03 15:27:26,744 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-10-03 15:27:26,760 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:27:30,089 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:27:30,091 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:27:30,093 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:27:30,093 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:27:30,307 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20stock%20market%20crypto%20october%202026%20CNBC%20Al%20Jazeera%20BBC 200
+2026-10-03 15:27:30,359 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC&limit=1 200
+2026-10-03 15:27:30,558 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:27:30,632 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:27:31,046 [INFO] response: https://www.mojeek.com/search?q=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC 403
+2026-10-03 15:27:31,598 [INFO] response: https://www.google.com/wml/search?q=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:27:31,746 [INFO] response: https://search.brave.com/search?q=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC&source=web&tf=pd 429
+2026-10-03 15:27:31,994 [INFO] response: https://search.yahoo.com/search;_ylt=9p898oJPyx_Y1SK1jWLkT738;_ylu=6SDQD3J2hGzS-r7dh7u8UMouDqNZgTAXmSLcSqAkXoU76iw?p=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC&btf=d 200
+2026-10-03 15:27:32,170 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:27:32,193 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:27:32,272 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20stock%20market%20crypto%20october%202026%20CNBC%20Al%20Jazeera%20BBC 200
+2026-10-03 15:27:32,411 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC&limit=1 200
+2026-10-03 15:27:32,848 [INFO] response: https://www.mojeek.com/search?q=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC 403
+2026-10-03 15:27:32,947 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:27:33,240 [INFO] response: https://search.yahoo.com/search;_ylt=YPoJHdueFmg92lpG4U-Bf0Wz;_ylu=-jOMIjYEHQ8HTOw6TSbbWGdIwuyCV2Tk-fBkLdpuBQDvd1E?p=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC&btf=d 200
+2026-10-03 15:27:33,415 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:27:33,510 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:27:33,983 [INFO] response: https://www.google.com/wml/search?q=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:27:34,125 [INFO] response: https://search.brave.com/search?q=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC&source=web&tf=pd 429
+2026-10-03 15:27:34,144 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:27:34,223 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20stock%20market%20crypto%20october%202026%20CNBC%20Al%20Jazeera%20BBC 200
+2026-10-03 15:27:34,316 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC&limit=1 200
+2026-10-03 15:27:34,497 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:27:34,592 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:27:34,817 [INFO] response: https://search.yahoo.com/search;_ylt=hkcVziWRiGbNcIGUuTjYzmxi;_ylu=az5chlcf1BVEU1PREdc8yCH8v7d-hbII9_889TvOR4m9uBc?p=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC&btf=w 200
+2026-10-03 15:27:35,003 [INFO] response: https://search.brave.com/search?q=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC&source=web&tf=pw 429
+2026-10-03 15:27:35,559 [INFO] response: https://www.google.com/wml/search?q=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:27:35,974 [INFO] response: https://www.mojeek.com/search?q=geopolitics+stock+market+crypto+october+2026+CNBC+Al+Jazeera+BBC 403
+2026-10-03 15:27:36,075 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:27:36,097 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:27:36,099 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:27:37,705 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:27:37,706 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:27:37,708 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:27:37,708 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:27:37,934 [INFO] response: https://grokipedia.com/api/typeahead?query=world+stock+market+geopolitics+October+2026&limit=1 200
+2026-10-03 15:27:37,935 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=world%20stock%20market%20geopolitics%20October%202026 200
+2026-10-03 15:27:38,171 [INFO] response: https://search.yahoo.com/search;_ylt=LRQM79bKYPZWnOgwll1kjNTb;_ylu=eJSdZC4nNdOdkzekTi1B7PN7_hf1pFCwXwm2pJl5hWAo_bY?p=world+stock+market+geopolitics+October+2026&btf=d 200
+2026-10-03 15:27:38,341 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:27:38,567 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:27:38,664 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:27:39,185 [INFO] response: https://www.google.com/wml/search?q=world+stock+market+geopolitics+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:27:39,603 [INFO] response: https://www.mojeek.com/search?q=world+stock+market+geopolitics+October+2026 403
+2026-10-03 15:27:40,354 [INFO] response: https://search.brave.com/search?q=world+stock+market+geopolitics+October+2026&source=web&tf=pd 429
+2026-10-03 15:27:40,374 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:27:40,602 [INFO] response: https://grokipedia.com/api/typeahead?query=world+stock+market+geopolitics+October+2026&limit=1 200
+2026-10-03 15:27:40,603 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=world%20stock%20market%20geopolitics%20October%202026 200
+2026-10-03 15:27:40,744 [INFO] response: https://search.brave.com/search?q=world+stock+market+geopolitics+October+2026&source=web&tf=pd 429
+2026-10-03 15:27:40,999 [INFO] response: https://search.yahoo.com/search;_ylt=q0o9ifYaFuNHTtl54KX_BGS0;_ylu=P3W9n46HcK4tSygM_TGaIZHVXioJ23n24yckl2j-XZ9Rd2Q?p=world+stock+market+geopolitics+October+2026&btf=d 200
+2026-10-03 15:27:41,162 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:27:41,512 [INFO] response: https://www.google.com/wml/search?q=world+stock+market+geopolitics+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:27:41,693 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:27:41,784 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:27:42,210 [INFO] response: https://www.mojeek.com/search?q=world+stock+market+geopolitics+October+2026 403
+2026-10-03 15:27:42,211 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:27:42,289 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=world%20stock%20market%20geopolitics%20October%202026 200
+2026-10-03 15:27:42,431 [INFO] response: https://grokipedia.com/api/typeahead?query=world+stock+market+geopolitics+October+2026&limit=1 200
+2026-10-03 15:27:42,574 [INFO] response: https://search.brave.com/search?q=world+stock+market+geopolitics+October+2026&source=web&tf=pw 429
+2026-10-03 15:27:42,776 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:27:42,867 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:27:42,969 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:27:43,331 [INFO] response: https://www.google.com/wml/search?q=world+stock+market+geopolitics+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:27:43,729 [INFO] response: https://www.mojeek.com/search?q=world+stock+market+geopolitics+October+2026 403
+2026-10-03 15:27:43,995 [INFO] response: https://search.yahoo.com/search;_ylt=IQte6stJ4Lv_zmGwQGTE-_FE;_ylu=jXQLF0vJKFcuDJaeDQQRNeyBjnplh9KQkNWc_24HtJ_V8VE?p=world+stock+market+geopolitics+October+2026&btf=w 200
+2026-10-03 15:27:43,996 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:27:43,998 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:27:45,419 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:27:45,421 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:27:45,422 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:27:45,422 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:27:45,669 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+October+2026&limit=1 200
+2026-10-03 15:27:45,676 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20October%202026 200
+2026-10-03 15:27:46,190 [INFO] response: https://www.google.com/wml/search?q=stock+market+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:27:46,607 [INFO] response: https://www.mojeek.com/search?q=stock+market+October+2026 403
+2026-10-03 15:27:46,710 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:27:46,984 [INFO] response: https://search.yahoo.com/search;_ylt=zekvTcr3uny1NAZgV7c2RWbB;_ylu=npNwMRj2WG6UvVI9L1xyPsBYQhm6ldVkTanbc1D7Jtq3IQo?p=stock+market+October+2026&btf=d 200
+2026-10-03 15:27:47,203 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:27:47,302 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:27:47,548 [INFO] response: https://search.brave.com/search?q=stock+market+October+2026&source=web&tf=pd 429
+2026-10-03 15:27:47,567 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:27:47,727 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+October+2026&limit=1 200
+2026-10-03 15:27:47,788 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20October%202026 200
+2026-10-03 15:27:48,058 [INFO] response: https://search.yahoo.com/search;_ylt=p54rj73bMU09rGDK1Ng_WcbQ;_ylu=4daYgwUGEb02fvYmPrPEQzrr4aq6kJpk0iQvi2-B4XWEqhw?p=stock+market+October+2026&btf=d 200
+2026-10-03 15:27:48,583 [INFO] response: https://www.google.com/wml/search?q=stock+market+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:27:48,763 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:27:48,855 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:27:48,955 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:27:49,127 [INFO] response: https://search.brave.com/search?q=stock+market+October+2026&source=web&tf=pd 429
+2026-10-03 15:27:49,565 [INFO] response: https://www.mojeek.com/search?q=stock+market+October+2026 403
+2026-10-03 15:27:49,565 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:27:49,643 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20October%202026 200
+2026-10-03 15:27:49,753 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+October+2026&limit=1 200
+2026-10-03 15:27:50,227 [INFO] response: https://www.mojeek.com/search?q=stock+market+October+2026 403
+2026-10-03 15:27:50,374 [INFO] response: https://search.brave.com/search?q=stock+market+October+2026&source=web&tf=pw 429
+2026-10-03 15:27:50,606 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:27:50,774 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:27:51,038 [INFO] response: https://search.yahoo.com/search;_ylt=-z9WFU74o2fhT7atWGFvICXW;_ylu=Nc0Os9QGbMoi4VC2y3Nz_C6QaVt9DDBCWcnRA_0T2HhnwS4?p=stock+market+October+2026&btf=w 200
+2026-10-03 15:27:51,204 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:27:51,588 [INFO] response: https://www.google.com/wml/search?q=stock+market+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:27:51,589 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:27:51,591 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:27:53,196 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:27:53,198 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:27:53,199 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:27:53,199 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:27:53,400 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+stock+market+oil+prices&limit=1 200
+2026-10-03 15:27:53,412 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20stock%20market%20oil%20prices 200
+2026-10-03 15:27:53,765 [INFO] response: https://www.google.com/wml/search?q=Middle+East+stock+market+oil+prices&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:27:53,912 [INFO] response: https://search.brave.com/search?q=Middle+East+stock+market+oil+prices&source=web&tf=pd 429
+2026-10-03 15:27:54,207 [INFO] response: https://search.yahoo.com/search;_ylt=vXTJJ0D0DrE5LAt98sA0jJhV;_ylu=QqaXIdSZyrygJaRtg_NByc1Tro3Kq-QF4r27BWG9JFpe92I?p=Middle+East+stock+market+oil+prices&btf=d 200
+2026-10-03 15:27:54,499 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:27:54,573 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:27:54,676 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:27:55,149 [INFO] response: https://www.mojeek.com/search?q=Middle+East+stock+market+oil+prices 403
+2026-10-03 15:27:55,149 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:27:55,380 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20stock%20market%20oil%20prices 200
+2026-10-03 15:27:55,506 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+stock+market+oil+prices&limit=1 200
+2026-10-03 15:27:55,967 [INFO] response: https://www.google.com/wml/search?q=Middle+East+stock+market+oil+prices&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:27:56,149 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:27:56,246 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:27:56,680 [INFO] response: https://www.mojeek.com/search?q=Middle+East+stock+market+oil+prices 403
+2026-10-03 15:27:56,824 [INFO] response: https://search.brave.com/search?q=Middle+East+stock+market+oil+prices&source=web&tf=pd 429
+2026-10-03 15:27:56,944 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:27:57,241 [INFO] response: https://search.yahoo.com/search;_ylt=m8LE7rLAzpAgDrKMOa-leigf;_ylu=uCsmmn4phhFLiqzEWJEwGxFcuSi2rw0vALMZPjDw6N6T96k?p=Middle+East+stock+market+oil+prices&btf=d 200
+2026-10-03 15:27:57,243 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:27:57,320 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20stock%20market%20oil%20prices 200
+2026-10-03 15:27:57,429 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+stock+market+oil+prices&limit=1 200
+2026-10-03 15:27:57,559 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:27:57,726 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:27:57,805 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:27:58,141 [INFO] response: https://www.google.com/wml/search?q=Middle+East+stock+market+oil+prices&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:27:58,412 [INFO] response: https://search.yahoo.com/search;_ylt=AxVdWbL5qjSD9oJ38AwHvUNJ;_ylu=Ykh3TwWf4xcWZEKLjjyuYcya0RnBgueZeUnzY3AplHt6u84?p=Middle+East+stock+market+oil+prices&btf=w 200
+2026-10-03 15:27:58,826 [INFO] response: https://www.mojeek.com/search?q=Middle+East+stock+market+oil+prices 403
+2026-10-03 15:27:58,970 [INFO] response: https://search.brave.com/search?q=Middle+East+stock+market+oil+prices&source=web&tf=pw 429
+2026-10-03 15:27:58,989 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:27:58,991 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:28:00,630 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:28:00,631 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:28:00,633 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:28:00,633 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:28:00,842 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=oil%20price%20October%202026 200
+2026-10-03 15:28:00,845 [INFO] response: https://grokipedia.com/api/typeahead?query=oil+price+October+2026&limit=1 200
+2026-10-03 15:28:00,995 [INFO] response: https://search.brave.com/search?q=oil+price+October+2026&source=web&tf=pd 429
+2026-10-03 15:28:01,130 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:01,451 [INFO] response: https://www.google.com/wml/search?q=oil+price+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:28:01,722 [INFO] response: https://search.yahoo.com/search;_ylt=Gs4y04pTYyf4eRo1u3GssRXL;_ylu=MfnnnSOwSPqhqHqgwEcnM8irQm7phWaLn8P9EmOB7JTeMHo?p=oil+price+October+2026&btf=d 200
+2026-10-03 15:28:02,149 [INFO] response: https://www.mojeek.com/search?q=oil+price+October+2026 403
+2026-10-03 15:28:02,339 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:02,504 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:02,505 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:28:02,584 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=oil%20price%20October%202026 200
+2026-10-03 15:28:02,724 [INFO] response: https://grokipedia.com/api/typeahead?query=oil+price+October+2026&limit=1 200
+2026-10-03 15:28:02,961 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:03,289 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=2d32e9095ecfb4c1710ff203ca4d428c&bds_t=1791041283T0a7de67f0cc4b6325ad463647db9921bc241f3ba639c9005b7940a506870aad6&bds_s=afaeaf4c36da42b7989ce8eacb15efff&segment=organic&qadf=moderate&qsr=en_US&with_date=d&sc=&abe=0&abp=1&language=english&t=device&lui=english&abd=0&query=oil+price+October+2026&cat=web&cmd=gen_page 200
+2026-10-03 15:28:03,566 [INFO] response: https://search.yahoo.com/search;_ylt=TfxFd35O2Bs6uGiebFRstTMs;_ylu=k1P3D0bMCtBbTdP48L2wRDiemea5IJsH6DZgEIf8ntghFoA?p=oil+price+October+2026&btf=d 200
+2026-10-03 15:28:03,705 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:04,150 [INFO] response: https://www.mojeek.com/search?q=oil+price+October+2026 403
+2026-10-03 15:28:04,711 [INFO] response: https://www.google.com/wml/search?q=oil+price+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:28:04,855 [INFO] response: https://search.brave.com/search?q=oil+price+October+2026&source=web&tf=pd 429
+2026-10-03 15:28:04,875 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:28:04,953 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=oil%20price%20October%202026 200
+2026-10-03 15:28:05,083 [INFO] response: https://grokipedia.com/api/typeahead?query=oil+price+October+2026&limit=1 200
+2026-10-03 15:28:05,213 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:05,406 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:05,510 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:05,921 [INFO] response: https://www.mojeek.com/search?q=oil+price+October+2026 403
+2026-10-03 15:28:06,231 [INFO] response: https://search.yahoo.com/search;_ylt=WJetHoWP6qNNnUtc_ler5gV6;_ylu=k06oCkK6-V67T71q4xm7OlO9_TQtGDxDzuqgpCsoTSy5O5w?p=oil+price+October+2026&btf=w 200
+2026-10-03 15:28:06,380 [INFO] response: https://search.brave.com/search?q=oil+price+October+2026&source=web&tf=pw 429
+2026-10-03 15:28:06,960 [INFO] response: https://www.google.com/wml/search?q=oil+price+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:28:06,961 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:28:06,962 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:28:08,470 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:28:08,471 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:28:08,473 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:28:08,473 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:28:08,693 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+conflict+oil+prices+stock+market&limit=1 200
+2026-10-03 15:28:08,697 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20conflict%20oil%20prices%20stock%20market 200
+2026-10-03 15:28:08,841 [INFO] response: https://search.brave.com/search?q=Middle+East+conflict+oil+prices+stock+market&source=web&tf=pd 429
+2026-10-03 15:28:09,044 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:09,116 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:09,220 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:09,799 [INFO] response: https://www.google.com/wml/search?q=Middle+East+conflict+oil+prices+stock+market&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:28:10,028 [INFO] response: https://search.yahoo.com/search;_ylt=RfIue-CEThCA90fN8wOWtr7t;_ylu=L_sw2W1tQZZdUxpDWpcWjEkZ5M6EiMSZddS3nT_5dEOsbqc?p=Middle+East+conflict+oil+prices+stock+market&btf=d 200
+2026-10-03 15:28:10,475 [INFO] response: https://www.mojeek.com/search?q=Middle+East+conflict+oil+prices+stock+market 403
+2026-10-03 15:28:10,476 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:28:10,553 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20conflict%20oil%20prices%20stock%20market 200
+2026-10-03 15:28:10,737 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+conflict+oil+prices+stock+market&limit=1 200
+2026-10-03 15:28:10,862 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:11,038 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:11,135 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:11,415 [INFO] response: https://www.google.com/wml/search?q=Middle+East+conflict+oil+prices+stock+market&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:28:11,687 [INFO] response: https://search.yahoo.com/search;_ylt=X2Mdk57nvP6sVVD5uHYnAsLP;_ylu=_18YjVgB_L7wKS4AbfxWfSUki3XHR9OdReiPVEHKDHvglqw?p=Middle+East+conflict+oil+prices+stock+market&btf=d 200
+2026-10-03 15:28:12,107 [INFO] response: https://www.mojeek.com/search?q=Middle+East+conflict+oil+prices+stock+market 403
+2026-10-03 15:28:12,254 [INFO] response: https://search.brave.com/search?q=Middle+East+conflict+oil+prices+stock+market&source=web&tf=pd 429
+2026-10-03 15:28:12,274 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:28:12,513 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20conflict%20oil%20prices%20stock%20market 200
+2026-10-03 15:28:12,525 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+conflict+oil+prices+stock+market&limit=1 200
+2026-10-03 15:28:12,666 [INFO] response: https://search.brave.com/search?q=Middle+East+conflict+oil+prices+stock+market&source=web&tf=pw 429
+2026-10-03 15:28:12,911 [INFO] response: https://search.yahoo.com/search;_ylt=vbOuRIl2iOsZNeCayN0xBTx8;_ylu=HJiewAfJcMdpw_0JPKOQf5nB25vqz__NOY9hbZC-dQQP-kk?p=Middle+East+conflict+oil+prices+stock+market&btf=w 200
+2026-10-03 15:28:13,162 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:13,905 [INFO] response: https://www.mojeek.com/search?q=Middle+East+conflict+oil+prices+stock+market 403
+2026-10-03 15:28:14,277 [INFO] response: https://www.google.com/wml/search?q=Middle+East+conflict+oil+prices+stock+market&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:28:14,563 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:14,638 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:14,639 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:28:14,641 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:28:16,402 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:28:16,403 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:28:16,405 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:28:16,405 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:28:16,575 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+CNBC&limit=1 200
+2026-10-03 15:28:16,797 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20CNBC 200
+2026-10-03 15:28:16,917 [INFO] response: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=Stock%20market%20cycle&explaintext=0&exintro=0&redirects=1 200
+2026-10-03 15:28:17,199 [INFO] response: https://www.google.com/wml/search?q=stock+market+CNBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:28:17,464 [INFO] response: https://search.yahoo.com/search;_ylt=aUjm1ehzw6mpOr4LW57vuir2;_ylu=4H383myjuIywqQUNrH-yeFpI-4S3odyQTizRRoUPZgVlr4Q?p=stock+market+CNBC&btf=d 200
+2026-10-03 15:28:17,593 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:17,878 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:17,979 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:18,173 [INFO] response: https://search.brave.com/search?q=stock+market+CNBC&source=web&tf=pd 429
+2026-10-03 15:28:18,637 [INFO] response: https://www.mojeek.com/search?q=stock+market+CNBC 403
+2026-10-03 15:28:18,640 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:28:19,794 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:28:19,795 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:28:19,797 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:28:19,797 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:28:20,003 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+stock+market&limit=1 200
+2026-10-03 15:28:20,005 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20stock%20market 200
+2026-10-03 15:28:20,222 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:20,318 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:20,421 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:20,675 [INFO] response: https://search.yahoo.com/search;_ylt=qVSEIhJQo3XlrJA2hOtINl-n;_ylu=u9A-eNdk-ZaFoQarPViOOxJlV_sST-AvGT0xDLykQcpfSkw?p=site%3Acnbc.com+stock+market&btf=d 200
+2026-10-03 15:28:21,173 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+stock+market 403
+2026-10-03 15:28:21,638 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+stock+market&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:28:21,784 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+stock+market&source=web&tf=pd 429
+2026-10-03 15:28:21,804 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:28:21,930 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+stock+market&limit=1 200
+2026-10-03 15:28:22,036 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20stock%20market 200
+2026-10-03 15:28:22,493 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+stock+market 403
+2026-10-03 15:28:22,917 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+stock+market&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:28:23,093 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+stock+market&source=web&tf=pd 429
+2026-10-03 15:28:23,382 [INFO] response: https://search.yahoo.com/search;_ylt=JqtzyigYaSW7Ge0bvL4bkHVl;_ylu=pV3soedsGV8S14zNJftFj0AnmDrOoLllfYo0UcgvxVx7WOw?p=site%3Acnbc.com+stock+market&btf=d 200
+2026-10-03 15:28:23,597 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:23,695 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:23,815 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:23,838 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:28:23,916 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20stock%20market 200
+2026-10-03 15:28:23,962 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+stock+market&limit=1 200
+2026-10-03 15:28:24,365 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+stock+market 403
+2026-10-03 15:28:24,508 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+stock+market&source=web&tf=pw 429
+2026-10-03 15:28:24,655 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:24,925 [INFO] response: https://search.yahoo.com/search;_ylt=OQfJHWQFFUfPTg_V2aEYydUk;_ylu=8bfAyIqTrTjhi7x5cFW7XoLGvDR712uXUCn3f-oBOBXM358?p=site%3Acnbc.com+stock+market&btf=w 200
+2026-10-03 15:28:25,323 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+stock+market&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:28:25,504 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:25,590 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:25,591 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:28:25,593 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:28:27,153 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:28:27,154 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:28:27,156 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:28:27,156 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:28:27,295 [INFO] response: https://grokipedia.com/api/typeahead?query=oil+price&limit=1 200
+2026-10-03 15:28:27,357 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=oil%20price 200
+2026-10-03 15:28:27,658 [INFO] response: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=Oil%20price&explaintext=0&exintro=0&redirects=1 200
+2026-10-03 15:28:27,803 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:28,260 [INFO] response: https://www.google.com/wml/search?q=oil+price&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:28:28,471 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:28,632 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:28,778 [INFO] response: https://search.brave.com/search?q=oil+price&source=web&tf=pd 429
+2026-10-03 15:28:29,210 [INFO] response: https://www.mojeek.com/search?q=oil+price 403
+2026-10-03 15:28:29,438 [INFO] response: https://search.yahoo.com/search;_ylt=fK0mD8htOeazGUKbyCkAqNHA;_ylu=XnvbE03OkmBBr1GzhV_r_d0PcGGYMSMilY67HQ8Qk5EAk_g?p=oil+price&btf=d 200
+2026-10-03 15:28:29,479 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:28:30,922 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:28:30,924 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:28:30,925 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:28:30,925 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:28:31,004 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets 200
+2026-10-03 15:28:31,263 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets&limit=1 200
+2026-10-03 15:28:31,606 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:28:31,747 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets&source=web&tf=pd 429
+2026-10-03 15:28:31,986 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:32,065 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:32,488 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets 403
+2026-10-03 15:28:32,613 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:32,910 [INFO] response: https://search.yahoo.com/search;_ylt=a9ZMPK22Lqc5IFkPO6pQJKrf;_ylu=OJpoo4PYTpMDKcfEDNhquh6n9w421GrvA0OlTIl0wcPP3jg?p=site%3Acnbc.com+markets&btf=d 200
+2026-10-03 15:28:32,948 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:28:33,027 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets 200
+2026-10-03 15:28:33,154 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets&limit=1 200
+2026-10-03 15:28:33,303 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets&source=web&tf=pd 429
+2026-10-03 15:28:33,496 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:33,588 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:33,858 [INFO] response: https://search.yahoo.com/search;_ylt=uqU01yfTkfURg2wgh3XphWGh;_ylu=CWwgIkLHXxladWWAlElQYmLOV3_6MDLPb7mfH3nR3-MqI8U?p=site%3Acnbc.com+markets&btf=d 200
+2026-10-03 15:28:33,964 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:34,477 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:28:34,889 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets 403
+2026-10-03 15:28:34,890 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:28:34,968 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets 200
+2026-10-03 15:28:35,100 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets&limit=1 200
+2026-10-03 15:28:35,246 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets&source=web&tf=pw 429
+2026-10-03 15:28:35,532 [INFO] response: https://search.yahoo.com/search;_ylt=P2b1ZXQbhCc-1mxqJYhxB3t-;_ylu=RS-gmoVOilRcmKpLBd6zuiBzcfyhdBVFxrAmE2PqGBRTq6U?p=site%3Acnbc.com+markets&btf=w 200
+2026-10-03 15:28:35,957 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets 403
+2026-10-03 15:28:36,059 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:36,619 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:28:36,804 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:36,973 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:36,974 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:28:36,976 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:28:38,015 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:28:38,016 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:28:38,018 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:28:38,018 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:28:38,225 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20news 200
+2026-10-03 15:28:38,272 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+news&limit=1 200
+2026-10-03 15:28:38,417 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+news&source=web&tf=pd 429
+2026-10-03 15:28:38,856 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+news 403
+2026-10-03 15:28:39,050 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:39,142 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:39,253 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:39,614 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:28:39,843 [INFO] response: https://search.yahoo.com/search;_ylt=WC0Tv5BZhCdG2HoTehixPwhN;_ylu=ozBzChe_QKalmtzepp9l2wFCn9ACQA3Mh0aofTWoUz_3M0Q?p=site%3Aaljazeera.com+news&btf=d 200
+2026-10-03 15:28:39,882 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:28:39,961 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20news 200
+2026-10-03 15:28:40,039 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+news&limit=1 200
+2026-10-03 15:28:40,189 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+news&source=web&tf=pd 429
+2026-10-03 15:28:40,450 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:40,522 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:40,818 [INFO] response: https://search.yahoo.com/search;_ylt=PZhIhpeXXbwZNx-GilHw0Wcw;_ylu=eZmzaiByVhh7323FccNp7XxEt8NPtTI7mWIp9wOzz3QjJkU?p=site%3Aaljazeera.com+news&btf=d 200
+2026-10-03 15:28:41,242 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+news 403
+2026-10-03 15:28:41,780 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:28:41,912 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:41,934 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:28:42,013 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20news 200
+2026-10-03 15:28:42,089 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+news&limit=1 200
+2026-10-03 15:28:42,413 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:28:42,585 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:28:42,665 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:28:42,772 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:28:43,203 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+news 403
+2026-10-03 15:28:43,352 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+news&source=web&tf=pw 429
+2026-10-03 15:28:43,644 [INFO] response: https://search.yahoo.com/search;_ylt=ugElQNxZCplv4-Wt6GIJ6hQz;_ylu=z2Ca0Z7fTDicPlC40Ntp7bvpdaLeP_fuLCtBi4nthHhzOB0?p=site%3Aaljazeera.com+news&btf=w 200
+2026-10-03 15:28:43,646 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:28:43,647 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:28:43,858 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-03 15:28:43,858 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.5-flash\nPlease retry in 16.160557351s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}]
+2026-10-03 15:28:43,859 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-03 15:28:43,859 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-03 15:28:43,859 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-03 15:29:01,159 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:29:01,160 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-03 15:29:01,164 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:29:01,355 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-03 15:29:01,356 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.5-flash\nPlease retry in 58.66202458s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '58s'}]}}]
+2026-10-03 15:29:01,356 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-03 15:29:01,356 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-03 15:29:01,356 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-03 15:29:05,132 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:29:05,132 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-03 15:29:05,136 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:29:06,662 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:29:06,664 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:29:06,665 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:29:06,666 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:29:06,886 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East&limit=1 200
+2026-10-03 15:29:07,002 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East 200
+2026-10-03 15:29:07,127 [INFO] response: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=Middle%20East&explaintext=0&exintro=0&redirects=1 200
+2026-10-03 15:29:07,587 [INFO] response: https://www.google.com/wml/search?q=Middle+East&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:29:07,983 [INFO] response: https://search.yahoo.com/search;_ylt=4z7Vi3UzrbjjJO2963jBEZxl;_ylu=AxYaHqSyxGrhGCyDfPkNKfjIMxMuTDB806cbhelwjv0Pj5o?p=Middle+East&btf=d 200
+2026-10-03 15:29:08,188 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:29:08,348 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:29:08,476 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:29:08,884 [INFO] response: https://www.mojeek.com/search?q=Middle+East 403
+2026-10-03 15:29:09,078 [INFO] response: https://search.brave.com/search?q=Middle+East&source=web&tf=pd 429
+2026-10-03 15:29:09,101 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:29:10,528 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:29:10,529 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:29:10,531 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:29:10,531 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:29:10,727 [INFO] response: https://grokipedia.com/api/typeahead?query=Lebanon+site%3Abbc.com&limit=1 200
+2026-10-03 15:29:10,760 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Lebanon%20site%3Abbc.com 200
+2026-10-03 15:29:11,068 [INFO] response: https://www.google.com/wml/search?q=Lebanon+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:29:11,266 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:29:11,346 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:29:11,769 [INFO] response: https://www.mojeek.com/search?q=Lebanon+site%3Abbc.com 403
+2026-10-03 15:29:11,919 [INFO] response: https://search.brave.com/search?q=Lebanon+site%3Abbc.com&source=web&tf=pd 429
+2026-10-03 15:29:12,209 [INFO] response: https://search.yahoo.com/search;_ylt=AIklJE4hL0XrgvG9QkR9-3NC;_ylu=kLTDobqD6wz5QY-1Sof1OgklU4Z5Uyg9fGS8qG09-9_hWnM?p=Lebanon+site%3Abbc.com&btf=d 200
+2026-10-03 15:29:12,313 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:29:12,335 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:29:12,567 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Lebanon%20site%3Abbc.com 200
+2026-10-03 15:29:12,669 [INFO] response: https://grokipedia.com/api/typeahead?query=Lebanon+site%3Abbc.com&limit=1 200
+2026-10-03 15:29:12,941 [INFO] response: https://search.yahoo.com/search;_ylt=amYYdUmL35M-RgufU7U5q9_S;_ylu=EG14J_TEDMsqpe0oiydVrCDrF4YduXP9sY3S78Japtt9wBc?p=Lebanon+site%3Abbc.com&btf=d 200
+2026-10-03 15:29:13,355 [INFO] response: https://www.mojeek.com/search?q=Lebanon+site%3Abbc.com 403
+2026-10-03 15:29:13,498 [INFO] response: https://search.brave.com/search?q=Lebanon+site%3Abbc.com&source=web&tf=pd 429
+2026-10-03 15:29:13,620 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:29:13,822 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:29:13,890 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:29:14,265 [INFO] response: https://www.google.com/wml/search?q=Lebanon+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:29:14,265 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:29:14,343 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Lebanon%20site%3Abbc.com 200
+2026-10-03 15:29:14,451 [INFO] response: https://grokipedia.com/api/typeahead?query=Lebanon+site%3Abbc.com&limit=1 200
+2026-10-03 15:29:14,634 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:29:14,734 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:29:14,879 [INFO] response: https://search.brave.com/search?q=Lebanon+site%3Abbc.com&source=web&tf=pw 429
+2026-10-03 15:29:15,337 [INFO] response: https://www.mojeek.com/search?q=Lebanon+site%3Abbc.com 403
+2026-10-03 15:29:15,609 [INFO] response: https://search.yahoo.com/search;_ylt=ClSdY4PrTI40SB3CfGnipmQ8;_ylu=MHX-Q39mF7tlck6jAOOVgXDiotSa75ir3hj3Ny0eEUk-qPQ?p=Lebanon+site%3Abbc.com&btf=w 200
+2026-10-03 15:29:16,018 [INFO] response: https://www.google.com/wml/search?q=Lebanon+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:29:16,127 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:29:16,150 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:29:16,152 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:29:17,272 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:29:17,273 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:29:17,275 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:29:17,275 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:29:17,509 [INFO] response: https://grokipedia.com/api/typeahead?query=Israel+site%3Abbc.com&limit=1 200
+2026-10-03 15:29:17,531 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Israel%20site%3Abbc.com 200
+2026-10-03 15:29:17,722 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:29:17,825 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:29:18,364 [INFO] response: https://www.google.com/wml/search?q=Israel+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:29:18,515 [INFO] response: https://search.brave.com/search?q=Israel+site%3Abbc.com&source=web&tf=pd 429
+2026-10-03 15:29:18,945 [INFO] response: https://www.mojeek.com/search?q=Israel+site%3Abbc.com 403
+2026-10-03 15:29:19,211 [INFO] response: https://search.yahoo.com/search;_ylt=KvwudtmXCrMnLGSRYRVJDtKm;_ylu=LkFFTYStESCVqzUOzbRm2NuwOW-KWF6T4koh3qBUH-iweqM?p=Israel+site%3Abbc.com&btf=d 200
+2026-10-03 15:29:19,318 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:29:19,341 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:29:19,543 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Israel%20site%3Abbc.com 200
+2026-10-03 15:29:19,557 [INFO] response: https://grokipedia.com/api/typeahead?query=Israel+site%3Abbc.com&limit=1 200
+2026-10-03 15:29:19,860 [INFO] response: https://www.google.com/wml/search?q=Israel+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:29:19,961 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:29:20,413 [INFO] response: https://www.mojeek.com/search?q=Israel+site%3Abbc.com 403
+2026-10-03 15:29:20,555 [INFO] response: https://search.brave.com/search?q=Israel+site%3Abbc.com&source=web&tf=pd 429
+2026-10-03 15:29:20,804 [INFO] response: https://search.yahoo.com/search;_ylt=qWoo0ftCWRDp0k6UZr4HF7K6;_ylu=jUblEaFfco8xAUmlJkIvx3KMLQfxyDJ44S0-h5Ofg0UFP2A?p=Israel+site%3Abbc.com&btf=d 200
+2026-10-03 15:29:21,023 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:29:21,096 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:29:21,097 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:29:21,175 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Israel%20site%3Abbc.com 200
+2026-10-03 15:29:21,303 [INFO] response: https://grokipedia.com/api/typeahead?query=Israel+site%3Abbc.com&limit=1 200
+2026-10-03 15:29:21,432 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:29:21,700 [INFO] response: https://search.yahoo.com/search;_ylt=cOaMPMGhydglyPAs-Y9NJPNv;_ylu=zuMKWGqBut4yTv4o6KKAaJY8kAW5xvl6Gyk_vFor-cqAKp8?p=Israel+site%3Abbc.com&btf=w 200
+2026-10-03 15:29:22,126 [INFO] response: https://www.google.com/wml/search?q=Israel+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:29:22,277 [INFO] response: https://search.brave.com/search?q=Israel+site%3Abbc.com&source=web&tf=pw 429
+2026-10-03 15:29:22,710 [INFO] response: https://www.mojeek.com/search?q=Israel+site%3Abbc.com 403
+2026-10-03 15:29:22,895 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:29:22,979 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:29:22,980 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:29:22,982 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:29:24,074 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:29:24,075 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:29:24,076 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:29:24,077 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:29:24,290 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Iran%20Israel%20site%3Abbc.co.uk 200
+2026-10-03 15:29:24,301 [INFO] response: https://grokipedia.com/api/typeahead?query=Iran+Israel+site%3Abbc.co.uk&limit=1 200
+2026-10-03 15:29:24,411 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:29:24,628 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:29:24,722 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:29:24,996 [INFO] response: https://search.yahoo.com/search;_ylt=ZQxCMrAH9ztxRmlK2yunc_v9;_ylu=MUovSMBq14LU5QK3wfnHHnVNiE7CbmASmSwnVZkAyi2hliY?p=Iran+Israel+site%3Abbc.co.uk&btf=d 200
+2026-10-03 15:29:25,140 [INFO] response: https://search.brave.com/search?q=Iran+Israel+site%3Abbc.co.uk&source=web&tf=pd 429
+2026-10-03 15:29:25,482 [INFO] response: https://www.google.com/wml/search?q=Iran+Israel+site%3Abbc.co.uk&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:29:25,894 [INFO] response: https://www.mojeek.com/search?q=Iran+Israel+site%3Abbc.co.uk 403
+2026-10-03 15:29:25,895 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:29:25,973 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Iran%20Israel%20site%3Abbc.co.uk 200
+2026-10-03 15:29:26,127 [INFO] response: https://grokipedia.com/api/typeahead?query=Iran+Israel+site%3Abbc.co.uk&limit=1 200
+2026-10-03 15:29:26,318 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:29:26,441 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:29:26,548 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:29:26,717 [INFO] response: https://search.brave.com/search?q=Iran+Israel+site%3Abbc.co.uk&source=web&tf=pd 429
+2026-10-03 15:29:27,162 [INFO] response: https://www.google.com/wml/search?q=Iran+Israel+site%3Abbc.co.uk&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:29:27,586 [INFO] response: https://www.mojeek.com/search?q=Iran+Israel+site%3Abbc.co.uk 403
+2026-10-03 15:29:27,864 [INFO] response: https://search.yahoo.com/search;_ylt=13sUpqvTthl19oJqPg_VdPfG;_ylu=Tnz82kMyAfiHiYlVVxlNM1erYGxRVoVD_2bQ9rH0XqcaDeU?p=Iran+Israel+site%3Abbc.co.uk&btf=d 200
+2026-10-03 15:29:27,866 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:29:28,072 [INFO] response: https://grokipedia.com/api/typeahead?query=Iran+Israel+site%3Abbc.co.uk&limit=1 200
+2026-10-03 15:29:28,080 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Iran%20Israel%20site%3Abbc.co.uk 200
+2026-10-03 15:29:28,233 [INFO] response: https://search.brave.com/search?q=Iran+Israel+site%3Abbc.co.uk&source=web&tf=pw 429
+2026-10-03 15:29:28,362 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:29:28,832 [INFO] response: https://www.google.com/wml/search?q=Iran+Israel+site%3Abbc.co.uk&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:29:29,232 [INFO] response: https://www.mojeek.com/search?q=Iran+Israel+site%3Abbc.co.uk 403
+2026-10-03 15:29:29,419 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:29:29,492 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:29:29,760 [INFO] response: https://search.yahoo.com/search;_ylt=_haOi33IQ_F44olXWX7_Jlho;_ylu=gpBKB7Ac8zu5r_6IS_f0WfvXQMs1Cr1kMb1-FsPnabrlUfs?p=Iran+Israel+site%3Abbc.co.uk&btf=w 200
+2026-10-03 15:29:29,762 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 15:29:29,764 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:29:30,830 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:29:30,831 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 15:29:30,833 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 15:29:30,833 [WARNING] backend is not set. Using 'auto'
+2026-10-03 15:29:31,032 [INFO] response: https://grokipedia.com/api/typeahead?query=Iran+Israel+site%3Areuters.com&limit=1 200
+2026-10-03 15:29:31,040 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Iran%20Israel%20site%3Areuters.com 200
+2026-10-03 15:29:31,520 [INFO] response: https://www.google.com/wml/search?q=Iran+Israel+site%3Areuters.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:29:31,796 [INFO] response: https://search.yahoo.com/search;_ylt=0eUR8CyjnScDL6qsV0XK0Ep5;_ylu=A20cC6Fq1xHeIRKYXu6oSmowFVnBqRlmc0Sqw66mtUTxOmg?p=Iran+Israel+site%3Areuters.com&btf=d 200
+2026-10-03 15:29:32,341 [INFO] response: https://www.mojeek.com/search?q=Iran+Israel+site%3Areuters.com 403
+2026-10-03 15:29:32,488 [INFO] response: https://search.brave.com/search?q=Iran+Israel+site%3Areuters.com&source=web&tf=pd 429
+2026-10-03 15:29:32,686 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:29:32,765 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:29:32,876 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:29:32,899 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 15:29:32,977 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Iran%20Israel%20site%3Areuters.com 200
+2026-10-03 15:29:33,091 [INFO] response: https://grokipedia.com/api/typeahead?query=Iran+Israel+site%3Areuters.com&limit=1 200
+2026-10-03 15:29:33,198 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 15:29:33,629 [INFO] response: https://www.mojeek.com/search?q=Iran+Israel+site%3Areuters.com 403
+2026-10-03 15:29:33,820 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:29:33,913 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:29:34,138 [INFO] response: https://search.yahoo.com/search;_ylt=8o1NPXBzFKrV6DgeXjNHMKZJ;_ylu=w126jCjIdHj59sihV8oSqHl3qtIJUBHV_Ck7XdDUIGp63zA?p=Iran+Israel+site%3Areuters.com&btf=d 200
+2026-10-03 15:29:34,521 [INFO] response: https://www.google.com/wml/search?q=Iran+Israel+site%3Areuters.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 15:29:34,713 [INFO] response: https://search.brave.com/search?q=Iran+Israel+site%3Areuters.com&source=web&tf=pd 429
+2026-10-03 15:29:34,735 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 15:29:34,817 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Iran%20Israel%20site%3Areuters.com 200
+2026-10-03 15:29:34,922 [INFO] response: https://grokipedia.com/api/typeahead?query=Iran+Israel+site%3Areuters.com&limit=1 200
+2026-10-03 15:29:35,121 [INFO] response: https://search.brave.com/search?q=Iran+Israel+site%3Areuters.com&source=web&tf=pw 429
+2026-10-03 15:29:35,565 [INFO] response: https://www.mojeek.com/search?q=Iran+Israel+site%3Areuters.com 403
+2026-10-03 15:29:35,833 [INFO] response: https://search.yahoo.com/search;_ylt=pBfW1qsxGqyLHQhOHIzfp-yZ;_ylu=kRe2Hpjb0tHEK2M3-lSinz_cH5lgVEAQGVx-M-kd7wWAUyk?p=Iran+Israel+site%3Areuters.com&btf=w 200
+2026-10-03 15:29:35,960 [WARNING] h2 connection driver error: connection reset
+2026-10-03 15:29:35,960 [INFO] Error in engine duckduckgo: DDGSException("RequestError: RequestError('error sending request for url (https://html.duckduckgo.com/html/) > connection reset')")
+2026-10-03 15:29:36,162 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 15:29:36,272 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 15:29:36,645 [INFO] response: https://www.google.com/wml/search?q=Iran+Israel+site%3Areuters.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 15:29:36,646 [WARNING] Percobaan 3 gagal: RequestError: RequestError('error sending request for url (https://html.duckduckgo.com/html/) > connection reset')
+2026-10-03 15:29:36,648 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 15:29:36,836 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-03 15:29:36,837 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.5-flash\nPlease retry in 8h30m23.182106014s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30623s'}]}}]
+2026-10-03 15:29:36,837 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-03 15:29:36,837 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-03 15:29:36,837 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-03 15:29:39,946 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 15:29:39,946 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-03 15:29:39,947 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-10-03 15:29:39,947 [INFO] URL yang berhasil di-fetch: set()
+2026-10-03 15:29:39,947 [WARNING] Laporan tidak valid: Terlalu pendek (290 karakter, minimal 500)
+2026-10-03 15:29:39,947 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (290 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-10-03 15:29:39,947 [INFO] Mengirim laporan ke Telegram...
+2026-10-03 15:29:40,551 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
