@@ -42787,3 +42787,692 @@ Dalam proses penyelidikan terbaru yang dijadwalkan pada hari Jumat, 2 Oktober 20
 2026-10-02 17:03:13,805 [INFO] ✅ Bagian 3/3 terkirim (Markdown)!
 2026-10-02 17:03:14,806 [INFO] History disimpan (5 entri).
 2026-10-02 17:03:14,806 [INFO] Selesai — laporan terkirim dan history disimpan.
+2026-10-03 02:49:40,935 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-10-03 02:49:40,935 [INFO] =======================================================
+2026-10-03 02:49:40,935 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-10-03 02:49:40,935 [INFO] =======================================================
+2026-10-03 02:49:40,936 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-10-03 02:49:41,301 [INFO] Provider siap: Gemini dengan 4 model
+2026-10-03 02:49:41,303 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-10-03 02:49:41,304 [INFO] Provider siap: Z.AI dengan 1 model
+2026-10-03 02:49:41,305 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-10-03 02:49:41,306 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-10-03 02:49:41,320 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-10-03 02:49:41,369 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 02:49:46,019 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:49:46,030 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-03 02:49:46,072 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:49:46,072 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:49:46,309 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+global+economy+stock+market+crypto+October+2026&limit=1 200
+2026-10-03 02:49:46,387 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20OR%20site%3Abbc.com%20geopolitics%20global%20economy%20stock%20market%20crypto%20October%202026 200
+2026-10-03 02:49:46,938 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-10-03 02:49:46,943 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-03 02:49:47,712 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-03 02:49:47,713 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-10-03 02:49:47,713 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 02:50:00,863 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:50:00,864 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-03 02:50:00,866 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:50:00,866 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:50:01,014 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+tensions+stock+market+October+2026&limit=1 200
+2026-10-03 02:50:01,019 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20tensions%20stock%20market%20October%202026 200
+2026-10-03 02:50:01,200 [INFO] response: https://search.yahoo.com/search;_ylt=ti6fmlu3hi-A7erz1OTocrjR;_ylu=7WiO8yw5eRQpkaPfdxQKw6iP6iW9LSLkb6e_8tG1l3uMif0?p=Middle+East+tensions+stock+market+October+2026&btf=d 200
+2026-10-03 02:50:01,347 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:50:01,484 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:50:01,616 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:50:02,150 [INFO] response: https://www.mojeek.com/search?q=Middle+East+tensions+stock+market+October+2026 403
+2026-10-03 02:50:02,211 [INFO] response: https://search.brave.com/search?q=Middle+East+tensions+stock+market+October+2026&source=web&tf=pd 429
+2026-10-03 02:50:02,602 [INFO] response: https://www.google.com/wml/search?q=Middle+East+tensions+stock+market+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:50:02,602 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:50:02,614 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20tensions%20stock%20market%20October%202026 200
+2026-10-03 02:50:02,824 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+tensions+stock+market+October+2026&limit=1 200
+2026-10-03 02:50:02,931 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:50:02,994 [INFO] response: https://search.brave.com/search?q=Middle+East+tensions+stock+market+October+2026&source=web&tf=pd 429
+2026-10-03 02:50:03,499 [INFO] response: https://www.mojeek.com/search?q=Middle+East+tensions+stock+market+October+2026 403
+2026-10-03 02:50:03,646 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:50:03,692 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:50:03,961 [INFO] response: https://www.google.com/wml/search?q=Middle+East+tensions+stock+market+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:50:04,099 [INFO] response: https://search.yahoo.com/search;_ylt=QNgepdT6t8lLfZAHGcjnWTSK;_ylu=nWKd-hj4AqXKJ9BR4HRvDdUtPsGW15GnT2tM8jk2bFBEjDo?p=Middle+East+tensions+stock+market+October+2026&btf=d 200
+2026-10-03 02:50:04,127 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:50:04,291 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+tensions+stock+market+October+2026&limit=1 200
+2026-10-03 02:50:04,303 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20tensions%20stock%20market%20October%202026 200
+2026-10-03 02:50:04,351 [INFO] response: https://search.brave.com/search?q=Middle+East+tensions+stock+market+October+2026&source=web&tf=pw 429
+2026-10-03 02:50:04,479 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:50:04,548 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:50:04,707 [INFO] response: https://search.yahoo.com/search;_ylt=lcaGLXAcETQrP2vVOVex3Vk0;_ylu=KlR2K4PLS0c1zUSe1C82xpa3M71khOvgGSkoEGWSpfJswtw?p=Middle+East+tensions+stock+market+October+2026&btf=w 200
+2026-10-03 02:50:04,840 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:50:05,340 [INFO] response: https://www.mojeek.com/search?q=Middle+East+tensions+stock+market+October+2026 403
+2026-10-03 02:50:05,848 [INFO] response: https://www.google.com/wml/search?q=Middle+East+tensions+stock+market+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:50:05,849 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:50:05,851 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-03 02:50:19,226 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-03 02:50:19,227 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-10-03 02:50:19,227 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-03 02:50:39,252 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:50:39,253 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-03 02:50:39,785 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-03 02:50:45,862 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:50:45,863 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-03 02:50:45,865 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:50:45,865 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:50:46,021 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&limit=1 200
+2026-10-03 02:50:46,049 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20news%20October%202026%20site%3Aespn.com%20OR%20site%3Abbc.com/sport 200
+2026-10-03 02:50:46,165 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:50:46,346 [INFO] response: https://search.yahoo.com/search;_ylt=ZgLyWFha0EDlVppR4kXIrLjs;_ylu=J3_4mxsSuqkheJeCsNgvOaJn0QzeMiTmdStxGievSqv_r8Y?p=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&btf=d 200
+2026-10-03 02:50:46,851 [INFO] response: https://www.mojeek.com/search?q=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport 403
+2026-10-03 02:50:47,152 [INFO] response: https://www.google.com/wml/search?q=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:50:47,342 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:50:47,397 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:50:47,441 [INFO] response: https://search.brave.com/search?q=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&source=web&tf=pd 429
+2026-10-03 02:50:47,443 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:50:47,454 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20news%20October%202026%20site%3Aespn.com%20OR%20site%3Abbc.com/sport 200
+2026-10-03 02:50:47,591 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&limit=1 200
+2026-10-03 02:50:47,634 [INFO] response: https://search.brave.com/search?q=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&source=web&tf=pd 429
+2026-10-03 02:50:48,150 [INFO] response: https://www.mojeek.com/search?q=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport 403
+2026-10-03 02:50:48,471 [INFO] response: https://www.google.com/wml/search?q=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:50:48,578 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:50:48,743 [INFO] response: https://search.yahoo.com/search;_ylt=xBVk8UxjxLuOJTTgaU4roVOm;_ylu=NGAa1tZsD7LwzIu2bv5MxXQEaZdEnDpvQyDaWsqslw8ZzMU?p=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&btf=d 200
+2026-10-03 02:50:49,084 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:50:49,188 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:50:49,189 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:50:49,347 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&limit=1 200
+2026-10-03 02:50:49,363 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20news%20October%202026%20site%3Aespn.com%20OR%20site%3Abbc.com/sport 200
+2026-10-03 02:50:49,674 [INFO] response: https://www.google.com/wml/search?q=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:50:49,815 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:50:49,952 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:50:50,187 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:50:50,349 [INFO] response: https://search.yahoo.com/search;_ylt=O_QEkPvgOsRnFII5F93vlVik;_ylu=KeuMuFybuJMSr6pUHK-VaNBKtv83enOizoqLJ_NMVlEFAqk?p=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&btf=w 200
+2026-10-03 02:50:50,887 [INFO] response: https://www.mojeek.com/search?q=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport 403
+2026-10-03 02:50:50,940 [INFO] response: https://search.brave.com/search?q=sports+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&source=web&tf=pw 429
+2026-10-03 02:50:50,943 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:50:50,945 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-03 02:50:52,484 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:50:52,486 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-03 02:50:52,488 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:50:52,488 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:50:52,664 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20soccer%20match%20results%20news%20October%202026 200
+2026-10-03 02:50:52,695 [INFO] response: https://grokipedia.com/api/typeahead?query=football+soccer+match+results+news+October+2026&limit=1 200
+2026-10-03 02:50:53,008 [INFO] response: https://www.google.com/wml/search?q=football+soccer+match+results+news+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:50:53,514 [INFO] response: https://www.mojeek.com/search?q=football+soccer+match+results+news+October+2026 403
+2026-10-03 02:50:53,672 [INFO] response: https://search.yahoo.com/search;_ylt=yTHOo_VA7d-fsK7N9JvXAiFr;_ylu=OxpFKfHZcHYdcA3jlzeBJOFS0yFuZ0ENwx_1EuwS94peOBs?p=football+soccer+match+results+news+October+2026&btf=d 200
+2026-10-03 02:50:53,733 [INFO] response: https://search.brave.com/search?q=football+soccer+match+results+news+October+2026&source=web&tf=pd 429
+2026-10-03 02:50:53,860 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:50:54,003 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:50:54,106 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:50:54,129 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:50:54,314 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20soccer%20match%20results%20news%20October%202026 200
+2026-10-03 02:50:54,378 [INFO] response: https://grokipedia.com/api/typeahead?query=football+soccer+match+results+news+October+2026&limit=1 200
+2026-10-03 02:50:54,495 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:50:54,563 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:50:55,070 [INFO] response: https://www.mojeek.com/search?q=football+soccer+match+results+news+October+2026 403
+2026-10-03 02:50:55,174 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:50:55,357 [INFO] response: https://search.yahoo.com/search;_ylt=usS_d6rinoYq_yAkarn_V2Zs;_ylu=DpWG_yvBX1VY_Ku8HZ1ixlzNmdeP8l6C-bSSW5-cSKRQ7w8?p=football+soccer+match+results+news+October+2026&btf=d 200
+2026-10-03 02:50:55,907 [INFO] response: https://www.google.com/wml/search?q=football+soccer+match+results+news+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:50:55,950 [INFO] response: https://search.brave.com/search?q=football+soccer+match+results+news+October+2026&source=web&tf=pd 429
+2026-10-03 02:50:55,953 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:50:55,964 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20soccer%20match%20results%20news%20October%202026 200
+2026-10-03 02:50:56,119 [INFO] response: https://grokipedia.com/api/typeahead?query=football+soccer+match+results+news+October+2026&limit=1 200
+2026-10-03 02:50:56,619 [INFO] response: https://www.mojeek.com/search?q=football+soccer+match+results+news+October+2026 403
+2026-10-03 02:50:56,898 [INFO] response: https://www.google.com/wml/search?q=football+soccer+match+results+news+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:50:57,012 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:50:57,075 [INFO] response: https://search.brave.com/search?q=football+soccer+match+results+news+October+2026&source=web&tf=pw 429
+2026-10-03 02:50:57,217 [INFO] response: https://search.yahoo.com/search;_ylt=RjhaJMxWWrRspK_AZ_ndknSc;_ylu=c_30jKGE2-isp0YW2LPRuudY6uE9BuoVZtljqsrOPOXOiuQ?p=football+soccer+match+results+news+October+2026&btf=w 200
+2026-10-03 02:50:57,350 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:50:57,395 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:50:57,396 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:50:57,398 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-03 02:50:58,321 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:50:58,322 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-03 02:50:58,324 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:50:58,324 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:50:58,453 [INFO] response: https://grokipedia.com/api/typeahead?query=Champions+League+October+2026+results+news&limit=1 200
+2026-10-03 02:50:58,506 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Champions%20League%20October%202026%20results%20news 200
+2026-10-03 02:50:58,911 [INFO] response: https://www.google.com/wml/search?q=Champions+League+October+2026+results+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:50:58,955 [INFO] response: https://search.brave.com/search?q=Champions+League+October+2026+results+news&source=web&tf=pd 429
+2026-10-03 02:50:59,089 [INFO] response: https://search.yahoo.com/search;_ylt=cjLdOQ1mB-Q6Ja0c3yoxootP;_ylu=Dp3V6ejUiFAb2FmAzcY9Ft4X__BnmRPTsPojaYWM0a1m3h8?p=Champions+League+October+2026+results+news&btf=d 200
+2026-10-03 02:50:59,232 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:50:59,299 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:50:59,785 [INFO] response: https://www.mojeek.com/search?q=Champions+League+October+2026+results+news 403
+2026-10-03 02:50:59,909 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:50:59,910 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:50:59,921 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Champions%20League%20October%202026%20results%20news 200
+2026-10-03 02:51:00,046 [INFO] response: https://grokipedia.com/api/typeahead?query=Champions+League+October+2026+results+news&limit=1 200
+2026-10-03 02:51:00,152 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:00,710 [INFO] response: https://www.mojeek.com/search?q=Champions+League+October+2026+results+news 403
+2026-10-03 02:51:01,032 [INFO] response: https://www.google.com/wml/search?q=Champions+League+October+2026+results+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:01,185 [INFO] response: https://search.yahoo.com/search;_ylt=I4-vX649HfL-hf-fs9K0fey1;_ylu=Jki33irCtESoI_ScE8Qfef1ZxeHkg-sGl8QrqizJEbF1fq8?p=Champions+League+October+2026+results+news&btf=d 200
+2026-10-03 02:51:01,323 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:01,676 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:01,721 [INFO] response: https://search.brave.com/search?q=Champions+League+October+2026+results+news&source=web&tf=pd 429
+2026-10-03 02:51:01,722 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:51:01,734 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Champions%20League%20October%202026%20results%20news 200
+2026-10-03 02:51:01,852 [INFO] response: https://grokipedia.com/api/typeahead?query=Champions+League+October+2026+results+news&limit=1 200
+2026-10-03 02:51:02,354 [INFO] response: https://www.mojeek.com/search?q=Champions+League+October+2026+results+news 403
+2026-10-03 02:51:02,455 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:02,583 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:02,661 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:03,207 [INFO] response: https://www.google.com/wml/search?q=Champions+League+October+2026+results+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:51:03,400 [INFO] response: https://search.yahoo.com/search;_ylt=IU0yafL8INLdz6oYSKkK_abq;_ylu=-gYskALnFI73ku_PkPkD29ABH8Tftw0krFSOvXcBBG7oo0I?p=Champions+League+October+2026+results+news&btf=w 200
+2026-10-03 02:51:03,464 [INFO] response: https://search.brave.com/search?q=Champions+League+October+2026+results+news&source=web&tf=pw 429
+2026-10-03 02:51:03,465 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:51:03,467 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-03 02:51:04,382 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:51:04,383 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-03 02:51:04,385 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:51:04,385 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:51:04,560 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20technology%20news%20October%202026%20site%3Atechcrunch.com%20OR%20site%3Atheverge.com 200
+2026-10-03 02:51:04,649 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&limit=1 200
+2026-10-03 02:51:04,781 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:04,906 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:04,974 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:05,019 [INFO] response: https://search.brave.com/search?q=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&source=web&tf=pd 429
+2026-10-03 02:51:05,189 [INFO] response: https://search.yahoo.com/search;_ylt=-l_J4VEZdI66skqtbQ4_4VZX;_ylu=sjK_GsjxY2ICccLivyg6FG4V0ZjMG-lLkR_5u4u5aZOKOYM?p=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&btf=d 200
+2026-10-03 02:51:05,516 [INFO] response: https://www.google.com/wml/search?q=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:06,105 [INFO] response: https://www.mojeek.com/search?q=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com 403
+2026-10-03 02:51:06,106 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:51:06,117 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20technology%20news%20October%202026%20site%3Atechcrunch.com%20OR%20site%3Atheverge.com 200
+2026-10-03 02:51:06,280 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&limit=1 200
+2026-10-03 02:51:06,422 [INFO] response: https://search.yahoo.com/search;_ylt=GsNPYxxa-NhMsC5WrzppUyAy;_ylu=NNcEawhM4Zj_OYFrj-1jTmGjkTlnjSv08GfUTXnv_-VOvOU?p=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&btf=d 200
+2026-10-03 02:51:06,567 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:06,964 [INFO] response: https://www.google.com/wml/search?q=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:07,070 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:07,131 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:07,186 [INFO] response: https://search.brave.com/search?q=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&source=web&tf=pd 429
+2026-10-03 02:51:07,662 [INFO] response: https://www.mojeek.com/search?q=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com 403
+2026-10-03 02:51:07,662 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:51:07,677 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20technology%20news%20October%202026%20site%3Atechcrunch.com%20OR%20site%3Atheverge.com 200
+2026-10-03 02:51:07,822 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&limit=1 200
+2026-10-03 02:51:08,235 [INFO] response: https://www.google.com/wml/search?q=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:51:08,731 [INFO] response: https://www.mojeek.com/search?q=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com 403
+2026-10-03 02:51:08,855 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:09,013 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:09,080 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:09,123 [INFO] response: https://search.brave.com/search?q=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&source=web&tf=pw 429
+2026-10-03 02:51:09,263 [INFO] response: https://search.yahoo.com/search;_ylt=SsOfgWUc9f2EdrDouoHi8O6P;_ylu=79kd4Q4oOuAZIvzo1u5fLDGzmArcilDClOplSh0UE0HNGCI?p=latest+AI+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&btf=w 200
+2026-10-03 02:51:09,320 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:51:09,322 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-03 02:51:10,286 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:51:10,287 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-03 02:51:10,289 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:51:10,289 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:51:10,438 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20kurs%20rupiah%20berita%20ekonomi%20Indonesia%203%20Oktober%202026 200
+2026-10-03 02:51:10,460 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026&limit=1 200
+2026-10-03 02:51:10,895 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:11,007 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:11,074 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026&source=web&tf=pd 429
+2026-10-03 02:51:11,551 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026 403
+2026-10-03 02:51:11,708 [INFO] response: https://search.yahoo.com/search;_ylt=SgzfL-I6YKbwQgUF6yRvljND;_ylu=3k1kX5wuBZICayGxgwecSLh2bROSP99BJwgPtl_XkCGSX-Q?p=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026&btf=d 200
+2026-10-03 02:51:11,867 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:11,937 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:11,938 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:51:12,078 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026&limit=1 200
+2026-10-03 02:51:12,089 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20kurs%20rupiah%20berita%20ekonomi%20Indonesia%203%20Oktober%202026 200
+2026-10-03 02:51:12,131 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026&source=web&tf=pd 429
+2026-10-03 02:51:12,574 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:12,764 [INFO] response: https://search.yahoo.com/search;_ylt=gyWmEeZGC911AqP2Ay_rUMvw;_ylu=8HZ01474DDOUqNao4MvcaD0ZgSafd5fStzY-EDu-QSpoJwU?p=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026&btf=d 200
+2026-10-03 02:51:12,876 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:13,383 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026 403
+2026-10-03 02:51:13,485 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:13,531 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:13,532 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:51:13,544 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20kurs%20rupiah%20berita%20ekonomi%20Indonesia%203%20Oktober%202026 200
+2026-10-03 02:51:13,678 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026&limit=1 200
+2026-10-03 02:51:14,170 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026 403
+2026-10-03 02:51:14,294 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:14,496 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=495533a47a5ce7af0c87c82ed651a8d6&bds_t=1790995874Tf835e5b4e2016bedfeb9413b425b42287100a0f02f6a0db3195d9b6e0823ed27&bds_s=6cb4e134d4914af98f9009d866f64a5a&with_date=w&abe=0&qsr=en_US&abd=0&lui=english&language=english&segment=organic&abp=1&sc=&qadf=moderate&t=device&query=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026&cat=web&cmd=gen_page 200
+2026-10-03 02:51:14,653 [INFO] response: https://search.yahoo.com/search;_ylt=yeBEYUI3Ij1tAFRb2K9cNiH5;_ylu=fALhbwLw-y7ykQmsRhULOOaCKRfN7_krkTOtYIECQvDUbYA?p=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026&btf=w 200
+2026-10-03 02:51:14,722 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026&source=web&tf=pw 429
+2026-10-03 02:51:14,825 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:15,119 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+kurs+rupiah+berita+ekonomi+Indonesia+3+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:51:15,120 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:51:15,121 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-03 02:51:15,834 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:51:15,835 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-03 02:51:15,837 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:51:15,837 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:51:16,038 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20Indonesia%20terbaru%203%20Oktober%202026 200
+2026-10-03 02:51:16,145 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+Indonesia+terbaru+3+Oktober+2026&limit=1 200
+2026-10-03 02:51:16,645 [INFO] response: https://www.mojeek.com/search?q=berita+Indonesia+terbaru+3+Oktober+2026 403
+2026-10-03 02:51:17,171 [INFO] response: https://www.google.com/wml/search?q=berita+Indonesia+terbaru+3+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:17,331 [INFO] response: https://search.yahoo.com/search;_ylt=wRiZamErGzi4CrZTopyRMGkM;_ylu=gxgS34NOIwPXMkWmsr48ssRpAn5QMw1f23mmK0Hoc9zuiS4?p=berita+Indonesia+terbaru+3+Oktober+2026&btf=d 200
+2026-10-03 02:51:17,469 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:17,510 [INFO] response: https://search.brave.com/search?q=berita+Indonesia+terbaru+3+Oktober+2026&source=web&tf=pd 429
+2026-10-03 02:51:17,677 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:17,744 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:17,745 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:51:17,758 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20Indonesia%20terbaru%203%20Oktober%202026 200
+2026-10-03 02:51:17,881 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+Indonesia+terbaru+3+Oktober+2026&limit=1 200
+2026-10-03 02:51:18,006 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:18,049 [INFO] response: https://search.brave.com/search?q=berita+Indonesia+terbaru+3+Oktober+2026&source=web&tf=pd 429
+2026-10-03 02:51:18,200 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:18,276 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:18,434 [INFO] response: https://search.yahoo.com/search;_ylt=f5uMgv9S4gkGcMv_UzsnRaHt;_ylu=DgNlW2f43NMTHjBMSF_h_ZgGuye7cCFnSwOGWqGDnhe-dEY?p=berita+Indonesia+terbaru+3+Oktober+2026&btf=d 200
+2026-10-03 02:51:18,801 [INFO] response: https://www.google.com/wml/search?q=berita+Indonesia+terbaru+3+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:19,293 [INFO] response: https://www.mojeek.com/search?q=berita+Indonesia+terbaru+3+Oktober+2026 403
+2026-10-03 02:51:19,293 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:51:19,305 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20Indonesia%20terbaru%203%20Oktober%202026 200
+2026-10-03 02:51:19,433 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+Indonesia+terbaru+3+Oktober+2026&limit=1 200
+2026-10-03 02:51:19,567 [INFO] response: https://search.yahoo.com/search;_ylt=9_s6iNRp2NNjP1uqyoubq5st;_ylu=JE_asjxLKiP_TFo9BKGj2mkmEWFC5Y6qHI0-S4z68Rl1H-8?p=berita+Indonesia+terbaru+3+Oktober+2026&btf=w 200
+2026-10-03 02:51:19,691 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:19,756 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:19,798 [INFO] response: https://search.brave.com/search?q=berita+Indonesia+terbaru+3+Oktober+2026&source=web&tf=pw 429
+2026-10-03 02:51:20,177 [INFO] response: https://www.google.com/wml/search?q=berita+Indonesia+terbaru+3+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:51:20,665 [INFO] response: https://www.mojeek.com/search?q=berita+Indonesia+terbaru+3+Oktober+2026 403
+2026-10-03 02:51:20,797 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:20,798 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:51:20,800 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-03 02:51:21,689 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:51:21,690 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-03 02:51:21,692 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:51:21,692 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:51:21,855 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20terbaru%202%20Oktober%202026 200
+2026-10-03 02:51:21,911 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+terbaru+2+Oktober+2026&limit=1 200
+2026-10-03 02:51:22,324 [INFO] response: https://www.google.com/wml/search?q=berita+terbaru+2+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:22,845 [INFO] response: https://www.mojeek.com/search?q=berita+terbaru+2+Oktober+2026 403
+2026-10-03 02:51:23,007 [INFO] response: https://search.yahoo.com/search;_ylt=FTe0QffaG89TeIT7R0vvEXTl;_ylu=Yhr6JZzGeY3lOeoh3q1tTZdwGIUgJmFdqmUq_poU66QI-CQ?p=berita+terbaru+2+Oktober+2026&btf=d 200
+2026-10-03 02:51:23,054 [INFO] response: https://search.brave.com/search?q=berita+terbaru+2+Oktober+2026&source=web&tf=pd 429
+2026-10-03 02:51:23,156 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:23,299 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:23,349 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:23,350 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:51:23,493 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+terbaru+2+Oktober+2026&limit=1 200
+2026-10-03 02:51:23,495 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20terbaru%202%20Oktober%202026 200
+2026-10-03 02:51:23,596 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:23,660 [INFO] response: https://search.brave.com/search?q=berita+terbaru+2+Oktober+2026&source=web&tf=pd 429
+2026-10-03 02:51:23,790 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:23,856 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:24,335 [INFO] response: https://www.mojeek.com/search?q=berita+terbaru+2+Oktober+2026 403
+2026-10-03 02:51:24,496 [INFO] response: https://search.yahoo.com/search;_ylt=9-y3162VC6XIsFsqq0mRrAEV;_ylu=lg1nVl9l_d01kkSHg--_4QG4U3evaZpbrYoDV-KqfOj8Cw0?p=berita+terbaru+2+Oktober+2026&btf=d 200
+2026-10-03 02:51:24,897 [INFO] response: https://www.google.com/wml/search?q=berita+terbaru+2+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:24,898 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:51:24,910 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20terbaru%202%20Oktober%202026 200
+2026-10-03 02:51:25,044 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+terbaru+2+Oktober+2026&limit=1 200
+2026-10-03 02:51:25,478 [INFO] response: https://www.google.com/wml/search?q=berita+terbaru+2+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:51:25,625 [INFO] response: https://search.yahoo.com/search;_ylt=oGG83I9tZ-0ds7QBFS2-bM0V;_ylu=x5t-NYHrNQnALi2eZoUs2HJIlkI7nWvJWAiT-XTCis4FwuQ?p=berita+terbaru+2+Oktober+2026&btf=w 200
+2026-10-03 02:51:25,694 [INFO] response: https://search.brave.com/search?q=berita+terbaru+2+Oktober+2026&source=web&tf=pw 429
+2026-10-03 02:51:26,178 [INFO] response: https://www.mojeek.com/search?q=berita+terbaru+2+Oktober+2026 403
+2026-10-03 02:51:26,278 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:26,418 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:26,471 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:26,472 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:51:26,474 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-03 02:51:29,461 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:51:29,463 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-03 02:51:29,465 [INFO] Validasi: 1x fetch_webpage sukses (minimum 3).
+2026-10-03 02:51:29,465 [INFO] URL yang berhasil di-fetch: {'https://www.cnbc.com/2026/10/02/heres-how-high-the-10-year-treasury-yield-needs-to-rise-before-income-investors-should-worry-according-to-ubs.html'}
+2026-10-03 02:51:29,465 [WARNING] Laporan tidak valid: Terlalu pendek (55 karakter, minimal 500)
+2026-10-03 02:51:29,465 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-10-03 02:51:29,465 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-10-03 02:51:29,480 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-03 02:51:33,837 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:51:33,838 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-03 02:51:33,839 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-03 02:51:42,030 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:51:42,031 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-03 02:51:42,035 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:51:42,035 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:51:42,227 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitical%20and%20economy%20news%20October%202026%20site%3Acnbc.com%20OR%20site%3Abbc.com 200
+2026-10-03 02:51:42,361 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com&limit=1 200
+2026-10-03 02:51:42,457 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:42,535 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:42,673 [INFO] response: https://search.yahoo.com/search;_ylt=kQXoqkrv0L_0UN7Yt7KKl7Xx;_ylu=F6YtSEW9K0S0gIgnYzRZZqqRZDvKCBoievt4aQeUiQFGEUU?p=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com&btf=d 200
+2026-10-03 02:51:42,800 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:43,151 [INFO] response: https://www.google.com/wml/search?q=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:43,196 [INFO] response: https://search.brave.com/search?q=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com&source=web&tf=pd 429
+2026-10-03 02:51:43,681 [INFO] response: https://www.mojeek.com/search?q=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com 403
+2026-10-03 02:51:43,682 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:51:43,851 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitical%20and%20economy%20news%20October%202026%20site%3Acnbc.com%20OR%20site%3Abbc.com 200
+2026-10-03 02:51:43,869 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com&limit=1 200
+2026-10-03 02:51:43,970 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:44,523 [INFO] response: https://www.google.com/wml/search?q=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:44,565 [INFO] response: https://search.brave.com/search?q=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com&source=web&tf=pd 429
+2026-10-03 02:51:44,669 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:44,727 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:44,890 [INFO] response: https://search.yahoo.com/search;_ylt=WIfvDe4YjczoQ4T4DVMBifzN;_ylu=ug-7Cs1dOOoYq7rlM5zYnZwY8Qqew4LK8t1NE2dJLhqzS3s?p=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com&btf=d 200
+2026-10-03 02:51:45,376 [INFO] response: https://www.mojeek.com/search?q=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com 403
+2026-10-03 02:51:45,377 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:51:45,390 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20geopolitical%20and%20economy%20news%20October%202026%20site%3Acnbc.com%20OR%20site%3Abbc.com 200
+2026-10-03 02:51:45,548 [INFO] response: https://grokipedia.com/api/typeahead?query=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com&limit=1 200
+2026-10-03 02:51:45,650 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:45,718 [INFO] response: https://search.brave.com/search?q=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com&source=web&tf=pw 429
+2026-10-03 02:51:45,889 [INFO] response: https://search.yahoo.com/search;_ylt=Y9MNHsvutI8G_xYtdyTikhNr;_ylu=DgDUNvYluDZnep_svpVfirKWNU_uh-jffS66f5g_EG3LcFM?p=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com&btf=w 200
+2026-10-03 02:51:46,251 [INFO] response: https://www.google.com/wml/search?q=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:51:46,736 [INFO] response: https://www.mojeek.com/search?q=global+geopolitical+and+economy+news+October+2026+site%3Acnbc.com+OR+site%3Abbc.com 403
+2026-10-03 02:51:46,847 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:46,913 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:46,914 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:51:46,915 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:51:46,915 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:51:47,067 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20results%20and%20transfers%20news%20October%202026%20site%3Aespn.com%20OR%20site%3Abbc.com/sport 200
+2026-10-03 02:51:47,079 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&limit=1 200
+2026-10-03 02:51:47,183 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:47,245 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:47,614 [INFO] response: https://www.google.com/wml/search?q=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:47,655 [INFO] response: https://search.brave.com/search?q=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&source=web&tf=pd 429
+2026-10-03 02:51:48,135 [INFO] response: https://www.mojeek.com/search?q=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport 403
+2026-10-03 02:51:48,236 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:48,424 [INFO] response: https://search.yahoo.com/search;_ylt=9u2wvaOtSRryBlx4D-jgaWJi;_ylu=zQET8pMevH4hGMsL2PNyqU_x7RJeEla2yWHhaiUesWjzsD0?p=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&btf=d 200
+2026-10-03 02:51:48,430 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:51:48,442 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20results%20and%20transfers%20news%20October%202026%20site%3Aespn.com%20OR%20site%3Abbc.com/sport 200
+2026-10-03 02:51:48,608 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&limit=1 200
+2026-10-03 02:51:49,088 [INFO] response: https://www.mojeek.com/search?q=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport 403
+2026-10-03 02:51:49,192 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:49,261 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:49,778 [INFO] response: https://www.google.com/wml/search?q=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:49,937 [INFO] response: https://search.yahoo.com/search;_ylt=L8y21hg5BdubMWVj3dxSy7sG;_ylu=nl4UJBSSRSc6JYo-Au4lCw4LRlWD3YJS5qQQ207lX06ULAw?p=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&btf=d 200
+2026-10-03 02:51:50,048 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:50,124 [INFO] response: https://search.brave.com/search?q=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&source=web&tf=pd 429
+2026-10-03 02:51:50,125 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:51:50,137 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20results%20and%20transfers%20news%20October%202026%20site%3Aespn.com%20OR%20site%3Abbc.com/sport 200
+2026-10-03 02:51:50,339 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&limit=1 200
+2026-10-03 02:51:50,804 [INFO] response: https://www.mojeek.com/search?q=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport 403
+2026-10-03 02:51:50,949 [INFO] response: https://search.yahoo.com/search;_ylt=x6Et3iaZlhQWoM4BCJAqJUN2;_ylu=l4AGTTtThp16gQpf0JTse_S6Bfdqv4zeKPRErJjdc-IzTsc?p=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&btf=w 200
+2026-10-03 02:51:51,094 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:51,461 [INFO] response: https://www.google.com/wml/search?q=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:51:51,581 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:51,644 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:51,687 [INFO] response: https://search.brave.com/search?q=sports+results+and+transfers+news+October+2026+site%3Aespn.com+OR+site%3Abbc.com%2Fsport&source=web&tf=pw 429
+2026-10-03 02:51:51,688 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:51:51,689 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:51:51,689 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:51:51,852 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20and%20technology%20news%20October%202026%20site%3Atechcrunch.com%20OR%20site%3Atheverge.com 200
+2026-10-03 02:51:51,861 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&limit=1 200
+2026-10-03 02:51:51,999 [INFO] response: https://search.yahoo.com/search;_ylt=leUu4IH5PMld5xNgm9kFYxKt;_ylu=Twmga0fctW1eR5NMePlAQjLEI18r-N6ohQdJQ5IkgB902no?p=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&btf=d 200
+2026-10-03 02:51:52,126 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:52,642 [INFO] response: https://www.mojeek.com/search?q=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com 403
+2026-10-03 02:51:52,944 [INFO] response: https://www.google.com/wml/search?q=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:52,999 [INFO] response: https://search.brave.com/search?q=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&source=web&tf=pd 429
+2026-10-03 02:51:53,100 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:53,144 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:53,145 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:51:53,320 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20and%20technology%20news%20October%202026%20site%3Atechcrunch.com%20OR%20site%3Atheverge.com 200
+2026-10-03 02:51:53,324 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&limit=1 200
+2026-10-03 02:51:53,846 [INFO] response: https://search.brave.com/search?q=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&source=web&tf=pd 429
+2026-10-03 02:51:54,331 [INFO] response: https://www.mojeek.com/search?q=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com 403
+2026-10-03 02:51:54,691 [INFO] response: https://www.google.com/wml/search?q=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:54,832 [INFO] response: https://search.yahoo.com/search;_ylt=ERxjPu-RfGqDSweeAUbLYbVl;_ylu=TLCfpAXq60VYnFikXeTl-H9AEX6dI9BbOlFTHCY0O-LG2bE?p=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&btf=d 200
+2026-10-03 02:51:54,958 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:55,095 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:55,221 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:55,222 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:51:55,234 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20AI%20and%20technology%20news%20October%202026%20site%3Atechcrunch.com%20OR%20site%3Atheverge.com 200
+2026-10-03 02:51:55,395 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&limit=1 200
+2026-10-03 02:51:55,811 [INFO] response: https://www.google.com/wml/search?q=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:51:56,285 [INFO] response: https://www.mojeek.com/search?q=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com 403
+2026-10-03 02:51:56,327 [INFO] response: https://search.brave.com/search?q=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&source=web&tf=pw 429
+2026-10-03 02:51:56,434 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:56,489 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:56,591 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:56,757 [INFO] response: https://search.yahoo.com/search;_ylt=Zaxjzl8jieSseO9sHUmujurr;_ylu=dr2kVryA1Q5fLyUavE_aM3ixlzR4N7FefHA3GOhLT2u2y6Q?p=latest+AI+and+technology+news+October+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&btf=w 200
+2026-10-03 02:51:56,780 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:51:56,781 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:51:56,781 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:51:56,933 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026&limit=1 200
+2026-10-03 02:51:56,943 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20kurs%20rupiah%20ekonomi%20Indonesia%20terkini%2002%2003%20Oktober%202026 200
+2026-10-03 02:51:57,057 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:57,125 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:57,603 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026 403
+2026-10-03 02:51:57,704 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:58,032 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:58,192 [INFO] response: https://search.yahoo.com/search;_ylt=XnGnhuu--OmKMSDopwD-_mMT;_ylu=jt_TeEYHUlgK383sozYi1FYwZrp4CM7zjCsXJURSAjvXtZQ?p=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026&btf=d 200
+2026-10-03 02:51:58,251 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026&source=web&tf=pd 429
+2026-10-03 02:51:58,252 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:51:58,264 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20kurs%20rupiah%20ekonomi%20Indonesia%20terkini%2002%2003%20Oktober%202026 200
+2026-10-03 02:51:58,407 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026&limit=1 200
+2026-10-03 02:51:58,509 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:51:58,641 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:51:58,695 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:51:59,258 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026 403
+2026-10-03 02:51:59,787 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:51:59,830 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026&source=web&tf=pd 429
+2026-10-03 02:51:59,979 [INFO] response: https://search.yahoo.com/search;_ylt=K0wN-qnYTfsnxZ6eqP6o78Ke;_ylu=mmLyNqwWWLs8jcAiyQ7Sl77hO6kxVcwHIWjEUzsbn4Ti56k?p=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026&btf=d 200
+2026-10-03 02:52:00,005 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:52:00,017 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20kurs%20rupiah%20ekonomi%20Indonesia%20terkini%2002%2003%20Oktober%202026 200
+2026-10-03 02:52:00,167 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026&limit=1 200
+2026-10-03 02:52:00,212 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026&source=web&tf=pw 429
+2026-10-03 02:52:00,353 [INFO] response: https://search.yahoo.com/search;_ylt=ihRbj3XWQCe_8BcVxyy1mlMT;_ylu=EgFMmJi8RGX4m9enZNC-tYLTAbYRNb0QvzbYoOMl7QKr_no?p=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026&btf=w 200
+2026-10-03 02:52:00,488 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:01,001 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026 403
+2026-10-03 02:52:01,103 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:01,170 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:01,473 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+kurs+rupiah+ekonomi+Indonesia+terkini+02+03+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:52:01,473 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:52:01,474 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:52:01,474 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:52:01,630 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com&limit=1 200
+2026-10-03 02:52:01,689 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20timnas%20indonesia%20olahraga%20terkini%20Oktober%202026%20site%3Abola.com%20OR%20site%3Akompas.com 200
+2026-10-03 02:52:01,790 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:01,925 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:01,994 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:02,263 [INFO] response: https://search.yahoo.com/search;_ylt=dHfY2vgCCV0buqXSaTVCll0J;_ylu=3KqkhSTw_aoApE4b5-1MxbDwJyO3yP5-bv5WLkPmxSupxNk?p=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com&btf=d 200
+2026-10-03 02:52:02,819 [INFO] response: https://www.mojeek.com/search?q=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com 403
+2026-10-03 02:52:02,863 [INFO] response: https://search.brave.com/search?q=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com&source=web&tf=pd 429
+2026-10-03 02:52:03,114 [INFO] response: https://www.google.com/wml/search?q=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:52:03,114 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:52:03,264 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com&limit=1 200
+2026-10-03 02:52:03,412 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20timnas%20indonesia%20olahraga%20terkini%20Oktober%202026%20site%3Abola.com%20OR%20site%3Akompas.com 200
+2026-10-03 02:52:03,514 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:04,012 [INFO] response: https://www.mojeek.com/search?q=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com 403
+2026-10-03 02:52:04,467 [INFO] response: https://www.google.com/wml/search?q=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:52:04,513 [INFO] response: https://search.brave.com/search?q=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com&source=web&tf=pd 429
+2026-10-03 02:52:04,638 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:04,699 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:04,854 [INFO] response: https://search.yahoo.com/search;_ylt=PegGucy6rupjVpfsN-bR1AyP;_ylu=6ztq-_2S7jBR50zijqcFFebOoxCmznvQxer4g3J38_hSlEs?p=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com&btf=d 200
+2026-10-03 02:52:04,877 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:52:04,890 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20timnas%20indonesia%20olahraga%20terkini%20Oktober%202026%20site%3Abola.com%20OR%20site%3Akompas.com 200
+2026-10-03 02:52:05,022 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com&limit=1 200
+2026-10-03 02:52:05,067 [INFO] response: https://search.brave.com/search?q=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com&source=web&tf=pw 429
+2026-10-03 02:52:05,456 [INFO] response: https://www.google.com/wml/search?q=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:52:05,567 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:05,699 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:05,785 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:05,948 [INFO] response: https://search.yahoo.com/search;_ylt=JSX_GRxsjhxKG3QsWwUmD_9x;_ylu=hDQUCwQs2GLvgz80oA9rE04eX4S39lRrH5fSwujQiOICGgI?p=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com&btf=w 200
+2026-10-03 02:52:06,431 [INFO] response: https://www.mojeek.com/search?q=berita+timnas+indonesia+olahraga+terkini+Oktober+2026+site%3Abola.com+OR+site%3Akompas.com 403
+2026-10-03 02:52:06,432 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:52:06,432 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:52:06,432 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:52:06,551 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+trending+indonesia+Oktober+2026&limit=1 200
+2026-10-03 02:52:06,598 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20trending%20indonesia%20Oktober%202026 200
+2026-10-03 02:52:06,641 [INFO] response: https://search.brave.com/search?q=berita+viral+trending+indonesia+Oktober+2026&source=web&tf=pd 429
+2026-10-03 02:52:06,747 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:07,237 [INFO] response: https://www.mojeek.com/search?q=berita+viral+trending+indonesia+Oktober+2026 403
+2026-10-03 02:52:07,349 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:07,414 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:07,554 [INFO] response: https://search.yahoo.com/search;_ylt=I_8lw4s_CA_Kgdbjhi3QrosC;_ylu=YxPkZxKvGryNNzksQU-rVzvZvM_zKGzOy7PAjuzpPJB8fmk?p=berita+viral+trending+indonesia+Oktober+2026&btf=d 200
+2026-10-03 02:52:07,986 [INFO] response: https://www.google.com/wml/search?q=berita+viral+trending+indonesia+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:52:07,986 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:52:08,117 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+trending+indonesia+Oktober+2026&limit=1 200
+2026-10-03 02:52:08,146 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20trending%20indonesia%20Oktober%202026 200
+2026-10-03 02:52:08,621 [INFO] response: https://www.mojeek.com/search?q=berita+viral+trending+indonesia+Oktober+2026 403
+2026-10-03 02:52:08,831 [INFO] response: https://search.yahoo.com/search;_ylt=oLUy8Bitc80PgDBsRNh-_agS;_ylu=z0lbaAA2SU_vBA3NSXHBtTutG1BpFkCJaf7syDNfrxCsrsE?p=berita+viral+trending+indonesia+Oktober+2026&btf=d 200
+2026-10-03 02:52:09,170 [INFO] response: https://www.google.com/wml/search?q=berita+viral+trending+indonesia+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:52:09,359 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:09,431 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:09,474 [INFO] response: https://search.brave.com/search?q=berita+viral+trending+indonesia+Oktober+2026&source=web&tf=pd 429
+2026-10-03 02:52:09,575 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:09,597 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:52:09,609 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20trending%20indonesia%20Oktober%202026 200
+2026-10-03 02:52:09,718 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+trending+indonesia+Oktober+2026&limit=1 200
+2026-10-03 02:52:10,279 [INFO] response: https://www.mojeek.com/search?q=berita+viral+trending+indonesia+Oktober+2026 403
+2026-10-03 02:52:10,709 [INFO] response: https://www.google.com/wml/search?q=berita+viral+trending+indonesia+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:52:10,755 [INFO] response: https://search.brave.com/search?q=berita+viral+trending+indonesia+Oktober+2026&source=web&tf=pw 429
+2026-10-03 02:52:10,967 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:11,044 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:11,189 [INFO] response: https://search.yahoo.com/search;_ylt=dfoUWl3gBgYCX_Gh2c6IJlft;_ylu=AsM5KJW5VH5vLfi5oCVWgsye6P4Q_8LdSvO3DM16MmAY8Aw?p=berita+viral+trending+indonesia+Oktober+2026&btf=w 200
+2026-10-03 02:52:11,321 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:11,344 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:52:11,346 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-03 02:52:13,181 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:52:13,183 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-03 02:52:13,184 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-03 02:52:15,406 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:52:15,407 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-03 02:52:15,411 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:52:15,411 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:52:15,573 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20global%20market%20news%20impact%20economy 200
+2026-10-03 02:52:15,746 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+global+market+news+impact+economy&limit=1 200
+2026-10-03 02:52:15,789 [INFO] response: https://search.brave.com/search?q=latest+global+market+news+impact+economy&source=web&tf=pd 429
+2026-10-03 02:52:16,313 [INFO] response: https://www.mojeek.com/search?q=latest+global+market+news+impact+economy 403
+2026-10-03 02:52:16,430 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:16,476 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:16,578 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:16,993 [INFO] response: https://www.google.com/wml/search?q=latest+global+market+news+impact+economy&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:52:17,136 [INFO] response: https://search.yahoo.com/search;_ylt=USfUxAbUCylptadweuebue_c;_ylu=y4pcHU2T_Dw_anugbhdddSBscEeC_18ttcbTkBmJwKGHTJU?p=latest+global+market+news+impact+economy&btf=d 200
+2026-10-03 02:52:17,164 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:52:17,176 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20global%20market%20news%20impact%20economy 200
+2026-10-03 02:52:17,348 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+global+market+news+impact+economy&limit=1 200
+2026-10-03 02:52:17,390 [INFO] response: https://search.brave.com/search?q=latest+global+market+news+impact+economy&source=web&tf=pd 429
+2026-10-03 02:52:17,528 [INFO] response: https://search.yahoo.com/search;_ylt=s-iuE7UpEylTGOR-EIG5h8MO;_ylu=90m-exa4WJ8kshaIZGWAdoiupSG9tUSX2sMkV-GU1GgSQXE?p=latest+global+market+news+impact+economy&btf=d 200
+2026-10-03 02:52:17,657 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:18,204 [INFO] response: https://www.mojeek.com/search?q=latest+global+market+news+impact+economy 403
+2026-10-03 02:52:18,368 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:18,416 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:18,724 [INFO] response: https://www.google.com/wml/search?q=latest+global+market+news+impact+economy&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:52:18,724 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:52:18,877 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+global+market+news+impact+economy&limit=1 200
+2026-10-03 02:52:18,881 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20global%20market%20news%20impact%20economy 200
+2026-10-03 02:52:19,382 [INFO] response: https://www.mojeek.com/search?q=latest+global+market+news+impact+economy 403
+2026-10-03 02:52:19,609 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:19,676 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:19,837 [INFO] response: https://search.yahoo.com/search;_ylt=UWNK1q-VrwCNNt9YbubH2HGn;_ylu=2YHspFguERPFY_eoh1Jd0hw2pBOw6LeQvuXe1AvDbQ5noN8?p=latest+global+market+news+impact+economy&btf=w 200
+2026-10-03 02:52:20,177 [INFO] response: https://www.google.com/wml/search?q=latest+global+market+news+impact+economy&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:52:20,219 [INFO] response: https://search.brave.com/search?q=latest+global+market+news+impact+economy&source=web&tf=pw 429
+2026-10-03 02:52:20,349 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:20,349 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:52:20,350 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:52:20,350 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:52:20,520 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20international%20football%20results%20October%202026 200
+2026-10-03 02:52:20,565 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+international+football+results+October+2026&limit=1 200
+2026-10-03 02:52:21,052 [INFO] response: https://www.mojeek.com/search?q=latest+international+football+results+October+2026 403
+2026-10-03 02:52:21,170 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:21,235 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:21,280 [INFO] response: https://search.brave.com/search?q=latest+international+football+results+October+2026&source=web&tf=pd 429
+2026-10-03 02:52:21,409 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:21,550 [INFO] response: https://search.yahoo.com/search;_ylt=hkdDBBO1VwruNW4_oT8ughnJ;_ylu=7vJfeGhTClqcHRpJCEMg4aruteKRiE1gZjBQr4UMV5RC7H0?p=latest+international+football+results+October+2026&btf=d 200
+2026-10-03 02:52:22,103 [INFO] response: https://www.google.com/wml/search?q=latest+international+football+results+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:52:22,103 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:52:22,116 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20international%20football%20results%20October%202026 200
+2026-10-03 02:52:22,261 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+international+football+results+October+2026&limit=1 200
+2026-10-03 02:52:22,377 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:22,446 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:22,626 [INFO] response: https://search.yahoo.com/search;_ylt=ktXl2e5ZHnxkI5Fix5dAeAb0;_ylu=Z4Kk87EIXxZObXS-39c73ajxT-57M-h4sAftmE9XWkA4I_w?p=latest+international+football+results+October+2026&btf=d 200
+2026-10-03 02:52:23,178 [INFO] response: https://www.google.com/wml/search?q=latest+international+football+results+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:52:23,222 [INFO] response: https://search.brave.com/search?q=latest+international+football+results+October+2026&source=web&tf=pd 429
+2026-10-03 02:52:23,739 [INFO] response: https://www.mojeek.com/search?q=latest+international+football+results+October+2026 403
+2026-10-03 02:52:23,840 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:23,861 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:52:23,874 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20international%20football%20results%20October%202026 200
+2026-10-03 02:52:24,011 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+international+football+results+October+2026&limit=1 200
+2026-10-03 02:52:24,472 [INFO] response: https://www.mojeek.com/search?q=latest+international+football+results+October+2026 403
+2026-10-03 02:52:24,514 [INFO] response: https://search.brave.com/search?q=latest+international+football+results+October+2026&source=web&tf=pw 429
+2026-10-03 02:52:24,631 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:24,699 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:24,809 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:25,301 [INFO] response: https://www.google.com/wml/search?q=latest+international+football+results+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:52:25,437 [INFO] response: https://search.yahoo.com/search;_ylt=DRJRqjIKoS4LL5nBYFQIkEKK;_ylu=1nSgh-XgvIOFqZq24tXtE7d5CBmgZU6v81D74qWmLDCkvTY?p=latest+international+football+results+October+2026&btf=w 200
+2026-10-03 02:52:25,467 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:52:25,468 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:52:25,468 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:52:25,635 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=new%20AI%20technology%20developments%20October%202026 200
+2026-10-03 02:52:25,639 [INFO] response: https://grokipedia.com/api/typeahead?query=new+AI+technology+developments+October+2026&limit=1 200
+2026-10-03 02:52:25,756 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:25,825 [INFO] response: https://search.brave.com/search?q=new+AI+technology+developments+October+2026&source=web&tf=pd 429
+2026-10-03 02:52:25,983 [INFO] response: https://search.yahoo.com/search;_ylt=u_DsEw6zpItmXQM0B5qI7Faq;_ylu=C5Ub0uwra2EJRqhBXOarh16G2UIR6QWaZ6kShnWZ-IVQamU?p=new+AI+technology+developments+October+2026&btf=d 200
+2026-10-03 02:52:26,506 [INFO] response: https://www.mojeek.com/search?q=new+AI+technology+developments+October+2026 403
+2026-10-03 02:52:26,621 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:26,677 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:27,105 [INFO] response: https://www.google.com/wml/search?q=new+AI+technology+developments+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:52:27,106 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:52:27,266 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=new%20AI%20technology%20developments%20October%202026 200
+2026-10-03 02:52:27,268 [INFO] response: https://grokipedia.com/api/typeahead?query=new+AI+technology+developments+October+2026&limit=1 200
+2026-10-03 02:52:27,741 [INFO] response: https://www.mojeek.com/search?q=new+AI+technology+developments+October+2026 403
+2026-10-03 02:52:27,864 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:27,906 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:27,948 [INFO] response: https://search.brave.com/search?q=new+AI+technology+developments+October+2026&source=web&tf=pd 429
+2026-10-03 02:52:28,054 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:28,582 [INFO] response: https://www.google.com/wml/search?q=new+AI+technology+developments+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:52:28,726 [INFO] response: https://search.yahoo.com/search;_ylt=1_vVyS4wsXZGpFUJNzSZC1ea;_ylu=OoJDnPuu36vz7wwIULxMgwqoYPieXA0L2C-aXECtmRH_uJ0?p=new+AI+technology+developments+October+2026&btf=d 200
+2026-10-03 02:52:28,760 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:52:28,772 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=new%20AI%20technology%20developments%20October%202026 200
+2026-10-03 02:52:29,064 [INFO] response: https://grokipedia.com/api/typeahead?query=new+AI+technology+developments+October+2026&limit=1 200
+2026-10-03 02:52:29,546 [INFO] response: https://www.mojeek.com/search?q=new+AI+technology+developments+October+2026 403
+2026-10-03 02:52:29,592 [INFO] response: https://search.brave.com/search?q=new+AI+technology+developments+October+2026&source=web&tf=pw 429
+2026-10-03 02:52:29,892 [INFO] response: https://www.google.com/wml/search?q=new+AI+technology+developments+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:52:29,992 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:30,143 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:30,207 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:30,346 [INFO] response: https://search.yahoo.com/search;_ylt=VIzQP3TuihcMNY-GzT9M8Kc2;_ylu=butJU1GuwH7hFrPPDcl65VF_z9-PDgG56K5LrFDxBuPDkgE?p=new+AI+technology+developments+October+2026&btf=w 200
+2026-10-03 02:52:30,372 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:52:30,373 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:52:30,373 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:52:30,542 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20ekonomi%20bisnis%20indonesia%20terbaru%20oktober%202026 200
+2026-10-03 02:52:30,725 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026&limit=1 200
+2026-10-03 02:52:31,053 [INFO] response: https://www.google.com/wml/search?q=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:52:31,544 [INFO] response: https://www.mojeek.com/search?q=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026 403
+2026-10-03 02:52:31,583 [INFO] response: https://search.brave.com/search?q=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026&source=web&tf=pd 429
+2026-10-03 02:52:31,709 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:31,790 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:31,954 [INFO] response: https://search.yahoo.com/search;_ylt=yUSh5C31YdzQ3gF_kFyny_mS;_ylu=SD6hHocn8AOKfkIUEVz7eP_sdwfN-FPEMIOPP0zSuXvqcPQ?p=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026&btf=d 200
+2026-10-03 02:52:32,099 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:32,099 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:52:32,250 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026&limit=1 200
+2026-10-03 02:52:32,277 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20ekonomi%20bisnis%20indonesia%20terbaru%20oktober%202026 200
+2026-10-03 02:52:32,436 [INFO] response: https://search.yahoo.com/search;_ylt=4TCIYiRLJNa10Iwtj-YOzQYw;_ylu=6Nx1MDdkCdaIqa98OSsYbu0SesikT2071jT6RX5gmv5hxgk?p=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026&btf=d 200
+2026-10-03 02:52:32,998 [INFO] response: https://www.mojeek.com/search?q=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026 403
+2026-10-03 02:52:33,109 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:33,419 [INFO] response: https://www.google.com/wml/search?q=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:52:33,554 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:33,596 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:33,639 [INFO] response: https://search.brave.com/search?q=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026&source=web&tf=pd 429
+2026-10-03 02:52:33,641 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:52:33,653 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20ekonomi%20bisnis%20indonesia%20terbaru%20oktober%202026 200
+2026-10-03 02:52:33,780 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026&limit=1 200
+2026-10-03 02:52:33,944 [INFO] response: https://search.yahoo.com/search;_ylt=cC2m_O-jSduDpHFVgi8EREqR;_ylu=uOsNbF132-_K-yNqI-9JE0NiqFUNqR7mdH6vbuUc2weITpI?p=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026&btf=w 200
+2026-10-03 02:52:34,057 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:34,557 [INFO] response: https://www.mojeek.com/search?q=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026 403
+2026-10-03 02:52:34,601 [INFO] response: https://search.brave.com/search?q=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026&source=web&tf=pw 429
+2026-10-03 02:52:34,712 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:34,779 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:35,090 [INFO] response: https://www.google.com/wml/search?q=berita+ekonomi+bisnis+indonesia+terbaru+oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:52:35,091 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:52:35,091 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-03 02:52:35,091 [WARNING] backend is not set. Using 'auto'
+2026-10-03 02:52:35,197 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+indonesia+terbaru&limit=1 200
+2026-10-03 02:52:35,255 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20indonesia%20terbaru 200
+2026-10-03 02:52:35,384 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:35,428 [INFO] response: https://search.brave.com/search?q=berita+viral+indonesia+terbaru&source=web&tf=pd 429
+2026-10-03 02:52:35,789 [INFO] response: https://www.google.com/wml/search?q=berita+viral+indonesia+terbaru&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:52:36,293 [INFO] response: https://www.mojeek.com/search?q=berita+viral+indonesia+terbaru 403
+2026-10-03 02:52:36,416 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:36,465 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:36,628 [INFO] response: https://search.yahoo.com/search;_ylt=0Fk94_PVEP0_D4jaiKDfM0Cx;_ylu=tQr40I2JbxoCuL7PBS0ryuHMjdSFyoajk5vOS8bAJUXuc1s?p=berita+viral+indonesia+terbaru&btf=d 200
+2026-10-03 02:52:36,633 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-03 02:52:36,645 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20indonesia%20terbaru 200
+2026-10-03 02:52:36,750 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+indonesia+terbaru&limit=1 200
+2026-10-03 02:52:36,906 [INFO] response: https://search.yahoo.com/search;_ylt=mwMIKlCh4ZK3yH12_vczbgkF;_ylu=2DdhzJP2ZpK3hvcnFkMjpupGxUQiUKLkdq1DuaLlR6gpR9E?p=berita+viral+indonesia+terbaru&btf=d 200
+2026-10-03 02:52:37,039 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:37,086 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:37,607 [INFO] response: https://www.google.com/wml/search?q=berita+viral+indonesia+terbaru&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-03 02:52:38,091 [INFO] response: https://www.mojeek.com/search?q=berita+viral+indonesia+terbaru 403
+2026-10-03 02:52:38,197 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:38,793 [INFO] response: https://search.brave.com/search?q=berita+viral+indonesia+terbaru&source=web&tf=pd 429
+2026-10-03 02:52:38,794 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-03 02:52:38,905 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+indonesia+terbaru&limit=1 200
+2026-10-03 02:52:38,964 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20indonesia%20terbaru 200
+2026-10-03 02:52:39,067 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-03 02:52:39,193 [INFO] response: https://www.startpage.com/ 200
+2026-10-03 02:52:39,259 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-03 02:52:39,306 [INFO] response: https://search.brave.com/search?q=berita+viral+indonesia+terbaru&source=web&tf=pw 429
+2026-10-03 02:52:39,839 [INFO] response: https://www.google.com/wml/search?q=berita+viral+indonesia+terbaru&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-03 02:52:40,308 [INFO] response: https://www.mojeek.com/search?q=berita+viral+indonesia+terbaru 403
+2026-10-03 02:52:40,444 [INFO] response: https://search.yahoo.com/search;_ylt=cQuID2g-H5QfzQhzcjWMjPqC;_ylu=E09ar9AW0JCD9d8c6xQiV7SolFRsew_EIHVL3yH8fdV0dKE?p=berita+viral+indonesia+terbaru&btf=w 200
+2026-10-03 02:52:40,469 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-03 02:52:40,471 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-03 02:52:44,209 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-03 02:52:44,211 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-03 02:52:44,214 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-10-03 02:52:44,214 [INFO] URL yang berhasil di-fetch: {'https://www.cnbc.com/2026/10/02/heres-how-high-the-10-year-treasury-yield-needs-to-rise-before-income-investors-should-worry-according-to-ubs.html'}
+2026-10-03 02:52:44,214 [WARNING] Laporan tidak valid: Hanya 0 topik ditemukan, minimal 4
+2026-10-03 02:52:44,215 [ERROR] ❌ Laporan hari ini gagal divalidasi (Hanya 0 topik ditemukan, minimal 4). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-10-03 02:52:44,215 [INFO] Mengirim laporan ke Telegram...
+2026-10-03 02:52:44,940 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
