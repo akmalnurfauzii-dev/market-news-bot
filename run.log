@@ -48205,3 +48205,356 @@ Sumber: https://travel.detik.com/travel-news/d-8694185/viral-perempuan-naik-heli
 2026-10-08 03:31:32,421 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (91 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-10-08 03:31:32,421 [INFO] Mengirim laporan ke Telegram...
 2026-10-08 03:31:33,060 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-10-08 18:08:17,399 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-10-08 18:08:17,399 [INFO] =======================================================
+2026-10-08 18:08:17,399 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-10-08 18:08:17,399 [INFO] =======================================================
+2026-10-08 18:08:17,399 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-10-08 18:08:17,839 [INFO] Provider siap: Gemini dengan 4 model
+2026-10-08 18:08:17,841 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-10-08 18:08:17,842 [INFO] Provider siap: Z.AI dengan 1 model
+2026-10-08 18:08:17,843 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-10-08 18:08:17,844 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-10-08 18:08:17,859 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-10-08 18:08:17,880 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-08 18:08:21,811 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:08:21,818 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-08 18:08:21,863 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-08 18:08:21,863 [WARNING] backend is not set. Using 'auto'
+2026-10-08 18:08:22,108 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20OR%20site%3Abbc.com%20geopolitics%20global%20markets%20stocks%20crypto%20October%202026 200
+2026-10-08 18:08:22,118 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+global+markets+stocks+crypto+October+2026&limit=1 200
+2026-10-08 18:08:22,540 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+global+markets+stocks+crypto+October+2026 403
+2026-10-08 18:08:23,174 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-10-08 18:08:23,180 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-08 18:08:28,158 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:08:28,159 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-08 18:08:29,039 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-08 18:08:36,464 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:08:36,466 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-08 18:08:36,468 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-08 18:08:36,468 [WARNING] backend is not set. Using 'auto'
+2026-10-08 18:08:36,651 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+OR+transfer+news&limit=1 200
+2026-10-08 18:08:36,658 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20OR%20site%3Aespn.com%20October%202026%20match%20results%20OR%20transfer%20news 200
+2026-10-08 18:08:37,105 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+OR+transfer+news 403
+2026-10-08 18:08:37,162 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-08 18:08:37,310 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+OR+transfer+news&source=web&tf=pd 429
+2026-10-08 18:08:37,570 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:08:37,634 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-08 18:08:38,099 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+OR+transfer+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-08 18:08:38,354 [INFO] response: https://search.yahoo.com/search;_ylt=jnTUQ3fFQnrJwhEJsbkZ20HJ;_ylu=tAOE5JGTh9qxNC0U0Ewet7PuTATYuVfyfufsaVm698_Zwm4?p=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+OR+transfer+news&btf=d 200
+2026-10-08 18:08:38,736 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-08 18:08:43,837 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:08:43,839 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-08 18:08:44,957 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-08 18:09:00,633 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:09:00,635 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-08 18:09:00,637 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-08 18:09:00,637 [WARNING] backend is not set. Using 'auto'
+2026-10-08 18:09:00,806 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechcrunch.com+OR+site%3Atheverge.com+October+2026+AI+technology+release+news&limit=1 200
+2026-10-08 18:09:00,831 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechcrunch.com%20OR%20site%3Atheverge.com%20October%202026%20AI%20technology%20release%20news 200
+2026-10-08 18:09:01,289 [INFO] response: https://www.mojeek.com/search?q=site%3Atechcrunch.com+OR+site%3Atheverge.com+October+2026+AI+technology+release+news 403
+2026-10-08 18:09:01,499 [INFO] response: https://search.yahoo.com/search;_ylt=6qq1qQTRmST2SGN0F1z2nub2;_ylu=JZypwTyoA3BxCNuO6chDuKm3eJVgZMmJpc1ystgVfebLfvE?p=site%3Atechcrunch.com+OR+site%3Atheverge.com+October+2026+AI+technology+release+news&btf=d 200
+2026-10-08 18:09:01,903 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-08 18:09:04,790 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-08 18:09:04,791 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-10-08 18:09:04,791 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-08 18:09:09,245 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:09:09,247 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-08 18:09:09,431 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-08 18:09:11,713 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:09:11,715 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-08 18:09:11,717 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-08 18:09:11,717 [WARNING] backend is not set. Using 'auto'
+2026-10-08 18:09:11,918 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20OR%20site%3Akontan.co.id%20IHSG%20kurs%20Rupiah%208%20Oktober%202026 200
+2026-10-08 18:09:11,950 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026&limit=1 200
+2026-10-08 18:09:12,178 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:09:12,245 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-08 18:09:12,782 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-08 18:09:13,177 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026 403
+2026-10-08 18:09:13,217 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-08 18:09:13,407 [INFO] response: https://search.yahoo.com/search;_ylt=zPbyLmT52bSwfTn_YDOUP55p;_ylu=JtYGDUH07qnPVx0iK5XW_dRm1v7cAS0HbzRWXqAFgHZcqK0?p=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026&btf=d 200
+2026-10-08 18:09:13,907 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026&source=web&tf=pd 429
+2026-10-08 18:09:13,917 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-08 18:09:14,111 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20OR%20site%3Akontan.co.id%20IHSG%20kurs%20Rupiah%208%20Oktober%202026 200
+2026-10-08 18:09:14,135 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026&limit=1 200
+2026-10-08 18:09:14,563 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026 403
+2026-10-08 18:09:14,790 [INFO] response: https://search.yahoo.com/search;_ylt=BFGe1ZrVHr8NFS7ekBYbwiOk;_ylu=jKwNVMf6lWHzT0xVIDA-s07YheAI7Ep6khB3hzgiZCX26Pk?p=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026&btf=d 200
+2026-10-08 18:09:15,174 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-08 18:09:15,278 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026&source=web&tf=pd 429
+2026-10-08 18:09:15,648 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-08 18:09:15,894 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:09:15,979 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-08 18:09:15,980 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-08 18:09:16,035 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20OR%20site%3Akontan.co.id%20IHSG%20kurs%20Rupiah%208%20Oktober%202026 200
+2026-10-08 18:09:16,127 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026&limit=1 200
+2026-10-08 18:09:16,233 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026&source=web&tf=pw 429
+2026-10-08 18:09:16,445 [INFO] response: https://search.yahoo.com/search;_ylt=HEqyvpNwN2P8dEi92w-mserJ;_ylu=9Xm-yMeTvmCMH2wDCf5DFOjWlH1XIYnF790n5iJD2iwFb90?p=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026&btf=w 200
+2026-10-08 18:09:16,836 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-08 18:09:17,032 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:09:17,098 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-08 18:09:17,188 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-08 18:09:17,612 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+OR+site%3Akontan.co.id+IHSG+kurs+Rupiah+8+Oktober+2026 403
+2026-10-08 18:09:17,613 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-08 18:09:17,615 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-08 18:09:20,004 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:09:20,005 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-08 18:09:20,007 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-08 18:09:20,007 [WARNING] backend is not set. Using 'auto'
+2026-10-08 18:09:20,153 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026&limit=1 200
+2026-10-08 18:09:20,176 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20IHSG%20penutupan%208%20Oktober%202026 200
+2026-10-08 18:09:20,624 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026 403
+2026-10-08 18:09:20,797 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:09:20,870 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-08 18:09:21,094 [INFO] response: https://search.yahoo.com/search;_ylt=AsDb6GgXyTBTY1luigoNLbjr;_ylu=FUwicCJuXbKSDTHelLxR6NwSepPvX_yII_ZzVl9Afo53A0U?p=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026&btf=d 200
+2026-10-08 18:09:21,643 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026&source=web&tf=pd 429
+2026-10-08 18:09:21,915 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-08 18:09:21,956 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-08 18:09:21,957 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-08 18:09:22,134 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20IHSG%20penutupan%208%20Oktober%202026 200
+2026-10-08 18:09:22,167 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026&limit=1 200
+2026-10-08 18:09:22,221 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-08 18:09:22,435 [INFO] response: https://search.yahoo.com/search;_ylt=BULo6CZm2ZCa0IoGNGSqeHaW;_ylu=O5zZXU73A0FEUpD6sVbdb6XnTGgSWyX2ZPA4gXqBlOGFknc?p=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026&btf=d 200
+2026-10-08 18:09:23,161 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026 403
+2026-10-08 18:09:23,367 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:09:23,716 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=d8d2727718da283f6415832b156f3213&bds_t=1791482963T91bf66fa338083bc3e63d227335db7aac7f2435025283f4f1c14513631974f26&bds_s=35ff3879cf90404e91eb3c5866a6bad1&abe=0&qsr=en_US&abp=1&abd=0&segment=organic&t=device&qadf=moderate&with_date=d&sc=&lui=english&language=english&query=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026&cat=web&cmd=gen_page 200
+2026-10-08 18:09:24,084 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-08 18:09:24,186 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026&source=web&tf=pd 429
+2026-10-08 18:09:24,196 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-08 18:09:24,247 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20IHSG%20penutupan%208%20Oktober%202026 200
+2026-10-08 18:09:24,309 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026&limit=1 200
+2026-10-08 18:09:24,516 [INFO] response: https://search.yahoo.com/search;_ylt=CP_x8k0pzSZE5aSVRo4kIbB4;_ylu=wVFnWxexY_zTWmXe0zFg_sZ-eGJ9AFWWBPBJB_qT4ytW5Rc?p=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026&btf=w 200
+2026-10-08 18:09:25,079 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:09:25,134 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-08 18:09:25,577 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026 403
+2026-10-08 18:09:25,682 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026&source=web&tf=pw 429
+2026-10-08 18:09:26,192 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+IHSG+penutupan+8+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-08 18:09:26,194 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-08 18:10:04,069 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:10:04,070 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-08 18:10:04,072 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-08 18:10:04,072 [WARNING] backend is not set. Using 'auto'
+2026-10-08 18:10:04,220 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20rupiah%208%20Oktober%202026 200
+2026-10-08 18:10:04,228 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+rupiah+8+Oktober+2026&limit=1 200
+2026-10-08 18:10:04,271 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-08 18:10:04,607 [INFO] response: https://search.yahoo.com/search;_ylt=uy_yGxTlHCQuJUKf3BOnLGF3;_ylu=qgAMNFU4zU2grhjkHVswsBZKtH5Hpu3jOYkFj-x78quW3lQ?p=IHSG+rupiah+8+Oktober+2026&btf=d 200
+2026-10-08 18:10:05,181 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-08 18:10:18,357 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:10:18,358 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-08 18:10:18,360 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-08 18:10:18,360 [WARNING] backend is not set. Using 'auto'
+2026-10-08 18:10:18,510 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20IHSG%20OR%20rupiah%20Oktober%202026 200
+2026-10-08 18:10:18,514 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+IHSG+OR+rupiah+Oktober+2026&limit=1 200
+2026-10-08 18:10:18,644 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+IHSG+OR+rupiah+Oktober+2026&source=web&tf=pd 429
+2026-10-08 18:10:18,911 [INFO] response: https://search.yahoo.com/search;_ylt=L8zEZWFZsxGukQW42jPy57oL;_ylu=MibnK2joF85HDMjOaVNCVU8jn-3sLqYU5qOi-lTp_59U-jE?p=site%3Acnbcindonesia.com+IHSG+OR+rupiah+Oktober+2026&btf=d 200
+2026-10-08 18:10:19,575 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:10:19,642 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-08 18:10:20,024 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+IHSG+OR+rupiah+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-08 18:10:20,554 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+IHSG+OR+rupiah+Oktober+2026 403
+2026-10-08 18:10:20,600 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-08 18:10:20,601 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-08 18:10:20,767 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20IHSG%20OR%20rupiah%20Oktober%202026 200
+2026-10-08 18:10:20,799 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+IHSG+OR+rupiah+Oktober+2026&limit=1 200
+2026-10-08 18:10:20,929 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:10:21,043 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-08 18:10:21,086 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-08 18:10:21,192 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+IHSG+OR+rupiah+Oktober+2026&source=web&tf=pd 429
+2026-10-08 18:10:21,673 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+IHSG+OR+rupiah+Oktober+2026 403
+2026-10-08 18:10:21,904 [INFO] response: https://search.yahoo.com/search;_ylt=U_hXlJH_iJEBbMzFSVlSsGww;_ylu=6d1ETF4PyFG-ouySOwyww6uBdccve6MH6Z9hMbaTZFjyuyI?p=site%3Acnbcindonesia.com+IHSG+OR+rupiah+Oktober+2026&btf=d 200
+2026-10-08 18:10:22,509 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+IHSG+OR+rupiah+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-08 18:10:22,510 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-08 18:10:22,565 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20IHSG%20OR%20rupiah%20Oktober%202026 200
+2026-10-08 18:10:22,727 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+IHSG+OR+rupiah+Oktober+2026&limit=1 200
+2026-10-08 18:10:23,177 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+IHSG+OR+rupiah+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-08 18:10:23,385 [INFO] response: https://search.yahoo.com/search;_ylt=5ZDrnMKvKVAUT7WcHHJdDHEl;_ylu=eaivtPF08QBxEDMyq-bxJse0Yl1r-DDHfVKrfQ4g4iXArCs?p=site%3Acnbcindonesia.com+IHSG+OR+rupiah+Oktober+2026&btf=w 200
+2026-10-08 18:10:23,901 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-08 18:10:36,320 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:10:36,321 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-08 18:10:36,323 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-08 18:10:36,323 [WARNING] backend is not set. Using 'auto'
+2026-10-08 18:10:36,519 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026&limit=1 200
+2026-10-08 18:10:36,523 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com/market%20IHSG%20Oktober%202026 200
+2026-10-08 18:10:36,582 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-08 18:10:36,871 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:10:36,958 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-08 18:10:37,419 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-08 18:10:37,857 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026 403
+2026-10-08 18:10:38,080 [INFO] response: https://search.yahoo.com/search;_ylt=z-FqV8MM4IOSwxnu0QAl1_z_;_ylu=vstluZ4WM0ojQjeUn1KphHXrQkkE8zsCQ5wI0n46y4dHmY8?p=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026&btf=d 200
+2026-10-08 18:10:38,521 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026&source=web&tf=pd 429
+2026-10-08 18:10:38,531 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-08 18:10:38,653 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026&limit=1 200
+2026-10-08 18:10:38,687 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com/market%20IHSG%20Oktober%202026 200
+2026-10-08 18:10:38,914 [INFO] response: https://search.yahoo.com/search;_ylt=mM8lqdvVwKQ-eJ_zKwbwRsn0;_ylu=3Yl473EUz58rw0woF-89OPBUFSw6WTcvcBJ6fFdt7kQaqV8?p=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026&btf=d 200
+2026-10-08 18:10:39,304 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026&source=web&tf=pd 429
+2026-10-08 18:10:39,840 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026 403
+2026-10-08 18:10:40,259 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-08 18:10:40,444 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:10:40,540 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-08 18:10:40,578 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-08 18:10:40,578 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-08 18:10:40,630 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com/market%20IHSG%20Oktober%202026 200
+2026-10-08 18:10:40,761 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026&limit=1 200
+2026-10-08 18:10:41,162 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026 403
+2026-10-08 18:10:41,733 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-08 18:10:41,965 [INFO] response: https://search.yahoo.com/search;_ylt=qxAGzbhu2wd4kctW2aEZbXzh;_ylu=EaT9ys8H-sCJ_QdjkAMoeTsNucAEPRV1xUOgeQ9Bd5HCzsc?p=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026&btf=w 200
+2026-10-08 18:10:42,397 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:10:42,461 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-08 18:10:42,567 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com%2Fmarket+IHSG+Oktober+2026&source=web&tf=pw 429
+2026-10-08 18:10:42,579 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-08 18:10:57,727 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:10:57,728 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-08 18:10:57,730 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-08 18:10:57,730 [WARNING] backend is not set. Using 'auto'
+2026-10-08 18:10:57,898 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Akontan.co.id+IHSG+8+Oktober+2026&limit=1 200
+2026-10-08 18:10:57,907 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Akontan.co.id%20IHSG%208%20Oktober%202026 200
+2026-10-08 18:10:58,136 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:10:58,222 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-08 18:10:58,714 [INFO] response: https://www.google.com/wml/search?q=site%3Akontan.co.id+IHSG+8+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-08 18:10:58,934 [INFO] response: https://search.yahoo.com/search;_ylt=yxv_ju7i8XeR8kE7VOJaWs3x;_ylu=_O1PKWSN-kTOmWuIOrIORiHlM5q7HbDTegKQjnyC11Fvo0A?p=site%3Akontan.co.id+IHSG+8+Oktober+2026&btf=d 200
+2026-10-08 18:10:59,402 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-08 18:11:02,734 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-08 18:11:02,735 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-10-08 18:11:02,735 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-08 18:11:30,485 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:11:30,486 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-08 18:11:30,488 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-08 18:11:30,488 [WARNING] backend is not set. Using 'auto'
+2026-10-08 18:11:30,650 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Adetik.com%20olahraga%20OR%20timnas%20indonesia%20oktober%202026 200
+2026-10-08 18:11:30,685 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Adetik.com+olahraga+OR+timnas+indonesia+oktober+2026&limit=1 200
+2026-10-08 18:11:31,107 [INFO] response: https://www.mojeek.com/search?q=site%3Adetik.com+olahraga+OR+timnas+indonesia+oktober+2026 403
+2026-10-08 18:11:31,433 [INFO] response: https://search.yahoo.com/search;_ylt=b1ogcgUThQE3NxILs_1th2Mq;_ylu=oF8YSRGWa4vky3XfgSndClhqiJXkBLgdLKk2ZW04QggwMzI?p=site%3Adetik.com+olahraga+OR+timnas+indonesia+oktober+2026&btf=d 200
+2026-10-08 18:11:31,838 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-08 18:11:31,984 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:11:32,063 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-08 18:11:32,215 [INFO] response: https://search.brave.com/search?q=site%3Adetik.com+olahraga+OR+timnas+indonesia+oktober+2026&source=web&tf=pd 429
+2026-10-08 18:11:32,760 [INFO] response: https://www.google.com/wml/search?q=site%3Adetik.com+olahraga+OR+timnas+indonesia+oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-08 18:11:32,760 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-08 18:11:32,913 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Adetik.com%20olahraga%20OR%20timnas%20indonesia%20oktober%202026 200
+2026-10-08 18:11:32,953 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Adetik.com+olahraga+OR+timnas+indonesia+oktober+2026&limit=1 200
+2026-10-08 18:11:33,169 [INFO] response: https://search.yahoo.com/search;_ylt=HdPMEeIdFGkKvviXxdL3hyJj;_ylu=OOWg6m7KyhnQdL9AdKSL2rQjwFfabB8XzeIFI2arr7aH5kc?p=site%3Adetik.com+olahraga+OR+timnas+indonesia+oktober+2026&btf=d 200
+2026-10-08 18:11:33,896 [INFO] response: https://www.mojeek.com/search?q=site%3Adetik.com+olahraga+OR+timnas+indonesia+oktober+2026 403
+2026-10-08 18:11:34,048 [INFO] response: https://www.startpage.com/ 200
+2026-10-08 18:11:34,130 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-08 18:11:34,421 [INFO] response: https://www.google.com/wml/search?q=site%3Adetik.com+olahraga+OR+timnas+indonesia+oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-08 18:11:34,524 [INFO] response: https://search.brave.com/search?q=site%3Adetik.com+olahraga+OR+timnas+indonesia+oktober+2026&source=web&tf=pd 429
+2026-10-08 18:11:34,564 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-08 18:11:34,565 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-08 18:11:34,619 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Adetik.com%20olahraga%20OR%20timnas%20indonesia%20oktober%202026 200
+2026-10-08 18:11:34,698 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Adetik.com+olahraga+OR+timnas+indonesia+oktober+2026&limit=1 200
+2026-10-08 18:11:34,910 [INFO] response: https://search.yahoo.com/search;_ylt=21Fyr3190mQel_uxKVwD6ZxO;_ylu=QPKghcNO-9dCiklnjwjpwbhmXVWIcXRrBUgfjKtR3Cmkmgs?p=site%3Adetik.com+olahraga+OR+timnas+indonesia+oktober+2026&btf=w 200
+2026-10-08 18:11:35,327 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-08 18:11:37,899 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-08 18:11:37,900 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-10-08 18:11:37,900 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-08 18:11:38,282 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-08 18:11:38,283 [WARNING] ⚠️ Gemini / gemini-3.5-flash-lite gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-10-08 18:11:38,283 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:11:38,283 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:11:40,929 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:11:40,930 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:11:40,935 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:11:40,935 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:11:49,633 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:11:49,634 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:11:49,638 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:11:49,639 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:11:51,250 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:11:51,251 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:11:51,256 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:11:51,256 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:11:53,183 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:11:53,184 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:11:53,188 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:11:53,188 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:11:55,659 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:11:55,660 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:11:55,666 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:11:55,666 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:03,260 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:03,261 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:03,262 [INFO] Validasi: 3x fetch_webpage sukses (minimum 3).
+2026-10-08 18:12:03,262 [INFO] URL yang berhasil di-fetch: {'https://www.cnbc.com/2026/10/08/ray-dalio-stocks-bond-yields.html', 'https://www.bbc.com/sport/football/articles/cm74pl21n37do', 'https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/'}
+2026-10-08 18:12:03,262 [WARNING] Laporan tidak valid: Terlalu pendek (143 karakter, minimal 500)
+2026-10-08 18:12:03,262 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-10-08 18:12:03,262 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-10-08 18:12:03,278 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:03,279 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:08,222 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:08,223 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:08,227 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:08,227 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:10,762 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:10,763 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:10,767 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:10,768 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:11,655 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:11,656 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:11,658 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:11,658 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:12,208 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:12,209 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:12,210 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:12,210 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:14,054 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:14,054 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:14,056 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:14,056 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:15,467 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:15,468 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:15,469 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:15,469 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:16,705 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:16,706 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:16,708 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:16,708 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:17,682 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:17,683 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:17,684 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:17,684 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:18,265 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:18,266 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:18,267 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:18,267 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:19,641 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:19,642 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:19,643 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:19,643 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:21,745 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:21,746 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:21,748 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:21,748 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:22,936 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:22,936 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:22,938 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:22,938 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:23,802 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:23,803 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:23,805 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:23,805 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:25,991 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:25,991 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:25,993 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:25,993 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:26,934 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:26,935 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:26,936 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:26,936 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:27,557 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:27,558 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:27,560 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:27,560 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:28,337 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:28,338 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:28,339 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:28,339 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:12:30,127 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:12:30,127 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:12:30,129 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-08 18:12:30,129 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-08 18:13:02,374 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-08 18:13:02,537 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-08 18:13:02,538 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-10-08 18:13:02,538 [INFO] URL yang berhasil di-fetch: {'https://www.cnbc.com/2026/10/08/ray-dalio-stocks-bond-yields.html', 'https://www.bbc.com/sport/football/articles/cm74pl21n37do', 'https://techcrunch.com/2026/10/08/google-releases-a-new-local-first-granola-competitor/'}
+2026-10-08 18:13:02,539 [WARNING] Laporan tidak valid: Hanya 0 URL whitelist ditemukan, minimal 3
+2026-10-08 18:13:02,539 [ERROR] ❌ Laporan hari ini gagal divalidasi (Hanya 0 URL whitelist ditemukan, minimal 3). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-10-08 18:13:02,539 [INFO] Mengirim laporan ke Telegram...
+2026-10-08 18:13:03,192 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
