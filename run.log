@@ -49636,3 +49636,632 @@ Sumber: https://travel.detik.com/travel-news/d-8694185/viral-perempuan-naik-heli
 2026-10-09 17:44:55,710 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terdeteksi output rusak: </code). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-10-09 17:44:55,710 [INFO] Mengirim laporan ke Telegram...
 2026-10-09 17:44:56,392 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-10-10 03:15:20,745 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-10-10 03:15:20,745 [INFO] =======================================================
+2026-10-10 03:15:20,745 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-10-10 03:15:20,745 [INFO] =======================================================
+2026-10-10 03:15:20,745 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-10-10 03:15:20,983 [INFO] Provider siap: Gemini dengan 4 model
+2026-10-10 03:15:20,984 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-10-10 03:15:20,985 [INFO] Provider siap: Z.AI dengan 1 model
+2026-10-10 03:15:20,986 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-10-10 03:15:20,986 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-10-10 03:15:20,994 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-10-10 03:15:21,012 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-10 03:16:06,137 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Request timed out.
+2026-10-10 03:16:06,137 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:16:10,880 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:16:10,885 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:16:10,911 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:16:10,911 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:16:11,158 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20stock%20market%20crypto%20October%202026%20CNBC%20BBC 200
+2026-10-10 03:16:11,320 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+stock+market+crypto+October+2026+CNBC+BBC&limit=1 200
+2026-10-10 03:16:11,553 [INFO] response: https://search.brave.com/search?q=geopolitics+stock+market+crypto+October+2026+CNBC+BBC&source=web&tf=pd 429
+2026-10-10 03:16:12,277 [INFO] response: https://www.mojeek.com/search?q=geopolitics+stock+market+crypto+October+2026+CNBC+BBC 403
+2026-10-10 03:16:13,066 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-10-10 03:16:13,069 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:16:16,052 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:16:16,053 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:16:16,054 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:16:16,054 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:16:16,235 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20stocks%20crypto%20geopolitics%20October%202026 200
+2026-10-10 03:16:16,304 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026&limit=1 200
+2026-10-10 03:16:16,488 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:16,905 [INFO] response: https://search.yahoo.com/search;_ylt=EQA5RE2xXcoXd-XaQ36lbMj3;_ylu=W8i9RoxreJqTCOz5HtyGdKcl6TmisPGbGl5JcyhEehZ5ttI?p=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026&btf=d 200
+2026-10-10 03:16:17,051 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026&source=web&tf=pd 429
+2026-10-10 03:16:17,505 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:16:17,875 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:17,939 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:16:18,432 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026 403
+2026-10-10 03:16:18,432 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-10 03:16:18,620 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20stocks%20crypto%20geopolitics%20October%202026 200
+2026-10-10 03:16:18,628 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026&limit=1 200
+2026-10-10 03:16:18,769 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026&source=web&tf=pd 429
+2026-10-10 03:16:19,088 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:16:19,335 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:19,418 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:16:19,659 [INFO] response: https://search.yahoo.com/search;_ylt=UqgGd_eyASGUHMnReD5fNwzx;_ylu=Wxd1ej65Fh1Pug2curmGecX9fnf82UyBM1zKlIR2cNa2a04?p=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026&btf=d 200
+2026-10-10 03:16:19,801 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:20,399 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026 403
+2026-10-10 03:16:20,400 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-10 03:16:20,443 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20stocks%20crypto%20geopolitics%20October%202026 200
+2026-10-10 03:16:20,606 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026&limit=1 200
+2026-10-10 03:16:21,015 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026 403
+2026-10-10 03:16:21,272 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:21,337 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:16:21,691 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-10 03:16:22,286 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026&source=web&tf=pw 429
+2026-10-10 03:16:22,553 [INFO] response: https://search.yahoo.com/search;_ylt=qWenRkvyVHXcF4oTb0IRAHS4;_ylu=NCYLj0NjQPtlG3KTHP4kcHYNw0xXQANSldps5YA5SjUsTAE?p=site%3Acnbc.com+markets+stocks+crypto+geopolitics+October+2026&btf=w 200
+2026-10-10 03:16:22,698 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:22,699 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-10 03:16:22,700 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:16:24,690 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:16:24,691 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:16:24,693 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:16:24,693 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:16:24,871 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20markets%20stocks%20crypto%20geopolitical%20tensions%20October%209%2010%202026 200
+2026-10-10 03:16:25,028 [INFO] response: https://grokipedia.com/api/typeahead?query=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026&limit=1 200
+2026-10-10 03:16:25,178 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:25,357 [INFO] response: https://search.brave.com/search?q=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026&source=web&tf=pd 429
+2026-10-10 03:16:25,555 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:25,619 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:16:26,019 [INFO] response: https://www.google.com/wml/search?q=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:16:26,225 [INFO] response: https://search.yahoo.com/search;_ylt=ayO8-fcOLBHG4pqq-29SSIue;_ylu=z2kxGy-D4IsM9NyK49--P4qeHxYM1kZh0jLUhIdzG4aq08Q?p=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026&btf=d 200
+2026-10-10 03:16:26,717 [INFO] response: https://www.mojeek.com/search?q=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026 403
+2026-10-10 03:16:26,718 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-10 03:16:26,762 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20markets%20stocks%20crypto%20geopolitical%20tensions%20October%209%2010%202026 200
+2026-10-10 03:16:27,034 [INFO] response: https://grokipedia.com/api/typeahead?query=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026&limit=1 200
+2026-10-10 03:16:27,361 [INFO] response: https://www.google.com/wml/search?q=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:16:27,492 [INFO] response: https://search.brave.com/search?q=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026&source=web&tf=pd 429
+2026-10-10 03:16:27,706 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:27,791 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:16:27,911 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:28,342 [INFO] response: https://www.mojeek.com/search?q=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026 403
+2026-10-10 03:16:28,557 [INFO] response: https://search.yahoo.com/search;_ylt=NLQaYpMDV4UQQg2qs4gI6Fik;_ylu=dUKL7FomkHU2UUhbqUCz4Si5tLaspLl3LVGzaieGNrBVFpw?p=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026&btf=d 200
+2026-10-10 03:16:28,592 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-10 03:16:28,739 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20markets%20stocks%20crypto%20geopolitical%20tensions%20October%209%2010%202026 200
+2026-10-10 03:16:28,880 [INFO] response: https://grokipedia.com/api/typeahead?query=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026&limit=1 200
+2026-10-10 03:16:29,034 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:29,242 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:29,308 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:16:29,631 [INFO] response: https://www.google.com/wml/search?q=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-10 03:16:29,887 [INFO] response: https://search.yahoo.com/search;_ylt=6VjhYPDyIZWWD-8odY8-YjGm;_ylu=ENQdhxs5pn9ZYDRj5XZlMCNj7EuuqkCMQPTDYOhOj14YlGY?p=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026&btf=w 200
+2026-10-10 03:16:30,022 [INFO] response: https://search.brave.com/search?q=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026&source=web&tf=pw 429
+2026-10-10 03:16:30,549 [INFO] response: https://www.mojeek.com/search?q=global+markets+stocks+crypto+geopolitical+tensions+October+9+10+2026 403
+2026-10-10 03:16:30,549 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-10 03:16:30,551 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:16:32,143 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:16:32,144 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:16:32,145 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:16:32,145 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:16:32,310 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20news%20middle%20east%20oil%20prices%20October%202026%20BBC%20CNBC 200
+2026-10-10 03:16:32,491 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC&limit=1 200
+2026-10-10 03:16:32,785 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:32,880 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:16:33,403 [INFO] response: https://www.google.com/wml/search?q=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:16:33,522 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:34,023 [INFO] response: https://www.mojeek.com/search?q=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC 403
+2026-10-10 03:16:34,276 [INFO] response: https://search.yahoo.com/search;_ylt=aXWYS1CzfkS-bRKN9xiALdYf;_ylu=dxEswQZ1HFKAxHI_-428RQKhHg-wdvk2UsBmGfpqgvzE3n8?p=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC&btf=d 200
+2026-10-10 03:16:34,431 [INFO] response: https://search.brave.com/search?q=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC&source=web&tf=pd 429
+2026-10-10 03:16:34,442 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-10 03:16:34,602 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20news%20middle%20east%20oil%20prices%20October%202026%20BBC%20CNBC 200
+2026-10-10 03:16:34,701 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC&limit=1 200
+2026-10-10 03:16:35,235 [INFO] response: https://www.google.com/wml/search?q=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:16:35,458 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:35,535 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:16:35,669 [INFO] response: https://search.brave.com/search?q=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC&source=web&tf=pd 429
+2026-10-10 03:16:36,184 [INFO] response: https://www.mojeek.com/search?q=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC 403
+2026-10-10 03:16:36,389 [INFO] response: https://search.yahoo.com/search;_ylt=X6E0vOA_NF5e2a-D7CVqmT_l;_ylu=LpE6aNQREDhtqlhD-On1MdwB6D27Mw-u3-He7C8Wvb13tnQ?p=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC&btf=d 200
+2026-10-10 03:16:36,565 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:36,588 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-10 03:16:36,638 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20news%20middle%20east%20oil%20prices%20October%202026%20BBC%20CNBC 200
+2026-10-10 03:16:36,853 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC&limit=1 200
+2026-10-10 03:16:37,099 [INFO] response: https://search.yahoo.com/search;_ylt=zq7MbhLnuG9z2o1E60KQgqDH;_ylu=9FfP1uzu-IKNgW-kL9PDNZtifGMn6fobumajdMdPGyWRTh4?p=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC&btf=w 200
+2026-10-10 03:16:37,466 [INFO] response: https://www.google.com/wml/search?q=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-10 03:16:37,642 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:37,705 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:16:37,855 [INFO] response: https://search.brave.com/search?q=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC&source=web&tf=pw 429
+2026-10-10 03:16:37,996 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:38,470 [INFO] response: https://www.mojeek.com/search?q=stock+market+news+middle+east+oil+prices+October+2026+BBC+CNBC 403
+2026-10-10 03:16:38,470 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-10 03:16:38,472 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:16:39,763 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:16:39,764 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:16:39,766 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:16:39,766 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:16:39,919 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economy%20news%20October%202026%20BBC 200
+2026-10-10 03:16:40,054 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economy+news+October+2026+BBC&limit=1 200
+2026-10-10 03:16:40,366 [INFO] response: https://www.google.com/wml/search?q=global+economy+news+October+2026+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:16:40,583 [INFO] response: https://search.yahoo.com/search;_ylt=Z28nojOUPFNj2zM4ws4TNZbi;_ylu=bKJwNPVLYRw56amwAld6qZhtzV_ZB3u1bA3G7_76qdTQ1c0?p=global+economy+news+October+2026+BBC&btf=d 200
+2026-10-10 03:16:40,732 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:41,182 [INFO] response: https://www.mojeek.com/search?q=global+economy+news+October+2026+BBC 403
+2026-10-10 03:16:41,314 [INFO] response: https://search.brave.com/search?q=global+economy+news+October+2026+BBC&source=web&tf=pd 429
+2026-10-10 03:16:41,500 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:41,824 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=7d3d52029232877106a54db11e0b7501&bds_t=1791602201T5675db7566e0f27caa7e7935661289a9a8e0cb7d6d2c4067163bb29a7154407b&bds_s=7c808d7b14c34f73921037a8479b9aff&abe=0&lui=english&sc=&with_date=d&qadf=moderate&abd=0&abp=1&qsr=en_US&t=device&language=english&segment=organic&query=global+economy+news+October+2026+BBC&cat=web&cmd=gen_page 200
+2026-10-10 03:16:41,861 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-10 03:16:41,993 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economy%20news%20October%202026%20BBC 200
+2026-10-10 03:16:42,070 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economy+news+October+2026+BBC&limit=1 200
+2026-10-10 03:16:42,282 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:42,346 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:16:42,479 [INFO] response: https://search.brave.com/search?q=global+economy+news+October+2026+BBC&source=web&tf=pd 429
+2026-10-10 03:16:43,076 [INFO] response: https://www.mojeek.com/search?q=global+economy+news+October+2026+BBC 403
+2026-10-10 03:16:43,360 [INFO] response: https://www.google.com/wml/search?q=global+economy+news+October+2026+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:16:43,455 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:43,715 [INFO] response: https://search.yahoo.com/search;_ylt=sDpKHJhAHJj0ISHnEH7MkzpN;_ylu=MBUB8qQk11iHwvrHVlnPvSb_fsyVpiZovDe2QiIfK__ad74?p=global+economy+news+October+2026+BBC&btf=d 200
+2026-10-10 03:16:43,716 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-10 03:16:43,768 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economy%20news%20October%202026%20BBC 200
+2026-10-10 03:16:43,867 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economy+news+October+2026+BBC&limit=1 200
+2026-10-10 03:16:44,003 [INFO] response: https://search.brave.com/search?q=global+economy+news+October+2026+BBC&source=web&tf=pw 429
+2026-10-10 03:16:44,116 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:44,554 [INFO] response: https://www.google.com/wml/search?q=global+economy+news+October+2026+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-10 03:16:44,961 [INFO] response: https://www.mojeek.com/search?q=global+economy+news+October+2026+BBC 403
+2026-10-10 03:16:45,254 [INFO] response: https://search.yahoo.com/search;_ylt=ct9rlUJGbq8gb67gwiHgXjdY;_ylu=1hyseX0Xr9rfshMKo2Zok4neXeMugKwAQHnKk1Bh6rXLImY?p=global+economy+news+October+2026+BBC&btf=w 200
+2026-10-10 03:16:45,476 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:45,560 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:16:45,560 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-10 03:16:45,562 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:16:47,270 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:16:47,271 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:16:47,272 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:16:47,272 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:16:47,418 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20market%20news%20bbc 200
+2026-10-10 03:16:47,508 [INFO] response: https://grokipedia.com/api/typeahead?query=global+market+news+bbc&limit=1 200
+2026-10-10 03:16:47,948 [INFO] response: https://www.mojeek.com/search?q=global+market+news+bbc 403
+2026-10-10 03:16:48,505 [INFO] response: https://www.google.com/wml/search?q=global+market+news+bbc&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:16:50,497 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:50,810 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=7d3d52029232877106a54db11e0b7501&bds_t=1791602210T09dc8cd0fb638658eb165accf14c6a2c4bcd7502bff0b957535b74126f53117a&bds_s=34929d36c2e749cbb6b4e7c8d7790bab&language=english&segment=organic&qsr=en_US&sc=&qadf=moderate&abd=0&lui=english&t=device&with_date=d&abe=0&abp=1&query=global+market+news+bbc&cat=web&cmd=gen_page 200
+2026-10-10 03:16:50,940 [INFO] response: https://search.brave.com/search?q=global+market+news+bbc&source=web&tf=pd 429
+2026-10-10 03:16:51,065 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:51,318 [INFO] response: https://search.yahoo.com/search;_ylt=8rdyfAKkMX62mMQ6EvnUIFH3;_ylu=DDOxYI27704f_VTy1ZZ9nobrrTLCS5JcQM3-xU33ajdOxmY?p=global+market+news+bbc&btf=d 200
+2026-10-10 03:16:51,319 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-10 03:16:51,362 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20market%20news%20bbc 200
+2026-10-10 03:16:51,564 [INFO] response: https://grokipedia.com/api/typeahead?query=global+market+news+bbc&limit=1 200
+2026-10-10 03:16:52,757 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:53,539 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:16:53,656 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:53,794 [INFO] response: https://search.brave.com/search?q=global+market+news+bbc&source=web&tf=pd 429
+2026-10-10 03:16:54,317 [INFO] response: https://www.mojeek.com/search?q=global+market+news+bbc 403
+2026-10-10 03:16:54,524 [INFO] response: https://search.yahoo.com/search;_ylt=VneKCszX6tG0AvVfJiU1hoWK;_ylu=sTGD7myXRR-tjPrdIh0oRX4vzH7vAiUzfVQ9FvCPyGjCNOI?p=global+market+news+bbc&btf=d 200
+2026-10-10 03:16:55,036 [INFO] response: https://www.google.com/wml/search?q=global+market+news+bbc&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:16:55,036 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-10 03:16:55,089 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20market%20news%20bbc 200
+2026-10-10 03:16:55,267 [INFO] response: https://grokipedia.com/api/typeahead?query=global+market+news+bbc&limit=1 200
+2026-10-10 03:16:55,409 [INFO] response: https://search.brave.com/search?q=global+market+news+bbc&source=web&tf=pw 429
+2026-10-10 03:16:55,661 [INFO] response: https://search.yahoo.com/search;_ylt=ZfcCljvNWP0vt9u1-gt7DoSt;_ylu=juD-nqGdBmlpmtNGsSCbuToxHblKNjQWXPCwyhdXLMo6K7A?p=global+market+news+bbc&btf=w 200
+2026-10-10 03:16:55,961 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:16:56,112 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:16:56,545 [INFO] response: https://www.mojeek.com/search?q=global+market+news+bbc 403
+2026-10-10 03:16:56,834 [INFO] response: https://www.google.com/wml/search?q=global+market+news+bbc&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-10 03:16:56,945 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:16:56,948 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-10 03:16:56,949 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:16:59,568 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:16:59,569 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:16:59,570 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:16:59,570 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:16:59,742 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20geopolitik%20ekonomi%20global%20pasar%20saham 200
+2026-10-10 03:16:59,835 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+geopolitik+ekonomi+global+pasar+saham&limit=1 200
+2026-10-10 03:17:00,274 [INFO] response: https://www.mojeek.com/search?q=berita+geopolitik+ekonomi+global+pasar+saham 403
+2026-10-10 03:17:00,513 [INFO] response: https://search.yahoo.com/search;_ylt=LYxLkn9MOOiaGtRc4zHXWShV;_ylu=fNRxbRJ4Kuo-niFervVFXAv4mC6vzO_vZ_gUdl62TZjh8ko?p=berita+geopolitik+ekonomi+global+pasar+saham&btf=d 200
+2026-10-10 03:17:00,656 [INFO] response: https://search.brave.com/search?q=berita+geopolitik+ekonomi+global+pasar+saham&source=web&tf=pd 429
+2026-10-10 03:17:01,001 [INFO] response: https://www.google.com/wml/search?q=berita+geopolitik+ekonomi+global+pasar+saham&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:17:01,117 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:01,421 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:01,490 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:01,490 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-10 03:17:01,532 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20geopolitik%20ekonomi%20global%20pasar%20saham 200
+2026-10-10 03:17:01,735 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+geopolitik+ekonomi+global+pasar+saham&limit=1 200
+2026-10-10 03:17:02,136 [INFO] response: https://www.mojeek.com/search?q=berita+geopolitik+ekonomi+global+pasar+saham 403
+2026-10-10 03:17:02,235 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:02,375 [INFO] response: https://search.brave.com/search?q=berita+geopolitik+ekonomi+global+pasar+saham&source=web&tf=pd 429
+2026-10-10 03:17:02,752 [INFO] response: https://www.google.com/wml/search?q=berita+geopolitik+ekonomi+global+pasar+saham&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:17:04,403 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:04,823 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:05,031 [INFO] response: https://search.yahoo.com/search;_ylt=ojm9vI2SNBgifmKngWaYlAOC;_ylu=bDBGNamgva8BvRi6BCgrs5I1JR3U09y7dWJ_srpONt62r0s?p=berita+geopolitik+ekonomi+global+pasar+saham&btf=d 200
+2026-10-10 03:17:05,064 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-10 03:17:05,208 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20geopolitik%20ekonomi%20global%20pasar%20saham 200
+2026-10-10 03:17:05,283 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+geopolitik+ekonomi+global+pasar+saham&limit=1 200
+2026-10-10 03:17:05,476 [INFO] response: https://search.brave.com/search?q=berita+geopolitik+ekonomi+global+pasar+saham&source=web&tf=pw 429
+2026-10-10 03:17:05,833 [INFO] response: https://www.google.com/wml/search?q=berita+geopolitik+ekonomi+global+pasar+saham&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-10 03:17:06,293 [INFO] response: https://www.mojeek.com/search?q=berita+geopolitik+ekonomi+global+pasar+saham 403
+2026-10-10 03:17:06,530 [INFO] response: https://search.yahoo.com/search;_ylt=BokDQi48ZiB7mb_U6WUayTpL;_ylu=xi5DCj8m5RqsHoYE_IYuzpN4R9e0m2d4XZc_sxngyopPRrw?p=berita+geopolitik+ekonomi+global+pasar+saham&btf=w 200
+2026-10-10 03:17:06,661 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:06,841 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:06,924 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:06,925 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-10 03:17:06,927 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:17:08,907 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:17:08,907 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:17:08,909 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:17:08,909 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:17:09,039 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=pasar%20saham%20global 200
+2026-10-10 03:17:09,118 [INFO] response: https://grokipedia.com/api/typeahead?query=pasar+saham+global&limit=1 200
+2026-10-10 03:17:09,560 [INFO] response: https://www.mojeek.com/search?q=pasar+saham+global 403
+2026-10-10 03:17:09,742 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:09,833 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:09,940 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:10,192 [INFO] response: https://search.yahoo.com/search;_ylt=lUrcXekezCPb9NYVpwMPZP4e;_ylu=SN30eIsbu1EceAjkFxgDkW5KTlUmHvjjqkjguz7ZgIF8cBs?p=pasar+saham+global&btf=d 200
+2026-10-10 03:17:10,611 [INFO] response: https://www.google.com/wml/search?q=pasar+saham+global&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:17:10,755 [INFO] response: https://search.brave.com/search?q=pasar+saham+global&source=web&tf=pd 429
+2026-10-10 03:17:10,768 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-10 03:17:10,808 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=pasar%20saham%20global 200
+2026-10-10 03:17:10,990 [INFO] response: https://grokipedia.com/api/typeahead?query=pasar+saham+global&limit=1 200
+2026-10-10 03:17:12,008 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:12,421 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:12,628 [INFO] response: https://search.yahoo.com/search;_ylt=40xs1z35nR_4OjQJNdSgTL0o;_ylu=rftHOMjU0AyzDCn6GfcJ0mpmqy0-2ufhqc-HHfMah7nuNbo?p=pasar+saham+global&btf=d 200
+2026-10-10 03:17:13,096 [INFO] response: https://www.mojeek.com/search?q=pasar+saham+global 403
+2026-10-10 03:17:13,427 [INFO] response: https://www.google.com/wml/search?q=pasar+saham+global&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:17:14,286 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-10-10 03:17:14,288 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:17:14,414 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:17:14,414 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 45.596673194s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}]
+2026-10-10 03:17:14,414 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:17:14,414 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:17:17,238 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:17:17,239 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:17:17,240 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:17:17,318 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:17:17,319 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 42.691773136s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '42s'}]}}]
+2026-10-10 03:17:17,319 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:17:17,319 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:17:22,732 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:17:22,732 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:17:22,735 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:17:25,664 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:17:25,665 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:17:25,666 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:17:25,666 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:17:25,826 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20conflict%20impact%20stock%20market%20crypto%20CNBC 200
+2026-10-10 03:17:25,935 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+conflict+impact+stock+market+crypto+CNBC&limit=1 200
+2026-10-10 03:17:26,276 [INFO] response: https://search.yahoo.com/search;_ylt=lsZMtjuyKgzStSK8-exAnfpH;_ylu=Cglua2hyL-eyNO0n5iW577cVnXuAIf9RrkBkdxXCQ4os-4M?p=Middle+East+conflict+impact+stock+market+crypto+CNBC&btf=d 200
+2026-10-10 03:17:26,784 [INFO] response: https://www.google.com/wml/search?q=Middle+East+conflict+impact+stock+market+crypto+CNBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:17:27,348 [INFO] response: https://www.mojeek.com/search?q=Middle+East+conflict+impact+stock+market+crypto+CNBC 403
+2026-10-10 03:17:27,986 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-10-10 03:17:27,988 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:17:29,744 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:17:29,745 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:17:29,746 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:17:29,746 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:17:29,900 [INFO] response: https://grokipedia.com/api/typeahead?query=pasar+saham+geopolitik+cnbc+indonesia&limit=1 200
+2026-10-10 03:17:29,905 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=pasar%20saham%20geopolitik%20cnbc%20indonesia 200
+2026-10-10 03:17:30,332 [INFO] response: https://www.mojeek.com/search?q=pasar+saham+geopolitik+cnbc+indonesia 403
+2026-10-10 03:17:30,439 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:30,830 [INFO] response: https://www.google.com/wml/search?q=pasar+saham+geopolitik+cnbc+indonesia&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:17:31,041 [INFO] response: https://search.yahoo.com/search;_ylt=Z0mpWR4mX9XkxFc6-Diiv2FW;_ylu=kZisUKy4_ODllxbQ0ZLAZz2wOVPp-cGMXTsxEUQYSqh8bdA?p=pasar+saham+geopolitik+cnbc+indonesia&btf=d 200
+2026-10-10 03:17:31,253 [INFO] response: https://search.brave.com/search?q=pasar+saham+geopolitik+cnbc+indonesia&source=web&tf=pd 429
+2026-10-10 03:17:31,428 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:31,658 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:31,658 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-10 03:17:31,702 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=pasar%20saham%20geopolitik%20cnbc%20indonesia 200
+2026-10-10 03:17:31,823 [INFO] response: https://grokipedia.com/api/typeahead?query=pasar+saham+geopolitik+cnbc+indonesia&limit=1 200
+2026-10-10 03:17:32,148 [INFO] response: https://www.google.com/wml/search?q=pasar+saham+geopolitik+cnbc+indonesia&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:17:32,256 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:32,461 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:32,527 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:32,932 [INFO] response: https://www.mojeek.com/search?q=pasar+saham+geopolitik+cnbc+indonesia 403
+2026-10-10 03:17:33,179 [INFO] response: https://search.yahoo.com/search;_ylt=DzAMdKAcdfpEsU1P3nwTjYsE;_ylu=p59RsfExS09XoX5BuDh_MuH5Kb00PgF7vVHWyelTbT3BcTA?p=pasar+saham+geopolitik+cnbc+indonesia&btf=d 200
+2026-10-10 03:17:33,314 [INFO] response: https://search.brave.com/search?q=pasar+saham+geopolitik+cnbc+indonesia&source=web&tf=pd 429
+2026-10-10 03:17:33,327 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-10 03:17:33,470 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=pasar%20saham%20geopolitik%20cnbc%20indonesia 200
+2026-10-10 03:17:33,477 [INFO] response: https://grokipedia.com/api/typeahead?query=pasar+saham+geopolitik+cnbc+indonesia&limit=1 200
+2026-10-10 03:17:33,892 [INFO] response: https://www.mojeek.com/search?q=pasar+saham+geopolitik+cnbc+indonesia 403
+2026-10-10 03:17:34,028 [INFO] response: https://search.brave.com/search?q=pasar+saham+geopolitik+cnbc+indonesia&source=web&tf=pw 429
+2026-10-10 03:17:34,496 [INFO] response: https://www.google.com/wml/search?q=pasar+saham+geopolitik+cnbc+indonesia&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-10 03:17:34,612 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:34,862 [INFO] response: https://search.yahoo.com/search;_ylt=LeJJqDWQ5VbCyw1MWXtK5j3O;_ylu=ZCEHBH56TJqU8MZvLgq4Nr6mT479bVFtKLRymAHLMhQUGys?p=pasar+saham+geopolitik+cnbc+indonesia&btf=w 200
+2026-10-10 03:17:35,031 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:35,166 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:35,166 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-10 03:17:35,167 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:17:36,481 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:17:36,482 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:17:36,483 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:17:36,483 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:17:36,642 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Wall%20Street%20minyak%20pasar%20global 200
+2026-10-10 03:17:36,682 [INFO] response: https://grokipedia.com/api/typeahead?query=Wall+Street+minyak+pasar+global&limit=1 200
+2026-10-10 03:17:36,893 [INFO] response: https://search.yahoo.com/search;_ylt=svHL5kUWvXJfWRYf9E0WDkFG;_ylu=PqO4sCsQLBqalFT_zUw5bMsG3sSaVlgeVidZmTc5HKjl78M?p=Wall+Street+minyak+pasar+global&btf=d 200
+2026-10-10 03:17:37,436 [INFO] response: https://www.google.com/wml/search?q=Wall+Street+minyak+pasar+global&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:17:37,553 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:37,991 [INFO] response: https://www.mojeek.com/search?q=Wall+Street+minyak+pasar+global 403
+2026-10-10 03:17:38,164 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:38,227 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:38,365 [INFO] response: https://search.brave.com/search?q=Wall+Street+minyak+pasar+global&source=web&tf=pd 429
+2026-10-10 03:17:38,377 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-10 03:17:38,422 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Wall%20Street%20minyak%20pasar%20global 200
+2026-10-10 03:17:38,606 [INFO] response: https://grokipedia.com/api/typeahead?query=Wall+Street+minyak+pasar+global&limit=1 200
+2026-10-10 03:17:39,045 [INFO] response: https://www.mojeek.com/search?q=Wall+Street+minyak+pasar+global 403
+2026-10-10 03:17:39,162 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:39,341 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:39,414 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:39,710 [INFO] response: https://www.google.com/wml/search?q=Wall+Street+minyak+pasar+global&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:17:39,946 [INFO] response: https://search.yahoo.com/search;_ylt=wiSvMWpXAckXd6GDDudUWJ86;_ylu=NwjgH_5GdvJ2xibgC8n0GRn6HWUaQZ41YBZ9jaz-peMXypI?p=Wall+Street+minyak+pasar+global&btf=d 200
+2026-10-10 03:17:40,079 [INFO] response: https://search.brave.com/search?q=Wall+Street+minyak+pasar+global&source=web&tf=pd 429
+2026-10-10 03:17:40,091 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-10 03:17:40,131 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Wall%20Street%20minyak%20pasar%20global 200
+2026-10-10 03:17:40,309 [INFO] response: https://grokipedia.com/api/typeahead?query=Wall+Street+minyak+pasar+global&limit=1 200
+2026-10-10 03:17:40,445 [INFO] response: https://search.brave.com/search?q=Wall+Street+minyak+pasar+global&source=web&tf=pw 429
+2026-10-10 03:17:40,658 [INFO] response: https://search.yahoo.com/search;_ylt=rCidSX2907aKFgYsIcmeXpUv;_ylu=4ZY4e-78Qa71wvD0ajiYAb03qyGXBAr_3RNl8MrbmN9RBAA?p=Wall+Street+minyak+pasar+global&btf=w 200
+2026-10-10 03:17:41,102 [INFO] response: https://www.mojeek.com/search?q=Wall+Street+minyak+pasar+global 403
+2026-10-10 03:17:41,286 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:41,356 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:41,613 [INFO] response: https://www.google.com/wml/search?q=Wall+Street+minyak+pasar+global&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-10 03:17:41,729 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:41,729 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-10 03:17:41,730 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:17:43,974 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:17:43,975 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:17:43,976 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:17:43,976 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:17:44,118 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20Kompas%20Detik%20CNBC 200
+2026-10-10 03:17:44,308 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+Kompas+Detik+CNBC&limit=1 200
+2026-10-10 03:17:44,689 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+Kompas+Detik+CNBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:17:44,822 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+Kompas+Detik+CNBC&source=web&tf=pd 429
+2026-10-10 03:17:45,002 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:45,066 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:45,179 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:45,394 [INFO] response: https://search.yahoo.com/search;_ylt=E71yaLUa-0pyoACVwNlcbcbd;_ylu=nIxj4TfodPqgiWgKxQqMiElcCaHcpeXlJyCuZrhBZw2XzB4?p=IHSG+hari+ini+Kompas+Detik+CNBC&btf=d 200
+2026-10-10 03:17:45,847 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+Kompas+Detik+CNBC 403
+2026-10-10 03:17:45,848 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-10 03:17:45,888 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20Kompas%20Detik%20CNBC 200
+2026-10-10 03:17:46,086 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+Kompas+Detik+CNBC&limit=1 200
+2026-10-10 03:17:46,245 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:46,627 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=7d3d52029232877106a54db11e0b7501&bds_t=1791602266Taa347d69fd6e144ce46673f1ecc18d0b41dd183f7a0bb5b8ed000cf70f8ca8f9&bds_s=b4d43af127f8401783b1e0df2fc10bb2&sc=&t=device&segment=organic&qadf=moderate&abd=0&language=english&with_date=d&abe=0&qsr=en_US&abp=1&lui=english&query=IHSG+hari+ini+Kompas+Detik+CNBC&cat=web&cmd=gen_page 200
+2026-10-10 03:17:46,834 [INFO] response: https://search.yahoo.com/search;_ylt=VB8zEtBWo5zc-5Q1uIlc7TIR;_ylu=4_Vpb071n9-n74MYPo4joANzxpY1nAu0kGISdoAI2LOxiO4?p=IHSG+hari+ini+Kompas+Detik+CNBC&btf=d 200
+2026-10-10 03:17:47,004 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+Kompas+Detik+CNBC&source=web&tf=pd 429
+2026-10-10 03:17:47,528 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+Kompas+Detik+CNBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:17:47,635 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:48,070 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+Kompas+Detik+CNBC 403
+2026-10-10 03:17:48,071 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-10 03:17:48,114 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20hari%20ini%20Kompas%20Detik%20CNBC 200
+2026-10-10 03:17:48,489 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+hari+ini+Kompas+Detik+CNBC&limit=1 200
+2026-10-10 03:17:48,702 [INFO] response: https://search.yahoo.com/search;_ylt=XvcNSrzOav3iJamS4cRdYCJs;_ylu=Ks4p19pgb-U6rUCCPfVU10Ppza7vRAgmJar_ZDHV32tAkNQ?p=IHSG+hari+ini+Kompas+Detik+CNBC&btf=w 200
+2026-10-10 03:17:49,224 [INFO] response: https://www.google.com/wml/search?q=IHSG+hari+ini+Kompas+Detik+CNBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-10 03:17:49,413 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:49,560 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:50,002 [INFO] response: https://www.mojeek.com/search?q=IHSG+hari+ini+Kompas+Detik+CNBC 403
+2026-10-10 03:17:50,137 [INFO] response: https://search.brave.com/search?q=IHSG+hari+ini+Kompas+Detik+CNBC&source=web&tf=pw 429
+2026-10-10 03:17:50,266 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:50,272 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-10 03:17:50,273 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:17:51,586 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:17:51,586 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:17:51,588 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:17:51,588 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:17:51,707 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG 200
+2026-10-10 03:17:51,783 [INFO] response: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=IHSG&explaintext=0&exintro=0&redirects=1 200
+2026-10-10 03:17:51,799 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG&limit=1 200
+2026-10-10 03:17:51,968 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:52,031 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:52,383 [INFO] response: https://www.google.com/wml/search?q=IHSG&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:17:52,505 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:52,654 [INFO] response: https://search.brave.com/search?q=IHSG&source=web&tf=pd 429
+2026-10-10 03:17:52,878 [INFO] response: https://search.yahoo.com/search;_ylt=x49pL6dZnNibmisCjKRHCndz;_ylu=T2I4OXMF4xOb3--_Wy2rDtc3AyKa4PxyBYvwC7TH3N1S6L0?p=IHSG&btf=d 200
+2026-10-10 03:17:53,375 [INFO] response: https://www.mojeek.com/search?q=IHSG 403
+2026-10-10 03:17:53,376 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:17:54,832 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:17:54,832 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:17:54,834 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:17:54,834 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:17:54,980 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=economy%20market%20site%3Abbc.com 200
+2026-10-10 03:17:55,167 [INFO] response: https://grokipedia.com/api/typeahead?query=economy+market+site%3Abbc.com&limit=1 200
+2026-10-10 03:17:55,312 [INFO] response: https://search.brave.com/search?q=economy+market+site%3Abbc.com&source=web&tf=pd 429
+2026-10-10 03:17:55,838 [INFO] response: https://www.mojeek.com/search?q=economy+market+site%3Abbc.com 403
+2026-10-10 03:17:55,942 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:56,178 [INFO] response: https://search.yahoo.com/search;_ylt=xI2e7G1k6IXPPChVackNQD6g;_ylu=06DrcpXoRONUyO-LcFeu01dFqjOlZaa0s1s2VpGV7IPH-_s?p=economy+market+site%3Abbc.com&btf=d 200
+2026-10-10 03:17:56,623 [INFO] response: https://www.google.com/wml/search?q=economy+market+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:17:56,806 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:56,876 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:56,877 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-10 03:17:57,015 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=economy%20market%20site%3Abbc.com 200
+2026-10-10 03:17:57,096 [INFO] response: https://grokipedia.com/api/typeahead?query=economy+market+site%3Abbc.com&limit=1 200
+2026-10-10 03:17:57,504 [INFO] response: https://www.mojeek.com/search?q=economy+market+site%3Abbc.com 403
+2026-10-10 03:17:57,646 [INFO] response: https://search.brave.com/search?q=economy+market+site%3Abbc.com&source=web&tf=pd 429
+2026-10-10 03:17:57,833 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:57,976 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:58,257 [INFO] response: https://search.yahoo.com/search;_ylt=usSAoTSKM9GEmtFT0efrzFVp;_ylu=NESjFH4K8CLoJLE4LKzsb9xrFcyyRhNueZe6-98APGOlkzo?p=economy+market+site%3Abbc.com&btf=d 200
+2026-10-10 03:17:58,382 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:17:58,811 [INFO] response: https://www.google.com/wml/search?q=economy+market+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:17:58,812 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-10 03:17:58,847 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=economy%20market%20site%3Abbc.com 200
+2026-10-10 03:17:59,039 [INFO] response: https://grokipedia.com/api/typeahead?query=economy+market+site%3Abbc.com&limit=1 200
+2026-10-10 03:17:59,183 [INFO] response: https://search.brave.com/search?q=economy+market+site%3Abbc.com&source=web&tf=pw 429
+2026-10-10 03:17:59,378 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:17:59,477 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:17:59,910 [INFO] response: https://www.google.com/wml/search?q=economy+market+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-10 03:18:00,148 [INFO] response: https://search.yahoo.com/search;_ylt=pzS3VUL963r5yf9ay6zsy_aL;_ylu=tPUa4tvpthKzmmdjhz-LvU43lS7jLG_J3CgTq6X4Bcx9F2Q?p=economy+market+site%3Abbc.com&btf=w 200
+2026-10-10 03:18:00,570 [INFO] response: https://www.mojeek.com/search?q=economy+market+site%3Abbc.com 403
+2026-10-10 03:18:00,682 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:18:00,686 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-10 03:18:00,688 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:00,816 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:00,817 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 59.192440298s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '59s'}]}}]
+2026-10-10 03:18:00,817 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:00,817 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:05,304 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:05,304 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:05,306 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:05,380 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:05,380 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 54.629984193s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54s'}]}}]
+2026-10-10 03:18:05,380 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:05,380 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:06,393 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:06,394 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:06,396 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:06,464 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:06,464 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 53.54520177s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}]
+2026-10-10 03:18:06,464 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:06,464 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:08,718 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:08,719 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:08,719 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-10-10 03:18:08,719 [INFO] URL yang berhasil di-fetch: set()
+2026-10-10 03:18:08,719 [WARNING] Laporan tidak valid: Terlalu pendek (99 karakter, minimal 500)
+2026-10-10 03:18:08,719 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-10-10 03:18:08,719 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-10-10 03:18:08,728 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:08,792 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:08,793 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 51.220206116s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '51s'}]}}]
+2026-10-10 03:18:08,793 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:08,793 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:14,017 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:14,017 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:14,019 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:14,126 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:14,126 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 45.884727668s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '45s'}]}}]
+2026-10-10 03:18:14,126 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:14,126 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:14,965 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:14,965 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:14,966 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:15,028 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:15,028 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 44.982298274s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '44s'}]}}]
+2026-10-10 03:18:15,028 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:15,028 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:16,210 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:16,211 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:16,211 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:16,285 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:16,286 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 43.725161452s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '43s'}]}}]
+2026-10-10 03:18:16,286 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:16,286 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:25,825 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:25,826 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:25,828 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:28,284 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:28,285 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-10 03:18:28,286 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-10 03:18:28,286 [WARNING] backend is not set. Using 'auto'
+2026-10-10 03:18:28,473 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=world%20geopolitics%20stocks%20crypto%20news%20site%3Acnbc.com%20OR%20site%3Abbc.com 200
+2026-10-10 03:18:28,590 [INFO] response: https://grokipedia.com/api/typeahead?query=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com&limit=1 200
+2026-10-10 03:18:28,741 [INFO] response: https://search.brave.com/search?q=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com&source=web&tf=pd 429
+2026-10-10 03:18:29,310 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:18:29,412 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:18:29,701 [INFO] response: https://www.google.com/wml/search?q=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:18:30,003 [INFO] response: https://search.yahoo.com/search;_ylt=VwBahw_j0KZJj7Km8KQTna6L;_ylu=cEcpU2CaIfnhgPYZkUHiX1eu2PIZPskzDLmAagaDE_f0HFU?p=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com&btf=d 200
+2026-10-10 03:18:30,157 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:18:30,574 [INFO] response: https://www.mojeek.com/search?q=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com 403
+2026-10-10 03:18:30,575 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-10 03:18:30,623 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=world%20geopolitics%20stocks%20crypto%20news%20site%3Acnbc.com%20OR%20site%3Abbc.com 200
+2026-10-10 03:18:30,849 [INFO] response: https://grokipedia.com/api/typeahead?query=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com&limit=1 200
+2026-10-10 03:18:31,015 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:18:31,110 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:18:31,545 [INFO] response: https://www.mojeek.com/search?q=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com 403
+2026-10-10 03:18:31,660 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:18:31,912 [INFO] response: https://search.yahoo.com/search;_ylt=Frd7MlO6ZW6iBKUs2bh50tVW;_ylu=H4wN4itrEu4Roozsdw9YcZ9C2CJhN-B27NvgQexCoG_ZxFY?p=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com&btf=d 200
+2026-10-10 03:18:32,313 [INFO] response: https://www.google.com/wml/search?q=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-10 03:18:32,491 [INFO] response: https://search.brave.com/search?q=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com&source=web&tf=pd 429
+2026-10-10 03:18:32,504 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-10 03:18:32,551 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=world%20geopolitics%20stocks%20crypto%20news%20site%3Acnbc.com%20OR%20site%3Abbc.com 200
+2026-10-10 03:18:32,802 [INFO] response: https://grokipedia.com/api/typeahead?query=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com&limit=1 200
+2026-10-10 03:18:32,924 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-10 03:18:33,373 [INFO] response: https://www.google.com/wml/search?q=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-10 03:18:33,558 [INFO] response: https://www.startpage.com/ 200
+2026-10-10 03:18:33,646 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-10 03:18:33,775 [INFO] response: https://search.brave.com/search?q=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com&source=web&tf=pw 429
+2026-10-10 03:18:34,197 [INFO] response: https://www.mojeek.com/search?q=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com 403
+2026-10-10 03:18:34,410 [INFO] response: https://search.yahoo.com/search;_ylt=tlIQH1nzfA6e4L2Fkko0t-o1;_ylu=8jo5_xyohuyIsFm0ilPC1MODQp--q5Cu5q4fat_MNmSzRKs?p=world+geopolitics+stocks+crypto+news+site%3Acnbc.com+OR+site%3Abbc.com&btf=w 200
+2026-10-10 03:18:34,444 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-10 03:18:34,445 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:34,542 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:34,542 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 20h41m25.467162867s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74485s'}]}}]
+2026-10-10 03:18:34,543 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:34,543 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:37,026 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:37,027 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:37,028 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:37,090 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:37,090 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 20h41m22.918751671s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74482s'}]}}]
+2026-10-10 03:18:37,091 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:37,091 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:38,624 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:38,625 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:38,626 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:38,682 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:38,683 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 20h41m21.326001421s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74481s'}]}}]
+2026-10-10 03:18:38,683 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:38,683 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:39,798 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:39,798 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:39,799 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:39,860 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:39,860 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 20h41m20.148792626s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74480s'}]}}]
+2026-10-10 03:18:39,860 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:39,861 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:41,076 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:41,076 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:41,077 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:41,143 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:41,143 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 20h41m18.865205999s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74478s'}]}}]
+2026-10-10 03:18:41,143 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:41,143 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:45,204 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:45,204 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:45,205 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:45,273 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:45,275 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 20h41m14.73572646s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74474s'}]}}]
+2026-10-10 03:18:45,275 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:45,275 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:46,173 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:46,174 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:46,175 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:46,234 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:46,234 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 20h41m13.774672342s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74473s'}]}}]
+2026-10-10 03:18:46,234 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:46,234 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:46,941 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:46,942 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:46,943 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:47,010 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:47,010 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 20h41m12.999289926s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74472s'}]}}]
+2026-10-10 03:18:47,010 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:47,010 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:48,051 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:48,052 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:48,053 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:48,115 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:48,115 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 20h41m11.89414559s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74471s'}]}}]
+2026-10-10 03:18:48,115 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:48,115 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:54,702 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:54,703 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:54,703 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:54,813 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:54,815 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 20h41m5.200675343s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74465s'}]}}]
+2026-10-10 03:18:54,815 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:54,815 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:18:56,781 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:18:56,781 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:18:56,782 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:18:56,832 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:18:56,832 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 20h41m3.176923278s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74463s'}]}}]
+2026-10-10 03:18:56,832 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:18:56,832 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:19:03,505 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:19:03,506 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:19:03,507 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:19:03,611 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:19:03,612 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 20h40m56.398816491s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74456s'}]}}]
+2026-10-10 03:19:03,612 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:19:03,612 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:19:10,903 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:19:10,904 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:19:10,906 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:19:11,021 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:19:11,022 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 20h40m48.990490482s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74448s'}]}}]
+2026-10-10 03:19:11,022 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:19:11,022 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:19:12,146 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:19:12,147 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:19:12,148 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-10 03:19:12,209 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-10 03:19:12,209 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 20h40m47.801058056s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74447s'}]}}]
+2026-10-10 03:19:12,210 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-10 03:19:12,210 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-10 03:19:15,961 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-10 03:19:15,961 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-10 03:19:15,962 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-10-10 03:19:15,962 [INFO] URL yang berhasil di-fetch: set()
+2026-10-10 03:19:15,962 [WARNING] Laporan tidak valid: Terlalu pendek (302 karakter, minimal 500)
+2026-10-10 03:19:15,962 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (302 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-10-10 03:19:15,962 [INFO] Mengirim laporan ke Telegram...
+2026-10-10 03:19:16,603 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
