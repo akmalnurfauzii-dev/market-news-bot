@@ -51299,3 +51299,1178 @@ Sumber: https://travel.detik.com/travel-news/d-8694185/viral-perempuan-naik-heli
 2026-10-11 02:49:21,081 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (313 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-10-11 02:49:21,081 [INFO] Mengirim laporan ke Telegram...
 2026-10-11 02:49:22,175 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-10-11 16:58:43,306 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-10-11 16:58:43,306 [INFO] =======================================================
+2026-10-11 16:58:43,306 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-10-11 16:58:43,306 [INFO] =======================================================
+2026-10-11 16:58:43,307 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-10-11 16:58:43,737 [INFO] Provider siap: Gemini dengan 4 model
+2026-10-11 16:58:43,739 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-10-11 16:58:43,740 [INFO] Provider siap: Z.AI dengan 1 model
+2026-10-11 16:58:43,741 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-10-11 16:58:43,742 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-10-11 16:58:43,756 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-10-11 16:58:43,778 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 16:58:46,814 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 16:58:46,821 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 16:58:46,864 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 16:58:46,864 [WARNING] backend is not set. Using 'auto'
+2026-10-11 16:58:47,069 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economy%20geopolitics%20stock%20market%20crypto%20October%202026%20site%3Acnbc.com%20OR%20site%3Abbc.com%20OR%20site%3Aaljazeera.com 200
+2026-10-11 16:58:47,148 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economy+geopolitics+stock+market+crypto+October+2026+site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com&limit=1 200
+2026-10-11 16:58:47,572 [INFO] response: https://search.yahoo.com/search;_ylt=Ov6ng7gkuOFu4PIn9AVvgLK3;_ylu=3D-sK52BuuXr6I5nCJujoDw8RqyryVDr56_5awGt_SKmd2w?p=global+economy+geopolitics+stock+market+crypto+October+2026+site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com&btf=d 200
+2026-10-11 16:58:47,864 [INFO] response: https://www.google.com/wml/search?q=global+economy+geopolitics+stock+market+crypto+October+2026+site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 16:58:52,866 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=global+economy+geopolitics+stock+market+crypto+October+2026+site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com) > operation timed out'))
+2026-10-11 16:58:53,061 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 16:58:53,126 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 16:58:53,450 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-10-11 16:58:53,454 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 16:58:55,438 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 16:58:55,439 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 16:58:55,441 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 16:58:55,441 [WARNING] backend is not set. Using 'auto'
+2026-10-11 16:58:55,605 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20stock%20market%20crypto%20October%2010%202026%20CNBC%20BBC 200
+2026-10-11 16:58:55,647 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC&limit=1 200
+2026-10-11 16:58:55,853 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 16:58:55,970 [INFO] response: https://search.brave.com/search?q=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC&source=web&tf=pd 429
+2026-10-11 16:59:00,973 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC) > operation timed out'))
+2026-10-11 16:59:01,076 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 16:59:01,141 [INFO] response: https://search.yahoo.com/search;_ylt=5oXoP5sncUQQprcldq-4pLC9;_ylu=2DsfbusnkleoKTEOSkCeO5WCiIYFoOIHjyViWk2PaVaLSeA?p=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC&btf=d 200
+2026-10-11 16:59:01,142 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 16:59:01,493 [INFO] response: https://www.google.com/wml/search?q=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 16:59:01,494 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC) > operation timed out
+2026-10-11 16:59:01,505 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20stock%20market%20crypto%20October%2010%202026%20CNBC%20BBC 200
+2026-10-11 16:59:01,812 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC&limit=1 200
+2026-10-11 16:59:02,030 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 16:59:02,104 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 16:59:07,105 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC) > operation timed out'))
+2026-10-11 16:59:07,149 [INFO] response: https://search.brave.com/search?q=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC&source=web&tf=pd 429
+2026-10-11 16:59:07,604 [INFO] response: https://www.google.com/wml/search?q=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 16:59:07,731 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 16:59:07,894 [INFO] response: https://search.yahoo.com/search;_ylt=0psSv7x3tDcjd2D-2v9u76ZV;_ylu=yYfFrwAtq8xTemerLCGZAUo74uecbhL7PcJXvt2uzFILxD4?p=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC&btf=d 200
+2026-10-11 16:59:07,921 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC) > operation timed out
+2026-10-11 16:59:08,107 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC&limit=1 200
+2026-10-11 16:59:08,113 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20stock%20market%20crypto%20October%2010%202026%20CNBC%20BBC 200
+2026-10-11 16:59:08,267 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 16:59:08,326 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 16:59:13,327 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC) > operation timed out'))
+2026-10-11 16:59:13,486 [INFO] response: https://search.yahoo.com/search;_ylt=Y9yBmSQm2ibliJchdd5NWQfR;_ylu=kWmv84GGo7yrPeqXn9Zh3VO6p9Fn44JgMp_81AXBlNksER4?p=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC&btf=w 200
+2026-10-11 16:59:13,762 [INFO] response: https://www.google.com/wml/search?q=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 16:59:13,941 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 16:59:14,009 [INFO] response: https://search.brave.com/search?q=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC&source=web&tf=pw 429
+2026-10-11 16:59:14,010 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=geopolitics+stock+market+crypto+October+10+2026+CNBC+BBC) > operation timed out
+2026-10-11 16:59:14,012 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 16:59:15,491 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 16:59:15,493 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 16:59:15,494 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 16:59:15,495 [WARNING] backend is not set. Using 'auto'
+2026-10-11 16:59:15,655 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20markets%20economy%20geopolitics%20Middle%20East%20oil%20stocks%20news 200
+2026-10-11 16:59:15,671 [INFO] response: https://grokipedia.com/api/typeahead?query=global+markets+economy+geopolitics+Middle+East+oil+stocks+news&limit=1 200
+2026-10-11 16:59:15,799 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 16:59:15,959 [INFO] response: https://search.yahoo.com/search;_ylt=D8cYWdQd3pO3poTzPjOkMH6e;_ylu=Px4fWmNv-EI3NGzSK1Sy5ViKnt6jkxlQkNemX07Wp2DC834?p=global+markets+economy+geopolitics+Middle+East+oil+stocks+news&btf=d 200
+2026-10-11 16:59:20,991 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=global+markets+economy+geopolitics+Middle+East+oil+stocks+news) > operation timed out'))
+2026-10-11 16:59:21,035 [INFO] response: https://search.brave.com/search?q=global+markets+economy+geopolitics+Middle+East+oil+stocks+news&source=web&tf=pd 429
+2026-10-11 16:59:21,412 [INFO] response: https://www.google.com/wml/search?q=global+markets+economy+geopolitics+Middle+East+oil+stocks+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 16:59:21,536 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 16:59:21,587 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 16:59:21,588 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=global+markets+economy+geopolitics+Middle+East+oil+stocks+news) > operation timed out
+2026-10-11 16:59:21,600 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20markets%20economy%20geopolitics%20Middle%20East%20oil%20stocks%20news 200
+2026-10-11 16:59:21,798 [INFO] response: https://grokipedia.com/api/typeahead?query=global+markets+economy+geopolitics+Middle+East+oil+stocks+news&limit=1 200
+2026-10-11 16:59:26,799 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=global+markets+economy+geopolitics+Middle+East+oil+stocks+news) > operation timed out'))
+2026-10-11 16:59:26,922 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 16:59:26,970 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 16:59:27,034 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 16:59:27,078 [INFO] response: https://search.brave.com/search?q=global+markets+economy+geopolitics+Middle+East+oil+stocks+news&source=web&tf=pd 429
+2026-10-11 16:59:27,215 [INFO] response: https://search.yahoo.com/search;_ylt=dvJw5_gfBN7WoHiXhALYbk6h;_ylu=U0iiQVcfUDgWGBTP3oTDXnwennON6zsCFjXrdIFTpIiTlzc?p=global+markets+economy+geopolitics+Middle+East+oil+stocks+news&btf=d 200
+2026-10-11 16:59:27,807 [INFO] response: https://www.google.com/wml/search?q=global+markets+economy+geopolitics+Middle+East+oil+stocks+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 16:59:27,808 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=global+markets+economy+geopolitics+Middle+East+oil+stocks+news) > operation timed out
+2026-10-11 16:59:27,984 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20markets%20economy%20geopolitics%20Middle%20East%20oil%20stocks%20news 200
+2026-10-11 16:59:27,987 [INFO] response: https://grokipedia.com/api/typeahead?query=global+markets+economy+geopolitics+Middle+East+oil+stocks+news&limit=1 200
+2026-10-11 16:59:28,165 [INFO] response: https://search.yahoo.com/search;_ylt=Uo8uLtSBQzm8JiNBNVzqUye3;_ylu=M3w9UE3tPrwkEZ3HYdLQJy7blNoU9GViJB1ej0qvgQpfxT0?p=global+markets+economy+geopolitics+Middle+East+oil+stocks+news&btf=w 200
+2026-10-11 16:59:28,764 [INFO] response: https://www.google.com/wml/search?q=global+markets+economy+geopolitics+Middle+East+oil+stocks+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 16:59:28,931 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 16:59:29,009 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 16:59:34,011 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=global+markets+economy+geopolitics+Middle+East+oil+stocks+news) > operation timed out'))
+2026-10-11 16:59:34,058 [INFO] response: https://search.brave.com/search?q=global+markets+economy+geopolitics+Middle+East+oil+stocks+news&source=web&tf=pw 429
+2026-10-11 16:59:34,148 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 16:59:34,171 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=global+markets+economy+geopolitics+Middle+East+oil+stocks+news) > operation timed out
+2026-10-11 16:59:34,172 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 16:59:35,772 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 16:59:35,773 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 16:59:35,775 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 16:59:35,775 [WARNING] backend is not set. Using 'auto'
+2026-10-11 16:59:35,941 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20world%20news%20markets 200
+2026-10-11 16:59:35,956 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+world+news+markets&limit=1 200
+2026-10-11 16:59:36,227 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+world+news+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 16:59:36,271 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+world+news+markets&source=web&tf=pd 429
+2026-10-11 16:59:36,380 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 16:59:36,543 [INFO] response: https://search.yahoo.com/search;_ylt=TJfsVH6abTJSyT88rEIpcuNX;_ylu=bbAFezOT8RuEHXG2XolaLiwCo83nUCABtIhmrED6EK8HNf8?p=site%3Acnbc.com+world+news+markets&btf=d 200
+2026-10-11 16:59:41,565 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Acnbc.com+world+news+markets) > operation timed out'))
+2026-10-11 16:59:41,665 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 16:59:41,854 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791737981T268d342b8abb2b2a955529cf0d7fbc6e5420884b6770b4ec5e770ccaf4558b1c&bds_s=2f19151dbb9847cba684edb902ef217b&t=device&abd=0&qsr=en_US&with_date=d&segment=organic&lui=english&sc=&qadf=moderate&abp=1&language=english&abe=0&query=site%3Acnbc.com+world+news+markets&cat=web&cmd=gen_page 200
+2026-10-11 16:59:41,856 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Acnbc.com+world+news+markets) > operation timed out
+2026-10-11 16:59:42,042 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20world%20news%20markets 200
+2026-10-11 16:59:42,158 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+world+news+markets&limit=1 200
+2026-10-11 16:59:42,317 [INFO] response: https://search.yahoo.com/search;_ylt=10Y2WSfP3bl-nMVay7RIQCKR;_ylu=OKGGGSKkr1xaePmMo_HTRM-ggRSqxzRmrwWUDyQOODh8xlI?p=site%3Acnbc.com+world+news+markets&btf=d 200
+2026-10-11 16:59:42,728 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+world+news+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 16:59:42,833 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 16:59:47,856 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Acnbc.com+world+news+markets) > operation timed out'))
+2026-10-11 16:59:47,906 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+world+news+markets&source=web&tf=pd 429
+2026-10-11 16:59:47,956 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 16:59:48,005 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 16:59:48,006 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Acnbc.com+world+news+markets) > operation timed out
+2026-10-11 16:59:48,018 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20world%20news%20markets 200
+2026-10-11 16:59:48,163 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+world+news+markets&limit=1 200
+2026-10-11 16:59:48,344 [INFO] response: https://search.yahoo.com/search;_ylt=1hDGsNjcxL5ymItzJN23Tnxh;_ylu=2J090VptLftQIw2GT088oNnA2lH9vjp_o7L_q-pXsrjiKc8?p=site%3Acnbc.com+world+news+markets&btf=w 200
+2026-10-11 16:59:48,400 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+world+news+markets&source=web&tf=pw 429
+2026-10-11 16:59:53,402 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Acnbc.com+world+news+markets) > operation timed out'))
+2026-10-11 16:59:53,531 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 16:59:53,602 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 16:59:53,839 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+world+news+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 16:59:53,939 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 16:59:53,962 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Acnbc.com+world+news+markets) > operation timed out
+2026-10-11 16:59:53,963 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 16:59:55,419 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 16:59:55,420 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 16:59:55,422 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 16:59:55,422 [WARNING] backend is not set. Using 'auto'
+2026-10-11 16:59:55,582 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=world%20stock%20market%20news%20global%20economy%20CNBC%20BBC 200
+2026-10-11 16:59:55,621 [INFO] response: https://grokipedia.com/api/typeahead?query=world+stock+market+news+global+economy+CNBC+BBC&limit=1 200
+2026-10-11 16:59:55,790 [INFO] response: https://search.yahoo.com/search;_ylt=W9j1pP_PoZZtnPRa1YiwfuAS;_ylu=YfVq6qo0_yKvex6UvBhqOX6oyA5IjxjqYL_Eh3bW5kuo1q4?p=world+stock+market+news+global+economy+CNBC+BBC&btf=d 200
+2026-10-11 17:00:00,803 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=world+stock+market+news+global+economy+CNBC+BBC) > operation timed out'))
+2026-10-11 17:00:00,961 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:00:01,032 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:00:01,096 [INFO] response: https://www.google.com/wml/search?q=world+stock+market+news+global+economy+CNBC+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:00:01,183 [INFO] response: https://search.brave.com/search?q=world+stock+market+news+global+economy+CNBC+BBC&source=web&tf=pd 429
+2026-10-11 17:00:01,292 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:00:01,315 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=world+stock+market+news+global+economy+CNBC+BBC) > operation timed out
+2026-10-11 17:00:01,326 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=world%20stock%20market%20news%20global%20economy%20CNBC%20BBC 200
+2026-10-11 17:00:01,533 [INFO] response: https://grokipedia.com/api/typeahead?query=world+stock+market+news+global+economy+CNBC+BBC&limit=1 200
+2026-10-11 17:00:01,670 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:00:01,751 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:00:01,881 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:00:06,904 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=world+stock+market+news+global+economy+CNBC+BBC) > operation timed out'))
+2026-10-11 17:00:06,947 [INFO] response: https://search.brave.com/search?q=world+stock+market+news+global+economy+CNBC+BBC&source=web&tf=pd 429
+2026-10-11 17:00:07,366 [INFO] response: https://www.google.com/wml/search?q=world+stock+market+news+global+economy+CNBC+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:00:07,510 [INFO] response: https://search.yahoo.com/search;_ylt=qRSZ_41dyCnEdsAR9F8epWYW;_ylu=rNjBXJSC-4jDpsDugz0gvADRt7eMbBHa1SGY9YHuZDL3BZU?p=world+stock+market+news+global+economy+CNBC+BBC&btf=d 200
+2026-10-11 17:00:07,538 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=world+stock+market+news+global+economy+CNBC+BBC) > operation timed out
+2026-10-11 17:00:07,549 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=world%20stock%20market%20news%20global%20economy%20CNBC%20BBC 200
+2026-10-11 17:00:07,719 [INFO] response: https://grokipedia.com/api/typeahead?query=world+stock+market+news+global+economy+CNBC+BBC&limit=1 200
+2026-10-11 17:00:08,179 [INFO] response: https://www.google.com/wml/search?q=world+stock+market+news+global+economy+CNBC+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:00:08,317 [INFO] response: https://search.yahoo.com/search;_ylt=3W2LpgeQSiOhg1peVyfUyZ5H;_ylu=Vfx-0gO1NKUhpgqQP4ZmozY7X-SmfnDUD3BUkJUQldh5-Lo?p=world+stock+market+news+global+economy+CNBC+BBC&btf=w 200
+2026-10-11 17:00:08,463 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:00:08,543 [INFO] response: https://search.brave.com/search?q=world+stock+market+news+global+economy+CNBC+BBC&source=web&tf=pw 429
+2026-10-11 17:00:08,669 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:00:08,742 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:00:13,744 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-11 17:00:13,747 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 17:00:16,774 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:00:16,775 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 17:00:16,777 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:00:16,777 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:00:16,936 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=US%20stock%20market%20Federal%20Reserve%20inflation%20economy%20news 200
+2026-10-11 17:00:16,965 [INFO] response: https://grokipedia.com/api/typeahead?query=US+stock+market+Federal+Reserve+inflation+economy+news&limit=1 200
+2026-10-11 17:00:17,093 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:00:22,116 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=US+stock+market+Federal+Reserve+inflation+economy+news) > operation timed out'))
+2026-10-11 17:00:22,222 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:00:22,271 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:00:22,380 [INFO] response: https://www.google.com/wml/search?q=US+stock+market+Federal+Reserve+inflation+economy+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:00:22,431 [INFO] response: https://search.brave.com/search?q=US+stock+market+Federal+Reserve+inflation+economy+news&source=web&tf=pd 429
+2026-10-11 17:00:22,608 [INFO] response: https://search.yahoo.com/search;_ylt=CuS9Bg5cOVRcZlWqtEUlzdBj;_ylu=kBsjoDZo3I7VYvKuPn27YtmN4dvZqYRopvVg4byK0MmMSX8?p=US+stock+market+Federal+Reserve+inflation+economy+news&btf=d 200
+2026-10-11 17:00:22,634 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=US+stock+market+Federal+Reserve+inflation+economy+news) > operation timed out
+2026-10-11 17:00:22,797 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=US%20stock%20market%20Federal%20Reserve%20inflation%20economy%20news 200
+2026-10-11 17:00:22,841 [INFO] response: https://grokipedia.com/api/typeahead?query=US+stock+market+Federal+Reserve+inflation+economy+news&limit=1 200
+2026-10-11 17:00:22,955 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:00:23,133 [INFO] response: https://search.yahoo.com/search;_ylt=HPIMHmLA9kYNi-QuWF02QX7A;_ylu=_NSjs30ApX7fda4a7qsGZsUMDlvZ-IdCWRTWk9nqhinhxm8?p=US+stock+market+Federal+Reserve+inflation+economy+news&btf=d 200
+2026-10-11 17:00:23,246 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:00:23,321 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:00:28,323 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=US+stock+market+Federal+Reserve+inflation+economy+news) > operation timed out'))
+2026-10-11 17:00:28,367 [INFO] response: https://search.brave.com/search?q=US+stock+market+Federal+Reserve+inflation+economy+news&source=web&tf=pd 429
+2026-10-11 17:00:28,647 [INFO] response: https://www.google.com/wml/search?q=US+stock+market+Federal+Reserve+inflation+economy+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:00:28,648 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=US+stock+market+Federal+Reserve+inflation+economy+news) > operation timed out
+2026-10-11 17:00:28,660 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=US%20stock%20market%20Federal%20Reserve%20inflation%20economy%20news 200
+2026-10-11 17:00:28,847 [INFO] response: https://grokipedia.com/api/typeahead?query=US+stock+market+Federal+Reserve+inflation+economy+news&limit=1 200
+2026-10-11 17:00:28,987 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:00:29,031 [INFO] response: https://search.brave.com/search?q=US+stock+market+Federal+Reserve+inflation+economy+news&source=web&tf=pw 429
+2026-10-11 17:00:34,033 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=US+stock+market+Federal+Reserve+inflation+economy+news) > operation timed out'))
+2026-10-11 17:00:34,189 [INFO] response: https://search.yahoo.com/search;_ylt=bbsSH4jgKDwofiBEs1h13ggo;_ylu=Z7A0K2WxdqUf_LU4YesUdGwV39Z7fxdEzQWiSLQM03-CiYs?p=US+stock+market+Federal+Reserve+inflation+economy+news&btf=w 200
+2026-10-11 17:00:34,318 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:00:34,479 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:00:34,846 [INFO] response: https://www.google.com/wml/search?q=US+stock+market+Federal+Reserve+inflation+economy+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:00:34,847 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=US+stock+market+Federal+Reserve+inflation+economy+news) > operation timed out
+2026-10-11 17:00:34,849 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 17:00:36,322 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:00:36,324 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 17:00:36,325 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:00:36,326 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:00:36,477 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=pasar%20saham%20global%20ekonomi%20dunia%20pasar%20kripto 200
+2026-10-11 17:00:36,544 [INFO] response: https://grokipedia.com/api/typeahead?query=pasar+saham+global+ekonomi+dunia+pasar+kripto&limit=1 200
+2026-10-11 17:00:36,941 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:00:37,751 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:00:42,752 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=pasar+saham+global+ekonomi+dunia+pasar+kripto) > operation timed out'))
+2026-10-11 17:00:42,860 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:00:43,203 [INFO] response: https://www.google.com/wml/search?q=pasar+saham+global+ekonomi+dunia+pasar+kripto&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:00:43,249 [INFO] response: https://search.brave.com/search?q=pasar+saham+global+ekonomi+dunia+pasar+kripto&source=web&tf=pd 429
+2026-10-11 17:00:43,415 [INFO] response: https://search.yahoo.com/search;_ylt=Q-cXcuXC3sGloO9xwCfLhNHu;_ylu=2Wso4U4VYB09TPk77rrppvbgPcl1G0TsBeoBEk-Ul9WPC7g?p=pasar+saham+global+ekonomi+dunia+pasar+kripto&btf=d 200
+2026-10-11 17:00:43,424 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=pasar+saham+global+ekonomi+dunia+pasar+kripto) > operation timed out
+2026-10-11 17:00:43,435 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=pasar%20saham%20global%20ekonomi%20dunia%20pasar%20kripto 200
+2026-10-11 17:00:43,614 [INFO] response: https://grokipedia.com/api/typeahead?query=pasar+saham+global+ekonomi+dunia+pasar+kripto&limit=1 200
+2026-10-11 17:00:43,718 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:00:45,448 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:00:45,703 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:00:45,760 [INFO] response: https://search.brave.com/search?q=pasar+saham+global+ekonomi+dunia+pasar+kripto&source=web&tf=pd 429
+2026-10-11 17:00:50,764 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=pasar+saham+global+ekonomi+dunia+pasar+kripto) > operation timed out'))
+2026-10-11 17:00:50,965 [INFO] response: https://search.yahoo.com/search;_ylt=pepqeGB-579JGD4d9iGj8-_F;_ylu=vR3QWmgfoZKex8_dQkV5XdZTDeyJRH2JteNKc4vCK-hzQJw?p=pasar+saham+global+ekonomi+dunia+pasar+kripto&btf=d 200
+2026-10-11 17:00:51,184 [INFO] response: https://www.google.com/wml/search?q=pasar+saham+global+ekonomi+dunia+pasar+kripto&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:00:51,184 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=pasar+saham+global+ekonomi+dunia+pasar+kripto) > operation timed out
+2026-10-11 17:00:51,356 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=pasar%20saham%20global%20ekonomi%20dunia%20pasar%20kripto 200
+2026-10-11 17:00:51,397 [INFO] response: https://grokipedia.com/api/typeahead?query=pasar+saham+global+ekonomi+dunia+pasar+kripto&limit=1 200
+2026-10-11 17:00:56,397 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=pasar+saham+global+ekonomi+dunia+pasar+kripto) > operation timed out'))
+2026-10-11 17:00:56,520 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:00:56,593 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:00:56,845 [INFO] response: https://www.google.com/wml/search?q=pasar+saham+global+ekonomi+dunia+pasar+kripto&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:00:56,986 [INFO] response: https://search.yahoo.com/search;_ylt=nt1-u3J6OYt9EwLxvrMqivOm;_ylu=gnZU8KceoVQl6sxQkUcfDkqfA94LnzPvrT487L_ghlFnCbk?p=pasar+saham+global+ekonomi+dunia+pasar+kripto&btf=w 200
+2026-10-11 17:00:57,134 [INFO] response: https://search.brave.com/search?q=pasar+saham+global+ekonomi+dunia+pasar+kripto&source=web&tf=pw 429
+2026-10-11 17:00:57,262 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:00:57,262 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=pasar+saham+global+ekonomi+dunia+pasar+kripto) > operation timed out
+2026-10-11 17:00:57,264 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 17:01:01,895 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:01:01,897 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 17:01:01,898 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:01:01,899 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:01:02,054 [INFO] response: https://grokipedia.com/api/typeahead?query=CNBC+Indonesia+ekonomi+global+pasar+saham&limit=1 200
+2026-10-11 17:01:02,060 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=CNBC%20Indonesia%20ekonomi%20global%20pasar%20saham 200
+2026-10-11 17:01:07,061 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=CNBC+Indonesia+ekonomi+global+pasar+saham) > operation timed out'))
+2026-10-11 17:01:07,198 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:01:07,266 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:01:07,483 [INFO] response: https://www.google.com/wml/search?q=CNBC+Indonesia+ekonomi+global+pasar+saham&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:01:07,586 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:01:07,769 [INFO] response: https://search.yahoo.com/search;_ylt=b3UA4r333wHWGBQ5v4mYxY5d;_ylu=Jg2Njf9h6ZgtCuuiWF0JwB-_ktudq_KFybXvPmkxnbnIMLI?p=CNBC+Indonesia+ekonomi+global+pasar+saham&btf=d 200
+2026-10-11 17:01:07,838 [INFO] response: https://search.brave.com/search?q=CNBC+Indonesia+ekonomi+global+pasar+saham&source=web&tf=pd 429
+2026-10-11 17:01:07,840 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=CNBC+Indonesia+ekonomi+global+pasar+saham) > operation timed out
+2026-10-11 17:01:07,850 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=CNBC%20Indonesia%20ekonomi%20global%20pasar%20saham 200
+2026-10-11 17:01:07,995 [INFO] response: https://grokipedia.com/api/typeahead?query=CNBC+Indonesia+ekonomi+global+pasar+saham&limit=1 200
+2026-10-11 17:01:08,522 [INFO] response: https://www.google.com/wml/search?q=CNBC+Indonesia+ekonomi+global+pasar+saham&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:01:08,636 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:01:08,773 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:01:08,827 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:01:13,829 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=CNBC+Indonesia+ekonomi+global+pasar+saham) > operation timed out'))
+2026-10-11 17:01:13,874 [INFO] response: https://search.brave.com/search?q=CNBC+Indonesia+ekonomi+global+pasar+saham&source=web&tf=pd 429
+2026-10-11 17:01:13,989 [INFO] response: https://search.yahoo.com/search;_ylt=3lUevwl1tLnoo4HgtbcN8yYJ;_ylu=pd2TGqfIY_pSSY6F9NmyS96dirzO0LNDN__n_OUA96A5rxU?p=CNBC+Indonesia+ekonomi+global+pasar+saham&btf=d 200
+2026-10-11 17:01:13,999 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=CNBC+Indonesia+ekonomi+global+pasar+saham) > operation timed out
+2026-10-11 17:01:14,010 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=CNBC%20Indonesia%20ekonomi%20global%20pasar%20saham 200
+2026-10-11 17:01:19,001 [INFO] Error in engine grokipedia: TimeoutException(TimeoutError('error sending request for url (https://grokipedia.com/api/typeahead?query=CNBC+Indonesia+ekonomi+global+pasar+saham&limit=1) > operation timed out'))
+2026-10-11 17:01:19,048 [INFO] response: https://search.brave.com/search?q=CNBC+Indonesia+ekonomi+global+pasar+saham&source=web&tf=pw 429
+2026-10-11 17:01:19,120 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:01:19,266 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791738079T96b4ade2132c7c08110ac1473ef9984580b119a9b4194e7e1537ddb0a9cb7cdb&bds_s=7da0b5cc0c5a4a4d992e4d4cef285c6c&sc=&abp=1&abd=0&lui=english&abe=0&segment=organic&language=english&qadf=moderate&qsr=en_US&t=device&with_date=w&query=CNBC+Indonesia+ekonomi+global+pasar+saham&cat=web&cmd=gen_page 200
+2026-10-11 17:01:24,288 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=CNBC+Indonesia+ekonomi+global+pasar+saham) > operation timed out'))
+2026-10-11 17:01:24,429 [INFO] response: https://search.yahoo.com/search;_ylt=u8mKyDt1poGft2Gvzjgn0EYH;_ylu=3Bu_cTnAvB0uDGoqTgwMK0TQImxSfm790VVrnCjgesHbRLo?p=CNBC+Indonesia+ekonomi+global+pasar+saham&btf=w 200
+2026-10-11 17:01:24,745 [INFO] response: https://www.google.com/wml/search?q=CNBC+Indonesia+ekonomi+global+pasar+saham&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:01:24,988 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:01:25,010 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=CNBC+Indonesia+ekonomi+global+pasar+saham) > operation timed out
+2026-10-11 17:01:25,012 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 17:01:26,223 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:01:26,228 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 17:01:26,229 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:01:26,230 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:01:26,379 [INFO] response: https://grokipedia.com/api/typeahead?query=berita&limit=1 200
+2026-10-11 17:01:26,388 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita 200
+2026-10-11 17:01:26,492 [INFO] response: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=Berita&explaintext=0&exintro=0&redirects=1 200
+2026-10-11 17:01:26,537 [INFO] response: https://search.brave.com/search?q=berita&source=web&tf=pd 429
+2026-10-11 17:01:31,540 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita) > operation timed out'))
+2026-10-11 17:01:31,699 [INFO] response: https://search.yahoo.com/search;_ylt=j3Y6RbQ_pCKjpx7oBg7EXxD8;_ylu=LVEOSauQKZRXleBq3rAM3zLcJY6odv4aP1fxWc1-sLMA3oY?p=berita&btf=d 200
+2026-10-11 17:01:32,026 [INFO] response: https://www.google.com/wml/search?q=berita&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:01:32,140 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:01:32,216 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:01:32,323 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:01:32,347 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 17:01:34,086 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:01:34,087 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 17:01:34,089 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:01:34,089 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:01:34,244 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20economy 200
+2026-10-11 17:01:34,244 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+economy&limit=1 200
+2026-10-11 17:01:34,383 [INFO] response: https://search.yahoo.com/search;_ylt=U0JtXqBoaDQMF8G9fwoHKv_n;_ylu=_TFzicOgfXdIhjIfDr6eGqHonwb-wRWQPXib-whews5IRBc?p=site%3Abbc.com+economy&btf=d 200
+2026-10-11 17:01:34,447 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+economy&source=web&tf=pd 429
+2026-10-11 17:01:34,562 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:01:34,705 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:01:34,834 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:01:39,835 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com+economy) > operation timed out'))
+2026-10-11 17:01:40,153 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com+economy&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:01:40,153 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com+economy) > operation timed out
+2026-10-11 17:01:40,167 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20economy 200
+2026-10-11 17:01:40,317 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+economy&limit=1 200
+2026-10-11 17:01:40,449 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:01:40,548 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:01:40,658 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:01:40,721 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+economy&source=web&tf=pd 429
+2026-10-11 17:01:41,169 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com+economy&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:01:46,170 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com+economy) > operation timed out'))
+2026-10-11 17:01:46,306 [INFO] response: https://search.yahoo.com/search;_ylt=ImogUM0Gfe9HzGs8H8PrgJHi;_ylu=cdcFu7bOdqAMeigKcsxv1rFWy_wYorVHGEYIGLfbL-SgReA?p=site%3Abbc.com+economy&btf=d 200
+2026-10-11 17:01:46,330 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com+economy) > operation timed out
+2026-10-11 17:01:46,341 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20economy 200
+2026-10-11 17:01:46,501 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+economy&limit=1 200
+2026-10-11 17:01:46,602 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:01:51,625 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com+economy) > operation timed out'))
+2026-10-11 17:01:51,670 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+economy&source=web&tf=pw 429
+2026-10-11 17:01:51,735 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:01:51,778 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:01:52,121 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com+economy&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:01:52,308 [INFO] response: https://search.yahoo.com/search;_ylt=q4D3ffohpxo-uu7QKBrvd9UP;_ylu=QK4oEbWspWABn-xIKozlqBkr0DPKZYe-LcF0T6kw19u8WAg?p=site%3Abbc.com+economy&btf=w 200
+2026-10-11 17:01:52,328 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com+economy) > operation timed out
+2026-10-11 17:01:52,330 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 17:01:53,863 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:01:53,864 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 17:01:53,866 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:01:53,866 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:01:54,029 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20news 200
+2026-10-11 17:01:54,083 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+news&limit=1 200
+2026-10-11 17:01:54,395 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:01:54,438 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+news&source=web&tf=pd 429
+2026-10-11 17:01:54,600 [INFO] response: https://search.yahoo.com/search;_ylt=XhSq-ol5aPy5PlatLO9UuvM-;_ylu=ObQVsdz3OmvehUeu0yLgwgXpoZ4zd-L0YTzGnJcFCGP5QFs?p=site%3Aaljazeera.com+news&btf=d 200
+2026-10-11 17:01:59,606 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Aaljazeera.com+news) > operation timed out'))
+2026-10-11 17:01:59,708 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:01:59,724 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:01:59,772 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:01:59,773 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Aaljazeera.com+news) > operation timed out
+2026-10-11 17:01:59,911 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+news&limit=1 200
+2026-10-11 17:01:59,940 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20news 200
+2026-10-11 17:02:00,057 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:02:00,129 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:02:00,231 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:02:00,296 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+news&source=web&tf=pd 429
+2026-10-11 17:02:00,663 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:02:00,802 [INFO] response: https://search.yahoo.com/search;_ylt=Ql-tNdhfcAKH-IrR5PLU2xvw;_ylu=zG9NZYYidcfANmo8hYJyixD5z1PABvPPcQgGhK4jH1vkNdY?p=site%3Aaljazeera.com+news&btf=d 200
+2026-10-11 17:02:05,827 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-11 17:02:05,839 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20news 200
+2026-10-11 17:02:05,964 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+news&limit=1 200
+2026-10-11 17:02:06,125 [INFO] response: https://search.yahoo.com/search;_ylt=9wnTATmiVrEik2AtK5YE_JCV;_ylu=2nC8zG69jiIj9kYIxgEYsg4cxWNqgjioAs6igcCdXDLehWY?p=site%3Aaljazeera.com+news&btf=w 200
+2026-10-11 17:02:06,230 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:02:06,379 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:02:06,522 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791738126T56d28f41782edd17e4a50701a54e8b243921e7fc6c875be68278597aa178d4fe&bds_s=cd3e4ecb45d146648dc068cbea335574&language=english&abd=0&qsr=en_US&abp=1&sc=&abe=0&lui=english&qadf=moderate&segment=organic&with_date=w&t=device&query=site%3Aaljazeera.com+news&cat=web&cmd=gen_page 200
+2026-10-11 17:02:11,543 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Aaljazeera.com+news) > operation timed out'))
+2026-10-11 17:02:11,605 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+news&source=web&tf=pw 429
+2026-10-11 17:02:11,944 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:02:11,944 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Aaljazeera.com+news) > operation timed out
+2026-10-11 17:02:11,946 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 17:02:13,310 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:02:13,311 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 17:02:13,313 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:02:13,313 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:02:13,463 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20berita 200
+2026-10-11 17:02:13,476 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+berita&limit=1 200
+2026-10-11 17:02:18,477 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+berita) > operation timed out'))
+2026-10-11 17:02:18,523 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+berita&source=web&tf=pd 429
+2026-10-11 17:02:18,581 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:02:18,740 [INFO] response: https://search.yahoo.com/search;_ylt=2mrlEpvVI4Bzu0Q1RUl7B8rG;_ylu=i72UaA1ic1jcgKnlc_O_O5N8sYc-9jMDXLwHmhP0BpuWT4A?p=site%3Acnbcindonesia.com+berita&btf=d 200
+2026-10-11 17:02:19,214 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+berita&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:02:19,365 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:02:19,422 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:02:19,423 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+berita) > operation timed out
+2026-10-11 17:02:19,571 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20berita 200
+2026-10-11 17:02:19,574 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+berita&limit=1 200
+2026-10-11 17:02:24,575 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+berita) > operation timed out'))
+2026-10-11 17:02:24,619 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+berita&source=web&tf=pd 429
+2026-10-11 17:02:25,065 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+berita&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:02:25,201 [INFO] response: https://search.yahoo.com/search;_ylt=4R4idMnppr5Ep77Xg8uTelcJ;_ylu=CxHo9xKrL0fi7HpRp_LE6M2VCo0ZTmX9S4JiBh1yTV3Zbls?p=site%3Acnbcindonesia.com+berita&btf=d 200
+2026-10-11 17:02:25,327 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:02:25,453 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:02:25,498 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:02:25,498 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+berita) > operation timed out
+2026-10-11 17:02:25,655 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20berita 200
+2026-10-11 17:02:25,682 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+berita&limit=1 200
+2026-10-11 17:02:25,725 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+berita&source=web&tf=pw 429
+2026-10-11 17:02:26,111 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbcindonesia.com+berita&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:02:31,113 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+berita) > operation timed out'))
+2026-10-11 17:02:31,211 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:02:31,215 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:02:31,262 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:02:31,400 [INFO] response: https://search.yahoo.com/search;_ylt=mZoLF4vK20AsXwvmL_KKeyyZ;_ylu=zDC9mk9E0IDzWBWcxfmmaIDjyak0gBksHL5GNjUHnaZrQvA?p=site%3Acnbcindonesia.com+berita&btf=w 200
+2026-10-11 17:02:31,422 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+berita) > operation timed out
+2026-10-11 17:02:31,424 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 17:02:33,451 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:02:33,452 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 17:02:33,454 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:02:33,454 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:02:33,589 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news 200
+2026-10-11 17:02:33,739 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews&limit=1 200
+2026-10-11 17:02:33,893 [INFO] response: https://search.yahoo.com/search;_ylt=wzDenfOB7rRBngqaKSGWzjM9;_ylu=MvEfmLhzYLrRZ0-965S_Ui8_b8NMdgMNhNNIbnYOMWAAcy4?p=site%3Abbc.com%2Fnews&btf=d 200
+2026-10-11 17:02:34,046 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:02:34,111 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:02:34,379 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fnews&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:02:39,380 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews) > operation timed out'))
+2026-10-11 17:02:39,427 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews&source=web&tf=pd 429
+2026-10-11 17:02:39,480 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:02:39,502 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews) > operation timed out
+2026-10-11 17:02:39,643 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews&limit=1 200
+2026-10-11 17:02:39,727 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news 200
+2026-10-11 17:02:39,863 [INFO] response: https://search.yahoo.com/search;_ylt=71n0huR9EBZGIHfq5NlTbwXn;_ylu=DjkKIn7JdVGKd9q2CD3VQOYIv14aG9qidE1ZDaulAowbUAU?p=site%3Abbc.com%2Fnews&btf=d 200
+2026-10-11 17:02:44,886 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews) > operation timed out'))
+2026-10-11 17:02:44,928 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews&source=web&tf=pd 429
+2026-10-11 17:02:44,988 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:02:45,349 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fnews&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:02:45,453 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:02:45,661 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791738165Tb240d8b8a3f4ff39e8b827a325d2d2b08944ab7d6a8745577fb82df93cc6d5c3&bds_s=7bfcd11618a744589b36bf18ba9d1424&t=device&lui=english&language=english&qadf=moderate&qsr=en_US&segment=organic&with_date=d&abd=0&sc=&abp=1&abe=0&query=site%3Abbc.com%2Fnews&cat=web&cmd=gen_page 200
+2026-10-11 17:02:45,663 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews) > operation timed out
+2026-10-11 17:02:45,675 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news 200
+2026-10-11 17:02:45,823 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews&limit=1 200
+2026-10-11 17:02:46,295 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fnews&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:02:46,398 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:02:51,422 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews) > operation timed out'))
+2026-10-11 17:02:51,465 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews&source=web&tf=pw 429
+2026-10-11 17:02:51,581 [INFO] response: https://search.yahoo.com/search;_ylt=fEZnV18GXh6_ShOjpDRV6qSg;_ylu=oQSQvjzO3PdHxSGfx20bpX4KtQI82p8RJNWRu_ZuXbqwIGI?p=site%3Abbc.com%2Fnews&btf=w 200
+2026-10-11 17:02:51,684 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:02:51,829 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791738171T07121c1d26d21c4fbcb5bdfea956075e2b3ccef7a590ae83bfd6f0fc037af777&bds_s=c2c8f2c79ee64b448d206dd84bb7a48e&language=english&abd=0&qsr=en_US&abp=1&sc=&abe=0&lui=english&qadf=moderate&segment=organic&with_date=w&t=device&query=site%3Abbc.com%2Fnews&cat=web&cmd=gen_page 200
+2026-10-11 17:02:51,849 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews) > operation timed out
+2026-10-11 17:02:51,851 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 17:02:53,280 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:02:53,282 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 17:02:53,283 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:02:53,284 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:02:53,457 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20Israel%20Gaza%20Iran%20stocks%20oil%20economy 200
+2026-10-11 17:02:53,565 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+Israel+Gaza+Iran+stocks+oil+economy&limit=1 200
+2026-10-11 17:02:58,566 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=Middle+East+Israel+Gaza+Iran+stocks+oil+economy) > operation timed out'))
+2026-10-11 17:02:58,669 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:02:58,739 [INFO] response: https://search.yahoo.com/search;_ylt=40q7iCQxtMU-FzOHPcqukd1t;_ylu=DWdXHn_P7_CX0P4Nb3EXU48VLLo7hazhw-ILQzEUgDxWPY4?p=Middle+East+Israel+Gaza+Iran+stocks+oil+economy&btf=d 200
+2026-10-11 17:02:58,787 [INFO] response: https://search.brave.com/search?q=Middle+East+Israel+Gaza+Iran+stocks+oil+economy&source=web&tf=pd 429
+2026-10-11 17:02:59,070 [INFO] response: https://www.google.com/wml/search?q=Middle+East+Israel+Gaza+Iran+stocks+oil+economy&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:02:59,189 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:02:59,253 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:02:59,254 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=Middle+East+Israel+Gaza+Iran+stocks+oil+economy) > operation timed out
+2026-10-11 17:02:59,407 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20Israel%20Gaza%20Iran%20stocks%20oil%20economy 200
+2026-10-11 17:02:59,474 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+Israel+Gaza+Iran+stocks+oil+economy&limit=1 200
+2026-10-11 17:02:59,579 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:02:59,761 [INFO] response: https://search.yahoo.com/search;_ylt=510rFkTnVV_u4dOLcMwNPw7S;_ylu=yrydRNI8zBPRz2ixgKvpcXchx8FwXaDla9RxTFVTKPWSv1Y?p=Middle+East+Israel+Gaza+Iran+stocks+oil+economy&btf=d 200
+2026-10-11 17:03:04,770 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=Middle+East+Israel+Gaza+Iran+stocks+oil+economy) > operation timed out'))
+2026-10-11 17:03:04,871 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:03:04,942 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:03:05,193 [INFO] response: https://www.google.com/wml/search?q=Middle+East+Israel+Gaza+Iran+stocks+oil+economy&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:03:05,239 [INFO] response: https://search.brave.com/search?q=Middle+East+Israel+Gaza+Iran+stocks+oil+economy&source=web&tf=pd 429
+2026-10-11 17:03:05,241 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=Middle+East+Israel+Gaza+Iran+stocks+oil+economy) > operation timed out
+2026-10-11 17:03:05,252 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20Israel%20Gaza%20Iran%20stocks%20oil%20economy 200
+2026-10-11 17:03:05,426 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+Israel+Gaza+Iran+stocks+oil+economy&limit=1 200
+2026-10-11 17:03:10,427 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=Middle+East+Israel+Gaza+Iran+stocks+oil+economy) > operation timed out'))
+2026-10-11 17:03:10,552 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:03:10,586 [INFO] response: https://search.yahoo.com/search;_ylt=BrcnNrYYyfADjFAS0fMKY6fZ;_ylu=Smz64SkdNaXYLwkYCF2nNWPp-MkJzMCwnXi9Ow4r6qPFym4?p=Middle+East+Israel+Gaza+Iran+stocks+oil+economy&btf=w 200
+2026-10-11 17:03:10,988 [INFO] response: https://www.google.com/wml/search?q=Middle+East+Israel+Gaza+Iran+stocks+oil+economy&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:03:11,031 [INFO] response: https://search.brave.com/search?q=Middle+East+Israel+Gaza+Iran+stocks+oil+economy&source=web&tf=pw 429
+2026-10-11 17:03:11,126 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:03:11,266 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791738191Teea2c74bcfe0a656856092be9c21807410d4c5cbdb8a161cfa724b5ef2232717&bds_s=a5b402eb450141d39d64430cc23fc57d&abd=0&qadf=moderate&t=device&segment=organic&qsr=en_US&sc=&language=english&abp=1&lui=english&abe=0&with_date=w&query=Middle+East+Israel+Gaza+Iran+stocks+oil+economy&cat=web&cmd=gen_page 200
+2026-10-11 17:03:11,286 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=Middle+East+Israel+Gaza+Iran+stocks+oil+economy) > operation timed out
+2026-10-11 17:03:11,287 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 17:03:12,789 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:03:12,790 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 17:03:12,791 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:03:12,792 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:03:12,958 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20Arsenal%20Chelsea%20Real%20Madrid%20Champions%20League 200
+2026-10-11 17:03:13,151 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League&limit=1 200
+2026-10-11 17:03:13,257 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:03:13,299 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:03:13,356 [INFO] response: https://search.brave.com/search?q=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League&source=web&tf=pd 429
+2026-10-11 17:03:13,468 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:03:18,490 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League) > operation timed out'))
+2026-10-11 17:03:18,653 [INFO] response: https://search.yahoo.com/search;_ylt=EbZZX4oNbZ1VL6ZOHDh93v6H;_ylu=8TG9g8n5mFYfuXN_yWtQoI-tv_zBUcJo02pd68gOr5ZIhF0?p=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League&btf=d 200
+2026-10-11 17:03:18,830 [INFO] response: https://www.google.com/wml/search?q=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:03:18,831 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League) > operation timed out
+2026-10-11 17:03:18,842 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20Arsenal%20Chelsea%20Real%20Madrid%20Champions%20League 200
+2026-10-11 17:03:19,009 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League&limit=1 200
+2026-10-11 17:03:19,168 [INFO] response: https://search.yahoo.com/search;_ylt=irVr7BXJwCYe_shQDVhBwfKW;_ylu=Nv8u1FV7meY0Fcn2Mps9dUzqIXCqULfJj6hR-XVA3SxVqw4?p=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League&btf=d 200
+2026-10-11 17:03:24,196 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League) > operation timed out'))
+2026-10-11 17:03:24,311 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:03:24,311 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:03:24,473 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:03:24,792 [INFO] response: https://www.google.com/wml/search?q=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:03:24,837 [INFO] response: https://search.brave.com/search?q=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League&source=web&tf=pd 429
+2026-10-11 17:03:24,838 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League) > operation timed out
+2026-10-11 17:03:24,849 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20Arsenal%20Chelsea%20Real%20Madrid%20Champions%20League 200
+2026-10-11 17:03:25,033 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League&limit=1 200
+2026-10-11 17:03:30,034 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League) > operation timed out'))
+2026-10-11 17:03:30,192 [INFO] response: https://search.yahoo.com/search;_ylt=yq6cRjuZeXKpcsiWjGUfUtkg;_ylu=z8JhADcMJa10K2JDba_xucUWOQE81nmHI_uV_25-dRPZvsM?p=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League&btf=w 200
+2026-10-11 17:03:30,341 [INFO] response: https://www.google.com/wml/search?q=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:03:30,388 [INFO] response: https://search.brave.com/search?q=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League&source=web&tf=pw 429
+2026-10-11 17:03:30,515 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:03:30,683 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:03:30,895 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791738210T6bb091ddac52473ed76eed985f9d81fcf2ba6335271594c939260a38d31920ae&bds_s=774d291ab68347c2928fc01249d56688&abp=1&qadf=moderate&with_date=w&t=device&segment=organic&abd=0&abe=0&lui=english&qsr=en_US&sc=&language=english&query=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League&cat=web&cmd=gen_page 200
+2026-10-11 17:03:30,916 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=Premier+League+Arsenal+Chelsea+Real+Madrid+Champions+League) > operation timed out
+2026-10-11 17:03:30,917 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 17:03:32,545 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:03:32,546 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 17:03:32,548 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:03:32,548 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:03:32,686 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%202026%20BBC%20News 200
+2026-10-11 17:03:32,820 [INFO] response: https://grokipedia.com/api/typeahead?query=October+2026+BBC+News&limit=1 200
+2026-10-11 17:03:37,822 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=October+2026+BBC+News) > operation timed out'))
+2026-10-11 17:03:37,950 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:03:38,092 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:03:38,150 [INFO] response: https://www.google.com/wml/search?q=October+2026+BBC+News&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:03:38,254 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:03:38,319 [INFO] response: https://search.brave.com/search?q=October+2026+BBC+News&source=web&tf=pd 429
+2026-10-11 17:03:38,478 [INFO] response: https://search.yahoo.com/search;_ylt=i8C7AlWL0B4HFl93FSXBAa-V;_ylu=LIgJHtma5KXZOvJp8W6HinsHb-qC1Pt7kAa7R9kPI0bWJaw?p=October+2026+BBC+News&btf=d 200
+2026-10-11 17:03:38,482 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=October+2026+BBC+News) > operation timed out
+2026-10-11 17:03:38,638 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%202026%20BBC%20News 200
+2026-10-11 17:03:38,638 [INFO] response: https://grokipedia.com/api/typeahead?query=October+2026+BBC+News&limit=1 200
+2026-10-11 17:03:38,797 [INFO] response: https://search.yahoo.com/search;_ylt=qz-3G-swgYI9mV7NmD01PvSk;_ylu=69c4KnWA67uXpqDLYgtBF2qTYYpH2ESHMQecEMVbhntBMk8?p=October+2026+BBC+News&btf=d 200
+2026-10-11 17:03:43,803 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=October+2026+BBC+News) > operation timed out'))
+2026-10-11 17:03:43,847 [INFO] response: https://search.brave.com/search?q=October+2026+BBC+News&source=web&tf=pd 429
+2026-10-11 17:03:44,209 [INFO] response: https://www.google.com/wml/search?q=October+2026+BBC+News&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:03:44,474 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791738224T6dbc2f2c3a66ae736cc13d8cd110761328fdf888716eadfa6df8e09a992bd9f8&bds_s=a7f6fd7291d04305a0632144bec09fbf&language=english&lui=english&t=device&query=&cat=web&sc=FQvBsxDPqTIYJo25EX6cNzEBlTK5bndLFVp1QpGsdOO6DA2HyfYoVGf7DkWXpW239YaT0WeUa0SiBlRKpKzM6SVnGlrz69TUu1&cmd=gen_page 200
+2026-10-11 17:03:44,551 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:03:44,696 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:03:44,697 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=October+2026+BBC+News) > operation timed out
+2026-10-11 17:03:44,708 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%202026%20BBC%20News 200
+2026-10-11 17:03:44,838 [INFO] response: https://grokipedia.com/api/typeahead?query=October+2026+BBC+News&limit=1 200
+2026-10-11 17:03:44,892 [INFO] response: https://search.brave.com/search?q=October+2026+BBC+News&source=web&tf=pw 429
+2026-10-11 17:03:49,896 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=October+2026+BBC+News) > operation timed out'))
+2026-10-11 17:03:50,063 [INFO] response: https://search.yahoo.com/search;_ylt=iZjeDmAeamlCWNYoCkCt2D2F;_ylu=kbX3lEe3hi4vg8uY6ZXLF6VnH0ValENPqCCuRqhoQU5SZyU?p=October+2026+BBC+News&btf=w 200
+2026-10-11 17:03:50,126 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791738230Teeacc94e9d5d379461a3d38a0697cacefac1cb346f3d2c5789d1d7aceb0d7b57&bds_s=314b1da8524f4137a06abc8d0ed9b855&language=english&lui=english&t=device&query=&cat=web&sc=FQvBsxDPqS7tvw6ES3QuJAvdddrGRvK9OyOnrDVxPT8GvLLqKkDAJvdOh4meGGWMDL0lDvFUP4ZBcnRZjgNaoo9jOVZszYxRAp&cmd=gen_page 200
+2026-10-11 17:03:50,203 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:03:50,307 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:03:50,620 [INFO] response: https://www.google.com/wml/search?q=October+2026+BBC+News&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:03:50,620 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=October+2026+BBC+News) > operation timed out
+2026-10-11 17:03:50,622 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 17:03:52,633 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:03:52,634 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 17:03:52,636 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:03:52,636 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:03:52,779 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20Rupiah%20Oktober 200
+2026-10-11 17:03:52,803 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+Rupiah+Oktober&limit=1 200
+2026-10-11 17:03:52,907 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:03:52,975 [INFO] response: https://search.brave.com/search?q=IHSG+Rupiah+Oktober&source=web&tf=pd 429
+2026-10-11 17:03:53,135 [INFO] response: https://search.yahoo.com/search;_ylt=OmddGP-jFel5sJvCJE9gsur8;_ylu=DScA_mWUblnJI_9jkoL4R5L7vvh0b6Hll804rWDsY4d11WM?p=IHSG+Rupiah+Oktober&btf=d 200
+2026-10-11 17:03:53,498 [INFO] response: https://www.google.com/wml/search?q=IHSG+Rupiah+Oktober&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:03:53,623 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:03:53,773 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791738233T697adca8eda8fc24cb324a39a56652b88def4e9d7b5cd4a478a3a6d2936971ff&bds_s=29bacd1930cd4d2bb7ca8b7f54d8c9f3&with_date=d&abe=0&sc=&abp=1&segment=organic&language=english&lui=english&t=device&qadf=moderate&qsr=en_US&abd=0&query=IHSG+Rupiah+Oktober&cat=web&cmd=gen_page 200
+2026-10-11 17:03:58,776 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-11 17:03:58,906 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+Rupiah+Oktober&limit=1 200
+2026-10-11 17:03:58,909 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20Rupiah%20Oktober 200
+2026-10-11 17:03:58,958 [INFO] response: https://search.brave.com/search?q=IHSG+Rupiah+Oktober&source=web&tf=pd 429
+2026-10-11 17:03:59,080 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:03:59,201 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791738239Tae90ecaa12c437bfc9828bfb4b8e5658f15407519f013b1824805431848174c8&bds_s=7f65f607311c4814a48de04ca182efc0&language=english&sc=&abd=0&qsr=en_US&segment=organic&qadf=moderate&abp=1&abe=0&with_date=d&t=device&lui=english&query=IHSG+Rupiah+Oktober&cat=web&cmd=gen_page 200
+2026-10-11 17:03:59,516 [INFO] response: https://www.google.com/wml/search?q=IHSG+Rupiah+Oktober&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:03:59,647 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:04:04,670 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=IHSG+Rupiah+Oktober) > operation timed out'))
+2026-10-11 17:04:04,840 [INFO] response: https://search.yahoo.com/search;_ylt=yqMwYWGVfQh2_AQ1yCQpVFSu;_ylu=kHIJS3WKCMrP5To3nNG2RdRDOrwkjA-uvnimEoBEMAbJamc?p=IHSG+Rupiah+Oktober&btf=d 200
+2026-10-11 17:04:04,842 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=IHSG+Rupiah+Oktober) > operation timed out
+2026-10-11 17:04:04,854 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20Rupiah%20Oktober 200
+2026-10-11 17:04:04,966 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+Rupiah+Oktober&limit=1 200
+2026-10-11 17:04:05,127 [INFO] response: https://search.yahoo.com/search;_ylt=ACKVadOT87SiEq4_G-rbFttO;_ylu=3ucA13ZLMiEcAw7aC9qR6bu-qv49n2OgdQrBHmDuuwBHOrw?p=IHSG+Rupiah+Oktober&btf=w 200
+2026-10-11 17:04:05,654 [INFO] response: https://www.google.com/wml/search?q=IHSG+Rupiah+Oktober&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:04:05,778 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:04:05,849 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:04:10,850 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=IHSG+Rupiah+Oktober) > operation timed out'))
+2026-10-11 17:04:10,894 [INFO] response: https://search.brave.com/search?q=IHSG+Rupiah+Oktober&source=web&tf=pw 429
+2026-10-11 17:04:10,952 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:04:10,975 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=IHSG+Rupiah+Oktober) > operation timed out
+2026-10-11 17:04:10,977 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 17:04:12,418 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:04:12,419 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-11 17:04:12,421 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:04:12,421 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:04:12,564 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20Bola.com 200
+2026-10-11 17:04:12,584 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+Bola.com&limit=1 200
+2026-10-11 17:04:12,626 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+Bola.com&source=web&tf=pd 429
+2026-10-11 17:04:13,008 [INFO] response: https://www.google.com/wml/search?q=Timnas+Indonesia+Bola.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:04:18,009 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=Timnas+Indonesia+Bola.com) > operation timed out'))
+2026-10-11 17:04:18,129 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:04:18,172 [INFO] response: https://search.yahoo.com/search;_ylt=w2vcHDA1V0BDujVBNn-d6ruw;_ylu=qCdy1zIuXV9KM-ct6w9fNB3yt3bcK0kzUUS7PC0UsuUyiDY?p=Timnas+Indonesia+Bola.com&btf=d 200
+2026-10-11 17:04:18,226 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:04:18,329 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:04:18,352 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=Timnas+Indonesia+Bola.com) > operation timed out
+2026-10-11 17:04:18,362 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20Bola.com 200
+2026-10-11 17:04:18,524 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+Bola.com&limit=1 200
+2026-10-11 17:04:18,875 [INFO] response: https://www.google.com/wml/search?q=Timnas+Indonesia+Bola.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:04:19,009 [INFO] response: https://search.yahoo.com/search;_ylt=8RqW6H2_ZpIkq-w_Q94z97ZO;_ylu=11YUsukCK1Ymua9iEsXx8bvmmnSy5LND-GWkjxtViYe-Fkc?p=Timnas+Indonesia+Bola.com&btf=d 200
+2026-10-11 17:04:24,213 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=Timnas+Indonesia+Bola.com) > operation timed out'))
+2026-10-11 17:04:24,272 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+Bola.com&source=web&tf=pd 429
+2026-10-11 17:04:24,338 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:04:24,493 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:04:24,631 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:04:24,632 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=Timnas+Indonesia+Bola.com) > operation timed out
+2026-10-11 17:04:24,646 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20Bola.com 200
+2026-10-11 17:04:24,783 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+Bola.com&limit=1 200
+2026-10-11 17:04:25,139 [INFO] response: https://www.google.com/wml/search?q=Timnas+Indonesia+Bola.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:04:25,290 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:04:25,441 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:04:25,520 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:04:25,568 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+Bola.com&source=web&tf=pw 429
+2026-10-11 17:04:25,711 [INFO] response: https://search.yahoo.com/search;_ylt=OpLXgiKyUuAqY-RpDWDf1Xyt;_ylu=T1Ettn7eabzZmcrf8OVjjkZySj3YySxNft3IZFCq_0ucL4k?p=Timnas+Indonesia+Bola.com&btf=w 200
+2026-10-11 17:04:30,736 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-11 17:04:30,738 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-11 17:04:38,914 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-11 17:04:38,914 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-10-11 17:04:38,914 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-11 17:04:46,721 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:04:46,723 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-11 17:04:46,724 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-10-11 17:04:46,724 [INFO] URL yang berhasil di-fetch: set()
+2026-10-11 17:04:46,725 [WARNING] Laporan tidak valid: Hanya 1 URL whitelist ditemukan, minimal 3
+2026-10-11 17:04:46,725 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-10-11 17:04:46,725 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-10-11 17:04:46,741 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-11 17:04:46,917 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-11 17:04:46,918 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 6h55m13.105943375s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24913s'}]}}]
+2026-10-11 17:04:46,918 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-11 17:04:46,918 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-11 17:04:50,839 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:04:50,840 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-11 17:04:50,841 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-11 17:04:50,991 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-11 17:04:50,992 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 6h55m9.032785528s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24909s'}]}}]
+2026-10-11 17:04:50,992 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-11 17:04:50,992 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-11 17:05:06,233 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:05:06,234 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-11 17:05:06,237 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-11 17:05:08,197 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:05:08,199 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-11 17:05:08,201 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:05:08,201 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:05:08,379 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20stock%20market%20crypto%20geopolitics%20BBC%20CNBC%20October%202026 200
+2026-10-11 17:05:08,414 [INFO] response: https://grokipedia.com/api/typeahead?query=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026&limit=1 200
+2026-10-11 17:05:08,458 [INFO] response: https://search.brave.com/search?q=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026&source=web&tf=pd 429
+2026-10-11 17:05:08,739 [INFO] response: https://search.yahoo.com/search;_ylt=7s5ilylpUREnmL2omodttgxu;_ylu=IR7BFBf_XLFCobOwakGQEB_unjycSAzcyKSKAl7YL1bTY-M?p=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026&btf=d 200
+2026-10-11 17:05:13,749 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026) > operation timed out'))
+2026-10-11 17:05:13,863 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:05:13,891 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:05:13,941 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:05:14,253 [INFO] response: https://www.google.com/wml/search?q=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:05:14,254 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026) > operation timed out
+2026-10-11 17:05:14,422 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20stock%20market%20crypto%20geopolitics%20BBC%20CNBC%20October%202026 200
+2026-10-11 17:05:14,486 [INFO] response: https://grokipedia.com/api/typeahead?query=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026&limit=1 200
+2026-10-11 17:05:14,591 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:05:14,777 [INFO] response: https://search.yahoo.com/search;_ylt=fmu9fTAdHJvqE_770A3T70pl;_ylu=lfqMtqtScZ1wqsoUy-kYWbB1boxx3F5CthrLLb5GDxvNzZk?p=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026&btf=d 200
+2026-10-11 17:05:14,989 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:05:15,179 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791738315T5d5cde78399e2b38f77cf27c123105a53e2a70da9df1d7659fa1092ed491280e&bds_s=5cd3e3b760f54aedb10de816afc73f94&segment=organic&abe=0&qadf=moderate&with_date=d&abd=0&t=device&language=english&sc=&abp=1&qsr=en_US&lui=english&query=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026&cat=web&cmd=gen_page 200
+2026-10-11 17:05:15,244 [INFO] response: https://search.brave.com/search?q=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026&source=web&tf=pd 429
+2026-10-11 17:05:20,246 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026) > operation timed out'))
+2026-10-11 17:05:20,693 [INFO] response: https://www.google.com/wml/search?q=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:05:20,693 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026) > operation timed out
+2026-10-11 17:05:20,706 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20stock%20market%20crypto%20geopolitics%20BBC%20CNBC%20October%202026 200
+2026-10-11 17:05:20,921 [INFO] response: https://grokipedia.com/api/typeahead?query=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026&limit=1 200
+2026-10-11 17:05:21,200 [INFO] response: https://www.google.com/wml/search?q=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:05:21,304 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:05:21,424 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:05:21,499 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:05:21,542 [INFO] response: https://search.brave.com/search?q=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026&source=web&tf=pw 429
+2026-10-11 17:05:21,697 [INFO] response: https://search.yahoo.com/search;_ylt=WDs3KKnGqPQCekcltWyrLbgf;_ylu=s0pNpyd7s13Ds5CsTkniky775BsjYwZaylJMTCUTKe1ttoo?p=global+stock+market+crypto+geopolitics+BBC+CNBC+October+2026&btf=w 200
+2026-10-11 17:05:26,708 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-11 17:05:26,710 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-11 17:05:26,898 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-11 17:05:26,899 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 6h54m33.124292659s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24873s'}]}}]
+2026-10-11 17:05:26,899 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-11 17:05:26,899 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-11 17:05:29,482 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:05:29,483 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-11 17:05:29,487 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-11 17:05:29,644 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-11 17:05:29,644 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 6h54m30.37973661s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24870s'}]}}]
+2026-10-11 17:05:29,645 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-11 17:05:29,645 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-11 17:05:30,619 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:05:30,619 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-11 17:05:30,621 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-11 17:05:30,782 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-11 17:05:30,783 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 6h54m29.241067437s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24869s'}]}}]
+2026-10-11 17:05:30,783 [WARNING] Model gemini-3.5-flash ditandai mati (retired/404/410).
+2026-10-11 17:05:30,783 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-11 17:05:31,947 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:05:31,948 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-11 17:05:31,949 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:05:31,950 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:05:32,118 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=current%20global%20economy%20news%20October%202026 200
+2026-10-11 17:05:32,137 [INFO] response: https://grokipedia.com/api/typeahead?query=current+global+economy+news+October+2026&limit=1 200
+2026-10-11 17:05:32,242 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:05:37,264 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=current+global+economy+news+October+2026) > operation timed out'))
+2026-10-11 17:05:37,322 [INFO] response: https://search.brave.com/search?q=current+global+economy+news+October+2026&source=web&tf=pd 429
+2026-10-11 17:05:37,419 [INFO] response: https://search.yahoo.com/search;_ylt=258k-P3LGmudTVUQDWShnLJg;_ylu=gXC5a6ZbAq9BFydQNHL5MBgF_eKGVm2XXuqi3apXt0yJWBk?p=current+global+economy+news+October+2026&btf=d 200
+2026-10-11 17:05:37,883 [INFO] response: https://www.google.com/wml/search?q=current+global+economy+news+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:05:38,112 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:05:38,203 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:05:38,204 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=current+global+economy+news+October+2026) > operation timed out
+2026-10-11 17:05:38,332 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=current%20global%20economy%20news%20October%202026 200
+2026-10-11 17:05:38,388 [INFO] response: https://grokipedia.com/api/typeahead?query=current+global+economy+news+October+2026&limit=1 200
+2026-10-11 17:05:38,578 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791738338T8af48cbe6ab42d9a609d96b690011406f13745095bf25866e76c48701884d23f&bds_s=21366d632ed7456c86cb0c138fd6e83a&language=english&lui=english&t=device&query=&cat=web&sc=FQvBsxDPkxUCRuoWVBcYJ5Q6DeblZ9e9VwRbsfgtfCYG2BUT9Ig2ghEU2rXlwRvEUdSEIFbSacaw9i5UoNZqZNimaKE4ZxyMGN&cmd=gen_page 200
+2026-10-11 17:05:38,694 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:05:38,803 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:05:38,867 [INFO] response: https://search.brave.com/search?q=current+global+economy+news+October+2026&source=web&tf=pd 429
+2026-10-11 17:05:39,347 [INFO] response: https://www.google.com/wml/search?q=current+global+economy+news+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:05:44,348 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=current+global+economy+news+October+2026) > operation timed out'))
+2026-10-11 17:05:44,508 [INFO] response: https://search.yahoo.com/search;_ylt=B4r4CTh8MitXD2K8kjzn_Nw7;_ylu=78PwmmFPcggM-ch3fvK4UU95dCi9aKxcQGASPuQKbTabSuc?p=current+global+economy+news+October+2026&btf=d 200
+2026-10-11 17:05:44,518 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=current+global+economy+news+October+2026) > operation timed out
+2026-10-11 17:05:44,529 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=current%20global%20economy%20news%20October%202026 200
+2026-10-11 17:05:44,721 [INFO] response: https://grokipedia.com/api/typeahead?query=current+global+economy+news+October+2026&limit=1 200
+2026-10-11 17:05:49,722 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=current+global+economy+news+October+2026) > operation timed out'))
+2026-10-11 17:05:49,825 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:05:50,227 [INFO] response: https://www.google.com/wml/search?q=current+global+economy+news+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:05:50,363 [INFO] response: https://search.yahoo.com/search;_ylt=JnHOtni8-9SBGkJrIXreQvHn;_ylu=iZDlcAFPf_Br6VUEEHSgXsrheL_U1D46GOuF2YCEf0ZdYkU?p=current+global+economy+news+October+2026&btf=w 200
+2026-10-11 17:05:50,519 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:05:50,568 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:05:50,610 [INFO] response: https://search.brave.com/search?q=current+global+economy+news+October+2026&source=web&tf=pw 429
+2026-10-11 17:05:50,612 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=current+global+economy+news+October+2026) > operation timed out
+2026-10-11 17:05:50,613 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-11 17:05:51,741 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:05:51,742 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-11 17:05:51,744 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:05:51,744 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:05:51,912 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20results%20October%202026 200
+2026-10-11 17:05:51,923 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+results+October+2026&limit=1 200
+2026-10-11 17:05:51,979 [INFO] response: https://search.brave.com/search?q=sports+results+October+2026&source=web&tf=pd 429
+2026-10-11 17:05:56,981 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=sports+results+October+2026) > operation timed out'))
+2026-10-11 17:05:57,111 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:05:57,156 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:05:57,437 [INFO] response: https://www.google.com/wml/search?q=sports+results+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:05:57,541 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:05:57,698 [INFO] response: https://search.yahoo.com/search;_ylt=dyfPh99XpcQMzAV5M83wcw0L;_ylu=v9SQ6ESzErloBfgZRJ1iTWgmVSQBGMkmPh7AzFD_GuKxjF0?p=sports+results+October+2026&btf=d 200
+2026-10-11 17:05:57,725 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=sports+results+October+2026) > operation timed out
+2026-10-11 17:05:57,883 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20results%20October%202026 200
+2026-10-11 17:05:57,929 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+results+October+2026&limit=1 200
+2026-10-11 17:05:57,972 [INFO] response: https://search.brave.com/search?q=sports+results+October+2026&source=web&tf=pd 429
+2026-10-11 17:05:58,103 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:05:58,224 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:05:58,303 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:05:58,604 [INFO] response: https://www.google.com/wml/search?q=sports+results+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:06:03,606 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=sports+results+October+2026) > operation timed out'))
+2026-10-11 17:06:03,773 [INFO] response: https://search.yahoo.com/search;_ylt=9fbtp03I1JqkTBu5IuxyFFxy;_ylu=cnu1_kDZW8TTGc33znyuPrqxnrLGkP6qiewoFMQZJR9A5Jo?p=sports+results+October+2026&btf=d 200
+2026-10-11 17:06:03,783 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=sports+results+October+2026) > operation timed out
+2026-10-11 17:06:03,795 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20results%20October%202026 200
+2026-10-11 17:06:03,934 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+results+October+2026&limit=1 200
+2026-10-11 17:06:08,936 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=sports+results+October+2026) > operation timed out'))
+2026-10-11 17:06:09,068 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:06:09,121 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:06:09,424 [INFO] response: https://www.google.com/wml/search?q=sports+results+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:06:09,466 [INFO] response: https://search.brave.com/search?q=sports+results+October+2026&source=web&tf=pw 429
+2026-10-11 17:06:09,634 [INFO] response: https://search.yahoo.com/search;_ylt=i4L2qwz2e9ocNjU-RInF5q9b;_ylu=heDEMwTIRIj34bZt15pcbJQII8jl_DbhG07dYjiCk63MH7o?p=sports+results+October+2026&btf=w 200
+2026-10-11 17:06:09,743 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:06:09,766 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=sports+results+October+2026) > operation timed out
+2026-10-11 17:06:09,767 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-11 17:06:11,381 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:06:11,382 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-11 17:06:11,384 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:06:11,384 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:06:11,548 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20ekonomi%20Indonesia%20hari%20ini%20Oktober%202026 200
+2026-10-11 17:06:11,575 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+ekonomi+Indonesia+hari+ini+Oktober+2026&limit=1 200
+2026-10-11 17:06:11,680 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:06:11,800 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:06:11,874 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:06:12,014 [INFO] response: https://search.yahoo.com/search;_ylt=MjEzfMc90Z-mhclq5WgyKKuw;_ylu=83KPfq33KnehwZ4BV8c3Z2vpRTBzxBI2d1ZD2oOSUo-AvHQ?p=berita+ekonomi+Indonesia+hari+ini+Oktober+2026&btf=d 200
+2026-10-11 17:06:17,051 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita+ekonomi+Indonesia+hari+ini+Oktober+2026) > operation timed out'))
+2026-10-11 17:06:17,115 [INFO] response: https://search.brave.com/search?q=berita+ekonomi+Indonesia+hari+ini+Oktober+2026&source=web&tf=pd 429
+2026-10-11 17:06:17,359 [INFO] response: https://www.google.com/wml/search?q=berita+ekonomi+Indonesia+hari+ini+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:06:17,360 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=berita+ekonomi+Indonesia+hari+ini+Oktober+2026) > operation timed out
+2026-10-11 17:06:17,534 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20ekonomi%20Indonesia%20hari%20ini%20Oktober%202026 200
+2026-10-11 17:06:17,556 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+ekonomi+Indonesia+hari+ini+Oktober+2026&limit=1 200
+2026-10-11 17:06:17,599 [INFO] response: https://search.brave.com/search?q=berita+ekonomi+Indonesia+hari+ini+Oktober+2026&source=web&tf=pd 429
+2026-10-11 17:06:17,731 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:06:22,733 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita+ekonomi+Indonesia+hari+ini+Oktober+2026) > operation timed out'))
+2026-10-11 17:06:22,855 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:06:22,869 [INFO] response: https://search.yahoo.com/search;_ylt=VAJ0mrFbZ3rP1lYJstTgc9Ga;_ylu=nrBAgi7x0w5hNZhcpRrlDk_sPGTfACjFidQ-HQkxDZ8Onlo?p=berita+ekonomi+Indonesia+hari+ini+Oktober+2026&btf=d 200
+2026-10-11 17:06:22,900 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:06:23,245 [INFO] response: https://www.google.com/wml/search?q=berita+ekonomi+Indonesia+hari+ini+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:06:23,245 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=berita+ekonomi+Indonesia+hari+ini+Oktober+2026) > operation timed out
+2026-10-11 17:06:23,256 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20ekonomi%20Indonesia%20hari%20ini%20Oktober%202026 200
+2026-10-11 17:06:23,444 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+ekonomi+Indonesia+hari+ini+Oktober+2026&limit=1 200
+2026-10-11 17:06:23,489 [INFO] response: https://search.brave.com/search?q=berita+ekonomi+Indonesia+hari+ini+Oktober+2026&source=web&tf=pw 429
+2026-10-11 17:06:23,614 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:06:23,717 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:06:23,765 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:06:28,767 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita+ekonomi+Indonesia+hari+ini+Oktober+2026) > operation timed out'))
+2026-10-11 17:06:28,927 [INFO] response: https://search.yahoo.com/search;_ylt=6__9RKUl2bwWgeGH8XuNwyKS;_ylu=WbtZPKPdMkxGwIcsrC1-x2tHGqIDCvyoR3xDf8gMi5ttrGk?p=berita+ekonomi+Indonesia+hari+ini+Oktober+2026&btf=w 200
+2026-10-11 17:06:29,224 [INFO] response: https://www.google.com/wml/search?q=berita+ekonomi+Indonesia+hari+ini+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:06:29,224 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=berita+ekonomi+Indonesia+hari+ini+Oktober+2026) > operation timed out
+2026-10-11 17:06:29,226 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-11 17:06:30,460 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:06:30,461 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-11 17:06:30,463 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:06:30,463 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:06:30,623 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+Indonesia+Oktober+2026&limit=1 200
+2026-10-11 17:06:30,623 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20Indonesia%20Oktober%202026 200
+2026-10-11 17:06:30,752 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:06:30,818 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:06:30,861 [INFO] response: https://search.brave.com/search?q=berita+viral+Indonesia+Oktober+2026&source=web&tf=pd 429
+2026-10-11 17:06:31,003 [INFO] response: https://search.yahoo.com/search;_ylt=uvahBkzOamERYj8106e6RYbI;_ylu=Hs6plKOeSdgh0UDpWfU-Fz-5pRSVNUsfgUUak8I1IsGLYc8?p=berita+viral+Indonesia+Oktober+2026&btf=d 200
+2026-10-11 17:06:31,138 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:06:36,163 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita+viral+Indonesia+Oktober+2026) > operation timed out'))
+2026-10-11 17:06:36,659 [INFO] response: https://www.google.com/wml/search?q=berita+viral+Indonesia+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:06:36,659 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=berita+viral+Indonesia+Oktober+2026) > operation timed out
+2026-10-11 17:06:36,671 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20Indonesia%20Oktober%202026 200
+2026-10-11 17:06:36,845 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+Indonesia+Oktober+2026&limit=1 200
+2026-10-11 17:06:37,004 [INFO] response: https://search.yahoo.com/search;_ylt=7v23mQhPV4hu1jhSYYEuvber;_ylu=AsPL85l-e_QF15SP-4xqf2wHsgyeGzHqW20pZvXhw_3183I?p=berita+viral+Indonesia+Oktober+2026&btf=d 200
+2026-10-11 17:06:37,053 [INFO] response: https://search.brave.com/search?q=berita+viral+Indonesia+Oktober+2026&source=web&tf=pd 429
+2026-10-11 17:06:42,056 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita+viral+Indonesia+Oktober+2026) > operation timed out'))
+2026-10-11 17:06:42,162 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:06:42,231 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:06:42,589 [INFO] response: https://www.google.com/wml/search?q=berita+viral+Indonesia+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:06:42,728 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:06:42,729 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=berita+viral+Indonesia+Oktober+2026) > operation timed out
+2026-10-11 17:06:42,887 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+Indonesia+Oktober+2026&limit=1 200
+2026-10-11 17:06:42,894 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20Indonesia%20Oktober%202026 200
+2026-10-11 17:06:43,007 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:06:43,144 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:06:43,254 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:06:43,339 [INFO] response: https://search.brave.com/search?q=berita+viral+Indonesia+Oktober+2026&source=web&tf=pw 429
+2026-10-11 17:06:43,514 [INFO] response: https://search.yahoo.com/search;_ylt=yC5KZ5G_I2B36KHPiA4aw6Xv;_ylu=fvGe_bivCEQNFSc7EBHibK8ceN-8mr6y0mNz0ffSzeV5-cw?p=berita+viral+Indonesia+Oktober+2026&btf=w 200
+2026-10-11 17:06:43,961 [INFO] response: https://www.google.com/wml/search?q=berita+viral+Indonesia+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:06:48,963 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-11 17:06:48,965 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-11 17:06:51,579 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:06:51,580 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-11 17:06:51,582 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:06:51,582 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:06:51,751 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20AI%20news%20October%202026 200
+2026-10-11 17:06:51,868 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+AI+news+October+2026&limit=1 200
+2026-10-11 17:06:51,910 [INFO] response: https://search.brave.com/search?q=latest+technology+AI+news+October+2026&source=web&tf=pd 429
+2026-10-11 17:06:52,019 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:06:57,042 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=latest+technology+AI+news+October+2026) > operation timed out'))
+2026-10-11 17:06:57,203 [INFO] response: https://search.yahoo.com/search;_ylt=-Bf7evQTClqO1sAG_f1YdBH-;_ylu=3w9S7NUjTImhzFkRr3BeKEAlCZA1auiwjta-QeRv51CvJ58?p=latest+technology+AI+news+October+2026&btf=d 200
+2026-10-11 17:06:57,234 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791738417Tfeef6be734fb07db39cefbc6a0058d93f20a9889dddc878a3d22e8dc723263f8&bds_s=6c4d581c601c4b4981dcb65bbe022ec2&language=english&lui=english&t=device&query=&cat=web&sc=FQvBsxDPetZwpy84oCB05eSDOgcT238Y1MX52sDk2fpBpBd8e6gobyadbKpCvIvlFN10o5Rgztcnyhrgv7gO96ySjYss0tp65D&cmd=gen_page 200
+2026-10-11 17:06:57,305 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:06:58,071 [INFO] response: https://www.google.com/wml/search?q=latest+technology+AI+news+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:06:58,072 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=latest+technology+AI+news+October+2026) > operation timed out
+2026-10-11 17:06:58,083 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20AI%20news%20October%202026 200
+2026-10-11 17:06:58,301 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+AI+news+October+2026&limit=1 200
+2026-10-11 17:07:03,302 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=latest+technology+AI+news+October+2026) > operation timed out'))
+2026-10-11 17:07:03,426 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:07:03,489 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:07:03,756 [INFO] response: https://www.google.com/wml/search?q=latest+technology+AI+news+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:07:03,801 [INFO] response: https://search.brave.com/search?q=latest+technology+AI+news+October+2026&source=web&tf=pd 429
+2026-10-11 17:07:03,929 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:07:04,101 [INFO] response: https://search.yahoo.com/search;_ylt=C229uni3VLVV97KX4EEf5w25;_ylu=rCFZKNS2yD9HQ_ec2Sl20RsZfVTnC8XkHIIMeRBkiXwXRa0?p=latest+technology+AI+news+October+2026&btf=d 200
+2026-10-11 17:07:04,110 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=latest+technology+AI+news+October+2026) > operation timed out
+2026-10-11 17:07:04,121 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=latest%20technology%20AI%20news%20October%202026 200
+2026-10-11 17:07:04,263 [INFO] response: https://grokipedia.com/api/typeahead?query=latest+technology+AI+news+October+2026&limit=1 200
+2026-10-11 17:07:04,690 [INFO] response: https://www.google.com/wml/search?q=latest+technology+AI+news+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:07:04,846 [INFO] response: https://search.yahoo.com/search;_ylt=Nnf1NIWDb0xkwL01nwGnu0nJ;_ylu=4Pdhqy1plTGA4IfH9AqDg2hNYA04nxpydsqEM6KWjmPL57I?p=latest+technology+AI+news+October+2026&btf=w 200
+2026-10-11 17:07:04,952 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:07:05,021 [INFO] response: https://search.brave.com/search?q=latest+technology+AI+news+October+2026&source=web&tf=pw 429
+2026-10-11 17:07:10,023 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=latest+technology+AI+news+October+2026) > operation timed out'))
+2026-10-11 17:07:10,153 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:07:10,237 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:07:10,238 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=latest+technology+AI+news+October+2026) > operation timed out
+2026-10-11 17:07:10,241 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-11 17:07:13,750 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:07:13,751 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-11 17:07:13,753 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:07:13,754 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:07:13,901 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20terkini%2011%20Oktober%202026 200
+2026-10-11 17:07:13,924 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+terkini+11+Oktober+2026&limit=1 200
+2026-10-11 17:07:14,044 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:07:14,329 [INFO] response: https://www.google.com/wml/search?q=berita+terkini+11+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:07:14,622 [INFO] response: https://search.yahoo.com/search;_ylt=Vlp6LjBXmmM9p9uZzBrmg4rl;_ylu=CKxj8WGREQsX3m189PSqrfPMX9AnldhMA1dVx4nERso-MUs?p=berita+terkini+11+Oktober+2026&btf=d 200
+2026-10-11 17:07:14,727 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:07:14,770 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:07:14,822 [INFO] response: https://search.brave.com/search?q=berita+terkini+11+Oktober+2026&source=web&tf=pd 429
+2026-10-11 17:07:19,825 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-11 17:07:19,841 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20terkini%2011%20Oktober%202026 200
+2026-10-11 17:07:19,981 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+terkini+11+Oktober+2026&limit=1 200
+2026-10-11 17:07:20,144 [INFO] response: https://search.yahoo.com/search;_ylt=7mfofprR6OAgmW8mkSZyHcEW;_ylu=sMNNe-B4pE2VGs3Lj6HUGUWrRwGBRiZe6oUL1Mzm4QKDbco?p=berita+terkini+11+Oktober+2026&btf=d 200
+2026-10-11 17:07:20,254 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:07:20,788 [INFO] response: https://www.google.com/wml/search?q=berita+terkini+11+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:07:25,789 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita+terkini+11+Oktober+2026) > operation timed out'))
+2026-10-11 17:07:25,832 [INFO] response: https://search.brave.com/search?q=berita+terkini+11+Oktober+2026&source=web&tf=pd 429
+2026-10-11 17:07:25,904 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:07:25,950 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:07:25,951 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=berita+terkini+11+Oktober+2026) > operation timed out
+2026-10-11 17:07:26,124 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+terkini+11+Oktober+2026&limit=1 200
+2026-10-11 17:07:26,130 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20terkini%2011%20Oktober%202026 200
+2026-10-11 17:07:26,605 [INFO] response: https://www.google.com/wml/search?q=berita+terkini+11+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:07:26,767 [INFO] response: https://search.yahoo.com/search;_ylt=YlxGdIC4cr9RtXS_TCa_K3Kn;_ylu=dPJQXCK1wP1RSPvwtL4dslBapeP1cHrrMGY_TfEmYMfM7W4?p=berita+terkini+11+Oktober+2026&btf=w 200
+2026-10-11 17:07:26,888 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:07:26,943 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:07:31,944 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita+terkini+11+Oktober+2026) > operation timed out'))
+2026-10-11 17:07:31,988 [INFO] response: https://search.brave.com/search?q=berita+terkini+11+Oktober+2026&source=web&tf=pw 429
+2026-10-11 17:07:32,062 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:07:32,084 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=berita+terkini+11+Oktober+2026) > operation timed out
+2026-10-11 17:07:32,086 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-11 17:07:36,521 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:07:36,522 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-11 17:07:36,524 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:07:36,524 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:07:36,665 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20terbaru%20hari%20ini 200
+2026-10-11 17:07:36,671 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+terbaru+hari+ini&limit=1 200
+2026-10-11 17:07:36,816 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:07:41,839 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita+terbaru+hari+ini) > operation timed out'))
+2026-10-11 17:07:42,011 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:07:42,064 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:07:42,167 [INFO] response: https://www.google.com/wml/search?q=berita+terbaru+hari+ini&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:07:42,323 [INFO] response: https://search.yahoo.com/search;_ylt=-w_Nd3cPmTzNABKkrrtO0d4M;_ylu=FffSsCgtg2QQxwHeljKeePWulxQbv3nV3iwwTyrbkWNThOs?p=berita+terbaru+hari+ini&btf=d 200
+2026-10-11 17:07:42,371 [INFO] response: https://search.brave.com/search?q=berita+terbaru+hari+ini&source=web&tf=pd 429
+2026-10-11 17:07:42,372 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=berita+terbaru+hari+ini) > operation timed out
+2026-10-11 17:07:42,383 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20terbaru%20hari%20ini 200
+2026-10-11 17:07:42,503 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+terbaru+hari+ini&limit=1 200
+2026-10-11 17:07:42,829 [INFO] response: https://www.google.com/wml/search?q=berita+terbaru+hari+ini&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:07:42,874 [INFO] response: https://search.brave.com/search?q=berita+terbaru+hari+ini&source=web&tf=pd 429
+2026-10-11 17:07:47,877 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita+terbaru+hari+ini) > operation timed out'))
+2026-10-11 17:07:47,991 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:07:48,041 [INFO] response: https://search.yahoo.com/search;_ylt=2FxZFNSwHzTXrH3MJ5s3u43l;_ylu=_uQf8VxKSjuVP1olYVOd2BETgpyytKaQFiAn6ehg6ROEd4M?p=berita+terbaru+hari+ini&btf=d 200
+2026-10-11 17:07:48,200 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:07:48,269 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:07:48,269 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=berita+terbaru+hari+ini) > operation timed out
+2026-10-11 17:07:48,410 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+terbaru+hari+ini&limit=1 200
+2026-10-11 17:07:48,423 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20terbaru%20hari%20ini 200
+2026-10-11 17:07:48,689 [INFO] response: https://www.google.com/wml/search?q=berita+terbaru+hari+ini&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:07:48,837 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:07:49,343 [INFO] response: https://search.brave.com/search?q=berita+terbaru+hari+ini&source=web&tf=pw 429
+2026-10-11 17:07:54,347 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita+terbaru+hari+ini) > operation timed out'))
+2026-10-11 17:07:54,480 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:07:54,484 [INFO] response: https://search.yahoo.com/search;_ylt=tvKY1lf9s3920yL8H_ijH8Fn;_ylu=BvQGf2aktS-dLZ7LjfGsQc0kw6ItUHJSaNbCvhf7fKbm7OI?p=berita+terbaru+hari+ini&btf=w 200
+2026-10-11 17:07:54,550 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:07:54,550 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=berita+terbaru+hari+ini) > operation timed out
+2026-10-11 17:07:54,552 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-11 17:08:00,583 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:08:00,584 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-11 17:08:00,586 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:08:00,586 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:08:00,749 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20terkini%20ekonomi%20olahraga%20teknologi 200
+2026-10-11 17:08:00,768 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+terkini+ekonomi+olahraga+teknologi&limit=1 200
+2026-10-11 17:08:01,283 [INFO] response: https://www.google.com/wml/search?q=berita+terkini+ekonomi+olahraga+teknologi&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:08:06,285 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita+terkini+ekonomi+olahraga+teknologi) > operation timed out'))
+2026-10-11 17:08:06,410 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:08:06,473 [INFO] response: https://search.yahoo.com/search;_ylt=rGeJ2h03aB9pHq0C6UKROuan;_ylu=Ll3rt9yeSwgTGTZ_WsvRNIRm63t-7_ZA6vT63SNRRuYmc50?p=berita+terkini+ekonomi+olahraga+teknologi&btf=d 200
+2026-10-11 17:08:06,609 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:08:06,653 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:08:06,739 [INFO] response: https://search.brave.com/search?q=berita+terkini+ekonomi+olahraga+teknologi&source=web&tf=pd 429
+2026-10-11 17:08:06,741 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=berita+terkini+ekonomi+olahraga+teknologi) > operation timed out
+2026-10-11 17:08:06,891 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20terkini%20ekonomi%20olahraga%20teknologi 200
+2026-10-11 17:08:06,909 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+terkini+ekonomi+olahraga+teknologi&limit=1 200
+2026-10-11 17:08:07,261 [INFO] response: https://www.google.com/wml/search?q=berita+terkini+ekonomi+olahraga+teknologi&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:08:12,263 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita+terkini+ekonomi+olahraga+teknologi) > operation timed out'))
+2026-10-11 17:08:12,421 [INFO] response: https://search.yahoo.com/search;_ylt=sKS6nJ3Lg-VbjhPPW72Yj_Sq;_ylu=kSUY0yYao5dWj4JtiyCF8KAtQemwIdAVSnkoeKaL08A8Y74?p=berita+terkini+ekonomi+olahraga+teknologi&btf=d 200
+2026-10-11 17:08:12,456 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:08:12,892 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:08:13,086 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:08:13,152 [INFO] response: https://search.brave.com/search?q=berita+terkini+ekonomi+olahraga+teknologi&source=web&tf=pd 429
+2026-10-11 17:08:13,154 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=berita+terkini+ekonomi+olahraga+teknologi) > operation timed out
+2026-10-11 17:08:13,164 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20terkini%20ekonomi%20olahraga%20teknologi 200
+2026-10-11 17:08:13,325 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+terkini+ekonomi+olahraga+teknologi&limit=1 200
+2026-10-11 17:08:13,765 [INFO] response: https://www.google.com/wml/search?q=berita+terkini+ekonomi+olahraga+teknologi&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:08:18,767 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita+terkini+ekonomi+olahraga+teknologi) > operation timed out'))
+2026-10-11 17:08:18,873 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:08:18,917 [INFO] response: https://search.yahoo.com/search;_ylt=fdXqQWLEF4K-eKU9_8dRGkYJ;_ylu=2LYPrOnvuwTZClzZlS2ntySdwcuW1knq80E82YWa-KX-Djs?p=berita+terkini+ekonomi+olahraga+teknologi&btf=w 200
+2026-10-11 17:08:18,946 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:08:18,987 [INFO] response: https://search.brave.com/search?q=berita+terkini+ekonomi+olahraga+teknologi&source=web&tf=pw 429
+2026-10-11 17:08:19,116 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:08:19,116 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=berita+terkini+ekonomi+olahraga+teknologi) > operation timed out
+2026-10-11 17:08:19,118 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-11 17:08:21,816 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:08:21,818 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-11 17:08:21,819 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-11 17:08:26,460 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:08:26,461 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-11 17:08:26,466 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-11 17:08:28,608 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:08:28,609 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-11 17:08:28,611 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:08:28,611 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:08:28,628 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita 200
+2026-10-11 17:08:28,723 [INFO] response: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=Berita&explaintext=0&exintro=0&redirects=1 200
+2026-10-11 17:08:28,757 [INFO] response: https://grokipedia.com/api/typeahead?query=berita&limit=1 200
+2026-10-11 17:08:28,902 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:08:29,021 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:08:29,420 [INFO] response: https://www.google.com/wml/search?q=berita&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:08:29,477 [INFO] response: https://search.brave.com/search?q=berita&source=web&tf=pd 429
+2026-10-11 17:08:34,480 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=berita) > operation timed out'))
+2026-10-11 17:08:34,618 [INFO] response: https://search.yahoo.com/search;_ylt=E5r_AMMfWD534XdXwRt37AWW;_ylu=BCtTaQPYbOFaip8wGD2pFfcDYmT8Ur1sJQSG7AOy6bwCng4?p=berita&btf=d 200
+2026-10-11 17:08:34,629 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:08:34,643 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-11 17:08:36,230 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:08:36,231 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-11 17:08:36,235 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:08:36,236 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:08:36,384 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+geopolitics+economy&limit=1 200
+2026-10-11 17:08:36,398 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20geopolitics%20economy 200
+2026-10-11 17:08:36,501 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-11 17:08:36,519 [WARNING] h2 connection driver error: connection reset
+2026-10-11 17:08:36,519 [INFO] Error in engine duckduckgo: DDGSException("DecodeError: DecodeError('error decoding response body > request or response body error > error sending request > connection reset', None)")
+2026-10-11 17:08:36,771 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com+geopolitics+economy&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:08:41,773 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com+geopolitics+economy) > operation timed out'))
+2026-10-11 17:08:41,913 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:08:41,930 [INFO] response: https://search.yahoo.com/search;_ylt=90JWYs_1cS5d-cG1VGMWWQKj;_ylu=oYzo_PKV8uBR9wuvgsUAdrevRn72rfT3e3pWW3fIfVAdVAc?p=site%3Abbc.com+geopolitics+economy&btf=d 200
+2026-10-11 17:08:41,981 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:08:42,028 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+geopolitics+economy&source=web&tf=pd 429
+2026-10-11 17:08:42,030 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com+geopolitics+economy) > operation timed out
+2026-10-11 17:08:42,040 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20geopolitics%20economy 200
+2026-10-11 17:08:42,201 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+geopolitics+economy&limit=1 200
+2026-10-11 17:08:42,246 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+geopolitics+economy&source=web&tf=pd 429
+2026-10-11 17:08:42,385 [INFO] response: https://search.yahoo.com/search;_ylt=DCA_q1h2Dw_9u_gY8x8twAIM;_ylu=X-Tmtpxe6bNc1KGw6XynqcCQZYL5IIqBcl9uDpYGaRxfOGY?p=site%3Abbc.com+geopolitics+economy&btf=d 200
+2026-10-11 17:08:42,662 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com+geopolitics+economy&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:08:47,663 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-10-11 17:08:47,781 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:08:47,923 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:08:52,664 [WARNING] Percobaan 2 gagal: error sending request for url (https://html.duckduckgo.com/html/) > operation timed out
+2026-10-11 17:08:52,842 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+geopolitics+economy&limit=1 200
+2026-10-11 17:08:52,849 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20geopolitics%20economy 200
+2026-10-11 17:08:52,996 [INFO] response: https://search.yahoo.com/search;_ylt=Rr1q0skPcP1HXvwZQ9To3JGJ;_ylu=4YXsw2YhjhiMOYZLo9SZIxd5nlH28750GjzC23-kGxWBbbo?p=site%3Abbc.com+geopolitics+economy&btf=w 200
+2026-10-11 17:08:53,147 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:08:53,226 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:08:53,285 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+geopolitics+economy&source=web&tf=pw 429
+2026-10-11 17:08:58,288 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com+geopolitics+economy) > operation timed out'))
+2026-10-11 17:08:58,605 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com+geopolitics+economy&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:09:03,290 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Abbc.com+geopolitics+economy) > operation timed out
+2026-10-11 17:09:03,290 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:09:03,290 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:09:03,454 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechcrunch.com%20technology 200
+2026-10-11 17:09:03,489 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechcrunch.com+technology&limit=1 200
+2026-10-11 17:09:03,644 [INFO] response: https://search.yahoo.com/search;_ylt=eqaatcnVVy9Pm4QChU3JPiCA;_ylu=8hZnoM_QT5lRQGHEe_xp8RksPRSH6Gn-32nc_71fzbQRpDY?p=site%3Atechcrunch.com+technology&btf=d 200
+2026-10-11 17:09:03,718 [INFO] response: https://search.brave.com/search?q=site%3Atechcrunch.com+technology&source=web&tf=pd 429
+2026-10-11 17:09:04,064 [INFO] response: https://www.google.com/wml/search?q=site%3Atechcrunch.com+technology&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:09:09,066 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Atechcrunch.com+technology) > operation timed out'))
+2026-10-11 17:09:09,186 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:09:09,270 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:09:14,066 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-10-11 17:09:14,067 [WARNING] Percobaan 1 gagal: error sending request for url (https://html.duckduckgo.com/html/) > operation timed out
+2026-10-11 17:09:14,078 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechcrunch.com%20technology 200
+2026-10-11 17:09:14,248 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechcrunch.com+technology&limit=1 200
+2026-10-11 17:09:14,665 [INFO] response: https://www.google.com/wml/search?q=site%3Atechcrunch.com+technology&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:09:19,667 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Atechcrunch.com+technology) > operation timed out'))
+2026-10-11 17:09:19,819 [INFO] response: https://search.yahoo.com/search;_ylt=hzBwvZmmvLssmF1s2efQq3Ni;_ylu=V9gucJfG4QJmUcngBFUynI6ID8IGw7sGsahdpLB-JOe7pNE?p=site%3Atechcrunch.com+technology&btf=d 200
+2026-10-11 17:09:24,668 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-10-11 17:09:24,718 [INFO] response: https://search.brave.com/search?q=site%3Atechcrunch.com+technology&source=web&tf=pd 429
+2026-10-11 17:09:24,839 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:09:24,999 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:09:25,000 [WARNING] Percobaan 2 gagal: error sending request for url (https://html.duckduckgo.com/html/) > operation timed out
+2026-10-11 17:09:25,161 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechcrunch.com+technology&limit=1 200
+2026-10-11 17:09:25,176 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechcrunch.com%20technology 200
+2026-10-11 17:09:30,177 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Atechcrunch.com+technology) > operation timed out'))
+2026-10-11 17:09:30,220 [INFO] response: https://search.brave.com/search?q=site%3Atechcrunch.com+technology&source=web&tf=pw 429
+2026-10-11 17:09:35,177 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-10-11 17:09:35,436 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=8c2e42c99f19de26fae3c199638f22ad&bds_t=1791738575T30b5d2cc3be73e603315c3008386b241033a45a5fc7f87ed97ad66d35e737231&bds_s=1758e8228d7d4334b821ece6802a30c6&language=english&lui=english&t=device&query=&cat=web&sc=2MMOuFQUrftYpqQzW3eIlyDSzl2z01umoppweOUhZ8vvRLZQu9U4qvOWh14J4SNuWKtvAIGIhia8g30jXkVXabBXPQ1UOvtyFFAF&cmd=gen_page 200
+2026-10-11 17:09:35,458 [INFO] response: https://www.google.com/wml/search?q=site%3Atechcrunch.com+technology&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:09:35,523 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:09:35,664 [INFO] response: https://search.yahoo.com/search;_ylt=JiPUbyq8xD3JU9aQ_n12zR4V;_ylu=UuThY1VOad3P7X_V_QTkhcTQ3kmYJwbfxc1sJpVY7vXdiKU?p=site%3Atechcrunch.com+technology&btf=w 200
+2026-10-11 17:09:35,686 [WARNING] Percobaan 3 gagal: error sending request for url (https://html.duckduckgo.com/html/) > operation timed out
+2026-10-11 17:09:35,686 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:09:35,686 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:09:35,822 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com%20sports 200
+2026-10-11 17:09:35,945 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com+sports&limit=1 200
+2026-10-11 17:09:35,992 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com+sports&source=web&tf=pd 429
+2026-10-11 17:09:36,147 [INFO] response: https://search.yahoo.com/search;_ylt=P4MGIV9B7jaZrVwYHBIGA7yX;_ylu=0Yab9PyjcrlPiU9vFC90zXKOoKJtXCXtixveGjeuZfx8Aps?p=site%3Aespn.com+sports&btf=d 200
+2026-10-11 17:09:36,565 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:09:36,637 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:09:41,639 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Aespn.com+sports) > operation timed out'))
+2026-10-11 17:09:42,053 [INFO] response: https://www.google.com/wml/search?q=site%3Aespn.com+sports&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:09:46,641 [WARNING] Percobaan 1 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Aespn.com+sports) > operation timed out
+2026-10-11 17:09:46,652 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com%20sports 200
+2026-10-11 17:09:46,775 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com+sports&limit=1 200
+2026-10-11 17:09:51,776 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Aespn.com+sports) > operation timed out'))
+2026-10-11 17:09:51,917 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:09:51,938 [INFO] response: https://search.yahoo.com/search;_ylt=Y_vkfhFIQoXfYac0WpufkP3k;_ylu=0FFx3l7guFWToHfUFuqs8IZ6rYNpvRFMVe4KCGtcEtDbaYY?p=site%3Aespn.com+sports&btf=d 200
+2026-10-11 17:09:52,061 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:09:57,062 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-10-11 17:09:57,113 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com+sports&source=web&tf=pd 429
+2026-10-11 17:09:57,429 [INFO] response: https://www.google.com/wml/search?q=site%3Aespn.com+sports&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:09:57,430 [WARNING] Percobaan 2 gagal: error sending request for url (https://html.duckduckgo.com/html/) > operation timed out
+2026-10-11 17:09:57,561 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com%20sports 200
+2026-10-11 17:09:57,564 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com+sports&limit=1 200
+2026-10-11 17:09:57,609 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com+sports&source=web&tf=pw 429
+2026-10-11 17:10:02,612 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-10-11 17:10:02,800 [INFO] response: https://search.yahoo.com/search;_ylt=up1KOzdWQby4BH6rd8ij4qG_;_ylu=WFDVZxUREJoyu3fOkWLqkWE-lZJTJs5TbtXdNUNfQxaJjhU?p=site%3Aespn.com+sports&btf=w 200
+2026-10-11 17:10:07,613 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Aespn.com+sports) > operation timed out'))
+2026-10-11 17:10:08,147 [INFO] response: https://www.google.com/wml/search?q=site%3Aespn.com+sports&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:10:08,305 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:10:09,007 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:10:09,008 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Aespn.com+sports) > operation timed out
+2026-10-11 17:10:09,008 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:10:09,008 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:10:09,157 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Akompas.com%20berita%20indonesia 200
+2026-10-11 17:10:09,247 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Akompas.com+berita+indonesia&limit=1 200
+2026-10-11 17:10:09,607 [INFO] response: https://www.google.com/wml/search?q=site%3Akompas.com+berita+indonesia&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:10:14,608 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Akompas.com+berita+indonesia) > operation timed out'))
+2026-10-11 17:10:14,754 [INFO] response: https://search.yahoo.com/search;_ylt=rKP7ZNrJ7AooilXWcKa_dqYG;_ylu=24SB_MV8X5gKd_NCYg9MDap3fkpWB4k7VIykwEuiArcMV_8?p=site%3Akompas.com+berita+indonesia&btf=d 200
+2026-10-11 17:10:19,609 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-10-11 17:10:19,653 [INFO] response: https://search.brave.com/search?q=site%3Akompas.com+berita+indonesia&source=web&tf=pd 429
+2026-10-11 17:10:20,936 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:10:21,614 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:10:21,614 [WARNING] Percobaan 1 gagal: error sending request for url (https://html.duckduckgo.com/html/) > operation timed out
+2026-10-11 17:10:21,626 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Akompas.com%20berita%20indonesia 200
+2026-10-11 17:10:21,764 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Akompas.com+berita+indonesia&limit=1 200
+2026-10-11 17:10:26,765 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-10-11 17:10:27,842 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:10:27,901 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:10:31,766 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Akompas.com+berita+indonesia) > operation timed out'))
+2026-10-11 17:10:31,808 [INFO] response: https://search.brave.com/search?q=site%3Akompas.com+berita+indonesia&source=web&tf=pd 429
+2026-10-11 17:10:32,167 [INFO] response: https://www.google.com/wml/search?q=site%3Akompas.com+berita+indonesia&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:10:32,365 [INFO] response: https://search.yahoo.com/search;_ylt=wE07v8TY-MBwr2OQg7USNkYt;_ylu=t6lmsoFkf_ix4Ad-rU9w9ipB7QnkmoI5mPmkQxd0d39RMJ4?p=site%3Akompas.com+berita+indonesia&btf=d 200
+2026-10-11 17:10:32,386 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Akompas.com+berita+indonesia) > operation timed out
+2026-10-11 17:10:32,396 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Akompas.com%20berita%20indonesia 200
+2026-10-11 17:10:32,535 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Akompas.com+berita+indonesia&limit=1 200
+2026-10-11 17:10:37,537 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Akompas.com+berita+indonesia) > operation timed out'))
+2026-10-11 17:10:37,645 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:10:37,863 [INFO] response: https://www.google.com/wml/search?q=site%3Akompas.com+berita+indonesia&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:10:38,716 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:10:38,760 [INFO] response: https://search.brave.com/search?q=site%3Akompas.com+berita+indonesia&source=web&tf=pw 429
+2026-10-11 17:10:38,919 [INFO] response: https://search.yahoo.com/search;_ylt=NhPOwt35pjmSFkLgx-l53_VF;_ylu=cYnM1fWIjgN1Mrq2OKf7LV1SZJwGkNU5S00tApxYa9KdOFU?p=site%3Akompas.com+berita+indonesia&btf=w 200
+2026-10-11 17:10:43,930 [WARNING] Percobaan 3 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Akompas.com+berita+indonesia) > operation timed out
+2026-10-11 17:10:43,930 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:10:43,930 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:10:44,065 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Adetik.com%20viral 200
+2026-10-11 17:10:44,074 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Adetik.com+viral&limit=1 200
+2026-10-11 17:10:44,475 [INFO] response: https://www.google.com/wml/search?q=site%3Adetik.com+viral&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:10:49,476 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Adetik.com+viral) > operation timed out'))
+2026-10-11 17:10:49,523 [INFO] response: https://search.brave.com/search?q=site%3Adetik.com+viral&source=web&tf=pd 429
+2026-10-11 17:10:54,477 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-10-11 17:10:54,602 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:10:54,641 [INFO] response: https://search.yahoo.com/search;_ylt=fow9UyM4h2VVjIi46Cli0NGs;_ylu=cdc47vMYR8f8sZ1C2Mq2shQYL3vmo6zdhcUBVuM6NDxOBG0?p=site%3Adetik.com+viral&btf=d 200
+2026-10-11 17:10:54,717 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:10:54,718 [WARNING] Percobaan 1 gagal: error sending request for url (https://html.duckduckgo.com/html/) > operation timed out
+2026-10-11 17:10:54,729 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Adetik.com%20viral 200
+2026-10-11 17:10:54,870 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Adetik.com+viral&limit=1 200
+2026-10-11 17:10:55,272 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:10:55,626 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:10:56,178 [INFO] response: https://www.google.com/wml/search?q=site%3Adetik.com+viral&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:11:01,179 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-10-11 17:11:01,353 [INFO] response: https://search.yahoo.com/search;_ylt=IIt7p51MkwGtJlOm0cvv0ZP6;_ylu=jX7QcASW47qTzdSvWsAikivxGNKcsOEwKATT3QQ2bUzA0_s?p=site%3Adetik.com+viral&btf=d 200
+2026-10-11 17:11:06,180 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Adetik.com+viral) > operation timed out'))
+2026-10-11 17:11:06,255 [INFO] response: https://search.brave.com/search?q=site%3Adetik.com+viral&source=web&tf=pd 429
+2026-10-11 17:11:06,257 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Adetik.com+viral) > operation timed out
+2026-10-11 17:11:06,413 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Adetik.com%20viral 200
+2026-10-11 17:11:06,418 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Adetik.com+viral&limit=1 200
+2026-10-11 17:11:06,464 [INFO] response: https://search.brave.com/search?q=site%3Adetik.com+viral&source=web&tf=pw 429
+2026-10-11 17:11:11,466 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-10-11 17:11:11,581 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:11:11,647 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:11:11,819 [INFO] response: https://www.google.com/wml/search?q=site%3Adetik.com+viral&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:11:11,978 [INFO] response: https://search.yahoo.com/search;_ylt=MQBUKt6uYPCGAoeks57RDY9O;_ylu=8C7CCjHw-moHfSiLRQCMUpOx2xTWwXimZt30tV4UBFTuwp4?p=site%3Adetik.com+viral&btf=w 200
+2026-10-11 17:11:16,984 [WARNING] Percobaan 3 gagal: error sending request for url (https://html.duckduckgo.com/html/) > operation timed out
+2026-10-11 17:11:16,986 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-11 17:11:18,018 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:11:18,027 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-11 17:11:18,029 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-11 17:11:18,029 [WARNING] backend is not set. Using 'auto'
+2026-10-11 17:11:18,155 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets&limit=1 200
+2026-10-11 17:11:18,163 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets 200
+2026-10-11 17:11:23,164 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Acnbc.com+markets) > operation timed out'))
+2026-10-11 17:11:23,207 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets&source=web&tf=pd 429
+2026-10-11 17:11:23,305 [INFO] response: https://search.yahoo.com/search;_ylt=JcDALVYLxL_IupZ7ey1vvv2d;_ylu=bMm0R7o5KzfJ0be2L_vDprI5uHnVJ0YPi2zSTpUle8ainFY?p=site%3Acnbc.com+markets&btf=d 200
+2026-10-11 17:11:28,331 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-10-11 17:11:28,470 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:11:28,732 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:11:28,827 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:11:28,828 [WARNING] Percobaan 1 gagal: error sending request for url (https://html.duckduckgo.com/html/) > operation timed out
+2026-10-11 17:11:28,958 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets&limit=1 200
+2026-10-11 17:11:28,994 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets 200
+2026-10-11 17:11:29,433 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-11 17:11:34,434 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-10-11 17:11:34,481 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets&source=web&tf=pd 429
+2026-10-11 17:11:39,435 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Acnbc.com+markets) > operation timed out'))
+2026-10-11 17:11:39,638 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:11:39,937 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:11:40,116 [INFO] response: https://search.yahoo.com/search;_ylt=mhKiNTBuSapcThemDY02YCis;_ylu=9YoBOmadWk1UX1x-AAEeFihjGr38pVzheEqVbmN8pQzfT2w?p=site%3Acnbc.com+markets&btf=d 200
+2026-10-11 17:11:40,163 [WARNING] Percobaan 2 gagal: error sending request for url (https://www.mojeek.com/search?q=site%3Acnbc.com+markets) > operation timed out
+2026-10-11 17:11:40,174 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets 200
+2026-10-11 17:11:40,289 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets&limit=1 200
+2026-10-11 17:11:40,335 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets&source=web&tf=pw 429
+2026-10-11 17:11:45,338 [INFO] Error in engine mojeek: TimeoutException(TimeoutError('error sending request for url (https://www.mojeek.com/search?q=site%3Acnbc.com+markets) > operation timed out'))
+2026-10-11 17:11:45,501 [INFO] response: https://search.yahoo.com/search;_ylt=hu5VsfW7OIA1KugbWJALqDTz;_ylu=C0oZMMihFzxpBjO9agvDEcia7vTTan-yO5sduZJUalvIFjw?p=site%3Acnbc.com+markets&btf=w 200
+2026-10-11 17:11:50,339 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-10-11 17:11:50,486 [INFO] response: https://www.startpage.com/ 200
+2026-10-11 17:11:50,531 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-11 17:11:50,741 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-11 17:11:50,742 [WARNING] Percobaan 3 gagal: error sending request for url (https://html.duckduckgo.com/html/) > operation timed out
+2026-10-11 17:11:50,744 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-11 17:11:53,151 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-11 17:11:53,153 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-10-11 17:11:53,153 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-10-11 17:11:53,153 [INFO] URL yang berhasil di-fetch: set()
+2026-10-11 17:11:53,154 [WARNING] Laporan tidak valid: Hanya 0 URL whitelist ditemukan, minimal 3
+2026-10-11 17:11:53,154 [ERROR] ❌ Laporan hari ini gagal divalidasi (Hanya 0 URL whitelist ditemukan, minimal 3). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-10-11 17:11:53,154 [INFO] Mengirim laporan ke Telegram...
+2026-10-11 17:11:53,991 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
