@@ -56254,3 +56254,703 @@ Peristiwa ini memicu perhatian luas masyarakat serta mendesak otoritas terkait u
 2026-10-17 02:05:04,145 [ERROR] ❌ Laporan hari ini gagal divalidasi (Hanya 0 URL yang benar-benar di-fetch, minimal 3). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-10-17 02:05:04,145 [INFO] Mengirim laporan ke Telegram...
 2026-10-17 02:05:04,815 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-10-17 14:36:55,312 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-10-17 14:36:55,312 [INFO] =======================================================
+2026-10-17 14:36:55,312 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-10-17 14:36:55,312 [INFO] =======================================================
+2026-10-17 14:36:55,312 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-10-17 14:36:55,740 [INFO] Provider siap: Gemini dengan 4 model
+2026-10-17 14:36:55,742 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-10-17 14:36:55,743 [INFO] Provider siap: Z.AI dengan 1 model
+2026-10-17 14:36:55,744 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-10-17 14:36:55,745 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-10-17 14:36:55,760 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-10-17 14:36:55,779 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:36:59,588 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:36:59,595 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:36:59,638 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:36:59,638 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:36:59,905 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+global+economy+market+impact+October+2026+site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com&limit=1 200
+2026-10-17 14:36:59,933 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20global%20economy%20market%20impact%20October%202026%20site%3Acnbc.com%20OR%20site%3Abbc.com%20OR%20site%3Aaljazeera.com 200
+2026-10-17 14:36:59,991 [INFO] response: https://search.brave.com/search?q=geopolitics+global+economy+market+impact+October+2026+site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com&source=web&tf=pd 429
+2026-10-17 14:37:00,552 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-10-17 14:37:00,557 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:37:02,265 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:37:02,266 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:37:02,268 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:37:02,269 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:37:02,280 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20oil%20stocks%20global%20markets%20October%2016%202026%20CNBC 429
+2026-10-17 14:37:02,473 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+oil+stocks+global+markets+October+16+2026+CNBC&limit=1 200
+2026-10-17 14:37:02,521 [INFO] response: https://search.brave.com/search?q=Middle+East+oil+stocks+global+markets+October+16+2026+CNBC&source=web&tf=pd 429
+2026-10-17 14:37:02,664 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:37:02,815 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:37:02,924 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=cf40895a4ad94f28a951d290a2d077ab&bds_t=1792247822Tf62570b804d61f6a2ae589fb1762367ce67bfa391fbe77db7d67f9f2919a99e7&bds_s=ef47fb2016b24bcb885422939509daf5&qsr=en_US&segment=organic&t=device&abe=0&abp=1&sc=&qadf=moderate&with_date=d&language=english&abd=0&lui=english&query=Middle+East+oil+stocks+global+markets+October+16+2026+CNBC&cat=web&cmd=gen_page 200
+2026-10-17 14:37:03,353 [INFO] response: https://www.google.com/wml/search?q=Middle+East+oil+stocks+global+markets+October+16+2026+CNBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:37:03,860 [INFO] response: https://www.mojeek.com/search?q=Middle+East+oil+stocks+global+markets+October+16+2026+CNBC 403
+2026-10-17 14:37:04,057 [INFO] response: https://search.yahoo.com/search;_ylt=6p4shbmHZX9KNaUWEo2nwLlH;_ylu=QpMApcUxbXbVSOFfDwWMX0bahxNYk639fT1HtTigFYfiuco?p=Middle+East+oil+stocks+global+markets+October+16+2026+CNBC&btf=d 200
+2026-10-17 14:37:04,733 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:37:04,929 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20oil%20stocks%20global%20markets%20October%2016%202026%20CNBC 200
+2026-10-17 14:37:04,930 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+oil+stocks+global+markets+October+16+2026+CNBC&limit=1 200
+2026-10-17 14:37:05,069 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:37:05,224 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=cf40895a4ad94f28a951d290a2d077ab&bds_t=1792247825Td2ec2fc64ebc60f1118b18be24541e23a1668071a0588373861c7e9852cc6e9c&bds_s=78bd002e1b7441f7a766e9c211d9cdda&lui=english&language=english&qsr=en_US&with_date=d&abd=0&sc=&segment=organic&abe=0&t=device&abp=1&qadf=moderate&query=Middle+East+oil+stocks+global+markets+October+16+2026+CNBC&cat=web&cmd=gen_page 200
+2026-10-17 14:37:05,808 [INFO] response: https://www.mojeek.com/search?q=Middle+East+oil+stocks+global+markets+October+16+2026+CNBC 403
+2026-10-17 14:37:05,933 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:37:06,107 [INFO] response: https://search.brave.com/search?q=Middle+East+oil+stocks+global+markets+October+16+2026+CNBC&source=web&tf=pd 429
+2026-10-17 14:37:06,270 [INFO] response: https://search.yahoo.com/search;_ylt=_-RwHexjmPUgmQE2Blm1TQM4;_ylu=8MKHDGOCb1DsxDbfSdU15_esmIIjZXZITXdy59nc64luEvM?p=Middle+East+oil+stocks+global+markets+October+16+2026+CNBC&btf=d 200
+2026-10-17 14:37:06,726 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:37:08,168 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:37:08,170 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:37:08,172 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:37:08,172 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:37:08,183 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stock%20market%20crypto%20economy%20October%202026%20site%3Acnbc.com 429
+2026-10-17 14:37:08,391 [INFO] response: https://grokipedia.com/api/typeahead?query=stock+market+crypto+economy+October+2026+site%3Acnbc.com&limit=1 200
+2026-10-17 14:37:08,756 [INFO] response: https://www.google.com/wml/search?q=stock+market+crypto+economy+October+2026+site%3Acnbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:37:08,922 [INFO] response: https://search.yahoo.com/search;_ylt=gAKjHWUzVGSKJjmG7hOPewlD;_ylu=p2zOFzIfw4BkbunYmzJwgoVPaMDJvUDFaVa3yA3bjSYkIKE?p=stock+market+crypto+economy+October+2026+site%3Acnbc.com&btf=d 200
+2026-10-17 14:37:09,823 [INFO] response: https://www.mojeek.com/search?q=stock+market+crypto+economy+October+2026+site%3Acnbc.com 403
+2026-10-17 14:37:09,866 [INFO] response: https://search.brave.com/search?q=stock+market+crypto+economy+October+2026+site%3Acnbc.com&source=web&tf=pd 429
+2026-10-17 14:37:09,976 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:37:10,023 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:37:10,026 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:37:12,122 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:37:12,124 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:37:12,313 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:37:14,360 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:37:14,361 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:37:14,363 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:37:14,363 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:37:14,375 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20OR%20Nations%20League%20OR%20football%20match%20results%20October%2016%202026%20site%3Abbc.com 429
+2026-10-17 14:37:14,787 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+OR+Nations+League+OR+football+match+results+October+16+2026+site%3Abbc.com&limit=1 200
+2026-10-17 14:37:14,928 [INFO] response: https://search.yahoo.com/search;_ylt=hTvdkI1HvVBd4zZoe2uiVMsW;_ylu=5SC46uvrUh8BvFIlrpxfwP6_Hq2NU1ybfZqtmAF95gBj-3E?p=Premier+League+OR+Nations+League+OR+football+match+results+October+16+2026+site%3Abbc.com&btf=d 200
+2026-10-17 14:37:15,843 [INFO] response: https://www.google.com/wml/search?q=Premier+League+OR+Nations+League+OR+football+match+results+October+16+2026+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:37:16,423 [INFO] response: https://www.mojeek.com/search?q=Premier+League+OR+Nations+League+OR+football+match+results+October+16+2026+site%3Abbc.com 403
+2026-10-17 14:37:16,464 [INFO] response: https://search.brave.com/search?q=Premier+League+OR+Nations+League+OR+football+match+results+October+16+2026+site%3Abbc.com&source=web&tf=pd 429
+2026-10-17 14:37:16,587 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:37:16,655 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:37:16,781 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:37:16,782 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:37:16,970 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20OR%20Nations%20League%20OR%20football%20match%20results%20October%2016%202026%20site%3Abbc.com 200
+2026-10-17 14:37:17,125 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+OR+Nations+League+OR+football+match+results+October+16+2026+site%3Abbc.com&limit=1 200
+2026-10-17 14:37:17,306 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:37:17,355 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:37:17,767 [INFO] response: https://www.google.com/wml/search?q=Premier+League+OR+Nations+League+OR+football+match+results+October+16+2026+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:37:17,809 [INFO] response: https://search.brave.com/search?q=Premier+League+OR+Nations+League+OR+football+match+results+October+16+2026+site%3Abbc.com&source=web&tf=pd 429
+2026-10-17 14:37:17,947 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:37:18,514 [INFO] response: https://www.mojeek.com/search?q=Premier+League+OR+Nations+League+OR+football+match+results+October+16+2026+site%3Abbc.com 403
+2026-10-17 14:37:18,680 [INFO] response: https://search.yahoo.com/search;_ylt=NFGYPvM-XtoSFP82i43PycbM;_ylu=ZSLaDSSCXov1HlQsP0FH6km21aegN8OE5mp1svGbqpzXhO4?p=Premier+League+OR+Nations+League+OR+football+match+results+October+16+2026+site%3Abbc.com&btf=d 200
+2026-10-17 14:37:19,058 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:37:20,177 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:37:20,178 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:37:20,180 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:37:20,180 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:37:20,379 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20Premier%20League%20news%20October%202026 200
+2026-10-17 14:37:20,385 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+Premier+League+news+October+2026&limit=1 200
+2026-10-17 14:37:20,936 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+Premier+League+news+October+2026 403
+2026-10-17 14:37:21,036 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:37:21,099 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+Premier+League+news+October+2026&source=web&tf=pd 429
+2026-10-17 14:37:21,211 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:37:21,277 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:37:21,751 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fsport+Premier+League+news+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:37:21,914 [INFO] response: https://search.yahoo.com/search;_ylt=38_LznDGtURsNIk9KWCdF77Y;_ylu=IKnFMs4HQyExqvFlMTFlRvuwz8Tqrp7hzEwSKx08HU-Irak?p=site%3Abbc.com%2Fsport+Premier+League+news+October+2026&btf=d 200
+2026-10-17 14:37:22,307 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:37:24,291 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:37:24,292 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:37:24,294 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:37:24,294 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:37:24,305 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20football%20October%2016%202026 429
+2026-10-17 14:37:24,630 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+football+October+16+2026&limit=1 200
+2026-10-17 14:37:24,896 [INFO] response: https://search.yahoo.com/search;_ylt=NT7n7Ylh0E029ZjZg2wc-tnb;_ylu=3KVlfYmcQT6PMRHZbsX3shSH3uLdAzevPSC3m0oTNBfIdEo?p=site%3Abbc.com%2Fsport+football+October+16+2026&btf=d 200
+2026-10-17 14:37:25,675 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fsport+football+October+16+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:37:25,807 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:37:25,949 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:37:26,544 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+football+October+16+2026 403
+2026-10-17 14:37:26,585 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+football+October+16+2026&source=web&tf=pd 429
+2026-10-17 14:37:26,589 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:37:26,753 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:37:26,754 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 33.269628046s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33s'}]}}]
+2026-10-17 14:37:26,754 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:37:26,754 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:37:31,748 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:37:31,749 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:37:31,750 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:37:31,751 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:37:31,943 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Manchester%20City%20match%20report%20October%2015%202026%20site%3Abbc.com/sport 200
+2026-10-17 14:37:31,993 [INFO] response: https://grokipedia.com/api/typeahead?query=Manchester+City+match+report+October+15+2026+site%3Abbc.com%2Fsport&limit=1 200
+2026-10-17 14:37:32,153 [INFO] response: https://search.yahoo.com/search;_ylt=wL9S0yNfOcJTOCioPjMdbLFv;_ylu=cBDEZgobyu0gSoHfttCoNZkH8AQfXj2H80uEuDTAycns_E4?p=Manchester+City+match+report+October+15+2026+site%3Abbc.com%2Fsport&btf=d 200
+2026-10-17 14:37:32,570 [INFO] response: https://search.brave.com/search?q=Manchester+City+match+report+October+15+2026+site%3Abbc.com%2Fsport&source=web&tf=pd 429
+2026-10-17 14:37:33,033 [INFO] response: https://www.mojeek.com/search?q=Manchester+City+match+report+October+15+2026+site%3Abbc.com%2Fsport 403
+2026-10-17 14:37:33,151 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:37:33,197 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:37:33,448 [INFO] response: https://www.google.com/wml/search?q=Manchester+City+match+report+October+15+2026+site%3Abbc.com%2Fsport&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:37:33,451 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:37:34,923 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:37:34,924 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:37:34,926 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:37:34,926 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:37:35,115 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com+Premier+League+October+16+2026&limit=1 200
+2026-10-17 14:37:35,146 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com%20Premier%20League%20October%2016%202026 200
+2026-10-17 14:37:35,247 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:37:35,745 [INFO] response: https://www.mojeek.com/search?q=site%3Aespn.com+Premier+League+October+16+2026 403
+2026-10-17 14:37:35,790 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com+Premier+League+October+16+2026&source=web&tf=pd 429
+2026-10-17 14:37:35,902 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:37:36,003 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:37:36,166 [INFO] response: https://search.yahoo.com/search;_ylt=iSVUEpDqLASLYrFABRHk1YaT;_ylu=vkieOHLyz5QoYaTilBhoiedu5zHLjXz3WcncJhyxqHZ7-ns?p=site%3Aespn.com+Premier+League+October+16+2026&btf=d 200
+2026-10-17 14:37:36,617 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:37:36,792 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:37:36,793 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 23.230893537s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '23s'}]}}]
+2026-10-17 14:37:36,793 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:37:36,793 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:37:41,994 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:37:41,995 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:37:42,041 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:37:42,456 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:37:42,457 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 17.569257031s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}]
+2026-10-17 14:37:42,457 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:37:42,457 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:37:48,167 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:37:48,168 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:37:48,200 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:37:48,421 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:37:48,422 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 11.60144264s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}]
+2026-10-17 14:37:48,422 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:37:48,422 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:37:50,698 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:37:50,699 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:37:50,701 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:37:50,701 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:37:50,716 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=BBC%20Sport%20October%2016%202026%20match%20report%20football 429
+2026-10-17 14:37:50,913 [INFO] response: https://grokipedia.com/api/typeahead?query=BBC+Sport+October+16+2026+match+report+football&limit=1 200
+2026-10-17 14:37:51,078 [INFO] response: https://search.yahoo.com/search;_ylt=x7XZA_UKq9zAg-PzBP9kQYWu;_ylu=u6ZVWy9c5vadY9-ORb1AN_6JpNj3bsE-DqE0b1OZcOr-khk?p=BBC+Sport+October+16+2026+match+report+football&btf=d 200
+2026-10-17 14:37:51,552 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:37:51,729 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:37:51,730 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 8.293973958s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '8s'}]}}]
+2026-10-17 14:37:51,730 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:37:51,730 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:37:54,567 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:37:54,568 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:37:55,216 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:37:55,394 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:37:55,395 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 4.629184701s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '4s'}]}}]
+2026-10-17 14:37:55,396 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:37:55,396 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:38:00,911 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:38:00,912 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:38:00,914 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:38:00,914 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:38:01,086 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=BBC%20Sport%20Arsenal%20vs%20Birmingham%20City%20match%20report%20October%2015%202026 200
+2026-10-17 14:38:01,146 [INFO] response: https://grokipedia.com/api/typeahead?query=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026&limit=1 200
+2026-10-17 14:38:01,609 [INFO] response: https://www.mojeek.com/search?q=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026 403
+2026-10-17 14:38:01,766 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:01,976 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:02,044 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:02,262 [INFO] response: https://search.brave.com/search?q=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026&source=web&tf=pd 429
+2026-10-17 14:38:02,696 [INFO] response: https://www.google.com/wml/search?q=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:38:02,838 [INFO] response: https://search.yahoo.com/search;_ylt=mh3VCUzEgip6eE3WO85jBevb;_ylu=dWbSwetCLABEBylsZ0gU0DUQCIzwCT8OLHqGEq94lHk23DQ?p=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026&btf=d 200
+2026-10-17 14:38:04,142 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:38:04,155 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=BBC%20Sport%20Arsenal%20vs%20Birmingham%20City%20match%20report%20October%2015%202026 200
+2026-10-17 14:38:04,358 [INFO] response: https://grokipedia.com/api/typeahead?query=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026&limit=1 200
+2026-10-17 14:38:04,462 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:04,949 [INFO] response: https://www.google.com/wml/search?q=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:38:04,993 [INFO] response: https://search.brave.com/search?q=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026&source=web&tf=pd 429
+2026-10-17 14:38:05,136 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:05,203 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:05,700 [INFO] response: https://www.mojeek.com/search?q=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026 403
+2026-10-17 14:38:05,841 [INFO] response: https://search.yahoo.com/search;_ylt=m5DJt1Iv98mTK-Pv9ncpUcdP;_ylu=VTNjr3sRdKaJAmZfulhNEOHvH_kc9WyKd_Huq1cY7XYse2Y?p=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026&btf=d 200
+2026-10-17 14:38:06,229 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-17 14:38:06,240 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=BBC%20Sport%20Arsenal%20vs%20Birmingham%20City%20match%20report%20October%2015%202026 200
+2026-10-17 14:38:06,463 [INFO] response: https://grokipedia.com/api/typeahead?query=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026&limit=1 200
+2026-10-17 14:38:06,569 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:06,633 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:06,677 [INFO] response: https://search.brave.com/search?q=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026&source=web&tf=pw 429
+2026-10-17 14:38:06,783 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:07,283 [INFO] response: https://www.mojeek.com/search?q=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026 403
+2026-10-17 14:38:07,425 [INFO] response: https://search.yahoo.com/search;_ylt=nuEY63bQ2NBL_oECwFVXGNRY;_ylu=nY2o4NxXgSdLllN07IEkbf4ch_yUqaaa-rip_v2ZmbhlsBw?p=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026&btf=w 200
+2026-10-17 14:38:08,435 [INFO] response: https://www.google.com/wml/search?q=BBC+Sport+Arsenal+vs+Birmingham+City+match+report+October+15+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-17 14:38:08,436 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-17 14:38:08,438 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:38:10,488 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:38:10,489 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:38:10,491 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:38:10,491 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:38:10,504 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20sports%20October%2016%202026 429
+2026-10-17 14:38:10,671 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+sports+October+16+2026&limit=1 200
+2026-10-17 14:38:10,951 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+sports+October+16+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:38:10,995 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+sports+October+16+2026&source=web&tf=pd 429
+2026-10-17 14:38:11,156 [INFO] response: https://search.yahoo.com/search;_ylt=OUXR3iM2G_FOPgJN7lkoJ7cj;_ylu=zjqrnYzkD43-3Op29cl6MlSTUJHISgn5h5sQLPPP_DA_NV0?p=site%3Aaljazeera.com+sports+October+16+2026&btf=d 200
+2026-10-17 14:38:11,594 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:11,671 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:11,774 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:12,304 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+sports+October+16+2026 403
+2026-10-17 14:38:12,304 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:38:12,316 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20sports%20October%2016%202026 429
+2026-10-17 14:38:12,472 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+sports+October+16+2026&limit=1 200
+2026-10-17 14:38:12,875 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+sports+October+16+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:38:12,918 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+sports+October+16+2026&source=web&tf=pd 429
+2026-10-17 14:38:13,087 [INFO] response: https://search.yahoo.com/search;_ylt=hUvmaLClyDOwogAo9pw1uSm2;_ylu=ayjiU8A2RePWtQM01o2UST-jKODeUcnF3K5D1ysX40zkw_M?p=site%3Aaljazeera.com+sports+October+16+2026&btf=d 200
+2026-10-17 14:38:13,519 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:14,025 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+sports+October+16+2026 403
+2026-10-17 14:38:14,127 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:14,192 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:14,193 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-17 14:38:14,204 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20sports%20October%2016%202026 429
+2026-10-17 14:38:14,461 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+sports+October+16+2026&limit=1 200
+2026-10-17 14:38:14,565 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:14,681 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:14,721 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+sports+October+16+2026&source=web&tf=pw 429
+2026-10-17 14:38:15,310 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+sports+October+16+2026 403
+2026-10-17 14:38:15,448 [INFO] response: https://search.yahoo.com/search;_ylt=KIlJzQdDZPcNKmP7iSPbRvN2;_ylu=xM8Xshj1DoF5P0V6A5pUYUsYlzrW1gm8h9poQcAmksPkapk?p=site%3Aaljazeera.com+sports+October+16+2026&btf=w 200
+2026-10-17 14:38:15,975 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:16,432 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+sports+October+16+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-17 14:38:16,433 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-17 14:38:16,435 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:38:18,059 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:38:18,060 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:38:18,062 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:38:18,062 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:38:18,073 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=sports%20football%20news%20October%2016%202026%20site%3Abbc.com 429
+2026-10-17 14:38:18,297 [INFO] response: https://grokipedia.com/api/typeahead?query=sports+football+news+October+16+2026+site%3Abbc.com&limit=1 200
+2026-10-17 14:38:18,404 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:18,584 [INFO] response: https://search.yahoo.com/search;_ylt=a8lw97fZLDeRKoCx20vQxch7;_ylu=P511TZxBBh6nNcucoq3ZQGHDYlD6HXflmMjSIw7e6jz3uOQ?p=sports+football+news+October+16+2026+site%3Abbc.com&btf=d 200
+2026-10-17 14:38:19,027 [INFO] response: https://search.brave.com/search?q=sports+football+news+October+16+2026+site%3Abbc.com&source=web&tf=pd 429
+2026-10-17 14:38:19,514 [INFO] response: https://www.google.com/wml/search?q=sports+football+news+October+16+2026+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:38:19,615 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:19,666 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:20,135 [INFO] response: https://www.mojeek.com/search?q=sports+football+news+October+16+2026+site%3Abbc.com 403
+2026-10-17 14:38:20,138 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:38:22,479 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:38:22,480 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:38:22,482 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:38:22,482 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:38:22,493 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20Premier%20League%20October%2016%202026%20site%3Askysports.com 429
+2026-10-17 14:38:22,740 [INFO] response: https://grokipedia.com/api/typeahead?query=football+Premier+League+October+16+2026+site%3Askysports.com&limit=1 200
+2026-10-17 14:38:23,259 [INFO] response: https://www.google.com/wml/search?q=football+Premier+League+October+16+2026+site%3Askysports.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:38:23,301 [INFO] response: https://search.brave.com/search?q=football+Premier+League+October+16+2026+site%3Askysports.com&source=web&tf=pd 429
+2026-10-17 14:38:23,407 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:23,565 [INFO] response: https://search.yahoo.com/search;_ylt=ov0_zt_lPAPFSaAG4_hg-xcw;_ylu=bdJy--0O_pEnoZOThaOnxLr73q5Q6EILyhMZl8W5eCIjXlg?p=football+Premier+League+October+16+2026+site%3Askysports.com&btf=d 200
+2026-10-17 14:38:24,081 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:24,125 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:24,606 [INFO] response: https://www.mojeek.com/search?q=football+Premier+League+October+16+2026+site%3Askysports.com 403
+2026-10-17 14:38:24,607 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:38:24,618 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20Premier%20League%20October%2016%202026%20site%3Askysports.com 429
+2026-10-17 14:38:24,896 [INFO] response: https://grokipedia.com/api/typeahead?query=football+Premier+League+October+16+2026+site%3Askysports.com&limit=1 200
+2026-10-17 14:38:24,940 [INFO] response: https://search.brave.com/search?q=football+Premier+League+October+16+2026+site%3Askysports.com&source=web&tf=pd 429
+2026-10-17 14:38:25,037 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:25,096 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:25,503 [INFO] response: https://www.google.com/wml/search?q=football+Premier+League+October+16+2026+site%3Askysports.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:38:25,603 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:25,882 [INFO] response: https://search.yahoo.com/search;_ylt=EerSYy-C-0mKI21GIioWWfi1;_ylu=M61AnC35Q2rUPpCbDj-Xep_wt4S0NqxkzMASvKMEGYiZ268?p=football+Premier+League+October+16+2026+site%3Askysports.com&btf=d 200
+2026-10-17 14:38:26,676 [INFO] response: https://www.mojeek.com/search?q=football+Premier+League+October+16+2026+site%3Askysports.com 403
+2026-10-17 14:38:26,677 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-17 14:38:26,845 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20Premier%20League%20October%2016%202026%20site%3Askysports.com 200
+2026-10-17 14:38:26,964 [INFO] response: https://grokipedia.com/api/typeahead?query=football+Premier+League+October+16+2026+site%3Askysports.com&limit=1 200
+2026-10-17 14:38:27,068 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:27,112 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:27,154 [INFO] response: https://search.brave.com/search?q=football+Premier+League+October+16+2026+site%3Askysports.com&source=web&tf=pw 429
+2026-10-17 14:38:27,671 [INFO] response: https://www.google.com/wml/search?q=football+Premier+League+October+16+2026+site%3Askysports.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-17 14:38:28,148 [INFO] response: https://www.mojeek.com/search?q=football+Premier+League+October+16+2026+site%3Askysports.com 403
+2026-10-17 14:38:28,287 [INFO] response: https://search.yahoo.com/search;_ylt=8Z4AcIkLxoKu5GemGK39e2JM;_ylu=DJCmMNexD2P0HmPcSJi0W6cOxPo1c2UiKFzAXJEXzrliEIQ?p=football+Premier+League+October+16+2026+site%3Askysports.com&btf=w 200
+2026-10-17 14:38:28,807 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:28,830 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-17 14:38:28,832 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:38:30,474 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:38:30,476 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:38:30,477 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:38:30,478 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:38:30,626 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20news%20manager%20transfer%20October%2016%202026%20site%3Abbc.com 200
+2026-10-17 14:38:30,722 [INFO] response: https://grokipedia.com/api/typeahead?query=football+news+manager+transfer+October+16+2026+site%3Abbc.com&limit=1 200
+2026-10-17 14:38:30,827 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:34,219 [INFO] response: https://search.brave.com/search?q=football+news+manager+transfer+October+16+2026+site%3Abbc.com&source=web&tf=pd 429
+2026-10-17 14:38:34,749 [INFO] response: https://www.google.com/wml/search?q=football+news+manager+transfer+October+16+2026+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:38:35,260 [INFO] response: https://www.mojeek.com/search?q=football+news+manager+transfer+October+16+2026+site%3Abbc.com 403
+2026-10-17 14:38:35,418 [INFO] response: https://search.yahoo.com/search;_ylt=D_Hzx5vrgik9hUoZmSZrwTjc;_ylu=xPAfPDlRy8ICludg38703qbkkk3C-1m4D-4nizU8JIj6fXI?p=football+news+manager+transfer+October+16+2026+site%3Abbc.com&btf=d 200
+2026-10-17 14:38:35,998 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:36,060 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:36,061 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:38:36,072 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20news%20manager%20transfer%20October%2016%202026%20site%3Abbc.com 200
+2026-10-17 14:38:36,355 [INFO] response: https://grokipedia.com/api/typeahead?query=football+news+manager+transfer+October+16+2026+site%3Abbc.com&limit=1 200
+2026-10-17 14:38:36,895 [INFO] response: https://www.mojeek.com/search?q=football+news+manager+transfer+October+16+2026+site%3Abbc.com 403
+2026-10-17 14:38:36,938 [INFO] response: https://search.brave.com/search?q=football+news+manager+transfer+October+16+2026+site%3Abbc.com&source=web&tf=pd 429
+2026-10-17 14:38:37,301 [INFO] response: https://www.google.com/wml/search?q=football+news+manager+transfer+October+16+2026+site%3Abbc.com&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:38:37,400 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:37,465 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:37,611 [INFO] response: https://search.yahoo.com/search;_ylt=oyReYinQh9CHB8P1Vx4cnjYK;_ylu=EwUuo8od-ya9UcbG8m6dcmY44cOUrw3Byg8VBPU_EnWPvJQ?p=football+news+manager+transfer+October+16+2026+site%3Abbc.com&btf=d 200
+2026-10-17 14:38:38,038 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:38,061 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-17 14:38:38,073 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20news%20manager%20transfer%20October%2016%202026%20site%3Abbc.com 200
+2026-10-17 14:38:38,335 [INFO] response: https://grokipedia.com/api/typeahead?query=football+news+manager+transfer+October+16+2026+site%3Abbc.com&limit=1 200
+2026-10-17 14:38:38,811 [INFO] response: https://www.mojeek.com/search?q=football+news+manager+transfer+October+16+2026+site%3Abbc.com 403
+2026-10-17 14:38:39,007 [INFO] response: https://search.yahoo.com/search;_ylt=j5vQfTK9tLQFn_uzTqkUuwdj;_ylu=lXvOHIm13YWbkEJO427vmCNw-e2Cjx_2HsJw-eegocp-uH4?p=football+news+manager+transfer+October+16+2026+site%3Abbc.com&btf=w 200
+2026-10-17 14:38:39,521 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:38:41,543 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:38:41,544 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:38:41,545 [INFO] Validasi: 4x fetch_webpage sukses (minimum 3).
+2026-10-17 14:38:41,545 [INFO] URL yang berhasil di-fetch: {'https://www.espn.com/soccer/story/_/id/50200791/brentford-liverpool-live-premier-league-latest-updates-commentary-score-result', 'https://www.espn.com/nba/story/_/id/2577636...', 'https://www.cnbc.com/2026/10/17/berkshire-rally-to-highest-since-buffett-announcement.html'}
+2026-10-17 14:38:41,545 [WARNING] Laporan tidak valid: Terlalu pendek (284 karakter, minimal 500)
+2026-10-17 14:38:41,545 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-10-17 14:38:41,545 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-10-17 14:38:41,561 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:38:45,905 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:38:45,906 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:38:45,908 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:38:45,908 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:38:45,920 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20OR%20site%3Abbc.com%20geopolitics%20stock%20market%20crypto%20October%202026 429
+2026-10-17 14:38:46,187 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+stock+market+crypto+October+2026&limit=1 200
+2026-10-17 14:38:46,324 [INFO] response: https://search.yahoo.com/search;_ylt=lgBtTpi3a2SKaNJVu0zn1SCB;_ylu=7YZl2qJlzJl9UV7IzHoC5Ul8uSc0Upohhz-es5KZrSHK8_M?p=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+stock+market+crypto+October+2026&btf=d 200
+2026-10-17 14:38:47,096 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+stock+market+crypto+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:38:47,201 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:47,415 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:47,463 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+stock+market+crypto+October+2026&source=web&tf=pd 429
+2026-10-17 14:38:47,924 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+stock+market+crypto+October+2026 403
+2026-10-17 14:38:48,026 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:48,049 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:38:48,205 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20OR%20site%3Abbc.com%20geopolitics%20stock%20market%20crypto%20October%202026 200
+2026-10-17 14:38:48,334 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+stock+market+crypto+October+2026&limit=1 200
+2026-10-17 14:38:48,485 [INFO] response: https://search.yahoo.com/search;_ylt=ydpntwwjtMN9qkn5lwLQe4zX;_ylu=_1bBlEWnowOW_Ej7tl7lbo_eNs648U7qtRqErO51G35JBig?p=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+stock+market+crypto+October+2026&btf=d 200
+2026-10-17 14:38:48,908 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:48,977 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:49,034 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+stock+market+crypto+October+2026&source=web&tf=pd 429
+2026-10-17 14:38:49,162 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:49,558 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+stock+market+crypto+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:38:50,039 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+stock+market+crypto+October+2026 403
+2026-10-17 14:38:50,040 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-17 14:38:50,052 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20OR%20site%3Abbc.com%20geopolitics%20stock%20market%20crypto%20October%202026 429
+2026-10-17 14:38:50,287 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+stock+market+crypto+October+2026&limit=1 200
+2026-10-17 14:38:50,331 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+stock+market+crypto+October+2026&source=web&tf=pw 429
+2026-10-17 14:38:50,437 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:38:50,504 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:38:50,757 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+stock+market+crypto+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-17 14:38:50,858 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:38:51,037 [INFO] response: https://search.yahoo.com/search;_ylt=vEM4tkkf3S1_cR5Vy6S4bHuN;_ylu=epCEjArYHUsaq8BbV4MFUbJIDtsOHZsJ_QYzhC0rxYUgttY?p=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+stock+market+crypto+October+2026&btf=w 200
+2026-10-17 14:38:51,435 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:38:51,647 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:38:51,648 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 8.376364814s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '8s'}]}}]
+2026-10-17 14:38:51,648 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:38:51,648 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:39:05,379 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:39:05,379 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:39:05,381 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:39:07,862 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:39:07,864 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:39:07,865 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:39:07,866 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:39:07,876 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20OR%20site%3Abbc.com%20OR%20site%3Acnbc.com%20geopolitics%20markets%20October%2016%202026 429
+2026-10-17 14:39:08,318 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026&limit=1 200
+2026-10-17 14:39:08,417 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:39:08,467 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:39:08,608 [INFO] response: https://search.yahoo.com/search;_ylt=p0CjgzIzZavHlT8__UNBRsAu;_ylu=QT11aZ5RarwhkkrG4fT8zfb4D_BGnlQvun6j92EDxBu0lcs?p=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026&btf=d 200
+2026-10-17 14:39:09,133 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026&source=web&tf=pd 429
+2026-10-17 14:39:09,618 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:39:10,084 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026 403
+2026-10-17 14:39:10,197 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:39:10,220 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:39:10,232 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20OR%20site%3Abbc.com%20OR%20site%3Acnbc.com%20geopolitics%20markets%20October%2016%202026 429
+2026-10-17 14:39:10,674 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026&limit=1 200
+2026-10-17 14:39:10,773 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:39:10,896 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:39:10,954 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:39:11,424 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:39:11,939 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026 403
+2026-10-17 14:39:12,081 [INFO] response: https://search.yahoo.com/search;_ylt=9gCzxUhB8KaG3iK5ECxqIR28;_ylu=KTl_TogN0OFTQ5gQWfs3smTw8gsTz1AXCSJhfHplzvwDO2E?p=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026&btf=d 200
+2026-10-17 14:39:12,432 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026&source=web&tf=pd 429
+2026-10-17 14:39:12,433 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-17 14:39:12,446 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20OR%20site%3Abbc.com%20OR%20site%3Acnbc.com%20geopolitics%20markets%20October%2016%202026 429
+2026-10-17 14:39:12,733 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026&limit=1 200
+2026-10-17 14:39:13,258 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-17 14:39:13,306 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026&source=web&tf=pw 429
+2026-10-17 14:39:13,419 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:39:13,473 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:39:13,616 [INFO] response: https://search.yahoo.com/search;_ylt=aZarlo6gTTYJguwwYfNQnxbw;_ylu=vOUjgipS85XE5kkSnFrDMJkdJ1Nym-5EPXsfHZhBhLxBJ3M?p=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026&btf=w 200
+2026-10-17 14:39:14,168 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:39:14,666 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+OR+site%3Abbc.com+OR+site%3Acnbc.com+geopolitics+markets+October+16+2026 403
+2026-10-17 14:39:14,666 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-17 14:39:14,668 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:39:17,225 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:39:17,226 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:39:17,227 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:39:17,228 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:39:17,239 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20crude%20oil%20price%20stock%20market%20crypto%20October%202026%20BBC%20CNBC%20Al%20Jazeera 429
+2026-10-17 14:39:17,537 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+crude+oil+price+stock+market+crypto+October+2026+BBC+CNBC+Al+Jazeera&limit=1 200
+2026-10-17 14:39:18,000 [INFO] response: https://www.mojeek.com/search?q=Middle+East+crude+oil+price+stock+market+crypto+October+2026+BBC+CNBC+Al+Jazeera 403
+2026-10-17 14:39:18,157 [INFO] response: https://search.yahoo.com/search;_ylt=cEkuVbk3rmVZYNxJiCKhU8LR;_ylu=AZZOVU9tz_uj8pGIXQzvJXpOaQMHOtjQES2Vtz0KlGwnBiE?p=Middle+East+crude+oil+price+stock+market+crypto+October+2026+BBC+CNBC+Al+Jazeera&btf=d 200
+2026-10-17 14:39:18,641 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:39:20,530 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:39:20,532 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:39:20,534 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:39:20,534 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:39:20,734 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20stocks%20crypto%20oil%20October%202026 200
+2026-10-17 14:39:20,759 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+stocks+crypto+oil+October+2026&limit=1 200
+2026-10-17 14:39:20,903 [INFO] response: https://search.yahoo.com/search;_ylt=PS4EKrJ-Di-iauctWiaogmN3;_ylu=zDh7bljOWnsmg7bZLynQZIupGP6ZKY5lfdpVGuHM6OYtMxU?p=site%3Acnbc.com+markets+stocks+crypto+oil+October+2026&btf=d 200
+2026-10-17 14:39:21,752 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets+stocks+crypto+oil+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:39:22,255 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+stocks+crypto+oil+October+2026 403
+2026-10-17 14:39:22,361 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:39:22,496 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:39:22,560 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:39:22,603 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+stocks+crypto+oil+October+2026&source=web&tf=pd 429
+2026-10-17 14:39:22,605 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:39:22,616 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20stocks%20crypto%20oil%20October%202026 429
+2026-10-17 14:39:23,020 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+stocks+crypto+oil+October+2026&limit=1 200
+2026-10-17 14:39:23,129 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:39:23,198 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:39:23,611 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets+stocks+crypto+oil+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:39:23,745 [INFO] response: https://search.yahoo.com/search;_ylt=IrnZNTvvVIm7v_mszfhUkyTP;_ylu=z0xrfLAQJTLOBNXGHNU8aafTV2XwThOpLEgIqV3UaBx_4pE?p=site%3Acnbc.com+markets+stocks+crypto+oil+October+2026&btf=d 200
+2026-10-17 14:39:24,430 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+stocks+crypto+oil+October+2026 403
+2026-10-17 14:39:24,532 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:39:24,593 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+stocks+crypto+oil+October+2026&source=web&tf=pd 429
+2026-10-17 14:39:24,595 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-17 14:39:24,783 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20stocks%20crypto%20oil%20October%202026 200
+2026-10-17 14:39:24,805 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+stocks+crypto+oil+October+2026&limit=1 200
+2026-10-17 14:39:24,943 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:39:25,083 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:39:25,618 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets+stocks+crypto+oil+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-17 14:39:26,097 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+stocks+crypto+oil+October+2026 403
+2026-10-17 14:39:26,310 [INFO] response: https://search.yahoo.com/search;_ylt=fR6TfCo1_n4lSrhHTutRexd4;_ylu=0QpEy3pmc82PdRCWFnK47HrMJe2fHgxHxsLYw7lsJDcnnTw?p=site%3Acnbc.com+markets+stocks+crypto+oil+October+2026&btf=w 200
+2026-10-17 14:39:26,750 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:39:29,667 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:39:29,668 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:39:29,670 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:39:29,670 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:39:29,837 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20world%20news%20October%2016%202026 200
+2026-10-17 14:39:29,848 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+world+news+October+16+2026&limit=1 200
+2026-10-17 14:39:30,152 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+world+news+October+16+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:39:30,194 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+world+news+October+16+2026&source=web&tf=pd 429
+2026-10-17 14:39:30,353 [INFO] response: https://search.yahoo.com/search;_ylt=GyKc0lDULfLqGV72lFxY0dbv;_ylu=WmLrLYvFgknCINqIqqIFtB6kOdsc9FSv1Ba6flBwZ_DEgyk?p=site%3Acnbc.com+world+news+October+16+2026&btf=d 200
+2026-10-17 14:39:31,261 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+world+news+October+16+2026 403
+2026-10-17 14:39:31,416 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:39:31,461 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:39:31,464 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:39:34,163 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:39:34,165 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:39:34,571 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:39:38,086 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:39:38,087 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:39:38,089 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:39:38,089 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:39:38,265 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20OR%20site%3Aespn.com%20October%202026%20match%20results%20transfer 200
+2026-10-17 14:39:38,330 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer&limit=1 200
+2026-10-17 14:39:38,821 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer 403
+2026-10-17 14:39:38,935 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:39:39,446 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:39:39,587 [INFO] response: https://search.yahoo.com/search;_ylt=jHvTnyyeFxdMqJcC-5caUxCy;_ylu=cOff9eoemkZDRJP4GJLDOkHwRwRdnnmbDZo9pGW81N2HBfs?p=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer&btf=d 200
+2026-10-17 14:39:40,069 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer&source=web&tf=pd 429
+2026-10-17 14:39:40,177 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:39:40,242 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:39:40,243 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:39:40,255 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20OR%20site%3Aespn.com%20October%202026%20match%20results%20transfer 200
+2026-10-17 14:39:40,484 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer&limit=1 200
+2026-10-17 14:39:40,526 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer&source=web&tf=pd 429
+2026-10-17 14:39:40,626 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:39:40,686 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:39:40,841 [INFO] response: https://search.yahoo.com/search;_ylt=-MXqjfAUm5AB3BVFcCZpEyrj;_ylu=oq29lcndd25uY9L-_WTpeOdUUe9BhMrqlwSn_f3y98tzpLg?p=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer&btf=d 200
+2026-10-17 14:39:41,648 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:39:42,167 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer 403
+2026-10-17 14:39:42,290 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:39:42,313 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-17 14:39:42,477 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20OR%20site%3Aespn.com%20October%202026%20match%20results%20transfer 200
+2026-10-17 14:39:42,550 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer&limit=1 200
+2026-10-17 14:39:42,648 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:39:42,716 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:39:43,193 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer 403
+2026-10-17 14:39:43,726 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-17 14:39:43,770 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer&source=web&tf=pw 429
+2026-10-17 14:39:43,910 [INFO] response: https://search.yahoo.com/search;_ylt=AKpiZ8PjhX1qfr5o_9RUeBGx;_ylu=TcuvgBSwkm3OYtMtvKyzuLypDFmETPmUgzoNnZAAWLjr_qM?p=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+October+2026+match+results+transfer&btf=w 200
+2026-10-17 14:39:44,581 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:39:44,603 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-17 14:39:44,605 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:39:46,890 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:39:46,891 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:39:46,893 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:39:46,893 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:39:47,050 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20football%20October%2016%202026%20OR%20October%2017%202026 200
+2026-10-17 14:39:47,207 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+football+October+16+2026+OR+October+17+2026&limit=1 200
+2026-10-17 14:39:47,342 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:39:47,414 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:39:47,920 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+football+October+16+2026+OR+October+17+2026 403
+2026-10-17 14:39:48,028 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:39:48,534 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com+football+October+16+2026+OR+October+17+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:39:48,576 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+football+October+16+2026+OR+October+17+2026&source=web&tf=pd 429
+2026-10-17 14:39:48,741 [INFO] response: https://search.yahoo.com/search;_ylt=Hr8UR_1dHWGXRlzrHv0WI-Sz;_ylu=Ok2keAYzs7axHGjMgGTZVd4HqHqxDSqqpxjt5KpAnK5KkuE?p=site%3Abbc.com+football+October+16+2026+OR+October+17+2026&btf=d 200
+2026-10-17 14:39:49,068 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:39:49,080 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20football%20October%2016%202026%20OR%20October%2017%202026 200
+2026-10-17 14:39:49,283 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+football+October+16+2026+OR+October+17+2026&limit=1 200
+2026-10-17 14:39:49,437 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:39:49,599 [INFO] response: https://search.yahoo.com/search;_ylt=lkUoW-fDAWvaY-PPM3a1rdjH;_ylu=oOiY7xv5x7-e05TDs2_QYtgEwSDRDBeJk3m0Bwo_fEd8GCo?p=site%3Abbc.com+football+October+16+2026+OR+October+17+2026&btf=d 200
+2026-10-17 14:39:50,496 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+football+October+16+2026+OR+October+17+2026 403
+2026-10-17 14:39:50,541 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+football+October+16+2026+OR+October+17+2026&source=web&tf=pd 429
+2026-10-17 14:39:50,703 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:39:50,749 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:39:51,184 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com+football+October+16+2026+OR+October+17+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:39:51,185 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-17 14:39:51,373 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20football%20October%2016%202026%20OR%20October%2017%202026 200
+2026-10-17 14:39:51,422 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+football+October+16+2026+OR+October+17+2026&limit=1 200
+2026-10-17 14:39:51,465 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+football+October+16+2026+OR+October+17+2026&source=web&tf=pw 429
+2026-10-17 14:39:51,776 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com+football+October+16+2026+OR+October+17+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-17 14:39:52,266 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+football+October+16+2026+OR+October+17+2026 403
+2026-10-17 14:39:52,364 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:39:52,438 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:39:52,601 [INFO] response: https://search.yahoo.com/search;_ylt=dGYsIoFZCJ8MW3zH6iNgMz7j;_ylu=WV4YciCVU2BqSMxkMILc-4fWGvtWi0iZEyDPlmyzMqW48lU?p=site%3Abbc.com+football+October+16+2026+OR+October+17+2026&btf=w 200
+2026-10-17 14:39:53,097 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:39:53,315 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:39:53,316 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 6.708413005s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}]
+2026-10-17 14:39:53,317 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:39:53,317 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:39:58,764 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:39:58,764 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:40:13,848 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:40:15,763 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:40:15,764 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:40:15,767 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:40:15,767 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:40:15,778 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20football%20October%2016%202026 429
+2026-10-17 14:40:16,072 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+football+October+16+2026&limit=1 200
+2026-10-17 14:40:16,132 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+football+October+16+2026&source=web&tf=pd 429
+2026-10-17 14:40:16,395 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fsport+football+October+16+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:40:16,862 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+football+October+16+2026 403
+2026-10-17 14:40:16,997 [INFO] response: https://search.yahoo.com/search;_ylt=VqbwKQkmaxhFLk3y48oMuz2c;_ylu=0YU6qgtJ6raY36XXcWXJ-Ab7fUsAqacqRpzLr546__t34xA?p=site%3Abbc.com%2Fsport+football+October+16+2026&btf=d 200
+2026-10-17 14:40:17,523 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:40:17,651 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:40:17,849 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=cf40895a4ad94f28a951d290a2d077ab&bds_t=1792248017T70c65cb35a0ccca74dfab4d5c2bdde459750f441002918bbe6456a5b5cd8ba09&bds_s=326bceca8b3b4d26b404faf93984dd90&lui=english&language=english&qsr=en_US&with_date=d&abd=0&sc=&segment=organic&abe=0&t=device&abp=1&qadf=moderate&query=site%3Abbc.com%2Fsport+football+October+16+2026&cat=web&cmd=gen_page 200
+2026-10-17 14:40:17,870 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:40:18,040 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20football%20October%2016%202026 200
+2026-10-17 14:40:18,047 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+football+October+16+2026&limit=1 200
+2026-10-17 14:40:18,532 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+football+October+16+2026 403
+2026-10-17 14:40:18,650 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:40:18,842 [INFO] response: https://search.yahoo.com/search;_ylt=7aX6v8h6tEaI_VhKwR7MaQ-i;_ylu=wdoZAmeXX09kGkwRx-DJc6HsgsN1loQkL3IEs4-q2RWf6mU?p=site%3Abbc.com%2Fsport+football+October+16+2026&btf=d 200
+2026-10-17 14:40:19,677 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fsport+football+October+16+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:40:19,784 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:40:19,829 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:40:19,871 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+football+October+16+2026&source=web&tf=pd 429
+2026-10-17 14:40:19,875 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:40:20,010 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:40:20,011 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 9h19m40.014564297s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33580s'}]}}]
+2026-10-17 14:40:20,011 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:40:20,011 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:40:24,939 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:40:24,940 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:40:25,739 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:40:25,984 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:40:25,984 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 9h19m34.040699547s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33574s'}]}}]
+2026-10-17 14:40:25,984 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:40:25,984 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:40:30,061 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:40:30,063 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:40:30,064 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:40:30,255 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:40:30,255 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 9h19m29.768599507s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33569s'}]}}]
+2026-10-17 14:40:30,256 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:40:30,256 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:40:45,585 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:40:45,586 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:40:45,672 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:40:48,289 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:40:48,290 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-17 14:40:48,292 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:40:48,292 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:40:48,303 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Askysports.com/football%20news%20October%2016%202026%20OR%20October%2017%202026 429
+2026-10-17 14:40:48,583 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Askysports.com%2Ffootball+news+October+16+2026+OR+October+17+2026&limit=1 200
+2026-10-17 14:40:48,706 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:40:48,959 [INFO] response: https://search.yahoo.com/search;_ylt=vdKG3IIxjVRZxauCcRP1zbzS;_ylu=guJ-HakSLbN83BWiRHWs29GxgG2K6V86sdCVbW8cuhrnYKI?p=site%3Askysports.com%2Ffootball+news+October+16+2026+OR+October+17+2026&btf=d 200
+2026-10-17 14:40:49,413 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:40:49,481 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:40:49,959 [INFO] response: https://www.mojeek.com/search?q=site%3Askysports.com%2Ffootball+news+October+16+2026+OR+October+17+2026 403
+2026-10-17 14:40:50,470 [INFO] response: https://www.google.com/wml/search?q=site%3Askysports.com%2Ffootball+news+October+16+2026+OR+October+17+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:40:50,510 [INFO] response: https://search.brave.com/search?q=site%3Askysports.com%2Ffootball+news+October+16+2026+OR+October+17+2026&source=web&tf=pd 429
+2026-10-17 14:40:50,512 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:40:50,523 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Askysports.com/football%20news%20October%2016%202026%20OR%20October%2017%202026 429
+2026-10-17 14:40:50,781 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Askysports.com%2Ffootball+news+October+16+2026+OR+October+17+2026&limit=1 200
+2026-10-17 14:40:51,259 [INFO] response: https://www.mojeek.com/search?q=site%3Askysports.com%2Ffootball+news+October+16+2026+OR+October+17+2026 403
+2026-10-17 14:40:51,303 [INFO] response: https://search.brave.com/search?q=site%3Askysports.com%2Ffootball+news+October+16+2026+OR+October+17+2026&source=web&tf=pd 429
+2026-10-17 14:40:51,405 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:40:51,451 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:40:51,646 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:40:52,220 [INFO] response: https://www.google.com/wml/search?q=site%3Askysports.com%2Ffootball+news+October+16+2026+OR+October+17+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:40:52,473 [INFO] response: https://search.yahoo.com/search;_ylt=cs-UJemnFxWvpPXBjr3fiw9b;_ylu=nXVgaBC5dfZDCp_8z11ZjVaTi2EIECduGtQBHauxQ7isDLo?p=site%3Askysports.com%2Ffootball+news+October+16+2026+OR+October+17+2026&btf=d 200
+2026-10-17 14:40:52,811 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-17 14:40:53,006 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Askysports.com/football%20news%20October%2016%202026%20OR%20October%2017%202026 200
+2026-10-17 14:40:53,043 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Askysports.com%2Ffootball+news+October+16+2026+OR+October+17+2026&limit=1 200
+2026-10-17 14:40:53,172 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:40:53,310 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:40:53,717 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=cf40895a4ad94f28a951d290a2d077ab&bds_t=1792248053T557b1cf3d47972f7ef06ffbbd1c32586e80517a80aea098e2779df1dade4a2bb&bds_s=cb0e006f35c44bf2acf99f2db5c3b773&segment=organic&abe=0&lui=english&qsr=en_US&t=device&abd=0&abp=1&with_date=w&qadf=moderate&language=english&sc=&query=site%3Askysports.com%2Ffootball+news+October+16+2026+OR+October+17+2026&cat=web&cmd=gen_page 200
+2026-10-17 14:40:53,903 [INFO] response: https://search.yahoo.com/search;_ylt=U6nGOkc_lp_2WgsuybhAATTU;_ylu=qkZTSrpL1VSGgwM8EVgcVXHGiquuJfOYBTytW6KFDz_b5Po?p=site%3Askysports.com%2Ffootball+news+October+16+2026+OR+October+17+2026&btf=w 200
+2026-10-17 14:40:54,364 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:40:54,558 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:40:54,559 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 9h19m5.465069638s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33545s'}]}}]
+2026-10-17 14:40:54,559 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:40:54,559 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:40:59,548 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:40:59,549 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:40:59,801 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:41:00,009 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:41:00,010 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 9h19m0.013084715s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33540s'}]}}]
+2026-10-17 14:41:00,010 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:41:00,010 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:41:02,822 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:41:02,823 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:41:02,825 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:41:02,825 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:41:02,836 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20October%2016%202026%20BBC%20Sport%20match%20result 429
+2026-10-17 14:41:03,151 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+October+16+2026+BBC+Sport+match+result&limit=1 200
+2026-10-17 14:41:03,201 [INFO] response: https://search.brave.com/search?q=Premier+League+October+16+2026+BBC+Sport+match+result&source=web&tf=pd 429
+2026-10-17 14:41:03,666 [INFO] response: https://www.mojeek.com/search?q=Premier+League+October+16+2026+BBC+Sport+match+result 403
+2026-10-17 14:41:04,141 [INFO] response: https://www.google.com/wml/search?q=Premier+League+October+16+2026+BBC+Sport+match+result&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:41:04,276 [INFO] response: https://search.yahoo.com/search;_ylt=m1cUNyqrq29DSKmKMPDypLuS;_ylu=ibbQf9_Joa550Tl3Nk5Zz-FiSMehp7lPDSuMzhgFlH1UCB0?p=Premier+League+October+16+2026+BBC+Sport+match+result&btf=d 200
+2026-10-17 14:41:04,403 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:41:04,473 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:41:04,577 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:41:04,600 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:41:04,784 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20October%2016%202026%20BBC%20Sport%20match%20result 200
+2026-10-17 14:41:04,903 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+October+16+2026+BBC+Sport+match+result&limit=1 200
+2026-10-17 14:41:05,402 [INFO] response: https://www.mojeek.com/search?q=Premier+League+October+16+2026+BBC+Sport+match+result 403
+2026-10-17 14:41:05,504 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:41:05,787 [INFO] response: https://www.google.com/wml/search?q=Premier+League+October+16+2026+BBC+Sport+match+result&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:41:05,901 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:41:06,049 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:41:06,206 [INFO] response: https://search.yahoo.com/search;_ylt=M1Q0_dUF8fYpH3NPLZ0c4OeN;_ylu=aQdkhj65BdKHKhzxBGpO16CW4i60zf_DCix9dcS5H0CSJHk?p=Premier+League+October+16+2026+BBC+Sport+match+result&btf=d 200
+2026-10-17 14:41:07,414 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:41:07,596 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:41:07,597 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 9h18m52.425844665s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33532s'}]}}]
+2026-10-17 14:41:07,597 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:41:07,597 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:41:10,821 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:41:10,822 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:41:10,824 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-17 14:41:10,824 [WARNING] backend is not set. Using 'auto'
+2026-10-17 14:41:11,051 [INFO] response: https://grokipedia.com/api/typeahead?query=Arsenal+October+16+2026+BBC+Sport+match&limit=1 200
+2026-10-17 14:41:11,094 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Arsenal%20October%2016%202026%20BBC%20Sport%20match 200
+2026-10-17 14:41:11,576 [INFO] response: https://www.mojeek.com/search?q=Arsenal+October+16+2026+BBC+Sport+match 403
+2026-10-17 14:41:11,622 [INFO] response: https://search.brave.com/search?q=Arsenal+October+16+2026+BBC+Sport+match&source=web&tf=pd 429
+2026-10-17 14:41:11,913 [INFO] response: https://www.google.com/wml/search?q=Arsenal+October+16+2026+BBC+Sport+match&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:41:12,054 [INFO] response: https://search.yahoo.com/search;_ylt=eqfuWtJsg7tdc96WNafcAypw;_ylu=i6GyZDNLZ81SBkQ9MZrLwb8tP2isO9uOPRxLVf_8hlAw-3Y?p=Arsenal+October+16+2026+BBC+Sport+match&btf=d 200
+2026-10-17 14:41:12,188 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:41:12,231 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:41:12,350 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:41:12,373 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-17 14:41:12,521 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Arsenal%20October%2016%202026%20BBC%20Sport%20match 200
+2026-10-17 14:41:12,577 [INFO] response: https://grokipedia.com/api/typeahead?query=Arsenal+October+16+2026+BBC+Sport+match&limit=1 200
+2026-10-17 14:41:12,735 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:41:12,778 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:41:13,291 [INFO] response: https://www.google.com/wml/search?q=Arsenal+October+16+2026+BBC+Sport+match&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-17 14:41:13,792 [INFO] response: https://www.mojeek.com/search?q=Arsenal+October+16+2026+BBC+Sport+match 403
+2026-10-17 14:41:13,841 [INFO] response: https://search.brave.com/search?q=Arsenal+October+16+2026+BBC+Sport+match&source=web&tf=pd 429
+2026-10-17 14:41:13,980 [INFO] response: https://search.yahoo.com/search;_ylt=NXX9rymk5LtpKEiyu7ozNeDo;_ylu=5PeuA-y_grGtTH3cou5xQJtJJrlY_x_hK7T7QJqCj2XGTdA?p=Arsenal+October+16+2026+BBC+Sport+match&btf=d 200
+2026-10-17 14:41:14,623 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:41:14,645 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-17 14:41:14,657 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Arsenal%20October%2016%202026%20BBC%20Sport%20match 200
+2026-10-17 14:41:14,843 [INFO] response: https://grokipedia.com/api/typeahead?query=Arsenal+October+16+2026+BBC+Sport+match&limit=1 200
+2026-10-17 14:41:14,885 [INFO] response: https://search.brave.com/search?q=Arsenal+October+16+2026+BBC+Sport+match&source=web&tf=pw 429
+2026-10-17 14:41:14,989 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-17 14:41:15,112 [INFO] response: https://www.startpage.com/ 200
+2026-10-17 14:41:15,177 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-17 14:41:15,652 [INFO] response: https://www.mojeek.com/search?q=Arsenal+October+16+2026+BBC+Sport+match 403
+2026-10-17 14:41:15,815 [INFO] response: https://search.yahoo.com/search;_ylt=iTceoVuBZz3mYoyZF_2BdEuW;_ylu=qLHYkJw-5f3eLVyJryDqqkPCOc5rXJaWwAxFm9fI8vVsfEE?p=Arsenal+October+16+2026+BBC+Sport+match&btf=w 200
+2026-10-17 14:41:16,290 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-17 14:41:16,540 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-17 14:41:16,541 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\nPlease retry in 9h18m43.48401503s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33523s'}]}}]
+2026-10-17 14:41:16,541 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-17 14:41:16,541 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-17 14:41:53,073 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-17 14:41:53,074 [INFO] ✅ Berhasil pakai: NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b
+2026-10-17 14:41:53,075 [INFO] Validasi: 4x fetch_webpage sukses (minimum 3).
+2026-10-17 14:41:53,075 [INFO] URL yang berhasil di-fetch: {'https://www.espn.com/soccer/story/_/id/50200791/brentford-liverpool-live-premier-league-latest-updates-commentary-score-result', 'https://www.espn.com/nba/story/_/id/2577636...', 'https://www.cnbc.com/2026/10/17/berkshire-rally-to-highest-since-buffett-announcement.html'}
+2026-10-17 14:41:53,075 [WARNING] Laporan tidak valid: Terlalu pendek (340 karakter, minimal 500)
+2026-10-17 14:41:53,075 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (340 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-10-17 14:41:53,075 [INFO] Mengirim laporan ke Telegram...
+2026-10-17 14:41:53,830 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
