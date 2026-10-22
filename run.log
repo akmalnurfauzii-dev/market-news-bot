@@ -61502,3 +61502,913 @@ Topik yang sedang viral di Indonesia selama 24 jam terakhir adalah kekalahan tel
 2026-10-22 02:24:50,530 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
 2026-10-22 02:24:51,531 [INFO] History disimpan (5 entri).
 2026-10-22 02:24:51,531 [INFO] Selesai — laporan terkirim dan history disimpan.
+2026-10-22 16:15:33,364 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-10-22 16:15:33,364 [INFO] =======================================================
+2026-10-22 16:15:33,364 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-10-22 16:15:33,364 [INFO] =======================================================
+2026-10-22 16:15:33,364 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-10-22 16:15:33,841 [INFO] Provider siap: Gemini dengan 4 model
+2026-10-22 16:15:33,877 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-10-22 16:15:33,895 [INFO] Provider siap: Z.AI dengan 1 model
+2026-10-22 16:15:33,914 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-10-22 16:15:33,932 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-10-22 16:15:33,947 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-10-22 16:15:33,967 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-22 16:15:37,260 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-22 16:15:37,261 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-10-22 16:15:37,261 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-22 16:15:42,207 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:15:42,214 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-22 16:15:42,258 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:15:42,258 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:15:42,374 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20stock%20market%20crypto%20October%202026%20CNBC%20BBC 429
+2026-10-22 16:15:42,512 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+stock+market+crypto+October+2026+CNBC+BBC&limit=1 200
+2026-10-22 16:15:43,106 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-10-22 16:15:43,110 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-22 16:15:45,076 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:15:45,077 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-22 16:15:45,079 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:15:45,079 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:15:45,133 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20stocks%20crypto%20October%202026 429
+2026-10-22 16:15:45,251 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+stocks+crypto+October+2026&limit=1 200
+2026-10-22 16:15:45,415 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+stocks+crypto+October+2026&source=web&tf=pd 429
+2026-10-22 16:15:45,963 [INFO] response: https://www.google.com/wml/search?q=site%3Acnbc.com+markets+stocks+crypto+October+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:15:45,991 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:15:46,421 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+stocks+crypto+October+2026 403
+2026-10-22 16:15:46,645 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:15:46,710 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:15:47,013 [INFO] response: https://search.yahoo.com/search;_ylt=2zPb6yluGfqYSpmpVh4jaGj2;_ylu=zU1d9LQs7iVggGBls-RahG_W9eQafv-nw-l4nL_LEFd6Krs?p=site%3Acnbc.com+markets+stocks+crypto+October+2026&btf=d 200
+2026-10-22 16:15:47,360 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-22 16:15:47,875 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-22 16:15:47,876 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-10-22 16:15:47,876 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-22 16:15:51,455 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-22 16:15:51,456 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-10-22 16:15:51,456 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-22 16:16:17,658 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:16:17,659 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-22 16:16:18,071 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-22 16:16:25,772 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-22 16:16:25,773 [WARNING] ⚠️ Gemini / gemini-3.5-flash-lite gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-10-22 16:16:25,773 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:16:25,773 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-22 16:16:26,025 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-10-22 16:16:26,025 [WARNING] ⚠️ NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b gagal: Error code: 404 - {'status': 404, 'title': 'Not Found', 'detail': "Function 'ac74040f-9fc9-4c5e-ac74-279ba5161d69': Not found for account 'zeuiEQa0h-8xI5ozxn097hLtJOiHXQfGp3T4onr4Gzs'"}
+2026-10-22 16:16:26,025 [WARNING] Model nvidia/nemotron-3-super-120b-a12b ditandai mati (retired/404/410).
+2026-10-22 16:16:26,026 [INFO] Mencoba provider NVIDIA NIM dengan model meta/llama-4-maverick-17b-128e-instruct...
+2026-10-22 16:16:26,197 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-10-22 16:16:26,197 [WARNING] ⚠️ NVIDIA NIM / meta/llama-4-maverick-17b-128e-instruct gagal: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410, 'detail': "The model 'meta/llama-4-maverick-17b-128e-instruct' has reached its end of life on 2026-07-27T00:00:00Z and is no longer available."}
+2026-10-22 16:16:26,197 [WARNING] Model meta/llama-4-maverick-17b-128e-instruct ditandai mati (retired/404/410).
+2026-10-22 16:16:26,197 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-10-22 16:16:26,197 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:16:29,985 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:16:29,986 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:16:29,990 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:16:29,990 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:16:29,990 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:16:37,202 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:16:37,203 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:16:37,208 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:16:37,208 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:16:37,208 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:16:56,234 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:16:56,235 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:16:56,240 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:16:56,240 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:16:56,240 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:17:03,369 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:17:03,370 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:17:03,374 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:17:03,374 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:17:03,374 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:17:35,683 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:17:35,684 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:17:35,689 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:17:35,689 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:17:35,689 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:17:42,997 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:17:42,998 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:17:43,002 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:17:43,002 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:17:43,002 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:17:44,978 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:17:44,979 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:17:44,983 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:17:44,983 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:17:44,983 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:17:47,500 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:17:47,500 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:17:47,505 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:17:47,505 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:17:47,505 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:17:49,525 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:17:49,526 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:17:49,531 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:17:49,531 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:17:49,531 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:17:51,786 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:17:51,787 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:17:51,792 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:17:51,792 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:17:51,792 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:17:53,736 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:17:53,737 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:17:53,742 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:17:53,742 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:17:53,742 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:17:56,891 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:17:56,892 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:17:56,897 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:17:56,897 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:17:56,897 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:17:58,929 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:17:58,930 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:17:58,935 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:17:58,935 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:17:58,935 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:18:01,010 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:18:01,011 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:18:01,016 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:18:01,016 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:18:01,016 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:18:03,316 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:18:03,317 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-22 16:18:03,322 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:18:03,322 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:18:03,322 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-22 16:18:48,383 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Request timed out.
+2026-10-22 16:18:48,383 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-10-22 16:18:48,383 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-10-22 16:18:49,092 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:19:03,845 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-10-22 16:19:03,846 [INFO] Validasi: 1x fetch_webpage sukses (minimum 3).
+2026-10-22 16:19:03,846 [INFO] URL yang berhasil di-fetch: {'https://www.cnbc.com/2026/10/22/macron-trump-france-protests.html'}
+2026-10-22 16:19:03,847 [WARNING] Laporan tidak valid: Terlalu pendek (368 karakter, minimal 500)
+2026-10-22 16:19:03,847 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-10-22 16:19:03,847 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-10-22 16:19:03,863 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:19:03,863 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:19:03,863 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-10-22 16:19:03,863 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-10-22 16:19:04,271 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:24:39,329 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-10-22 16:24:39,502 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:24:39,503 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:24:39,665 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2021%202026%20geopolitics%20markets%20China%20BBC 200
+2026-10-22 16:24:39,679 [INFO] response: https://grokipedia.com/api/typeahead?query=October+21+2026+geopolitics+markets+China+BBC&limit=1 200
+2026-10-22 16:24:40,130 [INFO] response: https://www.mojeek.com/search?q=October+21+2026+geopolitics+markets+China+BBC 403
+2026-10-22 16:24:40,676 [INFO] response: https://www.google.com/wml/search?q=October+21+2026+geopolitics+markets+China+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:24:40,812 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:24:40,961 [INFO] response: https://search.brave.com/search?q=October+21+2026+geopolitics+markets+China+BBC&source=web&tf=pd 429
+2026-10-22 16:24:41,137 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:24:41,214 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:24:41,531 [INFO] response: https://search.yahoo.com/search;_ylt=MCwk-vYNfUeVakaWFrNzIc7H;_ylu=ZaEivwkYesg31RRuuZ03mOlLcTtpQ-oKWlS_KsairINIOxk?p=October+21+2026+geopolitics+markets+China+BBC&btf=d 200
+2026-10-22 16:24:42,038 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:24:42,038 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:24:42,098 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2021%202026%20football%20results%20Premier%20League%20BBC%20Sport 429
+2026-10-22 16:24:42,217 [INFO] response: https://grokipedia.com/api/typeahead?query=October+21+2026+football+results+Premier+League+BBC+Sport&limit=1 200
+2026-10-22 16:24:42,622 [INFO] response: https://www.mojeek.com/search?q=October+21+2026+football+results+Premier+League+BBC+Sport 403
+2026-10-22 16:24:42,727 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:24:42,952 [INFO] response: https://search.yahoo.com/search;_ylt=cbE76Yy2SlDjloJDvylf3_o-;_ylu=6urg_278qlr9HKMq4Y0Ph987d-ha1EAtM6XI6j7rKMIs1-Q?p=October+21+2026+football+results+Premier+League+BBC+Sport&btf=d 200
+2026-10-22 16:24:43,664 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:24:43,752 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:24:43,860 [INFO] response: https://search.brave.com/search?q=October+21+2026+football+results+Premier+League+BBC+Sport&source=web&tf=pd 429
+2026-10-22 16:24:44,406 [INFO] response: https://www.google.com/wml/search?q=October+21+2026+football+results+Premier+League+BBC+Sport&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:24:44,407 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:24:44,547 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2021%202026%20football%20results%20Premier%20League%20BBC%20Sport 200
+2026-10-22 16:24:44,606 [INFO] response: https://grokipedia.com/api/typeahead?query=October+21+2026+football+results+Premier+League+BBC+Sport&limit=1 200
+2026-10-22 16:24:44,713 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:24:45,279 [INFO] response: https://www.google.com/wml/search?q=October+21+2026+football+results+Premier+League+BBC+Sport&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:24:45,448 [INFO] response: https://search.yahoo.com/search;_ylt=jrWuvQGhJo-vYsNy783lehqs;_ylu=XNlapvMiGg2FJ95ddw0Vlxy7xAgASv2e1mPAbPBTR8hDJVs?p=October+21+2026+football+results+Premier+League+BBC+Sport&btf=d 200
+2026-10-22 16:24:45,973 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:24:46,138 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:24:46,553 [INFO] response: https://www.mojeek.com/search?q=October+21+2026+football+results+Premier+League+BBC+Sport 403
+2026-10-22 16:24:46,663 [INFO] response: https://search.brave.com/search?q=October+21+2026+football+results+Premier+League+BBC+Sport&source=web&tf=pd 429
+2026-10-22 16:24:46,673 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-22 16:24:46,727 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2021%202026%20football%20results%20Premier%20League%20BBC%20Sport 429
+2026-10-22 16:24:46,824 [INFO] response: https://grokipedia.com/api/typeahead?query=October+21+2026+football+results+Premier+League+BBC+Sport&limit=1 200
+2026-10-22 16:24:46,950 [INFO] response: https://search.brave.com/search?q=October+21+2026+football+results+Premier+League+BBC+Sport&source=web&tf=pw 429
+2026-10-22 16:24:47,401 [INFO] response: https://www.mojeek.com/search?q=October+21+2026+football+results+Premier+League+BBC+Sport 403
+2026-10-22 16:24:47,588 [INFO] response: https://search.yahoo.com/search;_ylt=5UdX74VPjPYNKvXO4Up_dnvm;_ylu=rSn0o23pxVjtENbCx0oFwdmORFW_TlTJ96N-SX4qeu334cI?p=October+21+2026+football+results+Premier+League+BBC+Sport&btf=w 200
+2026-10-22 16:24:48,441 [INFO] response: https://www.google.com/wml/search?q=October+21+2026+football+results+Premier+League+BBC+Sport&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-22 16:24:48,569 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:24:48,757 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:24:48,857 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:24:48,858 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-22 16:24:48,859 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:24:48,859 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:24:48,913 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2022%202026%20AI%20breakthrough%20technology%20Wired 429
+2026-10-22 16:24:49,110 [INFO] response: https://grokipedia.com/api/typeahead?query=October+22+2026+AI+breakthrough+technology+Wired&limit=1 200
+2026-10-22 16:24:49,541 [INFO] response: https://www.mojeek.com/search?q=October+22+2026+AI+breakthrough+technology+Wired 403
+2026-10-22 16:24:49,588 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:24:49,891 [INFO] response: https://www.google.com/wml/search?q=October+22+2026+AI+breakthrough+technology+Wired&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:24:50,001 [INFO] response: https://search.brave.com/search?q=October+22+2026+AI+breakthrough+technology+Wired&source=web&tf=pd 429
+2026-10-22 16:24:50,231 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:24:50,288 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:24:50,471 [INFO] response: https://search.yahoo.com/search;_ylt=306gBWKVUQanmx6b8INJqBFv;_ylu=iLMxxK_B9LK19AF0aLExO7YbohXdB2yVmwa2Ol8g9NK-spg?p=October+22+2026+AI+breakthrough+technology+Wired&btf=d 200
+2026-10-22 16:24:51,007 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:24:51,061 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2022%202026%20AI%20breakthrough%20technology%20Wired 429
+2026-10-22 16:24:51,166 [INFO] response: https://grokipedia.com/api/typeahead?query=October+22+2026+AI+breakthrough+technology+Wired&limit=1 200
+2026-10-22 16:24:51,664 [INFO] response: https://www.mojeek.com/search?q=October+22+2026+AI+breakthrough+technology+Wired 403
+2026-10-22 16:24:51,784 [INFO] response: https://search.brave.com/search?q=October+22+2026+AI+breakthrough+technology+Wired&source=web&tf=pd 429
+2026-10-22 16:24:51,950 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:24:52,010 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:24:52,068 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:24:52,482 [INFO] response: https://www.google.com/wml/search?q=October+22+2026+AI+breakthrough+technology+Wired&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:24:52,712 [INFO] response: https://search.yahoo.com/search;_ylt=U6Iu1VkwDuMYF_s_q4gNnluU;_ylu=o3cb_X1XstUIxxSdg3uEODB9in3y4pH7zNtSlAZO2Pqgz-A?p=October+22+2026+AI+breakthrough+technology+Wired&btf=d 200
+2026-10-22 16:24:52,714 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-22 16:24:52,770 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2022%202026%20AI%20breakthrough%20technology%20Wired 429
+2026-10-22 16:24:52,912 [INFO] response: https://grokipedia.com/api/typeahead?query=October+22+2026+AI+breakthrough+technology+Wired&limit=1 200
+2026-10-22 16:24:52,957 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:24:53,135 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:24:53,214 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:24:53,414 [INFO] response: https://search.yahoo.com/search;_ylt=r9cQuVxJb8QRCHBNue5N5ZF7;_ylu=2ljVgfBtZHE1zaR2pPYKXmwxzx-QIx_QAPcf6mAD4lpnCos?p=October+22+2026+AI+breakthrough+technology+Wired&btf=w 200
+2026-10-22 16:24:54,312 [INFO] response: https://www.google.com/wml/search?q=October+22+2026+AI+breakthrough+technology+Wired&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-22 16:24:54,720 [INFO] response: https://www.mojeek.com/search?q=October+22+2026+AI+breakthrough+technology+Wired 403
+2026-10-22 16:24:54,847 [INFO] response: https://search.brave.com/search?q=October+22+2026+AI+breakthrough+technology+Wired&source=web&tf=pw 429
+2026-10-22 16:24:54,860 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-22 16:24:54,861 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:24:54,861 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:24:54,998 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20level%2022%20Oktober%202026%20kurs%20USD%20IDR 200
+2026-10-22 16:24:55,061 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+level+22+Oktober+2026+kurs+USD+IDR&limit=1 200
+2026-10-22 16:24:55,171 [INFO] response: https://search.brave.com/search?q=IHSG+level+22+Oktober+2026+kurs+USD+IDR&source=web&tf=pd 429
+2026-10-22 16:24:55,389 [INFO] response: https://search.yahoo.com/search;_ylt=0rkdee1QOyswhfVjlmI_w6z1;_ylu=InmlBdi4Bco7ruf0DsUDmMf2WUEg-z-tlnUEXQMcs2eceP8?p=IHSG+level+22+Oktober+2026+kurs+USD+IDR&btf=d 200
+2026-10-22 16:24:55,800 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:24:55,800 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:24:55,941 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+sepak+bola+update+22+Oktober+2026&limit=1 200
+2026-10-22 16:24:55,949 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20sepak%20bola%20update%2022%20Oktober%202026 200
+2026-10-22 16:24:56,372 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+sepak+bola+update+22+Oktober+2026 403
+2026-10-22 16:24:56,750 [INFO] response: https://www.google.com/wml/search?q=Timnas+Indonesia+sepak+bola+update+22+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:24:56,860 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+sepak+bola+update+22+Oktober+2026&source=web&tf=pd 429
+2026-10-22 16:24:57,465 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:24:57,558 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:24:57,756 [INFO] response: https://search.yahoo.com/search;_ylt=ps1mCVdidlYcvYgZlVp7O9gk;_ylu=3ZnFnNFwVmckbKX_h-gQx1QFgE_PW6qK7lBHcOtvKVk81rA?p=Timnas+Indonesia+sepak+bola+update+22+Oktober+2026&btf=d 200
+2026-10-22 16:24:58,469 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:24:58,469 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:24:58,589 [INFO] response: https://grokipedia.com/api/typeahead?query=China+markets+October+21+2026+BBC&limit=1 200
+2026-10-22 16:24:58,608 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=China%20markets%20October%2021%202026%20BBC 200
+2026-10-22 16:24:58,728 [INFO] response: https://search.brave.com/search?q=China+markets+October+21+2026+BBC&source=web&tf=pd 429
+2026-10-22 16:24:58,777 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:24:59,189 [INFO] response: https://www.mojeek.com/search?q=China+markets+October+21+2026+BBC 403
+2026-10-22 16:24:59,739 [INFO] response: https://www.google.com/wml/search?q=China+markets+October+21+2026+BBC&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:24:59,879 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:24:59,956 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:00,170 [INFO] response: https://search.yahoo.com/search;_ylt=YHsD1kCemL_IuQDwee76EX9W;_ylu=o53qEUpvB4jZ12WraiSPSdU1KnbSSaCZw1m_xgPXieF6_j4?p=China+markets+October+21+2026+BBC&btf=d 200
+2026-10-22 16:25:00,672 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:00,672 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:00,726 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2021%202026%20geopolitics%20markets%20China%20BBC 200
+2026-10-22 16:25:00,809 [INFO] response: https://grokipedia.com/api/typeahead?query=October+21+2026+geopolitics+markets+China+BBC&limit=1 200
+2026-10-22 16:25:01,040 [INFO] response: https://search.yahoo.com/search;_ylt=sK4CGgMYZUO95kBDZXO36Hji;_ylu=P1zRuwqdWDWe42AbTRM8U-8GbOHbdqGtV0HgSb-zAzbd87Y?p=October+21+2026+geopolitics+markets+China+BBC&btf=d 200
+2026-10-22 16:25:01,557 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:01,557 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:01,611 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20results%20October%2021%202026 429
+2026-10-22 16:25:01,782 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+results+October+21+2026&limit=1 200
+2026-10-22 16:25:01,967 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:02,040 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:02,079 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:02,530 [INFO] response: https://www.mojeek.com/search?q=Premier+League+results+October+21+2026 403
+2026-10-22 16:25:03,046 [INFO] response: https://www.google.com/wml/search?q=Premier+League+results+October+21+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:03,250 [INFO] response: https://search.yahoo.com/search;_ylt=e05WL98lACGoXYrBObhCirHl;_ylu=20pb9VPugRajjl9FRxC0e4b9jWm1Si68u-ai9ymsUI2Ph10?p=Premier+League+results+October+21+2026&btf=d 200
+2026-10-22 16:25:03,868 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:03,868 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:04,002 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20October%2022%202026%20breakthrough%20Wired 200
+2026-10-22 16:25:04,014 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+October+22+2026+breakthrough+Wired&limit=1 200
+2026-10-22 16:25:04,439 [INFO] response: https://www.mojeek.com/search?q=AI+October+22+2026+breakthrough+Wired 403
+2026-10-22 16:25:04,555 [INFO] response: https://search.brave.com/search?q=AI+October+22+2026+breakthrough+Wired&source=web&tf=pd 429
+2026-10-22 16:25:04,745 [INFO] response: https://search.yahoo.com/search;_ylt=GwZtqvLvHyuk_JUQjyQteLF4;_ylu=TGJS_MX0qgNjOeuK4Bti1MFr_i3QB9zhBM1B5qg5WPU2ivs?p=AI+October+22+2026+breakthrough+Wired&btf=d 200
+2026-10-22 16:25:05,709 [INFO] response: https://www.google.com/wml/search?q=AI+October+22+2026+breakthrough+Wired&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:05,810 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:05,947 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:06,008 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:06,009 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:25:06,064 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20October%2022%202026%20breakthrough%20Wired 200
+2026-10-22 16:25:06,211 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+October+22+2026+breakthrough+Wired&limit=1 200
+2026-10-22 16:25:06,320 [INFO] response: https://search.brave.com/search?q=AI+October+22+2026+breakthrough+Wired&source=web&tf=pd 429
+2026-10-22 16:25:06,850 [INFO] response: https://www.google.com/wml/search?q=AI+October+22+2026+breakthrough+Wired&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:07,052 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:07,134 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:07,220 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:07,740 [INFO] response: https://www.mojeek.com/search?q=AI+October+22+2026+breakthrough+Wired 403
+2026-10-22 16:25:07,934 [INFO] response: https://search.yahoo.com/search;_ylt=PV0ixTbXYUBTaThgcdRHALpS;_ylu=Or7C5v1Y5HRPVJpMTyTEqMuPq11i7UKKU0Njown7vI3RwkA?p=AI+October+22+2026+breakthrough+Wired&btf=d 200
+2026-10-22 16:25:08,340 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-22 16:25:08,395 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20October%2022%202026%20breakthrough%20Wired 200
+2026-10-22 16:25:08,474 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+October+22+2026+breakthrough+Wired&limit=1 200
+2026-10-22 16:25:08,806 [INFO] response: https://www.google.com/wml/search?q=AI+October+22+2026+breakthrough+Wired&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-22 16:25:08,836 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:09,269 [INFO] response: https://www.mojeek.com/search?q=AI+October+22+2026+breakthrough+Wired 403
+2026-10-22 16:25:09,420 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:09,557 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:09,766 [INFO] response: https://search.yahoo.com/search;_ylt=r9NZx7xVBAvqQeM65Rxs3ysl;_ylu=Fsfqk5qUu8ylJZMFrUzC9nkn2U31IojXoTTrs5aJaan05Z0?p=AI+October+22+2026+breakthrough+Wired&btf=w 200
+2026-10-22 16:25:10,301 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:10,301 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:10,354 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%2022%20Oktober%202026%20kurs%20USD%20IDR 429
+2026-10-22 16:25:10,543 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+22+Oktober+2026+kurs+USD+IDR&limit=1 200
+2026-10-22 16:25:10,712 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:10,803 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:11,039 [INFO] response: https://search.yahoo.com/search;_ylt=fpehg-oVc9uL6sxxKWOwmTH3;_ylu=n3d4YG5jOlcbJq_zuMHcVPXwho2WN9m946HKvkyn0yqgGqU?p=IHSG+22+Oktober+2026+kurs+USD+IDR&btf=d 200
+2026-10-22 16:25:11,112 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:11,230 [INFO] response: https://search.brave.com/search?q=IHSG+22+Oktober+2026+kurs+USD+IDR&source=web&tf=pd 429
+2026-10-22 16:25:11,638 [INFO] response: https://www.mojeek.com/search?q=IHSG+22+Oktober+2026+kurs+USD+IDR 403
+2026-10-22 16:25:11,907 [INFO] response: https://www.google.com/wml/search?q=IHSG+22+Oktober+2026+kurs+USD+IDR&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:11,908 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:25:12,037 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%2022%20Oktober%202026%20kurs%20USD%20IDR 200
+2026-10-22 16:25:12,051 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+22+Oktober+2026+kurs+USD+IDR&limit=1 200
+2026-10-22 16:25:12,494 [INFO] response: https://www.google.com/wml/search?q=IHSG+22+Oktober+2026+kurs+USD+IDR&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:12,911 [INFO] response: https://www.mojeek.com/search?q=IHSG+22+Oktober+2026+kurs+USD+IDR 403
+2026-10-22 16:25:13,092 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:13,188 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:13,308 [INFO] response: https://search.brave.com/search?q=IHSG+22+Oktober+2026+kurs+USD+IDR&source=web&tf=pd 429
+2026-10-22 16:25:13,351 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:13,571 [INFO] response: https://search.yahoo.com/search;_ylt=FBaLxj_pkgV9NwGJehz_iP6f;_ylu=nLUY9rpe7ERgXwei5AT0i0hFdNOVU3lIr662b0-Hlxfmh6Q?p=IHSG+22+Oktober+2026+kurs+USD+IDR&btf=d 200
+2026-10-22 16:25:14,035 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:14,035 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:14,089 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20sepak%20bola%202026%20update 429
+2026-10-22 16:25:14,203 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+sepak+bola+2026+update&limit=1 200
+2026-10-22 16:25:14,575 [INFO] response: https://www.google.com/wml/search?q=Timnas+Indonesia+sepak+bola+2026+update&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:14,975 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+sepak+bola+2026+update 403
+2026-10-22 16:25:15,182 [INFO] response: https://search.yahoo.com/search;_ylt=cvuHLN9vf00gALJxAJ6QsDha;_ylu=QA7eVvhRZxY-p8hRveYuVlSmlDVlQmD8-sZrEPdO-FaxU6s?p=Timnas+Indonesia+sepak+bola+2026+update&btf=d 200
+2026-10-22 16:25:16,024 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+sepak+bola+2026+update&source=web&tf=pd 429
+2026-10-22 16:25:16,196 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:16,260 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:16,290 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:16,290 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:25:16,345 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20sepak%20bola%202026%20update 429
+2026-10-22 16:25:16,472 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+sepak+bola+2026+update&limit=1 200
+2026-10-22 16:25:16,630 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:16,719 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:16,908 [INFO] response: https://search.yahoo.com/search;_ylt=TG6oZiX59bzFocDveyVqMIEB;_ylu=0QX7P2fRHIBAMzLQVGkRK6aiZFNeb9PHShNl0b5OdXe8sbQ?p=Timnas+Indonesia+sepak+bola+2026+update&btf=d 200
+2026-10-22 16:25:17,785 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+sepak+bola+2026+update 403
+2026-10-22 16:25:18,506 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+sepak+bola+2026+update&source=web&tf=pd 429
+2026-10-22 16:25:18,600 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:19,114 [INFO] response: https://www.google.com/wml/search?q=Timnas+Indonesia+sepak+bola+2026+update&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:19,115 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-22 16:25:19,245 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+sepak+bola+2026+update&limit=1 200
+2026-10-22 16:25:19,262 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20sepak%20bola%202026%20update 200
+2026-10-22 16:25:19,384 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+sepak+bola+2026+update&source=web&tf=pw 429
+2026-10-22 16:25:19,485 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:19,718 [INFO] response: https://search.yahoo.com/search;_ylt=iJuNbIGCR9jDPeE6EhDAPzxt;_ylu=PwotvVFURh8pEgMlDb_itnM8za__0Gt7BKqtLtyLmhel4g0?p=Timnas+Indonesia+sepak+bola+2026+update&btf=w 200
+2026-10-22 16:25:20,228 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:20,229 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:20,328 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+level+hari+ini&limit=1 200
+2026-10-22 16:25:20,346 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20level%20hari%20ini 200
+2026-10-22 16:25:20,459 [INFO] response: https://search.brave.com/search?q=IHSG+level+hari+ini&source=web&tf=pd 429
+2026-10-22 16:25:20,665 [INFO] response: https://search.yahoo.com/search;_ylt=mimVduaLnuB_8VEIw5YUcWR1;_ylu=z-Zlr7vBvGAGQc3gbVjcMbbZB1hKgmqtdxUl3h_XPGOQyW0?p=IHSG+level+hari+ini&btf=d 200
+2026-10-22 16:25:21,073 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:21,073 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:21,199 [INFO] response: https://grokipedia.com/api/typeahead?query=kurs+USD+IDR+hari+ini&limit=1 200
+2026-10-22 16:25:21,203 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=kurs%20USD%20IDR%20hari%20ini 200
+2026-10-22 16:25:21,622 [INFO] response: https://www.google.com/wml/search?q=kurs+USD+IDR+hari+ini&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:21,750 [INFO] response: https://search.brave.com/search?q=kurs+USD+IDR+hari+ini&source=web&tf=pd 429
+2026-10-22 16:25:21,808 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:22,247 [INFO] response: https://www.mojeek.com/search?q=kurs+USD+IDR+hari+ini 403
+2026-10-22 16:25:22,441 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:22,505 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:22,685 [INFO] response: https://search.yahoo.com/search;_ylt=T373dX-4O2Qp1p6gKMn0U5Ej;_ylu=Vt0cJJmr5AGySgGXYj99qhC4qZ6x4a9jEf0Q94VF7StFMnI?p=kurs+USD+IDR+hari+ini&btf=d 200
+2026-10-22 16:25:23,166 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:25:23,220 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=kurs%20USD%20IDR%20hari%20ini 200
+2026-10-22 16:25:23,279 [INFO] response: https://grokipedia.com/api/typeahead?query=kurs+USD+IDR+hari+ini&limit=1 200
+2026-10-22 16:25:23,457 [INFO] response: https://search.yahoo.com/search;_ylt=-lkCSIM5DbDNQa0nxPGm_tbI;_ylu=NMsFn4Va9FXn1VLx9ft9Zz1arMLSO1_kdjeXH9gsYwjVYB0?p=kurs+USD+IDR+hari+ini&btf=d 200
+2026-10-22 16:25:23,991 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:24,046 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:24,334 [INFO] response: https://www.google.com/wml/search?q=kurs+USD+IDR+hari+ini&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:24,445 [INFO] response: https://search.brave.com/search?q=kurs+USD+IDR+hari+ini&source=web&tf=pd 429
+2026-10-22 16:25:24,556 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:25,006 [INFO] response: https://www.mojeek.com/search?q=kurs+USD+IDR+hari+ini 403
+2026-10-22 16:25:25,007 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-22 16:25:25,133 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=kurs%20USD%20IDR%20hari%20ini 200
+2026-10-22 16:25:25,214 [INFO] response: https://grokipedia.com/api/typeahead?query=kurs+USD+IDR+hari+ini&limit=1 200
+2026-10-22 16:25:25,327 [INFO] response: https://search.brave.com/search?q=kurs+USD+IDR+hari+ini&source=web&tf=pw 429
+2026-10-22 16:25:25,801 [INFO] response: https://www.mojeek.com/search?q=kurs+USD+IDR+hari+ini 403
+2026-10-22 16:25:26,234 [INFO] response: https://www.google.com/wml/search?q=kurs+USD+IDR+hari+ini&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-22 16:25:26,481 [INFO] response: https://search.yahoo.com/search;_ylt=rUZfMBMAZY4JJXBZPJ2fVqan;_ylu=2Lj_kzM0vnL2fcXSQlAr4Rto8bg6d2yH4_7sflkhXC1hm_4?p=kurs+USD+IDR+hari+ini&btf=w 200
+2026-10-22 16:25:27,210 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:27,303 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:27,343 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:27,344 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-22 16:25:27,344 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:27,344 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:27,479 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20results%20today 200
+2026-10-22 16:25:27,530 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+results+today&limit=1 200
+2026-10-22 16:25:27,762 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:27,969 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:28,080 [INFO] response: https://search.brave.com/search?q=Premier+League+results+today&source=web&tf=pd 429
+2026-10-22 16:25:28,302 [INFO] response: https://search.yahoo.com/search;_ylt=-HCbYR60s-B6XcDug0RSpuR-;_ylu=xZk5hpDch9NBJWAW02TJnPDQlLsj9IYspiqjYm_Pi6o4JRc?p=Premier+League+results+today&btf=d 200
+2026-10-22 16:25:28,883 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:28,883 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:28,938 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2021%202026%20China%20markets%20geopolitics%20news 429
+2026-10-22 16:25:29,035 [INFO] response: https://grokipedia.com/api/typeahead?query=October+21+2026+China+markets+geopolitics+news&limit=1 200
+2026-10-22 16:25:29,094 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:29,260 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:29,537 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=d642795129e4eb203e26712e672d89a2&bds_t=1792686329Teb9ea0cb3c0f6d1ab89fb55d43fd7bab10eb2ebc9bdb83a7596cba0508bfbb58&bds_s=d18f993b025d433db5922e09265be2a0&abp=1&qsr=en_US&qadf=moderate&lui=english&abd=0&sc=&abe=0&segment=organic&language=english&t=device&with_date=d&query=October+21+2026+China+markets+geopolitics+news&cat=web&cmd=gen_page 200
+2026-10-22 16:25:29,744 [INFO] response: https://search.yahoo.com/search;_ylt=A6ByDOWy7BJ_km-euDiAkfla;_ylu=Al4qmwLLRXYj05Sjb_q3J4S2tLTv4T3dTto9xDC2DIqJ23M?p=October+21+2026+China+markets+geopolitics+news&btf=d 200
+2026-10-22 16:25:30,733 [INFO] response: https://www.mojeek.com/search?q=October+21+2026+China+markets+geopolitics+news 403
+2026-10-22 16:25:30,844 [INFO] response: https://search.brave.com/search?q=October+21+2026+China+markets+geopolitics+news&source=web&tf=pd 429
+2026-10-22 16:25:31,418 [INFO] response: https://www.google.com/wml/search?q=October+21+2026+China+markets+geopolitics+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:31,419 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:25:31,474 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2021%202026%20China%20markets%20geopolitics%20news 429
+2026-10-22 16:25:31,568 [INFO] response: https://grokipedia.com/api/typeahead?query=October+21+2026+China+markets+geopolitics+news&limit=1 200
+2026-10-22 16:25:31,740 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:31,930 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=d642795129e4eb203e26712e672d89a2&bds_t=1792686331T644b54bd59d297975eac8a3c388321c0c1e99b10849fa1602000bb13b6eb0937&bds_s=e8a44552c9c542279336f971d343a49a&abe=0&abp=1&t=device&sc=&with_date=d&abd=0&lui=english&segment=organic&language=english&qadf=moderate&qsr=en_US&query=October+21+2026+China+markets+geopolitics+news&cat=web&cmd=gen_page 200
+2026-10-22 16:25:32,439 [INFO] response: https://www.mojeek.com/search?q=October+21+2026+China+markets+geopolitics+news 403
+2026-10-22 16:25:32,747 [INFO] response: https://www.google.com/wml/search?q=October+21+2026+China+markets+geopolitics+news&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:32,973 [INFO] response: https://search.yahoo.com/search;_ylt=7TkNInlqFY9pmxYU1HbA2BNE;_ylu=zNgqhH6PR886m_gakP-1D9gQZy_t2U7G0Y1dw4Dlqopamsw?p=October+21+2026+China+markets+geopolitics+news&btf=d 200
+2026-10-22 16:25:33,499 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:33,499 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:33,554 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20results%20October%2021%202026 429
+2026-10-22 16:25:33,623 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+results+October+21+2026&limit=1 200
+2026-10-22 16:25:34,053 [INFO] response: https://www.google.com/wml/search?q=Premier+League+results+October+21+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:34,085 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:34,297 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:34,385 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:34,508 [INFO] response: https://search.brave.com/search?q=Premier+League+results+October+21+2026&source=web&tf=pd 429
+2026-10-22 16:25:34,748 [INFO] response: https://search.yahoo.com/search;_ylt=rSbW3JUYPIW1mKeP_Mv-ztux;_ylu=ZO5lTiWt_CCGTS6oYQhZ1lLnT6-HDCz_4uMgr4q5lKEVMrg?p=Premier+League+results+October+21+2026&btf=d 200
+2026-10-22 16:25:36,138 [INFO] response: https://www.mojeek.com/search?q=Premier+League+results+October+21+2026 403
+2026-10-22 16:25:36,139 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:25:36,260 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+results+October+21+2026&limit=1 200
+2026-10-22 16:25:36,272 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20results%20October%2021%202026 200
+2026-10-22 16:25:36,390 [INFO] response: https://search.brave.com/search?q=Premier+League+results+October+21+2026&source=web&tf=pd 429
+2026-10-22 16:25:36,613 [INFO] response: https://search.yahoo.com/search;_ylt=17cMuhRjX5JeEHp5CVeiUFEI;_ylu=_4j-F2nrv8zv3Z3nNQE7wui3-dY-90U0LxUyPcxgnOH368U?p=Premier+League+results+October+21+2026&btf=d 200
+2026-10-22 16:25:37,154 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:37,154 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:37,300 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2022%202026%20AI%20breakthrough%20technology 200
+2026-10-22 16:25:37,321 [INFO] response: https://grokipedia.com/api/typeahead?query=October+22+2026+AI+breakthrough+technology&limit=1 200
+2026-10-22 16:25:37,765 [INFO] response: https://www.mojeek.com/search?q=October+22+2026+AI+breakthrough+technology 403
+2026-10-22 16:25:37,887 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:38,222 [INFO] response: https://www.google.com/wml/search?q=October+22+2026+AI+breakthrough+technology&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:38,370 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:38,435 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:38,698 [INFO] response: https://search.yahoo.com/search;_ylt=wOkxI4hfeT_QGev9N6b_lZmx;_ylu=jX2kSC9AkQ74R9VnrLEuK4BUN0SRJrN4cu1VFr9NjnTnSiE?p=October+22+2026+AI+breakthrough+technology&btf=d 200
+2026-10-22 16:25:38,847 [INFO] response: https://search.brave.com/search?q=October+22+2026+AI+breakthrough+technology&source=web&tf=pd 429
+2026-10-22 16:25:38,861 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:25:38,915 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2022%202026%20AI%20breakthrough%20technology 429
+2026-10-22 16:25:38,985 [INFO] response: https://grokipedia.com/api/typeahead?query=October+22+2026+AI+breakthrough+technology&limit=1 200
+2026-10-22 16:25:39,220 [INFO] response: https://search.yahoo.com/search;_ylt=hYS4-QWZe06AGIZ70dibrSaw;_ylu=LBGujprK8fkpzkfDOrggvZnNXVAwV0WSd_Z6U4nDMJuz0xI?p=October+22+2026+AI+breakthrough+technology&btf=d 200
+2026-10-22 16:25:39,759 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:39,759 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:39,894 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20level%20hari%20ini%20kurs%20USD%20IDR 200
+2026-10-22 16:25:39,935 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+level+hari+ini+kurs+USD+IDR&limit=1 200
+2026-10-22 16:25:40,401 [INFO] response: https://www.mojeek.com/search?q=IHSG+level+hari+ini+kurs+USD+IDR 403
+2026-10-22 16:25:40,581 [INFO] response: https://search.yahoo.com/search;_ylt=NDcoUCzELTBdSqTejxE7Ai-4;_ylu=JgKJtFhMAk0Bm144nAAJEbJmQfQEdNUYY97WrhV02ZW_vig?p=IHSG+level+hari+ini+kurs+USD+IDR&btf=d 200
+2026-10-22 16:25:41,095 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:41,288 [INFO] response: https://search.brave.com/search?q=IHSG+level+hari+ini+kurs+USD+IDR&source=web&tf=pd 429
+2026-10-22 16:25:41,525 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:41,586 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:41,989 [INFO] response: https://www.google.com/wml/search?q=IHSG+level+hari+ini+kurs+USD+IDR&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:41,990 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:25:42,044 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20level%20hari%20ini%20kurs%20USD%20IDR 200
+2026-10-22 16:25:42,110 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+level+hari+ini+kurs+USD+IDR&limit=1 200
+2026-10-22 16:25:42,649 [INFO] response: https://www.google.com/wml/search?q=IHSG+level+hari+ini+kurs+USD+IDR&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:42,917 [INFO] response: https://search.yahoo.com/search;_ylt=eVnn1X0-g5tY81FwzOjAqrdB;_ylu=n5czKZ9eo-JvuZK1KNwMo6Hd4kNxsgzMqLl3E9v9saFMe8s?p=IHSG+level+hari+ini+kurs+USD+IDR&btf=d 200
+2026-10-22 16:25:43,484 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:43,485 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:43,539 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20sepak%20bola%20update%202026 429
+2026-10-22 16:25:43,649 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+sepak+bola+update+2026&limit=1 200
+2026-10-22 16:25:43,804 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+sepak+bola+update+2026&source=web&tf=pd 429
+2026-10-22 16:25:43,863 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:44,246 [INFO] response: https://www.google.com/wml/search?q=Timnas+Indonesia+sepak+bola+update+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:44,405 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:44,465 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:44,893 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+sepak+bola+update+2026 403
+2026-10-22 16:25:45,075 [INFO] response: https://search.yahoo.com/search;_ylt=7SPPH_ErlEr_69eBouUm7PH_;_ylu=ybyjE0eUYlT665UhJ9492GhzpL9NTJyIAa-Wyz_5ZEVRHxw?p=Timnas+Indonesia+sepak+bola+update+2026&btf=d 200
+2026-10-22 16:25:45,594 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:25:45,648 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20sepak%20bola%20update%202026 429
+2026-10-22 16:25:45,707 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+sepak+bola+update+2026&limit=1 200
+2026-10-22 16:25:45,802 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:45,912 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+sepak+bola+update+2026&source=web&tf=pd 429
+2026-10-22 16:25:46,099 [INFO] response: https://search.yahoo.com/search;_ylt=UjFuZD-9p7rI6vIMQZHeCIZm;_ylu=jTOuUKwxZrCJjiOEU-Iq6bHsv1Olzd5qJMG5uXCXtKoWduY?p=Timnas+Indonesia+sepak+bola+update+2026&btf=d 200
+2026-10-22 16:25:46,898 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+sepak+bola+update+2026 403
+2026-10-22 16:25:47,214 [INFO] response: https://www.google.com/wml/search?q=Timnas+Indonesia+sepak+bola+update+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:47,419 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:47,635 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=d642795129e4eb203e26712e672d89a2&bds_t=1792686347Tb31fdfb6e17d8fded5e08332b8ae204e88e642a0734d4608dba98db3093ec881&bds_s=174ce3618e38401bb62f034060d8a068&abe=0&abp=1&t=device&sc=&with_date=d&abd=0&lui=english&segment=organic&language=english&qadf=moderate&qsr=en_US&query=Timnas+Indonesia+sepak+bola+update+2026&cat=web&cmd=gen_page 200
+2026-10-22 16:25:47,676 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-22 16:25:47,731 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20sepak%20bola%20update%202026 429
+2026-10-22 16:25:47,796 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+sepak+bola+update+2026&limit=1 200
+2026-10-22 16:25:47,926 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+sepak+bola+update+2026&source=web&tf=pw 429
+2026-10-22 16:25:48,124 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:48,188 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:48,591 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+sepak+bola+update+2026 403
+2026-10-22 16:25:48,803 [INFO] response: https://search.yahoo.com/search;_ylt=hb9dXhh3WImziVJaNLraIBZ-;_ylu=ExZUj5eJXnbqG00OEG5ryK6VGqovEygKXy-tVrWueI7hj9E?p=Timnas+Indonesia+sepak+bola+update+2026&btf=w 200
+2026-10-22 16:25:49,316 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:49,316 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:49,370 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news%20October%2021%202026 429
+2026-10-22 16:25:49,525 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews+October+21+2026&limit=1 200
+2026-10-22 16:25:49,953 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fnews+October+21+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:50,166 [INFO] response: https://search.yahoo.com/search;_ylt=UEyOhJ7FGEsaDPW4AtXEmrzk;_ylu=wTgB06jKMCxUeBPcOOkAvIOL9okcicSQQNnqoO2u-aULsSo?p=site%3Abbc.com%2Fnews+October+21+2026&btf=d 200
+2026-10-22 16:25:50,630 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews+October+21+2026&source=web&tf=pd 429
+2026-10-22 16:25:50,786 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:50,852 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:51,280 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews+October+21+2026 403
+2026-10-22 16:25:51,340 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:51,340 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:25:51,395 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news%20October%2021%202026 429
+2026-10-22 16:25:51,476 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews+October+21+2026&limit=1 200
+2026-10-22 16:25:51,718 [INFO] response: https://search.yahoo.com/search;_ylt=s_RI7ZOMbFJ6eHrOu1JA_tdh;_ylu=YmvmuP1x-9fpHVNNf91vZbPMn3OZenPuFHoivdNq7TLG-r0?p=site%3Abbc.com%2Fnews+October+21+2026&btf=d 200
+2026-10-22 16:25:52,187 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:52,259 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:52,376 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews+October+21+2026&source=web&tf=pd 429
+2026-10-22 16:25:52,858 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews+October+21+2026 403
+2026-10-22 16:25:52,897 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:53,169 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fnews+October+21+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:53,170 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-22 16:25:53,299 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news%20October%2021%202026 200
+2026-10-22 16:25:53,389 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews+October+21+2026&limit=1 200
+2026-10-22 16:25:53,418 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:53,817 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fnews+October+21+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-22 16:25:53,946 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews+October+21+2026&source=web&tf=pw 429
+2026-10-22 16:25:54,163 [INFO] response: https://search.yahoo.com/search;_ylt=KN5QHXDFkmbhmCpY54qyfI1i;_ylu=YBip08L0xwqzZTk0nuEIl8F01r40YBL67dd_R_3mw7d59Zs?p=site%3Abbc.com%2Fnews+October+21+2026&btf=w 200
+2026-10-22 16:25:54,572 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:25:54,572 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:25:54,625 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20level%20terbaru 429
+2026-10-22 16:25:54,697 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+level+terbaru&limit=1 200
+2026-10-22 16:25:54,819 [INFO] response: https://search.brave.com/search?q=IHSG+level+terbaru&source=web&tf=pd 429
+2026-10-22 16:25:54,946 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:55,257 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:55,349 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:55,788 [INFO] response: https://www.mojeek.com/search?q=IHSG+level+terbaru 403
+2026-10-22 16:25:55,969 [INFO] response: https://search.yahoo.com/search;_ylt=HkA0fsVdKPxHZSNtMqaIG1Xk;_ylu=NkKbdFdhv8kMY-f25cFMfZbv137J1h4quKQtQduSOn2sBGw?p=IHSG+level+terbaru&btf=d 200
+2026-10-22 16:25:56,832 [INFO] response: https://www.google.com/wml/search?q=IHSG+level+terbaru&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:56,833 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:25:56,955 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20level%20terbaru 200
+2026-10-22 16:25:57,014 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+level+terbaru&limit=1 200
+2026-10-22 16:25:57,234 [INFO] response: https://search.yahoo.com/search;_ylt=LsrTmq9kjwIo11EHvPSb0r32;_ylu=7vHQIpoJ27pg4FQOgDyqhODRW1_NQ3ea7qy9XOu3VN7ciyM?p=IHSG+level+terbaru&btf=d 200
+2026-10-22 16:25:57,907 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:25:57,989 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:25:58,016 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:58,393 [INFO] response: https://www.google.com/wml/search?q=IHSG+level+terbaru&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:25:58,784 [INFO] response: https://www.mojeek.com/search?q=IHSG+level+terbaru 403
+2026-10-22 16:25:58,898 [INFO] response: https://search.brave.com/search?q=IHSG+level+terbaru&source=web&tf=pd 429
+2026-10-22 16:25:58,909 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-22 16:25:59,018 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20level%20terbaru 200
+2026-10-22 16:25:59,021 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+level+terbaru&limit=1 200
+2026-10-22 16:25:59,201 [INFO] response: https://search.yahoo.com/search;_ylt=ZWU4rD7re6FvT5_FwTJFM9rl;_ylu=e4incjmuDBTs49LT6mcwUNnqy5EDRTaRVShmD7rUdByKkxc?p=IHSG+level+terbaru&btf=w 200
+2026-10-22 16:25:59,278 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:25:59,690 [INFO] response: https://www.mojeek.com/search?q=IHSG+level+terbaru 403
+2026-10-22 16:25:59,809 [INFO] response: https://search.brave.com/search?q=IHSG+level+terbaru&source=web&tf=pw 429
+2026-10-22 16:25:59,962 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:00,029 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:00,577 [INFO] response: https://www.google.com/wml/search?q=IHSG+level+terbaru&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-22 16:26:00,578 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-22 16:26:00,579 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:00,579 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:00,633 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news%20October%2021%202026%20geopolitics%20markets 429
+2026-10-22 16:26:00,808 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets&limit=1 200
+2026-10-22 16:26:01,268 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets 403
+2026-10-22 16:26:01,332 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:01,451 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets&source=web&tf=pd 429
+2026-10-22 16:26:01,661 [INFO] response: https://search.yahoo.com/search;_ylt=heMP6Mtq-1KYyiExkliW7C0g;_ylu=GkZA6CVsnrBqGmzED2zvHrapN2Qw0g7979CwqjxGmVBkqT4?p=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets&btf=d 200
+2026-10-22 16:26:02,187 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:02,270 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:02,547 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:02,548 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:26:02,603 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news%20October%2021%202026%20geopolitics%20markets 429
+2026-10-22 16:26:02,704 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets&limit=1 200
+2026-10-22 16:26:02,879 [INFO] response: https://search.yahoo.com/search;_ylt=m-XGlHPyFeB4zrrj2qt9k0D2;_ylu=PqK4dYQNNjNE6aOdSk_7N3yshSGBbg2yyOXOB6pxOaAzfwg?p=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets&btf=d 200
+2026-10-22 16:26:03,270 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:03,394 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets&source=web&tf=pd 429
+2026-10-22 16:26:03,564 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:03,647 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:04,075 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets 403
+2026-10-22 16:26:04,486 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:04,486 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-22 16:26:04,541 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news%20October%2021%202026%20geopolitics%20markets 429
+2026-10-22 16:26:04,728 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets&limit=1 200
+2026-10-22 16:26:04,953 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:05,047 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:05,169 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets&source=web&tf=pw 429
+2026-10-22 16:26:05,409 [INFO] response: https://search.yahoo.com/search;_ylt=bgq5wqoeeTCPD2qUNuSEod-I;_ylu=h6tQLKp4eEff793DU2c5pRJTf0bUOAW0lPKuqdxaFs5Lc8w?p=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets&btf=w 200
+2026-10-22 16:26:05,826 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets 403
+2026-10-22 16:26:06,373 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fnews+October+21+2026+geopolitics+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-22 16:26:06,417 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:06,418 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-22 16:26:06,419 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:06,419 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:06,562 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport/football%20October%2021%202026%20results 200
+2026-10-22 16:26:06,596 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport%2Ffootball+October+21+2026+results&limit=1 200
+2026-10-22 16:26:06,840 [INFO] response: https://search.yahoo.com/search;_ylt=9zBotdw_z3B04fCgLrK8K8qe;_ylu=u9oPQcLEzl_w823hp_1YQSSO0UeHXmLIax1i_7nCRm9wWIg?p=site%3Abbc.com%2Fsport%2Ffootball+October+21+2026+results&btf=d 200
+2026-10-22 16:26:07,721 [INFO] response: https://www.google.com/wml/search?q=site%3Abbc.com%2Fsport%2Ffootball+October+21+2026+results&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:08,155 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport%2Ffootball+October+21+2026+results 403
+2026-10-22 16:26:08,266 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport%2Ffootball+October+21+2026+results&source=web&tf=pd 429
+2026-10-22 16:26:08,439 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:08,498 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:08,500 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:08,500 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:08,652 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Awired.com%20October%2022%202026%20AI%20technology 200
+2026-10-22 16:26:08,740 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Awired.com+October+22+2026+AI+technology&limit=1 200
+2026-10-22 16:26:08,890 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:08,951 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:09,130 [INFO] response: https://search.yahoo.com/search;_ylt=CfX9JVQU3NeeNlpTdekTCbui;_ylu=l3KFyeOX_FhZagSQW7XcJOOgPgbmK9soJMPZuWEAUgDRW7A?p=site%3Awired.com+October+22+2026+AI+technology&btf=d 200
+2026-10-22 16:26:09,587 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:10,032 [INFO] response: https://www.mojeek.com/search?q=site%3Awired.com+October+22+2026+AI+technology 403
+2026-10-22 16:26:10,567 [INFO] response: https://www.google.com/wml/search?q=site%3Awired.com+October+22+2026+AI+technology&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:10,687 [INFO] response: https://search.brave.com/search?q=site%3Awired.com+October+22+2026+AI+technology&source=web&tf=pd 429
+2026-10-22 16:26:10,700 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:26:10,756 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Awired.com%20October%2022%202026%20AI%20technology 200
+2026-10-22 16:26:10,929 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Awired.com+October+22+2026+AI+technology&limit=1 200
+2026-10-22 16:26:11,323 [INFO] response: https://www.mojeek.com/search?q=site%3Awired.com+October+22+2026+AI+technology 403
+2026-10-22 16:26:11,524 [INFO] response: https://search.yahoo.com/search;_ylt=AjDd_loJbsbEP5i8Cm1DADmh;_ylu=ZBF7c1BFlr4mLOUl9PE03SU2TxT7yRnCasQWYnbMjTDwg24?p=site%3Awired.com+October+22+2026+AI+technology&btf=d 200
+2026-10-22 16:26:12,086 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:12,165 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:12,470 [INFO] response: https://www.google.com/wml/search?q=site%3Awired.com+October+22+2026+AI+technology&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:12,499 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:12,609 [INFO] response: https://search.brave.com/search?q=site%3Awired.com+October+22+2026+AI+technology&source=web&tf=pd 429
+2026-10-22 16:26:12,619 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-22 16:26:12,766 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Awired.com%20October%2022%202026%20AI%20technology 200
+2026-10-22 16:26:12,821 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Awired.com+October+22+2026+AI+technology&limit=1 200
+2026-10-22 16:26:13,191 [INFO] response: https://www.google.com/wml/search?q=site%3Awired.com+October+22+2026+AI+technology&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-22 16:26:13,361 [INFO] response: https://search.yahoo.com/search;_ylt=7Kh6jNlyIng_ET0drSLhClcG;_ylu=SpRMLzla47-0kDSwG-Wg7MuNYGbZGxW_5BAvVLvjuD10vHA?p=site%3Awired.com+October+22+2026+AI+technology&btf=w 200
+2026-10-22 16:26:13,953 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:14,046 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:14,559 [INFO] response: https://www.mojeek.com/search?q=site%3Awired.com+October+22+2026+AI+technology 403
+2026-10-22 16:26:14,587 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:14,697 [INFO] response: https://search.brave.com/search?q=site%3Awired.com+October+22+2026+AI+technology&source=web&tf=pw 429
+2026-10-22 16:26:14,708 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-22 16:26:14,709 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:14,709 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:14,829 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Akompas.com%20IHSG%2022%20Oktober%202026 200
+2026-10-22 16:26:14,958 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Akompas.com+IHSG+22+Oktober+2026&limit=1 200
+2026-10-22 16:26:15,416 [INFO] response: https://www.mojeek.com/search?q=site%3Akompas.com+IHSG+22+Oktober+2026 403
+2026-10-22 16:26:15,702 [INFO] response: https://www.google.com/wml/search?q=site%3Akompas.com+IHSG+22+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:15,908 [INFO] response: https://search.yahoo.com/search;_ylt=YlZFpn6sPoaPKofPhj4PBwYX;_ylu=6RZUoi2lmHvzyWfwyXzEJdS9X8RcJsZrJ8pFDGT_m26alCU?p=site%3Akompas.com+IHSG+22+Oktober+2026&btf=d 200
+2026-10-22 16:26:16,442 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:16,442 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:16,498 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Asport.detik.com%20Timnas%20Indonesia%202026 429
+2026-10-22 16:26:16,575 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Asport.detik.com+Timnas+Indonesia+2026&limit=1 200
+2026-10-22 16:26:16,841 [INFO] response: https://www.google.com/wml/search?q=site%3Asport.detik.com+Timnas+Indonesia+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:16,976 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:17,052 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:17,079 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:17,462 [INFO] response: https://www.mojeek.com/search?q=site%3Asport.detik.com+Timnas+Indonesia+2026 403
+2026-10-22 16:26:17,682 [INFO] response: https://search.yahoo.com/search;_ylt=p6rLPzNTSKO5_9pQf4IuSYEJ;_ylu=gXodTC5vnaV5NyLWi--41wGPxfbskwYyyvrMDa_PCmI829A?p=site%3Asport.detik.com+Timnas+Indonesia+2026&btf=d 200
+2026-10-22 16:26:18,215 [INFO] response: https://search.brave.com/search?q=site%3Asport.detik.com+Timnas+Indonesia+2026&source=web&tf=pd 429
+2026-10-22 16:26:18,225 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:26:18,370 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Asport.detik.com%20Timnas%20Indonesia%202026 200
+2026-10-22 16:26:18,393 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Asport.detik.com+Timnas+Indonesia+2026&limit=1 200
+2026-10-22 16:26:18,509 [INFO] response: https://search.brave.com/search?q=site%3Asport.detik.com+Timnas+Indonesia+2026&source=web&tf=pd 429
+2026-10-22 16:26:18,975 [INFO] response: https://www.google.com/wml/search?q=site%3Asport.detik.com+Timnas+Indonesia+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:19,075 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:19,285 [INFO] response: https://search.yahoo.com/search;_ylt=-Xs6dn_SdTyHDxGHKVHkmEVU;_ylu=x5UpYj4NL8Svslg0wrG0YN-TBc4xQf6E4k5RBrF_HJWDT1c?p=site%3Asport.detik.com+Timnas+Indonesia+2026&btf=d 200
+2026-10-22 16:26:19,783 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:19,990 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:20,455 [INFO] response: https://www.mojeek.com/search?q=site%3Asport.detik.com+Timnas+Indonesia+2026 403
+2026-10-22 16:26:20,457 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:20,457 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:20,580 [INFO] response: https://grokipedia.com/api/typeahead?query=October+21+2026+China+markets+geopolitics&limit=1 200
+2026-10-22 16:26:20,592 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2021%202026%20China%20markets%20geopolitics 200
+2026-10-22 16:26:20,795 [INFO] response: https://search.yahoo.com/search;_ylt=3UzEdZhuORlrRXBpqPYJGYQu;_ylu=nOcwK7eKAWBgipyDxlbnbl-3TMrqDyRySYIvn-JmiscjiDU?p=October+21+2026+China+markets+geopolitics&btf=d 200
+2026-10-22 16:26:21,520 [INFO] response: https://search.brave.com/search?q=October+21+2026+China+markets+geopolitics&source=web&tf=pd 429
+2026-10-22 16:26:21,692 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:21,783 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:21,890 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:22,281 [INFO] response: https://www.mojeek.com/search?q=October+21+2026+China+markets+geopolitics 403
+2026-10-22 16:26:22,824 [INFO] response: https://www.google.com/wml/search?q=October+21+2026+China+markets+geopolitics&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:22,825 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:26:22,879 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2021%202026%20China%20markets%20geopolitics 429
+2026-10-22 16:26:22,995 [INFO] response: https://grokipedia.com/api/typeahead?query=October+21+2026+China+markets+geopolitics&limit=1 200
+2026-10-22 16:26:23,117 [INFO] response: https://search.brave.com/search?q=October+21+2026+China+markets+geopolitics&source=web&tf=pd 429
+2026-10-22 16:26:23,159 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:23,323 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:23,408 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:23,589 [INFO] response: https://search.yahoo.com/search;_ylt=gqdFK12wJdTBJc4OQVr_amOG;_ylu=Oreljvkw9F9TwLCzdeofRPMMEE9i1Cp_z2AQ_jMTxHA7tCI?p=October+21+2026+China+markets+geopolitics&btf=d 200
+2026-10-22 16:26:24,044 [INFO] response: https://www.google.com/wml/search?q=October+21+2026+China+markets+geopolitics&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:24,453 [INFO] response: https://www.mojeek.com/search?q=October+21+2026+China+markets+geopolitics 403
+2026-10-22 16:26:24,454 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-22 16:26:24,602 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2021%202026%20China%20markets%20geopolitics 200
+2026-10-22 16:26:24,604 [INFO] response: https://grokipedia.com/api/typeahead?query=October+21+2026+China+markets+geopolitics&limit=1 200
+2026-10-22 16:26:24,727 [INFO] response: https://search.brave.com/search?q=October+21+2026+China+markets+geopolitics&source=web&tf=pw 429
+2026-10-22 16:26:25,099 [INFO] response: https://www.google.com/wml/search?q=October+21+2026+China+markets+geopolitics&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-22 16:26:25,130 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:25,333 [INFO] response: https://search.yahoo.com/search;_ylt=E8eY9YbHqbOuY54W4EacdVCo;_ylu=u8UPfjLxqpiBxWSD7jqZx-bmWSDfp_a93_QBc_BfwKPtHEc?p=October+21+2026+China+markets+geopolitics&btf=w 200
+2026-10-22 16:26:25,969 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:25,969 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:26,024 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20October%2021%202026%20China%20markets 429
+2026-10-22 16:26:26,142 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+October+21+2026+China+markets&limit=1 200
+2026-10-22 16:26:26,261 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+October+21+2026+China+markets&source=web&tf=pd 429
+2026-10-22 16:26:26,808 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+October+21+2026+China+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:26,845 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:27,242 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+October+21+2026+China+markets 403
+2026-10-22 16:26:27,450 [INFO] response: https://search.yahoo.com/search;_ylt=h4nF6b5pGzkZ3trrga2z544w;_ylu=4D5j513X_y52x78YVUVx53Ml2Ck0_rcdjfAtotRGiBNhLhE?p=site%3Aaljazeera.com+October+21+2026+China+markets&btf=d 200
+2026-10-22 16:26:27,931 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:28,007 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:28,008 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:26:28,063 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20October%2021%202026%20China%20markets 429
+2026-10-22 16:26:28,137 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+October+21+2026+China+markets&limit=1 200
+2026-10-22 16:26:28,384 [INFO] response: https://search.yahoo.com/search;_ylt=BEZHRyhkH32heGrvn7yqBiCe;_ylu=3eoWq-uBWfyF6BSTNY_Y666n6wPpJVVJ5vneIFJYtjpskDM?p=site%3Aaljazeera.com+October+21+2026+China+markets&btf=d 200
+2026-10-22 16:26:29,049 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+October+21+2026+China+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:29,435 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+October+21+2026+China+markets 403
+2026-10-22 16:26:29,585 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+October+21+2026+China+markets&source=web&tf=pd 429
+2026-10-22 16:26:29,737 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:29,843 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:29,873 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:29,873 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-22 16:26:30,010 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aaljazeera.com%20October%2021%202026%20China%20markets 200
+2026-10-22 16:26:30,116 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aaljazeera.com+October+21+2026+China+markets&limit=1 200
+2026-10-22 16:26:30,281 [INFO] response: https://search.yahoo.com/search;_ylt=kRkZ-qNiZ2qgBf0b0ed72M3c;_ylu=agsNbcBJY16k1sUJEgvh1DYOl5GxccmzJAkWkmjcMzzJkmI?p=site%3Aaljazeera.com+October+21+2026+China+markets&btf=w 200
+2026-10-22 16:26:30,693 [INFO] response: https://www.mojeek.com/search?q=site%3Aaljazeera.com+October+21+2026+China+markets 403
+2026-10-22 16:26:30,850 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:30,914 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:31,257 [INFO] response: https://www.google.com/wml/search?q=site%3Aaljazeera.com+October+21+2026+China+markets&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-22 16:26:31,298 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:31,410 [INFO] response: https://search.brave.com/search?q=site%3Aaljazeera.com+October+21+2026+China+markets&source=web&tf=pw 429
+2026-10-22 16:26:31,420 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-22 16:26:31,420 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:31,420 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:31,577 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com%20October%2021%202026%20football%20results 200
+2026-10-22 16:26:31,623 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com+October+21+2026+football+results&limit=1 200
+2026-10-22 16:26:31,795 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:31,883 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:32,006 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com+October+21+2026+football+results&source=web&tf=pd 429
+2026-10-22 16:26:32,049 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:32,266 [INFO] response: https://search.yahoo.com/search;_ylt=bcU6ER4NXyA3xmTrSlHieGmK;_ylu=_TzP9FgNeRex0BAOcGPNEb2OckzC4HNz4Nnd-A0ENqyqB0A?p=site%3Aespn.com+October+21+2026+football+results&btf=d 200
+2026-10-22 16:26:33,254 [INFO] response: https://www.mojeek.com/search?q=site%3Aespn.com+October+21+2026+football+results 403
+2026-10-22 16:26:33,565 [INFO] response: https://www.google.com/wml/search?q=site%3Aespn.com+October+21+2026+football+results&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:33,565 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:26:33,620 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com%20October%2021%202026%20football%20results 200
+2026-10-22 16:26:33,777 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com+October+21+2026+football+results&limit=1 200
+2026-10-22 16:26:33,908 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:34,193 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=d642795129e4eb203e26712e672d89a2&bds_t=1792686393T55944d4c52419610f2823102b0a24288b3cb1b0e3713da1cb52c1665aa7a014e&bds_s=ff8fbf50300542309182d7e2c91da650&language=english&qsr=en_US&qadf=moderate&t=device&sc=&abe=0&with_date=d&abd=0&abp=1&lui=english&segment=organic&query=site%3Aespn.com+October+21+2026+football+results&cat=web&cmd=gen_page 200
+2026-10-22 16:26:34,342 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com+October+21+2026+football+results&source=web&tf=pd 429
+2026-10-22 16:26:34,386 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:34,802 [INFO] response: https://www.mojeek.com/search?q=site%3Aespn.com+October+21+2026+football+results 403
+2026-10-22 16:26:35,216 [INFO] response: https://www.google.com/wml/search?q=site%3Aespn.com+October+21+2026+football+results&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:35,464 [INFO] response: https://search.yahoo.com/search;_ylt=QZwezabUjMnaD0YlFSsJwqQ_;_ylu=gRFpx63-UwXl2u-5MkCxqJfelygSV2NhlvRzDDYuWxo7Gdo?p=site%3Aespn.com+October+21+2026+football+results&btf=d 200
+2026-10-22 16:26:35,871 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:35,871 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:36,006 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechcrunch.com+October+22+2026+AI&limit=1 200
+2026-10-22 16:26:36,024 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechcrunch.com%20October%2022%202026%20AI 200
+2026-10-22 16:26:36,442 [INFO] response: https://www.google.com/wml/search?q=site%3Atechcrunch.com+October+22+2026+AI&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:36,553 [INFO] response: https://search.brave.com/search?q=site%3Atechcrunch.com+October+22+2026+AI&source=web&tf=pd 429
+2026-10-22 16:26:36,800 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:36,861 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:36,893 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:37,073 [INFO] response: https://search.yahoo.com/search;_ylt=EQNFgPyiEqL2DOPWT1KWwghE;_ylu=2iaTkZ4I9M_emtpXK71XOvcHQdTidnXuCZSSA7UJMxozkeg?p=site%3Atechcrunch.com+October+22+2026+AI&btf=d 200
+2026-10-22 16:26:37,555 [INFO] response: https://www.mojeek.com/search?q=site%3Atechcrunch.com+October+22+2026+AI 403
+2026-10-22 16:26:37,556 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:26:37,611 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechcrunch.com%20October%2022%202026%20AI 429
+2026-10-22 16:26:37,682 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechcrunch.com+October+22+2026+AI&limit=1 200
+2026-10-22 16:26:37,889 [INFO] response: https://search.yahoo.com/search;_ylt=jCvw58BtsFU-0AAYKaUzt_rU;_ylu=fE4v7vQqcwQF3vQArx4P9EqODuUU0VUw7-B46ntamsQ3S0c?p=site%3Atechcrunch.com+October+22+2026+AI&btf=d 200
+2026-10-22 16:26:38,317 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:38,317 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:38,457 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnnindonesia.com%20IHSG%2022%20Oktober%202026 200
+2026-10-22 16:26:38,563 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnnindonesia.com+IHSG+22+Oktober+2026&limit=1 200
+2026-10-22 16:26:39,018 [INFO] response: https://www.google.com/wml/search?q=site%3Acnnindonesia.com+IHSG+22+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:39,046 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:39,192 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:39,312 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:39,792 [INFO] response: https://www.mojeek.com/search?q=site%3Acnnindonesia.com+IHSG+22+Oktober+2026 403
+2026-10-22 16:26:39,992 [INFO] response: https://search.yahoo.com/search;_ylt=veebXFlJlNjAMVFazN3ia90w;_ylu=fPIWiZijoZUgaJsfFqdjRCOWMKlbALDK3fnMVZjSV7xuGWk?p=site%3Acnnindonesia.com+IHSG+22+Oktober+2026&btf=d 200
+2026-10-22 16:26:40,477 [INFO] response: https://search.brave.com/search?q=site%3Acnnindonesia.com+IHSG+22+Oktober+2026&source=web&tf=pd 429
+2026-10-22 16:26:40,495 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-22 16:26:40,549 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnnindonesia.com%20IHSG%2022%20Oktober%202026 200
+2026-10-22 16:26:40,625 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnnindonesia.com+IHSG+22+Oktober+2026&limit=1 200
+2026-10-22 16:26:40,657 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:40,893 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:40,970 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:41,449 [INFO] response: https://www.google.com/wml/search?q=site%3Acnnindonesia.com+IHSG+22+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:41,724 [INFO] response: https://search.yahoo.com/search;_ylt=X4PulaFQ-7PJzJWAjkmrwwNh;_ylu=KL3rWOCxPWojAt19DJMB95RQiZo2nhPXnOLT1s5e7uy2hgw?p=site%3Acnnindonesia.com+IHSG+22+Oktober+2026&btf=d 200
+2026-10-22 16:26:42,161 [INFO] response: https://search.brave.com/search?q=site%3Acnnindonesia.com+IHSG+22+Oktober+2026&source=web&tf=pd 429
+2026-10-22 16:26:42,570 [INFO] response: https://www.mojeek.com/search?q=site%3Acnnindonesia.com+IHSG+22+Oktober+2026 403
+2026-10-22 16:26:42,571 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-22 16:26:42,626 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnnindonesia.com%20IHSG%2022%20Oktober%202026 429
+2026-10-22 16:26:42,752 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnnindonesia.com+IHSG+22+Oktober+2026&limit=1 200
+2026-10-22 16:26:43,144 [INFO] response: https://www.mojeek.com/search?q=site%3Acnnindonesia.com+IHSG+22+Oktober+2026 403
+2026-10-22 16:26:43,439 [INFO] response: https://search.yahoo.com/search;_ylt=FAI5Nwo62MUT-7PQbEM3IucM;_ylu=u06gWKz7-zP9SJltbeg_N7cbUwvvCKgTCBTisnACCxMxfg0?p=site%3Acnnindonesia.com+IHSG+22+Oktober+2026&btf=w 200
+2026-10-22 16:26:43,913 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:44,030 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:44,060 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:44,750 [INFO] response: https://search.brave.com/search?q=site%3Acnnindonesia.com+IHSG+22+Oktober+2026&source=web&tf=pw 429
+2026-10-22 16:26:45,031 [INFO] response: https://www.google.com/wml/search?q=site%3Acnnindonesia.com+IHSG+22+Oktober+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Aw 403
+2026-10-22 16:26:45,031 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-22 16:26:45,032 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:45,032 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:45,194 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abola.kompas.com%20Timnas%20Indonesia%202026 200
+2026-10-22 16:26:45,289 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abola.kompas.com+Timnas+Indonesia+2026&limit=1 200
+2026-10-22 16:26:45,427 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:45,488 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:45,683 [INFO] response: https://search.yahoo.com/search;_ylt=xJcDSEH7bRfJf9OllBQV4YUu;_ylu=XXIganUt30nD2OaJjeJ6FAlv2iItQ2jl0yCYflMfZpHABfw?p=site%3Abola.kompas.com+Timnas+Indonesia+2026&btf=d 200
+2026-10-22 16:26:46,603 [INFO] response: https://www.google.com/wml/search?q=site%3Abola.kompas.com+Timnas+Indonesia+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:47,052 [INFO] response: https://www.mojeek.com/search?q=site%3Abola.kompas.com+Timnas+Indonesia+2026 403
+2026-10-22 16:26:47,159 [INFO] response: https://search.brave.com/search?q=site%3Abola.kompas.com+Timnas+Indonesia+2026&source=web&tf=pd 429
+2026-10-22 16:26:47,170 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:47,170 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:47,287 [INFO] response: https://grokipedia.com/api/typeahead?query=October+21+2026+geopolitics+markets+China&limit=1 200
+2026-10-22 16:26:47,311 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=October%2021%202026%20geopolitics%20markets%20China 200
+2026-10-22 16:26:47,529 [INFO] response: https://search.yahoo.com/search;_ylt=Vu1Kqh7tRa7ZqNGrLHILhRfv;_ylu=0ly2Wv0ZomVQHBBkxxphupGBwFuTc51dWN9gXtQY_b5KJvY?p=October+21+2026+geopolitics+markets+China&btf=d 200
+2026-10-22 16:26:48,008 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:48,008 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:48,145 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20October%2021%202026%20results 200
+2026-10-22 16:26:48,178 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+October+21+2026+results&limit=1 200
+2026-10-22 16:26:48,629 [INFO] response: https://www.google.com/wml/search?q=Premier+League+October+21+2026+results&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:49,087 [INFO] response: https://www.mojeek.com/search?q=Premier+League+October+21+2026+results 403
+2026-10-22 16:26:49,227 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:49,318 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:49,441 [INFO] response: https://search.brave.com/search?q=Premier+League+October+21+2026+results&source=web&tf=pd 429
+2026-10-22 16:26:49,483 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:49,683 [INFO] response: https://search.yahoo.com/search;_ylt=Gsymxd1M8TPXW_C9BaB30DmG;_ylu=cSdjBD1KXnDIMj83nxt7a2AZiPud1-1AJo0tXKGyqV08uWU?p=Premier+League+October+21+2026+results&btf=d 200
+2026-10-22 16:26:50,538 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:50,538 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:50,591 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20breakthrough%20October%2022%202026 429
+2026-10-22 16:26:50,772 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+breakthrough+October+22+2026&limit=1 200
+2026-10-22 16:26:51,224 [INFO] response: https://www.mojeek.com/search?q=AI+breakthrough+October+22+2026 403
+2026-10-22 16:26:51,652 [INFO] response: https://www.google.com/wml/search?q=AI+breakthrough+October+22+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:51,684 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:51,894 [INFO] response: https://search.yahoo.com/search;_ylt=1WxaakghIvQnBEi8DS5CDWy2;_ylu=cCHFK8CJlSDdQbEYZq2OWN8JVbrAchjOiSoo4xTNH0vWlgw?p=AI+breakthrough+October+22+2026&btf=d 200
+2026-10-22 16:26:52,434 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:52,434 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:52,555 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+22+Oktober+2026+level&limit=1 200
+2026-10-22 16:26:52,564 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%2022%20Oktober%202026%20level 200
+2026-10-22 16:26:52,685 [INFO] response: https://search.brave.com/search?q=IHSG+22+Oktober+2026+level&source=web&tf=pd 429
+2026-10-22 16:26:53,029 [INFO] response: https://www.google.com/wml/search?q=IHSG+22+Oktober+2026+level&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:53,167 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:53,242 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:53,452 [INFO] response: https://search.yahoo.com/search;_ylt=6PzQWxS-I-_hg5MmFEi4LBXN;_ylu=756E7i-WKeUnkIblNZTTZULKRce9pDkcglDBRQWWA5Uv8s0?p=IHSG+22+Oktober+2026+level&btf=d 200
+2026-10-22 16:26:53,859 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:53,859 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:53,993 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20sepak%20bola%202026 200
+2026-10-22 16:26:53,998 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+sepak+bola+2026&limit=1 200
+2026-10-22 16:26:54,122 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+sepak+bola+2026&source=web&tf=pd 429
+2026-10-22 16:26:54,533 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+sepak+bola+2026 403
+2026-10-22 16:26:54,561 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:54,763 [INFO] response: https://search.yahoo.com/search;_ylt=z7jlcUzWtyRGb-N8l7tISvWO;_ylu=N_Uh65KtOEjzxHJk-g8a_-9PBsFYgHkYE_OlmSB6sDoeNAA?p=Timnas+Indonesia+sepak+bola+2026&btf=d 200
+2026-10-22 16:26:55,431 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, google, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-22 16:26:55,431 [WARNING] backend is not set. Using 'auto'
+2026-10-22 16:26:55,486 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=China%20stock%20market%20geopolitics%20October%2021%202026 429
+2026-10-22 16:26:55,635 [INFO] response: https://grokipedia.com/api/typeahead?query=China+stock+market+geopolitics+October+21+2026&limit=1 200
+2026-10-22 16:26:55,746 [INFO] response: https://search.brave.com/search?q=China+stock+market+geopolitics+October+21+2026&source=web&tf=pd 429
+2026-10-22 16:26:55,794 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-22 16:26:56,179 [INFO] response: https://www.mojeek.com/search?q=China+stock+market+geopolitics+October+21+2026 403
+2026-10-22 16:26:56,542 [INFO] response: https://www.google.com/wml/search?q=China+stock+market+geopolitics+October+21+2026&sca_esv=1&filter=1&start=0&hl=en-US&lr=lang_en&cr=countryUS&tbs=qdr%3Ad 403
+2026-10-22 16:26:56,724 [INFO] response: https://www.startpage.com/ 200
+2026-10-22 16:26:56,790 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-22 16:26:57,028 [INFO] response: https://search.yahoo.com/search;_ylt=IEtLxBXd74D1tDb2gmusTvBF;_ylu=u5mO5ECv-pDgJz7445hDydc-6NJeZoiWwiHUTbhW14Vs4KY?p=China+stock+market+geopolitics+October+21+2026&btf=d 200
+2026-10-22 16:26:57,510 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:26:57,510 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:26:57,511 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-10-22 16:26:57,511 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-10-22 16:26:58,979 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:27:04,975 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-10-22 16:27:04,979 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:27:04,979 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:27:04,979 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-10-22 16:27:04,979 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-10-22 16:27:06,326 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:27:13,808 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-10-22 16:27:14,250 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:27:14,251 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:27:14,251 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-10-22 16:27:14,251 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-10-22 16:27:38,662 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:28:38,431 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-10-22 16:28:45,976 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:28:45,976 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:28:45,976 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-10-22 16:28:45,977 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-10-22 16:28:50,268 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:29:39,505 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-10-22 16:29:39,520 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:29:39,520 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:29:39,520 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-10-22 16:29:39,520 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-10-22 16:29:40,390 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:30:55,460 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-10-22 16:30:55,500 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:30:55,500 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:30:55,500 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-10-22 16:30:55,500 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-10-22 16:30:56,653 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:31:01,399 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-10-22 16:31:01,402 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:31:01,402 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:31:01,402 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-10-22 16:31:01,402 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-10-22 16:31:02,073 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:31:20,338 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-10-22 16:31:20,374 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:31:20,374 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:31:20,374 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-10-22 16:31:20,374 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-10-22 16:31:20,845 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:31:38,418 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-10-22 16:31:38,461 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:31:38,461 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:31:38,461 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-10-22 16:31:38,461 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-10-22 16:31:38,992 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:31:56,566 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-10-22 16:31:56,606 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:31:56,606 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:31:56,606 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-10-22 16:31:56,606 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-10-22 16:32:01,739 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:32:22,432 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-10-22 16:32:22,471 [WARNING] Semua model di Gemini sudah dicoba dan gagal.
+2026-10-22 16:32:22,471 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-22 16:32:22,471 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-10-22 16:32:22,471 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-10-22 16:32:25,343 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-22 16:40:00,488 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-10-22 16:40:00,494 [INFO] Validasi: 3x fetch_webpage sukses (minimum 3).
+2026-10-22 16:40:00,494 [INFO] URL yang berhasil di-fetch: {'https://www.cnbc.com/2026/10/22/macron-trump-france-protests.html', 'https://www.detik.com/sulsel/sepakbola/d-8719339/daftar-14-pemain-timnas-indonesia-u-15-di-fifa-world-cup-and-festival-2026', 'https://www.espn.com/soccer/scoreboard/_/league/eng.1/premier-league', 'https://www.bola.com/tag/timnas-indonesia', 'https://www.bbc.com/sport/football/live/cwm2m2v4d5pvt?page=3', 'https://medan.tribunnews.com/bisnis/1816260/kurs-rupiah-melemah-lagi-kamis-22-oktober-2026-tembus-rp18038-per-dollar-as-ihsg-juga-anjlok', 'https://money.kompas.com/read/2026/10/22/105115926/mulai-2-november-80-saham-hsc-tak-lagi-masuk-hitungan-ihsg', 'https://www.bbc.com/sport/football/scores-fixtures/2026-10-23', 'https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/', 'https://money.kompas.com/read/2026/10/22/123824826/ihsg-ditutup-naik-170-persen-pada-sesi-i-ditopang-saham-perbankan-bumn'}
+2026-10-22 16:40:00,494 [WARNING] Laporan tidak valid: Tidak ada judul '## 📊 LAPORAN MENDALAM'
+2026-10-22 16:40:00,494 [ERROR] ❌ Laporan hari ini gagal divalidasi (Tidak ada judul '## 📊 LAPORAN MENDALAM'). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-10-22 16:40:00,494 [INFO] Mengirim laporan ke Telegram...
+2026-10-22 16:40:01,085 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
