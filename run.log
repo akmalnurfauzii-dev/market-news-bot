@@ -64509,3 +64509,304 @@ Pembedahan mikroskopis mengungkap bagaimana Apple berupaya menyamarkan lipatan (
 2026-10-26 02:16:02,969 [INFO] ✅ Bagian 2/2 terkirim (Markdown)!
 2026-10-26 02:16:03,971 [INFO] History disimpan (5 entri).
 2026-10-26 02:16:03,971 [INFO] Selesai — laporan terkirim dan history disimpan.
+2026-10-26 17:51:29,901 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-10-26 17:51:29,901 [INFO] =======================================================
+2026-10-26 17:51:29,901 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-10-26 17:51:29,901 [INFO] =======================================================
+2026-10-26 17:51:29,901 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-10-26 17:51:30,407 [INFO] Provider siap: Gemini dengan 4 model
+2026-10-26 17:51:30,443 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-10-26 17:51:30,462 [INFO] Provider siap: Z.AI dengan 1 model
+2026-10-26 17:51:30,480 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-10-26 17:51:30,498 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-10-26 17:51:30,513 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-10-26 17:51:30,533 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 17:51:42,193 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:51:42,199 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 17:51:42,242 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 17:51:42,242 [WARNING] backend is not set. Using 'auto'
+2026-10-26 17:51:42,452 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20global%20economy%20markets%20geopolitics%20October%202026 200
+2026-10-26 17:51:42,585 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+global+economy+markets+geopolitics+October+2026&limit=1 200
+2026-10-26 17:51:43,019 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+global+economy+markets+geopolitics+October+2026 403
+2026-10-26 17:51:43,243 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 17:51:43,439 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=685ef99d926270fc3e05dc70d5015806&bds_t=1793037103Tf54241770f0c5bc0e3e34fdfecf468bf3dde108d4c72987997313453be0a7f99&bds_s=7117b1d99e0548cc8ac5971ceb433b50&abe=0&sc=&qadf=moderate&with_date=d&segment=organic&t=device&lui=english&abp=1&qsr=en_US&abd=0&language=english&query=site%3Acnbc.com+global+economy+markets+geopolitics+October+2026&cat=web&cmd=gen_page 200
+2026-10-26 17:51:43,587 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+global+economy+markets+geopolitics+October+2026&source=web&tf=pd 429
+2026-10-26 17:51:43,814 [INFO] response: https://search.yahoo.com/search;_ylt=EsnnDOl5EQGoSZlRPcWCs_qi;_ylu=a2YLVRd7Gt7uf75wskplC91cOqLjbhnXmXU__coVuJz2TwA?p=site%3Acnbc.com+global+economy+markets+geopolitics+October+2026&btf=d 200
+2026-10-26 17:51:44,759 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-10-26 17:51:44,762 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 17:51:51,673 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:51:51,674 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 17:51:51,676 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 17:51:51,676 [WARNING] backend is not set. Using 'auto'
+2026-10-26 17:51:51,729 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20stock%20market%20crypto%20October%202026 429
+2026-10-26 17:51:51,835 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+stock+market+crypto+October+2026&limit=1 200
+2026-10-26 17:51:52,234 [INFO] response: https://www.mojeek.com/search?q=geopolitics+stock+market+crypto+October+2026 403
+2026-10-26 17:51:52,352 [INFO] response: https://search.brave.com/search?q=geopolitics+stock+market+crypto+October+2026&source=web&tf=pd 429
+2026-10-26 17:51:52,580 [INFO] response: https://search.yahoo.com/search;_ylt=PLZT_pdAIUd0l12gP_POOSpe;_ylu=1EfG4EpL_KBiFKTF_HCzhlhlySm7nZ0xQxBE8NIrHW8THxI?p=geopolitics+stock+market+crypto+October+2026&btf=d 200
+2026-10-26 17:51:53,075 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 17:51:54,812 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:51:54,814 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 17:51:54,815 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 17:51:54,816 [WARNING] backend is not set. Using 'auto'
+2026-10-26 17:51:54,958 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+world+news+markets+stocks+crypto&limit=1 200
+2026-10-26 17:51:54,969 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20world%20news%20markets%20stocks%20crypto 200
+2026-10-26 17:51:55,372 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+world+news+markets+stocks+crypto 403
+2026-10-26 17:51:55,566 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 17:51:55,659 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 17:51:55,830 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+world+news+markets+stocks+crypto&source=web&tf=pd 429
+2026-10-26 17:51:56,330 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-10-26 17:51:56,333 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 17:51:57,737 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:51:57,738 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 17:51:57,740 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 17:51:57,740 [WARNING] backend is not set. Using 'auto'
+2026-10-26 17:51:57,884 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Middle%20East%20oil%20market%20stocks%20crypto%20October%202026 200
+2026-10-26 17:51:57,966 [INFO] response: https://grokipedia.com/api/typeahead?query=Middle+East+oil+market+stocks+crypto+October+2026&limit=1 200
+2026-10-26 17:51:57,994 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 17:51:58,494 [INFO] response: https://www.mojeek.com/search?q=Middle+East+oil+market+stocks+crypto+October+2026 403
+2026-10-26 17:51:58,736 [INFO] response: https://search.yahoo.com/search;_ylt=y_2x-aSDkaOYknPYkG2_4vbg;_ylu=UShM1RJ6WQDFE_LBXiRoxKTXGzPV2A3JLnfczWX4MSz0XXk?p=Middle+East+oil+market+stocks+crypto+October+2026&btf=d 200
+2026-10-26 17:51:59,265 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 17:52:00,838 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:52:00,839 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 17:52:00,841 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 17:52:00,841 [WARNING] backend is not set. Using 'auto'
+2026-10-26 17:52:00,895 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets 429
+2026-10-26 17:52:01,021 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets&limit=1 200
+2026-10-26 17:52:01,051 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 17:52:01,468 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets 403
+2026-10-26 17:52:01,583 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets&source=web&tf=pd 429
+2026-10-26 17:52:01,821 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 17:52:01,882 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 17:52:02,124 [INFO] response: https://search.yahoo.com/search;_ylt=n0c3GWLOYwXxZ5WtiZgyYsjK;_ylu=QIHVGFRT_Ay-OpdJDopZC_Os91aeICeUxT5n1Mjs4hBM0To?p=site%3Acnbc.com+markets&btf=d 200
+2026-10-26 17:52:02,534 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 17:52:04,767 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:52:04,769 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 17:52:05,065 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 17:52:05,164 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-26 17:52:05,165 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-10-26 17:52:05,165 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-26 17:52:05,165 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-26 17:52:05,364 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-10-26 17:52:05,364 [WARNING] ⚠️ NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b gagal: Error code: 404
+2026-10-26 17:52:05,365 [WARNING] Model nvidia/nemotron-3-super-120b-a12b ditandai mati (retired/404/410).
+2026-10-26 17:52:05,365 [INFO] Mencoba provider NVIDIA NIM dengan model meta/llama-4-maverick-17b-128e-instruct...
+2026-10-26 17:52:05,553 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-10-26 17:52:05,554 [WARNING] ⚠️ NVIDIA NIM / meta/llama-4-maverick-17b-128e-instruct gagal: Error code: 410
+2026-10-26 17:52:05,554 [WARNING] Model meta/llama-4-maverick-17b-128e-instruct ditandai mati (retired/404/410).
+2026-10-26 17:52:05,554 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-10-26 17:52:05,554 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-26 17:52:06,556 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-26 17:52:06,557 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Error code: 429 - Insufficient balance or no resource package. Please recharge.
+2026-10-26 17:52:06,557 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-26 17:52:06,557 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-10-26 17:52:07,012 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:52:09,504 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-10-26 17:52:10,618 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 17:52:12,127 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-26 17:52:12,128 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503
+2026-10-26 17:52:12,128 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-26 17:52:12,771 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-26 17:52:12,772 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 503
+2026-10-26 17:52:12,773 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-26 17:52:14,343 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-26 17:52:14,343 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 503
+2026-10-26 17:52:14,344 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-26 17:52:28,545 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:52:28,546 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-26 17:52:28,548 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 17:52:28,548 [WARNING] backend is not set. Using 'auto'
+2026-10-26 17:52:28,598 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com%20football%20match%20result%20October%202026 429
+2026-10-26 17:52:28,719 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com+football+match+result+October+2026&limit=1 200
+2026-10-26 17:52:28,884 [INFO] response: https://search.yahoo.com/search;_ylt=No36Un0O1KYmBZ-BONSB0yNK;_ylu=W6X5evt8TvZ0bvWu7KC-PgJT-MGIlYfPEB7YKfIMCnXnFEw?p=site%3Aespn.com+football+match+result+October+2026&btf=d 200
+2026-10-26 17:52:29,543 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 17:52:29,636 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 17:52:29,670 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 17:52:30,318 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com+football+match+result+October+2026&source=web&tf=pd 429
+2026-10-26 17:52:30,737 [INFO] response: https://www.mojeek.com/search?q=site%3Aespn.com+football+match+result+October+2026 403
+2026-10-26 17:52:30,738 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-26 17:52:30,876 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Aespn.com%20football%20match%20result%20October%202026 200
+2026-10-26 17:52:30,899 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Aespn.com+football+match+result+October+2026&limit=1 200
+2026-10-26 17:52:31,003 [INFO] response: https://search.brave.com/search?q=site%3Aespn.com+football+match+result+October+2026&source=web&tf=pd 429
+2026-10-26 17:52:31,174 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 17:52:31,237 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 17:52:31,458 [INFO] response: https://search.yahoo.com/search;_ylt=FEQVJn4a8HvjHERCKQegdYrl;_ylu=bI1ajkMaiPBvHz0W4dkJKTByH-pvzThVghiKTbResA1qT5U?p=site%3Aespn.com+football+match+result+October+2026&btf=d 200
+2026-10-26 17:52:31,839 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-26 17:52:42,757 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:52:42,758 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-26 17:52:42,858 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-26 17:52:54,806 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:52:54,807 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-26 17:52:54,809 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 17:52:54,809 [WARNING] backend is not set. Using 'auto'
+2026-10-26 17:52:54,860 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20football%20match%20result%20October%202026 429
+2026-10-26 17:52:54,971 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+football+match+result+October+2026&limit=1 200
+2026-10-26 17:52:55,143 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+football+match+result+October+2026&source=web&tf=pd 429
+2026-10-26 17:52:55,216 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 17:52:55,609 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+football+match+result+October+2026 403
+2026-10-26 17:52:55,789 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 17:52:55,889 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 17:52:56,156 [INFO] response: https://search.yahoo.com/search;_ylt=AsEID9ErXOjD7K88obPSqNxR;_ylu=gWis3gHDNg9eE5oDAkacgyhngutj9j9vGCXcNUpPiBjm_U0?p=site%3Abbc.com%2Fsport+football+match+result+October+2026&btf=d 200
+2026-10-26 17:52:56,562 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-26 17:52:56,616 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20football%20match%20result%20October%202026 429
+2026-10-26 17:52:56,730 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+football+match+result+October+2026&limit=1 200
+2026-10-26 17:52:56,909 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 17:52:56,984 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 17:52:57,038 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 17:52:57,436 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+football+match+result+October+2026 403
+2026-10-26 17:52:57,538 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+football+match+result+October+2026&source=web&tf=pd 429
+2026-10-26 17:52:57,740 [INFO] response: https://search.yahoo.com/search;_ylt=95sWnIYNbgQ4lH5h4wq76rSJ;_ylu=5FAfX2kag0KDJP4JQbpfjOEPwu5_uieyugrTceVIu5W2rRs?p=site%3Abbc.com%2Fsport+football+match+result+October+2026&btf=d 200
+2026-10-26 17:52:58,132 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-26 17:53:07,539 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:53:07,540 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-26 17:53:07,763 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-26 17:53:16,868 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:53:16,869 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-26 17:53:16,871 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 17:53:16,871 [WARNING] backend is not set. Using 'auto'
+2026-10-26 17:53:17,024 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atheverge.com%20artificial%20intelligence%20tech%20October%202026 200
+2026-10-26 17:53:17,072 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atheverge.com+artificial+intelligence+tech+October+2026&limit=1 200
+2026-10-26 17:53:17,461 [INFO] response: https://www.mojeek.com/search?q=site%3Atheverge.com+artificial+intelligence+tech+October+2026 403
+2026-10-26 17:53:17,645 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 17:53:17,714 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 17:53:17,741 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 17:53:18,041 [INFO] response: https://search.yahoo.com/search;_ylt=z5rBtlhOMqgJjQwCgmBCdq-7;_ylu=EXgXsZcnqm0q1ANmF_PECs6GLtFDbQ1XpfCXWJMEXigzssU?p=site%3Atheverge.com+artificial+intelligence+tech+October+2026&btf=d 200
+2026-10-26 17:53:18,665 [INFO] response: https://search.brave.com/search?q=site%3Atheverge.com+artificial+intelligence+tech+October+2026&source=web&tf=pd 429
+2026-10-26 17:53:18,684 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-26 17:53:28,632 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:53:28,633 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-26 17:53:28,834 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-26 17:53:40,136 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:53:40,137 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-26 17:53:40,139 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 17:53:40,139 [WARNING] backend is not set. Using 'auto'
+2026-10-26 17:53:40,290 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20IHSG%20kurs%20rupiah%20Oktober%202026 200
+2026-10-26 17:53:40,296 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+IHSG+kurs+rupiah+Oktober+2026&limit=1 200
+2026-10-26 17:53:40,814 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+IHSG+kurs+rupiah+Oktober+2026 403
+2026-10-26 17:53:41,001 [INFO] response: https://search.yahoo.com/search;_ylt=8t9KT7xj-CHrVSQwmZCts2Zy;_ylu=xMWF5PzxkDjd9ziV2HMiCCghwCmy3GwydlN5axXS7jr3FVY?p=site%3Acnbcindonesia.com+IHSG+kurs+rupiah+Oktober+2026&btf=d 200
+2026-10-26 17:53:41,515 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+IHSG+kurs+rupiah+Oktober+2026&source=web&tf=pd 429
+2026-10-26 17:53:41,594 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 17:53:41,774 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 17:53:41,887 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 17:53:41,889 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-26 17:53:42,049 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20IHSG%20kurs%20rupiah%20Oktober%202026 200
+2026-10-26 17:53:42,060 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+IHSG+kurs+rupiah+Oktober+2026&limit=1 200
+2026-10-26 17:53:42,119 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 17:53:42,493 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+IHSG+kurs+rupiah+Oktober+2026 403
+2026-10-26 17:53:42,721 [INFO] response: https://search.yahoo.com/search;_ylt=_1woGXQ7HYrG8V4hRwaA__j7;_ylu=bKBQj2LGXve86tD3qDa5m5Tp8XTlT02KTrmqQJWfWnfWVpI?p=site%3Acnbcindonesia.com+IHSG+kurs+rupiah+Oktober+2026&btf=d 200
+2026-10-26 17:53:43,119 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+IHSG+kurs+rupiah+Oktober+2026&source=web&tf=pd 429
+2026-10-26 17:53:43,271 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 17:53:43,344 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 17:53:43,345 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-26 17:53:43,395 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20IHSG%20kurs%20rupiah%20Oktober%202026 200
+2026-10-26 17:53:43,493 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+IHSG+kurs+rupiah+Oktober+2026&limit=1 200
+2026-10-26 17:53:43,655 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 17:53:43,745 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 17:53:43,787 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 17:53:43,902 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+IHSG+kurs+rupiah+Oktober+2026&source=web&tf=pw 429
+2026-10-26 17:53:44,312 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+IHSG+kurs+rupiah+Oktober+2026 403
+2026-10-26 17:53:44,512 [INFO] response: https://search.yahoo.com/search;_ylt=9IRK1mYTSA2PA-3dZGlDmX2l;_ylu=ty1f4m58dDNEsOSVRas8nwU80gwrjbJVBukMJQMSDmpSb40?p=site%3Acnbcindonesia.com+IHSG+kurs+rupiah+Oktober+2026&btf=w 200
+2026-10-26 17:53:44,814 [WARNING] Percobaan 3 gagal: No results found.
+2026-10-26 17:53:44,816 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-26 17:53:54,641 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:53:54,642 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-26 17:53:54,644 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 17:53:54,644 [WARNING] backend is not set. Using 'auto'
+2026-10-26 17:53:54,693 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20rupiah%20Oktober%202026 429
+2026-10-26 17:53:54,819 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+rupiah+Oktober+2026&limit=1 200
+2026-10-26 17:53:55,229 [INFO] response: https://www.mojeek.com/search?q=IHSG+rupiah+Oktober+2026 403
+2026-10-26 17:53:55,386 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 17:53:55,469 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 17:53:55,684 [INFO] response: https://search.yahoo.com/search;_ylt=xnnuuLrwUUs3pW21WO15W3sK;_ylu=MZXBrkkRrDbBmrXCpLzK8yoLcYvuy6U0jQKrbvlxGgbtjDw?p=IHSG+rupiah+Oktober+2026&btf=d 200
+2026-10-26 17:53:56,172 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-26 17:54:04,676 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:54:04,677 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-26 17:54:04,681 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-26 17:54:19,020 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:54:19,021 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-26 17:54:20,492 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-26 17:54:25,486 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:54:25,487 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-26 17:54:25,489 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 17:54:25,489 [WARNING] backend is not set. Using 'auto'
+2026-10-26 17:54:25,650 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20Oktober%202026%20bola.com%20atau%20detik 200
+2026-10-26 17:54:25,701 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+Oktober+2026+bola.com+atau+detik&limit=1 200
+2026-10-26 17:54:26,119 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+Oktober+2026+bola.com+atau+detik 403
+2026-10-26 17:54:26,191 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 17:54:26,320 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+Oktober+2026+bola.com+atau+detik&source=web&tf=pd 429
+2026-10-26 17:54:26,610 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 17:54:26,697 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 17:54:26,932 [INFO] response: https://search.yahoo.com/search;_ylt=kTd3iOdNlMG_OpHIy6271xJR;_ylu=wvXOduMIVUx34o2gLGytpEIUnqrvYMTwekFTHSsHfsYuwJY?p=Timnas+Indonesia+Oktober+2026+bola.com+atau+detik&btf=d 200
+2026-10-26 17:54:27,451 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-26 17:54:27,509 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20Oktober%202026%20bola.com%20atau%20detik 429
+2026-10-26 17:54:27,598 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+Oktober+2026+bola.com+atau+detik&limit=1 200
+2026-10-26 17:54:28,001 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+Oktober+2026+bola.com+atau+detik 403
+2026-10-26 17:54:28,115 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 17:54:28,343 [INFO] response: https://search.yahoo.com/search;_ylt=Wkol6nOHefaTNC_K07Y-RNWN;_ylu=id883O_056OPhw_9-KgZaJdDA9OQzs21wBmEiXFtxrEGhOI?p=Timnas+Indonesia+Oktober+2026+bola.com+atau+detik&btf=d 200
+2026-10-26 17:54:28,811 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-26 17:54:35,917 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 17:54:35,919 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-26 17:54:35,920 [INFO] Validasi: 7x fetch_webpage sukses (minimum 3).
+2026-10-26 17:54:35,920 [INFO] URL yang berhasil di-fetch: {'https://money.kompas.com/read/2026/10/26/125612526/ihsg-turun-1-persen-asing-jual-saham-rp-114-triliun-selama-sesi-i', 'https://www.cnbc.com/2026/10/26/brazil-stocks-neoclouds-selloff.html', 'https://www.bbc.com/sport/football/articles/ck5yn5j37en0o', 'https://www.espn.com/soccer/story/_/id/50166049/a-global-experiment-espn-predict-ballon-dor', 'https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic'}
+2026-10-26 17:54:35,921 [INFO] Validasi LULUS — laporan berbasis riset nyata dan format benar.
+2026-10-26 17:54:35,922 [INFO] LAPORAN FINAL:
+2026-10-26 17:54:35,922 [INFO] ## 📊 LAPORAN MENDALAM — 26 OCTOBER 2026
+
+Halo rekan-rekan semua! Memasuki hari Senin, 26 Oktober 2026, dinamika global dan domestik kembali menghadirkan gelombang peristiwa yang sangat masif—mulai dari gejolak pasar aset akibat pemilu di Brasil dan peringatan keras terhadap saham *neocloud*, tekanan telak yang menghantam Manchester United di Liga Inggris, revolusi AI dalam mengatasi krisis kode COBOL legendaris, kejatuhan IHSG di pasar domestik, hingga aksi gemilang Timnas U15 Indonesia di ajang internasional. Mari kita bedah laporan lengkapnya secara mendalam!
+
+---
+
+### Geopolitik & Ekonomi Global
+Pagi hari di pasar keuangan global dibuka dengan ganda kejutan (*two shocks*) yang langsung memicu gejolak pada aset-aset berisiko. Berdasarkan laporan dari **CNBC** pada tanggal 26 Oktober 2026 melalui artikel berjudul *"A shock in Brazil sends stocks plunging, while..."* (URL: https://www.cnbc.com/2026/10/26/brazil-stocks-neoclouds-selloff.html), hasil pemilihan umum di Brasil memicu aksi jual (*sell-off*) semalam di aset-aset negara tersebut setelah Luiz Inácio Lula da Silva memenangkan masa jabatan keempat yang belum pernah terjadi sebelumnya dalam sebuah kejutan politik. Di sisi lain, sektor teknologi turut diguncang oleh komentar pedas dari Elon Musk di platform X (sebelumnya Twitter) yang memberikan peringatan keras terhadap saham-saham *neocloud* seperti CoreWeave, Nebius, dan IREN.
+
+Musk secara terbuka memperingatkan bahwa saham-saham yang sudah tertekan tersebut menghadapi ancaman *"guppy-level death"* di tengah keraguan investor kredit yang mendongkrak imbal hasil (*yields*) ke level tertekan akibat kekhawatiran model bisnis berbasis utang agresif untuk pembangunan pusat data (*data centers*). CNBC mencatat dalam laporannya:
+> "His comments have sent shares of CoreWeave, Nebius, and IREN deep into the red in premarket trading. The stocks are already down over 30% each in October as credit investors blew their yields out to distressed levels, doubting their business model of using aggressive levels of debt to build data centers."
+
+Ancaman ini memperlihatkan bagaimana sentimen tokoh teknologi dan ketidakpastian politik Amerika Latin dapat berpadu menciptakan tekanan likuiditas yang signifikan bagi instrumen pertumbuhan tinggi di pasar global.
+
+---
+
+### Olahraga Global
+Krisis luar biasa tengah melanda raksasa Liga Inggris, Manchester United, menyusul hasil-hasil buruk yang membuat para pendukung setia melampiaskan kemarahan langsung kepada jajaran manajemen klub. Mengutip laporan dari **BBC Sport** pada 26 Oktober 2026 dengan tajuk *"Jason Wilcox: Why is director of football in line of fire..."* (URL: https://www.bbc.com/sport/football/articles/ck5yn5j37en0o), kekalahan telak 3-0 dari Bournemouth di Old Trafford membuat posisi direktur sepak bola Jason Wilcox berada di garis depan kecaman suporter.
+
+Kekalahan ini memperpanjang tren tanpa kemenangan United menjadi delapan pertandingan—menjadi catatan terburuk mereka sejak musim 2015-2016—serta menambah beban berat bagi manajer Michael Carrick. Sebelumnya, bek Lisandro Martinez juga sempat melontarkan kritik terbuka terhadap kebijakan transfer klub. BBC Sport melaporkan suasana di stadion:
+> "As the clock ticked down during Manchester United's 3-0 defeat by Bournemouth at Old Trafford on Sunday, the home fans made it clear what they thought about director of football Jason Wilcox. Singing his name along with an obscenity, the message was brutal and to the point."
+
+Situasi ini menandai titik didih baru di Old Trafford, di mana tekanan tidak lagi hanya tertuju pada ruang ganti pemain dan manajer, tetapi juga menyeret struktur kepemimpinan teknis klub.
+
+---
+
+### Teknologi & AI Terbaru
+Infrastruktur digital global yang selama ini bergantung pada sistem komputer kuno akhirnya mendapatkan secercah harapan baru dari perkembangan teknologi kecerdasan buatan (*Artificial Intelligence*). Berdasarkan laporan **The Verge** tertanggal 19 Oktober 2026 berjudul *"Can AI help solve the COBOL code crisis?"* (URL: https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic), raksasa AI OpenAI mengumumkan peningkatan substansial pada model AI terbaru mereka untuk membantu migrasi perangkat lunak tua berbasis bahasa pemrograman lawas seperti COBOL ke kode modern.
+
+Meskipun bahasa COBOL diciptakan pada tahun 1959, hingga kini sistem perbankan online, transaksi kartu kredit, hingga jaringan ATM global masih sangat bergantung padanya. OpenAI mengeklaim inovasi ini dapat membantu organisasi dalam memelihara dan memodernisasi sistem warisan (*legacy systems*) yang selama ini ditakuti oleh para insinyur. The Verge mencatat kutipan penting terkait fenomena ini:
+> "OpenAI thinks it may have a solution. On October 19th, the company touted 'substantial improvements' in its latest AI models' ability to migrate aging software written in older programming languages into modern code, which it claims could help organizations with 'maintaining and modernizing older systems.'"
+
+Langkah ini dinilai sebagai terobosan krusial untuk mencegah kerentanan sistemik pada institusi keuangan dan pemerintahan dunia yang selama ini terjebak dalam utang teknis (*technical debt*) masa lalu.
+
+---
+
+### Indonesia Update
+
+**a) Ekonomi Domestik**
+Pasar keuangan domestik mengawali pekan dengan tekanan berat. Berdasarkan laporan **Kompas.com** pada 26 Oktober 2026 dalam artikel berjudul *"IHSG Turun 1 Persen, Asing Jual Saham Rp 1,14 Triliun Selama Sesi I"* (URL: https://money.kompas.com/read/2026/10/26/125612526/ihsg-turun-1-persen-asing-jual-saham-rp-114-triliun-selama-sesi-i), Indeks Harga Saham Gabungan (IHSG) mengalami pelemahan hingga anjlok 1 persen pada sesi pertama perdagangan. 
+
+Tekanan tersebut dipicu oleh aksi jual bersih (*net sell*) oleh investor asing yang mencapai angka Rp 1,14 triliun. Sejumlah saham perbankan besar menjadi sasaran utama pelepasan asing, seperti PT Bank Central Asia Tbk (BBCA) sebesar Rp 201,92 miliar dan PT Bank Mandiri (Persero) Tbk (BMRI) sebesar Rp 129,94 miliar. Kompas menuliskan:
+> "Investor asing membukukan jual bersih (net sell) Rp 1,14 triliun pada perdagangan sesi pertama, Senin (26/10/2026). Aksi itu sejalan dengan performa Indeks Harga Saham Gabungan (IHSG) yang anjlok 1 persen."
+
+**b) Olahraga Domestik**
+Kabar membanggakan datang dari kancah sepak bola usia dini internasional. Mengutip laporan dari **Bola.com / Kompas.com** pada 27 Oktober 2026 dalam artikel berjudul *"Hasil Timnas U15 Indonesia Vs Burundi 6-1: Dribel ala Zidane..."* (URL: https://bola.kompas.com/read/2026/10/27/00331228/hasil-timnas-u15-indonesia-vs-burundi-6-1-dribel-ala-zidane-garuda-muda-pesta), Timnas U15 Indonesia sukses berpesta gol dengan kemenangan telak 6-1 atas Burundi dalam ajang Piala Dunia dan Festival U-15 2026 yang berlangsung di Baku, Azerbaijan. 
+
+Kemenangan impresif ini diwarnai oleh aksi gemilang penyerang muda Garuda, Muhammad Hariri, yang mencetak gol pembuka lewat teknik ciamik. Media nasional mencatat momen tersebut:
+> "Muhammad Hariri melakukan dribel roulette ala Zidane sebelum mencetak gol pembuka kemenangan Timnas U15 Indonesia atas Burundi."
+
+---
+
+### Trending Indonesia
+Warga net di Indonesia dalam 1-2 hari terakhir dihebohkan dengan berbagai diskursus hangat mengenai persiapan kalender sepak bola nasional menuju turnamen level Asia serta performa luar biasa para atlet muda di panggung internasional. Perbincangan mengenai persiapan Timnas Indonesia jelang jeda internasional dan Piala Asia 2027 mendominasi lini masa pemberitaan media olahraga dan sosial di Tanah Air. Antusiasme publik sangat tinggi menyusul kepastian jadwal tanding Garuda di kancah kontinental, yang mencerminkan kecintaan luar biasa masyarakat terhadap perkembangan prestasi sepak bola nasional di tengah dinamika global yang serba cepat.
+2026-10-26 17:54:35,922 [INFO] Mengirim laporan ke Telegram...
+2026-10-26 17:54:35,923 [INFO] Pesan dipecah jadi 3 bagian.
+2026-10-26 17:54:36,555 [INFO] ✅ Bagian 1/3 terkirim (Markdown)!
+2026-10-26 17:54:38,228 [INFO] ✅ Bagian 2/3 terkirim (Markdown)!
+2026-10-26 17:54:39,780 [INFO] ✅ Bagian 3/3 terkirim (Markdown)!
+2026-10-26 17:54:40,781 [INFO] History disimpan (5 entri).
+2026-10-26 17:54:40,781 [INFO] Selesai — laporan terkirim dan history disimpan.
