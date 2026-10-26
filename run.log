@@ -64257,3 +64257,255 @@ Dalam unggahan di akun Instagram pribadinya yang diulas oleh media, Rhenald memb
 2026-10-25 15:15:40,357 [INFO] ✅ Bagian 3/3 terkirim (Markdown)!
 2026-10-25 15:15:41,358 [INFO] History disimpan (5 entri).
 2026-10-25 15:15:41,358 [INFO] Selesai — laporan terkirim dan history disimpan.
+2026-10-26 02:13:35,886 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-10-26 02:13:35,886 [INFO] =======================================================
+2026-10-26 02:13:35,886 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-10-26 02:13:35,886 [INFO] =======================================================
+2026-10-26 02:13:35,886 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-10-26 02:13:36,418 [INFO] Provider siap: Gemini dengan 4 model
+2026-10-26 02:13:36,455 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-10-26 02:13:36,474 [INFO] Provider siap: Z.AI dengan 1 model
+2026-10-26 02:13:36,492 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-10-26 02:13:36,511 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-10-26 02:13:36,526 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-10-26 02:13:36,547 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 02:14:04,788 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:14:04,795 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 02:14:04,838 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 02:14:16,041 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:14:16,042 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 02:14:16,057 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 02:14:16,058 [WARNING] backend is not set. Using 'auto'
+2026-10-26 02:14:16,247 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economy%20stock%20market%20geopolitical%20news%202026%20site%3Acnbc.com%20OR%20site%3Abbc.com 200
+2026-10-26 02:14:16,334 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economy+stock+market+geopolitical+news+2026+site%3Acnbc.com+OR+site%3Abbc.com&limit=1 200
+2026-10-26 02:14:16,909 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-10-26 02:14:16,914 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 02:14:21,166 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:14:21,167 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 02:14:21,169 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 02:14:21,170 [WARNING] backend is not set. Using 'auto'
+2026-10-26 02:14:21,181 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=oil%20price%20stocks%20geopolitical%20tension%20market%20October%202026%20site%3Acnbc.com 429
+2026-10-26 02:14:21,445 [INFO] response: https://grokipedia.com/api/typeahead?query=oil+price+stocks+geopolitical+tension+market+October+2026+site%3Acnbc.com&limit=1 200
+2026-10-26 02:14:22,000 [INFO] response: https://www.mojeek.com/search?q=oil+price+stocks+geopolitical+tension+market+October+2026+site%3Acnbc.com 403
+2026-10-26 02:14:22,207 [INFO] response: https://search.yahoo.com/search;_ylt=d9KbnSyOiawNmynzuDGYRMZL;_ylu=pUp9ePitsvQqQceEWQWwQD-U38MwGKDRoGsvKHHvtgO6YpA?p=oil+price+stocks+geopolitical+tension+market+October+2026+site%3Acnbc.com&btf=d 200
+2026-10-26 02:14:22,715 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 02:14:22,799 [INFO] response: https://search.brave.com/search?q=oil+price+stocks+geopolitical+tension+market+October+2026+site%3Acnbc.com&source=web&tf=pd 429
+2026-10-26 02:14:22,954 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 02:14:23,019 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 02:14:23,020 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-26 02:14:23,166 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=oil%20price%20stocks%20geopolitical%20tension%20market%20October%202026%20site%3Acnbc.com 200
+2026-10-26 02:14:23,223 [INFO] response: https://grokipedia.com/api/typeahead?query=oil+price+stocks+geopolitical+tension+market+October+2026+site%3Acnbc.com&limit=1 200
+2026-10-26 02:14:23,781 [INFO] response: https://www.mojeek.com/search?q=oil+price+stocks+geopolitical+tension+market+October+2026+site%3Acnbc.com 403
+2026-10-26 02:14:23,894 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 02:14:23,964 [INFO] response: https://search.brave.com/search?q=oil+price+stocks+geopolitical+tension+market+October+2026+site%3Acnbc.com&source=web&tf=pd 429
+2026-10-26 02:14:24,107 [INFO] response: https://search.yahoo.com/search;_ylt=3FABKWtif5TBZlahlq6cI-Lz;_ylu=o3YnDGst1q0a1CWHCty0lzdstu0g9qV-fzFLGLGNzKSCpKw?p=oil+price+stocks+geopolitical+tension+market+October+2026+site%3Acnbc.com&btf=d 200
+2026-10-26 02:14:24,622 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 02:14:24,668 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 02:14:24,669 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-26 02:14:24,681 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=oil%20price%20stocks%20geopolitical%20tension%20market%20October%202026%20site%3Acnbc.com 429
+2026-10-26 02:14:24,837 [INFO] response: https://grokipedia.com/api/typeahead?query=oil+price+stocks+geopolitical+tension+market+October+2026+site%3Acnbc.com&limit=1 200
+2026-10-26 02:14:24,946 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 02:14:25,020 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 02:14:25,066 [INFO] response: https://search.brave.com/search?q=oil+price+stocks+geopolitical+tension+market+October+2026+site%3Acnbc.com&source=web&tf=pw 429
+2026-10-26 02:14:25,174 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 02:14:25,381 [INFO] response: https://search.yahoo.com/search;_ylt=c6xB7V4h1uWBL8G5X7GzQt57;_ylu=_h-I25z21YA3buOC5faNuOIEXI80s17LUzGfFRvaNdfafJg?p=oil+price+stocks+geopolitical+tension+market+October+2026+site%3Acnbc.com&btf=w 200
+2026-10-26 02:14:25,790 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 02:14:28,650 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:14:28,651 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 02:14:29,535 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 02:14:33,433 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:14:33,434 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 02:14:33,436 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 02:14:33,436 [WARNING] backend is not set. Using 'auto'
+2026-10-26 02:14:33,448 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Premier%20League%20results%20Arsenal%20Liverpool%20Real%20Madrid%20Barcelona%20October%2025%202026%20site%3Askysports.com%20OR%20site%3Abbc.com 429
+2026-10-26 02:14:33,528 [INFO] response: https://grokipedia.com/api/typeahead?query=Premier+League+results+Arsenal+Liverpool+Real+Madrid+Barcelona+October+25+2026+site%3Askysports.com+OR+site%3Abbc.com&limit=1 200
+2026-10-26 02:14:33,652 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 02:14:33,718 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 02:14:33,765 [INFO] response: https://search.brave.com/search?q=Premier+League+results+Arsenal+Liverpool+Real+Madrid+Barcelona+October+25+2026+site%3Askysports.com+OR+site%3Abbc.com&source=web&tf=pd 429
+2026-10-26 02:14:33,933 [INFO] response: https://search.yahoo.com/search;_ylt=TQn-lSGXUoVtC-_p8tvYaKOu;_ylu=FT3plQvJuE8O6jcNfO1aCJcAMf3EfouwerF4k-zfPKxN0Ok?p=Premier+League+results+Arsenal+Liverpool+Real+Madrid+Barcelona+October+25+2026+site%3Askysports.com+OR+site%3Abbc.com&btf=d 200
+2026-10-26 02:14:34,382 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 02:14:37,313 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:14:37,314 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 02:14:37,476 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 02:14:41,321 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:14:41,323 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 02:14:41,325 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 02:14:41,325 [WARNING] backend is not set. Using 'auto'
+2026-10-26 02:14:41,336 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20technology%20news%20TechCrunch%20OR%20The%20Verge%20October%2025%202026%20site%3Atechcrunch.com%20OR%20site%3Atheverge.com 429
+2026-10-26 02:14:41,548 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+technology+news+TechCrunch+OR+The+Verge+October+25+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&limit=1 200
+2026-10-26 02:14:42,090 [INFO] response: https://www.mojeek.com/search?q=AI+technology+news+TechCrunch+OR+The+Verge+October+25+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com 403
+2026-10-26 02:14:42,195 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 02:14:42,349 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 02:14:42,415 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 02:14:42,461 [INFO] response: https://search.brave.com/search?q=AI+technology+news+TechCrunch+OR+The+Verge+October+25+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&source=web&tf=pd 429
+2026-10-26 02:14:42,694 [INFO] response: https://search.yahoo.com/search;_ylt=OLsZ0NJ4AC_G-T-E6Ltl9SIT;_ylu=T6pcalJrtNTTh4fcyM_8OL2dxIrO970tj1QM4PjyfibIMnc?p=AI+technology+news+TechCrunch+OR+The+Verge+October+25+2026+site%3Atechcrunch.com+OR+site%3Atheverge.com&btf=d 200
+2026-10-26 02:14:43,101 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 02:14:45,444 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:14:45,446 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 02:14:45,447 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 02:14:45,447 [WARNING] backend is not set. Using 'auto'
+2026-10-26 02:14:45,460 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20model%20launch%20OR%20artificial%20intelligence%20TechCrunch%20October%202026%20site%3Atechcrunch.com 429
+2026-10-26 02:14:45,717 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+model+launch+OR+artificial+intelligence+TechCrunch+October+2026+site%3Atechcrunch.com&limit=1 200
+2026-10-26 02:14:46,222 [INFO] response: https://www.mojeek.com/search?q=AI+model+launch+OR+artificial+intelligence+TechCrunch+October+2026+site%3Atechcrunch.com 403
+2026-10-26 02:14:46,358 [INFO] response: https://search.yahoo.com/search;_ylt=Bi-6kaQu9WZXeuaSUFIOrtVz;_ylu=qdnAp2V4vm7hpa7zQRU0uoYDK9N09HYuKkOWy0EOHFLeQvQ?p=AI+model+launch+OR+artificial+intelligence+TechCrunch+October+2026+site%3Atechcrunch.com&btf=d 200
+2026-10-26 02:14:46,868 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 02:14:46,989 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=adcebd861d7102f70a135ac1254096fa&bds_t=1792980886T78f14bb4f467aa868943a45bf9ba155c21937c4e2701b12dd0abf5dae080f177&bds_s=2e15c8e589204fdfab02f701f7267514&with_date=d&qsr=en_US&abd=0&language=english&lui=english&abp=1&abe=0&qadf=moderate&sc=&t=device&segment=organic&query=AI+model+launch+OR+artificial+intelligence+TechCrunch+October+2026+site%3Atechcrunch.com&cat=web&cmd=gen_page 200
+2026-10-26 02:14:47,053 [INFO] response: https://search.brave.com/search?q=AI+model+launch+OR+artificial+intelligence+TechCrunch+October+2026+site%3Atechcrunch.com&source=web&tf=pd 429
+2026-10-26 02:14:47,193 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 02:14:47,193 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-26 02:14:47,205 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20model%20launch%20OR%20artificial%20intelligence%20TechCrunch%20October%202026%20site%3Atechcrunch.com 429
+2026-10-26 02:14:47,375 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+model+launch+OR+artificial+intelligence+TechCrunch+October+2026+site%3Atechcrunch.com&limit=1 200
+2026-10-26 02:14:47,423 [INFO] response: https://search.brave.com/search?q=AI+model+launch+OR+artificial+intelligence+TechCrunch+October+2026+site%3Atechcrunch.com&source=web&tf=pd 429
+2026-10-26 02:14:47,534 [INFO] response: https://www.startpage.com/ 200
+2026-10-26 02:14:47,618 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-26 02:14:47,759 [INFO] response: https://search.yahoo.com/search;_ylt=Ok2HPM5G_1S4Odu6DOZFT2WD;_ylu=ItFa239McBQcCGnwiFnKjIQwoR_QbDa-bYV1AKlm5eJPOqA?p=AI+model+launch+OR+artificial+intelligence+TechCrunch+October+2026+site%3Atechcrunch.com&btf=d 200
+2026-10-26 02:14:48,580 [INFO] response: https://www.mojeek.com/search?q=AI+model+launch+OR+artificial+intelligence+TechCrunch+October+2026+site%3Atechcrunch.com 403
+2026-10-26 02:14:48,683 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-26 02:14:48,706 [WARNING] Percobaan 2 gagal: No results found.
+2026-10-26 02:14:48,866 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=AI%20model%20launch%20OR%20artificial%20intelligence%20TechCrunch%20October%202026%20site%3Atechcrunch.com 200
+2026-10-26 02:14:48,942 [INFO] response: https://grokipedia.com/api/typeahead?query=AI+model+launch+OR+artificial+intelligence+TechCrunch+October+2026+site%3Atechcrunch.com&limit=1 200
+2026-10-26 02:14:49,107 [INFO] response: https://search.yahoo.com/search;_ylt=LmWf5lQn_cdyk4J8xpiVIeqU;_ylu=9BU49yxnYMKfhw_Z2u1dJ-h-IAmgCRfvXASQAVbKcAlmGGE?p=AI+model+launch+OR+artificial+intelligence+TechCrunch+October+2026+site%3Atechcrunch.com&btf=w 200
+2026-10-26 02:14:49,592 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 02:14:51,408 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:14:51,410 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 02:14:51,543 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 02:14:53,782 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:14:53,784 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-26 02:14:53,786 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-26 02:14:53,786 [WARNING] backend is not set. Using 'auto'
+2026-10-26 02:14:53,949 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20Rupiah%20hari%20ini%2026%20Oktober%202026%20site%3Acnbcindonesia.com%20OR%20site%3Abisnis.com%20OR%20site%3Akontan.co.id 200
+2026-10-26 02:14:54,006 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+Rupiah+hari+ini+26+Oktober+2026+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&limit=1 200
+2026-10-26 02:14:54,561 [INFO] response: https://www.mojeek.com/search?q=IHSG+Rupiah+hari+ini+26+Oktober+2026+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id 403
+2026-10-26 02:14:54,722 [INFO] response: https://search.yahoo.com/search;_ylt=3tl1BdUCP60F8gz6cfFUz8hA;_ylu=xVtpFGN9E7SOl2DW9hMe6XAFpjqGhC1tMrPLcALSvPZGlpY?p=IHSG+Rupiah+hari+ini+26+Oktober+2026+site%3Acnbcindonesia.com+OR+site%3Abisnis.com+OR+site%3Akontan.co.id&btf=d 200
+2026-10-26 02:14:55,130 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-26 02:14:57,864 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-26 02:14:57,864 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]
+2026-10-26 02:14:57,864 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-26 02:15:00,726 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:15:00,727 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-26 02:15:00,780 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-26 02:15:00,980 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-26 02:15:00,981 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash, description: Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 59.041949182s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '59s'}]}}]
+2026-10-26 02:15:00,981 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-26 02:15:00,981 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-26 02:15:01,117 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-10-26 02:15:01,118 [WARNING] ⚠️ NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b gagal: Error code: 404 - {'status': 404, 'title': 'Not Found', 'detail': "Function 'ac74040f-9fc9-4c5e-ac74-279ba5161d69': Not found for account 'zeuiEQa0h-8xI5ozxn097hLtJOiHXQfGp3T4onr4Gzs'"}
+2026-10-26 02:15:01,118 [WARNING] Model nvidia/nemotron-3-super-120b-a12b ditandai mati (retired/404/410).
+2026-10-26 02:15:01,118 [INFO] Mencoba provider NVIDIA NIM dengan model meta/llama-4-maverick-17b-128e-instruct...
+2026-10-26 02:15:01,213 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-10-26 02:15:01,214 [WARNING] ⚠️ NVIDIA NIM / meta/llama-4-maverick-17b-128e-instruct gagal: Error code: 410 - {'type': 'about:blank', 'title': 'Gone', 'status': 410, 'detail': "The model 'meta/llama-4-maverick-17b-128e-instruct' has reached its end of life on 2026-07-27T00:00:00Z and is no longer available."}
+2026-10-26 02:15:01,214 [WARNING] Model meta/llama-4-maverick-17b-128e-instruct ditandai mati (retired/404/410).
+2026-10-26 02:15:01,214 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-10-26 02:15:01,214 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-26 02:15:06,482 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:15:06,482 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-26 02:15:06,486 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-26 02:15:06,733 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-26 02:15:06,734 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash, description: Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 53.290401313s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}]
+2026-10-26 02:15:06,734 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-26 02:15:06,734 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-26 02:15:06,734 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-26 02:15:17,059 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:15:17,060 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-26 02:15:17,063 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-26 02:15:21,363 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:15:21,364 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-26 02:15:21,366 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-26 02:15:21,549 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-26 02:15:21,550 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash, description: Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 38.475256978s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.6-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}]
+2026-10-26 02:15:21,550 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-26 02:15:21,550 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-26 02:15:21,550 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-26 02:15:28,565 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:15:28,566 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-26 02:15:28,569 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-26 02:15:28,800 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-26 02:15:28,801 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash, description: Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 31.223113967s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31s'}]}}]
+2026-10-26 02:15:28,801 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-26 02:15:28,801 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-26 02:15:28,801 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-26 02:15:32,041 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:15:32,042 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-26 02:15:32,046 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-26 02:15:32,240 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-26 02:15:32,241 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash, description: Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 27.782083216s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '27s'}]}}]
+2026-10-26 02:15:32,241 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-26 02:15:32,241 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-26 02:15:32,241 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-26 02:15:36,509 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:15:36,510 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-26 02:15:36,513 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-26 02:15:36,650 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-26 02:15:36,651 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash, description: Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 23.372539565s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.6-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '23s'}]}}]
+2026-10-26 02:15:36,651 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-26 02:15:36,651 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-26 02:15:36,651 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-26 02:15:41,024 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:15:41,025 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-26 02:15:41,029 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-26 02:16:00,595 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-26 02:16:00,596 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-10-26 02:16:00,597 [INFO] Validasi: 4x fetch_webpage sukses (minimum 3).
+2026-10-26 02:16:00,597 [INFO] URL yang berhasil di-fetch: {'https://www.theverge.com/tech/1018233/ifixit-iphone-duo-teardown-repairability-hinge', 'https://www.bbc.com/sport/football/articles/cr3wvz20pglqo', 'https://www.cnbc.com/oil/'}
+2026-10-26 02:16:00,598 [INFO] Validasi LULUS — laporan berbasis riset nyata dan format benar.
+2026-10-26 02:16:00,599 [INFO] LAPORAN FINAL:
+2026-10-26 02:16:00,599 [INFO] ## 📊 LAPORAN MENDALAM — 26 OCTOBER 2026
+
+Halo rekan-rekan semua! Di hari Senin, 26 Oktober 2026 ini, dinamika global dan domestik kembali menghadirkan perkembangan yang sangat masif. Ketegangan geopolitik dan pasar energi di Timur Tengah kembali bergejolak, persaingan sengit sepak bola Eropa diwarnai rekor baru di El Clasico, hingga pembedahan teknologi mutakhir pada perangkat lipat flagship terbaru. Berikut adalah laporan mendalam tepercaya dari hasil pemantauan intelijen dan jurnalistik terkini.
+
+---
+
+### 1. Geopolitik & Ekonomi Global
+
+Eskalasi konflik di kawasan Mideast kembali menyentuh titik krusial pada akhir pekan ini. Arab Saudi mengonfirmasi bahwasanya sistem pertahanan udara mereka berhasil mencegat gelombang serangan rudal dan drone yang diluncurkan oleh kelompok Houthi. Insiden keamanan ini langsung memicu kekhawatiran baru di pasar komoditas energi global, mengingat posisi strategis infrastruktur minyak di kawasan Semenanjung Arab terhadap pasokan dunia.
+
+Dampak langsung dari potensi gangguan pasokan ini langsung terasa pada pergerakan harga minyak mentah internasional. Harga minyak mentah jenis Brent meroket menembus level $116 per barel, yang merupakan level tertinggi dalam kurun waktu enam bulan terakhir. Lonjakan harga energi ini memicu kecemasan membumbungnya kembali angka inflasi global yang berpotensi menahan langkah bank-bank sentral dunia dalam melonggarkan kebijakan moneter mereka.
+
+* **Tanggal:** 25 Oktober 2026
+* **Sumber:** CNBC (https://www.cnbc.com/oil/)
+* **Kutipan Langsung:** *"Saudi Arabia says it intercepted missiles and drones from Iran-backed Houthis"* serta *"Brent crude oil tops $116, a six-month high, as tensions swell in the Middle East"*
+* **Analisis & Implikasi:** Ketegangan geopolitik yang kembali memanas di jalur lalu lintas energi utama dunia tidak hanya menekan pasar saham global, melainkan juga menaikkan gejolak pada aset-aset berisiko (termasuk pasar kripto). Tekanan inflasi energi ini akan menjadi perhatian utama para pelaku pasar menjelang keputusan suku bunga mendatang.
+
+---
+
+### 2. Olahraga Global
+
+Dari panggung sepak bola tertinggi Eropa, drama luar biasa tersaji di Stadion Camp Nou pada laga sengit El Clasico. Real Madrid di bawah komando manajer kawakan Jose Mourinho berhasil mencuri kemenangan krusial 2-1 atas tuan rumah Barcelona. Penyerang bintang Kylian Mbappe menjadi pahlawan kemenangan Los Blancos lewat torehan dua golnya, sekaligus menghentikan catatan sembilan pertandingan tidak terkalahkan milik Barcelona di kompetisi domestik.
+
+Kemenangan ini tidak hanya memangkas jarak poin Real Madrid menjadi tinggal 3 poin di belakang Barcelona dalam perburuan gelar La Liga, tetapi juga mencatatkan rekor sejarah pribadi bagi Jose Mourinho. Mourinho menjadi manajer ketiga dalam sejarah Real Madrid yang sukses melewati enam laga El Clasico berturut-turut tanpa tersentuh kekalahan, menyejajarkan namanya dengan legenda Miguel Munoz dan Vicente del Bosque.
+
+* **Tanggal:** 25 Oktober 2026
+* **Sumber:** BBC Sport (https://www.bbc.com/sport/football/articles/cr3wvz20pglqo)
+* **Kutipan Langsung:** *"In my view, Real Madrid do not play to win at the Camp Nou, Real Madrid play to win La Liga"* serta *"We could win with luck, but we won with calmness and with all merit"*
+* **Analisis & Implikasi:** Kemenangan tandang ini mengubah konstelasi papan atas La Liga secara signifikan. Alih-alih Barcelona memperlebar keunggulan menjadi sembilan poin, ketenangan taktik Mourinho dan efektivitas Mbappe kini membuka kembali persaingan perebutan gelar juara Spanyol secara terbuka.
+
+---
+
+### 3. Teknologi & AI Terbaru
+
+Di ranah teknologi konsumen, pembongkaran hardware (teardown) terbaru yang dilakukan oleh iFixit terhadap ponsel lipat perdana Apple, iPhone Duo, mengungkap berbagai teknik rekayasa internal yang menarik. Dalam laporan teknis terbarunya, iFixit memberikan skor perbaikan (repairability score) sebesar 5/10 untuk iPhone Duo—sebuah angka yang relatif tinggi dan menjadikannya perangkat lipat paling mudah diperbaiki yang pernah diuji oleh situs tersebut hingga saat ini.
+
+Pembedahan mikroskopis mengungkap bagaimana Apple berupaya menyamarkan lipatan (*crease*) di tengah layar. Apple menerapkan penutup *nano-texture matte* pada lapisan luar layar internal serta mengatur susunan subpiksel berbentuk oval pada berbagai sudut kemiringan guna membiaskan pantulan cahaya dan meminimalkan artefak visual. Meski demikian, iFixit mencatat kompleksitas engsel yang sangat tinggi serta kabel fleksibel accordion berpotensi menjadi titik rawan dari laporan ketahanan layar.
+
+* **Tanggal:** 26 Oktober 2026
+* **Sumber:** The Verge (https://www.theverge.com/tech/1018233/ifixit-iphone-duo-teardown-repairability-hinge)
+* **Kutipan Langsung:** *"The iPhone Duo is the most repairable foldable yet, but that’s not saying much."* serta *"When looking at the display under a microscope, iFixit also found oval-shaped subpixels arranged at various angles, which the site believes are designed to reduce artifacts and further mask the crease down the middle of the display."*
+* **Analisis & Implikasi:** Langkah Apple memasuki pasar ponsel lipat memperlihatkan standar baru dalam pemrosesan material layar dan modularitas komponen. Namun, tingginya biaya perbaikan panel OLED lipat tetap menjadi tantangan utama industri dalam mendorong adopsi perangkat lipat secara massal.
+
+---
+
+### 4. Indonesia Update
+
+* **Ekonomi Domestik & Olahraga Nasional:** *Data tidak berhasil diverifikasi secara penuh dari sumber langsung akibat kendala akses teknis (HTTP 403 Forbidden) saat penarikan halaman berita media lokal.*
+
+---
+
+### 5. Trending Indonesia
+
+* **Berita Viral / Trending Domestik:** *Data tidak berhasil diverifikasi secara penuh dari sumber langsung akibat keterbatasan akses data aktual pada sesi riset kali ini.*
+2026-10-26 02:16:00,599 [INFO] Mengirim laporan ke Telegram...
+2026-10-26 02:16:00,599 [INFO] Pesan dipecah jadi 2 bagian.
+2026-10-26 02:16:01,317 [INFO] ✅ Bagian 1/2 terkirim (Markdown)!
+2026-10-26 02:16:02,969 [INFO] ✅ Bagian 2/2 terkirim (Markdown)!
+2026-10-26 02:16:03,971 [INFO] History disimpan (5 entri).
+2026-10-26 02:16:03,971 [INFO] Selesai — laporan terkirim dan history disimpan.
