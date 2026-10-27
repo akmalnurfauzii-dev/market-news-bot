@@ -65471,3 +65471,232 @@ Warga net di Indonesia dalam 1-2 hari terakhir dihebohkan dengan berbagai diskur
 2026-10-27 03:13:47,942 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
 2026-10-27 03:13:47,942 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
 2026-10-27 03:13:48,593 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 16:59:41,075 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-10-27 16:59:41,075 [INFO] =======================================================
+2026-10-27 16:59:41,075 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-10-27 16:59:41,075 [INFO] =======================================================
+2026-10-27 16:59:41,075 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-10-27 16:59:41,453 [INFO] Provider siap: Gemini dengan 4 model
+2026-10-27 16:59:41,483 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-10-27 16:59:41,497 [INFO] Provider siap: Z.AI dengan 1 model
+2026-10-27 16:59:41,512 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-10-27 16:59:41,527 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-10-27 16:59:41,537 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-10-27 16:59:41,554 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-27 16:59:46,189 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 16:59:46,194 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-27 16:59:46,226 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-27 16:59:46,226 [WARNING] backend is not set. Using 'auto'
+2026-10-27 16:59:46,519 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com+global+economy+stocks+crypto+October+2026&limit=1 200
+2026-10-27 16:59:46,523 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20OR%20site%3Abbc.com%20OR%20site%3Aaljazeera.com%20global%20economy%20stocks%20crypto%20October%202026 200
+2026-10-27 16:59:46,717 [INFO] response: https://www.startpage.com/ 200
+2026-10-27 16:59:46,794 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-27 16:59:47,127 [INFO] response: https://search.yahoo.com/search;_ylt=qY2Jm8fYTRRJhuNawCTu0pPb;_ylu=XOwJiZ5ZFeCWZwhnPGuFcL7RqUOIMiQMdvIUuvi0VCaI9t8?p=site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com+global+economy+stocks+crypto+October+2026&btf=d 200
+2026-10-27 16:59:47,531 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-27 16:59:50,839 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 16:59:50,840 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-27 16:59:51,373 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-27 16:59:57,018 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 16:59:57,019 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-27 16:59:57,021 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-27 16:59:57,021 [WARNING] backend is not set. Using 'auto'
+2026-10-27 16:59:57,280 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20OR%20site%3Aespn.com%20OR%20site%3Askysports.com%20football%20match%20results%20October%202026 200
+2026-10-27 16:59:57,322 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+OR+site%3Askysports.com+football+match+results+October+2026&limit=1 200
+2026-10-27 16:59:57,490 [INFO] response: https://www.startpage.com/ 200
+2026-10-27 16:59:57,671 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=a53e6011d2cc4e02929837adcec955d8&bds_t=1793120397Tbae10bef32a836512004c7a0dbdecba74e64c39dd1265bab522833cf1fd6f90b&bds_s=aebc5c2fb64a4451acfc4f8cfb515737&sc=&t=device&abd=0&segment=organic&qsr=en_US&abe=0&lui=english&language=english&qadf=moderate&abp=1&with_date=d&query=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+OR+site%3Askysports.com+football+match+results+October+2026&cat=web&cmd=gen_page 200
+2026-10-27 16:59:57,869 [INFO] response: https://search.yahoo.com/search;_ylt=T8C9uKa7BV7PG3GHoLrI3eQ6;_ylu=jp9xpkW7LFHZThUcnOtT2rsGspqHrJi-F62wjDQxps_PFZI?p=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+OR+site%3Askysports.com+football+match+results+October+2026&btf=d 200
+2026-10-27 16:59:58,445 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+OR+site%3Askysports.com+football+match+results+October+2026&source=web&tf=pd 429
+2026-10-27 16:59:59,156 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-10-27 16:59:59,161 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-27 17:00:24,306 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:00:24,307 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-27 17:00:24,309 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-27 17:00:24,309 [WARNING] backend is not set. Using 'auto'
+2026-10-27 17:00:24,400 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+OR+site%3Askysports.com+Premier+League+OR+La+Liga+October+26+2026+OR+October+27+2026&limit=1 200
+2026-10-27 17:00:24,537 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20OR%20site%3Askysports.com%20Premier%20League%20OR%20La%20Liga%20October%2026%202026%20OR%20October%2027%202026 200
+2026-10-27 17:00:24,965 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Askysports.com+Premier+League+OR+La+Liga+October+26+2026+OR+October+27+2026 403
+2026-10-27 17:00:25,213 [INFO] response: https://search.yahoo.com/search;_ylt=iuaSCIWKxC-FMj_CfBbrOOD9;_ylu=TovqpXYA_2afXZcUC7LRJFErJs4DzIRO24VQ0IhrzUrYt6k?p=site%3Abbc.com%2Fsport+OR+site%3Askysports.com+Premier+League+OR+La+Liga+October+26+2026+OR+October+27+2026&btf=d 200
+2026-10-27 17:00:25,802 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-27 17:00:30,755 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:00:30,757 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-10-27 17:00:30,975 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-10-27 17:00:31,776 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-27 17:00:31,777 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503
+2026-10-27 17:00:31,777 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-27 17:00:31,909 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-27 17:00:31,910 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429
+2026-10-27 17:00:31,910 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-27 17:00:31,910 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-10-27 17:00:32,099 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-10-27 17:00:32,100 [WARNING] ⚠️ NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b gagal: Error code: 404
+2026-10-27 17:00:32,100 [WARNING] Model nvidia/nemotron-3-super-120b-a12b ditandai mati (retired/404/410).
+2026-10-27 17:00:32,100 [INFO] Mencoba provider NVIDIA NIM dengan model meta/llama-4-maverick-17b-128e-instruct...
+2026-10-27 17:00:32,322 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-10-27 17:00:32,322 [WARNING] ⚠️ NVIDIA NIM / meta/llama-4-maverick-17b-128e-instruct gagal: Error code: 410
+2026-10-27 17:00:32,323 [WARNING] Model meta/llama-4-maverick-17b-128e-instruct ditandai mati (retired/404/410).
+2026-10-27 17:00:32,323 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-10-27 17:00:32,323 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-27 17:00:37,332 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:00:37,333 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-27 17:00:37,337 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-27 17:00:37,483 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-27 17:00:37,484 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429
+2026-10-27 17:00:37,484 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-27 17:00:37,484 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-27 17:00:37,484 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-27 17:00:39,411 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:00:39,412 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-27 17:00:39,415 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-27 17:00:39,520 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-27 17:00:39,521 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429
+2026-10-27 17:00:39,521 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-27 17:00:39,521 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-27 17:00:39,521 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-27 17:00:41,188 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:00:41,189 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-27 17:00:41,192 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-27 17:00:41,292 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-10-27 17:00:41,293 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429
+2026-10-27 17:00:41,293 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-10-27 17:00:41,293 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-10-27 17:00:41,293 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-10-27 17:00:43,426 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:00:43,427 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-10-27 17:00:43,431 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-10-27 17:00:44,709 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-27 17:00:44,710 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 503
+2026-10-27 17:00:44,710 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-10-27 17:00:45,614 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-10-27 17:00:45,615 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 503
+2026-10-27 17:00:45,615 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-27 17:01:05,433 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:01:05,436 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-27 17:01:05,438 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-27 17:01:05,438 [WARNING] backend is not set. Using 'auto'
+2026-10-27 17:01:05,493 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechcrunch.com%20OR%20site%3Atheverge.com%20OR%20site%3Awired.com%20OR%20site%3Atechnologyreview.com%20OR%20site%3Aarstechnica.com%20AI%20October%202026 429
+2026-10-27 17:01:05,580 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechcrunch.com+OR+site%3Atheverge.com+OR+site%3Awired.com+OR+site%3Atechnologyreview.com+OR+site%3Aarstechnica.com+AI+October+2026&limit=1 200
+2026-10-27 17:01:06,059 [INFO] response: https://www.mojeek.com/search?q=site%3Atechcrunch.com+OR+site%3Atheverge.com+OR+site%3Awired.com+OR+site%3Atechnologyreview.com+OR+site%3Aarstechnica.com+AI+October+2026 403
+2026-10-27 17:01:06,386 [INFO] response: https://search.yahoo.com/search;_ylt=hkahxl7WQmsANnYj2xxFAVxY;_ylu=2cK8UMX80YLNHWyZLEG3O7q-ywXkH-fn_xBKDkahCIEYa8M?p=site%3Atechcrunch.com+OR+site%3Atheverge.com+OR+site%3Awired.com+OR+site%3Atechnologyreview.com+OR+site%3Aarstechnica.com+AI+October+2026&btf=d 200
+2026-10-27 17:01:06,927 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-27 17:01:26,094 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:01:26,095 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-27 17:01:26,269 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-27 17:01:45,942 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:01:45,943 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-27 17:01:45,945 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-27 17:01:45,945 [WARNING] backend is not set. Using 'auto'
+2026-10-27 17:01:46,002 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20Rupiah%20Oktober%202026%20site%3Acnbcindonesia.com%20OR%20site%3Akompas.com%20OR%20site%3Adetik.com 429
+2026-10-27 17:01:46,182 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+Rupiah+Oktober+2026+site%3Acnbcindonesia.com+OR+site%3Akompas.com+OR+site%3Adetik.com&limit=1 200
+2026-10-27 17:01:46,597 [INFO] response: https://www.mojeek.com/search?q=IHSG+Rupiah+Oktober+2026+site%3Acnbcindonesia.com+OR+site%3Akompas.com+OR+site%3Adetik.com 403
+2026-10-27 17:01:46,746 [INFO] response: https://search.brave.com/search?q=IHSG+Rupiah+Oktober+2026+site%3Acnbcindonesia.com+OR+site%3Akompas.com+OR+site%3Adetik.com&source=web&tf=pd 429
+2026-10-27 17:01:46,865 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-27 17:01:47,060 [INFO] response: https://search.yahoo.com/search;_ylt=FVMoPfk0khUwfAh0zk8-FB-Z;_ylu=R7oGYWCymSoCaSVODnt5bsrCVn1XWIri_6TR0bTcX15yowI?p=IHSG+Rupiah+Oktober+2026+site%3Acnbcindonesia.com+OR+site%3Akompas.com+OR+site%3Adetik.com&btf=d 200
+2026-10-27 17:01:47,732 [INFO] response: https://www.startpage.com/ 200
+2026-10-27 17:01:47,801 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-27 17:01:47,801 [WARNING] Percobaan 1 gagal: No results found.
+2026-10-27 17:01:47,851 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20Rupiah%20Oktober%202026%20site%3Acnbcindonesia.com%20OR%20site%3Akompas.com%20OR%20site%3Adetik.com 429
+2026-10-27 17:01:48,003 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+Rupiah+Oktober+2026+site%3Acnbcindonesia.com+OR+site%3Akompas.com+OR+site%3Adetik.com&limit=1 200
+2026-10-27 17:01:48,139 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-27 17:01:48,423 [INFO] response: https://search.yahoo.com/search;_ylt=6dygTHSxQA1W17AM4oaXPd9R;_ylu=O4-NL3Er-Df8N5eyeXQDZ0Rb8ubWYOgJJXdv-lg2Wi_ju7M?p=IHSG+Rupiah+Oktober+2026+site%3Acnbcindonesia.com+OR+site%3Akompas.com+OR+site%3Adetik.com&btf=d 200
+2026-10-27 17:01:48,917 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-27 17:02:03,865 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:02:03,867 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-27 17:02:04,868 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-27 17:02:19,280 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:02:19,281 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-27 17:02:19,283 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-27 17:02:19,283 [WARNING] backend is not set. Using 'auto'
+2026-10-27 17:02:19,338 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Timnas%20Indonesia%20Oktober%202026%20site%3Acnnindonesia.com%20OR%20site%3Adetik.com%20OR%20site%3Akompas.com%20OR%20site%3Abola.com 429
+2026-10-27 17:02:19,370 [INFO] response: https://grokipedia.com/api/typeahead?query=Timnas+Indonesia+Oktober+2026+site%3Acnnindonesia.com+OR+site%3Adetik.com+OR+site%3Akompas.com+OR+site%3Abola.com&limit=1 200
+2026-10-27 17:02:19,493 [INFO] response: https://search.brave.com/search?q=Timnas+Indonesia+Oktober+2026+site%3Acnnindonesia.com+OR+site%3Adetik.com+OR+site%3Akompas.com+OR+site%3Abola.com&source=web&tf=pd 429
+2026-10-27 17:02:19,587 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-27 17:02:19,997 [INFO] response: https://www.mojeek.com/search?q=Timnas+Indonesia+Oktober+2026+site%3Acnnindonesia.com+OR+site%3Adetik.com+OR+site%3Akompas.com+OR+site%3Abola.com 403
+2026-10-27 17:02:20,174 [INFO] response: https://www.startpage.com/ 200
+2026-10-27 17:02:20,228 [INFO] response: https://www.startpage.com/sp/search 200
+2026-10-27 17:02:20,532 [INFO] response: https://search.yahoo.com/search;_ylt=p2M7B5GOADVkKlanQSjdsTAJ;_ylu=KmzYMfz0icysy9LceCLQWP9b5i10jZY3vKUciJ0U_tysuOA?p=Timnas+Indonesia+Oktober+2026+site%3Acnnindonesia.com+OR+site%3Adetik.com+OR+site%3Akompas.com+OR+site%3Abola.com&btf=d 200
+2026-10-27 17:02:21,013 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-27 17:02:39,053 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:02:39,054 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-27 17:02:40,192 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-27 17:02:57,022 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:02:57,024 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-27 17:02:57,026 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-10-27 17:02:57,026 [WARNING] backend is not set. Using 'auto'
+2026-10-27 17:02:57,106 [INFO] response: https://grokipedia.com/api/typeahead?query=viral+trending+Indonesia+Oktober+2026+site%3Adetik.com+OR+site%3Akompas.com+OR+site%3Acnnindonesia.com+OR+site%3Atribunnews.com&limit=1 200
+2026-10-27 17:02:57,310 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=viral%20trending%20Indonesia%20Oktober%202026%20site%3Adetik.com%20OR%20site%3Akompas.com%20OR%20site%3Acnnindonesia.com%20OR%20site%3Atribunnews.com 200
+2026-10-27 17:02:57,398 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-10-27 17:02:57,647 [INFO] response: https://search.yahoo.com/search;_ylt=6Z221lFJQxnuS9-tn8mj6ueg;_ylu=Qf9Y8DfkWYG0lD2P1NUawjkwCdB9GCxDwfXIdpGYdp5Ar0I?p=viral+trending+Indonesia+Oktober+2026+site%3Adetik.com+OR+site%3Akompas.com+OR+site%3Acnnindonesia.com+OR+site%3Atribunnews.com&btf=d 200
+2026-10-27 17:02:58,078 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-27 17:03:16,365 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:03:16,366 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-27 17:03:16,369 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-27 17:03:36,045 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:03:36,046 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-27 17:03:36,174 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-10-27 17:03:53,983 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-10-27 17:03:53,985 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-10-27 17:03:53,985 [INFO] Validasi: 7x fetch_webpage sukses (minimum 3).
+2026-10-27 17:03:53,985 [INFO] URL yang berhasil di-fetch: {'https://www.bola.com/indonesia/read/8321888/menggila-timnas-indonesia-u-15-tutup-penyisihan-grup-piala-dunia-u-15-2026-dengan-bantai-burundi-6-1', 'https://jakarta.tribunnews.com/topic/viral-di-media-sosial', 'https://www.bbc.com/sport/football/articles/cwdd8nn060l7o', 'https://money.kompas.com/read/2026/10/27/153831326/ihsg-anjlok-342-persen-jelang-penutupan-asing-cabut-rp-224-triliun', 'https://www.cnbc.com/2026/10/27/lula-brazil-election-markets-fiscal-policy.html', 'https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/'}
+2026-10-27 17:03:53,987 [INFO] Validasi LULUS — laporan berbasis riset nyata dan format benar.
+2026-10-27 17:03:53,987 [INFO] LAPORAN FINAL:
+2026-10-27 17:03:53,987 [INFO] ## 📊 LAPORAN MENDALAM — 27 OCTOBER 2026
+
+Halo rekan-rekan semua! Memasuki hari Selasa, 27 Oktober 2026, dinamika global dan domestik kembali menghadirkan gelombang peristiwa yang sangat masif—mulai dari gejolak pasar keuangan akibat pemilu di Brasil, penghargaan prestisius sepak bola dunia, inovasi model AI terbaru Google, kejatuhan tajam IHSG di bursa domestik, hingga aksi demonstrasi mahasiswa yang kembali disorot publik.
+
+Berikut adalah laporan komprehensif dan mendalam dari kelima topik utama hari ini:
+
+### 1. Geopolitik & Ekonomi Global
+Kemenangan mengejutkan Luiz Inácio Lula da Silva dalam pemilu presiden Brasil memicu reaksi keras di pasar keuangan global pada hari Senin dan Selasa, 26–27 Oktober 2026. Berdasarkan laporan dari CNBC, kemenangan ini langsung mengguncang aset-aset domestik Brasil dan menguji komitmen fiskal pemerintah di tengah kekhawatiran investor terhadap kebijakan belanja yang ekspansif. Indeks saham acuan Brasil mengalami kejatuhan harian terburuk sejak awal pandemi Covid-19, sementara mata uang Real melemah drastis terhadap dolar AS.
+
+Dalam artikel CNBC tertanggal 27 Oktober 2026 berjudul *"What Lula’s Brazil election win means for markets and the economy"* (URL: https://www.cnbc.com/2026/10/27/lula-brazil-election-markets-fiscal-policy.html), disebutkan secara rinci bagaimana pasar merespons hasil pemilu tersebut:
+> "The country's benchmark stock index tumbled 13.9% on Monday, the sharpest daily decline since the start of the COVID-19 pandemic, and the Brazilian real fell nearly 8% against the U.S. dollar, the most since 1999."
+
+Kejadian ini menunjukkan betapa sensitifnya pasar keuangan internasional terhadap arah kebijakan fiskal di negara berkembang besar seperti Brasil. Kemenangan Lula mengharuskannya menyeimbangkan antara janji populis kepada basis akar rumput—seperti kenaikan upah minimum, subsidi perumahan, dan pemotongan pajak kebutuhan pokok—dengan tekanan dari investor yang menuntut kehati-hatian fiskal agar tidak memicu krisis utang yang lebih dalam.
+
+### 2. Olahraga Global
+Dunia sepak bola internasional dihebohkan dengan sejarah baru setelah penyerang tim nasional Inggris, Harry Kane, secara resmi dinobatkan sebagai pemenang penghargaan Ballon d'Or pada Senin malam, 26 Oktober 2026. Berita ini menandai pertama kalinya seorang pemain asal Inggris merengkuh penghargaan individu paling bergengsi di dunia dalam kurun waktu 25 tahun terakhir. Perjalanan karier Kane yang berakar dari akademi Tottenham Hotspur menjadi sorotan utama media olahraga global.
+
+Berdasarkan laporan eksklusif dari BBC Sport tertanggal 27 Oktober 2026 dengan judul *"Tottenham news: Harry Kane wins Ballon d'Or"* (URL: https://www.bbc.com/sport/football/articles/cwdd8nn060l7o), Kane menyampaikan rasa terima kasih mendalam kepada klub yang telah membesarkan namanya:
+> "I want to say thank you to Tottenham Hotspur, as well. I wouldn't be where I am today without Tottenham, for sure. I was there from 11 years old. All the guidance, the coaches - you allowed me to live my dream."
+
+Keberhasilan Kane tidak hanya menjadi pencapaian puncak pribadi setelah bertahun-tahun kerja keras di level klub dan internasional, tetapi juga menjadi kebanggaan tersendiri bagi akademi sepak bola Inggris yang mampu melahirkan talenta kelas dunia bermental baja.
+
+### 3. Teknologi & AI Terbaru
+Persaingan di ranah kecerdasan buatan (*artificial intelligence*) generatif semakin memanas dengan langkah terbaru dari raksasa teknologi Google. Pada Selasa, 27 Oktober 2026, Google DeepMind secara resmi merilis versi terbaru dari model dunianya (*world model*), yaitu Genie 4, dalam bentuk *research preview* bagi para penguji tepercaya. Model ini menawarkan peningkatan dramatis dalam hal realisme visual, kemampuan audio secara *real-time*, serta fleksibilitas interaksi pengguna di tengah simulasi.
+
+Dilansir dari TechCrunch pada 27 Oktober 2026 dalam artikel berjudul *"Google’s Genie 4 world model adds audio, more realistic worlds and real-time steering"* (URL: https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/):
+> "Google DeepMind released Genie 4, a world model with real-time audio, more realistic simulations, and mid-simulation text prompts, in research preview for trusted testers."
+
+Genie 4 memungkinkan pengguna untuk mengubah skenario secara langsung di tengah simulasi—seperti mengubah cuaca, sudut kamera, atau menambahkan objek baru hanya melalui perintah teks. Kehadiran model ini memperketat persaingan industri pemodelan dunia digital, di tengah gelombang konsolidasi industri AI global yang melibatkan berbagai perusahaan rintisan dan raksasa teknologi lainnya.
+
+### 4. Indonesia Update
+#### a) Ekonomi Domestik & Pasar Saham
+Perdagangan di Bursa Efek Indonesia (BEI) pada Selasa, 27 Oktober 2026, mengalami tekanan jual yang sangat masif. Indeks Harga Saham Gabungan (IHSG) anjlok tajam jelang penutupan perdagangan akibat derasnya aksi ambil untung dan kaburnya modal asing dari pasar domestik. 
+
+Berdasarkan laporan dari Kompas.com pada 27 Oktober 2026 dalam artikel berjudul *"IHSG Anjlok 3,42 Persen Jelang Penutupan, Asing Cabut Rp 2,24 Triliun"* (URL: https://money.kompas.com/read/2026/10/27/153831326/ihsg-anjlok-342-persen-jelang-penutupan-asuransi-cabut-rp-224-triliun), tercatat penurunan signifikan pada pergerakan indeks:
+> "Indeks turun 183,855 poin atau 3,42 persen ke level 5.189,239."
+
+Tekanan jual asing tercatat mencapai nilai transaksi jual sebesar Rp 2,24 triliun, dengan saham-saham perbankan besar seperti Bank Mandiri (BMRI), Bank Syariah Indonesia (BRIS), dan Bank Central Asia (BBCA) menjadi sasaran utama *net sell* oleh investor asing.
+
+#### b) Olahraga Nasional
+Kabar membanggakan datang dari kancah sepak bola usia dini internasional. Timnas Indonesia U-15 sukses menutup babak penyisihan Grup Piala Dunia U-15 2026 dengan kemenangan telak atas Burundi U-15 dalam pertandingan kelima yang dihelat di Hovsan Competition Complex pada Senin, 26 Oktober 2026.
+
+Dikutip dari Bola.com pada 27 Oktober 2026 dalam artikel berjudul *"Menggila! Timnas Indonesia U-15 Tutup Penyisihan Grup Piala Dunia U-15 2026 dengan Bantai Burundi 6-1"* (URL: https://www.bola.com/indonesia/read/8321888/menggila-timnas-indonesia-u-15-tutup-penyisihan-grup-piala-dunia-u-15-2026-dengan-bantai-burundi-6-1):
+> "Bermain di Hovsan Competition Complex, Senin (26-10-2026) malam WIB dalam partai kelima Grup G, Timnas Indonesia U-15 berpesta gol 6-1 atas Burundi U-15."
+
+Kemenangan besar ini memastikan Garuda Muda mengumpulkan total tujuh poin dari lima pertandingan dan finis di posisi ketiga klasemen akhir Grup G, melangkah ke fase berikutnya dengan catatan performa yang menjanjikan.
+
+### 5. Trending Indonesia
+Isu sosial dan pergerakan mahasiswa kembali menjadi pusat perhatian publik di Indonesia menjelang akhir Oktober 2026. Badan Eksekutif Mahasiswa Universitas Indonesia (BEM UI) bersama berbagai elemen masyarakat dan buruh dijadwalkan menggelar aksi demonstrasi besar-besaran di kawasan Bundaran Hotel Indonesia (HI), Jakarta Pusat. 
+
+Berdasarkan liputan Kompas.com pada 27 Oktober 2026 dalam artikel berjudul *"Demo BEM UI 28 Oktober: Mahasiswa Soroti MBG, Bencana Ekologis hingga APBN"* (URL: https://megapolitan.kompas.com/read/2026/10/27/18162531/demo-bem-ui-28-oktober-mahasiswa-soroti-mbg-bencana-ekologis-hingga-apbn), Kepala Departemen Kajian Strategis BEM UI 2026, Namora Siahaan, menyatakan bahwa tuntutan aksi tersebut mencakup berbagai krusial:
+> "Ada lima sebenarnya dari kita ya."
+
+Aksi ini menyoroti berbagai isu mendesak mulai dari penanganan bencana ekologis, evaluasi kebijakan anggaran negara (APBN), hingga program-program strategis pemerintah yang tengah berjalan, mencerminkan tingginya partisipasi kritis kaum intelektual muda terhadap arah kebijakan nasional.
+2026-10-27 17:03:53,987 [INFO] Mengirim laporan ke Telegram...
+2026-10-27 17:03:53,987 [INFO] Pesan dipecah jadi 3 bagian.
+2026-10-27 17:03:54,608 [INFO] ✅ Bagian 1/3 terkirim (Markdown)!
+2026-10-27 17:03:56,301 [INFO] ✅ Bagian 2/3 terkirim (Markdown)!
+2026-10-27 17:03:57,854 [INFO] ✅ Bagian 3/3 terkirim (Markdown)!
+2026-10-27 17:03:58,855 [INFO] History disimpan (5 entri).
+2026-10-27 17:03:58,855 [INFO] Selesai — laporan terkirim dan history disimpan.
