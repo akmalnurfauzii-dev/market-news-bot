@@ -70798,3 +70798,274 @@ Pihak manajemen PT Transportasi Jakarta (Transjakarta) dengan cepat memberikan k
 2026-11-04 03:54:36,302 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (229 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-11-04 03:54:36,302 [INFO] Mengirim laporan ke Telegram...
 2026-11-04 03:54:37,010 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-11-04 19:01:59,230 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-11-04 19:01:59,230 [INFO] =======================================================
+2026-11-04 19:01:59,230 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-11-04 19:01:59,230 [INFO] =======================================================
+2026-11-04 19:01:59,230 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-11-04 19:01:59,646 [INFO] Provider siap: Gemini dengan 4 model
+2026-11-04 19:01:59,657 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-11-04 19:01:59,663 [INFO] Provider siap: Z.AI dengan 1 model
+2026-11-04 19:01:59,668 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-11-04 19:01:59,674 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-11-04 19:01:59,688 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-11-04 19:01:59,707 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-04 19:02:04,967 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:02:04,974 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-04 19:02:05,013 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-04 19:02:05,013 [WARNING] backend is not set. Using 'auto'
+2026-11-04 19:02:05,133 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20stock%20market%20crypto%20news%20November%202026%20BBC%20CNBC%20Financial%20Times 429
+2026-11-04 19:02:05,316 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+stock+market+crypto+news+November+2026+BBC+CNBC+Financial+Times&limit=1 200
+2026-11-04 19:02:05,483 [INFO] response: https://search.brave.com/search?q=geopolitics+stock+market+crypto+news+November+2026+BBC+CNBC+Financial+Times&source=web&tf=pd 429
+2026-11-04 19:02:06,303 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-11-04 19:02:06,307 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-04 19:02:09,923 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:02:09,925 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-04 19:02:09,927 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-04 19:02:09,927 [WARNING] backend is not set. Using 'auto'
+2026-11-04 19:02:10,093 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20economy%20geopolitics%20November%202026 200
+2026-11-04 19:02:10,094 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+economy+geopolitics+November+2026&limit=1 200
+2026-11-04 19:02:10,225 [INFO] response: https://www.startpage.com/ 200
+2026-11-04 19:02:10,278 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-04 19:02:10,380 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-04 19:02:10,507 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+economy+geopolitics+November+2026&source=web&tf=pd 429
+2026-11-04 19:02:10,676 [INFO] response: https://search.yahoo.com/search;_ylt=1FaBCrqfcWURIwUW3fQCm5nD;_ylu=CgGWr60C94wf4bQcoOXSkRxhLwvF4OJiW9CtLkm-7kU5UKY?p=site%3Acnbc.com+markets+economy+geopolitics+November+2026&btf=d 200
+2026-11-04 19:02:11,509 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+economy+geopolitics+November+2026 403
+2026-11-04 19:02:11,509 [WARNING] Percobaan 1 gagal: No results found.
+2026-11-04 19:02:11,561 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20economy%20geopolitics%20November%202026 200
+2026-11-04 19:02:11,692 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+economy+geopolitics+November+2026&limit=1 200
+2026-11-04 19:02:12,070 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+economy+geopolitics+November+2026 403
+2026-11-04 19:02:12,175 [INFO] response: https://search.yahoo.com/search;_ylt=dgIFf586JwUpcIvEroxQ5KgA;_ylu=8sURFO9k2MktniEXlxIF2NI-gNUKAksaujiB_puPUMYiYWg?p=site%3Acnbc.com+markets+economy+geopolitics+November+2026&btf=d 200
+2026-11-04 19:02:12,625 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-04 19:02:12,738 [INFO] response: https://www.startpage.com/ 200
+2026-11-04 19:02:12,807 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-04 19:02:12,912 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+economy+geopolitics+November+2026&source=web&tf=pd 429
+2026-11-04 19:02:12,913 [WARNING] Percobaan 2 gagal: No results found.
+2026-11-04 19:02:12,970 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20economy%20geopolitics%20November%202026 200
+2026-11-04 19:02:13,098 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+economy+geopolitics+November+2026&limit=1 200
+2026-11-04 19:02:13,445 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+economy+geopolitics+November+2026 403
+2026-11-04 19:02:13,572 [INFO] response: https://www.startpage.com/ 200
+2026-11-04 19:02:13,672 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-04 19:02:13,788 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+economy+geopolitics+November+2026&source=web&tf=pw 429
+2026-11-04 19:02:13,870 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-04 19:02:13,972 [INFO] response: https://search.yahoo.com/search;_ylt=lTwjj9WOvkpjzjS7oecQhmHY;_ylu=nmvAOSxYwL_XI2rxbPGeHNndbKzboWL5krpzg3GrCHEoBdE?p=site%3Acnbc.com+markets+economy+geopolitics+November+2026&btf=w 200
+2026-11-04 19:02:14,434 [WARNING] Percobaan 3 gagal: No results found.
+2026-11-04 19:02:14,436 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-04 19:02:16,243 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:02:16,244 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-04 19:02:16,246 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-04 19:02:16,246 [WARNING] backend is not set. Using 'auto'
+2026-11-04 19:02:16,297 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news%20world%20economy%20market%20November%202026 429
+2026-11-04 19:02:16,405 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews+world+economy+market+November+2026&limit=1 200
+2026-11-04 19:02:16,482 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-04 19:02:16,632 [INFO] response: https://www.startpage.com/ 200
+2026-11-04 19:02:16,778 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-04 19:02:17,138 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews+world+economy+market+November+2026 403
+2026-11-04 19:02:17,252 [INFO] response: https://search.yahoo.com/search;_ylt=FimIwXY0C0B6yH-ytZm-hOqw;_ylu=6c_KbmuMzzGOp0f1Y34JtsLAHXc7TYFnBf-bKWhmI2zACWA?p=site%3Abbc.com%2Fnews+world+economy+market+November+2026&btf=d 200
+2026-11-04 19:02:17,771 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews+world+economy+market+November+2026&source=web&tf=pd 429
+2026-11-04 19:02:17,773 [WARNING] Percobaan 1 gagal: No results found.
+2026-11-04 19:02:17,900 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews+world+economy+market+November+2026&limit=1 200
+2026-11-04 19:02:17,930 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news%20world%20economy%20market%20November%202026 200
+2026-11-04 19:02:18,040 [INFO] response: https://www.startpage.com/ 200
+2026-11-04 19:02:18,090 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-04 19:02:18,470 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews+world+economy+market+November+2026 403
+2026-11-04 19:02:18,574 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews+world+economy+market+November+2026&source=web&tf=pd 429
+2026-11-04 19:02:18,652 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-04 19:02:18,767 [INFO] response: https://search.yahoo.com/search;_ylt=lSHYYh9uNm5Hz17q_80t9l7i;_ylu=Rhq9jX7JRApGTvRFXWK-okES3cbMX7-9rHiV50TlPCeoqvY?p=site%3Abbc.com%2Fnews+world+economy+market+November+2026&btf=d 200
+2026-11-04 19:02:18,776 [WARNING] Percobaan 2 gagal: No results found.
+2026-11-04 19:02:18,828 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/news%20world%20economy%20market%20November%202026 200
+2026-11-04 19:02:18,894 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fnews+world+economy+market+November+2026&limit=1 200
+2026-11-04 19:02:19,000 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fnews+world+economy+market+November+2026&source=web&tf=pw 429
+2026-11-04 19:02:19,110 [INFO] response: https://search.yahoo.com/search;_ylt=TDmoIrtuNGU1F3obLxsCaEFY;_ylu=467gSAn_5jCB1UNjGILxluYc1scKlvO6qL4hxrHSyPYalLU?p=site%3Abbc.com%2Fnews+world+economy+market+November+2026&btf=w 200
+2026-11-04 19:02:20,008 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fnews+world+economy+market+November+2026 403
+2026-11-04 19:02:20,115 [INFO] response: https://www.startpage.com/ 200
+2026-11-04 19:02:20,165 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-04 19:02:20,170 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-04 19:02:23,497 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:02:23,498 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-04 19:02:24,080 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-04 19:02:27,417 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:02:27,419 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-04 19:02:27,422 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-04 19:02:27,422 [WARNING] backend is not set. Using 'auto'
+2026-11-04 19:02:27,584 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20football%20Champions%20League%20November%202026 200
+2026-11-04 19:02:27,630 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+football+Champions+League+November+2026&limit=1 200
+2026-11-04 19:02:27,708 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-04 19:02:27,845 [INFO] response: https://www.startpage.com/ 200
+2026-11-04 19:02:27,915 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-04 19:02:28,019 [INFO] response: https://search.yahoo.com/search;_ylt=_bofsKMlwVfib0v7dMHchyWj;_ylu=LhmamEowC2STy5jTP4MlvEKIsYYviPCfPV49q_pAjxJDt2o?p=site%3Abbc.com%2Fsport+football+Champions+League+November+2026&btf=d 200
+2026-11-04 19:02:28,565 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+football+Champions+League+November+2026&source=web&tf=pd 429
+2026-11-04 19:02:28,973 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+football+Champions+League+November+2026 403
+2026-11-04 19:02:28,976 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-04 19:02:32,598 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:02:32,599 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-04 19:02:32,727 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-04 19:02:32,875 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-04 19:02:32,876 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-04 19:02:32,876 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-04 19:02:32,876 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-11-04 19:02:33,047 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-11-04 19:02:33,048 [WARNING] ⚠️ NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b gagal: Error code: 404
+2026-11-04 19:02:33,048 [WARNING] Model nvidia/nemotron-3-super-120b-a12b ditandai mati (retired/404/410).
+2026-11-04 19:02:33,048 [INFO] Mencoba provider NVIDIA NIM dengan model meta/llama-4-maverick-17b-128e-instruct...
+2026-11-04 19:02:33,168 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-11-04 19:02:33,169 [WARNING] ⚠️ NVIDIA NIM / meta/llama-4-maverick-17b-128e-instruct gagal: Error code: 410
+2026-11-04 19:02:33,169 [WARNING] Model meta/llama-4-maverick-17b-128e-instruct ditandai mati (retired/404/410).
+2026-11-04 19:02:33,169 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-11-04 19:02:33,169 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-04 19:02:37,868 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:02:37,869 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-04 19:02:37,873 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-04 19:02:40,690 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:02:40,691 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-04 19:02:40,693 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-04 19:02:40,693 [WARNING] backend is not set. Using 'auto'
+2026-11-04 19:02:40,840 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atheverge.com+AI+technology+November+2026&limit=1 200
+2026-11-04 19:02:40,845 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atheverge.com%20AI%20technology%20November%202026 200
+2026-11-04 19:02:41,204 [INFO] response: https://www.mojeek.com/search?q=site%3Atheverge.com+AI+technology+November+2026 403
+2026-11-04 19:02:41,294 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-04 19:02:41,397 [INFO] response: https://search.yahoo.com/search;_ylt=bshfuJfpwPAvAWAoUh07OKU2;_ylu=8V4JmSdzaAg1Zm48-BPLgreDGHXAC2abyaF02imC9_g14Ws?p=site%3Atheverge.com+AI+technology+November+2026&btf=d 200
+2026-11-04 19:02:41,889 [INFO] response: https://www.startpage.com/ 200
+2026-11-04 19:02:41,935 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-04 19:02:42,040 [INFO] response: https://search.brave.com/search?q=site%3Atheverge.com+AI+technology+November+2026&source=web&tf=pd 429
+2026-11-04 19:02:42,044 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-04 19:02:42,213 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-04 19:02:42,214 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-04 19:02:42,214 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-04 19:02:42,214 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-04 19:02:42,214 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-04 19:02:45,197 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:02:45,198 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-04 19:02:45,202 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-04 19:02:47,136 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:02:47,137 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-04 19:02:47,139 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-04 19:02:47,139 [WARNING] backend is not set. Using 'auto'
+2026-11-04 19:02:47,190 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Awired.com%20AI%20November%202026 429
+2026-11-04 19:02:47,232 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Awired.com+AI+November+2026&limit=1 200
+2026-11-04 19:02:47,323 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-04 19:02:47,429 [INFO] response: https://search.brave.com/search?q=site%3Awired.com+AI+November+2026&source=web&tf=pd 429
+2026-11-04 19:02:47,536 [INFO] response: https://search.yahoo.com/search;_ylt=zjIrT8-cldFO6mvibS-LTxQ1;_ylu=LKg2itMl4RmOzNOf7LhKlzbqGorqIKg9tFa0IY1hCLeDlVU?p=site%3Awired.com+AI+November+2026&btf=d 200
+2026-11-04 19:02:48,047 [INFO] response: https://www.startpage.com/ 200
+2026-11-04 19:02:48,105 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-04 19:02:48,481 [INFO] response: https://www.mojeek.com/search?q=site%3Awired.com+AI+November+2026 403
+2026-11-04 19:02:48,484 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-04 19:02:48,644 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-04 19:02:48,645 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-04 19:02:48,645 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-04 19:02:48,645 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-04 19:02:48,645 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-04 19:02:53,001 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:02:53,001 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-04 19:02:53,006 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-04 19:02:53,149 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-04 19:02:53,150 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-04 19:02:53,150 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-04 19:02:53,150 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-04 19:02:53,150 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-04 19:03:09,144 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:03:09,145 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-04 19:03:09,150 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-04 19:03:12,213 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:03:12,214 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-04 19:03:12,457 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-04 19:03:13,445 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-11-04 19:03:13,446 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503
+2026-11-04 19:03:13,446 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-11-04 19:03:15,289 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-11-04 19:03:15,290 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 503
+2026-11-04 19:03:15,290 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-04 19:03:15,620 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-11-04 19:03:15,620 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 503
+2026-11-04 19:03:15,621 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-04 19:03:17,815 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:03:17,816 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-04 19:03:17,818 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-04 19:03:17,818 [WARNING] backend is not set. Using 'auto'
+2026-11-04 19:03:17,870 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Akontan.co.id%20IHSG%20Rupiah%20November%202026 429
+2026-11-04 19:03:17,972 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Akontan.co.id+IHSG+Rupiah+November+2026&limit=1 200
+2026-11-04 19:03:18,146 [INFO] response: https://search.brave.com/search?q=site%3Akontan.co.id+IHSG+Rupiah+November+2026&source=web&tf=pd 429
+2026-11-04 19:03:18,571 [INFO] response: https://www.mojeek.com/search?q=site%3Akontan.co.id+IHSG+Rupiah+November+2026 403
+2026-11-04 19:03:19,220 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-11-04 19:03:19,225 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-04 19:03:21,648 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:03:21,649 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-04 19:03:22,079 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-04 19:03:23,677 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:03:23,678 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-04 19:03:23,719 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-04 19:03:28,056 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:03:28,057 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-04 19:03:28,059 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-04 19:03:28,059 [WARNING] backend is not set. Using 'auto'
+2026-11-04 19:03:28,111 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20IHSG%20November%202026 429
+2026-11-04 19:03:28,174 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+IHSG+November+2026&limit=1 200
+2026-11-04 19:03:28,298 [INFO] response: https://search.yahoo.com/search;_ylt=6cv_wTwEPrjLCAKCP4Q0Cv_F;_ylu=ZB6JnQYYjMqWgpr91Jmuv9zVFMayJvd6yMtLwDbdT6wjorE?p=site%3Acnbcindonesia.com+IHSG+November+2026&btf=d 200
+2026-11-04 19:03:29,179 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+IHSG+November+2026 403
+2026-11-04 19:03:29,281 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+IHSG+November+2026&source=web&tf=pd 429
+2026-11-04 19:03:29,382 [INFO] response: https://www.startpage.com/ 200
+2026-11-04 19:03:29,436 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-04 19:03:29,510 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-04 19:03:29,526 [WARNING] Percobaan 1 gagal: No results found.
+2026-11-04 19:03:29,649 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+IHSG+November+2026&limit=1 200
+2026-11-04 19:03:29,700 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20IHSG%20November%202026 200
+2026-11-04 19:03:29,806 [INFO] response: https://search.yahoo.com/search;_ylt=DrMKzJvK2QfMJeqgB1GjFDbZ;_ylu=3C-sy8mWBdAcMqoYLybR_UyyQwHK6hJYqXKBSM0kLucaV0w?p=site%3Acnbcindonesia.com+IHSG+November+2026&btf=d 200
+2026-11-04 19:03:30,199 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-04 19:03:32,998 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:03:33,000 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-04 19:03:34,127 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-04 19:03:39,811 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-04 19:03:39,812 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-04 19:03:39,813 [INFO] Validasi: 6x fetch_webpage sukses (minimum 3).
+2026-11-04 19:03:39,813 [INFO] URL yang berhasil di-fetch: {'https://www.bbc.com/news/live/cj1dw0ydn595t?post=asset:15eb79fe-aec3-4f6f-ab0a-1dab9e73070e', 'https://www.cnbcindonesia.com/market/20261104152116-17-782322/ihsg-ditutup-menguat-032-ke-491977', 'https://www.bbc.com/sport/football/articles/cq3dj37m1kddo', 'https://www.wired.com/story/uk-officials-said-ai-would-add-400-billion-to-the-economy-that-figure-mainly-came-from-google/'}
+2026-11-04 19:03:39,814 [INFO] Validasi LULUS — laporan berbasis riset nyata dan format benar.
+2026-11-04 19:03:39,815 [INFO] LAPORAN FINAL:
+2026-11-04 19:03:39,815 [INFO] ## 📊 LAPORAN MENDALAM — 04 NOVEMBER 2026
+
+Halo rekan-rekan semua! Memasuki hari Rabu, 04 November 2026, dinamika global dan domestik kembali menyajikan berbagai peristiwa krusial yang mempengaruhi pasar keuangan, kancah olahraga internasional, hingga kebijakan strategis kecerdasan buatan di tingkat global. Mari kita bedah satu per satu dalam laporan intelijen komprehensif berikut ini.
+
+### Geopolitik & Ekonomi Global
+
+Panggung politik Amerika Serikat dan dinamika geopolitik internasional kembali memanas seiring berlangsungnya pemilihan paruh waktu (midterm elections) bulan November 2026 ini. Berdasarkan laporan terkini dari **BBC News** pada 3 November 2026 (*https://www.bbc.com/news/live/cj1dw0ydn595t?post=asset:15eb79fe-aec3-4f6f-ab0a-1dab9e73070e*), Presiden Donald Trump mengakui bahwa perang di Iran serta tingginya harga bahan bakar menjadi faktor pendorong kemenangan Partai Demokrat di berbagai wilayah di seluruh negeri, termasuk di Texas, Kansas, dan Michigan. 
+
+Menanggapi potensi kendali Kongres oleh Partai Demokrat yang dipastikan akan memperumit agenda legislatifnya, Presiden Trump memberikan pernyataan melalui sambungan telepon dengan Politico. Ia menegaskan niatnya untuk tetap mencari titik temu: *"I would work with the Democrats to make sure things go well for our country."* Meskipun demikian, ia juga tidak menutup kemungkinan menggunakan hak veto jika diperlukan, seraya menambahkan: *"I don't want to just be sitting there for two years vetoing everything, I want things to happen too."* Gejolak politik domestik AS ini memberikan sentimen ketidakpastian tersendiri bagi pasar saham dan aset global, di mana para investor terus mencermati bagaimana kompromi politik Washington ke depannya akan mempengaruhi stabilitas fiskal dan harga energi dunia.
+
+---
+
+### Olahraga Global
+
+Dari dunia sepak bola Inggris, kabar mengejutkan datang dari klub Championship, West Ham United. Berdasarkan laporan **BBC Sport** yang dipublikasikan pada awal November 2026 (*https://www.bbc.com/sport/football/articles/cq3dj37m1kddo*), West Ham secara resmi mengumumkan penunjukan mantan gelandang mereka, Scott Parker, sebagai pelatih kepala (*head coach*) yang baru dengan kontrak berdurasi dua setengah tahun. 
+
+Pelatih berusia 46 tahun tersebut datang menggantikan Nuno Espirito Santo yang dipecat menyusul awal musim yang kurang memuaskan di Divisi Championship. Scott Parker sebelumnya memiliki rekam jejak membawa Fulham, Bournemouth, dan Burnley promosi ke Liga Primer Inggris. Dalam tanggapannya kepada situs resmi klub, Parker menyatakan kebanggaannya bisa kembali ke klub yang sangat berarti bagi keluarganya: *"It is a very proud moment for me to step into this role and return to a club that means so much to me and my family."* Ia juga menekankan hubungan emosional yang kuat dengan para suporter: *"That rapport and respect, that I felt instantly."* Penunjukan ini diharapkan mampu mendongkrak performa *The Hammers* agar segera kembali bersaing di kasta tertinggi Liga Inggris.
+
+---
+
+### Teknologi & AI Terbaru
+
+Isu besar mengenai valuasi ekonomi dari teknologi kecerdasan buatan (*Artificial Intelligence*) mencuat ke permukaan setelah pemerintah Inggris memberikan klarifikasi resmi. Melalui laporan investigatif dari **WIRED** pada awal November 2026 (*https://www.wired.com/story/uk-officials-said-ai-add-400-billion-economy-that-figure-mainly-came-from-google/*), terungkap bahwa klaim pemerintah selama dua tahun terakhir bahwa AI akan mendongkrak perekonomian Britania Raya sebesar £400 miliar ($538 miliar) ternyata bersumber dari laporan independen yang ditugaskan oleh Google, bukan dari proyeksi internal murni pemerintah.
+
+Menteri AI Inggris, Kanishka Narayan, dalam jawabannya terhadap pertanyaan parlemen mengakui bahwa proyeksi internal pemerintah jauh lebih moderat. Adopsi AI dan investasi data diperkirakan "hanya" akan menyumbang antara £55 miliar hingga £140 miliar bagi ekonomi Inggris pada tahun 2030, dengan estimasi tengah di angka £120 miliar. Pihak kementerian menegaskan bahwa angka £400 miliar tersebut *"was drawn from a publicly available 2023 report commissioned by Google and produced by Public First."* Perdebatan ini menyoroti pentingnya transparansi dalam proyeksi ekonomi berbasis teknologi di tengah tingginya eksploitasi narasi AI oleh korporasi global.
+
+---
+
+### Indonesia Update
+
+**a) Ekonomi Domestik & IHSG**
+Pasar keuangan domestik pada perdagangan Rabu, 4 November 2026, mencatatkan pemulihan yang melegakan setelah sempat tertekan hebat di awal sesi. Berdasarkan laporan dari **CNBC Indonesia** (*https://www.cnbcindonesia.com/market/20261104152116-17-782322/ihsg-ditutup-menguat-032-ke-491977*), Indeks Harga Saham Gabungan (IHSG) berhasil mengakhiri perdagangan di zona hijau dengan penguatan 15,48 poin atau naik 0,32% ke level **4.919,77**. 
+
+Meskipun sempat dibuka melemah di level 4.856,96 dan menyentuh titik terendah di kisaran 4.826 akibat tekanan jual dan sentimen global—termasuk dinamika geopolitik serta isu domestik—aksi beli bersih (*net foreign buy*) oleh investor asing tercatat masuk sebesar Rp268,67 miliar pada sesi pertama. Sektor keuangan menjadi motor utama penguatan dengan kenaikan 1,15%, didukung oleh saham-saham perbankan besar seperti BBRI dan BBCA. Sementara itu, nilai tukar Rupiah terhadap dolar Amerika Serikat terpantau berada di kisaran Rp18.100 per USD di tengah tantangan likuiditas global.
+
+**b) Olahraga Indonesia**
+*(Data spesifik mengenai update atlet atau Timnas Indonesia dari media besar nasional dalam 48 jam terakhir tidak ditemukan secara terverifikasi pada sesi pencarian ini, sehingga bagian ini ditiadakan untuk menjaga integritas anti-halusinasi).*
+
+---
+
+### Trending Indonesia
+
+*(Topik trending atau viral khusus di Indonesia dari media nasional kredibel dalam rentang waktu 24-48 jam terakhir belum terindeks secara lengkap dan terverifikasi pada sesi ini, sehingga laporan difokuskan pada data ekonomi dan geopolitik yang telah tervalidasi secara akurat).*
+2026-11-04 19:03:39,815 [INFO] Mengirim laporan ke Telegram...
+2026-11-04 19:03:39,815 [INFO] Pesan dipecah jadi 2 bagian.
+2026-11-04 19:03:40,415 [INFO] ✅ Bagian 1/2 terkirim (Markdown)!
+2026-11-04 19:03:41,960 [INFO] ✅ Bagian 2/2 terkirim (Markdown)!
+2026-11-04 19:03:42,961 [INFO] History disimpan (5 entri).
+2026-11-04 19:03:42,961 [INFO] Selesai — laporan terkirim dan history disimpan.
