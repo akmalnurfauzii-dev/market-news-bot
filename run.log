@@ -71920,3 +71920,413 @@ Meskipun sempat dibuka melemah di level 4.856,96 dan menyentuh titik terendah di
 2026-11-05 19:16:29,956 [ERROR] ❌ Laporan hari ini gagal divalidasi (Hanya 2 URL yang benar-benar di-fetch, minimal 3). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-11-05 19:16:29,956 [INFO] Mengirim laporan ke Telegram...
 2026-11-05 19:16:30,712 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-11-06 04:05:58,227 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-11-06 04:05:58,227 [INFO] =======================================================
+2026-11-06 04:05:58,227 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-11-06 04:05:58,227 [INFO] =======================================================
+2026-11-06 04:05:58,228 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-11-06 04:05:58,583 [INFO] Provider siap: Gemini dengan 4 model
+2026-11-06 04:05:58,593 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-11-06 04:05:58,598 [INFO] Provider siap: Z.AI dengan 1 model
+2026-11-06 04:05:58,603 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-11-06 04:05:58,610 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-11-06 04:05:58,628 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-11-06 04:05:58,647 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:06:02,740 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:06:02,745 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:06:02,780 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-06 04:06:02,780 [WARNING] backend is not set. Using 'auto'
+2026-11-06 04:06:03,007 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economy%20stock%20market%20crypto%20November%202026%20BBC%20CNBC 200
+2026-11-06 04:06:03,241 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economy+stock+market+crypto+November+2026+BBC+CNBC&limit=1 200
+2026-11-06 04:06:03,494 [INFO] response: https://search.yahoo.com/search;_ylt=5L7eg3d0y4OHlA_9iF7CumBE;_ylu=SElbnts70_OV3MkAp4Kr5KaJkLfJrrXzO1CcVLg5nqMAriw?p=global+economy+stock+market+crypto+November+2026+BBC+CNBC&btf=d 200
+2026-11-06 04:06:03,999 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:06:05,625 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:06:05,626 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:06:05,628 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-06 04:06:05,628 [WARNING] backend is not set. Using 'auto'
+2026-11-06 04:06:05,793 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20stock%20market%20economy%20November%205%202026 200
+2026-11-06 04:06:05,873 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+stock+market+economy+November+5+2026&limit=1 200
+2026-11-06 04:06:06,111 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+stock+market+economy+November+5+2026&source=web&tf=pd 429
+2026-11-06 04:06:06,325 [INFO] response: https://search.yahoo.com/search;_ylt=VT91bWLE8_1vkF1VUgrUjlp4;_ylu=0XdLYEKOHSpjomSlwwaqFMIsdtICQCF4XY8wX88s3iGP3Ec?p=site%3Acnbc.com+stock+market+economy+November+5+2026&btf=d 200
+2026-11-06 04:06:07,264 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+stock+market+economy+November+5+2026 403
+2026-11-06 04:06:07,562 [INFO] response: https://www.startpage.com/ 200
+2026-11-06 04:06:07,656 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-06 04:06:07,659 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:06:08,978 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:06:08,979 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:06:08,981 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-06 04:06:08,981 [WARNING] backend is not set. Using 'auto'
+2026-11-06 04:06:09,025 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com%20market%20economy%20November%202026 429
+2026-11-06 04:06:09,192 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com+market+economy+November+2026&limit=1 200
+2026-11-06 04:06:09,675 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com+market+economy+November+2026 403
+2026-11-06 04:06:09,913 [INFO] response: https://www.startpage.com/ 200
+2026-11-06 04:06:09,974 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-06 04:06:10,160 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com+market+economy+November+2026&source=web&tf=pd 429
+2026-11-06 04:06:10,382 [INFO] response: https://search.yahoo.com/search;_ylt=MMKpHw2mRDZJ9GGQCLufjriI;_ylu=6gKgWfyD55-2opLY-YNKa-s1iSAQU8VLhtOIhcM0lYpRRxE?p=site%3Abbc.com+market+economy+November+2026&btf=d 200
+2026-11-06 04:06:11,335 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-11-06 04:06:11,337 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:06:13,690 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:06:13,692 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:06:13,694 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-06 04:06:13,694 [WARNING] backend is not set. Using 'auto'
+2026-11-06 04:06:13,856 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20stock%20market%20crypto%20news%20November%205%202026%20BBC%20Al%20Jazeera%20CNBC 200
+2026-11-06 04:06:13,996 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+stock+market+crypto+news+November+5+2026+BBC+Al+Jazeera+CNBC&limit=1 200
+2026-11-06 04:06:14,137 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-06 04:06:14,324 [INFO] response: https://search.brave.com/search?q=geopolitics+stock+market+crypto+news+November+5+2026+BBC+Al+Jazeera+CNBC&source=web&tf=pd 429
+2026-11-06 04:06:14,807 [INFO] response: https://www.mojeek.com/search?q=geopolitics+stock+market+crypto+news+November+5+2026+BBC+Al+Jazeera+CNBC 403
+2026-11-06 04:06:15,024 [INFO] response: https://search.yahoo.com/search;_ylt=sfDGcLS8USc1O_G57QcQMaZ5;_ylu=_IMJOskoeRKysriPuQCyjL0PuVY9jSCnj-V8ADt2ONQEf-s?p=geopolitics+stock+market+crypto+news+November+5+2026+BBC+Al+Jazeera+CNBC&btf=d 200
+2026-11-06 04:06:15,503 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:06:17,442 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:06:17,443 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:06:17,445 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-06 04:06:17,445 [WARNING] backend is not set. Using 'auto'
+2026-11-06 04:06:17,564 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=oil%20prices%20stock%20market%20geopolitical%20news%20November%205%202026%20CNBC 200
+2026-11-06 04:06:17,882 [INFO] response: https://grokipedia.com/api/typeahead?query=oil+prices+stock+market+geopolitical+news+November+5+2026+CNBC&limit=1 200
+2026-11-06 04:06:18,122 [INFO] response: https://www.startpage.com/ 200
+2026-11-06 04:06:18,206 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-06 04:06:18,381 [INFO] response: https://search.yahoo.com/search;_ylt=YDra8AGmqQtlZyaF3eE09eyN;_ylu=K1jwrtxM0keHMEZo36O0Cj7Z2gMtIW7qEsU1TxQci8PfiLU?p=oil+prices+stock+market+geopolitical+news+November+5+2026+CNBC&btf=d 200
+2026-11-06 04:06:18,943 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:06:21,133 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:06:21,134 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:06:22,153 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:06:22,250 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:06:22,251 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:06:22,251 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:06:22,251 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-11-06 04:06:22,475 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-11-06 04:06:22,476 [WARNING] ⚠️ NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b gagal: Error code: 404
+2026-11-06 04:06:22,476 [WARNING] Model nvidia/nemotron-3-super-120b-a12b ditandai mati (retired/404/410).
+2026-11-06 04:06:22,476 [INFO] Mencoba provider NVIDIA NIM dengan model meta/llama-4-maverick-17b-128e-instruct...
+2026-11-06 04:06:22,652 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-11-06 04:06:22,652 [WARNING] ⚠️ NVIDIA NIM / meta/llama-4-maverick-17b-128e-instruct gagal: Error code: 410
+2026-11-06 04:06:22,652 [WARNING] Model meta/llama-4-maverick-17b-128e-instruct ditandai mati (retired/404/410).
+2026-11-06 04:06:22,652 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-11-06 04:06:22,652 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:06:26,390 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:06:26,391 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:06:26,395 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:06:26,475 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:06:26,476 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:06:26,476 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:06:26,476 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:06:26,476 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:06:38,394 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:06:38,394 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:06:38,398 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:07:00,188 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:07:00,189 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:07:00,380 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:07:02,782 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:07:02,784 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:07:02,787 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:07:04,450 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:07:04,451 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:07:04,453 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-06 04:07:04,453 [WARNING] backend is not set. Using 'auto'
+2026-11-06 04:07:04,611 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Champions%20League%20results%20football%20November%205%202026%20BBC%20Sport 200
+2026-11-06 04:07:04,688 [INFO] response: https://grokipedia.com/api/typeahead?query=Champions+League+results+football+November+5+2026+BBC+Sport&limit=1 200
+2026-11-06 04:07:04,941 [INFO] response: https://www.startpage.com/ 200
+2026-11-06 04:07:05,016 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-06 04:07:05,202 [INFO] response: https://search.brave.com/search?q=Champions+League+results+football+November+5+2026+BBC+Sport&source=web&tf=pd 429
+2026-11-06 04:07:05,662 [INFO] response: https://www.mojeek.com/search?q=Champions+League+results+football+November+5+2026+BBC+Sport 403
+2026-11-06 04:07:05,785 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-06 04:07:06,120 [INFO] response: https://search.yahoo.com/search;_ylt=bY1MbAcLOIzlFFV-ZDT-4UvV;_ylu=WfXI_S-L78MSLCvquXX5wF8XzspMpzPqsTTh4kw45lixKeA?p=Champions+League+results+football+November+5+2026+BBC+Sport&btf=d 200
+2026-11-06 04:07:06,633 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:07:09,114 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:07:09,115 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:07:10,594 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:07:11,981 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:07:11,982 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:07:11,984 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-06 04:07:11,984 [WARNING] backend is not set. Using 'auto'
+2026-11-06 04:07:12,130 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=UEFA%20Champions%20League%20results%20scores%20November%205%202026%20ESPN 200
+2026-11-06 04:07:12,295 [INFO] response: https://grokipedia.com/api/typeahead?query=UEFA+Champions+League+results+scores+November+5+2026+ESPN&limit=1 200
+2026-11-06 04:07:12,408 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-06 04:07:13,022 [INFO] response: https://www.mojeek.com/search?q=UEFA+Champions+League+results+scores+November+5+2026+ESPN 403
+2026-11-06 04:07:13,197 [INFO] response: https://search.yahoo.com/search;_ylt=KGTVGORORQcLXufi7Ki29D80;_ylu=5yh3SDM82i3PRNsPu2DZzzrSb6noQYiCYbMupXrK8pc8Fgg?p=UEFA+Champions+League+results+scores+November+5+2026+ESPN&btf=d 200
+2026-11-06 04:07:13,895 [INFO] response: https://www.startpage.com/ 200
+2026-11-06 04:07:13,987 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-06 04:07:14,202 [INFO] response: https://search.brave.com/search?q=UEFA+Champions+League+results+scores+November+5+2026+ESPN&source=web&tf=pd 429
+2026-11-06 04:07:14,241 [WARNING] Percobaan 1 gagal: No results found.
+2026-11-06 04:07:14,285 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=UEFA%20Champions%20League%20results%20scores%20November%205%202026%20ESPN 200
+2026-11-06 04:07:14,458 [INFO] response: https://grokipedia.com/api/typeahead?query=UEFA+Champions+League+results+scores+November+5+2026+ESPN&limit=1 200
+2026-11-06 04:07:15,029 [INFO] response: https://www.mojeek.com/search?q=UEFA+Champions+League+results+scores+November+5+2026+ESPN 403
+2026-11-06 04:07:15,219 [INFO] response: https://search.brave.com/search?q=UEFA+Champions+League+results+scores+November+5+2026+ESPN&source=web&tf=pd 429
+2026-11-06 04:07:15,461 [INFO] response: https://search.yahoo.com/search;_ylt=KXRp48aF-EEYlJg0mp3D1_Jf;_ylu=5Sg5trp2-0DRbUJd-UztMS4tw_-_pufXmJ5BLeSx29AkVqQ?p=UEFA+Champions+League+results+scores+November+5+2026+ESPN&btf=d 200
+2026-11-06 04:07:15,966 [INFO] response: https://www.startpage.com/ 200
+2026-11-06 04:07:16,051 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-06 04:07:16,181 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-06 04:07:16,182 [WARNING] Percobaan 2 gagal: No results found.
+2026-11-06 04:07:16,365 [INFO] response: https://grokipedia.com/api/typeahead?query=UEFA+Champions+League+results+scores+November+5+2026+ESPN&limit=1 200
+2026-11-06 04:07:16,382 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=UEFA%20Champions%20League%20results%20scores%20November%205%202026%20ESPN 200
+2026-11-06 04:07:16,571 [INFO] response: https://search.brave.com/search?q=UEFA+Champions+League+results+scores+November+5+2026+ESPN&source=web&tf=pw 429
+2026-11-06 04:07:16,732 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-06 04:07:17,165 [INFO] response: https://www.mojeek.com/search?q=UEFA+Champions+League+results+scores+November+5+2026+ESPN 403
+2026-11-06 04:07:17,346 [INFO] response: https://search.yahoo.com/search;_ylt=rOVmBfOb3ryldwAYslmpUzFm;_ylu=dpX8XJRT_XgpyzNOSmwk9JDdpFj4y0uLzxrtCQ-pEAvhqBg?p=UEFA+Champions+League+results+scores+November+5+2026+ESPN&btf=w 200
+2026-11-06 04:07:17,859 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:07:19,905 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:07:19,906 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:07:20,018 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:07:22,755 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:07:22,756 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:07:22,758 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-06 04:07:22,758 [WARNING] backend is not set. Using 'auto'
+2026-11-06 04:07:22,808 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20football%20Champions%20League%20matchweek%20results%20November%202026 429
+2026-11-06 04:07:23,119 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+football+Champions+League+matchweek+results+November+2026&limit=1 200
+2026-11-06 04:07:23,626 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+football+Champions+League+matchweek+results+November+2026 403
+2026-11-06 04:07:23,802 [INFO] response: https://search.yahoo.com/search;_ylt=FlgXrbiypIbPyIDMtfW7vUt7;_ylu=nWtBIMSCVw70IJZ1ziO9cIyhRucFiSqPpmKlleG-ChPchgo?p=site%3Abbc.com%2Fsport+football+Champions+League+matchweek+results+November+2026&btf=d 200
+2026-11-06 04:07:24,416 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-06 04:07:24,615 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+football+Champions+League+matchweek+results+November+2026&source=web&tf=pd 429
+2026-11-06 04:07:24,867 [INFO] response: https://www.startpage.com/ 200
+2026-11-06 04:07:24,932 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-06 04:07:24,933 [WARNING] Percobaan 1 gagal: No results found.
+2026-11-06 04:07:25,107 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20football%20Champions%20League%20matchweek%20results%20November%202026 200
+2026-11-06 04:07:25,262 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+football+Champions+League+matchweek+results+November+2026&limit=1 200
+2026-11-06 04:07:25,438 [INFO] response: https://search.yahoo.com/search;_ylt=uWdkrlNdgyLlBud7W0Ckzrws;_ylu=gJBsewucleiEeC97Ilr05bmbf-nesPb2M6T0G1Li0fbY1Zo?p=site%3Abbc.com%2Fsport+football+Champions+League+matchweek+results+November+2026&btf=d 200
+2026-11-06 04:07:26,362 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+football+Champions+League+matchweek+results+November+2026 403
+2026-11-06 04:07:26,519 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-06 04:07:26,715 [INFO] response: https://www.startpage.com/ 200
+2026-11-06 04:07:26,778 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-06 04:07:26,959 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+football+Champions+League+matchweek+results+November+2026&source=web&tf=pd 429
+2026-11-06 04:07:27,002 [WARNING] Percobaan 2 gagal: No results found.
+2026-11-06 04:07:27,046 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20football%20Champions%20League%20matchweek%20results%20November%202026 200
+2026-11-06 04:07:27,345 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+football+Champions+League+matchweek+results+November+2026&limit=1 200
+2026-11-06 04:07:27,526 [INFO] response: https://search.yahoo.com/search;_ylt=Z0CJpFKiTmkUKUSXl8psVVJI;_ylu=_TCYh3J9adplkAv7sdFROdtDoKemeRcUtC-812NWf4_gdyg?p=site%3Abbc.com%2Fsport+football+Champions+League+matchweek+results+November+2026&btf=w 200
+2026-11-06 04:07:28,529 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+football+Champions+League+matchweek+results+November+2026 403
+2026-11-06 04:07:28,722 [INFO] response: https://www.startpage.com/ 200
+2026-11-06 04:07:28,822 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-06 04:07:29,006 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+football+Champions+League+matchweek+results+November+2026&source=web&tf=pw 429
+2026-11-06 04:07:29,189 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-06 04:07:29,190 [WARNING] Percobaan 3 gagal: No results found.
+2026-11-06 04:07:29,192 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:07:29,340 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:07:29,341 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:07:29,341 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:07:29,341 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:07:29,341 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:07:32,971 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:07:32,972 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:07:32,975 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:07:33,075 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:07:33,076 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:07:33,076 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:07:33,076 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:07:33,076 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:07:35,256 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:07:35,257 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:07:35,260 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:07:35,384 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:07:35,385 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:07:35,385 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:07:35,385 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:07:35,385 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:07:46,653 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:07:46,654 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:07:46,657 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:07:46,804 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:07:46,805 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:07:46,805 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:07:46,805 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:07:46,805 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:07:59,002 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:07:59,003 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:07:59,004 [INFO] Validasi: 5x fetch_webpage sukses (minimum 3).
+2026-11-06 04:07:59,004 [INFO] URL yang berhasil di-fetch: {'https://www.espn.com/soccer/story/_/id/50384483/uefa-champions-league-2026-27-ucl-stats-lamine-yamal-breaks-kylian-mbappe-record-14-psg-real-madrid-como-set-records-raphinha-overtakes-rivaldo', 'https://www.cnbc.com/2026/11/05/cctv-script-051126.html'}
+2026-11-06 04:07:59,004 [WARNING] Laporan tidak valid: Terlalu pendek (493 karakter, minimal 500)
+2026-11-06 04:07:59,004 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-11-06 04:07:59,004 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-11-06 04:07:59,018 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:08:02,767 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:08:02,768 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:08:02,770 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-06 04:08:02,770 [WARNING] backend is not set. Using 'auto'
+2026-11-06 04:08:02,928 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economy%20stock%20market%20geopolitical%20news%20November%202026%20CNBC%20BBC 200
+2026-11-06 04:08:03,068 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economy+stock+market+geopolitical+news+November+2026+CNBC+BBC&limit=1 200
+2026-11-06 04:08:03,270 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-06 04:08:03,519 [INFO] response: https://search.yahoo.com/search;_ylt=jzO0gtrYKgN2oeJkmSHX9jUr;_ylu=bIeMdq5UsfOV2aD_Pg1KLiM42Fht5mKHtBvx2kJdSJF5dX4?p=global+economy+stock+market+geopolitical+news+November+2026+CNBC+BBC&btf=d 200
+2026-11-06 04:08:04,264 [INFO] response: https://www.startpage.com/ 200
+2026-11-06 04:08:04,438 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-06 04:08:04,623 [INFO] response: https://search.brave.com/search?q=global+economy+stock+market+geopolitical+news+November+2026+CNBC+BBC&source=web&tf=pd 429
+2026-11-06 04:08:05,179 [INFO] response: https://www.mojeek.com/search?q=global+economy+stock+market+geopolitical+news+November+2026+CNBC+BBC 403
+2026-11-06 04:08:05,179 [WARNING] Percobaan 1 gagal: No results found.
+2026-11-06 04:08:05,231 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=global%20economy%20stock%20market%20geopolitical%20news%20November%202026%20CNBC%20BBC 200
+2026-11-06 04:08:05,514 [INFO] response: https://grokipedia.com/api/typeahead?query=global+economy+stock+market+geopolitical+news+November+2026+CNBC+BBC&limit=1 200
+2026-11-06 04:08:06,110 [INFO] response: https://www.mojeek.com/search?q=global+economy+stock+market+geopolitical+news+November+2026+CNBC+BBC 403
+2026-11-06 04:08:06,440 [INFO] response: https://search.yahoo.com/search;_ylt=mJn0TkwjacOWlvsSYo6z-kp0;_ylu=NfUIDOPK_i3qbyOO0gvmFa55w_VJPmzZkxbykrD0-0q9RVc?p=global+economy+stock+market+geopolitical+news+November+2026+CNBC+BBC&btf=d 200
+2026-11-06 04:08:06,943 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:08:09,057 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:08:09,058 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:08:09,059 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-06 04:08:09,060 [WARNING] backend is not set. Using 'auto'
+2026-11-06 04:08:09,204 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20global%20economy%20geopolitical%20stock%20market%20November%202026 200
+2026-11-06 04:08:09,397 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+global+economy+geopolitical+stock+market+November+2026&limit=1 200
+2026-11-06 04:08:09,568 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-06 04:08:09,834 [INFO] response: https://www.startpage.com/ 200
+2026-11-06 04:08:09,909 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-06 04:08:10,095 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+global+economy+geopolitical+stock+market+November+2026&source=web&tf=pd 429
+2026-11-06 04:08:10,593 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+global+economy+geopolitical+stock+market+November+2026 403
+2026-11-06 04:08:10,789 [INFO] response: https://search.yahoo.com/search;_ylt=nGINDcASWjp60NkPMO2TNsfU;_ylu=Tjo4U93e3a0falR77o-yP7FhdMag-zVb4QS9amj32P9_168?p=site%3Acnbc.com+markets+global+economy+geopolitical+stock+market+November+2026&btf=d 200
+2026-11-06 04:08:11,175 [WARNING] Percobaan 1 gagal: No results found.
+2026-11-06 04:08:11,219 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20global%20economy%20geopolitical%20stock%20market%20November%202026 200
+2026-11-06 04:08:11,439 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+global+economy+geopolitical+stock+market+November+2026&limit=1 200
+2026-11-06 04:08:11,922 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+global+economy+geopolitical+stock+market+November+2026 403
+2026-11-06 04:08:12,094 [INFO] response: https://search.yahoo.com/search;_ylt=00F67TGhr_lVnaAftiqTeXQu;_ylu=ZCQx1TE8wJZsiFwaXFdgW0tHQWNR4QeEIM0ZaWzatYEo__k?p=site%3Acnbc.com+markets+global+economy+geopolitical+stock+market+November+2026&btf=d 200
+2026-11-06 04:08:12,681 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-06 04:08:12,986 [INFO] response: https://www.startpage.com/ 200
+2026-11-06 04:08:13,052 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-06 04:08:13,244 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+global+economy+geopolitical+stock+market+November+2026&source=web&tf=pd 429
+2026-11-06 04:08:13,283 [WARNING] Percobaan 2 gagal: No results found.
+2026-11-06 04:08:13,338 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20markets%20global%20economy%20geopolitical%20stock%20market%20November%202026 200
+2026-11-06 04:08:13,577 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+markets+global+economy+geopolitical+stock+market+November+2026&limit=1 200
+2026-11-06 04:08:14,712 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+markets+global+economy+geopolitical+stock+market+November+2026&source=web&tf=pw 429
+2026-11-06 04:08:14,929 [INFO] response: https://search.yahoo.com/search;_ylt=l5mKHScqaBI5vzKHjxWYj0Ix;_ylu=CDaEYrzIT8K_WlN5mhiRPg-sfam_P-I5dB_XkYNeU0Ynylo?p=site%3Acnbc.com+markets+global+economy+geopolitical+stock+market+November+2026&btf=w 200
+2026-11-06 04:08:15,520 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-06 04:08:16,170 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+markets+global+economy+geopolitical+stock+market+November+2026 403
+2026-11-06 04:08:16,355 [INFO] response: https://www.startpage.com/ 200
+2026-11-06 04:08:16,425 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-06 04:08:16,426 [WARNING] Percobaan 3 gagal: No results found.
+2026-11-06 04:08:16,427 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:08:18,071 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:08:18,072 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-06 04:08:18,074 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-06 04:08:18,074 [WARNING] backend is not set. Using 'auto'
+2026-11-06 04:08:18,217 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=BBC%20news%20global%20economy%20geopolitical%20crypto%20stocks%20November%202026 200
+2026-11-06 04:08:18,383 [INFO] response: https://grokipedia.com/api/typeahead?query=BBC+news+global+economy+geopolitical+crypto+stocks+November+2026&limit=1 200
+2026-11-06 04:08:18,500 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-06 04:08:19,009 [INFO] response: https://www.mojeek.com/search?q=BBC+news+global+economy+geopolitical+crypto+stocks+November+2026 403
+2026-11-06 04:08:19,196 [INFO] response: https://search.brave.com/search?q=BBC+news+global+economy+geopolitical+crypto+stocks+November+2026&source=web&tf=pd 429
+2026-11-06 04:08:19,390 [INFO] response: https://search.yahoo.com/search;_ylt=5lu2aF-BYFlvKCPOMXc2oW5O;_ylu=yZjGDbQsU6crwgSAqZFtAk-yIWHc8H5Xywf8C_jB1c30EKU?p=BBC+news+global+economy+geopolitical+crypto+stocks+November+2026&btf=d 200
+2026-11-06 04:08:19,895 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:08:19,965 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:08:19,966 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:08:19,966 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:08:19,966 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:08:19,966 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:09:04,097 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:09:04,098 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:09:04,101 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:09:04,234 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:09:04,234 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:09:04,234 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:09:04,234 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:09:04,234 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:09:31,937 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:09:31,938 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:09:31,941 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:09:32,075 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:09:32,076 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:09:32,076 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:09:32,076 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:09:32,076 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:09:39,160 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:09:39,161 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:09:39,164 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:09:39,295 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:09:39,296 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:09:39,296 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:09:39,296 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:09:39,296 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:09:41,646 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:09:41,646 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:09:41,649 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:09:41,740 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:09:41,741 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:09:41,741 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:09:41,741 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:09:41,741 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:09:49,892 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:09:49,893 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:09:49,896 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:09:50,008 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:09:50,009 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:09:50,009 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:09:50,009 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:09:50,009 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:10:01,183 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:10:01,184 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:10:01,187 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:10:01,308 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:10:01,309 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:10:01,309 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:10:01,309 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:10:01,309 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:10:24,537 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:10:24,538 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:10:24,541 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:10:24,672 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:10:24,673 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:10:24,673 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:10:24,673 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:10:24,673 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:10:28,445 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:10:28,446 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:10:28,449 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:10:28,567 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:10:28,568 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:10:28,568 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:10:28,568 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:10:28,568 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:10:34,170 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:10:34,171 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:10:34,175 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:10:34,283 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:10:34,284 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:10:34,284 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:10:34,284 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:10:34,284 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:10:37,784 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:10:37,785 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:10:37,788 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:10:37,879 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:10:37,880 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:10:37,880 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:10:37,880 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:10:37,880 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:10:41,254 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:10:41,255 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:10:41,258 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:10:41,354 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:10:41,354 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:10:41,354 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:10:41,354 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:10:41,355 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:10:45,195 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:10:45,196 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:10:45,199 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:10:45,277 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:10:45,278 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:10:45,278 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:10:45,278 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:10:45,278 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:10:48,325 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:10:48,325 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:10:48,329 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:10:48,425 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:10:48,426 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:10:48,426 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:10:48,426 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:10:48,426 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:10:53,265 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:10:53,266 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:10:53,269 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:10:53,361 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:10:53,362 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:10:53,362 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:10:53,362 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:10:53,362 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:10:58,386 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:10:58,387 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:10:58,390 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-06 04:10:58,549 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-06 04:10:58,550 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-06 04:10:58,550 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-06 04:10:58,550 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-06 04:10:58,550 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-06 04:11:07,467 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-06 04:11:07,468 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-06 04:11:07,469 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-11-06 04:11:07,469 [INFO] URL yang berhasil di-fetch: {'https://www.espn.com/soccer/story/_/id/50384483/uefa-champions-league-2026-27-ucl-stats-lamine-yamal-breaks-kylian-mbappe-record-14-psg-real-madrid-como-set-records-raphinha-overtakes-rivaldo', 'https://www.cnbc.com/2026/11/05/cctv-script-051126.html'}
+2026-11-06 04:11:07,469 [WARNING] Laporan tidak valid: Terlalu pendek (494 karakter, minimal 500)
+2026-11-06 04:11:07,469 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (494 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-11-06 04:11:07,469 [INFO] Mengirim laporan ke Telegram...
+2026-11-06 04:11:08,108 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
