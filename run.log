@@ -72738,3 +72738,333 @@ Meskipun sempat dibuka melemah di level 4.856,96 dan menyentuh titik terendah di
 2026-11-06 18:44:15,395 [ERROR] ❌ Laporan hari ini gagal divalidasi (Tidak ada judul '## 📊 LAPORAN MENDALAM'). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-11-06 18:44:15,395 [INFO] Mengirim laporan ke Telegram...
 2026-11-06 18:44:16,058 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-11-07 03:40:31,773 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-11-07 03:40:31,773 [INFO] =======================================================
+2026-11-07 03:40:31,773 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-11-07 03:40:31,773 [INFO] =======================================================
+2026-11-07 03:40:31,773 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-11-07 03:40:32,240 [INFO] Provider siap: Gemini dengan 4 model
+2026-11-07 03:40:32,251 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-11-07 03:40:32,257 [INFO] Provider siap: Z.AI dengan 1 model
+2026-11-07 03:40:32,262 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-11-07 03:40:32,268 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-11-07 03:40:32,283 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-11-07 03:40:32,304 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:40:36,134 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:40:36,140 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-07 03:40:36,183 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-07 03:40:36,183 [WARNING] backend is not set. Using 'auto'
+2026-11-07 03:40:36,343 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20OR%20site%3Abbc.com%20geopolitics%20global%20economy%20markets%20November%202026 429
+2026-11-07 03:40:36,567 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+OR+site%3Abbc.com+geopolitics+global+economy+markets+November+2026&limit=1 200
+2026-11-07 03:40:37,144 [INFO] response: https://html.duckduckgo.com/html/ 200
+2026-11-07 03:40:37,148 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:40:37,313 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:40:37,314 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:40:37,314 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:40:37,314 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-11-07 03:40:37,430 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-11-07 03:40:37,431 [WARNING] ⚠️ NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b gagal: Error code: 404
+2026-11-07 03:40:37,431 [WARNING] Model nvidia/nemotron-3-super-120b-a12b ditandai mati (retired/404/410).
+2026-11-07 03:40:37,431 [INFO] Mencoba provider NVIDIA NIM dengan model meta/llama-4-maverick-17b-128e-instruct...
+2026-11-07 03:40:37,508 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-11-07 03:40:37,509 [WARNING] ⚠️ NVIDIA NIM / meta/llama-4-maverick-17b-128e-instruct gagal: Error code: 410
+2026-11-07 03:40:37,509 [WARNING] Model meta/llama-4-maverick-17b-128e-instruct ditandai mati (retired/404/410).
+2026-11-07 03:40:37,509 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-11-07 03:40:37,509 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:40:40,297 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:40:40,298 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:40:40,302 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:40:42,311 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:40:42,313 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-07 03:40:43,236 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:40:43,417 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:40:43,418 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:40:43,418 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:40:43,418 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:40:43,418 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:40:46,195 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:40:46,196 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:40:46,200 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:40:46,360 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:40:46,361 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:40:46,361 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:40:46,361 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:40:46,361 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:41:30,834 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:41:30,835 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:41:30,839 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:41:31,072 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:41:31,072 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:41:31,073 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:41:31,073 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:41:31,073 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:41:37,318 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:41:37,319 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:41:37,323 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:41:42,452 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:41:42,454 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-07 03:41:42,456 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:41:42,621 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:41:42,622 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:41:42,622 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:41:42,622 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:41:42,622 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:41:45,205 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:41:45,206 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:41:45,208 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:41:53,163 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:41:53,165 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-07 03:41:53,167 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-07 03:41:53,167 [WARNING] backend is not set. Using 'auto'
+2026-11-07 03:41:53,382 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20OR%20site%3Aespn.com%20Premier%20League%20Champions%20League%20November%202026 200
+2026-11-07 03:41:53,461 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+Premier+League+Champions+League+November+2026&limit=1 200
+2026-11-07 03:41:53,990 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+Premier+League+Champions+League+November+2026 403
+2026-11-07 03:41:54,043 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-07 03:41:54,181 [INFO] response: https://www.startpage.com/ 200
+2026-11-07 03:41:54,217 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-07 03:41:54,293 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+Premier+League+Champions+League+November+2026&source=web&tf=pd 429
+2026-11-07 03:41:54,479 [INFO] response: https://search.yahoo.com/search;_ylt=mcKAM5iCAYKMEer3j3j8AMR3;_ylu=9WBwf7pMqn9umk7GpVj3c4spPr19vWJjgNa3jTgcsjxHT8Q?p=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+Premier+League+Champions+League+November+2026&btf=d 200
+2026-11-07 03:41:54,495 [WARNING] Percobaan 1 gagal: No results found.
+2026-11-07 03:41:54,573 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20OR%20site%3Aespn.com%20Premier%20League%20Champions%20League%20November%202026 200
+2026-11-07 03:41:54,766 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+Premier+League+Champions+League+November+2026&limit=1 200
+2026-11-07 03:41:54,817 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+Premier+League+Champions+League+November+2026&source=web&tf=pd 429
+2026-11-07 03:41:55,373 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+Premier+League+Champions+League+November+2026 403
+2026-11-07 03:41:55,468 [INFO] response: https://www.startpage.com/ 200
+2026-11-07 03:41:55,509 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-07 03:41:55,602 [INFO] response: https://search.yahoo.com/search;_ylt=N1dwK13XRHOu79IS63e0bXgl;_ylu=oN2BVbcwn1tfYotM_D0IEVVHfSHOI5V6jE3gxskKrrALkGA?p=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+Premier+League+Champions+League+November+2026&btf=d 200
+2026-11-07 03:41:56,061 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:41:56,228 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:41:56,229 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:41:56,229 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:41:56,229 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:41:56,229 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:41:59,662 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:41:59,663 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:41:59,667 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:41:59,822 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:41:59,822 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:41:59,822 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:41:59,823 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:41:59,823 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:42:04,994 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:42:04,995 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:42:05,000 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:42:05,155 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:42:05,156 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:42:05,156 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:42:05,156 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:42:05,156 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:42:08,451 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:42:08,452 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:42:08,456 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:42:08,637 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:42:08,638 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:42:08,638 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:42:08,638 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:42:08,638 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:42:13,283 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:42:13,284 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:42:13,289 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:42:13,464 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:42:13,465 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:42:13,465 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:42:13,465 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:42:13,465 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:42:25,704 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:42:25,705 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:42:25,710 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:42:25,936 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:42:25,937 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:42:25,937 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:42:25,937 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:42:25,937 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:42:28,552 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:42:28,553 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:42:28,558 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:42:37,559 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:42:37,560 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-07 03:42:37,780 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:42:37,977 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:42:37,978 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:42:37,978 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:42:37,978 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:42:37,978 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:42:41,197 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:42:41,198 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:42:41,202 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:42:41,403 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:42:41,404 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:42:41,404 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:42:41,404 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:42:41,404 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:42:44,508 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:42:44,509 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:42:44,512 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:42:44,717 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:42:44,718 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:42:44,718 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:42:44,718 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:42:44,719 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:43:10,004 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:10,005 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:43:10,005 [INFO] Validasi: 11x fetch_webpage sukses (minimum 3).
+2026-11-07 03:43:10,005 [INFO] URL yang berhasil di-fetch: {'https://www.cnbc.com/2026/11/06/cctv-script-061126.html'}
+2026-11-07 03:43:10,005 [WARNING] Laporan tidak valid: Terlalu pendek (340 karakter, minimal 500)
+2026-11-07 03:43:10,006 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-11-07 03:43:10,006 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-11-07 03:43:10,021 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:10,197 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:43:10,198 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:43:10,198 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:43:10,198 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:43:10,198 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:43:21,093 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:21,094 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:43:21,097 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:21,297 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:43:21,298 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:43:21,298 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:43:21,298 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:43:21,298 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:43:23,778 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:23,779 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:43:23,782 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:23,939 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:43:23,940 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:43:23,940 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:43:23,940 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:43:23,940 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:43:26,377 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:26,378 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:43:26,379 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:26,539 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:43:26,540 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:43:26,540 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:43:26,540 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:43:26,540 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:43:28,789 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:28,790 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:43:28,793 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:30,130 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:30,131 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-07 03:43:30,132 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:30,285 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:43:30,286 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:43:30,287 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:43:30,287 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:43:30,287 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:43:32,682 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:32,683 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:43:32,686 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:32,834 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:43:32,835 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:43:32,835 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:43:32,835 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:43:32,835 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:43:34,199 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:34,200 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:43:34,202 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:34,426 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:43:34,427 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:43:34,427 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:43:34,427 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:43:34,427 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:43:38,829 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:38,830 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:43:38,833 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:38,995 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:43:38,996 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:43:38,996 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:43:38,996 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:43:38,996 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:43:41,430 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:41,431 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:43:41,434 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:41,596 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:43:41,597 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:43:41,597 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:43:41,597 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:43:41,597 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:43:44,105 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:44,106 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:43:44,109 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:44,254 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:43:44,255 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:43:44,255 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:43:44,255 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:43:44,255 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:43:47,642 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:47,643 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:43:47,646 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:47,805 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:43:47,805 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:43:47,805 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:43:47,806 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:43:47,806 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:43:52,378 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:52,379 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:43:52,383 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:52,540 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:43:52,541 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:43:52,541 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:43:52,541 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:43:52,541 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:43:55,136 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:55,137 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:43:55,141 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:55,309 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:43:55,310 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:43:55,310 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:43:55,310 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:43:55,310 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:43:57,784 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:43:57,785 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:43:57,789 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:43:57,954 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:43:57,955 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 429
+2026-11-07 03:43:57,955 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:43:57,955 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:43:57,955 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:44:01,978 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:44:01,979 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:44:01,982 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-07 03:44:02,063 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-11-07 03:44:02,064 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503
+2026-11-07 03:44:02,064 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-11-07 03:44:02,264 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:44:02,265 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429
+2026-11-07 03:44:02,265 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:44:02,265 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:44:02,265 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:44:05,559 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:44:05,560 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:44:05,563 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-11-07 03:44:05,749 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:44:05,750 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429
+2026-11-07 03:44:05,750 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:44:05,750 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:44:05,750 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:44:09,189 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:44:09,190 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:44:09,193 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-11-07 03:44:09,352 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:44:09,353 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429
+2026-11-07 03:44:09,353 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:44:09,353 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:44:09,353 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:44:13,769 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:44:13,770 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:44:13,774 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-11-07 03:44:13,945 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-07 03:44:13,946 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 429
+2026-11-07 03:44:13,946 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-07 03:44:13,946 [INFO] Provider NVIDIA NIM semua model mati, skip.
+2026-11-07 03:44:13,946 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-07 03:44:27,720 [INFO] HTTP Request: POST https://api.z.ai/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
+2026-11-07 03:44:27,721 [INFO] ✅ Berhasil pakai: Z.AI / glm-4.5-flash
+2026-11-07 03:44:27,721 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-11-07 03:44:27,721 [INFO] URL yang berhasil di-fetch: {'https://www.cnbc.com/2026/11/06/cctv-script-061126.html'}
+2026-11-07 03:44:27,721 [WARNING] Laporan tidak valid: Terlalu pendek (0 karakter, minimal 500)
+2026-11-07 03:44:27,722 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (0 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-11-07 03:44:27,722 [INFO] Mengirim laporan ke Telegram...
+2026-11-07 03:44:28,401 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
