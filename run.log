@@ -81077,3 +81077,260 @@ Setelah perbaikan cepat, rangkaian KRL tersebut kembali beroperasi normal melaya
 2026-11-18 05:06:23,460 [INFO] ✅ Bagian 2/2 terkirim (Markdown)!
 2026-11-18 05:06:24,462 [INFO] History disimpan (5 entri).
 2026-11-18 05:06:24,462 [INFO] Selesai — laporan terkirim dan history disimpan.
+2026-11-18 19:43:24,693 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-11-18 19:43:24,694 [INFO] =======================================================
+2026-11-18 19:43:24,694 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-11-18 19:43:24,694 [INFO] =======================================================
+2026-11-18 19:43:24,694 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-11-18 19:43:25,001 [INFO] Provider siap: Gemini dengan 4 model
+2026-11-18 19:43:25,009 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-11-18 19:43:25,013 [INFO] Provider siap: Z.AI dengan 1 model
+2026-11-18 19:43:25,018 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-11-18 19:43:25,022 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-11-18 19:43:25,033 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-11-18 19:43:25,049 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-18 19:43:25,306 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-11-18 19:43:25,307 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503
+2026-11-18 19:43:25,307 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-11-18 19:43:26,569 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-11-18 19:43:26,569 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 503
+2026-11-18 19:43:26,570 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-18 19:43:28,240 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:43:28,244 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-18 19:43:28,245 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-18 19:43:37,651 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-11-18 19:43:37,651 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 503
+2026-11-18 19:43:37,651 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:43:38,791 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:43:38,792 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:43:38,824 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-18 19:43:38,824 [WARNING] backend is not set. Using 'auto'
+2026-11-18 19:43:38,889 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=geopolitics%20economy%20November%202026%20bbc%20cnbc 429
+2026-11-18 19:43:39,031 [INFO] response: https://grokipedia.com/api/typeahead?query=geopolitics+economy+November+2026+bbc+cnbc&limit=1 200
+2026-11-18 19:43:39,215 [INFO] response: https://www.startpage.com/ 200
+2026-11-18 19:43:39,279 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-18 19:43:39,443 [INFO] response: https://search.yahoo.com/search;_ylt=oai2gdsctNrBkLe_JncvBzHB;_ylu=nD7I1dRxUk4lMpcDjlxRcwgqubj72D6F7W-QjrDalEI11XQ?p=geopolitics+economy+November+2026+bbc+cnbc&btf=d 200
+2026-11-18 19:43:39,989 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:43:41,016 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:43:41,017 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:43:41,018 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-18 19:43:41,018 [WARNING] backend is not set. Using 'auto'
+2026-11-18 19:43:41,163 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20match%20result%20november%202026%20espn%20bbc%20sport 200
+2026-11-18 19:43:41,191 [INFO] response: https://grokipedia.com/api/typeahead?query=football+match+result+november+2026+espn+bbc+sport&limit=1 200
+2026-11-18 19:43:41,585 [INFO] response: https://www.mojeek.com/search?q=football+match+result+november+2026+espn+bbc+sport 403
+2026-11-18 19:43:41,690 [INFO] response: https://search.brave.com/search?q=football+match+result+november+2026+espn+bbc+sport&source=web&tf=pd 429
+2026-11-18 19:43:41,789 [INFO] response: https://www.startpage.com/ 200
+2026-11-18 19:43:41,824 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-18 19:43:41,925 [INFO] response: https://search.yahoo.com/search;_ylt=eVLuJ2ejp2sz1Ye_Ujpj8Brw;_ylu=0wCd8cBHpDpfQEy846A1XryWMMbMjmwWu-VEJ-PSfDFOPks?p=football+match+result+november+2026+espn+bbc+sport&btf=d 200
+2026-11-18 19:43:47,463 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-11-18 19:43:47,464 [WARNING] Percobaan 1 gagal: error sending request for url (https://html.duckduckgo.com/html/) > operation timed out
+2026-11-18 19:43:47,484 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20match%20result%20november%202026%20espn%20bbc%20sport 200
+2026-11-18 19:43:47,592 [INFO] response: https://grokipedia.com/api/typeahead?query=football+match+result+november+2026+espn+bbc+sport&limit=1 200
+2026-11-18 19:43:47,676 [INFO] response: https://search.yahoo.com/search;_ylt=p0YmuPrxGCNysk5LN235aEtx;_ylu=BfksLglCXI7TAIuOUMETabVXb60Z9r90TPfmBvjwJQBMLjw?p=football+match+result+november+2026+espn+bbc+sport&btf=d 200
+2026-11-18 19:43:48,138 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:43:49,467 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:43:49,468 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:43:49,470 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-18 19:43:49,470 [WARNING] backend is not set. Using 'auto'
+2026-11-18 19:43:49,607 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=artificial%20intelligence%20tech%20news%20November%202026%20techcrunch%20theverge 200
+2026-11-18 19:43:49,652 [INFO] response: https://grokipedia.com/api/typeahead?query=artificial+intelligence+tech+news+November+2026+techcrunch+theverge&limit=1 200
+2026-11-18 19:43:49,806 [INFO] response: https://search.yahoo.com/search;_ylt=br5xJ5DeyOmGyRASPKWlrIrU;_ylu=bax6_o2HTzfHN4QHCnERTG00Zb7DNewkv5-Q5-_YdSUbDbQ?p=artificial+intelligence+tech+news+November+2026+techcrunch+theverge&btf=d 200
+2026-11-18 19:43:50,342 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:43:51,343 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:43:51,344 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:43:51,346 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-18 19:43:51,346 [WARNING] backend is not set. Using 'auto'
+2026-11-18 19:43:51,366 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=IHSG%20rupiah%20ekonomi%20November%202026%20cnbc%20indonesia 429
+2026-11-18 19:43:51,472 [INFO] response: https://grokipedia.com/api/typeahead?query=IHSG+rupiah+ekonomi+November+2026+cnbc+indonesia&limit=1 200
+2026-11-18 19:43:51,511 [INFO] Error in engine duckduckgo: DDGSException("RequestError: RequestError('error sending request for url (https://html.duckduckgo.com/html/) > Connection reset by peer (os error 104)')")
+2026-11-18 19:43:51,915 [INFO] response: https://www.mojeek.com/search?q=IHSG+rupiah+ekonomi+November+2026+cnbc+indonesia 403
+2026-11-18 19:43:52,017 [INFO] response: https://search.yahoo.com/search;_ylt=zH8xK2fFGBezuiy4sDmjilDO;_ylu=CrYr2KhUsHJicEgP7KPz8dF4L1d1tJ7pBxqHdZ5LVTY5Bh0?p=IHSG+rupiah+ekonomi+November+2026+cnbc+indonesia&btf=d 200
+2026-11-18 19:43:52,542 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:43:53,941 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:43:53,942 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:43:53,943 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-18 19:43:53,943 [WARNING] backend is not set. Using 'auto'
+2026-11-18 19:43:54,048 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=timnas%20indonesia%20november%202026%20bola%20com 200
+2026-11-18 19:43:54,191 [INFO] response: https://grokipedia.com/api/typeahead?query=timnas+indonesia+november+2026+bola+com&limit=1 200
+2026-11-18 19:43:54,288 [INFO] response: https://search.brave.com/search?q=timnas+indonesia+november+2026+bola+com&source=web&tf=pd 429
+2026-11-18 19:43:54,641 [INFO] response: https://www.mojeek.com/search?q=timnas+indonesia+november+2026+bola+com 403
+2026-11-18 19:43:54,722 [INFO] response: https://www.startpage.com/ 200
+2026-11-18 19:43:54,772 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-18 19:43:54,839 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-18 19:43:54,927 [INFO] response: https://search.yahoo.com/search;_ylt=zdbgG-BnJDBkQjX5wHbo1RR1;_ylu=LGNY9JTMZVv9DNsPtuxonA4uOxRo0pO_7b0QHuwzAo9vcfA?p=timnas+indonesia+november+2026+bola+com&btf=d 200
+2026-11-18 19:43:54,961 [WARNING] Percobaan 1 gagal: No results found.
+2026-11-18 19:43:55,071 [INFO] response: https://grokipedia.com/api/typeahead?query=timnas+indonesia+november+2026+bola+com&limit=1 200
+2026-11-18 19:43:55,080 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=timnas%20indonesia%20november%202026%20bola%20com 200
+2026-11-18 19:43:55,448 [INFO] response: https://www.mojeek.com/search?q=timnas+indonesia+november+2026+bola+com 403
+2026-11-18 19:43:55,515 [INFO] response: https://www.startpage.com/ 200
+2026-11-18 19:43:55,590 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-18 19:43:55,688 [INFO] response: https://search.brave.com/search?q=timnas+indonesia+november+2026+bola+com&source=web&tf=pd 429
+2026-11-18 19:44:00,695 [INFO] Error in engine duckduckgo: TimeoutException(TimeoutError('error sending request for url (https://html.duckduckgo.com/html/) > operation timed out'))
+2026-11-18 19:44:00,906 [INFO] response: https://search.yahoo.com/search;_ylt=3jQ2ZOOHpRQRWJkSIVKa4R-E;_ylu=w3CCQCFY4hXp39D5IrdsIbugQfFsv89n_GM3X8GprXprQ9o?p=timnas+indonesia+november+2026+bola+com&btf=d 200
+2026-11-18 19:44:01,450 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:44:02,336 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:44:02,337 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:44:02,339 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-18 19:44:02,339 [WARNING] backend is not set. Using 'auto'
+2026-11-18 19:44:02,359 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=viral%20trending%20indonesia%20November%202026%20detik%20com 429
+2026-11-18 19:44:02,465 [INFO] response: https://grokipedia.com/api/typeahead?query=viral+trending+indonesia+November+2026+detik+com&limit=1 200
+2026-11-18 19:44:02,559 [INFO] response: https://search.yahoo.com/search;_ylt=SIc0TauZFZk8AArhre3tYLBa;_ylu=Tpl5_JC-dodCQd_6oid5eK48OXEXPRG8_jDtxPubhm4OzXc?p=viral+trending+indonesia+November+2026+detik+com&btf=d 200
+2026-11-18 19:44:03,074 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:44:04,806 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:44:04,807 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:44:04,940 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:44:06,443 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:44:06,444 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:44:06,446 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-18 19:44:06,446 [WARNING] backend is not set. Using 'auto'
+2026-11-18 19:44:06,465 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=Apec%20Shenzhen%20November%202026%20BBC%20News 429
+2026-11-18 19:44:06,641 [INFO] response: https://grokipedia.com/api/typeahead?query=Apec+Shenzhen+November+2026+BBC+News&limit=1 200
+2026-11-18 19:44:06,725 [INFO] response: https://www.startpage.com/ 200
+2026-11-18 19:44:06,917 [INFO] response: https://www.startpage.com/sp/captcha-block?bc=US&bi=Microsoft+Azure&be=b85dcfd071788d3d07bdd2f92e4ac37b&bds_t=1795031046Ta528078de4b51e3bdcd1bbf3860d0b6df7345e4db6c5d6a5645d2d5694f688eb&bds_s=47202c6827814a22ba1f40fce17909bf&abe=0&language=english&lui=english&sc=&abd=0&segment=organic&t=device&abp=1&qadf=moderate&with_date=d&qsr=en_US&query=Apec+Shenzhen+November+2026+BBC+News&cat=web&cmd=gen_page 200
+2026-11-18 19:44:07,143 [INFO] response: https://search.yahoo.com/search;_ylt=1iufhy-drhYl8826opEGGkt8;_ylu=XZGDmpCY45ob66vBRBnL7K7gwroJXaTp0b4UqqOc8ly0418?p=Apec+Shenzhen+November+2026+BBC+News&btf=d 200
+2026-11-18 19:44:07,647 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:44:09,545 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:44:09,546 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:44:09,738 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:44:12,578 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:44:12,579 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:44:13,353 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:44:14,820 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:44:14,821 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:44:14,823 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-18 19:44:14,823 [WARNING] backend is not set. Using 'auto'
+2026-11-18 19:44:14,843 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20transfer%20news%20November%202026%20BBC%20Sport 429
+2026-11-18 19:44:14,942 [INFO] response: https://grokipedia.com/api/typeahead?query=football+transfer+news+November+2026+BBC+Sport&limit=1 200
+2026-11-18 19:44:15,022 [INFO] response: https://www.startpage.com/ 200
+2026-11-18 19:44:15,084 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-18 19:44:15,187 [INFO] response: https://search.yahoo.com/search;_ylt=YWAHBLcFZROdNu9Ue4Ft86gZ;_ylu=C6x3ys1pOjXn1tzbTzgQ-fpeXRu4559tBi_1AD8DFFUxT4U?p=football+transfer+news+November+2026+BBC+Sport&btf=d 200
+2026-11-18 19:44:16,878 [INFO] response: https://www.mojeek.com/search?q=football+transfer+news+November+2026+BBC+Sport 403
+2026-11-18 19:44:16,980 [INFO] response: https://search.brave.com/search?q=football+transfer+news+November+2026+BBC+Sport&source=web&tf=pd 429
+2026-11-18 19:44:17,058 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-18 19:44:17,064 [WARNING] Percobaan 1 gagal: No results found.
+2026-11-18 19:44:17,171 [INFO] response: https://grokipedia.com/api/typeahead?query=football+transfer+news+November+2026+BBC+Sport&limit=1 200
+2026-11-18 19:44:17,174 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20transfer%20news%20November%202026%20BBC%20Sport 200
+2026-11-18 19:44:17,239 [INFO] response: https://www.startpage.com/ 200
+2026-11-18 19:44:17,279 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-18 19:44:17,379 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-18 19:44:17,790 [INFO] response: https://www.mojeek.com/search?q=football+transfer+news+November+2026+BBC+Sport 403
+2026-11-18 19:44:17,894 [INFO] response: https://search.brave.com/search?q=football+transfer+news+November+2026+BBC+Sport&source=web&tf=pd 429
+2026-11-18 19:44:17,986 [INFO] response: https://search.yahoo.com/search;_ylt=BIauNVJTpmlPi0nq7Arz6KBO;_ylu=JtBfLtik1rw9pjNov8Fj6O_lRM-CQZZ-i--tyrcIOvgruk4?p=football+transfer+news+November+2026+BBC+Sport&btf=d 200
+2026-11-18 19:44:18,317 [WARNING] Percobaan 2 gagal: No results found.
+2026-11-18 19:44:18,442 [INFO] response: https://grokipedia.com/api/typeahead?query=football+transfer+news+November+2026+BBC+Sport&limit=1 200
+2026-11-18 19:44:18,497 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=football%20transfer%20news%20November%202026%20BBC%20Sport 200
+2026-11-18 19:44:18,584 [INFO] response: https://search.yahoo.com/search;_ylt=e6yfnpVd8QLeaTsV8Tm9rAGC;_ylu=8Mna2PYwxLTbA8cLFE0VZ7LcL2K-65BUJiSvAfOHY7v7x44?p=football+transfer+news+November+2026+BBC+Sport&btf=w 200
+2026-11-18 19:44:19,111 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:44:20,478 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:44:20,479 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:44:20,675 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:44:22,064 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:44:22,065 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:44:22,164 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:44:23,462 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:44:23,463 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:44:23,940 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:44:25,168 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:44:25,169 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:44:25,925 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:44:27,709 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:44:27,710 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:44:28,209 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:44:29,404 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:44:29,405 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-18 19:44:29,407 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-18 19:44:29,407 [WARNING] backend is not set. Using 'auto'
+2026-11-18 19:44:29,529 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Asuara.com%20viral%20November%202026 200
+2026-11-18 19:44:29,543 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Asuara.com+viral+November+2026&limit=1 200
+2026-11-18 19:44:29,654 [INFO] response: https://www.startpage.com/ 200
+2026-11-18 19:44:29,687 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-18 19:44:29,775 [INFO] response: https://search.yahoo.com/search;_ylt=ez2I3pA0s4DU3XwpPxAbGbaU;_ylu=TU7pSinJt9Uj3SEQGyCzB6_LtvVrRrnPJCXg3tooDmR9hSg?p=site%3Asuara.com+viral+November+2026&btf=d 200
+2026-11-18 19:44:30,241 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-18 19:44:30,370 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-11-18 19:44:30,370 [WARNING] ⚠️ Gemini / gemini-3.5-flash-lite gagal: Error code: 429
+2026-11-18 19:44:30,370 [WARNING] Rate limit tercapai, pindah ke provider berikutnya.
+2026-11-18 19:44:30,370 [INFO] Mencoba provider NVIDIA NIM dengan model nvidia/nemotron-3-super-120b-a12b...
+2026-11-18 19:44:30,486 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-11-18 19:44:30,486 [WARNING] ⚠️ NVIDIA NIM / nvidia/nemotron-3-super-120b-a12b gagal: Error code: 410
+2026-11-18 19:44:30,486 [WARNING] Model nvidia/nemotron-3-super-120b-a12b ditandai mati (retired/404/410).
+2026-11-18 19:44:30,486 [INFO] Mencoba provider NVIDIA NIM dengan model meta/llama-4-maverick-17b-128e-instruct...
+2026-11-18 19:44:30,548 [INFO] HTTP Request: POST https://integrate.api.nvidia.com/v1/chat/completions "HTTP/1.1 410 Gone"
+2026-11-18 19:44:30,548 [WARNING] ⚠️ NVIDIA NIM / meta/llama-4-maverick-17b-128e-instruct gagal: Error code: 410
+2026-11-18 19:44:30,548 [WARNING] Model meta/llama-4-maverick-17b-128e-instruct ditandai mati (retired/404/410).
+2026-11-18 19:44:30,548 [WARNING] Semua model di NVIDIA NIM sudah dicoba dan gagal.
+2026-11-18 19:44:30,548 [INFO] Mencoba provider Z.AI dengan model glm-4.5-flash...
+2026-11-18 19:45:15,904 [WARNING] ⚠️ Z.AI / glm-4.5-flash gagal: Request timed out.
+2026-11-18 19:45:15,904 [WARNING] Semua model di Z.AI sudah dicoba dan gagal.
+2026-11-18 19:45:15,904 [INFO] Mencoba provider OpenRouter (auto-router gratis) dengan model openrouter/free...
+2026-11-18 19:45:18,968 [INFO] HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-18 19:45:41,544 [INFO] ✅ Berhasil pakai: OpenRouter (auto-router gratis) / openrouter/free
+2026-11-18 19:45:41,544 [INFO] Validasi: 7x fetch_webpage sukses (minimum 3).
+2026-11-18 19:45:41,544 [INFO] URL yang berhasil di-fetch: {'https://www.cnbcindonesia.com/market/20261118151909-17-786343/breaking-ihsg-turun-1-usai-bi-rate-naik-jadi-6', 'https://www.bola.com/indonesia/read/8337931/timnas-indonesia-putri-panggil-25-pemain-untuk-hadapi-bhutan-di-kudus-alen-stajcic-siap-jalani-debut', 'https://www.suara.com/tag/Viral', 'https://www.skysports.com/transfer-centre', 'https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/', 'https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html', 'https://www.bbc.com/sport/football/articles/c6d91x7nz85jo'}
+2026-11-18 19:45:41,546 [INFO] Validasi LULUS — laporan berbasis riset nyata dan format benar.
+2026-11-18 19:45:41,546 [INFO] LAPORAN FINAL:
+2026-11-18 19:45:41,546 [INFO] ## 📊 LAPORAN MENDALAM — 18 NOVEMBER 2026
+
+---
+
+### Geopolitik & Ekonomi Global
+
+Puncak pertemuan pemimpin ekonomi APEC di Shenzhen, China, menjadi sorotan utama dunia pada 18–19 November 2026. Berdasarkan laporan dari CNBC, presiden Amerika Serikat Donald Trump, presiden China Xi Jinping, dan presiden Rusia Vladimir Putin berkumpul di welcome banquet di Shenzhen untuk Asia-Pacific Economic Leaders' Meeting. Xi dalam sambutannya mengatakan, "At tomorrow's Leaders' Meeting, we will discuss measures to expand mutual opening up, explore pathways to innovation-driven growth, and identify opportunities to expand practical cooperation across various fields, so as to translate more initiatives into tangible results." Momen ini menarik perhatian karena terlihat agak hangat meski terdapat latar belakang geopolitik yang rumit, termasuk kontroversi mengenai pengunduran diri CEO Nvidia, Jensen Huang, yang selama 10 hari terakhir mengguncang pasar.
+
+Dampaknya terhadap pasar keuangan cukup terasa, meski tidak sehebat tekanan kripto yang terjadi beberapa waktu lalu. Ketegangan maupun detik-detik diplomasi antara ketiga pemimpin besar ini biasanya memicu volatilitas di saham teknologi dan aset risiko, apalagi ketika nama-nama besar seperti Nvidia dan Tesla masuk ke dalam narasi pertemuan tersebut. Investor global kini menunggu hasil bilateral meeting antara Trump dan Xi, serta pertemuan trilateral dengan Putin, untuk melihat apakah akan ada kebijakan perdagangan baru yang bisa meredam atau justru memperberat tekanan di pasar saham dan kripto.
+
+Sumber: CNBC, 18 November 2026 — https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html
+
+---
+
+### Olahraga Global
+
+Marka transfer sepak bola Eropa terus ramai menyusul jendela transfer Januari 2027. Berdasarkan laporan terbaru dari BBC Sport, Manchester United kesulitan merekrut bek kiri Inggris Lewis Hall, 22 tahun, dari Newcastle United yang tidak akan mempertimbangkan penawaran apapun untuk pemainnya. Sementara itu, Martin Zubimendi, tengah sân Arsenal berusia 27 tahun, terbuka untuk pindah karena kurangnya peluang bermain pertama tim, dengan Atletico Madrid dan Chelsea yang menuntut jotanya.
+
+Chelsea sendiri menjadi bagian paling menarik dengan rencana "double swoop" untuk dua pemain Barcelona: tengah sân Spanyol Fermin Lopez, 23 tahun, dan bek Prancis Jules Kounde, 28 tahun, dengan penawaran senilai £150 million untuk memaccat klub Catalonia agar menjual. Selain itu, Real Madrid memantau dua pemain Brighton, Luka Vuskovic dan Chema Andres, sementara pelangga legenda Bayern Munich, Leonard Prescott, berusia 17 tahun, kemungkinan besar akan meninggalkan Bundesliga setelah perundingan kontrak terhenti.
+
+Sumber: BBC Sport, 2 November 2026 (2 hari lalu) — https://www.bbc.com/sport/football/articles/c6d91x7nz85jo
+
+---
+
+### Teknologi & AI Terbaru
+
+Perbankan AS semakin ketat dalam membatasi tanggung jawab terkait penggunaan agen AI oleh nasabah. TechCrunch melaporkan bahwa Citibank, bank komersial ketiga terbesar di Amerika Serikat, baru-baru ini memperbarui ketentuan layanan (terms of service) untuk nasabah yang menggunakan alat AI pihak ketiga untuk keuangan pribadi. Sesuai laporan, "anything that goes wrong is their problem — even if they get hacked." Perwakilan Citi juga menyatakan kepada TechCrunch, "As third-party AI tools become more widely available, we want customers to understand the risks associated with sharing banking credentials or authorizing those tools to access their accounts."
+
+Kebijakan serupa telah diadopsi oleh JPMorgan dan Bank of America, dua bank terbesar di AS, sejak bulan lalu, sedangkan PNC, bank kedelapan terbesar, baru mengubah ketentuannya pada hari ini. Hal ini menunjukkan tren di mana lembaga keuangan besar tidak lagi ingin ditanggung jawab atas transaksi — sengaja atau tidak — yang dilakukan oleh asisten otomatis. Untuk pengguna AI di bidang keuangan, ini adalah peringatan serius: risiko keamanan dan kerugian finansial sepenuhnya berada di tangan konsumen, bukan bank.
+
+Sumber: TechCrunch, 18 November 2026 — https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/
+
+---
+
+### Indonesia Update
+
+#### a) Ekonomi
+
+IHSG mengalami penurunan signifikan pada perdagangan Rabu, 18 November 2026, sekujus pengumuman Bank Indonesia (BI) mengenai kenaikan BI Rate. Berdasarkan data dari CNBC Indonesia, hingga pukul 15.14 WIB, IHSG berada di level 5.251,88, turun 52,88 poin atau 1,00%. Indeks ditutup mendekati level terendah harian di 5.251,55 setelah berfluktuasi sepanjang sesi. Volume transaksi tercatat sebanyak 203,04 juta lot dengan nilai transaksi mencapai Rp8,59 triliun. Bank Indonesia memutuskan menaikkan suku bunga acuan BI Rate sebesar 25 basis poin menjadi 6% dalam Rapat Dewan Gubernur pada 17–18 November 2026 untuk memperkuat stabilitas nilai tukar rupiah dan mengantisipasi tekanan inflasi.
+
+Kenaikan suku bunga ini dianggap sebagai langkah refleksif BI untuk menahan pelemahan rupiah amid tekanan makro global. Penurunan IHSG sebesar 1% menunjukkan bahwa investor domestik dan asing masih waspada terhadap kebijakan moneter yang lebih ketat, yang biasanya berdampak negatif pada sektornya yang sensitif terhadap bunga seperti properti dan konstruksi. Sumber: CNBC Indonesia, 18 November 2026 — https://www.cnbcindonesia.com/market/20261118151909-17-786343/breaking-ihsg-turun-1-usai-bi-rate-naik-jadi-6
+
+#### b) Olahraga
+
+Timnas Indonesia Putri memasuki era baru di bawah pelatih asal Australia, Alen Stajcic, yang resmi diperkenalkan sebagai kepala pelatih pengganti Satoru Mochizuki pada 9 November 2026. Berdasarkan laporan Bola.com, Stajcic telah memanggil 25 pemain untuk menghadapi FIFA Matchday November 2026, dengan laga uji coba internasional melawan Bhutan di Stadion Supersoccer Arena, Kudus, Jawa Tengah, pada Minggu, 29 November 2026. Beberapa pemain langganan tetap seperti Safira Ika, Vivi Oktavia, Isabelle Nottet, dan Claudia Scheunemann tercatat dalam daftar panggilan.
+
+Panggilan ini menandai debut resmi Stajcic memimpin Garuda Pertiwi dalam laga resmi. PSSI melalui Bola.com mencatat bahwa pelatih baru ini tidak sia-sia waktu untuk memulai pekerjaannya, mengingat laga pertama sudah dijadwalkan kurang lebih dua minggu ke depan. Ini adalah momentum penting bagi sepak bola putri Indonesia untuk memperlihatkan perkembangan under kepemimpinan pelatih yang曾经 melatih Timnas Australia.
+
+Sumber: Bola.com, 18 November 2026 — https://www.bola.com/indonesia/read/8337931/timnas-indonesia-putri-panggil-25-pemain-untuk-hadapi-bhutan-di-kudus-alen-stajcic-siap-jalani-debut
+
+---
+
+### Trending Indonesia
+
+Video viral mengenai aktivitas ekskavator dan motor trail di Gunung Sibayak menjadi sorotan warganet Indonesia pada 18 November 2026. Berdasarkan laporan dari Suara.com (edisi Sumut), video yang menyebar di media sosial menunjukkan aktivitas di kawasan Tahura Gunung Sibayak yang kemudian menimbulkan kekhawatiran masyarakat mengenai dampaknya terhadap jalur pendakian dan keestabilan gunung. Pengelola Tahura melalui Faisal memberikan penegasan bahwa aktivitas motor trail tersebut bukan alasan maupun dasar kebijakan penutupan jalur pendakian Gunung Sibayak.
+
+Peristiwa ini menggambarkan betapa cepatnya konten lokal dapat menjadi trending nasional, terutama ketika terkait dengan bencana potensial atau lingkungan. Warganet ramai membicarakan klaim-klaiman di media sosial, sehingga pihak pengelola harus segera keluar dengan klarifikasi resmi agar tidak terjadi panik atau informasi salah yang menyebar lebih luas. Hal ini juga menunjukkan peran penting media tradisional dalam memverifikasi berita viral sebelum informasi hoax beredar lebih luas.
+
+Sumber: Suara.com (Sumut), 18 November 2026 — https://sumut.suara.com/read/2026/11/18/112850/viral-video-ekskavator-dan-motor-trail-di-gunung-sibayak-begini-penjelasan-pengelola-tahura
+2026-11-18 19:45:41,546 [INFO] Mengirim laporan ke Telegram...
+2026-11-18 19:45:41,546 [INFO] Pesan dipecah jadi 3 bagian.
+2026-11-18 19:45:42,055 [INFO] ✅ Bagian 1/3 terkirim (Markdown)!
+2026-11-18 19:45:43,572 [INFO] ✅ Bagian 2/3 terkirim (Markdown)!
+2026-11-18 19:45:45,072 [INFO] ✅ Bagian 3/3 terkirim (Markdown)!
+2026-11-18 19:45:46,073 [INFO] History disimpan (5 entri).
+2026-11-18 19:45:46,073 [INFO] Selesai — laporan terkirim dan history disimpan.
