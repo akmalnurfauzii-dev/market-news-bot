@@ -86002,3 +86002,181 @@ Media sosial di Indonesia dihebohkan oleh sebuah rekaman video yang memperlihatk
 2026-11-24 21:48:06,127 [ERROR] ❌ Laporan hari ini gagal divalidasi (Terlalu pendek (240 karakter, minimal 500)). Tidak dikirim/disimpan untuk menjaga kualitas history.
 2026-11-24 21:48:06,127 [INFO] Mengirim laporan ke Telegram...
 2026-11-24 21:48:06,741 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
+2026-11-25 06:00:03,330 [INFO] history.json dibersihkan dari entri rusak (5 entri tersisa).
+2026-11-25 06:00:03,330 [INFO] =======================================================
+2026-11-25 06:00:03,330 [INFO] MEMULAI ANALISA PASAR & BERITA GLOBAL OTOMATIS...
+2026-11-25 06:00:03,330 [INFO] =======================================================
+2026-11-25 06:00:03,331 [INFO] Menyiapkan AI dengan fallback chain multi‑model (stabil → murah, free tier saja)...
+2026-11-25 06:00:03,761 [INFO] Provider siap: Gemini dengan 4 model
+2026-11-25 06:00:03,772 [INFO] Provider siap: NVIDIA NIM dengan 2 model
+2026-11-25 06:00:03,779 [INFO] Provider siap: Z.AI dengan 1 model
+2026-11-25 06:00:03,785 [INFO] Provider siap: OpenRouter (auto-router gratis) dengan 1 model
+2026-11-25 06:00:03,790 [INFO] Provider siap: Groq (opsional) dengan 1 model
+2026-11-25 06:00:03,804 [INFO] Menjalankan agent (percobaan 1/2)...
+2026-11-25 06:00:03,825 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-25 06:00:07,610 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:00:07,615 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-25 06:00:07,657 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-25 06:00:07,657 [WARNING] backend is not set. Using 'auto'
+2026-11-25 06:00:07,807 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20OR%20site%3Abbc.com%20OR%20site%3Aaljazeera.com%20global%20economy%20geopolitics%20markets%20crypto%20November%202026 429
+2026-11-25 06:00:07,950 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com+global+economy+geopolitics+markets+crypto+November+2026&limit=1 200
+2026-11-25 06:00:08,195 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-25 06:00:08,606 [INFO] response: https://search.yahoo.com/search;_ylt=jFxjQ10wde2lP0RvzCTYdv-c;_ylu=3Tfj05bpIDdrBnulL9JNf2OSdyPnpF2MpEkEW-rmtHfO1_w?p=site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com+global+economy+geopolitics+markets+crypto+November+2026&btf=d 200
+2026-11-25 06:00:09,571 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com+global+economy+geopolitics+markets+crypto+November+2026 403
+2026-11-25 06:00:09,911 [INFO] response: https://www.startpage.com/ 200
+2026-11-25 06:00:10,006 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-25 06:00:10,184 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com+global+economy+geopolitics+markets+crypto+November+2026&source=web&tf=pd 429
+2026-11-25 06:00:10,206 [WARNING] Percobaan 1 gagal: No results found.
+2026-11-25 06:00:10,393 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com+global+economy+geopolitics+markets+crypto+November+2026&limit=1 200
+2026-11-25 06:00:10,425 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbc.com%20OR%20site%3Abbc.com%20OR%20site%3Aaljazeera.com%20global%20economy%20geopolitics%20markets%20crypto%20November%202026 200
+2026-11-25 06:00:10,894 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com+global+economy+geopolitics+markets+crypto+November+2026 403
+2026-11-25 06:00:11,041 [INFO] response: https://search.brave.com/search?q=site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com+global+economy+geopolitics+markets+crypto+November+2026&source=web&tf=pd 429
+2026-11-25 06:00:11,225 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-25 06:00:11,514 [INFO] response: https://search.yahoo.com/search;_ylt=hm0KiJzb-WcIsb71FmR73kXw;_ylu=GPMxtM9oKBahtYB-ueNjloNg6srcHazeeeQo2A0-uufjJRg?p=site%3Acnbc.com+OR+site%3Abbc.com+OR+site%3Aaljazeera.com+global+economy+geopolitics+markets+crypto+November+2026&btf=d 200
+2026-11-25 06:00:11,882 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-25 06:00:15,060 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:00:15,062 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.6-flash
+2026-11-25 06:00:15,297 [INFO] Mencoba provider Gemini dengan model gemini-3.6-flash...
+2026-11-25 06:00:16,358 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-11-25 06:00:16,359 [WARNING] ⚠️ Gemini / gemini-3.6-flash gagal: Error code: 503
+2026-11-25 06:00:16,359 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-11-25 06:00:28,687 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:00:28,688 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash
+2026-11-25 06:00:28,690 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-25 06:00:28,690 [WARNING] backend is not set. Using 'auto'
+2026-11-25 06:00:28,882 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+OR+site%3Askysports.com+football+Champions+League+OR+Premier+League+match+results+November+2026&limit=1 200
+2026-11-25 06:00:28,913 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abbc.com/sport%20OR%20site%3Aespn.com%20OR%20site%3Askysports.com%20football%20Champions%20League%20OR%20Premier%20League%20match%20results%20November%202026 200
+2026-11-25 06:00:29,400 [INFO] response: https://www.mojeek.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+OR+site%3Askysports.com+football+Champions+League+OR+Premier+League+match+results+November+2026 403
+2026-11-25 06:00:29,703 [INFO] response: https://www.startpage.com/ 200
+2026-11-25 06:00:29,821 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-25 06:00:29,966 [INFO] response: https://search.brave.com/search?q=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+OR+site%3Askysports.com+football+Champions+League+OR+Premier+League+match+results+November+2026&source=web&tf=pd 429
+2026-11-25 06:00:30,283 [INFO] response: https://search.yahoo.com/search;_ylt=MmEt3rDVB9Q_qdwdWXN1ya_4;_ylu=94VqWc7F8lwsDyzDf2c9KYBzuZN6WGSkr2OiOrGv6KptYro?p=site%3Abbc.com%2Fsport+OR+site%3Aespn.com+OR+site%3Askysports.com+football+Champions+League+OR+Premier+League+match+results+November+2026&btf=d 200
+2026-11-25 06:00:30,695 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash...
+2026-11-25 06:00:35,180 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-11-25 06:00:35,181 [WARNING] ⚠️ Gemini / gemini-3.5-flash gagal: Error code: 503
+2026-11-25 06:00:35,181 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:00:55,380 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:00:55,381 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:00:55,383 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-25 06:00:55,383 [WARNING] backend is not set. Using 'auto'
+2026-11-25 06:00:55,462 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Atechcrunch.com%20OR%20site%3Atheverge.com%20OR%20site%3Awired.com%20AI%20technology%20news%20latest%20November%202026 429
+2026-11-25 06:00:55,971 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Atechcrunch.com+OR+site%3Atheverge.com+OR+site%3Awired.com+AI+technology+news+latest+November+2026&limit=1 200
+2026-11-25 06:00:56,243 [INFO] response: https://search.yahoo.com/search;_ylt=upvqWkLLRDqVUv5tH-TId8W-;_ylu=RghVs2oyzSebS0YXmxJIMnXS0miettiy4Be42MfnYjuBFhU?p=site%3Atechcrunch.com+OR+site%3Atheverge.com+OR+site%3Awired.com+AI+technology+news+latest+November+2026&btf=d 200
+2026-11-25 06:00:56,592 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:03,970 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:03,972 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:03,974 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-25 06:01:03,975 [WARNING] backend is not set. Using 'auto'
+2026-11-25 06:01:04,306 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+OR+site%3Akompas.com+IHSG+kurs+rupiah+berita+ekonomi+terkini+24-25+november+2026&limit=1 200
+2026-11-25 06:01:04,320 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20OR%20site%3Akompas.com%20IHSG%20kurs%20rupiah%20berita%20ekonomi%20terkini%2024-25%20november%202026 200
+2026-11-25 06:01:04,452 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-25 06:01:04,695 [INFO] response: https://www.startpage.com/ 200
+2026-11-25 06:01:04,773 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-25 06:01:05,066 [INFO] response: https://search.yahoo.com/search;_ylt=nTwRtB5MqN4LKbu3vFRH2IKy;_ylu=V91Wio7Hm8JLI4_7fTQl2xXjwYM2c74o-DGak6vjAFuJ4bQ?p=site%3Acnbcindonesia.com+OR+site%3Akompas.com+IHSG+kurs+rupiah+berita+ekonomi+terkini+24-25+november+2026&btf=d 200
+2026-11-25 06:01:05,977 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+OR+site%3Akompas.com+IHSG+kurs+rupiah+berita+ekonomi+terkini+24-25+november+2026 403
+2026-11-25 06:01:06,121 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+OR+site%3Akompas.com+IHSG+kurs+rupiah+berita+ekonomi+terkini+24-25+november+2026&source=web&tf=pd 429
+2026-11-25 06:01:06,143 [WARNING] Percobaan 1 gagal: No results found.
+2026-11-25 06:01:06,222 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20OR%20site%3Akompas.com%20IHSG%20kurs%20rupiah%20berita%20ekonomi%20terkini%2024-25%20november%202026 200
+2026-11-25 06:01:06,335 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+OR+site%3Akompas.com+IHSG+kurs+rupiah+berita+ekonomi+terkini+24-25+november+2026&limit=1 200
+2026-11-25 06:01:06,914 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+OR+site%3Akompas.com+IHSG+kurs+rupiah+berita+ekonomi+terkini+24-25+november+2026 403
+2026-11-25 06:01:06,971 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+OR+site%3Akompas.com+IHSG+kurs+rupiah+berita+ekonomi+terkini+24-25+november+2026&source=web&tf=pd 405
+2026-11-25 06:01:07,245 [INFO] response: https://search.yahoo.com/search;_ylt=sfq9L9Pfy-mbNATiSWoNyAwx;_ylu=ZixrsOVchjBx99MOLYDSvcpSoI64TUc-3AQxmXbYkgCZu74?p=site%3Acnbcindonesia.com+OR+site%3Akompas.com+IHSG+kurs+rupiah+berita+ekonomi+terkini+24-25+november+2026&btf=d 200
+2026-11-25 06:01:07,477 [INFO] response: https://www.startpage.com/ 200
+2026-11-25 06:01:07,547 [INFO] response: https://www.startpage.com/sp/search 200
+2026-11-25 06:01:07,735 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-25 06:01:07,735 [WARNING] Percobaan 2 gagal: No results found.
+2026-11-25 06:01:07,814 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Acnbcindonesia.com%20OR%20site%3Akompas.com%20IHSG%20kurs%20rupiah%20berita%20ekonomi%20terkini%2024-25%20november%202026 429
+2026-11-25 06:01:07,920 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Acnbcindonesia.com+OR+site%3Akompas.com+IHSG+kurs+rupiah+berita+ekonomi+terkini+24-25+november+2026&limit=1 200
+2026-11-25 06:01:08,067 [INFO] response: https://search.brave.com/search?q=site%3Acnbcindonesia.com+OR+site%3Akompas.com+IHSG+kurs+rupiah+berita+ekonomi+terkini+24-25+november+2026&source=web&tf=pw 429
+2026-11-25 06:01:08,644 [INFO] response: https://www.mojeek.com/search?q=site%3Acnbcindonesia.com+OR+site%3Akompas.com+IHSG+kurs+rupiah+berita+ekonomi+terkini+24-25+november+2026 403
+2026-11-25 06:01:08,985 [INFO] response: https://search.yahoo.com/search;_ylt=TlJWzRfri77ceEeFIM0XcyZp;_ylu=Ol3Ehj_9ss5pP8WvVC7CoF6Vj230eFGillLoSnqYSVqtfr0?p=site%3Acnbcindonesia.com+OR+site%3Akompas.com+IHSG+kurs+rupiah+berita+ekonomi+terkini+24-25+november+2026&btf=w 200
+2026-11-25 06:01:09,380 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-25 06:01:09,380 [WARNING] backend is not set. Using 'auto'
+2026-11-25 06:01:09,606 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abola.com%20OR%20site%3Adetik.com%20timnas%20indonesia%20berita%20terkini%20november%202026 200
+2026-11-25 06:01:09,694 [INFO] response: https://grokipedia.com/api/typeahead?query=site%3Abola.com+OR+site%3Adetik.com+timnas+indonesia+berita+terkini+november+2026&limit=1 200
+2026-11-25 06:01:09,967 [INFO] response: https://search.yahoo.com/search;_ylt=1VEuqqA-K3eE5tWKB_tcYY4N;_ylu=LScKCfJhtjd7x2v91HJpHmuMSSbgD-lB99ZROAKCcDWd4fk?p=site%3Abola.com+OR+site%3Adetik.com+timnas+indonesia+berita+terkini+november+2026&btf=d 200
+2026-11-25 06:01:10,365 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:11,747 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:11,748 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:11,750 [WARNING] html - backends do not exist or are disabled. Available: brave, duckduckgo, grokipedia, mojeek, startpage, wikipedia, yahoo
+2026-11-25 06:01:11,750 [WARNING] backend is not set. Using 'auto'
+2026-11-25 06:01:11,979 [INFO] response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=berita%20viral%20trending%20indonesia%20hari%20ini%2024%2025%20november%202026 200
+2026-11-25 06:01:12,045 [INFO] response: https://grokipedia.com/api/typeahead?query=berita+viral+trending+indonesia+hari+ini+24+25+november+2026&limit=1 200
+2026-11-25 06:01:12,261 [INFO] response: https://search.brave.com/search?q=berita+viral+trending+indonesia+hari+ini+24+25+november+2026&source=web&tf=pd 429
+2026-11-25 06:01:12,392 [INFO] response: https://html.duckduckgo.com/html/ 202
+2026-11-25 06:01:12,951 [INFO] response: https://www.mojeek.com/search?q=berita+viral+trending+indonesia+hari+ini+24+25+november+2026 403
+2026-11-25 06:01:13,244 [INFO] response: https://search.yahoo.com/search;_ylt=NSGm_G04TAVks5HRGyTodJus;_ylu=wLE4HhTOTnx_Iy2FDltg-PNMD35XK9NuC_aAuZHu1s1Clwc?p=berita+viral+trending+indonesia+hari+ini+24+25+november+2026&btf=d 200
+2026-11-25 06:01:13,753 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:17,819 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:17,820 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:17,823 [INFO] Validasi: 1x fetch_webpage sukses (minimum 3).
+2026-11-25 06:01:17,823 [INFO] URL yang berhasil di-fetch: {'https://www.cnbc.com/2026/11/25/huawei-fraud-trade-trial.html'}
+2026-11-25 06:01:17,823 [WARNING] Laporan tidak valid: Terlalu pendek (56 karakter, minimal 500)
+2026-11-25 06:01:17,823 [WARNING] Mengulang percobaan karena output tidak valid...
+2026-11-25 06:01:17,823 [INFO] Menjalankan agent (percobaan 2/2)...
+2026-11-25 06:01:17,838 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:19,701 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:19,702 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:19,703 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:21,612 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:21,613 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:21,615 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:25,023 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:25,024 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:25,025 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:26,963 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:26,964 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:26,965 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:29,031 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:29,032 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:29,033 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:30,786 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:30,787 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:30,788 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:32,595 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:32,596 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:32,597 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:34,220 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:34,221 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:34,223 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:36,783 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:36,784 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:36,785 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:38,647 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:38,648 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:38,650 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:40,595 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:40,596 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:40,597 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:42,251 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:42,252 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:42,253 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:43,450 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:43,451 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:43,452 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:45,200 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:45,201 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:45,202 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:47,227 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:47,228 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:47,229 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:48,708 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:48,709 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:48,711 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:50,634 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:50,635 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:50,636 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:54,474 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:01:54,475 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.1-flash-lite
+2026-11-25 06:01:54,477 [INFO] Mencoba provider Gemini dengan model gemini-3.1-flash-lite...
+2026-11-25 06:01:55,242 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-11-25 06:01:55,242 [WARNING] ⚠️ Gemini / gemini-3.1-flash-lite gagal: Error code: 503
+2026-11-25 06:01:55,243 [INFO] Mencoba provider Gemini dengan model gemini-3.5-flash-lite...
+2026-11-25 06:02:01,629 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+2026-11-25 06:02:01,630 [INFO] ✅ Berhasil pakai: Gemini / gemini-3.5-flash-lite
+2026-11-25 06:02:01,630 [INFO] Validasi: 0x fetch_webpage sukses (minimum 3).
+2026-11-25 06:02:01,631 [INFO] URL yang berhasil di-fetch: {'https://www.cnbc.com/2026/11/25/huawei-fraud-trade-trial.html'}
+2026-11-25 06:02:01,631 [WARNING] Laporan tidak valid: Hanya 0 URL yang benar-benar di-fetch, minimal 3
+2026-11-25 06:02:01,631 [ERROR] ❌ Laporan hari ini gagal divalidasi (Hanya 0 URL yang benar-benar di-fetch, minimal 3). Tidak dikirim/disimpan untuk menjaga kualitas history.
+2026-11-25 06:02:01,631 [INFO] Mengirim laporan ke Telegram...
+2026-11-25 06:02:02,241 [INFO] ✅ Bagian 1/1 terkirim (Markdown)!
